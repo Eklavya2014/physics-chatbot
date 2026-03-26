@@ -1,0 +1,174 @@
+CHEMISTRY - MASTER FORMULA AND QUICK REFERENCE SHEET
+======================================================
+
+PHYSICAL CHEMISTRY FORMULAS
+
+MOLE CONCEPT:
+n = m/M = V/22.4 (STP) = N/Nₐ = PV/RT
+Nₐ = 6.022 × 10²³ mol⁻¹
+Molarity (M) = n_solute/V_solution(L)
+Molality (m) = n_solute/m_solvent(kg)
+Mole fraction: X_A = n_A/(n_A + n_B + ...)
+% by mass = (mass of solute/mass of solution) × 100
+
+GAS LAWS:
+PV = nRT (ideal gas), R = 8.314 J/mol·K = 0.0821 L·atm/mol·K
+(P + an²/V²)(V - nb) = nRT (van der Waals, real gas)
+P_total = P₁ + P₂ + ... (Dalton's law)
+r₁/r₂ = √(M₂/M₁) = √(d₂/d₁) (Graham's law of diffusion)
+v_rms = √(3RT/M), v_avg = √(8RT/πM), v_mp = √(2RT/M)
+KE_avg = (3/2)k_BT = (3/2)RT/Nₐ per molecule/per mol
+
+COLLIGATIVE PROPERTIES:
+ΔP/P° = X_solute (relative lowering of vapor pressure)
+ΔT_b = K_b × m × i (boiling point elevation)
+ΔT_f = K_f × m × i (freezing point depression)
+π = iMRT (osmotic pressure)
+K_b(water) = 0.52 K·kg/mol, K_f(water) = 1.86 K·kg/mol
+van't Hoff factor: i = 1 + α(n-1) for dissociation, i = 1 - α(1-1/n) for association
+
+THERMODYNAMICS:
+ΔH = ΔU + ΔnRT (for gas phase reactions)
+ΔG = ΔH - TΔS
+ΔG = ΔG° + RT ln Q
+ΔG° = -RT ln K = -nFE°
+K = e^(-ΔG°/RT), log K = -ΔG°/(2.303RT) = nE°/0.0592 (at 25°C)
+ΔG° = ΣΔG°f(products) - ΣΔG°f(reactants)
+ΔH° = ΣΔH°f(products) - ΣΔH°f(reactants) (Hess's law)
+ΔS° = ΣS°(products) - ΣS°(reactants)
+Cp - Cv = R (for ideal gas)
+Cv = (f/2)R, Cp = (f/2 + 1)R, γ = Cp/Cv
+
+EQUILIBRIUM:
+Kc = [C]^c[D]^d/[A]^a[B]^b (for aA + bB ⇌ cC + dD)
+Kp = Kc(RT)^Δn
+Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA])
+pOH = -log[OH⁻], pH + pOH = 14 (at 25°C)
+Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ (at 25°C)
+For weak acid: [H⁺] = √(Ka × C), pH = ½(pKa - log C)
+Buffer capacity: β = 2.303C × Ka[H⁺]/(Ka + [H⁺])²
+
+ELECTROCHEMISTRY:
+E°cell = E°cathode - E°anode
+Nernst equation: E = E° - (0.0592/n) log Q (at 25°C)
+ΔG° = -nFE° (F = 96485 C/mol)
+Electrolysis: m = MIt/(nF) = ZIt (m = mass, M = molar mass, n = electrons, Z = electrochemical equivalent)
+Λm = κ/C (molar conductivity)
+Kohlrausch law: Λ°m = Σν₊λ°₊ + Σν₋λ°₋
+Debye-Hückel-Onsager: Λm = Λ°m - b√C
+
+CHEMICAL KINETICS:
+Rate = k[A]^m[B]^n (rate law)
+Zero order: [A] = [A]₀ - kt, t₁/₂ = [A]₀/2k
+First order: [A] = [A]₀e^(-kt), t₁/₂ = 0.693/k
+Second order: 1/[A] = 1/[A]₀ + kt, t₁/₂ = 1/(k[A]₀)
+Arrhenius: k = Ae^(-Ea/RT), ln k = ln A - Ea/RT
+ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂)
+
+---
+
+KEY INORGANIC REACTIONS
+
+IMPORTANT INDUSTRIAL PROCESSES:
+Haber process (NH₃): N₂ + 3H₂ ⇌ 2NH₃ (450°C, 200 atm, Fe catalyst)
+Ostwald process (HNO₃): 4NH₃ + 5O₂ → 4NO + 6H₂O (Pt-Rh, 800°C)
+Contact process (H₂SO₄): 2SO₂ + O₂ → 2SO₃ (V₂O₅, 450°C)
+Solvay process (Na₂CO₃): NaCl + NH₃ + CO₂ + H₂O → NaHCO₃ → Na₂CO₃
+Hall-Heroult (Al): Al₂O₃ (dissolved in molten cryolite) → Al by electrolysis
+Bayer process (Al₂O₃ from bauxite): Al₂O₃·2H₂O + NaOH → NaAlO₂ → Al(OH)₃ → Al₂O₃
+
+IMPORTANT REACTIONS OF ACIDS:
+Zn + H₂SO₄(dil) → ZnSO₄ + H₂↑
+Cu + 2H₂SO₄(hot conc) → CuSO₄ + SO₂ + 2H₂O
+3Cu + 8HNO₃(dil) → 3Cu(NO₃)₂ + 2NO↑ + 4H₂O
+Cu + 4HNO₃(conc) → Cu(NO₃)₂ + 2NO₂↑ + 2H₂O
+S + 2H₂SO₄(conc) → 3SO₂ + 2H₂O
+C + 2H₂SO₄(conc) → CO₂ + 2SO₂ + 2H₂O
+
+COLORS OF COMPOUNDS (Important for identification):
+White precipitates: BaSO₄, AgCl, PbCl₂, Mg(OH)₂, Al(OH)₃, Zn(OH)₂, ZnS
+Yellow precipitates: S, As₂S₃, SnS₂, AgBr, Na₃[Co(NO₂)₆]
+Red/orange: HgI₂, Sb₂S₃, K₂Cr₂O₇(orange), Fe₂O₃(red), Cu₂O(red-brown)
+Black: CuS, PbS, FeS, HgS, CuO, MnO₂, Ag₂S
+Blue: Cu(OH)₂, CuSO₄·5H₂O, [Cu(NH₃)₄]²⁺(deep blue), FeCl₂·4H₂O(light blue)
+Green: Cr(OH)₃, Cu₂(OH)₂CO₃(malachite, green patina on copper), FeSO₄·7H₂O
+Violet/purple: KMnO₄, [Cr(H₂O)₆]³⁺, I₂ in CCl₄
+Brown: Fe(OH)₃, PbO₂(dark brown), MnO₂
+
+FLAME COLORS:
+Li: crimson red. Na: golden yellow. K: lilac/violet. Rb: red-violet. Cs: blue.
+Ca: brick red. Sr: crimson red. Ba: apple/pale green. Cu: blue-green.
+
+---
+
+ORGANIC CHEMISTRY QUICK REFERENCE
+
+FUNCTIONAL GROUP TESTS:
+Alkene: decolorizes Br₂/CCl₄ (brown→colorless), decolorizes acidic KMnO₄ (pink→colorless).
+Alkyne: same as alkene + terminal alkynes give precipitate with Ag(NH₃)₂⁺ or Cu(NH₃)₂⁺.
+Alcohol: reacts with Na (H₂↑), Lucas test for 1°/2°/3° differentiation.
+Aldehyde: Tollens' (silver mirror), Fehling's (red ppt), Schiff's (pink), 2,4-DNP (orange ppt).
+Ketone: 2,4-DNP test, NO Tollens' or Fehling's (except α-hydroxy ketones).
+Carboxylic acid: pH < 7, reacts with Na₂CO₃ (CO₂↑), ester formation.
+Primary amine: carbylamine test (mustard smell with CHCl₃/KOH).
+Phenol: FeCl₃ (violet), Br₂ water (white precipitate, 2,4,6-tribromophenol).
+Glucose: Fehling's, Tollens', Molisch's (purple ring for carbohydrates).
+
+REAGENTS AND THEIR USES:
+NaBH₄: mild reducing agent, reduces aldehydes/ketones to alcohols. DOESN'T reduce COOH, esters.
+LiAlH₄: strong reducing agent, reduces all carbonyl groups including COOH, esters, amides. MUST be dry!
+CrO₃/H₂SO₄ (Jones): oxidizes 1° alcohol → carboxylic acid, 2° → ketone.
+PCC (pyridinium chlorochromate): oxidizes 1° alcohol → aldehyde (stops here).
+Swern oxidation (oxalyl chloride/DMSO): mild, 1° → aldehyde, 2° → ketone.
+OsO₄: syn dihydroxylation of alkenes → cis-diol.
+mCPBA (meta-chloroperoxybenzoic acid): epoxidation of alkenes.
+Lindlar's catalyst (Pd/CaCO₃/Pb(OAc)₂): partial reduction of alkyne → cis-alkene.
+Na/NH₃(l): Birch reduction (alkynes → trans-alkenes, benzene → 1,4-cyclohexadiene).
+NaNH₂: strong base (pKa NH₃ ~ 38), deprotonates terminal alkynes.
+SOCl₂: converts COOH → COCl (acyl chloride), ROH → RCl.
+P₂O₅: dehydrating agent, converts 2 COOH → anhydride.
+Zn/HCl (Clemmensen): C=O → CH₂ (acidic conditions).
+N₂H₄/KOH (Wolff-Kishner): C=O → CH₂ (basic conditions).
+
+IMPORTANT CONVERSIONS:
+Benzene → Nitrobenzene → Aniline → Diazonium salt → various products (Sandmeyer).
+Carboxylic acid → Acyl chloride (SOCl₂) → Ester (R'OH), Amide (NH₃), Anhydride (RCOO⁻).
+Alcohol → Alkyl halide (SOCl₂, PBr₃) → Various (SN1/SN2).
+Aldehyde → Alcohol (NaBH₄), Carboxylic acid ([O]), Cyanohydrin (HCN), Imine (RNH₂).
+
+AMINO ACID PROPERTIES:
+Amino acids have both -NH₂ and -COOH groups → exist as zwitterions (NH₃⁺-CHR-COO⁻).
+Isoelectric point (pI): pH at which amino acid has zero net charge.
+pI = (pKa1 + pKa2)/2 for simple amino acids.
+Acidic amino acids (pI < 7): aspartate, glutamate.
+Basic amino acids (pI > 7): lysine, arginine, histidine.
+Essential amino acids (MNEMONIC: PVT TIM HALL):
+Phenylalanine, Valine, Threonine, Tryptophan, Isoleucine, Methionine, Histidine, Arginine, Leucine, Lysine.
+
+---
+
+PERIODIC TABLE TRENDS SUMMARY:
+
+Atomic radius: ↑ down group, ↓ across period (left to right).
+Ionic radius: cation < parent atom, anion > parent atom. Same trends as atomic radius in groups.
+Ionization energy: ↓ down group, ↑ across period (exceptions: Be > B, N > O).
+Electron affinity: ↓ down group, ↑ across period (exceptions: N, O have lower EA than expected).
+Electronegativity: ↓ down group, ↑ across period. F is highest (3.98).
+Metallic character: ↑ down group, ↓ across period.
+Oxidizing power: ↑ up group (halogens: F > Cl > Br > I).
+Reducing power: ↑ down group (alkali metals: Li... least, Cs most, but Li has highest charge density).
+
+OXIDATION STATE RULES:
+Free element = 0.
+Monatomic ion = charge on ion.
+H = +1 (except metal hydrides: -1).
+O = -2 (except H₂O₂: -1, OF₂: +2, superoxides: -½).
+F = -1 always.
+Halogens: -1 except with O or more electronegative halogens.
+Sum of oxidation states = charge on species.
+
+SOLUBILITY RULES:
+Always soluble: nitrates (NO₃⁻), acetates (CH₃COO⁻), halides of Group 1 and NH₄⁺, sulfates of Group 1 and NH₄⁺ (except BaSO₄, PbSO₄, SrSO₄).
+Always insoluble: carbonates (CO₃²⁻), phosphates (PO₄³⁻), sulfides (S²⁻), hydroxides (OH⁻) — except Group 1, NH₄⁺, Ca²⁺, Sr²⁺, Ba²⁺.
+AgCl, AgBr, AgI insoluble (AgF soluble).
+PbCl₂ slightly soluble (precipitates with excess Cl⁻).

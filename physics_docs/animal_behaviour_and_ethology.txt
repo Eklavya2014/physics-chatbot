@@ -1,0 +1,181 @@
+================================================================================
+                   ANIMAL BEHAVIOUR & ETHOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS ETHOLOGY?
+---------------------
+Ethology is the scientific study of animal behaviour, especially in natural
+environments. Founded by Konrad Lorenz, Nikolaas Tinbergen, and Karl von Frisch
+(Nobel Prize 1973).
+
+Tinbergen's Four Questions (levels of analysis for any behaviour):
+  1. Causation   : What stimuli trigger the behaviour? (proximate mechanism)
+  2. Development : How does behaviour change as animal develops?
+  3. Function    : What is the adaptive value? (survival/reproduction benefit)
+  4. Evolution   : How did the behaviour evolve? (phylogenetic history)
+
+1.1 TYPES OF BEHAVIOUR
+------------------------
+Innate (Instinctive) Behaviour:
+  Genetically programmed; does not require learning.
+- Fixed Action Patterns (FAP): Stereotyped, invariant response triggered by a
+  specific sign stimulus (releaser). Example: Male stickleback attacks anything
+  red (red belly of rival); greylag goose egg-rolling.
+- Kinesis: Non-directional movement in response to stimulus intensity.
+  (Woodlice move faster in dry conditions — kinesis, not directed)
+- Taxis: Directed movement toward (+) or away (-) from stimulus.
+  Phototaxis, chemotaxis, gravitaxis.
+- Reflexes: Simple, rapid involuntary responses (knee-jerk, pupil constriction).
+
+Learned Behaviour:
+- Habituation  : Decreased response to repeated harmless stimuli. Simplest form.
+- Sensitisation: Increased response after intense/harmful stimulus.
+- Classical Conditioning (Pavlov): Neutral stimulus paired with unconditioned
+  stimulus → neutral stimulus alone elicits conditioned response.
+- Operant Conditioning (Skinner): Behaviour strengthened (reinforcement) or
+  weakened (punishment) by its consequences.
+- Imprinting   : Learning during critical/sensitive period; irreversible.
+  Filial imprinting: Young follow first moving object seen (Lorenz and geese).
+- Insight Learning: Solving novel problems without trial and error.
+  Example: Chimpanzees using tools; crows bending wire into hooks.
+- Social/Observational Learning: Learning by watching others.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. COMMUNICATION IN ANIMALS
+-----------------------------
+Modalities of Communication:
+- Visual     : Body postures, colour displays, facial expressions, bioluminescence.
+               Example: Peacock tail; threat display in gorillas; firefly flash patterns.
+- Acoustic   : Calls, songs, ultrasound, substrate vibration.
+               Birdsong: Learned; dialects exist; used for mate attraction + territory.
+               Whale song: Humpback males; complex, evolving patterns; long-range (1000s km).
+               Bat echolocation: 20–100 kHz; insectivorous bats; Doppler shift detection.
+- Chemical   : Pheromones, trail markers, alarm substances, territorial scent marks.
+               Ant trail pheromones (formic acid derivatives); moth sex pheromones
+               detectable at femtomolar concentrations.
+- Tactile    : Grooming, antennation, dance communication (honeybee waggle dance).
+               Waggle dance (von Frisch): Direction = angle relative to sun;
+               duration = distance; vigour = food quality.
+
+3. MATING SYSTEMS & SEXUAL SELECTION
+--------------------------------------
+Darwin's Sexual Selection:
+  Intrasexual selection: Competition within same sex (male-male combat).
+  Intersexual selection (mate choice): Choosy sex (usually female) selects based
+  on indicators of genetic quality or resources.
+
+Mating Systems:
+- Monogamy    : One male + one female (socially common in birds; ~90%; genetic
+                monogamy rarer due to extra-pair copulations).
+- Polygyny     : One male + multiple females (most mammals; harems; lek mating).
+- Polyandry    : One female + multiple males (jacanas, pipefish).
+- Promiscuity  : Multiple partners for both sexes.
+
+Honest Signalling & Handicap Principle (Zahavi):
+  Costly signals are honest because only high-quality individuals can afford them.
+  Example: Peacock tail — large tail is a handicap; surviving with it signals fitness.
+  Parasite resistance hypothesis (Hamilton & Zuk): Bright colouration signals
+  resistance to parasites → female choice drives coevolution with parasites.
+
+4. SOCIAL BEHAVIOUR
+--------------------
+Altruism & Kin Selection (Hamilton, 1964):
+  Hamilton's Rule: Altruistic behaviour evolves when rB > C
+  (r = relatedness coefficient; B = benefit to recipient; C = cost to actor).
+  Inclusive fitness = direct fitness + indirect fitness (via shared genes in relatives).
+  Eusociality: Highest level of social organisation. Reproductive division of labour,
+  overlapping generations, cooperative brood care.
+  Examples: Honeybees (r = 0.75 in haplodiploid system), ants, termites, naked mole-rats.
+
+Reciprocal Altruism (Trivers, 1971):
+  Helping non-relatives when help will be reciprocated in future.
+  Requires: Recognition; memory; repeated interactions; cheating detection.
+  Example: Vampire bat food sharing; cleaner fish; human cooperation.
+
+Game Theory in Biology:
+  Hawk-Dove game: Evolutionarily Stable Strategy (ESS) where mixed population
+  resists invasion by alternative strategies.
+  Prisoner's Dilemma: Cooperate vs defect; tit-for-tat is robust ESS strategy
+  in iterated games (Axelrod tournaments).
+
+5. NAVIGATION & MIGRATION
+---------------------------
+Bird Navigation Systems:
+- Magnetic compass  : Iron-containing cells (magnetite) in beak; cryptochrome
+                      proteins in retina detect Earth's magnetic field.
+- Sun compass       : Time-compensated; uses circadian clock.
+- Star compass      : Learned during sensitive period by observing stellar rotation
+                      around Polaris.
+- Olfactory maps    : Homing pigeons use odour maps in familiar areas.
+- Landmark memory   : Spatial memory of terrain features.
+
+Long-Distance Migration:
+  Arctic Tern: 70,000–90,000 km/year; Arctic to Antarctic and back.
+  Monarch Butterfly: Eastern North America to Mexican oyamel fir forests.
+    Multi-generational journey; navigation uses sun compass + magnetic field.
+    Overwintering site discovered 1975.
+  Salmon: Pacific salmon use olfactory imprinting to return to natal stream.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. BEHAVIOURAL GENETICS & NEUROBIOLOGY
+----------------------------------------
+Genetic Basis of Behaviour:
+  Period (per) gene in Drosophila: Controls circadian rhythm period length.
+  fruitless (fru) gene: Controls male courtship behaviour; sexually dimorphic
+  splicing produces different protein isoforms in males and females.
+  foraging (for) gene: Encodes cGMP-dependent protein kinase. sitter vs rover
+  alleles affect larval foraging behaviour; also influences bee division of labour.
+  Vole vasopressin receptor (avpr1a): Distribution difference between monogamous
+  prairie voles and promiscuous meadow voles. V1aR in nucleus accumbens →
+  reward-bonding after mating → monogamy.
+
+Neurogenetics of Learning (Aplysia model):
+  Kandel (Nobel Prize 2000): Sea slug Aplysia; simple gill-withdrawal reflex.
+  Short-term sensitisation: PKA phosphorylates K+ channels and synapsin →
+  increased transmitter release.
+  Long-term sensitisation: Repeated stimuli → PKA → CREB activation →
+  new synapse formation → structural changes.
+  Directly analogous to LTP mechanisms in vertebrates.
+
+7. COGNITION & ANIMAL INTELLIGENCE
+------------------------------------
+Theory of Mind:
+  Ability to attribute mental states to others ("mentalising").
+  Great apes pass false-belief tasks (updated paradigm with eye-tracking).
+  Ravens pass some false-belief tasks; corvids are remarkably intelligent.
+
+Mirror Self-Recognition:
+  Indicates some form of self-awareness. Pass: Great apes, dolphins, elephants,
+  magpies, some fish (cleaner wrasse). Fail: Monkeys (generally).
+
+Tool Use:
+  New Caledonian crows: Manufacture and use hooked tools from memory; understand
+  causal relationships; plan for future.
+  Chimpanzees: Nut cracking, termite fishing, spear hunting (Senegal).
+  Octopuses: Carry coconut shells as portable shelter; open jars.
+
+Language Research:
+  Honeybee waggle dance: Symbolic; conveys information about absent objects.
+  Ape language: ASL-trained chimps/gorillas learn hundreds of signs; combine them;
+  limited to ~2-unit combinations; no recursive grammar.
+  Alex (African grey parrot, Pepperberg): Demonstrated counting, colour/shape
+  concepts, understanding of zero concept.
+
+[CONSERVATION LINK] Behavioural ecology informs conservation:
+  Corridors designed based on dispersal behaviour. Anti-poaching: Training elephants
+  to fear human scent/voices. Reintroduction: Teaching captive-bred wolves to hunt.
+  Acoustic deterrents: Using recorded killer whale calls to deter belugas from ship
+  strikes. Understanding animal cognition drives debates on welfare legislation.
+
+================================================================================

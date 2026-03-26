@@ -1,0 +1,224 @@
+================================================================================
+                     HISTOLOGY & CELL TYPES
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. HISTOLOGY — THE STUDY OF TISSUES
+-------------------------------------
+Histology is the microscopic study of tissue structure. Tissues are groups of
+similar cells performing a specific function.
+
+Tissue Preparation:
+  Fixation (formalin) → Dehydration → Embedding (paraffin) → Sectioning (~5 µm)
+  → Mounting on slide → Staining → Coverslip.
+
+Common Stains:
+  H&E (Haematoxylin & Eosin): Most common. Haematoxylin = blue/purple (nuclei,
+  ribosomes). Eosin = pink/red (cytoplasm, collagen).
+  PAS (Periodic Acid-Schiff): Magenta; carbohydrates, glycogen, basement membranes.
+  Masson's Trichrome: Collagen (blue/green), muscle (red), nuclei (black).
+  Alcian Blue: Acid mucopolysaccharides; goblet cells.
+  Reticulin: Silver stain; reticular fibres.
+  Immunohistochemistry (IHC): Antibodies detect specific proteins → cancer diagnosis.
+
+1.1 THE FOUR TISSUE TYPES
+---------------------------
+
+EPITHELIAL TISSUE:
+  Functions: Covers surfaces, lines cavities, forms glands.
+  Characteristics: Cells tightly packed; rests on basement membrane;
+  avascular; high regenerative capacity.
+
+  Classification by layers:
+    Simple     : One cell layer (rapid diffusion/transport).
+    Stratified : Multiple layers (protection).
+    Pseudostratified: One layer but nuclei at different heights (appears layered).
+
+  Classification by cell shape:
+    Squamous   : Flat, scale-like (alveoli, capillaries — diffusion).
+    Cuboidal   : Cube-shaped (kidney tubules, thyroid — secretion/absorption).
+    Columnar   : Taller than wide (GI tract, uterus — secretion/absorption).
+    Transitional: Can stretch (urinary bladder — urothelium).
+
+  Specialisations:
+    Microvilli  : Brush border; increases surface area (small intestine, kidney PCT).
+    Cilia       : Motile projections; move mucus (respiratory tract).
+    Stereocilia : Long, non-motile microvilli (epididymis, inner ear hair cells).
+    Goblet cells: Unicellular mucus glands (GI tract, respiratory epithelium).
+
+CONNECTIVE TISSUE:
+  Functions: Support, binding, protection, transport (blood), energy storage.
+  Characteristics: Cells scattered in extracellular matrix (ECM).
+  ECM components: Ground substance (GAGs, proteoglycans) + fibres (collagen,
+  elastin, reticular fibres).
+
+  Types:
+    Loose (areolar): Most common; fibroblasts, collagen, elastic fibres; fills spaces.
+    Dense regular   : Parallel collagen bundles; tendons, ligaments.
+    Dense irregular : Random collagen orientation; dermis, organ capsules.
+    Adipose         : Fat storage; insulation; cushioning. White vs brown adipose.
+    Reticular       : Type III collagen network; liver, spleen, lymph nodes.
+    Cartilage       : Hyaline (joints, nose, trachea), elastic (ear), fibrocartilage (discs).
+    Bone            : Specialised; osteons (Haversian systems); compact and spongy.
+    Blood           : Fluid connective tissue; RBCs, WBCs, platelets in plasma.
+
+MUSCLE TISSUE:
+    Skeletal: Striated; voluntary; multinucleate; peripherally placed nuclei.
+    Cardiac : Striated; involuntary; intercalated discs; single central nucleus.
+    Smooth  : Non-striated; involuntary; spindle-shaped; central nucleus.
+
+NERVOUS TISSUE:
+    Neurons (cells with axons/dendrites) + glia (support cells: astrocytes,
+    oligodendrocytes, microglia, ependymal cells, Schwann cells).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ORGAN HISTOLOGY
+-------------------
+SKIN (Integument):
+  Epidermis: Stratified squamous keratinised epithelium. Layers (deep to surface):
+    Stratum basale (germinativum): Stem cells; keratinocyte production; melanocytes.
+    Stratum spinosum: Desmosomes (spiny appearance); Langerhans cells.
+    Stratum granulosum: Keratohyalin granules; lamellar bodies (lipid waterproofing).
+    Stratum lucidum: Only in thick skin (palms, soles); densely packed.
+    Stratum corneum: 20–30 layers dead, anucleate keratinocytes; keratin; barrier.
+  Dermis: Dense irregular connective tissue. Papillary (loose CT + capillaries +
+  nerve endings) + Reticular (dense CT; hair follicles, sweat glands, sebaceous glands).
+  Hypodermis: Subcutaneous fat; not true skin layer.
+  Melanocytes: Neural crest origin; produce melanin (eumelanin = black/brown;
+  phaeomelanin = yellow/red); transferred to keratinocytes via melanosomes.
+
+KIDNEY:
+  Cortex: Glomeruli + PCT + DCT.
+  Medulla: Loop of Henle (thin descending, thin ascending, thick ascending) +
+           collecting ducts. Arranged in pyramids; papillae drain into calyces.
+  Glomerulus: Tuft of fenestrated capillaries; podocytes (foot processes) form
+  filtration slits; mesangial cells regulate GFR.
+  PCT: Brush border (microvilli); abundant mitochondria; reabsorbs 65% of filtrate.
+  Juxtaglomerular apparatus (JGA): Macula densa (dense nuclei in DCT) + JG cells
+  (granular cells; produce renin) + extraglomerular mesangium. Regulates GFR via TGF.
+
+LIVER:
+  Hepatocytes: Polygonal cells; central nucleus; abundant SER (drug metabolism),
+  RER (albumin, clotting factors), mitochondria, peroxisomes, glycogen granules.
+  Classic lobule: Hexagonal; central vein at centre; portal triads at corners
+  (portal vein + hepatic artery + bile duct).
+  Portal lobule: Bile duct at centre; organises by bile flow direction.
+  Liver acinus (Rappaport): Zone 1 (periportal; highest O2/nutrients),
+  Zone 2 (mid), Zone 3 (pericentral; lowest O2 → most vulnerable to ischaemia).
+  Kupffer cells: Resident macrophages in sinusoids; phagocytose bacteria, debris.
+  Stellate cells (Ito cells): Vitamin A storage; activated by injury → myofibroblasts
+  → collagen deposition → fibrosis → cirrhosis.
+
+GI TRACT — GENERAL LAYERS (Deepest to Lumen):
+  Serosa/Adventitia → Muscularis externa (longitudinal + circular smooth muscle;
+  Auerbach's plexus between layers) → Submucosa (Meissner's plexus; glands) →
+  Muscularis mucosa → Lamina propria → Epithelium (faces lumen).
+
+  Small Intestine specialisations:
+    Villi: Finger-like projections of mucosa; increase SA ~10x.
+    Crypts of Lieberkühn: Invaginations; contain Paneth cells (antimicrobial peptides),
+    stem cells (LGR5+), enteroendocrine cells.
+    Microvilli (brush border): ~20 per enterocyte; additional ~20x SA increase.
+    Peyer's patches: Lymphoid tissue in ileum (M cells).
+    Duodenum: Brunner's glands in submucosa (secrete bicarbonate — protects from acid).
+
+3. BLOOD CELLS — HAEMATOPOIESIS
+---------------------------------
+All blood cells derive from haematopoietic stem cells (HSCs) in bone marrow.
+
+Cell Type         | Normal Count    | Function                    | Lifespan
+------------------|-----------------|-----------------------------|-----------
+RBC (erythrocyte) | 4.5–5.5 M/µL   | O2 transport (haemoglobin)  | 120 days
+Neutrophil        | 1.8–7.7 K/µL   | First phagocyte; pus         | 6–12h blood
+Eosinophil        | 0.1–0.4 K/µL   | Parasites; allergies          | Days-weeks
+Basophil          | 0.02–0.1 K/µL  | Inflammation; heparin; IgE   | Days
+Monocyte          | 0.2–0.95 K/µL  | → Macrophage in tissues      | Hours→months
+Lymphocyte        | 1–4 K/µL       | B cells, T cells, NK cells   | Days–decades
+Platelets         | 150–400 K/µL   | Clotting; haemostasis         | 8–12 days
+
+Haematopoiesis:
+  HSC → CMP (common myeloid progenitor) or CLP (common lymphoid progenitor)
+  CMP → Megakaryocyte/Erythroid progenitor OR Granulocyte/Monocyte progenitor
+  CLP → B cell or T cell or NK cell precursors.
+  Key transcription factors:
+    GATA-1: Erythroid and megakaryocyte fate.
+    PU.1: Myeloid and lymphoid fate (high → myeloid; low → lymphoid).
+    IKAROS: Lymphoid development; master regulator.
+    C/EBPalpha: Neutrophil/granulocyte differentiation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. EXTRACELLULAR MATRIX (ECM)
+------------------------------
+ECM is a complex, dynamic scaffold that regulates cell behaviour, tissue
+architecture, and signalling. Far more than passive "filler."
+
+Collagen:
+  Most abundant protein in mammals (~30% body protein). 28 types.
+  Type I   : Bone, tendon, skin (90% of all collagen).
+  Type II  : Cartilage.
+  Type III : Reticular fibres; co-distributes with type I; vessels, skin.
+  Type IV  : Basement membranes (sheet-forming; non-fibrillar).
+  Biosynthesis: Procollagen triple helix (in ER) → secreted → propeptide cleavage
+  → fibril assembly → cross-linking by lysyl oxidase (Cu-dependent).
+
+Glycosaminoglycans (GAGs):
+  Long unbranched polysaccharide chains; highly negatively charged → attract water
+  → compressive resistance (joint cartilage). Examples: hyaluronate, heparan sulphate,
+  chondroitin sulphate, dermatan sulphate, keratan sulphate.
+  Proteoglycans: GAGs covalently attached to core proteins (aggrecan, syndecan, perlecan).
+
+Laminin & Fibronectin:
+  Laminin: Major component of basement membranes; critical for epithelial attachment.
+  Fibronectin: RGD (Arg-Gly-Asp) motif binds integrins; promotes cell adhesion,
+  migration; important in wound healing.
+
+Integrins:
+  Heterodimeric cell surface receptors (alpha + beta subunits); connect ECM to
+  cytoskeleton (actin via talin, vinculin, paxillin → focal adhesions).
+  Outside-in signalling: ECM stiffness → integrin clustering → FAK + Src activation
+  → proliferation, survival, migration.
+  Inside-out signalling: Internal signals (kindlin, talin) activate integrins.
+  Mechanotransduction: Cell sense matrix stiffness; stiff matrix → YAP/TAZ nuclear
+  localisation → gene expression → differentiation into osteoblasts/myofibroblasts.
+
+5. STEM CELL NICHES
+--------------------
+A niche is the microenvironment that maintains stem cell identity and regulates
+self-renewal vs differentiation.
+
+Intestinal crypt niche:
+  LGR5+ stem cells at crypt base. Paneth cells: Produce Wnt3a, EGF, Notch ligands
+  (DLL1/4) → maintain LGR5+ stem cells. R-spondin (RSPO): Extends Wnt gradient.
+  Crypt-villus axis: Wnt decreases up the villus → differentiation.
+
+Haematopoietic niche:
+  Endosteal niche (near bone surface): Osteoblasts; quiescent HSC maintenance.
+  Vascular niche (sinusoids): Endothelial cells + CXCL12-abundant reticular (CAR)
+  cells; HSC activation and mobilisation.
+  CXCL12/CXCR4 axis: Anchors HSCs in bone marrow. G-CSF → mobilises HSCs to blood.
+
+Neural stem cell niche:
+  Two adult neurogenic niches: Subventricular zone (SVZ) of lateral ventricle
+  (olfactory bulb pathway) and Subgranular zone (SGZ) of hippocampal dentate gyrus.
+  GFAP+ radial glia-like stem cells → intermediate progenitors → newborn neurons.
+  Hippocampal neurogenesis: Role in pattern separation, memory; reduced by stress,
+  ageing; enhanced by exercise, enriched environment, SSRIs.
+
+[DISEASE LINK] Fibrosis:
+  Chronic injury → persistent fibroblast/myofibroblast activation → excessive
+  collagen deposition → organ fibrosis. TGF-beta is master profibrotic cytokine.
+  Liver cirrhosis: Activated stellate cells → fibrosis → portal hypertension.
+  Pulmonary fibrosis: IPF; pirfenidone + nintedanib slow progression.
+  Renal fibrosis: End-stage in all chronic kidney diseases. No approved antifibrotic.
+
+================================================================================

@@ -1,0 +1,208 @@
+================================================================================
+                   HUMAN ANATOMY & PHYSIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ORGANIZATION OF THE HUMAN BODY
+-----------------------------------
+Levels of structural organization (smallest to largest):
+  Chemical → Cellular → Tissue → Organ → Organ System → Organism
+
+Four Tissue Types:
+- Epithelial   : Covers body surfaces and lines cavities; forms glands.
+- Connective   : Supports and connects structures (bone, blood, cartilage, fat).
+- Muscle       : Produces movement (skeletal, cardiac, smooth).
+- Nervous      : Detects stimuli and transmits signals (neurons + glia).
+
+The 11 Organ Systems:
+System              | Key Organs                  | Primary Function
+--------------------|-----------------------------|---------------------------------
+Integumentary       | Skin, hair, nails           | Protection, thermoregulation
+Skeletal            | Bones, cartilage, joints    | Support, movement, mineral storage
+Muscular            | Skeletal/cardiac/smooth m.  | Movement, posture, heat production
+Nervous             | Brain, spinal cord, nerves  | Control, sensation, communication
+Endocrine           | Hypothalamus, thyroid, etc. | Hormonal regulation
+Cardiovascular      | Heart, arteries, veins      | Transport O2, nutrients, hormones
+Lymphatic/Immune    | Lymph nodes, spleen, thymus | Immunity, fluid balance
+Respiratory         | Lungs, trachea, bronchi     | Gas exchange (O2/CO2)
+Digestive           | Stomach, intestines, liver  | Nutrient digestion & absorption
+Urinary             | Kidneys, bladder, ureters   | Waste excretion, fluid regulation
+Reproductive        | Gonads, reproductive organs | Reproduction
+
+Homeostasis:
+  Maintenance of a stable internal environment. Key regulated variables:
+  - Body temperature  : 37°C (thermoregulation via hypothalamus)
+  - Blood pH          : 7.35–7.45 (buffer systems + respiratory control)
+  - Blood glucose     : 70–100 mg/dL (insulin/glucagon from pancreas)
+  - Blood pressure    : ~120/80 mmHg (baroreceptors, kidneys, ANS)
+  Mechanism: Negative feedback loops (most common) and positive feedback loops.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. THE CARDIOVASCULAR SYSTEM
+------------------------------
+The heart is a dual pump:
+  Right side → Pulmonary circuit (heart → lungs → heart)
+  Left side  → Systemic circuit  (heart → body → heart)
+
+Cardiac Cycle:
+  Systole (contraction) → Diastole (relaxation) → repeat (~70 times/min)
+
+Cardiac Conduction System:
+  SA Node (pacemaker, 60–100 bpm) → AV Node (0.1s delay) →
+  Bundle of His → Left & Right Bundle Branches → Purkinje Fibers
+
+Blood Vessels:
+- Arteries   : Carry blood AWAY from heart; thick muscular walls; high pressure.
+- Veins      : Carry blood TO heart; thinner walls; have valves to prevent backflow.
+- Capillaries: Site of gas and nutrient exchange; one cell thick.
+
+Blood Pressure Regulation:
+  BP = Cardiac Output × Peripheral Resistance
+  Regulated by: RAAS system (kidneys), baroreceptors, sympathetic/parasympathetic NS.
+
+3. THE RESPIRATORY SYSTEM
+--------------------------
+Gas exchange occurs in the alveoli of the lungs.
+Mechanics of Breathing:
+  Inhalation: Diaphragm contracts (flattens) → thoracic volume increases →
+              pressure drops → air flows in.
+  Exhalation: Diaphragm relaxes → thoracic volume decreases → air flows out.
+
+Gas Exchange (Fick's Law of Diffusion):
+  O2 diffuses from alveoli (high pO2) into blood (low pO2).
+  CO2 diffuses from blood (high pCO2) into alveoli (low pCO2).
+
+Oxygen Transport in Blood:
+  98.5% bound to haemoglobin (Hb) in red blood cells.
+  1.5% dissolved in plasma.
+  Haemoglobin-O2 relationship: S-shaped (sigmoidal) dissociation curve.
+  Bohr effect: increased CO2, decreased pH, increased temperature → Hb releases O2.
+
+4. THE NERVOUS SYSTEM
+----------------------
+Divisions:
+  CNS  : Brain + Spinal cord (integration and processing)
+  PNS  : All nerves outside CNS
+    Somatic NS     : Voluntary control of skeletal muscles
+    Autonomic NS   : Involuntary control of organs
+      Sympathetic  : Fight-or-flight (adrenaline, increased HR, dilated pupils)
+      Parasympathetic: Rest-and-digest (acetylcholine, decreased HR)
+
+Neuron Structure:
+  Dendrites → Cell body (soma) → Axon hillock → Axon → Synaptic terminals
+
+Action Potential:
+  Resting potential : –70 mV (Na+/K+ pump maintains)
+  Depolarization    : Na+ rushes in → membrane potential rises to +30 mV
+  Repolarization    : K+ flows out → membrane returns to negative
+  Hyperpolarization : Brief overshoot below –70 mV (refractory period)
+  Saltatory conduction: AP jumps between nodes of Ranvier (myelinated axons)
+                        — speeds transmission up to 120 m/s.
+
+Synapse:
+  Action potential → Ca2+ influx → vesicles release neurotransmitter →
+  binds postsynaptic receptors → EPSP or IPSP.
+
+Key Neurotransmitters:
+- Acetylcholine (ACh)    : NMJ, parasympathetic, memory
+- Dopamine               : Reward, motor control (deficient in Parkinson's)
+- Serotonin              : Mood, appetite, sleep
+- GABA                   : Main inhibitory NT in brain
+- Glutamate              : Main excitatory NT in brain
+- Norepinephrine         : Sympathetic NS, alertness
+
+5. THE ENDOCRINE SYSTEM
+------------------------
+Gland              | Key Hormones             | Effect
+-------------------|--------------------------|-----------------------------------
+Hypothalamus       | TRH, CRH, GnRH, GHRH    | Controls anterior pituitary
+Anterior Pituitary | TSH, ACTH, GH, LH, FSH  | Controls peripheral glands
+Posterior Pituitary| ADH, Oxytocin            | Water retention, uterine contraction
+Thyroid            | T3, T4                   | Metabolic rate regulation
+Parathyroid        | PTH                      | Raises blood Ca2+
+Adrenal Cortex     | Cortisol, Aldosterone    | Stress response, Na+ retention
+Adrenal Medulla    | Epinephrine, NE          | Fight-or-flight
+Pancreas (islets)  | Insulin, Glucagon        | Blood glucose homeostasis
+Gonads             | Estrogen, Testosterone   | Sexual development, reproduction
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. RENAL PHYSIOLOGY — KIDNEY FUNCTION
+---------------------------------------
+Functional unit: Nephron (~1 million per kidney)
+Nephron regions and functions:
+  Glomerulus            : Filtration — blood pressure forces fluid into Bowman's capsule.
+  Proximal Convoluted   : Reabsorbs ~65% Na+, glucose, amino acids, water.
+  Tubule (PCT)
+  Loop of Henle         : Creates osmotic gradient in medulla.
+    Descending limb     : Permeable to water; water leaves → concentrated filtrate.
+    Ascending limb      : Impermeable to water; Na+/K+/Cl- pumped out → dilute filtrate.
+  Distal Convoluted     : Fine-tuning of Na+/K+ under aldosterone control.
+  Tubule (DCT)
+  Collecting Duct       : Water reabsorption regulated by ADH (aquaporin-2 insertion).
+
+GFR (Glomerular Filtration Rate): Normal ~125 mL/min (~180 L/day).
+Most is reabsorbed; ~1.5 L excreted as urine.
+
+RAAS Axis:
+  Low BP → kidney releases Renin → cleaves Angiotensinogen → Angiotensin I →
+  ACE (lung) converts → Angiotensin II → vasoconstriction + aldosterone release
+  → Na+ & water retention → BP rises.
+
+7. MUSCLE PHYSIOLOGY — SLIDING FILAMENT THEORY
+-------------------------------------------------
+Skeletal muscle contraction at the molecular level:
+
+1. Action potential arrives at neuromuscular junction.
+2. ACh released; binds nicotinic receptors on motor end plate.
+3. AP propagates into T-tubules → triggers Ca2+ release from SR (via RyR1).
+4. Ca2+ binds troponin C → conformational change exposes actin binding sites.
+5. Myosin heads (with ATP hydrolysed to ADP+Pi) bind actin → power stroke.
+6. ADP+Pi released → myosin pulls actin toward M-line.
+7. New ATP binds myosin → cross-bridge detaches → cycle repeats.
+8. Ca2+ pumped back into SR (SERCA pump) → relaxation.
+
+Key proteins: Actin, Myosin (thick filaments), Tropomyosin, Troponin (TnI, TnT, TnC)
+
+Muscle fibre types:
+  Type I   (slow oxidative)   : Fatigue resistant; aerobic; rich in mitochondria.
+  Type IIa (fast oxidative)   : Intermediate; mix of aerobic + anaerobic capacity.
+  Type IIx (fast glycolytic)  : Fast, powerful, fatigue quickly; few mitochondria.
+
+8. IMMUNOLOGY
+--------------
+Innate Immunity (non-specific, immediate):
+- Physical barriers (skin, mucus, cilia)
+- Phagocytes: Neutrophils, macrophages engulf pathogens.
+- NK cells: Kill virus-infected and tumour cells.
+- Complement system: Cascade of proteins → opsonisation, MAC pore formation.
+- Inflammation: Mast cells release histamine → vasodilation, increased permeability.
+
+Adaptive Immunity (specific, has memory):
+- Humoral (B cells): Activated B cells → plasma cells → secrete antibodies.
+    Antibody classes: IgM (first response), IgG (most abundant), IgA (mucosal),
+    IgE (allergy/parasites), IgD (B cell surface receptor).
+- Cell-mediated (T cells):
+    CD4+ Helper T cells: Orchestrate immune response via cytokines.
+    CD8+ Cytotoxic T cells: Kill infected/tumour cells via perforin and granzymes.
+    Regulatory T cells (Tregs): Suppress immune response to prevent autoimmunity.
+
+MHC (Major Histocompatibility Complex):
+  MHC I : On ALL nucleated cells; presents intracellular antigens to CD8+ T cells.
+  MHC II: On antigen-presenting cells (APCs); presents extracellular antigens to CD4+.
+
+[CLINICAL LINK] Autoimmune diseases arise when tolerance breaks down and the
+immune system attacks self (e.g., Type 1 diabetes — beta cells; Rheumatoid
+arthritis — joints; MS — myelin). Immunosuppressants (corticosteroids, biologics
+like anti-TNF) are key treatments.
+
+================================================================================

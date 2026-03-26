@@ -1,0 +1,159 @@
+COLLEGE PHYSICS - ELECTRODYNAMICS AND STATISTICAL MECHANICS
+============================================================
+
+CHAPTER: CLASSICAL ELECTRODYNAMICS (Maxwell's Equations)
+
+MAXWELL'S EQUATIONS IN FREE SPACE:
+∇·E⃗ = ρ/ε₀                    (Gauss's law for E)
+∇·B⃗ = 0                        (No magnetic monopoles)
+∇×E⃗ = -∂B⃗/∂t                  (Faraday's law)
+∇×B⃗ = μ₀J⃗ + μ₀ε₀∂E⃗/∂t       (Ampere-Maxwell law)
+
+IN MATTER:
+∇·D⃗ = ρ_f                     (D = ε₀E⃗ + P⃗ = εE⃗)
+∇·B⃗ = 0
+∇×E⃗ = -∂B⃗/∂t
+∇×H⃗ = J⃗_f + ∂D⃗/∂t           (H = B⃗/μ₀ - M⃗ = B⃗/μ)
+
+ELECTROMAGNETIC WAVE EQUATION:
+From Maxwell's equations in vacuum:
+∇²E⃗ = μ₀ε₀ ∂²E⃗/∂t²
+Speed: c = 1/√(μ₀ε₀) = 3×10⁸ m/s
+In medium: v = 1/√(με) = c/n
+
+ENERGY AND MOMENTUM IN EM FIELDS:
+Energy density: u = ½(ε₀E² + B²/μ₀)
+Poynting vector: S⃗ = (1/μ₀) E⃗ × B⃗ (energy flux, W/m²)
+Radiation pressure: P = S/c (for absorption), P = 2S/c (for reflection)
+EM momentum density: g⃗ = S⃗/c² = ε₀(E⃗×B⃗)
+
+POTENTIAL FORMULATION:
+B⃗ = ∇×A⃗ (magnetic vector potential)
+E⃗ = -∇φ - ∂A⃗/∂t (φ = scalar potential)
+Gauge freedom: can add ∇λ to A, -∂λ/∂t to φ.
+Lorenz gauge: ∇·A⃗ + μ₀ε₀∂φ/∂t = 0
+
+RETARDED POTENTIALS:
+φ(r,t) = (1/4πε₀) ∫ ρ(r',t_r)/|r-r'| d³r'
+t_r = t - |r-r'|/c (retarded time)
+Accounts for finite propagation speed of EM fields.
+
+RADIATION FROM ACCELERATING CHARGES:
+Larmor formula: P = q²a²/(6πε₀c³) = μ₀q²a²/(6πc)
+Radiated power proportional to q² and a².
+Applications: synchrotron radiation, bremsstrahlung, antenna theory.
+
+MULTIPOLE EXPANSION:
+Far-field radiation:
+- Electric dipole: P ∝ ω⁴|p|² (p = dipole moment)
+- Magnetic dipole: P ∝ ω⁴|m|²/c²
+- Leading order usually electric dipole.
+
+SKIN EFFECT:
+In good conductor, EM fields penetrate only to depth:
+δ = √(2/μσω) (skin depth)
+At high frequencies, current flows only near surface.
+
+---
+
+CHAPTER: STATISTICAL MECHANICS
+
+FOUNDATIONS:
+Goal: derive thermodynamic properties from microscopic behavior.
+
+Microstates vs Macrostates:
+- Microstate: complete specification of all particle positions and momenta.
+- Macrostate: macroscopic description (P, V, T, N).
+- Many microstates correspond to one macrostate.
+- Probability ∝ number of microstates (Ω).
+
+BOLTZMANN ENTROPY:
+S = k_B ln Ω
+k_B = 1.38 × 10⁻²³ J/K (Boltzmann constant)
+Entropy is a measure of disorder/multiplicity.
+
+CANONICAL ENSEMBLE:
+System at fixed T, V, N in contact with heat reservoir.
+Boltzmann factor: P_i = e^(-E_i/kT)/Z
+Partition function: Z = Σ_i e^(-E_i/kT)
+Free energy: F = -kT ln Z
+Average energy: <E> = -∂(ln Z)/∂β (β = 1/kT)
+Entropy: S = -∂F/∂T
+Pressure: P = -∂F/∂V
+
+GRAND CANONICAL ENSEMBLE:
+System at fixed T, V, μ (chemical potential).
+Grand partition function: Z_G = Σ e^(-β(E_i - μN_i))
+Average particle number: <N> = kT ∂(ln Z_G)/∂μ
+
+EQUIPARTITION THEOREM:
+Each quadratic degree of freedom contributes ½kT to average energy.
+Total energy: U = (f/2)NkT = (f/2)nRT
+Heat capacity: Cᵥ = (f/2)R per mole.
+
+Monatomic ideal gas: f=3 (3 translational), U = 3/2 NkT, Cᵥ = 3/2 R
+Diatomic: f=5 (3 trans + 2 rot), U = 5/2 NkT, Cᵥ = 5/2 R (at room T)
+
+IDEAL GAS FROM STATISTICAL MECHANICS:
+PV = NkT (derived from Z = V^N/(N!λ³ᴺ))
+Chemical potential: μ = kT ln(n/n_Q) (n_Q = quantum concentration)
+
+QUANTUM STATISTICS:
+Fermions (half-integer spin): Fermi-Dirac statistics.
+f_FD(ε) = 1/(e^((ε-μ)/kT) + 1)
+At T=0: sharp cutoff at ε = E_F (Fermi energy).
+
+Bosons (integer spin): Bose-Einstein statistics.
+f_BE(ε) = 1/(e^((ε-μ)/kT) - 1)
+At low T: Bose-Einstein condensation (all particles in ground state).
+
+Photons (bosons, μ=0):
+f_photon(ε) = 1/(e^(ε/kT) - 1)
+Planck distribution for blackbody radiation.
+u(ω) = ℏω³/(π²c³) × 1/(e^(ℏω/kT) - 1)
+
+BLACKBODY RADIATION:
+Stefan-Boltzmann law: P = σT⁴ (σ = 5.67×10⁻⁸ W/m²K⁴)
+Wien's displacement law: λ_max T = 2.898 × 10⁻³ m·K
+Rayleigh-Jeans (classical, fails at high ω): u(ω) ∝ ω²kT
+Planck resolved UV catastrophe with quantization.
+
+DEBYE MODEL OF SOLIDS:
+Treats vibrations as phonons (quanta of sound).
+Debye temperature: θ_D = ℏω_D/k
+At high T: Cᵥ → 3R (Dulong-Petit law).
+At low T: Cᵥ ∝ T³ (matches experiment well).
+
+PHASE TRANSITIONS:
+First order: discontinuous change in first derivative of G (e.g., melting, boiling).
+Second order (continuous): continuous change but discontinuous in second derivative (e.g., ferromagnet at Curie point).
+Order parameter: quantity that is zero above Tc and non-zero below.
+
+ISING MODEL (simplest model of magnetism):
+H = -J Σ s_i s_j - B Σ s_i (s_i = ±1)
+1D: no phase transition.
+2D: phase transition at kT_c/J = 2/ln(1+√2) ≈ 2.269 (Onsager solution).
+Mean-field theory: overestimates T_c.
+
+THERMODYNAMIC POTENTIALS:
+Internal energy: U = TS - PV + μN, dU = TdS - PdV + μdN
+Helmholtz: F = U - TS, dF = -SdT - PdV + μdN
+Gibbs: G = U - TS + PV, dG = -SdT + VdP + μdN
+Enthalpy: H = U + PV, dH = TdS + VdP + μdN
+
+Maxwell relations (from exactness of differentials):
+(∂T/∂V)_S = -(∂P/∂S)_V
+(∂T/∂P)_S = (∂V/∂S)_P
+(∂S/∂V)_T = (∂P/∂T)_V [most useful]
+(∂S/∂P)_T = -(∂V/∂T)_P
+
+IMPORTANT FORMULAS:
+- S = k ln Ω
+- P_i = e^(-βE_i)/Z
+- Z = Σ e^(-βE_i)
+- F = -kT ln Z
+- <E> = -∂ ln Z/∂β
+- U = (f/2)NkT (equipartition)
+- Planck: u(ω) = ℏω³/(π²c³(e^(ℏω/kT)-1))
+- Stefan-Boltzmann: P = σT⁴
+- Wien: λ_max T = 2.898 × 10⁻³ m·K

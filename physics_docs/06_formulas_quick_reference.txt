@@ -1,0 +1,171 @@
+CLASS 10 PHYSICS - MASTER FORMULA SHEET AND QUICK REFERENCE
+============================================================
+
+PHYSICAL CONSTANTS
+- Speed of light in vacuum: c = 3 × 10⁸ m/s
+- Charge on electron: e = 1.6 × 10⁻¹⁹ C
+- Planck's constant: h = 6.63 × 10⁻³⁴ J·s
+- Near point of normal human eye: 25 cm
+- Far point of normal human eye: infinity
+- Frequency of AC in India: 50 Hz
+- Domestic voltage in India: 220 V
+
+CHAPTER 1: LIGHT - REFLECTION AND REFRACTION
+
+Mirror Formula: 1/v + 1/u = 1/f
+Relation: f = R/2 (or R = 2f)
+Magnification (mirror): m = -v/u = h'/h
+Snell's Law: n₁ sin i = n₂ sin r
+Refractive index: n = c/v = sin i / sin r
+Lens Formula: 1/v - 1/u = 1/f
+Magnification (lens): m = v/u = h'/h
+Power of lens: P = 1/f(in meters), unit = Dioptre (D)
+Combined power: P = P₁ + P₂ + P₃
+
+Sign Convention for Mirrors and Lenses:
+- Distances measured from pole/optical centre.
+- Direction of incident light: positive (+)
+- Against incident light: negative (-)
+- Concave mirror: f = negative, R = negative
+- Convex mirror: f = positive, R = positive
+- Convex lens: f = positive
+- Concave lens: f = negative
+
+Refractive Indices:
+- Air: ~1
+- Water: 1.33
+- Glass: 1.5
+- Diamond: 2.42
+
+CHAPTER 2: HUMAN EYE AND COLOURFUL WORLD
+
+Near point (normal eye) = 25 cm
+Far point (normal eye) = infinity
+
+Defects and Corrections:
+- Myopia: concave lens (negative power)
+- Hypermetropia: convex lens (positive power)
+- Presbyopia: bifocal lens
+
+Spectrum order: VIBGYOR (Violet to Red, increasing wavelength)
+Scattering: shorter wavelengths scatter more (∝ 1/λ⁴)
+- Blue sky: blue light scattered most
+- Red sunrise/sunset: other wavelengths scattered away
+
+CHAPTER 3: ELECTRICITY
+
+Electric Current: I = Q/t (unit: Ampere, A)
+Potential Difference: V = W/Q (unit: Volt, V)
+Ohm's Law: V = IR
+Resistance: R = V/I (unit: Ohm, Ω)
+Resistivity: R = ρl/A → ρ = RA/l (unit: Ω·m)
+
+Resistors in Series: R_s = R₁ + R₂ + R₃ + ...
+Resistors in Parallel: 1/R_p = 1/R₁ + 1/R₂ + 1/R₃ + ...
+
+Electric Power:
+P = VI = I²R = V²/R (unit: Watt, W)
+
+Electrical Energy:
+E = Pt = VIt = I²Rt = V²t/R (unit: Joule, J)
+Commercial unit: 1 kWh = 3.6 × 10⁶ J
+
+Joule's Heating Law:
+H = I²Rt = VIt = V²t/R (unit: Joule, J)
+
+CHAPTER 4: MAGNETIC EFFECTS OF ELECTRIC CURRENT
+
+Force on current-carrying conductor:
+F = BIl sin θ
+For perpendicular conductor: F = BIl
+
+Rules:
+- Right-Hand Thumb Rule: direction of B around a current wire
+- Fleming's Left-Hand Rule: direction of force on conductor (Motor)
+- Fleming's Right-Hand Rule: direction of induced current (Generator)
+
+KEY DEVICES SUMMARY:
+- Electromagnet: Solenoid + soft iron core
+- Electric Motor: Electrical energy → Mechanical energy (uses commutator)
+- Electric Generator: Mechanical energy → Electrical energy (uses slip rings for AC)
+
+Electromagnetic Induction:
+- Changing magnetic flux induces EMF.
+- More turns, faster change, stronger field → more induced EMF.
+
+AC in India: 220 V, 50 Hz (frequency)
+Household wiring:
+- Live wire: Red (220 V)
+- Neutral wire: Black (0 V)
+- Earth wire: Green (safety)
+
+CHAPTER 5: SOURCES OF ENERGY
+
+Energy Conversions:
+- Thermal plant: Chemical (fuel) → Heat → Kinetic (steam) → Electrical
+- Hydro plant: Potential (water) → Kinetic → Electrical
+- Solar cell: Light → Electrical (direct)
+- Wind turbine: Kinetic (wind) → Electrical
+- Nuclear: Nuclear (fission/fusion) → Heat → Kinetic → Electrical
+
+Biogas composition: ~55-70% methane (CH₄)
+
+Solar constant: ~1400 W/m² (at earth's surface)
+
+Nuclear reactions:
+- Fission: Heavy nucleus splits (e.g., U-235)
+- Fusion: Light nuclei combine (e.g., H + H → He)
+- E = mc² (Einstein's mass-energy equivalence)
+
+IMPORTANT DEFINITIONS
+
+Reflection: Bouncing back of light from a surface.
+Refraction: Bending of light as it passes from one medium to another.
+Dispersion: Splitting of white light into constituent colors by a prism.
+Scattering: Redirection of light by particles in different directions.
+Total Internal Reflection: Complete reflection of light within a denser medium when angle exceeds critical angle.
+Power of accommodation: Ability of eye to adjust focal length to see objects at different distances.
+Myopia: Cannot see distant objects clearly (corrected by concave lens).
+Hypermetropia: Cannot see nearby objects clearly (corrected by convex lens).
+Resistance: Opposition to flow of electric current.
+Resistivity: Inherent property of a material to resist current flow.
+Ohm's Law: V = IR (at constant temperature).
+Electromagnetic Induction: Production of EMF due to changing magnetic flux.
+Electric Motor: Converts electrical energy to mechanical energy.
+Electric Generator: Converts mechanical energy to electrical energy.
+Renewable Energy: Energy from sources that are naturally replenished (solar, wind, hydro, biogas).
+Nuclear Fission: Splitting of heavy nucleus to release energy.
+Nuclear Fusion: Combining of light nuclei to release energy.
+Fossil Fuels: Non-renewable fuels formed from ancient organisms (coal, petroleum, natural gas).
+Biogas: Gas (mainly methane) produced by anaerobic decomposition of organic waste.
+Tyndall Effect: Scattering of light by colloidal particles making the beam visible.
+Rayleigh Scattering: Scattering of light by fine particles (inversely proportional to λ⁴).
+
+COMMON MISTAKES TO AVOID
+1. In mirror formula, sign convention must be applied correctly (u is always negative for real objects).
+2. Lens formula is 1/v - 1/u = 1/f (note the minus, unlike mirror formula).
+3. Magnification for mirrors is m = -v/u; for lenses m = +v/u.
+4. In parallel circuits: current divides, voltage is same across all.
+5. In series circuits: current is same, voltage divides.
+6. Fuse is always in series, voltmeter always in parallel, ammeter always in series.
+7. Concave lens always forms virtual, erect, diminished image.
+8. Convex mirror always forms virtual, erect, diminished image.
+9. Myopia = concave lens; Hypermetropia = convex lens (easy to confuse!).
+10. Motor uses Left-hand rule; Generator uses Right-hand rule.
+
+UNITS QUICK REFERENCE
+- Length: metre (m)
+- Mass: kilogram (kg)
+- Time: second (s)
+- Current: Ampere (A)
+- Voltage: Volt (V)
+- Resistance: Ohm (Ω)
+- Power: Watt (W)
+- Energy: Joule (J) or kilowatt-hour (kWh)
+- Frequency: Hertz (Hz)
+- Focal length: metre (m) or centimetre (cm)
+- Power of lens: Dioptre (D)
+- Magnetic field: Tesla (T)
+- Resistivity: Ohm-metre (Ω·m)
+- Charge: Coulomb (C)
+- Wavelength: metre (m) or nanometre (nm)

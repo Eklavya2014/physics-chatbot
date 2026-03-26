@@ -1,0 +1,259 @@
+ELECTROCHEMISTRY - COMPREHENSIVE GUIDE
+========================================
+
+PART 1: FUNDAMENTALS
+
+REDOX REACTIONS:
+Oxidation: loss of electrons (OIL — Oxidation Is Loss). Increase in oxidation number.
+Reduction: gain of electrons (RIG — Reduction Is Gain). Decrease in oxidation number.
+Oxidizing agent: causes oxidation, is itself reduced. Reduced in reaction.
+Reducing agent: causes reduction, is itself oxidized. Oxidized in reaction.
+
+OXIDATION NUMBER RULES:
+1. Free element = 0 (Na, Cl₂, O₂, Fe).
+2. Monoatomic ion = ionic charge (Na⁺ = +1, Cl⁻ = -1).
+3. H = +1 (exception: metal hydrides like NaH, H = -1).
+4. O = -2 (exceptions: OF₂ = +2, H₂O₂ = -1, superoxides = -½).
+5. F = -1 always.
+6. Sum of oxidation numbers = charge on species.
+   For neutral: sum = 0. For ion: sum = ionic charge.
+
+BALANCING REDOX EQUATIONS:
+Half-reaction method:
+1. Separate into oxidation and reduction half-reactions.
+2. Balance atoms other than O and H.
+3. Balance O by adding H₂O.
+4. Balance H by adding H⁺ (acidic) or OH⁻ (basic).
+5. Balance charge by adding electrons.
+6. Multiply half-reactions so electrons cancel.
+7. Add half-reactions together.
+
+Example (acidic): MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺
+Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O
+Oxidation: Fe²⁺ → Fe³⁺ + e⁻ (×5)
+Overall: MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺
+
+ELECTROCHEMICAL SERIES (Selected, in order of decreasing reduction potential):
+F₂ + 2e⁻ → 2F⁻           +2.87 V (strongest oxidizing agent)
+MnO₄⁻+8H⁺+5e⁻ → Mn²⁺+4H₂O  +1.51 V
+Cl₂ + 2e⁻ → 2Cl⁻          +1.36 V
+Cr₂O₇²⁻+14H⁺+6e⁻ → 2Cr³⁺  +1.33 V
+O₂+4H⁺+4e⁻ → 2H₂O         +1.23 V
+Br₂ + 2e⁻ → 2Br⁻           +1.07 V
+NO₃⁻+4H⁺+3e⁻ → NO+2H₂O    +0.96 V
+Ag⁺ + e⁻ → Ag              +0.80 V
+Fe³⁺ + e⁻ → Fe²⁺           +0.77 V
+I₂ + 2e⁻ → 2I⁻             +0.54 V
+Cu²⁺ + 2e⁻ → Cu            +0.34 V
+2H⁺ + 2e⁻ → H₂             0.00 V (SHE reference)
+Fe²⁺ + 2e⁻ → Fe            -0.44 V
+Zn²⁺ + 2e⁻ → Zn            -0.76 V
+Al³⁺ + 3e⁻ → Al            -1.66 V
+Mg²⁺ + 2e⁻ → Mg            -2.37 V
+Na⁺ + e⁻ → Na              -2.71 V
+Li⁺ + e⁻ → Li              -3.05 V (strongest reducing agent)
+
+GALVANIC CELL IN DETAIL:
+Daniell Cell: Zn(s)|Zn²⁺(aq)||Cu²⁺(aq)|Cu(s)
+Anode (−): Zn → Zn²⁺ + 2e⁻ (oxidation, E° = −(−0.76) = +0.76 V)
+Cathode (+): Cu²⁺ + 2e⁻ → Cu (reduction, E° = +0.34 V)
+E°cell = E°cathode − E°anode = 0.34 − (−0.76) = +1.10 V
+
+Cell notation: Zn|Zn²⁺||Cu²⁺|Cu
+| = phase boundary, || = salt bridge
+
+Salt bridge: provides electrical neutrality by allowing ion migration (KCl, KNO₃ usually).
+Without salt bridge: charge buildup stops current flow.
+
+NERNST EQUATION (DETAILED):
+E = E° − (RT/nF) ln Q = E° − (0.0592/n) log Q at 25°C
+At equilibrium: E = 0 → E° = (0.0592/n) log K
+ΔG° = −nFE° (F = 96485 C/mol)
+ΔG = −nFE
+
+Applications:
+Concentration cells: E = (0.0592/n) log(C₁/C₂). E° = 0.
+pH measurement with hydrogen electrode: E = −0.0592 pH
+Cell potential at non-standard concentrations.
+
+ELECTROLYTIC CELLS:
+External power source drives non-spontaneous reactions.
+Anode: oxidation (+). Cathode: reduction (−). (Same as galvanic cell!)
+Key difference: in galvanic, anode is negative; in electrolytic, anode is positive (connected to +).
+
+FARADAY'S LAWS:
+First Law: Mass deposited ∝ charge passed. m = ZQ = ZIt
+Second Law: Mass ∝ equivalent weight (molar mass/n).
+Combined: m = MIt/(nF) = E×Q/F (E = equivalent weight = M/n)
+
+Calculations:
+96485 C deposits 1 mole equivalents of element.
+Time to deposit m grams: t = mnF/(MI)
+Current for rate r (g/s): I = rnF/M
+
+ELECTROLYSIS OF WATER:
+Cathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻ (or 2H⁺ + 2e⁻ → H₂ in acid)
+Anode: 2H₂O → O₂ + 4H⁺ + 4e⁻ (or 4OH⁻ → O₂ + 2H₂O + 4e⁻ in base)
+H₂:O₂ volume ratio = 2:1 (by moles and by volume)
+
+ELECTROLYSIS OF BRINE (NaCl solution):
+Cathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻ (H₂ preferred over Na deposition)
+Anode: 2Cl⁻ → Cl₂ + 2e⁻ (Cl₂ preferred over O₂ at high Cl⁻ concentration)
+Overall: 2NaCl + 2H₂O → Cl₂ + H₂ + 2NaOH (chlor-alkali process)
+Products: Cl₂ (bleaching, PVC), H₂ (fuel, NH₃ synthesis), NaOH (many uses).
+
+CONDUCTANCE IN DETAIL:
+Resistance R = ρ × l/A (ρ = resistivity, l = length, A = cross-section area)
+Conductance G = 1/R (Siemens, S)
+Conductivity κ = 1/ρ = G × l/A (S/m or S/cm)
+Cell constant = l/A (cm⁻¹)
+
+Molar conductivity Λₘ = κ/c (c in mol/m³) = 1000κ/c (c in mol/L)
+Units: S·cm²/mol
+
+Variation with concentration:
+Strong electrolytes: Λₘ = Λ°ₘ − b√c (Debye-Hückel-Onsager equation)
+Weak electrolytes: Λₘ increases sharply as c→0 (Kohlrausch's law at infinite dilution)
+
+Kohlrausch's Law: Λ°ₘ(electrolyte) = ν₊λ°₊ + ν₋λ°₋
+λ°(H⁺) = 349.6, λ°(OH⁻) = 198.6, λ°(K⁺) = 73.5, λ°(Na⁺) = 50.1, λ°(Cl⁻) = 76.4 S·cm²/mol
+
+Degree of dissociation from conductance:
+α = Λₘ/Λ°ₘ
+Ka = cα²/(1−α) ≈ cα² (when α << 1)
+
+BATTERIES (DETAILED):
+
+Dry Cell (Leclanché cell):
+Anode (−): Zn(s) → Zn²⁺ + 2e⁻
+Cathode (+): MnO₂ + NH₄⁺ + e⁻ → MnO(OH) + NH₃
+E = 1.5 V. Not rechargeable. Loses voltage under heavy use.
+
+Alkaline Battery (improved dry cell):
+Uses KOH paste (alkaline). Better performance, longer shelf life.
+Same electrodes: Zn and MnO₂.
+
+Lead Storage Battery (car battery):
+Anode: Pb + SO₄²⁻ → PbSO₄ + 2e⁻
+Cathode: PbO₂ + SO₄²⁻ + 4H⁺ + 2e⁻ → PbSO₄ + 2H₂O
+E = 2V per cell. 6 cells → 12V car battery.
+Charging (reverse): PbSO₄ → Pb and PbO₂. H₂SO₄ regenerated.
+Specific gravity of H₂SO₄ indicates state of charge (higher SG = more charged).
+
+Nickel-Cadmium (NiCd):
+Anode: Cd + 2OH⁻ → Cd(OH)₂ + 2e⁻
+Cathode: NiO(OH) + H₂O + e⁻ → Ni(OH)₂ + OH⁻
+E = 1.2V. Rechargeable. Memory effect problem.
+
+Lithium Ion (Li-ion):
+Anode: LiC₆ (graphite intercalation)
+Cathode: LiCoO₂
+Li⁺ ions move between electrodes during charge/discharge.
+E ≈ 3.7V. Lightweight, high energy density, no memory effect. Used in phones, laptops, EVs.
+
+Hydrogen Fuel Cell:
+Anode: H₂ → 2H⁺ + 2e⁻
+Cathode: O₂ + 4H⁺ + 4e⁻ → 2H₂O
+Overall: 2H₂ + O₂ → 2H₂O + electricity + heat
+Continuous as long as fuel (H₂) supplied. High efficiency (~70%).
+Used in some buses, cars, spacecraft.
+
+---
+
+CHEMICAL KINETICS - COMPREHENSIVE GUIDE
+=========================================
+
+RATE OF REACTION:
+Average rate = −Δ[A]/Δt = +Δ[B]/Δt (depends on stoichiometry).
+For aA + bB → cC: rate = −(1/a)d[A]/dt = −(1/b)d[B]/dt = (1/c)d[C]/dt.
+Instantaneous rate: slope of tangent to concentration-time curve.
+Initial rate: rate at t = 0 (most commonly measured).
+
+RATE LAW:
+Rate = k[A]ᵐ[B]ⁿ (empirical, must be determined experimentally).
+k = rate constant. Depends on temperature, catalyst. Independent of concentration.
+m, n = partial orders. Do NOT come from stoichiometry (except for elementary reactions).
+Overall order = m + n.
+
+Units of k:
+Zero order: mol/L/s = M/s.
+First order: 1/s = s⁻¹.
+Second order: L/mol/s = M⁻¹s⁻¹.
+nth order: mol¹⁻ⁿ·L^(n-1)·s⁻¹.
+
+ZERO-ORDER REACTIONS:
+Rate = k (constant, independent of concentration).
+[A] = [A]₀ − kt (linear decrease).
+t₁/₂ = [A]₀/(2k) (depends on initial concentration).
+Graph: [A] vs t → straight line.
+Examples: surface catalyzed reactions (saturation), photochemical reactions.
+
+FIRST-ORDER REACTIONS:
+Rate = k[A].
+[A] = [A]₀ e^(−kt) → ln[A] = ln[A]₀ − kt.
+t₁/₂ = ln2/k = 0.693/k (independent of concentration!).
+Graph: ln[A] vs t → straight line with slope −k.
+Examples: radioactive decay, N₂O₅ decomposition, most unimolecular decompositions.
+
+SECOND-ORDER REACTIONS:
+Rate = k[A]².
+1/[A] = 1/[A]₀ + kt.
+t₁/₂ = 1/(k[A]₀) (depends on initial concentration).
+Graph: 1/[A] vs t → straight line.
+Also: Rate = k[A][B] (second order overall, first order in each).
+
+TEMPERATURE DEPENDENCE — ARRHENIUS EQUATION:
+k = A × e^(−Eₐ/RT)
+ln k = ln A − Eₐ/RT
+Eₐ = activation energy (J/mol). A = pre-exponential (frequency) factor.
+Plot of ln k vs 1/T: slope = −Eₐ/R, intercept = ln A.
+Two-temperature form: ln(k₂/k₁) = (Eₐ/R)(1/T₁ − 1/T₂)
+Rule of thumb: rate doubles for every 10°C rise (for Eₐ ≈ 50 kJ/mol near 300 K).
+
+REACTION MECHANISMS:
+Elementary step: single molecular event.
+Molecularity: number of species in elementary step.
+Unimolecular: one molecule (first order). A → products.
+Bimolecular: two molecules (second order). A + B → products.
+Termolecular: three molecules (third order, rare).
+
+Rate-determining step (RDS): slowest step determines overall rate.
+Rate law comes from RDS.
+Pre-equilibrium assumption: fast equilibrium before RDS.
+
+STEADY-STATE APPROXIMATION:
+For reaction intermediates (short-lived species):
+d[intermediate]/dt ≈ 0 (rate of formation = rate of consumption).
+Used to derive rate laws for complex mechanisms.
+
+CATALYST:
+Increases rate by providing alternative pathway with lower Eₐ.
+NOT consumed overall. Does NOT change ΔG or ΔH or equilibrium position.
+Does NOT change Eₐ of reverse reaction by same amount? YES it does — lowers both forward and reverse Eₐ equally, so K unchanged.
+
+Homogeneous: same phase. H₂SO₄ in esterification, NO in SO₂ oxidation.
+Heterogeneous: different phase (solid catalyst + gas/liquid reactants).
+Steps: adsorption → surface reaction → desorption.
+Examples: Fe (Haber process), V₂O₅ (Contact process), Pt/Pd (hydrogenation, catalytic converter).
+Zeolites: shape-selective catalysts (pore size controls which molecules react).
+
+Enzyme kinetics (Michaelis-Menten):
+E + S ⇌ ES → E + P
+Rate = Vmax[S]/(Km + [S])
+Vmax = maximum rate (enzyme saturated). Km = Michaelis constant (= [S] at half Vmax).
+Km low = high affinity. Lineweaver-Burk plot: 1/v vs 1/[S] → straight line.
+Competitive inhibition: increases apparent Km, Vmax unchanged.
+Non-competitive: decreases Vmax, Km unchanged.
+
+CHAIN REACTIONS:
+Initiation: produces reactive intermediates (radicals).
+Propagation: intermediates react with reactants, regenerating new intermediates.
+Termination: removal of intermediates.
+Branching chain reactions: one intermediate produces > 1 new intermediate → explosion.
+
+PHOTOCHEMICAL REACTIONS:
+Initiated by absorption of light photons.
+Quantum yield Φ = molecules reacted / photons absorbed.
+Φ > 1: chain reaction. Φ < 1: deactivation processes.
+Beer-Lambert: log(I₀/I) = εcl.
+Examples: H₂ + Cl₂ (chain, Φ = 10⁶), photography (AgBr), ozone chemistry.

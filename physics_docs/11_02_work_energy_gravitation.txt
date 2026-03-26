@@ -1,0 +1,182 @@
+CLASS 11 PHYSICS - WORK, ENERGY, POWER AND GRAVITATION
+=======================================================
+
+CHAPTER: WORK, ENERGY AND POWER
+
+WORK:
+Work is done when a force displaces a body.
+W = F⃗·s⃗ = Fs cos θ
+Where θ = angle between force and displacement.
+- Work is a scalar quantity.
+- SI unit: Joule (J) = N·m
+- Work is positive when force and displacement are in same direction (θ < 90°).
+- Work is negative when force opposes displacement (θ > 90°).
+- Zero work: force ⊥ displacement (θ = 90°), e.g., centripetal force.
+
+KINETIC ENERGY (KE):
+Energy possessed by a body due to its motion.
+KE = ½mv²
+Work-Energy Theorem: W_net = ΔKE = ½mv² - ½mu²
+
+POTENTIAL ENERGY (PE):
+Energy stored in a body due to its position or configuration.
+- Gravitational PE: U = mgh (near earth's surface)
+- Elastic PE (spring): U = ½kx² (k = spring constant, x = compression/extension)
+
+CONSERVATIVE AND NON-CONSERVATIVE FORCES:
+- Conservative force: work done is path-independent (gravity, spring force, electrostatic force).
+  Work done in a closed path = 0.
+- Non-conservative force: work done depends on path (friction, air resistance).
+
+CONSERVATION OF MECHANICAL ENERGY:
+For conservative forces: KE + PE = constant
+½mv² + mgh = constant
+(Only valid when no non-conservative forces act)
+
+POWER:
+Rate of doing work.
+P = W/t = F·v = F·v cos θ
+SI unit: Watt (W) = J/s
+1 horsepower (hp) = 746 W
+1 kWh = 3.6 × 10⁶ J
+
+COLLISIONS:
+- Elastic collision: both KE and momentum conserved.
+- Inelastic collision: momentum conserved, KE not conserved.
+- Perfectly inelastic: objects stick together after collision.
+
+For elastic collision (1D) between masses m₁ and m₂:
+v₁' = (m₁-m₂)u₁/(m₁+m₂) + 2m₂u₂/(m₁+m₂)
+v₂' = 2m₁u₁/(m₁+m₂) + (m₂-m₁)u₂/(m₁+m₂)
+
+Special cases:
+- Equal masses: velocities exchange.
+- m₁ >> m₂: heavy body barely slows; light body bounces back at ~2u₁.
+- m₂ >> m₁: light body bounces back; heavy body barely moves.
+
+Coefficient of restitution: e = relative velocity of separation / relative velocity of approach
+- Elastic: e = 1
+- Perfectly inelastic: e = 0
+- Inelastic: 0 < e < 1
+
+---
+
+CHAPTER: SYSTEM OF PARTICLES AND ROTATIONAL MOTION
+
+CENTRE OF MASS:
+x_cm = (m₁x₁ + m₂x₂ + ...)/( m₁ + m₂ + ...)
+For uniform bodies: CM is at geometric centre.
+
+Newton's 2nd law for system: F_ext = Ma_cm
+
+TORQUE (τ):
+τ⃗ = r⃗ × F⃗, |τ| = rF sin θ
+Torque causes rotational acceleration.
+SI unit: N·m
+
+MOMENT OF INERTIA (I):
+Rotational analogue of mass.
+I = Σmᵢrᵢ² (for discrete masses)
+I = ∫r² dm (for continuous bodies)
+
+Moments of inertia of common bodies (about axis of symmetry):
+- Thin rod (about centre): I = ML²/12
+- Thin rod (about end): I = ML²/3
+- Solid sphere: I = 2MR²/5
+- Hollow sphere: I = 2MR²/3
+- Solid cylinder/disk: I = MR²/2
+- Hollow cylinder/ring: I = MR²
+- Rectangular plate: I = M(a²+b²)/12
+
+Parallel axis theorem: I = I_cm + Md²
+Perpendicular axis theorem (for planar bodies): I_z = I_x + I_y
+
+ANGULAR MOMENTUM (L):
+L⃗ = r⃗ × p⃗ = Iω
+τ = dL/dt
+Conservation of angular momentum: if τ_ext = 0, L = Iω = constant.
+Example: Figure skater spinning faster when arms pulled in (I decreases → ω increases).
+
+ROTATIONAL EQUATIONS (analogous to linear):
+- Linear → Rotational
+- x → θ
+- v → ω
+- a → α
+- F → τ
+- m → I
+- p → L
+- F=ma → τ=Iα
+- KE=½mv² → KE=½Iω²
+
+Rolling motion (without slipping):
+v_cm = Rω (condition for pure rolling)
+KE_total = ½mv² + ½Iω² = ½mv²(1 + I/mR²)
+
+---
+
+CHAPTER: GRAVITATION
+
+NEWTON'S LAW OF UNIVERSAL GRAVITATION:
+F = Gm₁m₂/r²
+G = 6.67 × 10⁻¹¹ N·m²/kg² (Universal gravitational constant)
+Force is always attractive, acts along the line joining centres.
+
+GRAVITATIONAL FIELD INTENSITY:
+g = F/m = GM/r²
+Near earth surface: g = 9.8 m/s²
+
+VARIATION OF g:
+1. With altitude (h): g_h = g(1 - 2h/R) for h << R
+   Exact: g_h = gR²/(R+h)²
+2. With depth (d): g_d = g(1 - d/R)
+   At centre of earth: g = 0
+3. With latitude (φ): g_φ = g - ω²R cos²φ
+   g is maximum at poles, minimum at equator.
+4. Due to shape: earth is oblate spheroid, so g is slightly more at poles.
+
+GRAVITATIONAL POTENTIAL ENERGY:
+U = -GMm/r (negative because gravity is attractive)
+At earth's surface: U = -GMm/R
+
+ESCAPE VELOCITY:
+Minimum velocity needed to escape earth's gravitational field.
+v_e = √(2GM/R) = √(2gR) ≈ 11.2 km/s
+
+ORBITAL VELOCITY:
+For satellite in circular orbit at height h:
+v_o = √(GM/(R+h)) ≈ √(gR²/(R+h))
+For near-earth orbit (h << R): v_o = √(gR) ≈ 7.9 km/s
+
+NOTE: v_e = √2 × v_o (for near earth orbit)
+
+KEPLER'S LAWS OF PLANETARY MOTION:
+1. Law of Orbits: All planets move in elliptical orbits with the sun at one focus.
+2. Law of Areas: A line joining a planet to the sun sweeps equal areas in equal times.
+   (Consequence: planet moves faster when closer to sun - conservation of angular momentum)
+3. Law of Periods: T² ∝ r³ (T² = 4π²r³/GM)
+   T = orbital period, r = semi-major axis.
+
+GEOSTATIONARY SATELLITES:
+- Orbit in equatorial plane from west to east.
+- Time period = 24 hours (same as earth's rotation).
+- Height ≈ 36,000 km above earth's surface.
+- Appear stationary from earth's surface.
+- Used for communication and weather observation.
+
+GRAVITATIONAL POTENTIAL:
+V = -GM/r (energy per unit mass)
+Relationship: g = -dV/dr
+
+BINDING ENERGY OF SATELLITE:
+BE = GMm/(2r) = ½|Total energy|
+Total energy = KE + PE = -GMm/(2r) [negative, bound system]
+
+IMPORTANT FORMULAS:
+- F = Gm₁m₂/r²
+- g = GM/R²
+- v_escape = √(2gR) = 11.2 km/s
+- v_orbital = √(gR) ≈ 7.9 km/s
+- T² = 4π²r³/GM (Kepler's 3rd law)
+- U = -GMm/r
+- g_h = g(R/(R+h))²
+- g_d = g(1-d/R)

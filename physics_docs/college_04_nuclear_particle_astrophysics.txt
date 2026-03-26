@@ -1,0 +1,169 @@
+COLLEGE PHYSICS - NUCLEAR, PARTICLE PHYSICS AND ASTROPHYSICS
+=============================================================
+
+CHAPTER: ADVANCED NUCLEAR PHYSICS
+
+NUCLEAR FORCE:
+- Short range (~2 fm), strongest known force.
+- Charge independent (same between p-p, p-n, n-n).
+- Saturates: each nucleon interacts only with neighbors.
+- Spin dependent: stronger when spins are parallel.
+- Meson exchange: Yukawa proposed π mesons as carriers.
+
+SEMI-EMPIRICAL MASS FORMULA (Bethe-Weizsäcker):
+BE = aᵥA - aₛA^(2/3) - a_c Z(Z-1)/A^(1/3) - a_a(A-2Z)²/A ± δ
+- Volume term (aᵥA): all nucleons bound by neighbors.
+- Surface term (aₛA^(2/3)): surface nucleons less bound.
+- Coulomb term: proton-proton repulsion.
+- Asymmetry term: energetically favorable when N = Z.
+- Pairing term (δ): even-even nuclei most stable.
+
+NUCLEAR REACTIONS:
+Q value: Q = (m_reactants - m_products)c²
+Q > 0: exothermic (energy released)
+Q < 0: endothermic (energy absorbed, threshold reaction)
+
+Cross section (σ): measure of reaction probability. Units: barn (1 b = 10⁻²⁸ m²)
+
+FISSION:
+Heavy nucleus (A > 200) splits into two medium nuclei.
+U-235 + n → Ba-141 + Kr-92 + 3n + 200 MeV
+Chain reaction: each fission produces 2-3 neutrons which can cause further fissions.
+Critical mass: minimum mass for self-sustaining chain reaction.
+Moderation: slow neutrons more effective (water, heavy water, graphite).
+
+NUCLEAR REACTOR:
+- Fuel: enriched U-235 (3-5% in U-238).
+- Moderator: slows neutrons (H₂O, D₂O, graphite).
+- Control rods: absorb neutrons (Cd, B) to control reaction rate.
+- Coolant: removes heat (H₂O, D₂O, CO₂, liquid Na).
+- Reflector: reduces neutron leakage.
+Types: PWR, BWR, CANDU, fast breeder reactor.
+
+FUSION:
+Light nuclei combine at extremely high temperature (10⁷-10⁸ K).
+D + T → He-4 + n + 17.6 MeV
+Advantages over fission: more energy per nucleon, no long-lived radioactive waste, fuel abundant.
+Challenges: plasma confinement (Tokamak - magnetic confinement, ICF - laser compression).
+
+RADIOACTIVE SERIES:
+Natural decay chains:
+- Uranium series: U-238 → ... → Pb-206
+- Actinium series: U-235 → ... → Pb-207
+- Thorium series: Th-232 → ... → Pb-208
+
+NUCLEAR MODELS:
+- Liquid drop model: explains fission and binding energy.
+- Shell model: explains magic numbers (2,8,20,28,50,82,126) — especially stable nuclei.
+- Collective model: combines both; explains nuclear deformation.
+
+---
+
+CHAPTER: PARTICLE PHYSICS
+
+FUNDAMENTAL PARTICLES:
+
+QUARKS (6 flavors):
+Up (u), Down (d), Strange (s), Charm (c), Bottom (b), Top (t)
+- Fractional charges: u, c, t have +2/3 e; d, s, b have -1/3 e.
+- Confined inside hadrons (never observed alone).
+- Held by gluons (strong force).
+
+Baryons (3 quarks): proton (uud), neutron (udd), etc.
+Mesons (quark-antiquark): pion (ud̄), kaon, etc.
+
+LEPTONS (6 types):
+Electron (e⁻), muon (μ⁻), tau (τ⁻) and their neutrinos (νₑ, ν_μ, ν_τ).
+No internal structure. Not subject to strong force.
+Electron: lightest, stable. Muon: 207× heavier than e, decays. Tau: 3477× heavier.
+
+FUNDAMENTAL FORCES AND GAUGE BOSONS:
+1. Strong force: gluons (g). Holds quarks in nucleons. Range ~ 1 fm.
+2. Electromagnetic: photons (γ). Infinite range. Couples to charge.
+3. Weak force: W±, Z⁰ bosons. Responsible for beta decay. Range ~ 10⁻¹⁸ m.
+4. Gravity: graviton (hypothetical). Infinite range. Not yet quantized.
+
+STANDARD MODEL:
+Quantum field theory describing strong, EM, and weak forces.
+Gauge group: SU(3) × SU(2) × U(1)
+- SU(3): quantum chromodynamics (QCD) for strong force.
+- SU(2)×U(1): electroweak force (unification of EM and weak).
+
+HIGGS BOSON:
+- Gives mass to W, Z bosons and fermions through Higgs mechanism.
+- Discovered at CERN (LHC) in 2012. Mass ≈ 125 GeV/c².
+
+ANTIMATTER:
+Every particle has an antiparticle (opposite charge, other quantum numbers).
+Particle-antiparticle annihilation: e⁻ + e⁺ → 2γ (E = 2m_ec²)
+CP violation: slight asymmetry between matter and antimatter (explains why universe has more matter).
+
+CONSERVATION LAWS:
+Always conserved: energy, momentum, angular momentum, charge, baryon number, lepton number.
+Conserved in strong and EM but not weak: parity (P), charge conjugation (C).
+Violated in weak interactions: CP (slightly), T (slightly), but CPT always conserved.
+
+FEYNMAN DIAGRAMS:
+Visual representation of particle interactions.
+- Lines: propagators (particle propagation).
+- Vertices: interaction points.
+- Each vertex contributes a factor of coupling constant.
+- Virtual particles: internal lines (can violate energy-momentum conservation temporarily, due to uncertainty principle).
+
+---
+
+CHAPTER: ASTROPHYSICS AND COSMOLOGY
+
+STELLAR STRUCTURE:
+Energy source: nuclear fusion (pp chain, CNO cycle in massive stars).
+Hydrostatic equilibrium: gravity balanced by pressure gradient.
+dP/dr = -ρGM(r)/r²
+
+STELLAR EVOLUTION:
+1. Protostar: gas cloud collapses under gravity.
+2. Main sequence: H fusion in core. Sun's lifetime: ~10¹⁰ years.
+3. Red giant: H exhausted in core; He fusion begins.
+4. Final stages depend on mass:
+   - < 1.4 M_sun: white dwarf (Chandrasekhar limit).
+   - 1.4 - 3 M_sun: neutron star (incredibly dense, ~10¹⁷ kg/m³).
+   - > 3 M_sun: black hole.
+
+NEUTRON STARS:
+- Radius ~ 10 km, mass ~ 1.4-3 M_sun.
+- Pulsars: rotating neutron stars emitting beams of radiation.
+- Densest stable objects in universe.
+
+BLACK HOLES:
+Schwarzschild radius: r_s = 2GM/c²
+For M = M_sun: r_s ≈ 3 km.
+Event horizon: surface of no return.
+Hawking radiation: quantum effect causing black holes to slowly evaporate.
+T_H = ℏc³/(8πGMk_B) (Hawking temperature)
+
+GRAVITATIONAL WAVES:
+Ripples in spacetime caused by accelerating masses.
+Produced by binary systems, merging black holes, neutron stars.
+LIGO detected first direct observation (2015): GW150914, merger of two ~30 M_sun black holes.
+Amplitude: strain h = ΔL/L ~ 10⁻²¹ (incredibly small).
+
+THE UNIVERSE:
+Big Bang: origin of universe ~13.8 billion years ago.
+Cosmic Microwave Background (CMB): thermal radiation at 2.7 K filling universe.
+Hubble's law: v = H₀d (H₀ ≈ 67-73 km/s/Mpc)
+Dark matter: ~27% of energy density. Detected only gravitationally.
+Dark energy: ~68% of energy density. Causes accelerating expansion.
+Ordinary matter: ~5%.
+
+COSMOLOGICAL MODELS:
+Friedmann equation: H² = 8πGρ/3 - kc²/a²
+a = scale factor, k = curvature (-1, 0, +1), ρ = energy density.
+Flat universe (k=0): critical density ρ_c = 3H²/(8πG) ≈ 9.4 × 10⁻²⁷ kg/m³.
+
+IMPORTANT CONSTANTS:
+G = 6.674 × 10⁻¹¹ N·m²/kg²
+M_sun = 1.989 × 10³⁰ kg
+R_sun = 6.96 × 10⁸ m
+1 parsec = 3.086 × 10¹⁶ m = 3.26 light years
+1 Astronomical Unit (AU) = 1.496 × 10¹¹ m
+Age of universe: ~13.8 × 10⁹ years
+H₀ ≈ 70 km/s/Mpc (Hubble constant)

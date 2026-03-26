@@ -1,0 +1,248 @@
+CLASS 11 CHEMISTRY - COMPLETE GUIDE
+=====================================
+
+CHAPTER 1: SOME BASIC CONCEPTS OF CHEMISTRY
+
+LAWS OF CHEMICAL COMBINATION:
+1. Law of Conservation of Mass: Mass of reactants = mass of products.
+2. Law of Definite Proportions: A compound always has same elements in same mass ratio.
+3. Law of Multiple Proportions: If two elements form multiple compounds, mass ratios are simple whole numbers.
+4. Gay Lussac's Law of Gaseous Volumes: Gases combine in simple whole number ratios by volume.
+5. Avogadro's Law: Equal volumes of all gases at same T and P contain equal number of molecules.
+
+ATOMIC MASS UNIT: 1 amu = 1/12 mass of C-12 = 1.66 × 10⁻²⁷ kg
+MOLE: Amount of substance containing 6.022 × 10²³ (Avogadro's number, Nₐ) entities.
+Molar mass: mass of one mole of substance in grams.
+n = m/M = V/22.4 L (at STP) = N/Nₐ
+
+EMPIRICAL FORMULA: simplest whole number ratio of atoms.
+MOLECULAR FORMULA: actual number of atoms in molecule. = n × empirical formula.
+
+CONCENTRATION:
+Molarity (M) = moles of solute / volume of solution in litres
+Molality (m) = moles of solute / mass of solvent in kg
+Mole fraction: X_A = n_A/(n_A + n_B)
+Parts per million (ppm) = (mass of solute/mass of solution) × 10⁶
+
+---
+
+CHAPTER 2: ATOMIC STRUCTURE
+
+SUBATOMIC PARTICLES:
+Proton: mass 1.67 × 10⁻²⁷ kg, charge +1.6 × 10⁻¹⁹ C, in nucleus.
+Neutron: mass 1.67 × 10⁻²⁷ kg, charge 0, in nucleus.
+Electron: mass 9.11 × 10⁻³¹ kg, charge -1.6 × 10⁻¹⁹ C, outside nucleus.
+
+THOMSON'S MODEL (Plum Pudding): Positive sphere with electrons embedded.
+RUTHERFORD'S MODEL (Nuclear): Dense positive nucleus, electrons orbit outside.
+- Gold foil experiment: α particles fired at gold foil. Most passed through, some deflected, few bounced back.
+- Proved: atom is mostly empty space with tiny, dense, positive nucleus.
+- Failure: accelerating electrons should radiate energy and spiral into nucleus.
+
+BOHR'S MODEL:
+- Electrons orbit in fixed circular orbits (stationary states).
+- Energy emitted/absorbed when electrons jump between orbits: hν = E₂ - E₁
+- Angular momentum quantized: mvr = nℏ = nh/2π
+- Energy of nth orbit: Eₙ = -13.6/n² eV (for hydrogen)
+- Radius of nth orbit: rₙ = n² × 0.529 Å = n²a₀
+
+QUANTUM MECHANICAL MODEL:
+Heisenberg Uncertainty Principle: Δx·Δp ≥ h/4π
+de Broglie wavelength: λ = h/mv (matter waves)
+Schrödinger equation: gives probability of finding electron.
+
+QUANTUM NUMBERS:
+Principal quantum number (n): 1,2,3,... → shell, energy, size.
+Azimuthal/orbital (l): 0 to n-1 → subshell, shape. (0=s, 1=p, 2=d, 3=f)
+Magnetic (mₗ): -l to +l → orientation. Total 2l+1 values.
+Spin (mₛ): +½ or -½.
+
+SHAPES OF ORBITALS:
+s orbital (l=0): spherical. One orbital per subshell.
+p orbital (l=1): dumbbell shaped. Three orbitals (px, py, pz).
+d orbital (l=2): complex shapes. Five orbitals.
+f orbital (l=3): very complex. Seven orbitals.
+
+RULES FOR FILLING ELECTRONS:
+Aufbau principle: fill lowest energy orbitals first.
+Order: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, 7s, 5f, 6d, 7p
+Pauli Exclusion Principle: no two electrons can have same four quantum numbers. Max 2 electrons per orbital.
+Hund's Rule: electrons fill orbitals singly before pairing. All unpaired electrons have same spin.
+
+Maximum electrons: s=2, p=6, d=10, f=14
+Shell capacity: 2n²
+
+---
+
+CHAPTER 3: CHEMICAL BONDING
+
+IONIC BOND: Transfer of electrons from metal to non-metal.
+Formed between elements of high electronegativity difference (>1.7).
+Properties: high melting point, conducts electricity when molten/dissolved.
+Example: NaCl (Na⁺ and Cl⁻)
+Lattice energy: energy released when ions come together to form crystal.
+
+COVALENT BOND: Sharing of electrons between non-metals.
+Single bond: one shared pair (H-H, H-Cl)
+Double bond: two shared pairs (O=O, C=O)
+Triple bond: three shared pairs (N≡N, C≡C)
+Properties: low melting point, poor conductor.
+
+COORDINATE/DATIVE BOND: Both electrons donated by one atom (e.g., NH₃ → BF₃, H₃O⁺).
+
+VALENCE SHELL ELECTRON PAIR REPULSION (VSEPR) THEORY:
+Electron pairs arrange to minimize repulsion.
+Lone pair-lone pair repulsion > lone pair-bond pair > bond pair-bond pair.
+Shapes:
+- 2 bond pairs: linear (BeCl₂, CO₂, 180°)
+- 3 bond pairs: trigonal planar (BF₃, 120°)
+- 4 bond pairs: tetrahedral (CH₄, 109.5°)
+- 3 bond + 1 lone: pyramidal (NH₃, 107°)
+- 2 bond + 2 lone: bent/V-shape (H₂O, 104.5°)
+- 5 bond pairs: trigonal bipyramidal (PCl₅, 90° and 120°)
+- 6 bond pairs: octahedral (SF₆, 90°)
+
+HYBRIDIZATION:
+sp: linear, 180° (BeCl₂, C₂H₂)
+sp²: trigonal planar, 120° (BF₃, C₂H₄, benzene)
+sp³: tetrahedral, 109.5° (CH₄, NH₃, H₂O)
+sp³d: trigonal bipyramidal (PCl₅)
+sp³d²: octahedral (SF₆)
+
+MOLECULAR ORBITAL THEORY:
+Atomic orbitals combine to form molecular orbitals.
+Bonding MO: lower energy, electron density between nuclei.
+Antibonding MO (*): higher energy, electron density away from nuclei.
+Bond order = (bonding electrons - antibonding electrons)/2
+Bond order 0: molecule doesn't exist. Higher bond order = stronger, shorter bond.
+
+HYDROGEN BOND:
+X-H---Y (X, Y = F, O, N — highly electronegative, small size)
+Intermolecular: between different molecules (water, HF, NH₃)
+Intramolecular: within same molecule (o-nitrophenol)
+Explains: high boiling point of water, anomalous expansion of water.
+
+VAN DER WAALS FORCES:
+London dispersion: temporary dipoles in non-polar molecules. Weakest.
+Dipole-dipole: between polar molecules.
+Dipole-induced dipole: between polar and non-polar.
+
+---
+
+CHAPTER 4: STATES OF MATTER
+
+IDEAL GAS LAWS:
+Boyle's law: PV = constant (constant T): P₁V₁ = P₂V₂
+Charles's law: V/T = constant (constant P): V₁/T₁ = V₂/T₂
+Gay-Lussac's law: P/T = constant (constant V): P₁/T₁ = P₂/T₂
+Avogadro's law: V ∝ n (constant T, P)
+Ideal gas equation: PV = nRT (R = 8.314 J/mol·K)
+Combined: P₁V₁/T₁ = P₂V₂/T₂
+
+At STP (0°C, 1 atm): 1 mole ideal gas = 22.4 L
+Dalton's law of partial pressures: P_total = P₁ + P₂ + P₃ + ...
+Graham's law of diffusion: r₁/r₂ = √(M₂/M₁)
+
+Real gases: van der Waals equation: (P + an²/V²)(V - nb) = nRT
+a = intermolecular attraction, b = volume occupied by molecules.
+
+KINETIC MOLECULAR THEORY:
+- Gas molecules in constant random motion.
+- Elastic collisions.
+- No intermolecular forces.
+- Average KE = (3/2)k_BT
+- Speeds: v_rms = √(3RT/M), v_avg = √(8RT/πM), v_mp = √(2RT/M)
+
+LIQUIDS:
+Surface tension: tendency of liquid surface to minimize area. γ = F/l (N/m).
+Decreases with temperature.
+Viscosity: resistance to flow. Decreases with temperature.
+Vapor pressure: increases with temperature. Boiling when P_vapor = P_atm.
+
+---
+
+CHAPTER 5: CHEMICAL THERMODYNAMICS
+
+SYSTEM AND SURROUNDINGS: System = part under study. Surroundings = rest of universe.
+Open system: exchanges matter and energy.
+Closed system: exchanges only energy.
+Isolated system: no exchange.
+
+STATE FUNCTIONS: depend only on current state, not path (T, P, V, U, H, S, G).
+Path functions: depend on path (q, w).
+
+FIRST LAW: ΔU = q + w
+q = heat absorbed by system, w = work done ON system.
+w = -PΔV (for expansion against constant P), w = -∫PdV
+
+ENTHALPY: H = U + PV
+ΔH = ΔU + PΔV = ΔU + ΔnRT (for ideal gas, Δn = change in moles of gas)
+At constant P: ΔH = qₚ (heat of reaction at constant pressure)
+ΔH < 0: exothermic (heat released)
+ΔH > 0: endothermic (heat absorbed)
+
+HESS'S LAW: ΔH for a reaction = sum of ΔH for individual steps.
+ΔH° = Σ ΔH°f(products) - Σ ΔH°f(reactants)
+
+STANDARD ENTHALPY OF FORMATION (ΔH°f):
+Enthalpy change when 1 mole of compound formed from elements in standard states.
+ΔH°f of elements in standard state = 0.
+
+BOND ENTHALPY:
+ΔH = Σ(bond enthalpies broken) - Σ(bond enthalpies formed)
+Bond breaking: endothermic (+). Bond forming: exothermic (-).
+
+ENTROPY (S): measure of disorder.
+dS = dq_rev/T
+ΔS > 0: disorder increases (solid→liquid→gas, mixing, temperature increase)
+Third law: S = 0 for perfect crystal at 0 K.
+ΔS° = Σ S°(products) - Σ S°(reactants)
+
+GIBBS FREE ENERGY: G = H - TS
+ΔG = ΔH - TΔS (at constant T and P)
+ΔG < 0: spontaneous process
+ΔG = 0: equilibrium
+ΔG > 0: non-spontaneous
+ΔG° = -RT ln K = -nFE° (related to equilibrium constant and EMF)
+
+---
+
+CHAPTER 6: CHEMICAL EQUILIBRIUM
+
+EQUILIBRIUM: forward rate = reverse rate. Concentrations constant (not zero).
+Law of Mass Action: K = [C]^c[D]^d / [A]^a[B]^b for aA + bB ⇌ cC + dD
+Kc: concentration equilibrium constant.
+Kp: pressure equilibrium constant. Kp = Kc(RT)^Δn (Δn = change in moles of gas)
+
+Large K: equilibrium lies toward products.
+Small K: equilibrium lies toward reactants.
+
+LE CHATELIER'S PRINCIPLE:
+If a system at equilibrium is disturbed, it shifts to oppose the disturbance.
+
+Effect of changes:
+Concentration: adding reactant → shifts forward. Adding product → shifts backward.
+Pressure: increasing P → shifts toward fewer moles of gas.
+Temperature: increasing T → shifts in endothermic direction.
+Catalyst: no effect on K or position, only speeds up reaching equilibrium.
+
+ACIDS AND BASES:
+Arrhenius: acids give H⁺, bases give OH⁻ in water.
+Brønsted-Lowry: acids donate H⁺ (proton donor), bases accept H⁺.
+Lewis: acids accept electron pair, bases donate electron pair.
+
+pH = -log[H⁺], pOH = -log[OH⁻], pH + pOH = 14 (at 25°C)
+Kw = [H⁺][OH⁻] = 10⁻¹⁴ (at 25°C)
+Strong acid: completely dissociates. [H⁺] = concentration of acid.
+Weak acid: Ka = [H⁺][A⁻]/[HA], pH = ½(pKa - log C)
+
+BUFFER SOLUTION:
+Resists change in pH on addition of acid or base.
+Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA])
+Acidic buffer: weak acid + its salt.
+Basic buffer: weak base + its salt.
+
+SOLUBILITY PRODUCT (Ksp):
+For AgCl ⇌ Ag⁺ + Cl⁻: Ksp = [Ag⁺][Cl⁻]
+Precipitation occurs when ionic product > Ksp.
+Common ion effect: adding common ion decreases solubility.

@@ -1,0 +1,243 @@
+ORGANIC CHEMISTRY - DETAILED MECHANISMS AND STEREOCHEMISTRY
+=============================================================
+
+PART 1: STEREOCHEMISTRY
+
+ISOMERISM OVERVIEW:
+Constitutional (structural) isomers: same molecular formula, different connectivity.
+Stereoisomers: same connectivity, different spatial arrangement.
+  - Conformational isomers (conformers): interconvert by rotation about single bonds.
+  - Configurational isomers: require bond breaking to interconvert.
+    - Geometric (cis-trans) isomers.
+    - Optical isomers (enantiomers, diastereomers).
+
+CONFORMATIONAL ANALYSIS:
+Newman projection: looking down C-C bond.
+Eclipsed: dihedral angle = 0°. Maximum energy (steric strain, torsional strain).
+Staggered: dihedral angle = 60°. Lower energy.
+Anti: dihedral angle = 180°. Most stable for butane.
+Gauche: dihedral angle = 60°. Less stable than anti (methyl groups close).
+
+For cyclohexane:
+Chair conformation: most stable. Axial and equatorial positions.
+Boat conformation: less stable.
+Ring flip: axial ↔ equatorial (10 kJ/mol energy barrier).
+Large groups prefer equatorial position (less 1,3-diaxial interactions).
+
+GEOMETRIC ISOMERISM (CIS-TRANS):
+Occurs when: restricted rotation (double bond or ring) + two different groups on each carbon.
+Cis: same groups on same side. Trans: same groups on opposite sides.
+E/Z notation (when 4 different groups): E (entgegen = opposite), Z (zusammen = same side).
+Priority rules (CIP): higher atomic number = higher priority. 
+
+Physical properties differ: boiling points, melting points, dipole moments.
+Example: cis-2-butene bp = 3.7°C, trans-2-butene bp = 0.9°C.
+Maleic acid (cis) vs fumaric acid (trans): different melting points, one can form anhydride.
+
+OPTICAL ISOMERISM:
+Chiral carbon (stereocentre): carbon bonded to 4 different groups.
+Enantiomers: non-superimposable mirror images. Identical in all physical properties EXCEPT:
+- Rotate plane-polarized light in opposite directions.
+- React differently with other chiral molecules.
+Racemic mixture (racemate): equal mixture of enantiomers. Optically inactive (rotations cancel).
+Specific rotation [α]: [α] = α/(l × c). Each enantiomer rotates light equally but in opposite direction.
+(+) or (d): dextrorotatory (clockwise). (-) or (l): levorotatory (anticlockwise).
+R/S configuration (CIP rules):
+1. Assign priorities 1-4 (highest atomic number = highest priority).
+2. Orient with lowest priority (4) pointing away.
+3. If 1→2→3 is clockwise: R (rectus). Anticlockwise: S (sinister).
+
+Diastereomers: stereoisomers that are NOT mirror images.
+Multiple stereocentres: maximum stereoisomers = 2ⁿ (n = chiral centres).
+Meso compounds: has chiral centres but is achiral due to internal plane of symmetry.
+
+---
+
+PART 2: REACTION MECHANISMS IN DETAIL
+
+ARROW PUSHING CONVENTIONS:
+Curved arrow from electron source to electron sink.
+Full curved arrow: movement of electron pair.
+Half-headed (fish-hook) arrow: movement of single electron (radical).
+Bond breaking: arrow from bond to atom that retains electrons.
+Bond forming: arrow from electron source to new bond location.
+
+CARBOCATION STABILITY:
+3° > 2° > 1° > CH₃⁺
+Stabilized by: hyperconjugation (C-H bonds adjacent), induction (alkyl groups donate electrons).
+Allylic carbocations: stabilized by resonance with adjacent double bond.
+Benzylic carbocations: stabilized by aromatic ring resonance.
+Bridgehead carbocations: Bredt's rule violation (very unstable).
+
+CARBANION STABILITY:
+Opposite of carbocations: CH₃⁻ > 1° > 2° > 3°
+Stabilized by: electron-withdrawing groups, resonance (allylic, benzylic), hybridization (sp > sp² > sp³).
+
+FREE RADICAL STABILITY:
+3° > 2° > 1° > CH₃• (same as carbocations, but less dramatic difference).
+Stabilized by hyperconjugation and resonance.
+
+SN1 MECHANISM (DETAILED):
+Step 1: Slow ionization of leaving group → carbocation (rate-determining step).
+Step 2: Rapid nucleophile attack from either face → racemization.
+Rate = k[substrate]. First order. Rate independent of nucleophile.
+Favored by:
+- 3° > 2° (never 1° unless SN1 intermediate is stabilized).
+- Good leaving groups (I⁻ > Br⁻ > Cl⁻ >> F⁻ >> OH⁻).
+- Polar protic solvents (water, alcohols) — stabilize carbocation by solvation.
+- Weak nucleophiles.
+Stereochemistry: racemization (some inversion due to ion pair shielding).
+Rearrangements: hydride shift or methide shift to form more stable carbocation.
+
+SN2 MECHANISM (DETAILED):
+One step: nucleophile attacks BACKSIDE of C-LG bond simultaneously with LG departure.
+Rate = k[substrate][nucleophile]. Second order. Bimolecular.
+Favored by:
+- Primary > secondary >> tertiary (steric access required).
+- Strong nucleophiles: I⁻, RS⁻, CN⁻, N₃⁻, RO⁻, HO⁻, R₂NH.
+- Polar aprotic solvents (DMSO, DMF, acetone) — don't solvate nucleophile.
+- Good leaving groups.
+Stereochemistry: INVERSION (Walden inversion) — backside attack.
+Nucleophilicity order: I⁻ > Br⁻ > Cl⁻ > F⁻ (in protic solvent, polarizability dominates).
+In aprotic solvent: F⁻ > Cl⁻ > Br⁻ > I⁻ (less solvated = more reactive).
+
+LEAVING GROUP ABILITY:
+Good leaving groups = weak bases = stable anions.
+Order: I⁻ > Br⁻ > Cl⁻ > TsO⁻ (tosylate) > F⁻ >> OH⁻
+Tosylation: converts OH to OTs (better leaving group) to enable SN2.
+OH⁻ is a POOR leaving group. Must be protonated first (H₃O⁺ environment).
+
+E1 vs E2 ELIMINATION:
+E1: Carbocation intermediate (same as SN1). Saytzeff product (more substituted alkene).
+E2: Concerted one-step. Anti-periplanar arrangement required (Hb 180° from LG).
+    Strong bulky base (t-BuOK) → Hofmann product (less substituted, less hindered).
+Competition: SN2 vs E2 — temperature, base strength, substrate.
+Higher temperature favors elimination over substitution.
+
+ELECTROPHILIC ADDITION TO ALKENES:
+Mechanism for HX addition:
+Step 1: H⁺ attacks π electrons → more stable carbocation (Markovnikov: H to C with more H).
+Step 2: X⁻ attacks carbocation.
+Result: Markovnikov's product.
+
+Halogenation (Br₂, Cl₂) — Anti addition:
+Step 1: Br₂ attacks alkene → bromonium ion (cyclic intermediate, blocks one face).
+Step 2: Br⁻ attacks from other face (back side).
+Result: trans (anti) addition of Br atoms.
+
+Hydroboration-Oxidation:
+BH₃ adds across double bond (syn, anti-Markovnikov). Then H₂O₂/NaOH oxidizes B to OH.
+Result: syn addition, anti-Markovnikov alcohol.
+
+Oxymercuration-Demercuration:
+Hg(OAc)₂/H₂O then NaBH₄.
+Result: Markovnikov alcohol, no rearrangement.
+
+ELECTROPHILIC AROMATIC SUBSTITUTION MECHANISM (DETAILED):
+
+Step 1: Electrophile (E⁺) attacks aromatic ring π electrons → arenium ion (Wheland intermediate/σ complex). The ring loses aromaticity — this is the slow step.
+Step 2: Loss of H⁺ (proton) regenerates aromatic ring — fast step.
+Rate-determining step: formation of arenium ion.
+Activating groups: stabilize arenium ion → faster reaction.
+Deactivating groups: destabilize arenium ion → slower reaction.
+
+DIRECTING EFFECTS:
+Ortho-para directors (activating): -OH, -OR, -NH₂, -NR₂, -NHCOR, -R, -Ar.
+Mechanism: lone pair donation (resonance) → places electrons at o and p positions of arenium ion.
+Ortho-para directors (deactivating): -F, -Cl, -Br, -I.
+Mechanism: -I effect (deactivating) dominates overall, but +M lone pair donation → o/p selectivity.
+Meta directors (deactivating): -NO₂, -CN, -COOH, -CHO, -COR, -SO₃H, -CF₃.
+Mechanism: electron withdrawal by resonance/induction → destabilizes o/p arenium → meta product.
+
+NUCLEOPHILIC ADDITION TO CARBONYLS:
+
+Reactivity order: HCHO > RCHO > RCOR' > RCOCl > RCOOCOR' > RCOOR' > RCONH₂.
+Aldehydes more reactive than ketones (less steric, less electron donation).
+Acyl chlorides most reactive (Cl withdraws electrons, great leaving group).
+
+Cyanohydrin formation: RCHO + HCN ⇌ RCH(OH)CN (base catalyst).
+KCN + H₂SO₄ → HCN generated in situ.
+Product: α-hydroxy nitrile. Useful for chain extension.
+
+Grignard reaction: RMgX (ether solvent) + carbonyl → after workup → alcohol.
+HCHO → primary alcohol. RCHO → secondary. RCOR' → tertiary.
+Grignard reagent is a strong base — react with water, alcohols, carboxylic acids.
+Organolithium (RLi) similar but more reactive than Grignard.
+
+Acetal formation: RCHO + 2R'OH ⇌ RCH(OR')₂ + H₂O (acid catalyst, anhydrous).
+Cyclic acetals: diol + aldehyde → cyclic acetal (protection group!).
+Acetals are stable to base, oxidants, reducing agents.
+Unmasked by acid hydrolysis.
+
+Wittig reaction: R₂C=O + Ph₃P=CHR' → R₂C=CHR' + Ph₃P=O.
+Converts ketone/aldehyde to alkene. Specific regioselectivity.
+
+---
+
+PART 3: SPECTROSCOPY AND STRUCTURE DETERMINATION
+
+MASS SPECTROMETRY:
+Molecular ion M⁺: highest mass peak (gives molecular weight).
+Base peak: 100% relative abundance (most stable fragment).
+M+1 peak: due to ¹³C (~1.1% natural abundance). Ratio (M+1)/M = 1.1% × number of carbons.
+M+2 peak: if Cl (M:M+2 = 3:1) or Br (M:M+2 = 1:1) present.
+
+Common fragmentations:
+Alpha cleavage: bond next to heteroatom or carbonyl breaks (most common).
+McLafferty rearrangement: gamma hydrogen transfer to carbonyl → alkene + enol fragment.
+Retro Diels-Alder: cyclohexenes fragment to diene + dienophile.
+Loss of common neutrals: H₂O (-18), CO (-28), HCN (-27), CH₃ (-15), C₂H₅ (-29).
+
+NMR IN DETAIL:
+Chemical shift correlations:
+- Shielded (upfield, low δ): surrounded by electron density (σ electrons, alkyl groups).
+- Deshielded (downfield, high δ): electron-withdrawing neighbors (O, N, halogens, carbonyls).
+- Ring current effect: aromatic protons deshielded (δ 7-8). Protons in ring current: shielded.
+
+Coupling:
+- Vicinal coupling (³J): 3 bonds apart. ³J = 0-18 Hz. Karplus equation: ³J depends on dihedral angle.
+- Geminal coupling (²J): 2 bonds apart on sp3 carbon: 0-16 Hz.
+- Long-range: W-coupling in rigid systems (4-5 bonds).
+- Active nuclei: ¹H, ¹³C, ¹⁹F, ³¹P, ¹⁵N.
+
+COSY (Correlation Spectroscopy): shows which H's are coupled (connected).
+HMQC/HSQC: shows which H is attached to which C.
+HMBC: shows 2-3 bond H-C correlations.
+NOESY: shows H's close in space (< 5 Å). Used for 3D structure.
+
+¹³C NMR:
+Carbonyl C: δ 160-220 ppm (ketone ~200, aldehyde ~200, ester ~170, amide ~170).
+Aromatic C: δ 110-160 ppm.
+Alkene C: δ 100-150 ppm.
+Alkyne C: δ 60-90 ppm.
+Alcohol C: δ 50-90 ppm.
+Alkane C: δ 0-50 ppm.
+
+INFRARED IN DETAIL:
+Functional group region: 1500-4000 cm⁻¹ (characteristic absorptions).
+Fingerprint region: 600-1500 cm⁻¹ (unique to each molecule, used for exact identification).
+
+Detailed IR absorptions:
+OH free: 3580-3650 (sharp). OH H-bonded: 3200-3500 (broad).
+NH₂: 3300-3500 (two peaks). NH: 3300-3500 (one peak).
+=C-H: 3000-3100. -C-H: 2850-3000.
+C≡N: 2200-2260 (sharp, medium). C≡C: 2100-2260.
+C=O aldehyde: 1720-1740. C=O ketone: 1705-1725. C=O ester: 1730-1750.
+C=O acid: 1700-1725 (also very broad OH at 2500-3300).
+C=O amide: 1630-1680. C=O anhydride: two bands ~1800 and ~1750.
+C=C aromatic: 1450-1600 (2 bands). C=C alkene: 1620-1680.
+C-O: 1050-1300.
+Aromatic C-H bending (out-of-plane): 650-900 (substitution pattern identification).
+
+UV-VIS SPECTROSCOPY:
+Chromophores and typical λmax:
+Isolated C=C: ~170 nm (vacuum UV).
+Conjugated diene: ~217 nm. Extended conjugation → red shift.
+α,β-unsaturated carbonyl (enone): ~220 and ~310 nm.
+Benzene: 254 nm (weak, E₂ band), 204 nm (B band).
+Nitro group (-NO₂): ~270 nm.
+Beer-Lambert: A = εcl. ε = molar absorptivity (L/mol/cm).
+
+Woodward's rules for dienes (λmax = base value + corrections).
+Fieser-Kuhn rules for polyenes.
+Woodward-Fieser rules for enones.

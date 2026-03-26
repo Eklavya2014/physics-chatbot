@@ -1,0 +1,161 @@
+ELECTROMAGNETISM - MAXWELL'S EQUATIONS AND THEOREMS
+=====================================================
+
+MAXWELL'S EQUATIONS - THE FOUNDATION OF ELECTROMAGNETISM
+
+James Clerk Maxwell unified electricity, magnetism, and optics into a single theory (1865).
+These four equations describe ALL classical electromagnetic phenomena.
+
+IN VACUUM (differential form):
+∇·E⃗ = ρ/ε₀          (1. Gauss's Law for E)
+∇·B⃗ = 0              (2. Gauss's Law for B - no magnetic monopoles)
+∇×E⃗ = -∂B⃗/∂t        (3. Faraday's Law)
+∇×B⃗ = μ₀J⃗ + μ₀ε₀∂E⃗/∂t  (4. Ampere-Maxwell Law)
+
+IN VACUUM (integral form):
+∮E⃗·dA⃗ = Q_enclosed/ε₀           (1. Gauss's Law)
+∮B⃗·dA⃗ = 0                        (2. No magnetic monopoles)
+∮E⃗·dL⃗ = -dΦ_B/dt                (3. Faraday's Law)
+∮B⃗·dL⃗ = μ₀I + μ₀ε₀ dΦ_E/dt     (4. Ampere-Maxwell Law)
+
+PHYSICAL MEANING OF EACH EQUATION:
+1. Gauss's Law for E: Electric field lines originate from positive charges and end on negative charges. Net flux through closed surface = enclosed charge/ε₀.
+2. Gauss's Law for B: Magnetic field lines always form closed loops — there are no magnetic monopoles (no isolated N or S poles exist).
+3. Faraday's Law: A changing magnetic field creates a curling electric field. The EMF induced equals the rate of change of magnetic flux (with negative sign from Lenz's law).
+4. Ampere-Maxwell Law: Magnetic fields are created by electric currents AND by changing electric fields. Maxwell added the displacement current term (ε₀∂E/∂t) which was the key to predicting electromagnetic waves.
+
+MAXWELL'S DISPLACEMENT CURRENT - THE CRUCIAL ADDITION:
+Before Maxwell, Ampere's law was: ∇×B⃗ = μ₀J⃗
+Problem: This violated charge conservation (∇·J⃗ + ∂ρ/∂t = 0).
+Maxwell added displacement current: J_d = ε₀∂E⃗/∂t
+Physical meaning: A changing electric field acts like a current in producing magnetic fields.
+This completed the equations and predicted electromagnetic waves.
+
+ELECTROMAGNETIC WAVES FROM MAXWELL'S EQUATIONS:
+Take curl of Faraday's law, substitute Ampere-Maxwell law:
+∇²E⃗ = μ₀ε₀ ∂²E⃗/∂t²
+This is a wave equation with speed: c = 1/√(μ₀ε₀)
+Substituting μ₀ = 4π × 10⁻⁷ H/m and ε₀ = 8.85 × 10⁻¹² F/m:
+c = 3 × 10⁸ m/s — exactly the measured speed of light!
+Maxwell concluded: LIGHT IS AN ELECTROMAGNETIC WAVE.
+
+IN MATTER:
+Replace ε₀ → ε = ε₀ε_r and μ₀ → μ = μ₀μ_r
+∇·D⃗ = ρ_f where D⃗ = ε₀E⃗ + P⃗ = εE⃗ (P = polarization)
+∇·B⃗ = 0
+∇×E⃗ = -∂B⃗/∂t
+∇×H⃗ = J_f + ∂D⃗/∂t where H⃗ = B⃗/μ₀ - M⃗ = B⃗/μ (M = magnetization)
+Wave speed in medium: v = c/n = 1/√(με)
+
+---
+
+IMPORTANT ELECTROMAGNETIC THEOREMS
+
+GAUSS'S LAW (DETAILED):
+∮E⃗·dA⃗ = Q_enclosed/ε₀
+Applications:
+Spherical symmetry (point charge, sphere):
+E = Q/(4πε₀r²) outside (r > R)
+E = Qr/(4πε₀R³) inside uniform sphere
+
+Cylindrical symmetry (infinite line charge):
+E = λ/(2πε₀r) [λ = linear charge density]
+
+Planar symmetry (infinite sheet):
+E = σ/(2ε₀) [σ = surface charge density]
+Between parallel plates: E = σ/ε₀ (fields add)
+
+FARADAY'S LAW (DETAILED):
+ε = -dΦ_B/dt where Φ_B = ∫B⃗·dA⃗
+Lenz's Law: Induced current opposes change in flux (negative sign).
+Motional EMF: ε = BvL (for rod moving in field)
+For rotating loop: ε = NBAω sin(ωt) → AC generator
+Self-inductance: ε = -L dI/dt, L = NΦ/I
+Mutual inductance: ε₂ = -M dI₁/dt
+
+AMPERE'S LAW (DETAILED):
+∮B⃗·dL⃗ = μ₀I_enclosed
+Applications:
+Long straight wire: B = μ₀I/(2πr)
+Solenoid (n turns/length): B = μ₀nI (inside), B ≈ 0 (outside)
+Toroid (N turns, radius r): B = μ₀NI/(2πr) (inside), B = 0 (outside)
+
+BIOT-SAVART LAW:
+dB⃗ = (μ₀/4π) I dL⃗ × r̂/r²
+Circular loop at center: B = μ₀I/(2R)
+On axis of loop: B = μ₀IR²/(2(R²+z²)^(3/2))
+
+POYNTING'S THEOREM (Energy in EM fields):
+Energy density: u = ½ε₀E² + B²/(2μ₀)
+Poynting vector: S⃗ = (1/μ₀) E⃗ × B⃗ [W/m² - energy flux]
+∂u/∂t + ∇·S⃗ = -J⃗·E⃗ (energy conservation — Poynting's theorem)
+Energy flows perpendicular to both E and B.
+Radiation pressure: P = S/c (absorbing), P = 2S/c (reflecting)
+
+UNIQUENESS THEOREM:
+A solution to Maxwell's equations satisfying given boundary conditions is unique.
+This means we only need to find ONE solution — it's the only one.
+
+SUPERPOSITION PRINCIPLE:
+Maxwell's equations are linear → fields from multiple sources simply add.
+E_total = E₁ + E₂ + E₃ + ...
+
+BOUNDARY CONDITIONS AT INTERFACES:
+Normal components:
+ε₁E₁ₙ = ε₂E₂ₙ (D normal is continuous if no surface charge)
+B₁ₙ = B₂ₙ (B normal always continuous)
+Tangential components:
+E₁ₜ = E₂ₜ (E tangential always continuous)
+H₁ₜ - H₂ₜ = K⃗ × n̂ (H tangential discontinuous by surface current K)
+These determine reflection and refraction of EM waves.
+
+SNELL'S LAW FROM MAXWELL'S EQUATIONS:
+Applying boundary conditions at interface:
+n₁ sin θ₁ = n₂ sin θ₂ (Snell's law)
+n = c/v = √(ε_r μ_r) ≈ √ε_r (for non-magnetic materials)
+Fresnel equations give reflection and transmission amplitudes.
+Brewster's angle: tan θ_B = n₂/n₁ (reflected wave completely polarized)
+Total internal reflection: sin θ_c = n₂/n₁ (for n₁ > n₂)
+
+RETARDED POTENTIALS:
+EM fields propagate at speed c — effects are not instantaneous.
+φ(r,t) = (1/4πε₀)∫ρ(r',t_r)/|r-r'| d³r', t_r = t - |r-r'|/c
+A⃗(r,t) = (μ₀/4π)∫J⃗(r',t_r)/|r-r'| d³r'
+The retarded time t_r accounts for finite propagation speed.
+
+RADIATION:
+Accelerating charges radiate EM waves.
+Larmor formula: P = q²a²/(6πε₀c³) = μ₀q²a²/(6πc)
+Power ∝ q² × a² (charge squared times acceleration squared)
+Applications:
+- Antenna: oscillating charges radiate radio waves.
+- Synchrotron radiation: relativistic electrons in magnetic fields.
+- Bremsstrahlung: electrons decelerated in matter produce X-rays.
+- Cherenkov radiation: particle faster than light in medium.
+
+ELECTROMAGNETIC SPECTRUM (with frequencies and uses):
+Radio waves: f < 3 GHz, λ > 10 cm. AM/FM radio, TV, WiFi, radar.
+Microwaves: 3 GHz - 300 GHz, λ = 1mm - 10 cm. Microwave ovens, 5G, satellite.
+Infrared: 300 GHz - 430 THz, λ = 700nm - 1mm. Heat, night vision, remote controls.
+Visible: 430 - 750 THz, λ = 400 - 700 nm. Human vision. ROY G BIV.
+Ultraviolet: 750 THz - 30 PHz, λ = 10 - 400 nm. Tanning, sterilization.
+X-rays: 30 PHz - 30 EHz, λ = 0.01 - 10 nm. Medical imaging, security.
+Gamma rays: f > 30 EHz, λ < 0.01 nm. Nuclear reactions, cancer treatment.
+
+GAUGE INVARIANCE:
+EM fields unchanged by gauge transformation:
+A⃗ → A⃗ + ∇λ, φ → φ - ∂λ/∂t
+Lorenz gauge: ∇·A⃗ + (1/c²)∂φ/∂t = 0 → wave equations for potentials.
+Coulomb gauge: ∇·A⃗ = 0 → useful in quantum optics.
+Gauge invariance is fundamental — leads to charge conservation.
+
+IMPORTANT FORMULAS SUMMARY:
+- F = q(E⃗ + v⃗×B⃗) (Lorentz force)
+- E = kq/r² = q/(4πε₀r²) (Coulomb's law)
+- B = μ₀I/(2πr) (straight wire)
+- B = μ₀nI (solenoid)
+- ε = -dΦ_B/dt (Faraday's law)
+- u = ½ε₀E² + B²/(2μ₀) (energy density)
+- S⃗ = E⃗×B⃗/μ₀ (Poynting vector)
+- c = 1/√(μ₀ε₀) = 3×10⁸ m/s
+- P = q²a²/(6πε₀c³) (Larmor radiation)

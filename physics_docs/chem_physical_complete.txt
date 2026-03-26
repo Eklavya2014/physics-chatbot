@@ -1,0 +1,236 @@
+PHYSICAL CHEMISTRY - COMPLETE GUIDE
+=====================================
+
+CHAPTER 1: ATOMIC SPECTRA AND QUANTUM NUMBERS
+
+HYDROGEN SPECTRUM:
+When H atoms are excited and emit light, only specific wavelengths are emitted.
+Rydberg formula: 1/λ = R_H(1/n₁² - 1/n₂²)
+R_H = 1.097 × 10⁷ m⁻¹ (Rydberg constant)
+n₁ < n₂ (n₁ = lower level, n₂ = upper level)
+
+Spectral Series:
+Lyman: n₁=1 (UV, 91-122 nm). n₂=2,3,4,...
+Balmer: n₁=2 (Visible, 365-656 nm). n₂=3,4,5,...
+Paschen: n₁=3 (near IR, 820 nm - 1.9 μm). n₂=4,5,...
+Brackett: n₁=4 (mid IR). n₂=5,6,...
+Pfund: n₁=5 (far IR). n₂=6,7,...
+
+Visible Balmer lines:
+Hα (n=3→2): 656 nm (red)
+Hβ (n=4→2): 486 nm (blue-green)
+Hγ (n=5→2): 434 nm (violet)
+Hδ (n=6→2): 410 nm (violet)
+
+IONIZATION ENERGY:
+Energy to remove electron from ground state to infinity.
+For hydrogen: IE = 13.6 eV = 2.18 × 10⁻¹⁸ J = 1312 kJ/mol.
+For hydrogen-like ions: IE = 13.6 Z²/n² eV (Z = atomic number, n = shell).
+He⁺: Z=2, n=1: IE = 13.6 × 4 = 54.4 eV.
+
+ELECTRON AFFINITY:
+Energy released when neutral atom gains electron.
+EA: F(-333) > Cl(-349) > Br(-325) > I(-296) kJ/mol. Cl has highest EA (not F!).
+Unusual: O and N have lower EA than S and P (electron repulsion in small atoms).
+
+---
+
+CHAPTER 2: CHEMICAL BONDING - ADVANCED
+
+MOLECULAR ORBITAL DIAGRAMS:
+H₂: σ1s² → Bond order 1.
+He₂: σ1s²σ*1s² → Bond order 0 (doesn't exist).
+Li₂: ...σ2s² → Bond order 1.
+Be₂: ...σ2s²σ*2s² → Bond order 0.
+B₂: ...π2p¹π2p¹ → Bond order 1, paramagnetic.
+C₂: ...π2p²π2p² → Bond order 2, diamagnetic.
+N₂: ...π2p²π2p²σ2p² → Bond order 3 (triple bond, very stable, diamagnetic).
+O₂: ...σ2p²π2p²π2p²π*2p¹π*2p¹ → Bond order 2, paramagnetic (2 unpaired e⁻).
+F₂: ...π*2p²π*2p² (added to O₂ config) → Bond order 1.
+Ne₂: Bond order 0.
+
+Key MO insight: O₂ has 2 unpaired electrons → paramagnetic (attracted to magnet).
+This was predicted by MO theory but not by Lewis structure!
+
+RESONANCE STRUCTURES:
+Benzene: two Kekulé structures + Dewar structures.
+CO₃²⁻: three equivalent resonance structures. All C-O bonds equal.
+NO₃⁻: three equivalent resonance structures.
+SO₄²⁻: resonance involving d-orbital participation.
+Resonance stabilization energy = actual stability - stability without resonance.
+
+DIPOLE MOMENT:
+μ = q × d (C·m or Debye, 1D = 3.336 × 10⁻³⁰ C·m)
+Vector quantity — from + to - (chemistry convention) or - to + (physics).
+Zero dipole: linear symmetric (CO₂), tetrahedral symmetric (CH₄, CCl₄), benzene.
+Non-zero: H₂O (1.85D), NH₃ (1.47D), HCl (1.08D), HF (1.91D).
+Uses: determines polarity, determines solubility, microwave absorption.
+
+---
+
+CHAPTER 3: SOLID STATE CHEMISTRY
+
+CRYSTAL SYSTEMS:
+7 crystal systems based on unit cell dimensions and angles:
+Cubic: a=b=c, α=β=γ=90° (most symmetric)
+Tetragonal: a=b≠c, α=β=γ=90°
+Orthorhombic: a≠b≠c, α=β=γ=90°
+Hexagonal: a=b≠c, α=β=90°, γ=120°
+Trigonal: a=b=c, α=β=γ≠90°
+Monoclinic: a≠b≠c, α=γ=90°, β≠90°
+Triclinic: a≠b≠c, α≠β≠γ≠90° (least symmetric)
+
+CUBIC UNIT CELLS:
+Simple Cubic (SC): 1 atom/unit cell. Coordination number = 6. Packing = 52%. Only polonium.
+Body-centered Cubic (BCC): 2 atoms/unit cell. CN = 8. Packing = 68%. Fe, Na, K, Mo.
+Face-centered Cubic (FCC/CCP): 4 atoms/unit cell. CN = 12. Packing = 74%. Cu, Al, Ag, Au, Ni.
+
+Relationship: a (edge length), r (radius):
+SC: a = 2r. BCC: a = 4r/√3. FCC: a = 2√2 r.
+Density: ρ = nM/(Nₐ × a³) (n = atoms/cell, M = molar mass, a = edge length)
+
+CLOSE PACKING:
+HCP (hexagonal close packed): ABABAB stacking. CN = 12. Same packing as FCC.
+CCP (cubic close packed = FCC): ABCABC stacking.
+Both have 74% packing efficiency.
+Octahedral voids: n per unit cell in CCP. Radius ratio = 0.414.
+Tetrahedral voids: 2n per unit cell. Radius ratio = 0.225.
+
+IONIC CRYSTALS:
+NaCl structure (rock salt): FCC anion lattice, Na⁺ in all octahedral voids. CN = 6:6.
+ZnS (zinc blende): FCC S²⁻, Zn²⁺ in half tetrahedral voids. CN = 4:4.
+CsCl: SC with Cs⁺ in body center. CN = 8:8.
+Fluorite (CaF₂): FCC Ca²⁺, F⁻ in all tetrahedral voids. CN = 8:4.
+Antifluorite: reverse of fluorite. Na₂O structure.
+
+DEFECTS IN CRYSTALS:
+Point defects:
+Vacancy defect: missing atom/ion from lattice point. Decreases density.
+Interstitial defect: extra atom in interstitial position. Increases density.
+Impurity defect: foreign atom in lattice.
+Frenkel defect: cation moves from lattice to interstitial. No density change. ZnS, AgCl.
+Schottky defect: equal cation and anion vacancies. Decreases density. NaCl, KCl, CsCl.
+F-centers: anion vacancy filled with electron → colored crystals (e.g., NaCl in Na vapor → yellow).
+n-type semiconductor: extra electrons (Si doped with P, As).
+p-type semiconductor: electron holes (Si doped with B, Al).
+
+---
+
+CHAPTER 4: ELECTROCHEMISTRY - ADVANCED
+
+STANDARD REDUCTION POTENTIALS (selected):
+Li⁺/Li: -3.05V (most easily oxidized metal)
+K⁺/K: -2.93V
+Ca²⁺/Ca: -2.87V
+Na⁺/Na: -2.71V
+Mg²⁺/Mg: -2.37V
+Al³⁺/Al: -1.66V
+Zn²⁺/Zn: -0.76V
+Fe²⁺/Fe: -0.44V
+Ni²⁺/Ni: -0.25V
+Sn²⁺/Sn: -0.14V
+Pb²⁺/Pb: -0.13V
+H⁺/H₂: 0.00V (reference)
+Cu²⁺/Cu: +0.34V
+Ag⁺/Ag: +0.80V
+Hg²⁺/Hg: +0.85V
+Au³⁺/Au: +1.50V
+F₂/F⁻: +2.87V (strongest oxidizing agent)
+
+Cl₂/Cl⁻: +1.36V
+MnO₄⁻/Mn²⁺: +1.51V (acidic)
+Cr₂O₇²⁻/Cr³⁺: +1.33V (acidic)
+
+GALVANIC CELLS:
+Weston standard cell: Cd amalgam|CdSO₄||CdSO₄(sat.)|Hg₂SO₄|Hg. E = 1.0183V.
+Concentration cell: E = (RT/nF) ln(C₂/C₁) — potential from concentration difference.
+
+ELECTROLYSIS:
+Electrolysis of water: 2H₂O → 2H₂ + O₂
+Cathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻ (or 2H⁺ + 2e⁻ → H₂)
+Anode: 2H₂O → O₂ + 4H⁺ + 4e⁻
+Electrolysis of NaCl solution: cathode: H₂, anode: Cl₂, solution: NaOH.
+
+Discharge order at cathode (reduction): ion with higher reduction potential discharged first.
+Discharge order at anode (oxidation): Cl⁻ > OH⁻ > SO₄²⁻ > NO₃⁻ (concentration matters too).
+
+Electroplating: object = cathode, metal to deposit = anode.
+Refining: impure metal = anode, pure metal = cathode, metal salt solution = electrolyte.
+
+---
+
+CHAPTER 5: SURFACE CHEMISTRY
+
+ADSORPTION:
+Accumulation of substance on surface of another.
+Adsorbate: substance adsorbed. Adsorbent: surface on which adsorption occurs.
+Physisorption: physical adsorption, van der Waals forces, reversible, multi-layer, low Eₐ.
+Chemisorption (activated adsorption): chemical bond formation, irreversible, mono-layer, high Eₐ.
+Factors affecting: nature of adsorbent/adsorbate, surface area, temperature, pressure.
+
+FREUNDLICH ADSORPTION ISOTHERM:
+x/m = k·P^(1/n) (1/n between 0 and 1)
+log(x/m) = log k + (1/n)log P → straight line.
+
+LANGMUIR ADSORPTION ISOTHERM:
+Assumes monolayer, fixed adsorption sites, no interaction between adsorbed molecules.
+θ = bP/(1+bP) (θ = fraction of surface covered)
+
+CATALYSIS:
+Homogeneous catalysis: H⁺ catalysis (esterification, hydrolysis), NO in SO₂ oxidation.
+Heterogeneous catalysis: Fe (Haber process), V₂O₅ (Contact process), Ni (hydrogenation), Pt (catalytic converter).
+Autocatalysis: product itself acts as catalyst. KMnO₄ + H₂C₂O₄ (oxalic acid) — Mn²⁺ catalyzes.
+
+COLLOIDS:
+Dispersion of particles (1-1000 nm) in a medium.
+Types: sol (solid in liquid), gel (liquid in solid), emulsion (liquid in liquid), aerosol (solid/liquid in gas), foam (gas in liquid).
+Tyndall effect: scattering of light by colloidal particles (distinguishes colloid from true solution).
+Brownian motion: random motion of colloidal particles.
+Charge on colloids: responsible for stability (same charge → repulsion → no coagulation).
+Coagulation: destabilization of colloid by adding electrolyte. Hardy-Schulze rule: higher charge of ion → more effective coagulation.
+Gold number: minimum amount of protective colloid (gelatin, starch) to prevent coagulation of 10 mL red gold sol.
+Preparation: dispersion (grinding, peptization) or condensation (chemical reaction, change of solvent).
+
+EMULSIONS:
+O/W emulsion: oil drops in water (milk, cold cream). O/W emulsifier: soap, proteins.
+W/O emulsion: water drops in oil (butter, cold cream). W/O emulsifier: heavy metal soaps.
+Demulsification: centrifugation, adding electrolyte, heating.
+
+---
+
+CHAPTER 6: NUCLEAR CHEMISTRY
+
+RADIOACTIVITY:
+Spontaneous disintegration of unstable nuclei.
+Types:
+α decay: ²³⁸U → ²³⁴Th + ⁴He (A-4, Z-2)
+β⁻ decay: ¹⁴C → ¹⁴N + e⁻ + ν̄ (A same, Z+1) [n → p + e⁻ + ν̄]
+β⁺ decay: ²²Na → ²²Ne + e⁺ + ν (A same, Z-1) [p → n + e⁺ + ν]
+γ emission: no change in A or Z, just energy release.
+Electron capture: ⁷Be + e⁻ → ⁷Li + ν (A same, Z-1) [p + e⁻ → n + ν]
+
+Radioactive Decay Law: N = N₀e^(-λt)
+Half-life: t₁/₂ = 0.693/λ
+Radiocarbon dating: ¹⁴C t₁/₂ = 5730 years. Age = (t₁/₂/0.693) × ln(A₀/A).
+
+NUCLEAR REACTIONS:
+Q-value: Q = [m_reactants - m_products]c²
+Positive Q: exothermic (energy released). Negative Q: endothermic.
+
+Fission: ²³⁵U + n → ⁹⁰Kr + ¹⁴³Ba + 3n + 200 MeV.
+Chain reaction: controlled (reactor) or uncontrolled (bomb).
+Fusion: ²H + ³H → ⁴He + n + 17.6 MeV. Requires ~10⁸ K.
+Mass-energy: E = mc², 1 amu = 931.5 MeV.
+
+APPLICATIONS:
+Medical: ¹³¹I (thyroid cancer), ⁶⁰Co (radiation therapy), ⁹⁹ᵐTc (medical imaging).
+Dating: ¹⁴C (organic materials, up to 50,000 years), ²³⁸U (rocks, millions of years).
+Power generation: nuclear reactors.
+Food irradiation: ⁶⁰Co γ-rays kill bacteria.
+
+NUCLEAR STABILITY:
+Stable nuclei have N/Z ratio close to 1 for light elements, up to 1.5 for heavy elements.
+Magic numbers: 2, 8, 20, 28, 50, 82, 126 (especially stable — like noble gas configuration).
+Even-even nuclei most stable (even protons AND neutrons).
+Odd-odd nuclei least stable.
+Belt of stability in N vs Z plot.

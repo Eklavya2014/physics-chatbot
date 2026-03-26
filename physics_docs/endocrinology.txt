@@ -1,0 +1,218 @@
+================================================================================
+                          ENDOCRINOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE ENDOCRINE SYSTEM
+------------------------
+Endocrinology is the study of hormones — chemical messengers secreted directly
+into the bloodstream to act on distant target cells. Hormones regulate metabolism,
+growth, reproduction, sleep, mood, and homeostasis.
+
+Types of Chemical Signalling:
+- Endocrine   : Hormone released into blood → acts on distant target.
+- Paracrine   : Acts on nearby cells; doesn't enter blood (prostaglandins, growth factors).
+- Autocrine   : Cell signals to itself (cancer cells often have autocrine growth loops).
+- Juxtacrine  : Signalling via direct cell-cell contact (Notch-Delta).
+- Neurocrine  : Neurons release hormones into blood (ADH, oxytocin).
+
+Hormone Chemistry:
+  Peptide/Protein hormones: Water-soluble; cannot cross membrane; bind surface receptors.
+    Examples: Insulin, glucagon, FSH, LH, TSH, GH, PTH, ADH, oxytocin, hCG.
+  Steroid hormones: Derived from cholesterol; lipid-soluble; cross membrane; bind
+    intracellular receptors → direct gene regulation.
+    Examples: Cortisol, aldosterone, testosterone, oestradiol, progesterone, vitamin D.
+  Amine hormones: Derived from amino acids.
+    Tyrosine-derived: Thyroid hormones (T3/T4 — lipid-soluble, act like steroids);
+                      catecholamines (epinephrine, norepinephrine, dopamine — water-soluble).
+    Tryptophan-derived: Serotonin, melatonin.
+
+1.1 ENDOCRINE GLANDS & HORMONES OVERVIEW
+------------------------------------------
+Hypothalamus → Pituitary → Peripheral gland (multi-tiered axis with negative feedback).
+
+Major Hormones at a Glance:
+Gland              | Hormone        | Target           | Effect
+-------------------|----------------|------------------|--------------------------------
+Hypothalamus       | TRH            | Ant. Pituitary   | Stimulates TSH release
+                   | CRH            | Ant. Pituitary   | Stimulates ACTH release
+                   | GnRH (pulsatile)| Ant. Pituitary  | Stimulates LH/FSH release
+                   | GHRH/Somatostatin| Ant. Pituitary | Stimulates/inhibits GH release
+                   | Dopamine       | Ant. Pituitary   | Inhibits prolactin release
+Anterior Pituitary | TSH            | Thyroid          | T3/T4 production
+                   | ACTH           | Adrenal cortex   | Cortisol/androgens production
+                   | LH             | Gonads           | Ovulation; testosterone
+                   | FSH            | Gonads           | Follicle growth; spermatogenesis
+                   | GH             | Liver, bones     | IGF-1 → growth, metabolism
+                   | Prolactin      | Breast           | Milk production
+Posterior Pituitary| ADH (vasopressin)| Kidney         | Water reabsorption
+                   | Oxytocin       | Uterus, breast   | Contractions, milk let-down
+Thyroid            | T3, T4         | Most cells       | Metabolic rate, growth
+                   | Calcitonin     | Bone             | Lowers blood Ca2+
+Parathyroid        | PTH            | Bone, kidney     | Raises blood Ca2+
+Adrenal cortex     | Cortisol       | Widespread       | Stress response, anti-inflam.
+                   | Aldosterone    | Kidney           | Na+ retention, K+ excretion
+                   | DHEA           | Gonads           | Sex hormone precursor
+Adrenal medulla    | Epinephrine    | Heart, vessels   | Fight-or-flight
+                   | Norepinephrine | Vessels          | Vasoconstriction
+Pancreas           | Insulin        | Liver, muscle    | Glucose uptake, glycogenesis
+                   | Glucagon       | Liver            | Glycogenolysis, gluconeogenesis
+Pineal             | Melatonin      | Brain, SCN       | Circadian rhythm, sleep
+Adipose            | Leptin         | Hypothalamus     | Suppresses appetite
+                   | Adiponectin    | Liver, muscle    | Insulin sensitisation
+GI tract           | Ghrelin        | Hypothalamus     | Stimulates hunger
+                   | GLP-1, GIP     | Pancreas         | Incretin effect; insulin release
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. DIABETES MELLITUS
+---------------------
+Type 1 Diabetes (T1DM):
+  Autoimmune destruction of pancreatic beta cells → absolute insulin deficiency.
+  Onset: Usually childhood; HLA-DR3/DR4 association; GAD65, IA-2 antibodies.
+  Pathophysiology: No insulin → no glucose uptake → hyperglycaemia → lipolysis →
+  ketogenesis → DKA (diabetic ketoacidosis) — life-threatening.
+  Treatment: Exogenous insulin (basal-bolus); CSII (pump); closed-loop systems
+  (artificial pancreas = CGM + insulin pump + algorithm).
+
+Type 2 Diabetes (T2DM):
+  Insulin resistance + progressive beta cell failure.
+  Pathophysiology: Obesity → visceral adiposity → adipokine dysregulation →
+  lipotoxicity + glucotoxicity → beta cell exhaustion.
+  Genetics: Polygenic (>400 GWAS loci); TCF7L2 strongest single gene risk factor.
+  Treatment progression:
+    Lifestyle (diet + exercise) → Metformin (AMPK activation; first-line) →
+    Add: SGLT2 inhibitor (empagliflozin — cardioprotective), GLP-1 RA
+    (semaglutide — weight loss + CV benefit), DPP-4 inhibitor, sulfonylurea →
+    Insulin.
+
+Key Diabetes Drugs:
+Drug Class         | Example          | Mechanism               | Key Benefit/Risk
+-------------------|------------------|-------------------------|------------------
+Metformin          | Metformin        | AMPK → hepatic glucose ↓ | Weight neutral; lactic acidosis (rare)
+SGLT2i             | Empagliflozin    | Urinary glucose excretion| CV/renal protection
+GLP-1 RA           | Semaglutide      | GLP-1 → insulin ↑, glucagon ↓ | Weight loss, CV benefit
+DPP-4i             | Sitagliptin      | Blocks GLP-1 degradation | Weight neutral
+Sulfonylurea       | Glibenclamide    | K-ATP channel closure → insulin | Hypoglycaemia risk
+Insulin            | Various          | Exogenous insulin        | Universal; hypoglycaemia risk
+
+Complications (both T1 and T2):
+  Microvascular: Retinopathy, nephropathy, neuropathy (AGEs, polyol pathway, PKC).
+  Macrovascular: CAD, stroke, peripheral arterial disease (atherogenesis).
+  HbA1c: Glycated haemoglobin; reflects mean glucose over ~3 months. Target <48 mmol/mol (6.5%).
+
+3. THYROID PHYSIOLOGY & DISORDERS
+-----------------------------------
+Thyroid Hormone Synthesis:
+  Thyroglobulin (Tg) synthesised in thyroid follicular cells → secreted into
+  follicular lumen → iodination of tyrosine residues by thyroid peroxidase (TPO)
+  → MIT (monoiodotyrosine) + DIT (diiodotyrosine) → T3 (MIT+DIT) + T4 (DIT+DIT) →
+  pinocytosis → lysosomal cleavage → T3/T4 secreted.
+  T4 is main secretory product; converted to active T3 (5x more potent) in periphery
+  by deiodinase (D1, D2). Reverse T3 (rT3) is inactive.
+  Transport: 99.9% bound to TBG, albumin, transthyretin. Free T3/T4 = active.
+
+Hypothyroidism:
+  Primary (Hashimoto's thyroiditis): Autoimmune; anti-TPO, anti-Tg antibodies.
+  High TSH + low T3/T4. Symptoms: fatigue, weight gain, cold intolerance, constipation,
+  bradycardia, depression, myxoedema (severe). Treatment: Levothyroxine (T4).
+
+Hyperthyroidism:
+  Graves' disease: TSH receptor antibodies (TRAb) stimulate thyroid → autonomous
+  T3/T4 production. Ophthalmopathy (proptosis), pretibial myxoedema, goitre.
+  Low TSH + high T3/T4. Symptoms: weight loss, tachycardia, tremor, heat intolerance,
+  anxiety, AF. Treatment: Carbimazole/PTU (TPO inhibitors), radioiodine (I-131),
+  thyroidectomy.
+
+4. ADRENAL CORTEX & STRESS RESPONSE
+--------------------------------------
+HPA Axis:
+  CRH (hypothalamus) → ACTH (pituitary) → Cortisol (zona fasciculata).
+  Cortisol effects: Gluconeogenesis ↑, lipolysis ↑, protein catabolism ↑,
+  anti-inflammatory (inhibits PLA2, reduces cytokines), immunosuppressive.
+  Negative feedback: Cortisol → hypothalamus and pituitary.
+  Diurnal variation: Highest at ~8am; lowest at midnight.
+
+Cushing's Syndrome (Hypercortisolism):
+  Causes: Pituitary adenoma (ACTH-secreting) = Cushing's disease; adrenal adenoma;
+  ectopic ACTH (SCLC); iatrogenic (exogenous steroids — most common).
+  Features: Central obesity (buffalo hump, moon face), purple striae, diabetes,
+  hypertension, osteoporosis, immunosuppression, thin skin, proximal myopathy.
+
+Addison's Disease (Primary Adrenal Insufficiency):
+  Autoimmune destruction of adrenal cortex → cortisol + aldosterone deficiency.
+  Features: Fatigue, weight loss, hyperpigmentation (↑ ACTH/MSH), postural hypotension,
+  hyponatraemia, hyperkalaemia, hypoglycaemia.
+  Addisonian crisis: Life-threatening; triggered by stress/infection.
+  Treatment: Hydrocortisone + fludrocortisone replacement.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. INSULIN SIGNALLING IN DEPTH
+--------------------------------
+Insulin receptor: Heterotetrameric RTK (2 alpha + 2 beta subunits; disulphide-linked).
+Insulin binds → conformational change → trans-autophosphorylation of beta-subunit
+tyrosines → IRS1/IRS2 docking → PI3K recruitment → PIP2 → PIP3 → PDK1 + mTORC2
+→ AKT (PKB) phosphorylation (T308 by PDK1; S473 by mTORC2) → AKT activated.
+
+AKT substrates:
+  FOXO transcription factors → phosphorylation → nuclear exclusion → suppresses
+  gluconeogenic genes (PEPCK, G6Pase).
+  GSK3 → phosphorylation → inhibition → glycogen synthase activated → glycogenesis.
+  AS160 (TBC1D4) → phosphorylation → GLUT4 vesicle exocytosis (in muscle/fat).
+  BAD → phosphorylation → anti-apoptotic (dissociates from Bcl-2).
+  mTORC1 (via TSC1/2 inhibition) → S6K, 4EBP1 → protein synthesis.
+
+Insulin resistance mechanisms:
+  Lipotoxicity: DAG + ceramide activate PKC-theta → IRS1 serine phosphorylation
+  (inhibitory) → PI3K recruitment impaired.
+  ER stress: UPR activation → JNK → IRS1 serine phosphorylation.
+  Inflammation: TNF-alpha + IL-6 (from adipose) → JNK/IKK → IRS1 phosphorylation.
+  Mitochondrial dysfunction: Impaired beta-oxidation → lipid intermediates accumulate.
+  Hyperinsulinaemia: Chronic insulin → insulin receptor downregulation.
+
+6. NEUROENDOCRINOLOGY & CIRCADIAN BIOLOGY
+-------------------------------------------
+SCN (Suprachiasmatic Nucleus):
+  Master circadian clock; ~10,000 neurons; driven by light input via retinohypothalamic
+  tract (melanopsin-containing retinal ganglion cells).
+  Molecular clock: CLOCK/BMAL1 heterodimer activates Per1/2/3 and Cry1/2 → PER/CRY
+  accumulate → inhibit CLOCK/BMAL1 → ~24h oscillation.
+  REV-ERB alpha/beta and ROR: Additional stabilising feedback loop.
+  Output: Coordinates cortisol, melatonin, insulin, temperature, immune function rhythms.
+  Disruption: Shift work → increased risk T2DM, obesity, CVD, cancer.
+
+Leptin & Energy Balance:
+  Leptin: Adipokine; levels proportional to fat mass → hypothalamus (ARC nucleus)
+  → activates POMC neurons (anorexigenic; produce alpha-MSH → MC4R → reduced appetite).
+  → inhibits AgRP/NPY neurons (orexigenic).
+  Leptin resistance in obesity: High leptin but reduced receptor sensitivity.
+  Leptin deficiency (Lepob/ob mice, Leptin-deficient humans): Severe obesity.
+
+GLP-1 System (Key Drug Target):
+  GLP-1 secreted by L cells in distal gut after meal.
+  Actions: Insulin secretion (glucose-dependent), glucagon inhibition, gastric emptying
+  slowed, satiety (hypothalamus), beta cell proliferation, cardioprotective.
+  GLP-1 RAs: Semaglutide (Ozempic/Wegovy) → ~15% body weight loss; CV benefit (SUSTAIN-6).
+  Tirzepatide: Dual GIP/GLP-1 agonist → ~22% weight loss (SURMOUNT-1); cardiovascular.
+  Mechanism of weight loss: ARC + brainstem (AP, NTS) neurons → reduced food intake.
+
+[CLINICAL LINK] Multiple Endocrine Neoplasia (MEN):
+  MEN1: Parathyroid (hyperCa2+) + pituitary adenomas + pancreatic NETs.
+        MEN1 gene mutation (menin tumour suppressor).
+  MEN2A: Medullary thyroid cancer + pheochromocytoma + parathyroid.
+         RET proto-oncogene mutation.
+  MEN2B: MTC + pheo + mucosal neuromas + Marfanoid habitus. RET M918T.
+  Pheochromocytoma: Catecholamine-secreting adrenal medulla tumour → paroxysmal
+  hypertension, headache, sweating, palpitations. "The 10% tumour." Diagnose with
+  plasma/urine metanephrines. Treat: Alpha-blockade first → then beta-blockade → surgery.
+
+================================================================================

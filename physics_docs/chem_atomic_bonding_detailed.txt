@@ -1,0 +1,220 @@
+ATOMIC STRUCTURE AND CHEMICAL BONDING - COMPREHENSIVE GUIDE
+=============================================================
+
+PART 1: ATOMIC STRUCTURE
+
+DISCOVERY OF SUBATOMIC PARTICLES:
+Electron: J.J. Thomson (1897) — cathode ray tube experiment. Charge/mass ratio = 1.76 × 10¹¹ C/kg.
+Proton: Goldstein (1886) — canal rays (anode rays). Charge = +1.6 × 10⁻¹⁹ C.
+Neutron: James Chadwick (1932) — bombarded Be with alpha particles. Be + He → C + n.
+Nucleus: Rutherford (1911) — gold foil experiment.
+
+ATOMIC MODELS IN DETAIL:
+
+Thomson's Model (Plum Pudding, 1904):
+- Atom = uniform sphere of positive charge with electrons embedded like plums in pudding.
+- Failure: Could not explain Rutherford's scattering experiment results.
+
+Rutherford's Model (Nuclear Model, 1911):
+- Gold foil experiment: thin gold foil bombarded with alpha particles.
+- Observations: Most passed through (atom mostly empty), some deflected (nucleus), very few bounced back (direct hit on nucleus).
+- Conclusions: (1) Atom mostly empty space, (2) Dense positive nucleus at centre, (3) Electrons in orbit outside.
+- Failure: Accelerating electrons should emit radiation → spiral into nucleus → atom collapse in 10⁻⁸ s.
+
+Bohr's Model (1913):
+Postulates:
+1. Electrons revolve in fixed circular orbits (stationary states) without emitting radiation.
+2. Only certain orbits are allowed: mvr = nℏ = nh/2π (angular momentum quantized).
+3. Energy emitted/absorbed when electron jumps: hν = E₂ - E₁.
+Results for hydrogen-like atoms:
+- Radius: rₙ = n²a₀/Z, a₀ = 0.529 Å (Bohr radius)
+- Velocity: vₙ = Ze²/(2ε₀hn) = 2.18 × 10⁶ × Z/n m/s
+- Energy: Eₙ = -13.6 Z²/n² eV = -2.18 × 10⁻¹⁸ Z²/n² J
+- Frequency: ν = RHz²(1/n₁² - 1/n₂²), R_H = 1.097 × 10⁷ m⁻¹
+
+Limitations of Bohr's Model:
+- Only works for one-electron (hydrogen-like) species.
+- Cannot explain splitting of spectral lines in magnetic field (Zeeman effect).
+- Cannot explain splitting in electric field (Stark effect).
+- Cannot explain fine structure of spectral lines.
+- Violates Heisenberg's uncertainty principle.
+
+QUANTUM MECHANICAL MODEL (Modern):
+Based on: de Broglie wavelength + Heisenberg uncertainty + Schrödinger equation.
+Orbital: 3D region where probability of finding electron is maximum (90% probability).
+NOT a fixed orbit — just a probability distribution.
+
+QUANTUM NUMBERS IN DETAIL:
+
+1. Principal Quantum Number (n):
+- Values: 1, 2, 3, 4, ... (positive integers)
+- Determines: energy of shell, size of orbital, shell designation (K, L, M, N...)
+- Maximum electrons in shell: 2n²
+
+2. Azimuthal/Orbital Angular Momentum Quantum Number (l):
+- Values: 0, 1, 2, ..., (n-1)
+- Determines: shape of orbital, subshell
+- l=0: s (sharp), l=1: p (principal), l=2: d (diffuse), l=3: f (fundamental)
+- Number of orbitals in subshell: 2l+1
+- Orbital angular momentum: L = √(l(l+1))ℏ
+
+3. Magnetic Quantum Number (mₗ):
+- Values: -l, -(l-1), ..., 0, ..., (l-1), l [total 2l+1 values]
+- Determines: orientation of orbital in space, behavior in magnetic field
+- s: 1 orbital (mₗ=0)
+- p: 3 orbitals (mₗ = -1, 0, +1) → px, py, pz
+- d: 5 orbitals (mₗ = -2, -1, 0, +1, +2) → dxy, dyz, dxz, dx²-y², dz²
+- f: 7 orbitals
+
+4. Spin Quantum Number (mₛ):
+- Values: +½ or -½
+- Intrinsic angular momentum of electron.
+- Spin angular momentum: S = √(s(s+1))ℏ = (√3/2)ℏ
+- Two electrons in same orbital must have opposite spins (Pauli principle).
+
+ELECTRONIC CONFIGURATION RULES:
+Aufbau Principle: Fill lowest energy orbitals first.
+Energy order: 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < 5f < 6d
+
+Pauli Exclusion Principle: No two electrons can have identical set of all four quantum numbers. Maximum 2 electrons per orbital (with opposite spins).
+
+Hund's Rule of Maximum Multiplicity: Electrons fill orbitals of same energy (degenerate) singly before pairing. All unpaired electrons have same spin direction.
+
+EXCEPTIONS IN ELECTRON CONFIGURATIONS:
+Cr: [Ar] 3d⁵ 4s¹ (NOT [Ar] 3d⁴ 4s²) — half-filled 3d is extra stable
+Cu: [Ar] 3d¹⁰ 4s¹ (NOT [Ar] 3d⁹ 4s²) — fully-filled 3d is extra stable
+Mo: [Kr] 4d⁵ 5s¹, Ag: [Kr] 4d¹⁰ 5s¹, Au: [Xe] 4f¹⁴ 5d¹⁰ 6s¹
+
+STABILITY OF COMPLETELY AND HALF-FILLED ORBITALS:
+Half-filled (d⁵, f⁷) and fully-filled (d¹⁰, f¹⁴) subshells are extra stable because:
+- Symmetrical electron distribution
+- Maximization of exchange energy
+
+IONIZATION ENERGY (IE):
+Energy needed to remove electron from gaseous atom.
+First IE < Second IE < Third IE (always increases).
+Trends: Increases across period (left to right), decreases down group.
+Exceptions: IE(B) < IE(Be), IE(O) < IE(N).
+Why? B: 2p electron easier to remove than 2s. O: electron pairing repulsion in 2px.
+
+ELECTRON AFFINITY (EA):
+Energy released when neutral gaseous atom gains electron.
+Cl has highest EA (-349 kJ/mol), NOT fluorine (-333 kJ/mol).
+Why? F is too small — high electron-electron repulsion in very compact 2p subshell.
+Noble gases: EA ≈ 0 (stable configuration). N, Be, Mg also have nearly zero EA.
+Second EA always positive (endothermic) — adding to already negative ion.
+
+ELECTRONEGATIVITY:
+Pauling scale: F (3.98) > O (3.44) > Cl (3.16) > N (3.04) > Br (2.96) > C (2.55).
+Bond type based on electronegativity difference (Δχ):
+Δχ < 0.5: non-polar covalent. 0.5-1.7: polar covalent. > 1.7: ionic.
+
+---
+
+PART 2: CHEMICAL BONDING
+
+IONIC BONDING:
+Formation: metal transfers electron(s) to non-metal.
+Conditions: large electronegativity difference (>1.7), usually metal + nonmetal.
+Lattice energy (U): Energy released when gaseous ions form 1 mole of solid crystal.
+U = -N_A × M × Z+ × Z- × e² / (4πε₀ × r₀) × (1 - 1/n)
+[M = Madelung constant, n = Born exponent]
+Higher lattice energy → more stable ionic compound → higher melting point.
+Madelung constants: NaCl = 1.748, CsCl = 1.763, ZnS = 1.638.
+
+BORN-HABER CYCLE:
+Thermodynamic cycle for ionic compounds.
+ΔH°f = ΔH°sub + IE + ½ΔH°diss + EA + U (lattice energy)
+For NaCl: ΔH°f = +108 + 496 + 121 + (-349) + (-787) = -411 kJ/mol
+
+FAJAN'S RULES (Polarization):
+Covalent character increases when:
+1. High charge on cation (more polarizing): Al³⁺ > Mg²⁺ > Na⁺
+2. Small size of cation (more polarizing power)
+3. High charge on anion (more polarizable): I⁻ > Br⁻ > Cl⁻ > F⁻
+4. Large size of anion (more polarizable)
+Polarizing power = charge/size = charge density
+AlCl₃ has more covalent character than NaCl.
+
+COVALENT BONDING:
+Lewis theory: shared electron pairs.
+Octet rule: atoms share electrons to achieve 8 electrons in outer shell.
+Octet rule exceptions:
+- Incomplete octet: BF₃ (6e around B), BeCl₂ (4e around Be)
+- Expanded octet: PCl₅ (10e), SF₆ (12e) — only for n ≥ 3
+- Odd electron molecules: NO (11e), NO₂ (17e), ClO₂ (19e)
+
+BOND PARAMETERS:
+Bond length: Distance between nuclei of bonded atoms. Decreases with increasing bond order. Single > double > triple.
+Bond energy (enthalpy): Energy to break 1 mole of bonds in gaseous state. Increases with bond order.
+Bond order: (bonding electrons - antibonding electrons)/2 in MO theory.
+Bond angle: Angle between two bonds at central atom.
+
+MOLECULAR GEOMETRY — VSEPR DETAILED:
+Steric number (SN) = bonding pairs + lone pairs on central atom.
+
+SN=2: Linear (180°) — BeCl₂, CO₂, HCN, CS₂
+SN=3: Trigonal planar (120°) — BF₃, SO₃, NO₃⁻
+       With 1 LP: Bent (< 120°) — SO₂ (119°), O₃
+SN=4: Tetrahedral (109.5°) — CH₄, SiCl₄, SO₄²⁻, PO₄³⁻
+       With 1 LP: Trigonal pyramidal (107°) — NH₃, PH₃, PCl₃
+       With 2 LP: Bent (104.5°) — H₂O, H₂S, OF₂
+SN=5: Trigonal bipyramidal — PCl₅, AsF₅
+       With 1 LP: See-saw (SF₄)
+       With 2 LP: T-shaped (ClF₃)
+       With 3 LP: Linear (XeF₂, I₃⁻)
+SN=6: Octahedral (90°) — SF₆, [Co(NH₃)₆]³⁺
+       With 1 LP: Square pyramidal (IF₅, BrF₅)
+       With 2 LP: Square planar (XeF₄, [PtCl₄]²⁻)
+
+Lone pair vs bond pair: LP-LP > LP-BP > BP-BP repulsion.
+That's why NH₃ (107°) < CH₄ (109.5°), H₂O (104.5°) < NH₃ (107°).
+
+HYBRIDIZATION IN DETAIL:
+sp hybridization: 1s + 1p → 2 sp orbitals (linear, 180°)
+Examples: BeCl₂, C₂H₂ (acetylene), CO₂, HCN, [Ag(NH₃)₂]⁺
+Remaining 2 p orbitals → 2 π bonds in triple bonds.
+
+sp² hybridization: 1s + 2p → 3 sp² orbitals (trigonal planar, 120°)
+Examples: BF₃, C₂H₄ (ethylene), benzene, graphite, SO₃, NO₃⁻
+Remaining 1 p orbital → 1 π bond in double bonds.
+
+sp³ hybridization: 1s + 3p → 4 sp³ orbitals (tetrahedral, 109.5°)
+Examples: CH₄, NH₃, H₂O, diamond, SiO₂, CCl₄
+
+sp³d hybridization: trigonal bipyramidal — PCl₅
+sp³d² hybridization: octahedral — SF₆, [Co(NH₃)₆]³⁺
+
+SIGMA AND PI BONDS:
+Sigma (σ): Head-on overlap, cylindrical symmetry, free rotation. Every single bond is σ.
+Pi (π): Lateral (side) overlap of p orbitals, no rotation (causes cis-trans isomerism).
+Single bond: 1σ. Double bond: 1σ + 1π. Triple bond: 1σ + 2π.
+Pi bonds are weaker than sigma bonds.
+
+RESONANCE:
+When a molecule cannot be accurately described by a single Lewis structure.
+Resonance hybrid is more stable than any contributing structure.
+Resonance energy = stability gained.
+Examples: benzene (150 kJ/mol), O₃, CO₃²⁻, NO₃⁻, SO₄²⁻, carboxylate ion.
+Conditions: Same arrangement of atoms, same number of electrons, contributing structures differ only in electron positions.
+
+INTERMOLECULAR FORCES (detailed):
+1. Ion-ion (ionic bonds): 40-400 kJ/mol. Strongest.
+2. Hydrogen bonds: 10-40 kJ/mol. X-H···Y (X,Y = F, O, N).
+   Intramolecular H-bond: within molecule, forms ring → lowers bp (o-nitrophenol vs p-nitrophenol).
+   Intermolecular H-bond: between molecules → raises bp (HF, H₂O, NH₃).
+3. Dipole-dipole: 3-4 kJ/mol. Between polar molecules.
+4. Dipole-induced dipole (Debye forces): between polar and non-polar.
+5. London dispersion (van der Waals, instantaneous dipole): 0.05-40 kJ/mol. All molecules.
+   Increases with: larger molecule, more electrons, higher polarizability, larger surface area.
+   Explains: why alkanes become liquids/solids as chain length increases.
+
+BOND POLARITY AND MOLECULAR POLARITY:
+Bond polarity: due to electronegativity difference.
+Molecular polarity: vector sum of bond dipoles + lone pair contributions.
+Symmetric molecules are non-polar even with polar bonds:
+CO₂ (O=C=O, linear): bond dipoles cancel.
+CCl₄ (tetrahedral): bond dipoles cancel.
+BF₃ (trigonal planar): bond dipoles cancel.
+SF₆ (octahedral): bond dipoles cancel.
+Unsymmetric molecules are polar: H₂O, NH₃, CHCl₃, HCl.

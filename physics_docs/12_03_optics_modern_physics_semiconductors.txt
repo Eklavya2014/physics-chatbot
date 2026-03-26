@@ -1,0 +1,235 @@
+CLASS 12 PHYSICS - OPTICS, MODERN PHYSICS AND SEMICONDUCTORS
+=============================================================
+
+CHAPTER: RAY OPTICS AND OPTICAL INSTRUMENTS
+
+REFRACTION AT SPHERICAL SURFACE:
+n₁/u + n₂/v = (n₂-n₁)/R
+(n₁ = incident medium, n₂ = refracted medium)
+
+LENS MAKER'S EQUATION:
+1/f = (n-1)[1/R₁ - 1/R₂]
+Thin lens: 1/v - 1/u = 1/f
+
+COMBINATION OF LENSES (in contact):
+1/f = 1/f₁ + 1/f₂, P = P₁ + P₂
+
+TOTAL INTERNAL REFLECTION (TIR):
+Occurs when light goes from denser to rarer medium and angle > critical angle.
+sin C = n₂/n₁ = 1/n (for air as second medium)
+Applications: optical fibre, diamonds, prisms, mirages.
+
+OPTICAL FIBRE:
+Core (high n) surrounded by cladding (low n).
+TIR keeps light confined in core.
+Used in communication (internet cables), medical endoscopes.
+
+PRISM:
+Angle of deviation: δ = (i + e) - A
+Minimum deviation: δ_m when i = e (ray passes symmetrically)
+n = sin((A+δ_m)/2) / sin(A/2)
+
+OPTICAL INSTRUMENTS:
+
+Simple Microscope (Magnifying Glass):
+M = 1 + D/f (image at near point, D = 25 cm)
+M = D/f (image at infinity, relaxed eye)
+
+Compound Microscope:
+M = m_e × m_o ≈ -(L/f_o)(D/f_e)
+L = tube length, f_o = objective focal length, f_e = eyepiece focal length.
+
+Astronomical Telescope (normal adjustment):
+M = -f_o/f_e (image at infinity)
+Length = f_o + f_e
+Larger objective → more light, better resolution.
+
+Reflecting Telescope:
+Uses concave mirror as objective. No chromatic aberration. Easier to make large size.
+
+WAVE OPTICS:
+
+HUYGENS' PRINCIPLE:
+Every point on a wavefront is a source of secondary wavelets.
+New wavefront = envelope of all secondary wavelets.
+
+YOUNG'S DOUBLE SLIT EXPERIMENT (YDSE):
+Conditions: coherent, monochromatic sources.
+Path difference: Δ = yd/D (y = position, d = slit separation, D = screen distance)
+Bright fringe: Δ = nλ (n = 0, ±1, ±2, ...)
+Dark fringe: Δ = (2n-1)λ/2
+Fringe width: β = λD/d
+Angular fringe width: θ = λ/d
+
+SINGLE SLIT DIFFRACTION:
+Central maximum: widest and brightest.
+Minima at: a sin θ = nλ (a = slit width, n = ±1, ±2, ...)
+Width of central maximum: 2λD/a
+
+RESOLVING POWER:
+Rayleigh criterion: θ_min = 1.22λ/a (for circular aperture)
+Better resolution: smaller λ, larger aperture.
+
+POLARIZATION:
+Light is transverse → can be polarized.
+Malus's law: I = I₀ cos²θ (θ = angle between polarizer and analyzer)
+Brewster's law: tan θ_B = n (θ_B = Brewster's angle, at which reflected light is completely polarized)
+
+---
+
+CHAPTER: DUAL NATURE OF RADIATION AND MATTER
+
+PHOTOELECTRIC EFFECT:
+Emission of electrons from metal surface when light shines on it.
+Einstein's explanation: E = hf = hc/λ
+
+Key equations:
+- Work function: φ = hf₀ (f₀ = threshold frequency)
+- Maximum KE: KE_max = hf - φ = h(f - f₀)
+- Stopping potential: eV₀ = KE_max = hf - φ
+
+Observations:
+- Photoelectric effect occurs only if f ≥ f₀.
+- KE_max depends on frequency, not intensity.
+- Photocurrent proportional to intensity.
+- Effect is instantaneous (no time lag).
+
+DE BROGLIE WAVELENGTH (Matter Waves):
+λ = h/p = h/(mv) = h/√(2mKE)
+For electron accelerated through V: λ = h/√(2meV) = 1.226/√V nm
+
+DAVISSON-GERMER EXPERIMENT:
+Confirmed wave nature of electrons by diffraction.
+
+HEISENBERG'S UNCERTAINTY PRINCIPLE:
+Δx·Δp ≥ h/(4π) = ℏ/2
+ΔE·Δt ≥ h/(4π)
+Cannot simultaneously know exact position and momentum.
+
+---
+
+CHAPTER: ATOMS
+
+RUTHERFORD'S MODEL:
+- Most of atom is empty space.
+- Dense positive nucleus at centre.
+- Electrons orbit around nucleus.
+- Failure: accelerating electrons should radiate and spiral into nucleus.
+
+BOHR'S MODEL OF HYDROGEN ATOM:
+Postulates:
+1. Electrons orbit in fixed circular orbits without radiating.
+2. Angular momentum is quantized: mvr = nℏ (n = 1,2,3,...)
+3. Radiation emitted when electron jumps from higher to lower orbit: hf = E_i - E_f
+
+Results:
+- Orbit radius: r_n = n²a₀ (a₀ = 0.529 Å = Bohr radius)
+- Energy: E_n = -13.6/n² eV
+- Ground state (n=1): E = -13.6 eV (ionization energy = 13.6 eV)
+- Velocity: v_n = v₀/n (v₀ = 2.18 × 10⁶ m/s)
+
+SPECTRAL SERIES OF HYDROGEN:
+1/λ = R_H (1/n₁² - 1/n₂²) (n₂ > n₁)
+R_H = 1.097 × 10⁷ m⁻¹ (Rydberg constant)
+
+- Lyman series: n₁=1 (UV region)
+- Balmer series: n₁=2 (visible region)
+- Paschen series: n₁=3 (IR region)
+- Brackett series: n₁=4 (IR region)
+- Pfund series: n₁=5 (IR region)
+
+---
+
+CHAPTER: NUCLEI
+
+NUCLEAR BASICS:
+- Nucleus composed of protons (Z) and neutrons (N).
+- Mass number: A = Z + N
+- Nuclear radius: R = R₀A^(1/3), R₀ = 1.2 × 10⁻¹⁵ m = 1.2 fm
+- Nuclear density ≈ 2.3 × 10¹⁷ kg/m³ (same for all nuclei)
+
+MASS DEFECT AND BINDING ENERGY:
+Mass defect: Δm = Zm_p + Nm_n - M_nucleus
+Binding energy: BE = Δm × c² (1 u = 931.5 MeV)
+BE per nucleon: most stable around A = 56 (iron)
+
+RADIOACTIVITY:
+Spontaneous disintegration of unstable nucleus.
+
+Types of decay:
+- Alpha (α): ⁴He nucleus emitted. A decreases by 4, Z by 2.
+- Beta-minus (β⁻): electron emitted. A same, Z increases by 1. (n → p + e⁻ + ν̄)
+- Beta-plus (β⁺): positron emitted. A same, Z decreases by 1. (p → n + e⁺ + ν)
+- Gamma (γ): high energy photon. No change in A or Z.
+
+DECAY LAW:
+N = N₀e^(-λt), A = A₀e^(-λt) (A = activity = λN)
+Half-life: T₁/₂ = ln2/λ = 0.693/λ
+Mean life: τ = 1/λ = T₁/₂/0.693
+
+Activity: A = λN (SI unit: Becquerel, 1 Bq = 1 decay/s)
+1 Curie = 3.7 × 10¹⁰ Bq
+
+NUCLEAR REACTIONS:
+- Fission: heavy nucleus splits into lighter fragments + energy. (U-235 + n)
+- Fusion: light nuclei combine to form heavier nucleus + energy. (H + H → He)
+- Q value = (mass of reactants - mass of products) × c²
+
+---
+
+CHAPTER: SEMICONDUCTOR ELECTRONICS
+
+ENERGY BANDS:
+- Valence band: filled, electrons bound to atoms.
+- Conduction band: partially filled or empty.
+- Band gap (E_g): energy gap between bands.
+  - Conductor: E_g = 0 (bands overlap).
+  - Semiconductor: E_g ≈ 1 eV (Si: 1.1 eV, Ge: 0.7 eV).
+  - Insulator: E_g >> 3 eV.
+
+INTRINSIC SEMICONDUCTOR:
+Pure semiconductor. At room temperature, some electrons cross band gap.
+n_e = n_h = n_i (equal electrons and holes)
+n_i increases with temperature.
+
+EXTRINSIC SEMICONDUCTOR:
+Doped with impurities.
+- n-type: doped with pentavalent impurity (P, As, Sb). Majority carriers: electrons.
+- p-type: doped with trivalent impurity (B, Al, In). Majority carriers: holes.
+
+p-n JUNCTION:
+- Depletion region: region with no free carriers near junction.
+- Built-in potential barrier.
+- Forward bias: p connected to +, n to -. Barrier reduces, current flows.
+- Reverse bias: p connected to -, n to +. Barrier increases, tiny reverse current.
+
+DIODE CHARACTERISTICS:
+- Forward bias: low resistance, current increases exponentially.
+- Reverse bias: high resistance, very small reverse saturation current.
+- Breakdown voltage: reverse bias at which current suddenly increases (Zener breakdown).
+
+RECTIFIER:
+Half-wave rectifier: one diode, uses only half cycle. Efficiency = 40.6%.
+Full-wave rectifier: two diodes + centre-tap or 4 diodes (bridge). Efficiency = 81.2%.
+Filter capacitor smooths the output.
+
+ZENER DIODE:
+Operates in reverse breakdown region.
+Used as voltage regulator.
+Maintains constant output voltage despite variation in input or load.
+
+TRANSISTOR (BJT):
+Three layers: emitter (E), base (B), collector (C). Types: npn, pnp.
+Active region: emitter-base forward biased, collector-base reverse biased.
+I_E = I_B + I_C
+Current gain: β = I_C/I_B (= 20-200 typically), α = I_C/I_E = β/(1+β)
+
+LOGIC GATES:
+AND: output 1 only if ALL inputs 1. (A·B)
+OR: output 1 if ANY input 1. (A+B)
+NOT: output is complement of input. (Ā)
+NAND: NOT-AND. Universal gate. Output 0 only if ALL inputs 1.
+NOR: NOT-OR. Universal gate. Output 1 only if ALL inputs 0.
+XOR: output 1 if inputs are DIFFERENT. (A⊕B)
+
+NAND and NOR are universal gates — any logic circuit can be built using only NAND or only NOR gates.

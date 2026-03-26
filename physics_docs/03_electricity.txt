@@ -1,0 +1,178 @@
+CHAPTER 3: ELECTRICITY
+=======================
+
+ELECTRIC CHARGE AND CURRENT
+
+Electric Charge:
+- Matter is made of atoms. Atoms have protons (+) and electrons (-).
+- Like charges repel; unlike charges attract.
+- SI unit of charge: Coulomb (C)
+- Charge on one electron = -1.6 × 10⁻¹⁹ C
+
+Electric Current:
+Electric current is the rate of flow of electric charges through a conductor.
+I = Q/t
+Where I = current (Ampere), Q = charge (Coulomb), t = time (second)
+SI unit: Ampere (A)
+
+Conventional current flows from positive to negative terminal (outside battery).
+Electron flow is from negative to positive terminal.
+
+ELECTRIC POTENTIAL AND POTENTIAL DIFFERENCE
+
+Electric Potential:
+The electric potential at a point is the work done in bringing a unit positive charge from infinity to that point.
+
+Potential Difference (Voltage):
+The potential difference between two points is the work done in moving a unit positive charge from one point to the other.
+V = W/Q
+SI unit: Volt (V) = J/C
+
+OHM'S LAW
+Statement: The current flowing through a conductor is directly proportional to the potential difference across its ends, provided temperature and other physical conditions remain constant.
+V ∝ I
+V = IR
+Where R = resistance of the conductor
+
+A graph of V vs I is a straight line passing through the origin for an ohmic conductor.
+
+RESISTANCE
+Resistance is the property of a conductor to oppose the flow of electric current.
+R = V/I
+SI unit: Ohm (Ω)
+
+Factors affecting resistance:
+1. Length (l): R ∝ l (resistance increases with length)
+2. Area of cross-section (A): R ∝ 1/A (resistance decreases with larger area)
+3. Material (resistivity ρ): R = ρl/A
+4. Temperature: Resistance increases with temperature for metals.
+
+Resistivity (ρ):
+R = ρl/A
+SI unit of resistivity: Ohm-meter (Ω·m)
+- Good conductors (copper, silver): very low resistivity (~10⁻⁸ Ω·m)
+- Insulators (rubber, glass): very high resistivity (~10¹² Ω·m)
+- Semiconductors (silicon): intermediate resistivity
+
+COMBINATION OF RESISTANCES
+
+Series Combination:
+- Same current flows through each resistor.
+- Voltage is divided among resistors.
+- R_total = R₁ + R₂ + R₃ + ...
+- Total resistance is always greater than any individual resistance.
+
+Parallel Combination:
+- Same voltage across each resistor.
+- Current is divided among resistors.
+- 1/R_total = 1/R₁ + 1/R₂ + 1/R₃ + ...
+- Total resistance is always less than the smallest individual resistance.
+
+Advantages of Parallel Connection (household wiring):
+- Each appliance gets the same voltage.
+- If one device fails, others continue to work.
+- Each device can be switched on/off independently.
+- Total resistance is lower, so more current can be drawn.
+
+ELECTRIC POWER AND ENERGY
+
+Electric Power:
+The rate at which electrical energy is consumed or dissipated.
+P = VI = I²R = V²/R
+SI unit: Watt (W)
+
+Commercial unit of electrical energy: kilowatt-hour (kWh)
+1 kWh = 3.6 × 10⁶ J = 1 unit of electricity
+
+Calculation of electricity bill:
+Energy (in kWh) = Power (in kW) × Time (in hours)
+Cost = Energy (kWh) × Rate per unit
+
+HEATING EFFECT OF ELECTRIC CURRENT
+
+Joule's Law of Heating:
+The heat produced in a conductor is:
+H = I²Rt
+Where H = heat (Joules), I = current, R = resistance, t = time
+
+This heat is produced because electrons collide with atoms in the conductor, transferring energy.
+
+Applications of Heating Effect:
+- Electric bulb (tungsten filament, melting point 3380°C)
+- Electric iron, toaster, oven, heater
+- Electric fuse
+
+ELECTRIC FUSE
+A safety device that protects circuits from overloading and short circuits.
+- Made of low melting point alloy (tin-lead alloy).
+- When current exceeds safe limit, fuse wire melts and breaks the circuit.
+- Fuse is always connected in series.
+- Fuse rating: 1A, 2A, 5A, 10A, 15A, etc.
+
+MCB (Miniature Circuit Breaker):
+Modern alternative to fuse. Can be reset after tripping (fuse must be replaced).
+
+SHORT CIRCUIT
+When live wire and neutral wire come in direct contact, resistance becomes almost zero and very high current flows. This can cause fires.
+
+OVERLOADING
+When too many appliances are connected to a single circuit, drawing more current than the wire can safely handle. This can melt insulation and cause fires.
+
+EARTHING (GROUNDING)
+A safety measure where the body of electrical appliances is connected to the earth (ground). If a live wire accidentally touches the appliance body, current flows to earth instead of through a person.
+
+ELECTRIC CIRCUIT COMPONENTS AND SYMBOLS
+- Cell: provides EMF (electromotive force)
+- Battery: combination of cells
+- Switch: opens/closes circuit
+- Resistor: opposes current flow
+- Variable resistor (Rheostat): adjustable resistance
+- Ammeter: measures current (connected in series)
+- Voltmeter: measures voltage (connected in parallel)
+- Galvanometer: detects small currents
+
+IMPORTANT FORMULAS SUMMARY
+- Current: I = Q/t
+- Ohm's Law: V = IR
+- Resistance: R = ρl/A
+- Series resistance: R_s = R₁ + R₂ + R₃
+- Parallel resistance: 1/R_p = 1/R₁ + 1/R₂ + 1/R₃
+- Power: P = VI = I²R = V²/R
+- Heat: H = I²Rt = VIt = V²t/R
+- Energy: E = Pt (in kWh: E = P(kW) × t(h))
+
+NUMERICAL EXAMPLES
+
+Example 1:
+A bulb has resistance 100 Ω. If a voltage of 220 V is applied, find the current and power.
+Solution:
+I = V/R = 220/100 = 2.2 A
+P = VI = 220 × 2.2 = 484 W
+
+Example 2:
+Two resistors of 6 Ω and 12 Ω are connected in parallel. Find equivalent resistance.
+Solution:
+1/R = 1/6 + 1/12 = 2/12 + 1/12 = 3/12
+R = 12/3 = 4 Ω
+
+Example 3:
+A family uses 250 W TV for 5 hours, 100 W bulb for 10 hours, and 1000 W heater for 2 hours per day. Find daily energy consumption in kWh.
+Solution:
+TV: 250 × 5 = 1250 Wh = 1.25 kWh
+Bulb: 100 × 10 = 1000 Wh = 1.0 kWh
+Heater: 1000 × 2 = 2000 Wh = 2.0 kWh
+Total = 4.25 kWh per day
+
+IMPORTANT QUESTIONS AND ANSWERS
+
+Q: Why are copper and aluminum used as electric wires?
+A: They are good conductors (very low resistivity), malleable, and relatively cheap. Copper has resistivity of about 1.7 × 10⁻⁸ Ω·m.
+
+Q: Why is tungsten used in electric bulbs?
+A: Tungsten has a very high melting point (3380°C), so it doesn't melt even when it glows white hot. It also has high resistivity, generating enough heat and light.
+
+Q: Why does the resistance of a wire increase with temperature?
+A: As temperature increases, atoms vibrate more vigorously, increasing the frequency of collisions with electrons. This makes it harder for electrons to flow, increasing resistance.
+
+Q: What is the difference between EMF and terminal voltage?
+A: EMF (electromotive force) is the total voltage a cell can provide. Terminal voltage is the actual voltage across the cell terminals when current is flowing, which is less than EMF due to the internal resistance of the cell.

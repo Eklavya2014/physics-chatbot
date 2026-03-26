@@ -1,0 +1,210 @@
+================================================================================
+                           NEUROSCIENCE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE NERVOUS SYSTEM — OVERVIEW
+----------------------------------
+Neuroscience is the study of the brain, spinal cord, and nervous system and how
+they control behaviour, thought, emotion, sensation, and bodily functions.
+
+The human brain contains ~86 billion neurons and ~85 billion non-neuronal cells.
+It consumes ~20% of total body energy despite being only ~2% of body weight.
+
+Divisions of the Nervous System:
+  Central Nervous System (CNS)    : Brain + Spinal cord
+  Peripheral Nervous System (PNS) :
+    Somatic NS      : Voluntary; controls skeletal muscles; sensory input.
+    Autonomic NS    : Involuntary; controls organs.
+      Sympathetic   : Fight-or-flight (adrenergic; norepinephrine).
+      Parasympathetic: Rest-and-digest (cholinergic; acetylcholine).
+      Enteric NS    : "Second brain"; gut nervous system (~500 million neurons).
+
+1.1 NEURON TYPES
+-----------------
+- Sensory (afferent) neurons : Carry signals FROM body TO CNS.
+- Motor (efferent) neurons   : Carry signals FROM CNS TO muscles/glands.
+- Interneurons               : Connect neurons within CNS; process information.
+
+Neuron anatomy:
+  Dendrites → Cell body (soma) → Axon hillock → Axon (myelinated segments +
+  nodes of Ranvier) → Axon terminals → Synaptic vesicles → Synapse
+
+Glial Cells (support cells):
+- Astrocytes       : Blood-brain barrier; nutrient support; synaptic modulation.
+- Oligodendrocytes : Myelinate axons in CNS (each cell myelinates ~50 axons).
+- Schwann cells    : Myelinate axons in PNS (each cell myelinates 1 axon).
+- Microglia        : Immune cells of CNS; phagocytosis of debris.
+- Ependymal cells  : Line ventricles; produce cerebrospinal fluid (CSF).
+
+1.2 MAJOR BRAIN REGIONS
+------------------------
+Region             | Location           | Key Functions
+-------------------|--------------------|---------------------------------------
+Cerebral cortex    | Outer brain         | Thought, perception, language, planning
+Frontal lobe       | Front of cortex    | Decision-making, personality, motor control
+Parietal lobe      | Top of cortex      | Sensory integration, spatial awareness
+Temporal lobe      | Sides of cortex    | Memory (hippocampus), hearing, language
+Occipital lobe     | Back of cortex     | Visual processing
+Hippocampus        | Medial temporal    | Memory consolidation; spatial navigation
+Amygdala           | Medial temporal    | Fear, emotion, emotional memory
+Cerebellum         | Posterior brain    | Motor coordination, balance, fine movement
+Brainstem          | Base of brain      | Vital functions: breathing, HR, sleep
+Hypothalamus       | Diencephalon       | Homeostasis, hunger, thirst, circadian
+Thalamus           | Diencephalon       | Relay station for sensory signals
+Basal ganglia      | Deep forebrain     | Motor control, habit formation, reward
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. NEURONAL SIGNALLING IN DEPTH
+---------------------------------
+Resting Membrane Potential (RMP): –70 mV
+Maintained by:
+  - Na+/K+ ATPase pump: 3 Na+ out, 2 K+ in (electrogenic).
+  - K+ leak channels: K+ diffuses out, leaving negative charge inside.
+
+Action Potential Steps:
+  1. Stimulus reaches threshold (–55 mV).
+  2. Depolarisation: Voltage-gated Na+ channels open → Na+ rushes in → +30 mV.
+  3. Repolarisation: Na+ channels inactivate; voltage-gated K+ channels open
+     → K+ flows out → membrane returns to negative.
+  4. Hyperpolarisation (after-potential): K+ channels slow to close → brief
+     overshoot below –70 mV.
+  5. Refractory period: Absolute (no AP possible); Relative (larger stimulus needed).
+  6. Na+/K+ pump restores ion distribution.
+
+Propagation:
+  Unmyelinated axons: AP spreads continuously (slow, ~0.5–2 m/s).
+  Myelinated axons: Saltatory conduction — AP jumps between nodes of Ranvier
+  (fast, up to 120 m/s). Myelin acts as electrical insulator.
+
+Synaptic Transmission:
+  AP reaches terminal → Ca2+ enters via voltage-gated Ca2+ channels →
+  vesicle fusion (SNARE proteins: synaptobrevin, SNAP-25, syntaxin) →
+  neurotransmitter released into synaptic cleft →
+  binds postsynaptic receptors → EPSP or IPSP →
+  NT removed by: reuptake (transporters), enzymatic degradation, diffusion.
+
+Summation:
+  Temporal: Multiple APs from one neuron in rapid succession.
+  Spatial: Simultaneous input from multiple synapses.
+  If EPSPs summate to threshold at axon hillock → AP generated.
+
+3. NEUROTRANSMITTER SYSTEMS
+-----------------------------
+NT              | System          | Receptor Types          | Key Roles / Disorders
+----------------|-----------------|-------------------------|---------------------------
+Glutamate       | Excitatory      | AMPA, NMDA, Kainate     | Learning, memory, excitotoxicity
+GABA            | Inhibitory      | GABA-A (ionotropic)     | Anxiety, epilepsy, sedation
+                |                 | GABA-B (metabotropic)   | Benzodiazepines → GABA-A
+Dopamine        | Reward/Motor    | D1–D5                   | Parkinson's, schizophrenia, addiction
+Serotonin (5-HT)| Mood/Sleep      | 5-HT1–7                 | Depression, anxiety (SSRIs target)
+Norepinephrine  | Alertness/ANS   | Alpha, Beta adrenergic  | ADHD, depression, stress
+Acetylcholine   | NMJ / Cognition | Nicotinic (ionotropic)  | Myasthenia gravis, Alzheimer's
+                |                 | Muscarinic (metabotropic)|
+Endocannabinoids| Retrograde      | CB1 (brain), CB2 (immune)| Pain, appetite, memory suppression
+
+4. SENSORY SYSTEMS
+-------------------
+Vision:
+  Light → photoreceptors (rods: dim light; cones: colour [R, G, B]) →
+  bipolar cells → retinal ganglion cells → optic nerve →
+  lateral geniculate nucleus (thalamus) → primary visual cortex (V1, occipital).
+  Rhodopsin (rod photopigment): retinal + opsin → light → all-trans-retinal →
+  hyperpolarisation → reduced glutamate release → signal to bipolar cell.
+
+Hearing:
+  Sound waves → outer ear → tympanic membrane → ossicles (malleus, incus, stapes)
+  → oval window → cochlea → basilar membrane vibrates →
+  hair cells (stereocilia) deflect → K+ influx → depolarisation →
+  auditory nerve → cochlear nucleus → inferior colliculus →
+  medial geniculate nucleus → primary auditory cortex (A1, temporal lobe).
+  Tonotopy: High frequencies at base; low at apex of cochlea.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. SYNAPTIC PLASTICITY & LEARNING
+-----------------------------------
+Long-Term Potentiation (LTP):
+  Molecular basis of learning and memory (Bliss & Lomo, 1973).
+  High-frequency stimulation → AMPA receptor activation → depolarises postsynaptic
+  membrane → Mg2+ block removed from NMDA receptor → Ca2+ enters via NMDA →
+  CaMKII activation → AMPA receptor phosphorylation + insertion into membrane →
+  enhanced synaptic strength.
+  LTP maintenance: CREB activation → new protein synthesis → structural changes
+  (dendritic spine growth; new synapses formed).
+
+Long-Term Depression (LTD):
+  Low-frequency stimulation → modest Ca2+ rise → calcineurin/PP2B activation →
+  AMPA receptor dephosphorylation + internalisation → reduced synaptic strength.
+  Role in motor learning (cerebellum) and memory erasure.
+
+Spike-Timing Dependent Plasticity (STDP):
+  Pre-before-post (within ~20ms): LTP. Post-before-pre: LTD.
+  Hebbian learning: "Neurons that fire together, wire together."
+
+6. NEUROLOGICAL & PSYCHIATRIC DISORDERS
+-----------------------------------------
+Parkinson's Disease:
+  Loss of dopaminergic neurons in substantia nigra pars compacta → reduced
+  striatal dopamine → basal ganglia circuit imbalance → rigidity, tremor,
+  bradykinesia, postural instability.
+  Pathology: Lewy bodies (alpha-synuclein aggregates).
+  Treatment: L-DOPA + carbidopa; dopamine agonists; deep brain stimulation (STN).
+
+Alzheimer's Disease:
+  Two hallmarks: Amyloid-beta plaques (extracellular) + neurofibrillary tangles
+  (intracellular tau hyperphosphorylation). Progressive loss of cholinergic
+  neurons (basal forebrain) → memory/cognitive decline.
+  Amyloid cascade hypothesis: APP cleavage by beta + gamma secretase →
+  Abeta42 aggregation → synaptic dysfunction → neuronal death.
+  Treatments: AChE inhibitors (donepezil); memantine (NMDA antagonist);
+  new: lecanemab/donanemab (anti-amyloid antibodies).
+
+Epilepsy:
+  Recurrent seizures from abnormal, synchronous neuronal firing.
+  Mechanism: Imbalance between excitation (glutamate) and inhibition (GABA).
+  Channelopathies: Mutations in Na+ (SCN1A in Dravet syndrome), K+, Ca2+ channels.
+  Treatment: Sodium channel blockers (valproate, carbamazepine); GABA enhancers
+  (benzodiazepines, vigabatrin); ketogenic diet.
+
+Depression:
+  Monoamine hypothesis: Deficiency of serotonin, norepinephrine, dopamine.
+  Modern view: Impaired neuroplasticity; reduced BDNF; HPA axis dysregulation;
+  neuroinflammation; glutamate excess (ketamine → rapid antidepressant via NMDA
+  antagonism + AMPA upregulation + BDNF release).
+  Treatment: SSRIs, SNRIs, MAOIs, ketamine, electroconvulsive therapy (ECT),
+  transcranial magnetic stimulation (TMS).
+
+7. CONSCIOUSNESS & HIGHER BRAIN FUNCTION
+-----------------------------------------
+Global Workspace Theory (Baars/Dehaene):
+  Consciousness arises when information is broadcast widely across frontoparietal
+  networks. "Ignition" pattern: late, widespread cortical activation correlates
+  with conscious perception.
+
+Default Mode Network (DMN):
+  Active during rest, self-referential thought, mind-wandering. Includes medial
+  prefrontal cortex, posterior cingulate, angular gyrus. Deactivates during
+  focused tasks. Disrupted in Alzheimer's, schizophrenia, depression.
+
+Sleep & Memory Consolidation:
+  Slow-wave sleep (NREM3): Memory replay; hippocampal-cortical dialogue;
+  synaptic downscaling (synaptic homeostasis hypothesis).
+  REM sleep: Procedural memory consolidation; emotional memory processing;
+  theta oscillations; acetylcholine dominance.
+
+[CLINICAL LINK] Psychedelic compounds (psilocybin, LSD) act on 5-HT2A receptors
+in cortical pyramidal neurons → increased glutamate → disrupts DMN → increased
+neural entropy and connectivity. Clinical trials show efficacy in treatment-
+resistant depression and PTSD. Mechanism may involve BDNF-dependent neuroplasticity.
+
+================================================================================

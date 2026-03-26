@@ -1,0 +1,184 @@
+CHAPTER 1: LIGHT - REFLECTION AND REFRACTION
+=============================================
+
+INTRODUCTION TO LIGHT
+Light is a form of energy that enables us to see objects. Light travels in a straight line and has a speed of approximately 3 × 10^8 m/s in vacuum.
+
+REFLECTION OF LIGHT
+Reflection is the bouncing back of light when it hits a surface.
+
+Laws of Reflection:
+1. The angle of incidence is equal to the angle of reflection. (∠i = ∠r)
+2. The incident ray, the normal at the point of incidence, and the reflected ray all lie in the same plane.
+
+TYPES OF REFLECTION
+1. Regular Reflection: When light reflects off a smooth, polished surface (like a mirror), it reflects in one direction. This is called specular or regular reflection.
+2. Diffuse Reflection: When light reflects off a rough surface, it scatters in many directions. This allows us to see non-luminous objects.
+
+SPHERICAL MIRRORS
+A spherical mirror is a mirror whose reflecting surface is a part of a hollow sphere.
+
+Types of Spherical Mirrors:
+1. Concave Mirror: The reflecting surface is curved inward (like a cave). Also called converging mirror.
+2. Convex Mirror: The reflecting surface is curved outward. Also called diverging mirror.
+
+Important Terms for Spherical Mirrors:
+- Pole (P): The midpoint of the reflecting surface of a spherical mirror.
+- Centre of Curvature (C): The centre of the sphere of which the mirror is a part.
+- Radius of Curvature (R): The radius of the sphere of which the mirror is a part.
+- Principal Axis: A straight line passing through the pole and the centre of curvature.
+- Principal Focus (F): The point on the principal axis where rays parallel to the axis converge (concave) or appear to diverge from (convex) after reflection.
+- Focal Length (f): The distance between the pole and the principal focus.
+
+Relationship: R = 2f (Radius of curvature = 2 × Focal Length)
+
+IMAGE FORMATION BY CONCAVE MIRROR
+1. Object at infinity → Image at F, real, inverted, point-sized
+2. Object beyond C → Image between F and C, real, inverted, diminished
+3. Object at C → Image at C, real, inverted, same size
+4. Object between C and F → Image beyond C, real, inverted, enlarged
+5. Object at F → Image at infinity
+6. Object between F and P → Image behind mirror, virtual, erect, enlarged
+
+Uses of Concave Mirror:
+- Shaving mirrors and makeup mirrors
+- Dentist's mirror
+- Reflectors in torches, headlights, searchlights
+- Used in solar furnaces
+
+IMAGE FORMATION BY CONVEX MIRROR
+- A convex mirror always forms a virtual, erect, and diminished image regardless of the object position.
+- Image is always formed between P and F behind the mirror.
+
+Uses of Convex Mirror:
+- Rear-view mirrors in vehicles (provides wider field of view)
+- Security mirrors in shops and banks
+
+MIRROR FORMULA
+1/v + 1/u = 1/f
+
+Where:
+- v = image distance (measured from pole)
+- u = object distance (measured from pole)
+- f = focal length
+
+Sign Convention (New Cartesian Sign Convention):
+- All distances are measured from the pole.
+- Distances in the direction of incident light are positive.
+- Distances opposite to incident light are negative.
+- Heights above principal axis are positive.
+- Heights below principal axis are negative.
+
+For concave mirror: f is negative
+For convex mirror: f is positive
+
+MAGNIFICATION
+m = -v/u = h'/h
+
+Where h' = image height, h = object height
+- Positive magnification → erect image
+- Negative magnification → inverted image
+- |m| > 1 → enlarged image
+- |m| < 1 → diminished image
+
+REFRACTION OF LIGHT
+Refraction is the bending of light as it passes from one medium to another due to the change in its speed.
+
+Laws of Refraction (Snell's Laws):
+1. The incident ray, the refracted ray, and the normal at the point of incidence all lie in the same plane.
+2. The ratio of the sine of the angle of incidence to the sine of the angle of refraction is constant for a given pair of media.
+   sin i / sin r = constant = n₂₁ (Snell's Law)
+
+REFRACTIVE INDEX
+The refractive index of medium 2 with respect to medium 1:
+n₂₁ = sin i / sin r = speed of light in medium 1 / speed of light in medium 2
+n₂₁ = v₁ / v₂
+
+Absolute Refractive Index: Refractive index with respect to vacuum/air.
+n = c/v (where c = speed of light in vacuum, v = speed of light in medium)
+
+Optically denser medium: higher refractive index, light slows down, bends toward normal.
+Optically rarer medium: lower refractive index, light speeds up, bends away from normal.
+
+Refractive indices of common materials:
+- Air: 1.0003 (≈1)
+- Water: 1.33
+- Glass: 1.5
+- Diamond: 2.42
+
+REFRACTION THROUGH A GLASS SLAB
+- When light passes through a glass slab, the emergent ray is parallel to the incident ray but laterally displaced.
+- Lateral displacement depends on thickness of slab, angle of incidence, and refractive index.
+
+LENSES
+A lens is a transparent medium bounded by two curved surfaces.
+
+Types of Lenses:
+1. Convex Lens (Converging Lens): Thicker at the centre than at the edges. Converges light rays.
+2. Concave Lens (Diverging Lens): Thinner at the centre than at the edges. Diverges light rays.
+
+Important Terms for Lenses:
+- Optical Centre (O): The central point of a lens.
+- Principal Axis: The straight line passing through both centres of curvature.
+- Principal Focus (F): The point where parallel rays converge (convex) or appear to diverge from (concave) after refraction.
+- Focal Length (f): Distance between optical centre and principal focus.
+
+IMAGE FORMATION BY CONVEX LENS
+1. Object at infinity → Image at F₂, real, inverted, point-sized
+2. Object beyond 2F₁ → Image between F₂ and 2F₂, real, inverted, diminished
+3. Object at 2F₁ → Image at 2F₂, real, inverted, same size
+4. Object between F₁ and 2F₁ → Image beyond 2F₂, real, inverted, enlarged
+5. Object at F₁ → Image at infinity
+6. Object between F₁ and O → Image on same side, virtual, erect, enlarged
+
+Uses of Convex Lens:
+- Magnifying glass
+- Spectacles for far-sighted people
+- Camera lens, telescope, microscope
+
+IMAGE FORMATION BY CONCAVE LENS
+- Always forms virtual, erect, diminished images.
+- Image is always between O and F₁ (same side as object).
+
+Uses of Concave Lens:
+- Spectacles for near-sighted people
+- Peephole in doors
+
+LENS FORMULA
+1/v - 1/u = 1/f
+
+MAGNIFICATION FOR LENSES
+m = v/u = h'/h
+
+POWER OF A LENS
+Power of a lens is the reciprocal of its focal length in meters.
+P = 1/f (in meters)
+Unit: Dioptre (D)
+- Convex lens: positive power
+- Concave lens: negative power
+
+When lenses are combined:
+P = P₁ + P₂ + P₃ + ...
+
+IMPORTANT QUESTIONS AND ANSWERS
+
+Q: Why does a convex mirror always produce a diminished image?
+A: A convex mirror is a diverging mirror. The reflected rays diverge and when extended behind the mirror, they appear to meet at a point between P and F. Since the image is always formed between P and F, it is always smaller than the object.
+
+Q: Why do we prefer a convex mirror as a rear-view mirror?
+A: A convex mirror gives a wider field of view and always produces an erect image, making it easier for drivers to see the traffic behind them.
+
+Q: What happens to the focal length of a lens when it is immersed in water?
+A: The focal length increases when a lens is immersed in water. This is because the difference in refractive indices between the lens and the surrounding medium decreases, reducing the bending of light.
+
+Q: What is the difference between real and virtual images?
+A: A real image is formed by actual convergence of light rays and can be projected on a screen. A virtual image is formed by the apparent divergence of rays and cannot be projected on a screen.
+
+KEY FORMULAS SUMMARY
+- Mirror formula: 1/v + 1/u = 1/f
+- Magnification (mirror): m = -v/u
+- Snell's Law: n₁ sin i = n₂ sin r
+- Refractive index: n = c/v
+- Lens formula: 1/v - 1/u = 1/f
+- Magnification (lens): m = v/u
+- Power of lens: P = 1/f(m), unit = Dioptre

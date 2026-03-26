@@ -1,0 +1,177 @@
+================================================================================
+                         CANCER BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS CANCER?
+-------------------
+Cancer is a group of diseases characterised by uncontrolled cell growth, invasion
+of surrounding tissues, and potential spread to distant organs (metastasis).
+~18 million new cancer cases/year globally; ~10 million deaths/year.
+Most common: Lung (~2.2M), breast (~2.3M), colorectal (~1.9M), prostate (~1.4M).
+
+Key Concepts:
+- Neoplasm    : Abnormal mass of tissue from uncontrolled cell growth.
+- Benign      : Non-invasive; encapsulated; does not metastasise; usually curable.
+- Malignant   : Invasive; can metastasise; may be fatal if untreated.
+- Carcinoma   : Cancer of epithelial cells (~80% of all cancers).
+- Sarcoma     : Cancer of connective tissue (bone, muscle, fat).
+- Leukaemia   : Blood cell cancer; liquid tumour.
+- Lymphoma    : Cancer of lymphoid tissue (Hodgkin vs Non-Hodgkin).
+- Metastasis  : Spread of cancer from primary site to distant organs.
+  Most common metastatic sites: Liver, lungs, brain, bone.
+
+Cancer Causes (Aetiology):
+- Tobacco          : ~22% of all cancer deaths. Lung, throat, bladder, kidney.
+- Infection        : ~13% (HPV → cervical; H. pylori → gastric; HBV/HCV → liver).
+- UV radiation     : Skin cancers (melanoma, BCC, SCC).
+- Ionising radiation: Leukaemia, thyroid cancer.
+- Chemical carcinogens: Asbestos (mesothelioma); benzene (leukaemia); aflatoxin (liver).
+- Hereditary       : 5–10% of cancers; BRCA1/2, Lynch syndrome, Li-Fraumeni.
+- Obesity/diet     : Colorectal, endometrial, oesophageal, kidney cancers.
+- Alcohol          : Liver, colorectal, breast, oropharyngeal cancers.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. HALLMARKS OF CANCER (Hanahan & Weinberg)
+---------------------------------------------
+Original 6 Hallmarks (2000):
+  1. Sustaining proliferative signalling (self-sufficient growth signals)
+  2. Evading growth suppressors (p53, Rb pathway bypass)
+  3. Resisting cell death (anti-apoptotic)
+  4. Enabling replicative immortality (telomerase reactivation)
+  5. Inducing angiogenesis (VEGF production)
+  6. Activating invasion and metastasis (EMT, matrix metalloproteinases)
+
+Additional Hallmarks (2011):
+  7. Deregulating cellular energetics (Warburg effect)
+  8. Avoiding immune destruction (PD-L1 upregulation)
+
+Emerging Hallmarks (2022):
+  9. Unlocking phenotypic plasticity (lineage switching, dedifferentiation)
+  10. Non-mutational epigenetic reprogramming
+  11. Polymorphic microbiomes
+  12. Senescent cells in TME
+
+Enabling Characteristics:
+  Genome instability and mutation; Tumour-promoting inflammation.
+
+3. ONCOGENES & TUMOUR SUPPRESSORS
+------------------------------------
+Proto-oncogenes → Oncogenes (gain-of-function mutations; dominant):
+  Mechanism: Point mutation (KRAS G12D/V), amplification (HER2, MYC),
+  translocation (BCR-ABL in CML; c-MYC in Burkitt; PML-RARalpha in APL).
+  Common oncogenes:
+    RAS (KRAS, NRAS, HRAS): GTPase; mutated in ~30% all cancers; activates MAPK, PI3K.
+    MYC             : Transcription factor; activates cell cycle, ribosome biogenesis.
+    HER2 (ERBB2)    : RTK; amplified in ~20% breast cancer; target of trastuzumab.
+    EGFR            : RTK; mutations in lung adenocarcinoma; target of erlotinib.
+    BCR-ABL         : Constitutively active tyrosine kinase; CML; target of imatinib.
+    BRAF V600E      : Kinase; ~50% melanomas, ~10% CRC; target of vemurafenib.
+    CDK4/6          : Cell cycle kinase; amplified in some cancers; target of palbociclib.
+    PI3K (PIH3CA)   : Lipid kinase; mutations in ~30% breast cancer.
+
+Tumour Suppressor Genes (loss-of-function; Knudson's two-hit hypothesis):
+    TP53            : "Guardian of the genome"; mutated in >50% all cancers.
+                      Cell cycle arrest, apoptosis, senescence, DNA repair.
+    RB1 (Retinoblastoma): G1/S checkpoint; E2F transcription factor regulation.
+    BRCA1/BRCA2     : DNA repair (HDR); germline mutation → hereditary breast/ovarian.
+    APC             : Wnt pathway; destruction complex component; CRC.
+    PTEN            : Lipid phosphatase; opposes PI3K/Akt; PTEN hamartoma syndromes.
+    VHL             : HIF degradation; mutated in renal cell carcinoma → VEGF ↑.
+    CDKN2A (p16/p14ARF): CDK inhibitor + p53 activator; melanoma, lung.
+
+4. METASTASIS CASCADE
+----------------------
+Steps of metastasis:
+  1. Local invasion: EMT; loss of E-cadherin; gain of vimentin, N-cadherin; MMP-mediated
+     ECM degradation; invadopodia formation.
+  2. Intravasation: Enter blood or lymphatic vessels. Circulating tumour cells (CTCs).
+  3. Survival in circulation: Platelet cloaking; immune evasion; resistance to anoikis.
+  4. Arrest: Physical trapping or receptor-mediated adhesion to endothelium.
+  5. Extravasation: Exit the vessel at distant site.
+  6. Colonisation: Adaptation to foreign microenvironment; establish metastatic niche.
+     Organotropism: Breast → bone (CXCR4/CXCL12 axis), lung, liver, brain.
+     Seed and soil hypothesis (Paget, 1889): Tumour cells (seeds) spread randomly but
+     only grow where microenvironment (soil) is permissive.
+
+Liquid Biopsy:
+  Detection of CTCs, circulating tumour DNA (ctDNA), or exosomes from blood.
+  ctDNA: Detects mutations (KRAS, BRAF, EGFR, TP53) in blood → early detection,
+  treatment monitoring, resistance detection. Sensitivity improving with ddPCR and NGS.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. CANCER GENOMICS
+-------------------
+Mutational Signatures:
+  Distinct patterns of somatic mutations arise from specific DNA-damaging processes.
+  COSMIC database: >60 validated signatures.
+  Signature 4: APOBEC deaminases (C>T in TCA context) → breast, bladder, lung.
+  Signature 7: UV damage (C>T at dipyrimidines) → melanoma, skin cancers.
+  Signature 4: Tobacco carcinogens → C>A transversions → lung cancer.
+  Signature 3: BRCA1/2 dysfunction (HRD) → ovarian, breast; predicts PARP inhibitor response.
+  Microsatellite instability (MSI-H/dMMR): MMR deficiency → hypermutation →
+  immunogenic tumours → responds to pembrolizumab (pan-tumour approval 2017).
+  Tumour mutational burden (TMB): High TMB predicts immune checkpoint inhibitor response.
+
+Cancer Evolution (Clonal Evolution):
+  Somatic mutations accumulate in normal cells (field cancerisation).
+  Initiating driver mutation → clonal expansion → further driver mutations →
+  subclonal diversification → selection of fit clones.
+  Intratumour heterogeneity (ITH): Different cells within same tumour have different
+  mutations → drug resistance; parallel evolution of resistance.
+  Phylogenetic trees from multi-region sampling reconstruct tumour evolution (TRACERx study).
+
+6. CANCER METABOLISM
+---------------------
+Warburg Effect:
+  Cancer cells preferentially use aerobic glycolysis (glucose → lactate) even with O2.
+  Advantages: Rapid ATP; biosynthetic precursors (nucleotides, amino acids, lipids);
+  acidic microenvironment inhibits immune cells.
+  Oncometabolites: IDH1/2 mutations → 2-hydroxyglutarate (2-HG) → inhibits alpha-KG-
+  dependent dioxygenases → blocks differentiation → glioma, AML. Enasidenib/ivosidenib
+  target mutant IDH2/IDH1.
+
+Glutamine Addiction:
+  Many cancers require glutamine as nitrogen and carbon source.
+  Glutaminolysis: Glutamine → glutamate → alpha-KG → TCA (anaplerosis).
+  MYC-amplified cancers particularly glutamine-addicted.
+
+7. TARGETED THERAPY & RESISTANCE
+----------------------------------
+Targeted Therapies (selected):
+Drug              | Target           | Indication          | Mechanism
+------------------|------------------|---------------------|------------------
+Imatinib          | BCR-ABL          | CML                 | ATP-competitive TKI
+Gefitinib/Erlotinib| EGFR            | NSCLC (EGFR-mut)    | EGFR TKI (1st gen)
+Osimertinib       | EGFR T790M       | NSCLC               | 3rd gen EGFR TKI
+Vemurafenib       | BRAF V600E       | Melanoma            | BRAF inhibitor
+Trastuzumab       | HER2             | HER2+ breast        | Monoclonal Ab
+Palbociclib       | CDK4/6           | ER+ breast cancer   | Cell cycle arrest
+Olaparib          | PARP             | BRCA-mut ovarian    | Synthetic lethality
+Venetoclax        | BCL-2            | CLL, AML            | Pro-apoptotic
+Pembrolizumab     | PD-1             | Multiple cancers    | Immune checkpoint
+
+Resistance Mechanisms:
+  On-target: Secondary mutation in drug target (EGFR T790M → C797S).
+  Off-target (bypass): Activation of alternative pathway (MET amplification bypasses
+  EGFR inhibition; RAS amplification bypasses BRAF inhibition).
+  Downstream activation: Amplification of downstream effectors (PI3K, AKT mutations).
+  Phenotypic plasticity: EMT; small cell transformation in EGFR-mut NSCLC on osimertinib.
+  Tumour heterogeneity: Pre-existing resistant clones selected by therapy.
+
+[PRECISION ONCOLOGY] Molecular tumour boards review NGS data to match patients
+with targeted therapies regardless of tumour histology (basket/umbrella trials).
+NTRK fusions: Rare; occur across many tumour types → larotrectinib/entrectinib
+(TRK inhibitors) → ~75% response rate pan-tumour. First truly histology-agnostic approval (2018).
+
+================================================================================

@@ -1,0 +1,255 @@
+BIOCHEMISTRY AND MEDICINAL CHEMISTRY - COMPREHENSIVE GUIDE
+===========================================================
+
+PART 1: AMINO ACIDS AND PROTEINS
+
+AMINO ACIDS (20 standard):
+General structure: H₂N-CHR-COOH (alpha-amino acid).
+In solution at pH 7: zwitterion form NH₃⁺-CHR-COO⁻.
+Isoelectric point (pI): pH at which amino acid has zero net charge.
+pI = (pKa1 + pKa2)/2.
+
+CLASSIFICATION:
+Nonpolar/hydrophobic: Glycine (G), Alanine (A), Valine (V), Leucine (L), Isoleucine (I), Proline (P), Phenylalanine (F), Methionine (M), Tryptophan (W).
+Polar/uncharged: Serine (S), Threonine (T), Cysteine (C), Tyrosine (Y), Asparagine (N), Glutamine (Q).
+Positively charged (basic): Lysine (K) pI ~9.7, Arginine (R) pI ~10.8, Histidine (H) pI ~7.6.
+Negatively charged (acidic): Aspartate (D) pI ~2.8, Glutamate (E) pI ~3.2.
+
+ESSENTIAL AMINO ACIDS (cannot be synthesized — must be in diet):
+Mnemonic PVT TIM HaLL: Phenylalanine, Valine, Threonine, Tryptophan, Isoleucine, Methionine, Histidine, Leucine, Lysine.
+(Arginine semi-essential for adults, essential for children.)
+
+PEPTIDE BOND:
+Formed between α-carboxyl of one amino acid and α-amino of next, releasing H₂O.
+Resonance: partial double bond character. Planar, trans configuration preferred.
+N-terminus (free NH₂) and C-terminus (free COOH) in peptide chain.
+Peptide bonds resistant to hydrolysis (kinetically stable but thermodynamically unstable).
+Hydrolysis: H₂O + peptide → amino acids. Catalyzed by HCl (100°C) or proteolytic enzymes.
+
+PROTEIN STRUCTURE:
+Primary structure: amino acid sequence. Determined by DNA. Held by covalent peptide bonds.
+Secondary structure: local folding.
+α-helix: right-handed helix, 3.6 residues/turn, i to i+4 H-bonding (NH···O=C). Found in globular and fibrous proteins.
+β-pleated sheet: extended chains H-bond laterally. Parallel or antiparallel.
+Tertiary structure: overall 3D fold of single polypeptide.
+Interactions: hydrophobic, H-bonds, electrostatic (salt bridges), disulfide bonds (Cys-Cys).
+Quaternary structure: assembly of multiple polypeptide subunits.
+
+PROTEIN FOLDING:
+Driven by thermodynamics (ΔG < 0).
+Key force: hydrophobic effect — nonpolar residues bury inside, polar on surface.
+Chaperones: proteins that help other proteins fold correctly.
+Denaturation: disruption of 3D structure. Causes: heat, pH extremes, urea, detergents. Usually irreversible.
+Amyloid fibers: misfolded proteins forming β-sheet aggregates. Alzheimer's, Parkinson's, prions.
+
+ENZYMES:
+Proteins (RNA enzymes = ribozymes).
+Active site: specific region where substrate binds and reaction occurs.
+Cofactors: metal ions (Zn²⁺, Mg²⁺, Fe²⁺) or coenzymes (NAD⁺, FAD, CoA, vitamins).
+Holoenzyme = apoenzyme (protein) + cofactor.
+
+Enzyme kinetics:
+Michaelis-Menten: v = Vmax[S]/(Km + [S]).
+Km = [S] at half Vmax. Low Km = high affinity.
+kcat = Vmax/[E]total = turnover number (reactions per second per enzyme).
+kcat/Km = catalytic efficiency. Diffusion limit ~10⁸-10⁹ M⁻¹s⁻¹.
+Lineweaver-Burk plot: 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. Straight line, useful for Ki, inhibition type.
+
+Enzyme inhibition:
+Competitive: inhibitor looks like substrate, binds active site. Increases apparent Km, Vmax unchanged. Reversed by increasing [S].
+Noncompetitive: inhibitor binds elsewhere (allosteric). Decreases Vmax, Km unchanged.
+Uncompetitive: inhibitor binds only ES complex. Decreases both Km and Vmax.
+Irreversible: covalent modification. Organophosphates inhibit acetylcholinesterase (nerve agents, some pesticides).
+Suicide inhibitors: look like substrate, become reactive inside active site (penicillin → β-lactamase).
+
+---
+
+PART 2: CARBOHYDRATES
+
+MONOSACCHARIDES:
+Aldoses: CHO at C1 (glyceraldehyde, glucose, galactose).
+Ketoses: C=O at C2 (dihydroxyacetone, fructose).
+Trioses, tetroses, pentoses, hexoses (based on carbon number).
+D/L configuration: based on C farthest from carbonyl (reference to D/L glyceraldehyde).
+Most biological sugars are D-form.
+
+GLUCOSE (D-glucopyranose):
+Open chain (Fischer projection): aldohexose. C1 aldehyde, C2-C5 CHOH, C6 CH₂OH.
+Cyclic form (Haworth): hemiacetal formation between C1 and C5-OH.
+α-D-glucopyranose: C1-OH (anomeric -OH) axial/below plane.
+β-D-glucopyranose: C1-OH equatorial/above plane.
+β form more stable (anomeric effect minimized, all substituents equatorial).
+Mutarotation: α ⇌ β in solution (through open-chain form). Equilibrium: ~64% β, 36% α.
+[α]D = +112° (α), +18.7° (β), +52.7° (equilibrium).
+
+Important reactions of glucose:
+Reducing agent (open chain form): reduces Tollens', Fehling's, Cu²⁺.
+Oxidation: COOH (gluconic acid with mild oxidant), COOH at both ends (glucaric acid with HNO₃).
+Reduction: sorbitol (glucose + NaBH₄ or H₂/Ni).
+Osazone: glucose + excess phenylhydrazine → osazone (yellow crystals, same as fructose → identical osazones → share same C3-C6).
+
+DISACCHARIDES:
+Maltose: α-D-glucose-1,4-α-D-glucose. Reducing sugar (free C1 on second glucose). From starch hydrolysis.
+Cellobiose: β-D-glucose-1,4-β-D-glucose. From cellulose hydrolysis.
+Lactose: β-D-galactose-1,4-β-D-glucose. Reducing sugar. Milk sugar. Lactase deficiency → lactose intolerance.
+Sucrose: α-D-glucose-1,2-β-D-fructose. NON-reducing (no free anomeric OH). Invert sugar (hydrolysis gives glucose + fructose).
+
+POLYSACCHARIDES:
+Starch: storage in plants. Two components:
+Amylose: linear α-1,4 glucose chains. Helical structure. Blue-black with I₂.
+Amylopectin: branched, α-1,4 (main chain) and α-1,6 (branch points every ~30 units).
+Glycogen: animal starch. More branched than amylopectin (~10 units between branches). Stored in liver and muscle.
+Cellulose: structural in plants. β-1,4 glucose units. Humans cannot digest (no cellulase).
+Chitin: N-acetylglucosamine β-1,4. Found in insect exoskeletons, fungi cell walls.
+Hyaluronic acid: alternating N-acetylglucosamine and glucuronate. Joint fluid, extracellular matrix.
+
+---
+
+PART 3: LIPIDS
+
+FATTY ACIDS:
+Saturated: no double bonds. Solid at room temperature (animal fats).
+Unsaturated: one or more double bonds. Usually cis configuration. Liquid at room temperature (vegetable oils).
+Monounsaturated: one double bond (oleic acid, 18:1, Δ9 — olive oil).
+Polyunsaturated: >1 double bond (linoleic acid 18:2, linolenic acid 18:3, EPA 20:5, DHA 22:6 — fish oil).
+Essential fatty acids (can't synthesize): linoleic (ω-6), linolenic (ω-3).
+Trans fats: unsaturated but trans configuration. Solid at room T. Formed by partial hydrogenation.
+
+NOMENCLATURE:
+18:2 Δ9,12 means 18 carbons, 2 double bonds, at positions 9 and 12.
+ω-3 means double bond 3 carbons from methyl end.
+
+TRIGLYCERIDES (Triacylglycerols):
+Glycerol + 3 fatty acids (ester bonds).
+Hydrolysis: triglyceride + 3NaOH → soap (sodium salts of fatty acids) + glycerol (saponification).
+Soap: micelle formation, sodium salt of fatty acid. R-COO⁻Na⁺.
+Hydrophobic tail (fatty acid chain) and hydrophilic head (carboxylate).
+Hard water: Ca²⁺, Mg²⁺ precipitate soap. Detergents don't have this problem.
+Rancidity: oxidative (O₂ attacks double bonds) or hydrolytic (hydrolysis of ester bonds).
+Antioxidants (vitamin E, BHA, BHT) prevent oxidative rancidity.
+
+PHOSPHOLIPIDS:
+Glycerol + 2 fatty acids + phosphate group + alcohol.
+Phosphatidylcholine (lecithin): most common. Choline head group.
+Forms bilayer membrane: hydrophobic tails inside, hydrophilic heads outside.
+Fluid mosaic model: membrane is fluid (lipids can move laterally), embedded with proteins.
+Cholesterol: regulates membrane fluidity. Steroid.
+Sphingomyelin: phospholipid in nerve myelin sheath.
+
+STEROIDS:
+Four-ring carbon skeleton. Hydrophobic.
+Cholesterol: membrane component, precursor of bile acids, steroid hormones, vitamin D.
+Bile acids: emulsify fats in digestion.
+Steroid hormones: testosterone (male), estrogen (female), progesterone (pregnancy), cortisol (stress).
+Vitamin D: synthesized from cholesterol in skin + sunlight.
+Anabolic steroids: testosterone analogs → muscle building.
+
+---
+
+PART 4: NUCLEIC ACIDS
+
+NUCLEOTIDES:
+Nucleotide = nitrogenous base + pentose sugar + 1-3 phosphate groups.
+DNA: deoxyribose sugar (no 2'-OH). RNA: ribose sugar (has 2'-OH).
+Purines: Adenine (A), Guanine (G). Two-ring structure.
+Pyrimidines: Cytosine (C), Thymine (T, DNA only), Uracil (U, RNA only). One-ring structure.
+Base pairing (Watson-Crick): A=T (2 H-bonds), G≡C (3 H-bonds) in DNA.
+A=U (2 H-bonds) in RNA.
+
+DNA STRUCTURE:
+Double helix (Watson & Crick, 1953). Right-handed B-DNA most common.
+Two antiparallel strands. Sugar-phosphate backbone outside. Bases inside.
+Major groove and minor groove (accessible to proteins).
+Diameter: ~2 nm. Pitch: 3.4 nm per 10 base pairs.
+Base stacking: van der Waals forces + hydrophobic effect stabilize helix.
+Hydrogen bonds between base pairs.
+
+DNA REPLICATION:
+Semi-conservative: each new DNA has one old + one new strand.
+Helicase: unwinds double helix at replication fork.
+Primase: makes short RNA primer.
+DNA polymerase III: synthesizes new strand (5'→3' direction only).
+Leading strand: continuous synthesis. Lagging strand: Okazaki fragments (discontinuous).
+DNA polymerase I: removes RNA primer, fills gap.
+DNA ligase: seals nicks.
+Proofreading: DNA polymerase has 3'→5' exonuclease activity → removes mismatched bases.
+
+RNA AND PROTEIN SYNTHESIS:
+Central dogma: DNA → RNA (transcription) → Protein (translation).
+Transcription: RNA polymerase synthesizes mRNA from DNA template (5'→3').
+mRNA: carries genetic code from nucleus to ribosomes.
+tRNA: carries specific amino acid to ribosome. Anticodon matches codon.
+rRNA: structural and catalytic component of ribosome.
+Genetic code: 64 triplet codons → 20 amino acids + 3 stop codons.
+Codon: mRNA triplet. Anticodon: tRNA triplet (complementary, antiparallel to codon).
+Start codon: AUG (methionine). Stop codons: UAA, UAG, UGA.
+Degenerate code: most amino acids encoded by multiple codons (wobble).
+
+Translation: ribosome reads mRNA 5'→3', aminoacyl-tRNA enters A site, peptide bond forms, ribosome translocates.
+Post-translational modifications: glycosylation, phosphorylation, acetylation, cleavage of signal peptide.
+
+MUTATIONS:
+Point mutation: change in single base.
+Silent: no change in amino acid (degenerate code).
+Missense: different amino acid → may change protein function.
+Nonsense: creates stop codon → truncated protein.
+Frameshift: insertion/deletion → shifts reading frame → garbled sequence downstream.
+Sickle cell disease: A→T mutation in β-globin gene → Glu→Val at position 6 → HbS polymerizes when deoxygenated.
+
+---
+
+PART 5: MEDICINAL CHEMISTRY
+
+DRUG-RECEPTOR INTERACTIONS:
+Receptor: macromolecule (usually protein) that binds drug.
+Agonist: binds receptor and activates it.
+Antagonist: binds receptor, blocks but does not activate.
+Partial agonist: activates to less than maximum.
+
+PHARMACOKINETICS (ADME):
+Absorption: drug enters bloodstream. Routes: oral, IV, sublingual, transdermal, inhalation.
+Distribution: drug distributes to tissues. Blood-brain barrier limits CNS access.
+Metabolism: liver cytochrome P450 enzymes (CYP). First-pass effect (oral drugs metabolized before systemic circulation).
+Excretion: mainly kidneys (urine) or bile (feces).
+Half-life (t₁/₂): time for plasma concentration to decrease by half. t₁/₂ = 0.693/k_el.
+
+STRUCTURE-ACTIVITY RELATIONSHIPS (SAR):
+Pharmacophore: minimum structural features required for activity.
+Bioisosteres: groups with similar size, shape, electronic properties (F for H, NH for O, etc.).
+Prodrug: inactive compound converted to active drug by metabolism.
+Lead compound: starting point for drug development.
+
+IMPORTANT DRUG CLASSES:
+Antibiotics:
+Penicillins: β-lactam ring inhibits bacterial cell wall synthesis (transpeptidase).
+β-lactamase: bacterial enzyme that hydrolyzes β-lactam → resistance.
+Cephalosporins: broader spectrum β-lactams.
+Tetracyclines: inhibit 30S ribosome → block aminoacyl-tRNA binding.
+Aminoglycosides (gentamicin): inhibit 30S ribosome → misread mRNA.
+Macrolides (erythromycin): inhibit 50S ribosome → block translocation.
+Quinolones (ciprofloxacin): inhibit DNA gyrase (topoisomerase II).
+Sulfonamides: inhibit dihydropteroate synthase → block folate synthesis.
+
+Anticancer drugs:
+Cisplatin: forms cross-links in DNA → blocks replication.
+Taxol (paclitaxel): stabilizes microtubules → prevents cell division.
+Methotrexate: DHFR inhibitor → blocks folate metabolism → prevents DNA synthesis.
+Alkylating agents (cyclophosphamide): cross-link DNA strands.
+Topoisomerase inhibitors: prevent DNA unwinding.
+
+Cardiovascular:
+Statins (simvastatin): HMG-CoA reductase inhibitors → lower cholesterol.
+Beta-blockers (propranolol): block β-adrenergic receptors → lower heart rate, BP.
+ACE inhibitors (enalapril): block angiotensin-converting enzyme → lower BP.
+Aspirin: irreversible COX inhibitor → reduces prostaglandins → anti-inflammatory, antiplatelet.
+
+CNS drugs:
+Morphine/opioids: bind opioid receptors → pain relief, euphoria, addiction.
+Benzodiazepines (diazepam): enhance GABA → anxiolytic, sedative.
+SSRIs (fluoxetine): block serotonin reuptake → antidepressant.
+L-DOPA: dopamine precursor, crosses BBB → Parkinson's treatment.
+
+Antiviral:
+Acyclovir: guanosine analog → inhibits viral DNA polymerase.
+HIV antiretrovirals: NRTIs (AZT), NNRTIs, protease inhibitors, integrase inhibitors.
+Neuraminidase inhibitors (oseltamivir/Tamiflu): block influenza virus release from cells.

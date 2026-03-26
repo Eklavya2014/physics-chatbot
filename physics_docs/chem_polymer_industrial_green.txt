@@ -1,0 +1,216 @@
+POLYMER CHEMISTRY, MATERIALS SCIENCE AND INDUSTRIAL CHEMISTRY
+==============================================================
+
+PART 1: POLYMER CHEMISTRY
+
+BASIC CONCEPTS:
+Polymer: large molecule made of many repeating units (monomers).
+Degree of polymerization (n): number of monomer units.
+Molecular weight: Mn (number average), Mw (weight average), Mz (z-average).
+PDI (Polydispersity Index) = Mw/Mn. Monodisperse = 1. Real polymers > 1.
+Tacticity: stereoregularity of polymer chain.
+Isotactic: all substituents on same side. Syndiotactic: alternating. Atactic: random.
+Isotactic polypropylene: crystalline, high melting point. Atactic: amorphous, low Tm.
+
+ADDITION POLYMERIZATION:
+
+Free Radical Mechanism:
+Initiation: I → 2R• (initiator, e.g., benzoyl peroxide, AIBN).
+             R• + CH₂=CH₂ → R-CH₂-CH₂•
+Propagation: R-CH₂-CH₂• + nCH₂=CH₂ → R-(CH₂CH₂)n-CH₂CH₂•
+Termination: Combination: 2R'• → R'-R'. Disproportionation: 2R'• → R'H + R'=.
+Chain transfer: R'• + monomer → dead chain + new radical.
+Rate ∝ [M][I]^½. Degree of polymerization decreases with temperature.
+Temperature effect: faster at high T but lower MW.
+
+Important free radical polymers:
+Polyethylene (LDPE): low density, branched, soft, flexible. Food wrap.
+Polypropylene (PP): isotactic form, rigid, high melting, food containers.
+PVC (polyvinyl chloride): rigid pipes, floor tiles; plasticized: soft, flexible.
+Polystyrene (PS): clear, rigid; foamed = Styrofoam (insulation, cups).
+PTFE (Teflon): polytetrafluoroethylene, non-stick, chemically inert.
+PMMA (Plexiglass/Lucite): transparent, optical quality.
+Polyacrylonitrile: textile fiber (Orlon, Acrilon). Also precursor to carbon fiber.
+
+Cationic Polymerization:
+Lewis acid initiator (BF₃, AlCl₃, SnCl₄). Low temperature.
+Carbocation intermediate. Only isobutylene, vinyl ethers, styrene (stable carbocations).
+Fast propagation, difficult to control.
+
+Anionic Polymerization:
+Organolithium or organosodium initiator. Very clean, controlled.
+No termination if no impurities → living polymerization.
+Narrow PDI → nearly monodisperse. Block copolymers made by sequential addition.
+
+CONDENSATION POLYMERIZATION:
+
+Nylon-6,6 (Polyamide):
+Monomers: hexanedioic acid (adipic acid) + hexane-1,6-diamine.
+Reaction: -COOH + H₂N- → -CO-NH- + H₂O (amide bond).
+Properties: strong, tough, low friction. Fibers, gears, nylon stockings.
+
+Nylon-6 (Polycaprolactam):
+Monomer: caprolactam (cyclic amide), ring-opening polymerization.
+Same properties as Nylon-6,6.
+
+Polyester (PET — Polyethylene Terephthalate):
+Monomers: terephthalic acid + ethylene glycol (or methyl ester + transesterification).
+Reaction: -COOH + HO- → -COO- + H₂O (ester bond).
+Properties: transparent, strong fibers and films. Beverage bottles, clothing (Dacron, Terylene).
+Biodegradable polyesters: PLA (polylactic acid), PHB, PHBV.
+
+Polyurethane:
+Diisocyanate + diol.
+Reaction: -N=C=O + HO- → -NH-CO-O- (no small molecule released!).
+Foams (mattresses, insulation), adhesives, elastomers.
+
+Polycarbonate:
+Bisphenol A + phosgene (COCl₂).
+Transparent, strong, high impact resistance. DVDs, eyeglass lenses, bullet-resistant glass.
+
+Epoxy resin:
+Bisphenol A diglycidyl ether + amine hardener. Cross-linked.
+Strong adhesive, coatings, composite matrices.
+
+COPOLYMERS:
+Random copolymer: A and B randomly distributed.
+Alternating copolymer: -A-B-A-B-.
+Block copolymer: -AAAA-BBBB-.
+Graft copolymer: backbone of A with B side chains.
+
+Important copolymers:
+ABS (acrylonitrile-butadiene-styrene): engineering plastic (LEGO, car dashboards).
+SBR (styrene-butadiene rubber): synthetic rubber for tires.
+EVA (ethylene-vinyl acetate): flexible, used in footwear, foam.
+
+NATURAL POLYMERS:
+Natural rubber: cis-1,4-polyisoprene. Elastic.
+Vulcanization (Goodyear, 1839): cross-linking with S → stronger, less sticky, maintains elasticity over temperature range.
+Gutta-percha: trans-1,4-polyisoprene. Hard, non-elastic.
+Cellulose: β-1,4-polyglucose. Cotton (cellulose), paper, cellophane.
+Cellulose derivatives: cellulose acetate (rayon, photographic film), nitrocellulose (explosives, film).
+Silk: β-sheet protein. Antiparallel β-sheet structure.
+Wool: α-helix protein (keratin).
+
+POLYMER PROPERTIES:
+Glass transition temperature (Tg): below Tg, polymer is glassy/brittle. Above, rubbery.
+Crystalline melting temperature (Tm): for semicrystalline polymers.
+Amorphous polymers: no Tm, only Tg.
+Semicrystalline polymers: both Tg and Tm.
+Crystallinity increases with: tacticity, symmetry of repeat unit, intermolecular forces.
+
+---
+
+PART 2: INDUSTRIAL CHEMISTRY
+
+IMPORTANT INDUSTRIAL PROCESSES:
+
+NITROGEN INDUSTRY:
+Haber-Bosch Process (NH₃):
+N₂ + 3H₂ ⇌ 2NH₃ (ΔH = -92 kJ/mol)
+Conditions: 400-500°C, 150-300 atm, Fe catalyst (with K₂O, Al₂O₃ promoters).
+Le Chatelier: high pressure favors NH₃ (fewer moles of gas).
+High T: unfavorable thermodynamically but needed for kinetics.
+Compromise: 400-500°C gives acceptable rate with ~15% conversion.
+~170 million tons/year. Used for fertilizers (80%), explosives.
+
+Ostwald Process (HNO₃):
+4NH₃ + 5O₂ → 4NO + 6H₂O (900°C, Pt-Rh catalyst)
+2NO + O₂ → 2NO₂
+3NO₂ + H₂O → 2HNO₃ + NO
+Used for fertilizers, explosives (TNT, dynamite), dyes.
+
+SULFUR INDUSTRY:
+Contact Process (H₂SO₄):
+S + O₂ → SO₂ (burning sulfur or roasting FeS₂)
+2SO₂ + O₂ → 2SO₃ (V₂O₅ catalyst, 450°C) [equilibrium, need ~99% conversion]
+SO₃ + H₂SO₄ → H₂S₂O₇ (oleum, prevents SO₃ mist)
+H₂S₂O₇ + H₂O → 2H₂SO₄
+Largest volume industrial chemical. Used in fertilizers (ammonium sulfate, superphosphate), petroleum refining, metal processing, paper.
+
+CHLOR-ALKALI PROCESS:
+2NaCl + 2H₂O → Cl₂ + H₂ + 2NaOH (electrolysis of brine)
+Membrane cell: Nafion membrane separates compartments.
+Cathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻
+Anode: 2Cl⁻ → Cl₂ + 2e⁻
+Products: Cl₂ (PVC, bleach, HCl), H₂ (energy, NH₃), NaOH (paper, soap, aluminum extraction).
+
+PETROLEUM REFINING:
+Fractional distillation → separation by boiling point.
+Fractions (from bottom to top, decreasing bp):
+Fuel oil/bitumen (>340°C), diesel/gasoil (250-340°C), kerosene/jet fuel (170-250°C), gasoline (40-200°C), naphtha, LPG/gas (<40°C).
+
+Cracking: breaking large alkanes into smaller, more valuable fractions (especially gasoline).
+Thermal cracking: 450-750°C, high P. Free radical mechanism.
+Fluid catalytic cracking (FCC): zeolite catalyst, ~500°C, 1 atm. Carbocation mechanism.
+Hydrocracking: catalyst + H₂. More saturated products.
+
+Reforming: converting straight-chain alkanes to branched alkanes and aromatics for higher octane.
+Catalytic reforming (Pt/Re/Al₂O₃, 500°C, 35 atm): dehydrogenation, isomerization, cyclization.
+n-heptane: octane number 0. Isooctane (2,2,4-trimethylpentane): octane number 100.
+
+Alkylation: isobutane + butene → isooctane (acid catalyst HF or H₂SO₄).
+Isomerization: straight-chain → branched chain (AlCl₃ or Pt catalyst).
+Desulfurization: HDS (hydrodesulfurization) removes S as H₂S using CoMo/Al₂O₃ catalyst.
+
+POLYMER INDUSTRY:
+Ethylene (ethene): steam cracking of naphtha. Key olefin.
+CH₃CH₂CH₂CH₃ → CH₂=CH₂ + 2CH₄ (at 800°C, steam)
+Also propylene, butadiene from steam cracking.
+Ethylene → LDPE, HDPE, PVC, polystyrene, polyethylene terephthalate, polyvinyl acetate.
+
+---
+
+PART 3: GREEN AND SUSTAINABLE CHEMISTRY
+
+ATOM ECONOMY:
+Defined by Barry Trost (1991): AE = MW(desired product)/ΣMW(all products) × 100%.
+High AE = less waste. Synthesis design should aim for high AE.
+Diels-Alder: AE = 100% (all atoms incorporated into product, no byproduct).
+Wittig reaction: AE = low (Ph₃P=O byproduct = large MW waste).
+Grignard: moderate AE.
+
+SOLVENT CONSIDERATIONS:
+Traditional solvents: often volatile, flammable, toxic (CH₂Cl₂, THF, DMF, toluene).
+Green alternatives:
+Water: safest solvent for many reactions.
+Supercritical CO₂: non-toxic, recyclable, tunable properties.
+Ionic liquids: low vapor pressure, reusable, tunable.
+PEG (polyethylene glycol): recyclable, non-volatile.
+Solvent-free reactions: mechanochemistry (grinding), microwave heating.
+
+CATALYSIS IN GREEN CHEMISTRY:
+Biocatalysis: enzymes as catalysts. High selectivity, mild conditions, biodegradable.
+Whole-cell biotransformations.
+Asymmetric catalysis: chiral catalysts produce one enantiomer preferentially.
+Organocatalysis: small organic molecules as catalysts (proline, BINOL).
+Heterogeneous catalysis: easily separated from product, recyclable.
+
+E-FACTOR EXAMPLES:
+Oil refining: ~0.1 (very efficient, byproducts used as fuel).
+Bulk chemicals: 1-5.
+Fine chemicals: 5-50.
+Pharmaceuticals: 25-100+ (many protection/deprotection steps, low yields).
+
+RENEWABLE FEEDSTOCKS:
+Biomass-derived chemicals: ethanol (fermentation), lactic acid, succinic acid.
+Biodiesel: transesterification of vegetable oils with methanol (acid/base catalyst). FAME + glycerol.
+Bioethanol: fermentation of sugars/starch by yeast (Saccharomyces cerevisiae).
+C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (glucose fermentation).
+Cellulosic ethanol: enzymatic hydrolysis of cellulose (lignocellulosic biomass) before fermentation.
+
+BIO-BASED POLYMERS:
+PLA (polylactic acid): from lactic acid (fermentation of sugars). Compostable.
+Bio-PET: some petroleum components replaced with bio-based materials.
+Starch-based plastics: blends for packaging.
+PHB/PHBV: bacterial polyesters, truly biodegradable in soil/water.
+
+WATER TREATMENT:
+Primary treatment: physical removal of solids (screens, settling).
+Secondary treatment: biological oxidation of dissolved organics (activated sludge).
+BOD reduced >90%.
+Tertiary treatment: nutrient removal (N, P), disinfection (chlorination, UV, ozone).
+Reverse osmosis: removes dissolved salts (desalination, ultra-pure water).
+Coagulation: alum Al₂(SO₄)₃ → Al(OH)₃ (floc) adsorbs suspended particles.
+Disinfection byproducts (DBPs): chlorine + organic matter → trihalomethanes (carcinogenic?).
+Alternative disinfectants: ozone, UV radiation, chloramine.

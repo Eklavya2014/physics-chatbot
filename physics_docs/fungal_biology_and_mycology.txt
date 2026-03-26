@@ -1,0 +1,194 @@
+================================================================================
+                    FUNGAL BIOLOGY & MYCOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT ARE FUNGI?
+-------------------
+Fungi are eukaryotic heterotrophs that obtain nutrients by external digestion
+(secreting enzymes and absorbing breakdown products). Kingdom Fungi; ~150,000
+described species but estimated 2–5 million total.
+
+Key Features distinguishing fungi from other kingdoms:
+- Cell wall of chitin (vs cellulose in plants; no cell wall in animals).
+- Absorptive nutrition (secrete digestive enzymes externally).
+- Storage carbohydrate is glycogen (like animals; not starch like plants).
+- Ergosterol in cell membranes (vs cholesterol in animals → antifungal target).
+- Most are multicellular (hyphae) but some unicellular (yeasts).
+- Non-motile (no flagella in most groups).
+
+Fungal Body Plan:
+  Hypha (pl. hyphae): Filamentous tubular structure. Tip-growing.
+    Septate hyphae   : Cross-walls (septa) divide hyphae into compartments.
+    Coenocytic       : No septa; multiple nuclei in continuous cytoplasm (Zygomycetes).
+  Mycelium           : Network of hyphae; the main fungal body.
+  Fruiting body      : Reproductive structure visible above ground (mushroom).
+  Dikaryon (+n + n)  : Two haploid nuclei coexist per cell without fusing.
+
+Major Fungal Groups:
+- Chytrids (Chytridiomycota)  : Oldest; aquatic; motile spores; includes
+                                  Batrachochytrium dendrobatidis (frog killer).
+- Zygomycetes                  : Bread moulds (Rhizopus); coenocytic; sexual via zygospores.
+- Ascomycetes (Ascomycota)     : Largest group; sac fungi; sexual spores in ascus.
+                                  Includes: yeasts (Saccharomyces), morels, truffles,
+                                  Aspergillus, Penicillium, Fusarium, Candida.
+- Basidiomycetes (Basidiomycota): Club fungi; sexual spores on basidia.
+                                  Includes: mushrooms, puffballs, rusts, smuts.
+                                  Includes Cryptococcus, Amanita (death cap).
+- Glomeromycetes               : Arbuscular mycorrhizal fungi (AMF); obligate symbiont.
+
+1.1 FUNGAL REPRODUCTION
+------------------------
+Asexual:
+  Mitospores: Conidia (Aspergillus, Penicillium); sporangiospores (Rhizopus); budding (yeast).
+
+Sexual:
+  Plasmogamy (cytoplasm fusion) → Karyogamy (nucleus fusion) → Meiosis → Spores.
+  Ascomycetes: Ascus contains 8 ascospores (products of meiosis + one mitosis).
+  Basidiomycetes: Basidium produces 4 basidiospores externally.
+  Zygomycetes: Zygospore (thick-walled resting spore).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. FUNGAL ECOLOGY
+------------------
+Decomposers (Saprotrophs):
+  Fungi are the primary decomposers of lignocellulosic material (wood, plant litter).
+  White rot fungi (Pleurotus, Trametes): Degrade lignin via peroxidases (lignin
+  peroxidase, manganese peroxidase) + laccases.
+  Brown rot fungi: Degrade cellulose/hemicellulose; leave brown lignin residue.
+  Critical for nutrient cycling — especially carbon and nitrogen.
+
+Mycorrhizal Associations:
+  ~80–90% of vascular plant species form mycorrhizal symbiosis.
+  Ectomycorrhizae (ECM): Hyphal sheath wraps around roots; Hartig net (between cells).
+  Trees (oak, pine, birch) + Basidiomycetes. Fungi get sugars; plants get N, P, water.
+  Arbuscular mycorrhizae (AM): Hyphae penetrate root cells → arbuscules (exchange organs).
+  Glomeromycetes; colonise most crops. Cannot be cultured without host plant.
+  Wood Wide Web: ECM network connects forest trees → C and N transfer between trees.
+  Mother trees (Suzanne Simard): Large trees support seedlings via fungal network.
+
+Lichens: Mutualistic symbiosis of fungi + photosynthetic partner (algae or cyanobacteria).
+  Fungus (mycobiont): Provides structure, protection, water retention.
+  Photobiont: Provides organic carbon via photosynthesis.
+  Pioneer species: Colonise bare rock; contribute to soil formation.
+  Sensitive to air pollution → bioindicators of air quality.
+
+3. MEDICALLY IMPORTANT FUNGI
+------------------------------
+Candida albicans:
+  Normal microbiome (gut, vagina); becomes pathogenic with immunosuppression,
+  antibiotic use, or diabetes.
+  Dimorphic: Yeast form (commensalism) ↔ Hyphal form (invasive/pathogenic).
+  Switching controlled by: Morphogenetic signals (CO2, N-acetylglucosamine, serum).
+  Candidaemia: Life-threatening bloodstream infection; mortality ~40%.
+  Treatment: Fluconazole (azole); echinocandins (caspofungin — 1st-line for severe);
+  amphotericin B (broadest spectrum; most toxic).
+  Candida auris: Emerging multidrug-resistant species; nosocomial outbreaks; WHO
+  critical priority fungal pathogen.
+
+Aspergillus fumigatus:
+  Ubiquitous mould; produces ~1 million conidia/head.
+  Invasive Aspergillosis (IA): Life-threatening in neutropenic/immunosuppressed.
+  Angioinvasion → haematogenous spread → necrosis. Halo sign on CT.
+  Treatment: Voriconazole (first-line); isavuconazole; liposomal amphotericin B.
+  Galactomannan antigen: Serum/BAL → diagnosis.
+  Azole-resistant Aspergillus: CYP51A mutations → increasing problem globally.
+
+Cryptococcus neoformans/gattii:
+  Encapsulated yeast; polysaccharide capsule inhibits phagocytosis.
+  Cryptococcal meningitis: Mainly in AIDS (CD4 <100); 100,000 deaths/year globally.
+  Diagnosis: India ink (visualise capsule); cryptococcal antigen test.
+  Treatment: Induction with liposomal AmB + flucytosine → consolidation fluconazole.
+
+Dermatophytes (Tinea infections):
+  Trichophyton, Microsporum, Epidermophyton; digest keratin.
+  Tinea pedis (athlete's foot); T. unguium (onychomycosis); T. capitis (scalp);
+  T. corporis (ringworm); T. cruris (jock itch).
+  Treatment: Topical antifungals (terbinafine, clotrimazole); oral for nail/scalp.
+
+Pneumocystis jirovecii (PCP):
+  Atypical fungus (previously classified as protozoan). Cannot be cultured.
+  Cause of PCP pneumonia in immunosuppressed (AIDS <200 CD4, transplant, chemotherapy).
+  Treatment: Co-trimoxazole (TMP-SMX). Prophylaxis when CD4 <200.
+
+4. ANTIFUNGAL DRUGS
+--------------------
+Class           | Drug                  | Target                    | Notes
+----------------|----------------------|---------------------------|------------------
+Azoles          | Fluconazole           | CYP51 (ergosterol synth.) | Fungistatic; oral
+                | Voriconazole          | CYP51                     | Aspergillus; IV/PO
+                | Itraconazole          | CYP51                     | Histoplasma, Sporotrichosis
+Echinocandins   | Caspofungin           | Beta-1,3-glucan synthase  | Cell wall; fungicidal
+                | Micafungin            | Beta-1,3-glucan synthase  | Candida, prophylaxis
+Polyenes        | Amphotericin B        | Ergosterol binding        | Broadest spectrum; nephrotoxic
+                | Nystatin              | Ergosterol binding        | Topical/oral non-absorbable
+Allylamines     | Terbinafine           | Squalene epoxidase        | Dermatophytes; oral/topical
+Flucytosine     | 5-Fluorocytosine      | Thymidylate synthase      | Never alone; resistance
+New             | Ibrexafungerp         | Glucan synthase           | Novel site; echinocandin-resistant
+                | Olorofim              | DHODH (mitochondrial)     | Invasive mould infections
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. FUNGAL MOLECULAR BIOLOGY
+-----------------------------
+Saccharomyces cerevisiae as a Model Organism:
+  First eukaryote genome sequenced (1996); 16 chromosomes; ~6,000 genes.
+  Easy genetics: Haploid and diploid forms; knockout libraries (yeast deletion
+  collection); two-hybrid system for protein interactions.
+  Discoveries using yeast: Cell cycle regulation (Hartwell, Nobel 2001);
+  autophagy (Ohsumi, Nobel 2016); protein secretion (Schekman, Nobel 2013);
+  RNA splicing; TOR pathway; telomeres.
+
+Pheromone Signalling & Mating:
+  Haploid yeast exist in two mating types: MATa and MATalpha.
+  MATa secretes a-factor (farnesylated peptide); MATalpha secretes alpha-factor.
+  Pheromone binds GPCR → G-protein → MAPK cascade (Ste11 → Ste7 → Fus3/Kss1)
+  → Ste12 transcription factor → mating genes → cell cycle arrest (G1) → fusion.
+  Archetype for GPCR signalling in eukaryotes.
+
+Chromatin and Gene Regulation in S. cerevisiae:
+  SWI/SNF chromatin remodelling complex first characterized in yeast.
+  HO endonuclease: Catalyses mating-type switching — model for regulated gene expression.
+  Silent chromatin: HML and HMR loci silenced by Sir2 (sirtuin) + Sir3 + Sir4 histone
+  deacetylation → telomeric silencing model.
+  Sir2 (SIRT1 homolog): NAD+-dependent deacetylase; caloric restriction → increased
+  Sir2 activity → lifespan extension in yeast.
+
+6. BIOTECHNOLOGY APPLICATIONS OF FUNGI
+----------------------------------------
+Antibiotics from Fungi:
+  Penicillin (Fleming, 1928): Discovered from Penicillium contamination of Staph plate.
+  Penicillium chrysogenum: Industrial penicillin production (deepfermentation).
+  Cephalosporins: From Acremonium chrysogenum.
+  Griseofulvin: From Penicillium → antifungal.
+  Lovastatin: From Aspergillus terreus → cholesterol-lowering drug (first statin).
+  Ciclosporin: From Tolypocladium inflatum → immunosuppressant (organ transplant).
+  Mycophenolic acid: Penicillium stoloniferum → immunosuppressant (MMF).
+
+Industrial Uses:
+  Food: Baker's yeast (S. cerevisiae); beer and wine fermentation; cheese (Penicillium
+  roqueforti → Roquefort; P. camemberti → Camembert); soy sauce (Aspergillus oryzae);
+  citric acid production (A. niger).
+  Biofuels: Yeast fermentation of lignocellulosic biomass → bioethanol.
+  Enzymes: Cellulases, proteases, lipases, amylases from Aspergillus/Trichoderma.
+  Recombinant proteins: Pichia pastoris (now Komagataella phaffii) → hepatitis B surface
+  antigen, insulin, erythropoietin, antibody fragments.
+
+[EMERGING THREAT] Ophiocordyceps (zombie ant fungus):
+  Infects carpenter ants → hijacks neural/muscular control → ant bites vegetation
+  at precise height/location optimised for sporulation → fruiting body erupts from head.
+  Mechanism: Fungal compounds affect serotonin/dopamine signalling; hyphal invasion
+  of muscles (not brain); exact mechanism under intense study.
+  Batrachochytrium dendrobatidis (Bd): Has caused extinction/decline of >500 amphibian
+  species — worst vertebrate disease-driven mass extinction ever recorded.
+
+================================================================================

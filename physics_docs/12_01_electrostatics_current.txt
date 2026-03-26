@@ -1,0 +1,174 @@
+CLASS 12 PHYSICS - ELECTROSTATICS AND CURRENT ELECTRICITY
+==========================================================
+
+CHAPTER: ELECTRIC CHARGES AND FIELDS
+
+ELECTRIC CHARGE:
+- Two types: positive and negative.
+- Like charges repel; unlike charges attract.
+- Charge is quantized: q = ne (n = integer, e = 1.6 × 10⁻¹⁹ C)
+- Charge is conserved: total charge of isolated system remains constant.
+- Charge is invariant: does not depend on frame of reference.
+
+COULOMB'S LAW:
+F = kq₁q₂/r² = q₁q₂/(4πε₀r²)
+k = 9 × 10⁹ N·m²/C² = 1/(4πε₀)
+ε₀ = 8.85 × 10⁻¹² C²/N·m² (permittivity of free space)
+In medium: F = kq₁q₂/(εr²), ε = ε₀ × ε_r (ε_r = relative permittivity/dielectric constant)
+
+ELECTRIC FIELD:
+E⃗ = F⃗/q₀ (force per unit positive test charge)
+Due to point charge: E = kq/r²
+SI unit: N/C or V/m
+
+ELECTRIC FIELD LINES:
+- Start from positive, end at negative charges.
+- Never intersect.
+- Density indicates field strength.
+- Perpendicular to equipotential surfaces.
+
+ELECTRIC DIPOLE:
+Two equal and opposite charges separated by distance 2a.
+- Dipole moment: p⃗ = q(2a) (direction: -q to +q)
+- Field on axial line: E = 2kp/r³ (for r >> a)
+- Field on equatorial line: E = kp/r³ (for r >> a)
+- Torque on dipole in field: τ = pE sin θ
+- Potential energy: U = -pE cos θ = -p⃗·E⃗
+
+GAUSS'S LAW:
+Φ = ∮E⃗·dA⃗ = q_enclosed/ε₀
+Electric flux through a closed surface = enclosed charge/ε₀.
+
+Applications:
+- Infinite line charge: E = λ/(2πε₀r) [λ = linear charge density]
+- Infinite plane sheet: E = σ/(2ε₀) [σ = surface charge density]
+- Uniformly charged sphere:
+  Outside (r > R): E = kQ/r² (like point charge)
+  Inside (r < R): E = kQr/R³ (increases with r)
+  On surface: E = kQ/R² = σ/ε₀
+
+---
+
+CHAPTER: ELECTROSTATIC POTENTIAL AND CAPACITANCE
+
+ELECTRIC POTENTIAL:
+V = W/q₀ (work done per unit positive charge from infinity)
+Due to point charge: V = kq/r
+Potential is scalar; add algebraically for multiple charges.
+SI unit: Volt (V) = J/C
+
+POTENTIAL DIFFERENCE:
+V_AB = V_A - V_B = work done per unit charge moving from B to A.
+Relation: E = -dV/dr (E is in direction of decreasing V)
+
+EQUIPOTENTIAL SURFACES:
+Surfaces of constant potential.
+- No work done moving charge along equipotential.
+- E⃗ is always perpendicular to equipotential surfaces.
+- For point charge: concentric spheres.
+- For uniform field: parallel planes.
+
+POTENTIAL ENERGY:
+System of two charges: U = kq₁q₂/r
+System of charges: sum of all pairwise interactions.
+
+CONDUCTORS IN ELECTROSTATIC FIELD:
+- E = 0 inside conductor.
+- All charges reside on surface.
+- Surface is equipotential.
+- E just outside = σ/ε₀ (perpendicular to surface).
+- Charges concentrate at sharp points (lightning conductor principle).
+
+CAPACITANCE:
+C = Q/V
+SI unit: Farad (F)
+1 F = 1 C/V
+
+Types of capacitors:
+- Parallel plate: C = ε₀A/d (A = plate area, d = separation)
+- With dielectric: C = Kε₀A/d (K = dielectric constant)
+- Spherical: C = 4πε₀R
+- Cylindrical: C = 2πε₀L/ln(b/a)
+
+COMBINATION OF CAPACITORS:
+Series: 1/C_eff = 1/C₁ + 1/C₂ + 1/C₃ (charge same, voltage divides)
+Parallel: C_eff = C₁ + C₂ + C₃ (voltage same, charge divides)
+
+ENERGY STORED IN CAPACITOR:
+U = Q²/2C = CV²/2 = QV/2
+Energy density: u = ½ε₀E²
+
+DIELECTRICS:
+- Polar dielectric: molecules have permanent dipole moment (water).
+- Non-polar dielectric: no permanent dipole; induced when E applied (glass).
+- Dielectric constant K = C/C₀ (always > 1)
+- Dielectric strength: maximum E field before breakdown.
+
+EFFECT OF DIELECTRIC ON CAPACITOR:
+With dielectric inserted (isolated capacitor):
+- Charge Q remains same.
+- Capacitance increases: C' = KC.
+- Voltage decreases: V' = V/K.
+- Energy decreases: U' = U/K.
+
+---
+
+CHAPTER: CURRENT ELECTRICITY (CLASS 12 EXTENDED)
+
+DRIFT VELOCITY:
+Average velocity of electrons due to applied E field.
+v_d = eEτ/m (τ = relaxation time)
+Current: I = neAv_d (n = electron density, A = cross-section area)
+Current density: J = nev_d = σE
+
+CONDUCTANCE AND RESISTIVITY:
+Conductance: G = 1/R (Siemens, S)
+Resistivity: ρ = RA/L
+Conductivity: σ = 1/ρ = J/E
+
+Temperature dependence of resistance:
+R_T = R₀(1 + αT)
+α = temperature coefficient of resistance (positive for metals, negative for semiconductors)
+
+EMF AND INTERNAL RESISTANCE:
+Terminal voltage: V = ε - Ir (during discharge)
+V = ε + Ir (during charging)
+ε = EMF of cell, r = internal resistance, I = current
+
+KIRCHHOFF'S LAWS:
+1. Junction rule (KCL): Sum of currents at junction = 0. (Conservation of charge)
+2. Loop rule (KVL): Sum of EMFs = sum of voltage drops in any closed loop. (Conservation of energy)
+
+WHEATSTONE BRIDGE:
+Balanced condition: P/Q = R/S (no current through galvanometer)
+Used to find unknown resistance accurately.
+
+METRE BRIDGE:
+l/(100-l) = R/S
+Used to find unknown resistance using principle of Wheatstone bridge.
+
+POTENTIOMETER:
+- Used to compare EMFs, find internal resistance.
+- Works on null deflection principle (no current drawn from cell being measured).
+- More accurate than voltmeter.
+- Comparing EMFs: ε₁/ε₂ = l₁/l₂
+- Internal resistance: r = R(l₁-l₂)/l₂
+
+POWER IN CIRCUITS:
+P = VI = I²R = V²/R
+Maximum power transfer: when external resistance = internal resistance.
+
+CELLS IN COMBINATION:
+Series: ε_total = ε₁ + ε₂ + ..., r_total = r₁ + r₂ + ...
+Best for high resistance external circuit.
+Parallel (identical cells): ε_total = ε, r_total = r/n
+Best for low resistance external circuit.
+
+IMPORTANT FORMULAS:
+- F = kq₁q₂/r² (Coulomb's law)
+- E = kq/r² (point charge field)
+- V = kq/r (point charge potential)
+- C = Q/V, C = ε₀A/d
+- U = CV²/2 (energy in capacitor)
+- V = ε - Ir (terminal voltage)
+- Wheatstone bridge: P/Q = R/S

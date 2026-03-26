@@ -1,0 +1,188 @@
+CLASS 12 PHYSICS - MAGNETISM, EMI, AC CIRCUITS AND EM WAVES
+============================================================
+
+CHAPTER: MOVING CHARGES AND MAGNETISM
+
+MAGNETIC FORCE:
+On a moving charge: F⃗ = q(v⃗ × B⃗), |F| = qvB sin θ
+On a current-carrying conductor: F⃗ = I(L⃗ × B⃗), |F| = BIL sin θ
+
+Lorentz force: F⃗ = q(E⃗ + v⃗ × B⃗)
+
+MOTION OF CHARGED PARTICLE IN MAGNETIC FIELD:
+- Circular motion when v ⊥ B.
+- Radius: r = mv/(qB)
+- Time period: T = 2πm/(qB) (independent of speed!)
+- Frequency (cyclotron frequency): f = qB/(2πm)
+- Helical path when v has component along B.
+
+BIOT-SAVART LAW:
+dB⃗ = (μ₀/4π) × I(dL⃗ × r̂)/r²
+μ₀ = 4π × 10⁻⁷ T·m/A (permeability of free space)
+
+Magnetic field of straight wire:
+B = μ₀I/(2πr) (at distance r from infinite wire)
+Direction: Right-hand rule (curl fingers in direction of B, thumb = I)
+
+Magnetic field at centre of circular loop:
+B = μ₀I/(2R) (R = radius)
+
+AMPERE'S CIRCUITAL LAW:
+∮B⃗·dL⃗ = μ₀I_enclosed
+Applications:
+- Infinite solenoid: B = μ₀nI (n = turns per unit length), B = 0 outside.
+- Toroid: B = μ₀NI/(2πr) inside, B = 0 outside.
+
+FORCE BETWEEN PARALLEL WIRES:
+F/L = μ₀I₁I₂/(2πd) per unit length
+- Parallel currents attract; antiparallel repel.
+- 1 Ampere defined using this force.
+
+MAGNETIC MOMENT:
+Current loop: m = IA (A = area, direction by right-hand rule)
+Torque on loop: τ = m × B = mB sin θ
+PE: U = -m⃗·B⃗ = -mB cos θ
+
+GALVANOMETER, VOLTMETER, AMMETER:
+- Galvanometer: measures small current. Uses torque on current loop.
+- Ammeter: galvanometer + low resistance (shunt) in parallel. Ig × G = (I - Ig) × S
+- Voltmeter: galvanometer + high resistance in series. V = Ig(G + R)
+
+---
+
+CHAPTER: MAGNETISM AND MATTER
+
+MAGNETIC MATERIALS:
+- Diamagnetic: weakly repelled by magnets (Bi, Cu, water). χ < 0, μ_r < 1.
+- Paramagnetic: weakly attracted (Al, Na, O₂). χ > 0, μ_r slightly > 1.
+- Ferromagnetic: strongly attracted (Fe, Ni, Co). χ >> 0, μ_r >> 1.
+
+CURIE'S LAW (paramagnetic): χ = C/T (C = Curie constant)
+Above Curie temperature: ferromagnetic → paramagnetic.
+
+HYSTERESIS LOOP:
+B-H graph for ferromagnetic material.
+- Retentivity: residual magnetism when H = 0.
+- Coercivity: reverse H needed to demagnetize.
+- Hard magnetic materials: high coercivity (permanent magnets).
+- Soft magnetic materials: low coercivity (transformer cores, electromagnets).
+
+---
+
+CHAPTER: ELECTROMAGNETIC INDUCTION
+
+FARADAY'S LAWS:
+1. Whenever magnetic flux through a circuit changes, EMF is induced.
+2. Induced EMF = rate of change of flux: ε = -dΦ/dt
+
+Magnetic flux: Φ = B⃗·A⃗ = BA cos θ
+SI unit: Weber (Wb)
+
+LENZ'S LAW:
+Induced current opposes the change causing it (consequence of energy conservation).
+
+MOTIONAL EMF:
+For rod moving with velocity v in field B: ε = Bvl
+For rotating rod: ε = ½BωL²
+
+SELF-INDUCTANCE:
+L = NΦ/I = ε/(dI/dt)
+Back EMF: ε = -L(dI/dt)
+Energy stored: U = ½LI²
+Solenoid: L = μ₀n²V = μ₀N²A/l
+
+MUTUAL INDUCTANCE:
+M = N₂Φ₂/I₁
+ε₂ = -M(dI₁/dt)
+Two coils: M = μ₀N₁N₂A/l (coaxial solenoids)
+M ≤ √(L₁L₂), equality when perfectly coupled: M = k√(L₁L₂), k = coupling coefficient.
+
+EDDY CURRENTS:
+Currents induced in conducting bulk materials due to changing B field.
+- Cause heating (energy loss).
+- Used in induction heating, braking, speedometers.
+- Minimized by laminating cores.
+
+---
+
+CHAPTER: ALTERNATING CURRENT
+
+AC QUANTITIES:
+- Instantaneous: e = E₀ sin ωt, i = I₀ sin(ωt + φ)
+- Peak/Amplitude: E₀, I₀
+- RMS: E_rms = E₀/√2, I_rms = I₀/√2
+- Average of full cycle = 0; average of half cycle = 2I₀/π
+
+PHASORS:
+Rotating vectors that represent AC quantities. Angle = phase.
+
+REACTANCE AND IMPEDANCE:
+- Resistor: V and I in phase. Z = R.
+- Inductor: V leads I by 90°. X_L = ωL.
+- Capacitor: I leads V by 90°. X_C = 1/(ωC).
+
+SERIES RLC CIRCUIT:
+Z = √(R² + (X_L - X_C)²)
+Phase angle: tan φ = (X_L - X_C)/R
+I = V/Z
+
+RESONANCE:
+X_L = X_C → ω₀ = 1/√(LC), f₀ = 1/(2π√(LC))
+At resonance: Z = R (minimum), I = V/R (maximum), power factor = 1.
+
+Quality factor: Q = ω₀L/R = 1/(ω₀CR) = (1/R)√(L/C)
+
+POWER IN AC CIRCUITS:
+P = V_rms × I_rms × cos φ
+Power factor: cos φ = R/Z
+- Purely resistive: cos φ = 1 (P = V_rms × I_rms)
+- Purely reactive: cos φ = 0 (P = 0, wattless current)
+
+TRANSFORMER:
+V_s/V_p = N_s/N_p = I_p/I_s (for ideal transformer)
+Step-up: N_s > N_p (increases V, decreases I)
+Step-down: N_s < N_p (decreases V, increases I)
+Efficiency: η = P_out/P_in × 100%
+Losses: copper loss (I²R), iron loss (eddy currents + hysteresis)
+
+---
+
+CHAPTER: ELECTROMAGNETIC WAVES
+
+MAXWELL'S EQUATIONS (qualitative):
+1. Gauss's law for E: ∮E⃗·dA⃗ = q/ε₀
+2. Gauss's law for B: ∮B⃗·dA⃗ = 0 (no magnetic monopoles)
+3. Faraday's law: ∮E⃗·dL⃗ = -dΦ_B/dt
+4. Ampere-Maxwell law: ∮B⃗·dL⃗ = μ₀I + μ₀ε₀(dΦ_E/dt)
+Displacement current: I_d = ε₀(dΦ_E/dt)
+
+ELECTROMAGNETIC WAVES:
+- Produced by accelerating charges.
+- E and B are perpendicular to each other and to direction of propagation.
+- Speed: c = 1/√(μ₀ε₀) = 3 × 10⁸ m/s in vacuum.
+- In medium: v = c/n (n = refractive index).
+- E₀/B₀ = c.
+- Transverse waves; carry energy and momentum.
+- Intensity: I = ½cε₀E₀² = P/A.
+
+ELECTROMAGNETIC SPECTRUM (increasing wavelength / decreasing frequency):
+1. Gamma rays: λ < 0.01 nm. Nuclear transitions. Most energetic.
+2. X-rays: 0.01 nm - 10 nm. Inner electron transitions. Medical imaging.
+3. Ultraviolet: 10 nm - 400 nm. Electron transitions. Causes sunburn.
+4. Visible light: 400 nm - 700 nm. Violet to Red. Seen by human eye.
+5. Infrared: 700 nm - 1 mm. Molecular vibrations. Heat radiation.
+6. Microwaves: 1 mm - 10 cm. Radar, microwave oven, WiFi.
+7. Radio waves: > 10 cm. Communication. Longest wavelength.
+
+Key wavelengths of visible light:
+Violet: 380-450 nm, Blue: 450-495 nm, Green: 495-570 nm
+Yellow: 570-590 nm, Orange: 590-620 nm, Red: 620-750 nm
+
+IMPORTANT FORMULAS:
+- ε = -dΦ/dt (Faraday's law)
+- X_L = ωL, X_C = 1/(ωC)
+- Z = √(R² + (X_L - X_C)²)
+- ω₀ = 1/√(LC) (resonance)
+- P = V_rms I_rms cos φ
+- V_s/V_p = N_s/N_p (transformer)
+- c = 1/√(μ₀ε₀) = 3 × 10⁸ m/s

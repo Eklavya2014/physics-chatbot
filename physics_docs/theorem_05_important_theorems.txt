@@ -1,0 +1,236 @@
+IMPORTANT PHYSICS THEOREMS AND CONSERVATION LAWS
+==================================================
+
+NOETHER'S THEOREM (Emmy Noether, 1915)
+"The most beautiful theorem in physics"
+
+Statement: Every continuous symmetry of a physical system corresponds to a conserved quantity.
+
+Symmetry → Conservation Law:
+Time translation symmetry → Conservation of Energy
+Spatial translation symmetry → Conservation of Linear Momentum
+Rotational symmetry → Conservation of Angular Momentum
+Gauge symmetry (EM) → Conservation of Electric Charge
+Gauge symmetry (QCD) → Conservation of Color Charge
+
+This theorem explains WHY conservation laws exist — they are consequences of symmetry.
+It is the deepest result in theoretical physics.
+
+Example: The laws of physics are the same today as yesterday (time translation symmetry) → energy is conserved. If the laws changed over time, energy would not be conserved.
+
+---
+
+CONSERVATION OF ENERGY:
+The total energy of an isolated system remains constant.
+E_total = KE + PE + thermal + chemical + nuclear + ... = constant
+Work-Energy Theorem: W_net = ΔKE
+For conservative forces: KE + PE = constant (mechanical energy conservation)
+First Law of Thermodynamics: ΔU = Q - W
+E = mc² (rest energy) — mass itself is a form of energy
+
+---
+
+CONSERVATION OF LINEAR MOMENTUM:
+Total momentum of isolated system is conserved: Σp⃗ = constant (if F_ext = 0)
+p⃗ = mv⃗ (non-relativistic), p⃗ = γmv⃗ (relativistic)
+Impulse-momentum theorem: J⃗ = FΔt = Δp⃗
+Applications: collisions, rocket propulsion, recoil
+
+Rocket equation (Tsiolkovsky): Δv = v_e ln(m₀/m_f)
+v_e = exhaust velocity, m₀ = initial mass, m_f = final mass
+
+---
+
+CONSERVATION OF ANGULAR MOMENTUM:
+L⃗ = r⃗ × p⃗ = Iω⃗ = constant (if τ_ext = 0)
+Applications:
+- Figure skater: pulls arms in → I decreases → ω increases (L = Iω = constant)
+- Gyroscope precession: τ = dL/dt → precession ω_p = τ/L = mgr/Iω
+- Planetary orbits: Kepler's second law is conservation of angular momentum
+- Atomic physics: orbital angular momentum quantized in units of ℏ
+
+Spin angular momentum: S = ℏ√(s(s+1)), S_z = m_s ℏ
+Total: J⃗ = L⃗ + S⃗ (vector addition of orbital + spin)
+
+---
+
+NEWTON'S LAWS OF MOTION
+
+Newton's First Law (Law of Inertia):
+A body remains at rest or in uniform motion unless acted upon by a net external force.
+Defines inertial reference frames.
+
+Newton's Second Law:
+F⃗ = ma⃗ = dp⃗/dt (rate of change of momentum)
+Valid in inertial frames only.
+Relativistic: F⃗ = dp⃗/dt = d(γmv⃗)/dt
+
+Newton's Third Law:
+For every action, there is an equal and opposite reaction.
+F⃗_AB = -F⃗_BA
+Forces always come in pairs, acting on DIFFERENT bodies.
+This is why rockets work in vacuum — exhaust gas pushed back → rocket pushed forward.
+
+Newton's Law of Universal Gravitation:
+F = Gm₁m₂/r² (attractive, along line joining masses)
+G = 6.674 × 10⁻¹¹ N·m²/kg²
+g = GM_E/R_E² = 9.8 m/s² (surface gravity)
+
+---
+
+KEPLER'S LAWS OF PLANETARY MOTION
+
+Kepler's First Law: Planets move in elliptical orbits with the Sun at one focus.
+Eccentricity e: e=0 (circle), 0<e<1 (ellipse), e=1 (parabola), e>1 (hyperbola)
+Perihelion: closest point. Aphelion: farthest point.
+
+Kepler's Second Law: A line from Sun to planet sweeps equal areas in equal times.
+This is conservation of angular momentum: L = mr²ω = constant
+When closer to Sun: moves faster (r smaller, ω larger).
+At perihelion: v_max. At aphelion: v_min.
+v_p r_p = v_a r_a (conservation of angular momentum)
+
+Kepler's Third Law: T² ∝ r³ (square of period proportional to cube of semi-major axis)
+T² = (4π²/GM) r³
+For planets orbiting Sun: T²(years) = r³(AU)
+Derived directly from Newton's law of gravity.
+
+---
+
+WORK-ENERGY THEOREM:
+W_net = ΔKE = ½mv₂² - ½mv₁²
+For constant force: W = F⃗·d⃗ = Fd cos θ
+For variable force: W = ∫F⃗·dr⃗
+Power: P = dW/dt = F⃗·v⃗
+Conservative force: work done independent of path, ∮F⃗·dr⃗ = 0
+Potential energy defined only for conservative forces: W = -ΔU
+
+---
+
+GAUSS'S THEOREM (DIVERGENCE THEOREM):
+∮F⃗·dA⃗ = ∫∫∫ ∇·F⃗ dV
+Relates surface integral to volume integral.
+Used in deriving Gauss's law for EM from Coulomb's law.
+
+STOKES' THEOREM:
+∮F⃗·dL⃗ = ∫∫ (∇×F⃗)·dA⃗
+Relates line integral to surface integral.
+Used in deriving Faraday's law and Ampere's law in differential form.
+
+---
+
+WAVE THEOREMS AND PRINCIPLES
+
+SUPERPOSITION PRINCIPLE:
+When two or more waves overlap, the resultant displacement equals the algebraic sum.
+Constructive interference: amplitudes add (path difference = nλ)
+Destructive interference: amplitudes cancel (path difference = (n+½)λ)
+Beats: f_beat = |f₁ - f₂|
+Standing waves: nodes (zero displacement) and antinodes (maximum displacement)
+
+HUYGENS' PRINCIPLE:
+Every point on a wavefront acts as a source of secondary wavelets.
+New wavefront = envelope of all secondary wavelets.
+Explains: diffraction, refraction, reflection.
+
+DOPPLER EFFECT:
+f' = f(v ± v_observer)/(v ∓ v_source)
+For light (relativistic Doppler): f' = f√((1-β)/(1+β)) for recession
+Redshift z = (f_emit - f_obs)/f_obs = Δλ/λ
+Hubble's law: v = H₀d (recession velocity proportional to distance)
+
+PRINCIPLE OF SUPERPOSITION FOR FIELDS:
+Total field = sum of fields from all sources.
+E_total = ΣE_i (electric field)
+B_total = ΣB_i (magnetic field)
+Valid because Maxwell's equations are linear.
+
+---
+
+FLUID MECHANICS THEOREMS
+
+ARCHIMEDES' PRINCIPLE:
+Buoyant force = weight of fluid displaced.
+F_b = ρ_fluid × V_submerged × g
+Object floats if density < fluid density.
+Object sinks if density > fluid density.
+Neutral buoyancy if density = fluid density.
+
+PASCAL'S PRINCIPLE:
+Pressure applied to enclosed fluid is transmitted equally in all directions.
+P = F/A (pressure)
+Hydraulic press: F₁/A₁ = F₂/A₂ → F₂ = F₁(A₂/A₁)
+
+BERNOULLI'S THEOREM:
+For steady, incompressible, non-viscous flow along streamline:
+P + ½ρv² + ρgh = constant
+High velocity → low pressure (explains lift on wings, Venturi effect)
+Continuity equation: A₁v₁ = A₂v₂ (mass conservation)
+Torricelli's theorem: v = √(2gh) (efflux velocity)
+
+---
+
+OPTICAL THEOREMS
+
+FERMAT'S PRINCIPLE:
+Light travels the path that takes the least time.
+Explains: reflection (angle of incidence = angle of reflection), refraction (Snell's law), lens optics.
+Equivalent to Huygens' principle.
+
+MALUS'S LAW:
+I = I₀ cos²θ (intensity after polarizer at angle θ to polarization direction)
+Unpolarized light through polarizer → I = I₀/2
+
+RAYLEIGH SCATTERING:
+Scattering intensity ∝ 1/λ⁴ (strongly wavelength dependent)
+Blue light (shorter λ) scattered much more than red.
+Explains: blue sky, red sunset, white clouds.
+
+---
+
+QUANTUM THEOREMS
+
+HEISENBERG UNCERTAINTY PRINCIPLE: (detailed in QM section)
+Δx·Δp ≥ ℏ/2
+
+PAULI EXCLUSION PRINCIPLE:
+No two identical fermions can have the same quantum state.
+Consequence of antisymmetric wavefunctions.
+Explains: periodic table, white dwarfs, neutron stars, stability of matter.
+
+EHRENFEST'S THEOREM:
+⟨F⟩ = m d²⟨x⟩/dt² (expectation values obey classical equations)
+Quantum mechanics reduces to classical mechanics for expectation values.
+Explains why quantum particles can behave classically on large scales.
+
+VIRIAL THEOREM:
+For bound systems: ⟨KE⟩ = -½⟨PE⟩
+For gravity (1/r potential): ⟨KE⟩ = -½⟨PE⟩
+Total energy = ½⟨PE⟩ (negative — bound system)
+For harmonic oscillator: ⟨KE⟩ = ⟨PE⟩
+
+BELL'S THEOREM:
+No local hidden variable theory can reproduce all predictions of quantum mechanics.
+Any theory with local realism disagrees with QM for entangled particles.
+Experimental tests confirm QM — nature is fundamentally non-local.
+
+---
+
+NUCLEAR PHYSICS THEOREMS
+
+RADIOACTIVE DECAY LAW:
+N(t) = N₀ e^(-λt) (exponential decay)
+Half-life: T₁/₂ = ln2/λ = 0.693/λ
+Mean lifetime: τ = 1/λ
+Activity: A = λN = A₀e^(-λt)
+
+Q-VALUE:
+Q = (mass of reactants - mass of products) × c²
+Q > 0: exothermic (energy released)
+Q < 0: endothermic (energy absorbed, threshold required)
+
+BINDING ENERGY PER NUCLEON:
+BE/A peaks at iron-56 (most stable nucleus)
+Nuclei lighter than Fe: energy released by fusion
+Nuclei heavier than Fe: energy released by fission
+This explains why both fusion and fission release energy.

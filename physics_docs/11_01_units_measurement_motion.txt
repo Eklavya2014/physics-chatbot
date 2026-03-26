@@ -1,0 +1,204 @@
+CLASS 11 PHYSICS - UNITS, MEASUREMENT AND MOTION
+=================================================
+
+CHAPTER: UNITS AND MEASUREMENT
+
+PHYSICAL QUANTITIES
+A physical quantity is anything that can be measured. It has two parts: magnitude and unit.
+- Fundamental (Base) quantities: Cannot be expressed in terms of other quantities.
+- Derived quantities: Expressed in terms of fundamental quantities.
+
+SI BASE UNITS (7 Fundamental Units):
+1. Length → metre (m)
+2. Mass → kilogram (kg)
+3. Time → second (s)
+4. Electric current → Ampere (A)
+5. Temperature → Kelvin (K)
+6. Luminous intensity → Candela (cd)
+7. Amount of substance → Mole (mol)
+
+SUPPLEMENTARY UNITS:
+- Plane angle → radian (rad)
+- Solid angle → steradian (sr)
+
+SIGNIFICANT FIGURES RULES:
+1. All non-zero digits are significant.
+2. Zeros between non-zero digits are significant.
+3. Leading zeros are NOT significant.
+4. Trailing zeros after decimal are significant.
+5. Trailing zeros without decimal may or may not be significant.
+
+ERRORS IN MEASUREMENT:
+- Absolute error: |measured - true|
+- Mean absolute error: average of all absolute errors
+- Relative error: mean absolute error / true value
+- Percentage error: relative error × 100%
+
+Error propagation:
+- Addition/Subtraction: Absolute errors add: ΔZ = ΔA + ΔB
+- Multiplication/Division: Relative errors add: ΔZ/Z = ΔA/A + ΔB/B
+- Power: ΔZ/Z = n × ΔA/A (for Z = Aⁿ)
+
+DIMENSIONAL ANALYSIS:
+Dimensions of base quantities:
+[M] = mass, [L] = length, [T] = time, [A] = current, [K] = temperature
+
+Common dimensional formulas:
+- Velocity: [LT⁻¹]
+- Acceleration: [LT⁻²]
+- Force: [MLT⁻²]
+- Energy/Work: [ML²T⁻²]
+- Power: [ML²T⁻³]
+- Pressure: [ML⁻¹T⁻²]
+- Momentum: [MLT⁻¹]
+- Angular momentum: [ML²T⁻¹]
+- Gravitational constant G: [M⁻¹L³T⁻²]
+- Planck's constant h: [ML²T⁻¹]
+- Boltzmann constant k: [ML²T⁻²K⁻¹]
+
+Applications of dimensional analysis:
+1. Check correctness of equations.
+2. Derive relationships between quantities.
+3. Convert units from one system to another.
+
+Limitations: Cannot find dimensionless constants; fails if equation involves trigonometric/logarithmic functions.
+
+---
+
+CHAPTER: MOTION IN A STRAIGHT LINE (KINEMATICS)
+
+BASIC DEFINITIONS:
+- Distance: Total path length (scalar).
+- Displacement: Shortest distance from initial to final position (vector).
+- Speed: Distance/time (scalar).
+- Velocity: Displacement/time (vector).
+- Acceleration: Rate of change of velocity (vector).
+
+EQUATIONS OF UNIFORMLY ACCELERATED MOTION:
+1. v = u + at
+2. s = ut + ½at²
+3. v² = u² + 2as
+4. s_n = u + a(2n-1)/2  [distance in nth second]
+
+Where: u = initial velocity, v = final velocity, a = acceleration, s = displacement, t = time.
+
+GRAPHS:
+- Displacement-time graph: slope = velocity
+- Velocity-time graph: slope = acceleration, area under curve = displacement
+- Acceleration-time graph: area under curve = change in velocity
+
+FREE FALL:
+- Acceleration = g = 9.8 m/s² downward
+- All objects fall with same acceleration in vacuum regardless of mass.
+- For object dropped from rest: v = gt, h = ½gt², v² = 2gh
+
+RELATIVE VELOCITY:
+Velocity of A relative to B: v_AB = v_A - v_B
+
+---
+
+CHAPTER: MOTION IN A PLANE (2D MOTION)
+
+VECTORS:
+- Scalar: magnitude only (mass, speed, temperature)
+- Vector: magnitude + direction (displacement, velocity, force)
+
+Vector addition:
+- Triangle law: Place vectors head to tail; resultant is closing side.
+- Parallelogram law: R² = A² + B² + 2AB cos θ
+- tan α = B sin θ / (A + B cos θ)
+
+Unit vector: â = A⃗/|A| (magnitude = 1, gives direction only)
+
+Dot product (scalar product): A⃗·B⃗ = AB cos θ
+- Result is scalar.
+- A⃗·A⃗ = A² (î·î = ĵ·ĵ = k̂·k̂ = 1)
+- î·ĵ = ĵ·k̂ = k̂·î = 0
+
+Cross product (vector product): |A⃗×B⃗| = AB sin θ
+- Result is vector, perpendicular to both A and B.
+- î×ĵ = k̂, ĵ×k̂ = î, k̂×î = ĵ
+- A⃗×A⃗ = 0
+
+PROJECTILE MOTION:
+A projectile is an object thrown at an angle to the horizontal.
+Horizontal: uniform velocity (no acceleration)
+Vertical: uniformly accelerated (acceleration = g downward)
+
+Key equations (θ = angle of projection, u = initial speed):
+- Horizontal velocity: uₓ = u cos θ (constant)
+- Vertical velocity: uᵧ = u sin θ - gt
+- Horizontal displacement: x = u cos θ · t
+- Vertical displacement: y = u sin θ · t - ½gt²
+- Time of flight: T = 2u sin θ / g
+- Maximum height: H = u² sin²θ / 2g
+- Range: R = u² sin 2θ / g
+- Maximum range: R_max = u²/g (at θ = 45°)
+- Equation of trajectory: y = x tan θ - gx²/(2u² cos²θ) [parabola]
+
+CIRCULAR MOTION:
+- Angular displacement: θ (radians)
+- Angular velocity: ω = dθ/dt (rad/s)
+- Angular acceleration: α = dω/dt (rad/s²)
+- Linear velocity: v = rω
+- Centripetal acceleration: a_c = v²/r = ω²r (directed toward center)
+- Centripetal force: F_c = mv²/r = mω²r
+- Period: T = 2π/ω = 2πr/v
+- Frequency: f = 1/T
+
+UNIFORM CIRCULAR MOTION:
+Speed is constant but velocity changes direction continuously.
+Centripetal acceleration is always perpendicular to velocity.
+
+---
+
+CHAPTER: LAWS OF MOTION
+
+NEWTON'S FIRST LAW (Law of Inertia):
+A body continues in its state of rest or uniform motion unless acted upon by a net external force.
+- Inertia: resistance to change in state of motion.
+- Mass is a measure of inertia.
+
+NEWTON'S SECOND LAW:
+F⃗ = ma⃗ = dp⃗/dt
+Net force = rate of change of momentum.
+- 1 Newton = force that gives 1 kg mass an acceleration of 1 m/s².
+
+NEWTON'S THIRD LAW:
+For every action, there is an equal and opposite reaction.
+- Forces act on DIFFERENT bodies.
+- Action-reaction forces are always equal in magnitude and opposite in direction.
+
+MOMENTUM AND IMPULSE:
+- Linear momentum: p⃗ = mv⃗ (SI unit: kg·m/s)
+- Impulse: J = F·Δt = Δp (change in momentum)
+- Conservation of momentum: total momentum is conserved when no external force acts.
+
+FRICTION:
+- Static friction: prevents relative motion between surfaces at rest.
+  f_s ≤ μ_s N (μ_s = coefficient of static friction)
+- Kinetic friction: opposes relative motion between sliding surfaces.
+  f_k = μ_k N (μ_k = coefficient of kinetic friction)
+- μ_k < μ_s always.
+- Rolling friction: much smaller than sliding friction.
+- Friction is independent of area of contact (for a given normal force).
+
+CIRCULAR MOTION DYNAMICS:
+- Banking of roads: tan θ = v²/rg (θ = banking angle)
+- With friction: v_max = √(rg(tan θ + μ)/(1 - μ tan θ))
+- Conical pendulum: T = 2π√(l cos θ/g)
+
+EQUILIBRIUM:
+- Translational equilibrium: ΣF = 0
+- Rotational equilibrium: Στ = 0 (net torque = 0)
+
+IMPORTANT FORMULAS SUMMARY:
+- v = u + at
+- s = ut + ½at²
+- v² = u² + 2as
+- R (projectile) = u² sin 2θ / g
+- H (max height) = u² sin²θ / 2g
+- F = ma
+- p = mv
+- f_k = μ_k N
+- Centripetal force = mv²/r

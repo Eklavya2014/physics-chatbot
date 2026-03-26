@@ -1,0 +1,209 @@
+================================================================================
+                    BIOCHEMISTRY & METABOLISM
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BIOMOLECULES — THE FOUR MACROMOLECULES
+------------------------------------------
+All living things are built from four classes of large biological molecules:
+
+1.1 CARBOHYDRATES
+  Monomer: Monosaccharides (glucose, fructose, galactose)
+  Polymer: Polysaccharides (starch, glycogen, cellulose, chitin)
+  Bond: Glycosidic bond (formed by dehydration synthesis)
+  Functions: Energy source (glucose), energy storage (glycogen/starch),
+             structural support (cellulose in plants, chitin in insects/fungi).
+
+  Key examples:
+  - Glucose (C6H12O6)   : Primary fuel for cellular respiration.
+  - Sucrose             : Glucose + Fructose (table sugar).
+  - Lactose             : Glucose + Galactose (milk sugar).
+  - Starch              : Alpha-1,4 and alpha-1,6 glycosidic bonds; energy storage in plants.
+  - Glycogen            : Highly branched; energy storage in animals (liver, muscle).
+  - Cellulose           : Beta-1,4 bonds; structural; cannot be digested by humans.
+
+1.2 LIPIDS
+  Not polymers — diverse group joined by hydrophobic properties.
+  Types:
+  - Triglycerides       : 3 fatty acids + glycerol; long-term energy storage.
+  - Phospholipids       : 2 fatty acids + glycerol + phosphate head; membrane bilayer.
+  - Steroids            : 4-ring carbon structure; includes cholesterol, hormones.
+  - Waxes               : Long-chain fatty acid + alcohol; waterproofing.
+  Saturated fatty acids : No double bonds; solid at room temp; animal fats.
+  Unsaturated           : One or more double bonds; liquid at room temp; plant oils.
+  Trans fats            : Artificially hydrogenated; raise LDL, lower HDL.
+
+1.3 PROTEINS
+  Monomer: Amino acids (20 standard amino acids)
+  Bond: Peptide bond (formed between amino group and carboxyl group)
+  Structure levels:
+  - Primary   : Sequence of amino acids (determined by DNA).
+  - Secondary  : Alpha helices and beta sheets (H-bonds between backbone).
+  - Tertiary   : 3D folding; stabilised by R-group interactions, disulphide bridges.
+  - Quaternary : Multiple polypeptide subunits (e.g., haemoglobin: 4 subunits).
+  Functions: Enzymes, structural (collagen, keratin), transport (haemoglobin),
+             signalling (hormones), immune (antibodies), motor (actin, myosin).
+
+1.4 NUCLEIC ACIDS
+  Monomer: Nucleotides (phosphate + sugar + nitrogenous base)
+  Polymers: DNA and RNA
+  Bond: Phosphodiester bond
+  Functions: Genetic information storage (DNA), protein synthesis (mRNA, tRNA, rRNA).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ENZYMES
+-----------
+Enzymes are biological catalysts — proteins (or sometimes RNA = ribozymes) that
+speed up reactions by lowering activation energy without being consumed.
+
+Key Concepts:
+- Active site       : Specific region where substrate binds.
+- Induced fit model : Enzyme changes shape slightly upon substrate binding.
+- Km (Michaelis constant): Substrate concentration at half-maximum velocity.
+                           Low Km = high affinity for substrate.
+- Vmax              : Maximum reaction velocity when enzyme is saturated.
+- Turnover number   : Reactions catalysed per enzyme per second.
+
+Enzyme Inhibition:
+- Competitive       : Inhibitor resembles substrate; competes for active site.
+                      Reversible; overcome by increasing substrate.
+                      Effect: increased Km, unchanged Vmax.
+- Non-competitive   : Inhibitor binds allosteric site; changes enzyme shape.
+                      Cannot be overcome by more substrate.
+                      Effect: decreased Vmax, unchanged Km.
+- Uncompetitive     : Binds enzyme-substrate complex only.
+                      Effect: decreased Km AND Vmax.
+- Irreversible      : Covalently modifies active site (e.g., aspirin → COX enzyme;
+                      nerve agents → acetylcholinesterase).
+
+Factors affecting enzyme activity:
+  Temperature: Increases rate up to optimum (~37°C for human enzymes); above
+               optimum → denaturation (loss of 3D structure).
+  pH: Each enzyme has optimal pH; extremes disrupt ionic/H-bonds (pepsin pH 2;
+      trypsin pH 8).
+  Cofactors: Non-protein helpers (metal ions: Mg2+, Zn2+, Fe2+).
+  Coenzymes: Organic cofactors (NAD+, FAD, CoA — derived from vitamins).
+
+3. METABOLISM — CATABOLISM & ANABOLISM
+----------------------------------------
+Metabolism = all chemical reactions in a cell.
+Catabolism = breakdown reactions; release energy (exergonic; produce ATP).
+Anabolism  = synthesis reactions; require energy (endergonic; consume ATP).
+
+ATP (Adenosine Triphosphate): Universal energy currency.
+  ATP → ADP + Pi releases ~30.5 kJ/mol; drives endergonic reactions.
+  Regenerated by: cellular respiration, photosynthesis, substrate-level phosphorylation.
+
+NAD+/NADH and FAD/FADH2: Electron carriers.
+  NAD+ + 2H+ + 2e- → NADH (carries high-energy electrons to ETC).
+  FAD + 2H+ + 2e- → FADH2.
+
+4. CARBOHYDRATE METABOLISM
+----------------------------
+Glycolysis (cytoplasm):
+  Glucose (6C) → 2 Pyruvate (3C)
+  Net yield: 2 ATP, 2 NADH, 2 Pyruvate
+  Key enzymes: Hexokinase, PFK-1 (rate-limiting, allosterically regulated),
+               Pyruvate kinase.
+
+Pyruvate Decarboxylation (mitochondrial matrix):
+  Pyruvate + CoA + NAD+ → Acetyl-CoA + CO2 + NADH
+  Enzyme: Pyruvate dehydrogenase complex (PDC).
+
+Krebs Cycle / TCA Cycle (mitochondrial matrix):
+  Acetyl-CoA (2C) + Oxaloacetate (4C) → Citrate (6C) → ... → Oxaloacetate
+  Per turn: 3 NADH, 1 FADH2, 1 GTP, 2 CO2
+  Two turns per glucose: 6 NADH, 2 FADH2, 2 GTP, 4 CO2
+
+Electron Transport Chain (inner mitochondrial membrane):
+  NADH and FADH2 donate electrons to protein complexes (I→III→IV).
+  Electrons passed to O2 (final electron acceptor) → H2O.
+  H+ pumped across membrane → proton gradient.
+  ATP synthase (Complex V) uses proton flow (chemiosmosis) → ~32–34 ATP.
+
+Gluconeogenesis:
+  Synthesis of glucose from non-carbohydrate precursors (pyruvate, lactate,
+  glycerol, amino acids). Occurs mainly in liver. Activated during fasting.
+  Uses 6 ATP equivalents (energy costly).
+
+Glycogenesis / Glycogenolysis:
+  Glycogenesis: Glucose → Glycogen (storage; insulin stimulated).
+  Glycogenolysis: Glycogen → Glucose-1-phosphate → Glucose (glucagon/epinephrine).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. LIPID & PROTEIN METABOLISM
+-------------------------------
+Beta-Oxidation (fatty acid catabolism):
+  Fatty acids activated to fatty acyl-CoA → transported into mitochondria via
+  carnitine shuttle (rate-limiting step regulated by malonyl-CoA inhibition).
+  Each cycle removes 2C as Acetyl-CoA; yields 1 FADH2 + 1 NADH.
+  Palmitate (16C): 7 cycles → 8 Acetyl-CoA + 7 FADH2 + 7 NADH → ~106 ATP total.
+
+Ketogenesis:
+  During prolonged fasting/starvation, excess Acetyl-CoA in liver converted
+  to ketone bodies (acetoacetate, beta-hydroxybutyrate, acetone).
+  Exported to peripheral tissues (brain, muscle) as alternative fuel.
+  Diabetic ketoacidosis (DKA): Uncontrolled ketogenesis → blood acidosis.
+
+Amino Acid Catabolism:
+  Amino acids → carbon skeleton + NH3.
+  NH3 is toxic; converted to urea via the UREA CYCLE (liver):
+    NH3 + CO2 → Carbamoyl phosphate → Citrulline → Argininosuccinate
+    → Arginine → Urea (excreted by kidneys) + Ornithine (cycle continues).
+  Carbon skeletons: glucogenic (→ glucose) or ketogenic (→ ketone bodies).
+
+6. METABOLIC REGULATION & INTEGRATION
+---------------------------------------
+Allosteric Regulation:
+  Key regulatory enzymes: PFK-1 (glycolysis), pyruvate kinase, isocitrate
+  dehydrogenase (TCA), acetyl-CoA carboxylase (fatty acid synthesis).
+  Energy charge = (ATP + 0.5ADP) / (ATP + ADP + AMP)
+  High energy charge → inhibit catabolism; stimulate anabolism.
+
+Hormonal Integration:
+  Insulin (fed state):
+    Stimulates: glucose uptake (GLUT4), glycolysis, glycogenesis, lipogenesis.
+    Inhibits: gluconeogenesis, glycogenolysis, lipolysis, beta-oxidation.
+  Glucagon/Epinephrine (fasted/stress):
+    Stimulates: glycogenolysis, gluconeogenesis, lipolysis, ketogenesis.
+    Inhibits: glycolysis, glycogenesis, lipogenesis.
+
+mTOR Signalling:
+  mTOR complex 1 (mTORC1) integrates nutrient, energy, and growth signals.
+  Active when amino acids (sensed by GATOR/Ragulator complex on lysosome),
+  insulin (PI3K-Akt pathway), and energy (AMPK inactive) are abundant.
+  Activates: protein synthesis (S6K1 → ribosome biogenesis; 4E-BP1 release → cap-
+  dependent translation), lipid synthesis (SREBP activation), nucleotide synthesis.
+  Inhibited by: rapamycin, metformin (via AMPK), caloric restriction.
+
+AMPK (AMP-activated protein kinase):
+  Energy sensor; activated when AMP:ATP ratio rises (low energy).
+  Stimulates: beta-oxidation, glycolysis, autophagy, mitochondrial biogenesis.
+  Inhibits: fatty acid synthesis, gluconeogenesis, mTORC1.
+  Target of metformin (type 2 diabetes drug).
+
+Warburg Effect (aerobic glycolysis):
+  Cancer cells preferentially use glycolysis even with O2 present.
+  Generates lactate (not entering TCA) despite lower ATP yield.
+  Advantage: rapid ATP production; generates biosynthetic precursors;
+  avoids ROS from mitochondria; supports rapid proliferation.
+  Basis for FDG-PET imaging of tumours (high glucose uptake).
+
+[CLINICAL LINK] Inborn errors of metabolism (IEMs) arise from enzyme deficiencies:
+  PKU (phenylketonuria): Phenylalanine hydroxylase deficiency → Phe accumulates
+  → neurological damage. Treated with low-Phe diet + BH4 supplementation.
+  Gaucher disease: Glucocerebrosidase deficiency → lipid accumulation in macrophages.
+  MCAD deficiency: Medium-chain acyl-CoA dehydrogenase → impaired beta-oxidation
+  → hypoglycaemia during fasting; most common fatty acid oxidation disorder.
+
+================================================================================

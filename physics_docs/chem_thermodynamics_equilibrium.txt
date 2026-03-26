@@ -1,0 +1,196 @@
+THERMODYNAMICS AND CHEMICAL EQUILIBRIUM - COMPREHENSIVE GUIDE
+==============================================================
+
+PART 1: THERMODYNAMICS
+
+SYSTEM AND SURROUNDINGS:
+System: part of universe under study.
+Surroundings: rest of universe.
+Open system: exchanges both matter and energy with surroundings.
+Closed system: exchanges only energy.
+Isolated system: no exchange of matter or energy.
+
+STATE FUNCTIONS vs PATH FUNCTIONS:
+State functions: depend ONLY on current state, not on how that state was reached.
+Examples: T, P, V, U (internal energy), H (enthalpy), S (entropy), G (Gibbs energy).
+Path functions: depend on the path taken.
+Examples: q (heat), w (work). q and w individually depend on path, but q+w = ΔU (state function).
+
+WORK IN THERMODYNAMICS:
+w = work done ON the system = −P_ext × ΔV (expansion work).
+For reversible expansion: w_rev = −∫P dV = −nRT ln(V₂/V₁) = nRT ln(P₂/P₁).
+For irreversible (constant external pressure): w_irrev = −P_ext ΔV.
+|w_rev| > |w_irrev| for expansion. Reversible work is maximum work obtainable.
+Electrical work: w_elec = −nFE.
+
+FIRST LAW:
+ΔU = q + w (where w = work done ON system, q = heat absorbed by system).
+For isolated system: ΔU = 0.
+For a cycle: ΔU = 0, so q = −w.
+At constant volume: ΔU = qᵥ.
+At constant pressure: ΔH = qₚ.
+
+ENTHALPY AND ITS APPLICATIONS:
+H = U + PV → ΔH = ΔU + Δ(PV) = ΔU + PΔV (constant P) = ΔU + ΔnᵧRT (ideal gas).
+ΔH = qₚ (heat at constant pressure — most lab reactions occur at constant P).
+
+Standard enthalpy of formation (ΔHf°): enthalpy change when 1 mole of substance formed from elements in their standard states at 1 bar, 298 K.
+ΔHf° of all elements in standard state = 0 by definition.
+
+Hess's Law: ΔH is independent of pathway.
+ΔH°rxn = ΣΔHf°(products) − ΣΔHf°(reactants).
+
+Enthalpy of combustion: heat released when 1 mole burns completely in O₂.
+Enthalpy of neutralization: −57.1 kJ/mol (for strong acid + strong base → water).
+Enthalpy of atomization: energy to convert 1 mole of substance to gaseous atoms.
+Bond dissociation enthalpy: energy to break 1 mole of specific bond in gaseous state.
+
+KIRCHHOFF'S LAW (variation of ΔH with temperature):
+ΔHT₂ = ΔHT₁ + ΔCp(T₂ − T₁) [ΔCp = Σcp(products) − Σcp(reactants)]
+
+ENTROPY:
+dS = dqrev/T (thermodynamic definition).
+S = kB ln Ω (Boltzmann definition, microscopic).
+
+Standard entropy (S°): absolute entropy at 298 K, 1 bar.
+Unlike ΔHf°, S° of elements is NOT zero.
+S° increases: solid < liquid << gas.
+ΔS° = ΣS°(products) − ΣS°(reactants).
+
+Processes that increase entropy:
+- Solid → liquid → gas (phase transitions).
+- Dissolving.
+- Mixing.
+- Increase in temperature.
+- Reactions that increase moles of gas (Δngas > 0).
+
+GIBBS FREE ENERGY (MOST IMPORTANT IN CHEMISTRY):
+G = H − TS → ΔG = ΔH − TΔS (at constant T and P).
+ΔG < 0: spontaneous (product-favored).
+ΔG = 0: equilibrium.
+ΔG > 0: non-spontaneous (reactant-favored).
+
+ΔG = ΔG° + RT ln Q [Q = reaction quotient].
+At equilibrium Q = K: ΔG = 0 → ΔG° = −RT ln K.
+
+ΔG° = −RT ln K = −nFE°.
+K = exp(−ΔG°/RT).
+For large K: ΔG° very negative → reaction strongly favored.
+For small K: ΔG° very positive → reaction strongly disfavored.
+
+SPONTANEITY ANALYSIS (Temperature dependence):
+ΔG = ΔH − TΔS:
+ΔH<0, ΔS>0: ΔG always negative → always spontaneous.
+ΔH<0, ΔS<0: ΔG negative at low T → spontaneous only at low T.
+ΔH>0, ΔS>0: ΔG negative at high T → spontaneous only at high T.
+ΔH>0, ΔS<0: ΔG always positive → never spontaneous.
+Crossover temperature: T = ΔH/ΔS (where ΔG = 0, reaction at equilibrium).
+
+HEAT CAPACITY:
+Cp = (∂H/∂T)p, Cv = (∂U/∂T)v.
+Cp − Cv = R (for ideal gas).
+For atoms: Cv = (3/2)R. For linear molecules: Cv = (5/2)R.
+Cp(water, liquid) = 75.3 J/mol·K = 4.184 J/g·K.
+
+---
+
+PART 2: CHEMICAL EQUILIBRIUM (COMPREHENSIVE)
+
+LAW OF MASS ACTION:
+For aA + bB ⇌ cC + dD:
+Kc = [C]c[D]d / [A]a[B]b (concentration equilibrium constant, dimensionless if standard state).
+Kp = (PC)c(PD)d / (PA)a(PB)b (pressure equilibrium constant, using partial pressures in bar).
+Kp = Kc(RT)^Δn where Δn = (c+d) − (a+b) = change in moles of gas.
+
+PROPERTIES OF K:
+K >> 1: equilibrium favors products (reaction goes nearly to completion).
+K << 1: equilibrium favors reactants (very little product).
+K = 1: roughly equal amounts at equilibrium.
+K is temperature-dependent (given by van't Hoff equation).
+K is independent of concentration, pressure, volume, catalyst.
+If reaction reversed: K' = 1/K.
+If multiplied by n: K' = Kⁿ.
+If reactions added: K_total = K₁ × K₂.
+
+REACTION QUOTIENT Q:
+Q = same expression as K, but with non-equilibrium concentrations.
+Q < K: reaction proceeds forward to reach equilibrium.
+Q > K: reaction proceeds backward.
+Q = K: at equilibrium.
+
+LE CHATELIER'S PRINCIPLE (DETAILED):
+When a system at equilibrium is subjected to a stress, it shifts to partially relieve that stress.
+
+Effect of adding reactant: shifts right (increases products). New equilibrium has less reactant than immediately after addition, but MORE than original equilibrium. K unchanged.
+Effect of adding product: shifts left.
+Effect of removing product: shifts right (used in industry to drive reactions to completion).
+
+Effect of pressure/volume:
+Increase pressure (decrease volume): shifts to side with fewer moles of gas.
+Decrease pressure: shifts to side with more moles of gas.
+Adding inert gas at constant volume: no effect on equilibrium.
+Adding inert gas at constant pressure: increases volume → shifts to side with more gas moles.
+
+Effect of temperature:
+Exothermic reaction (ΔH < 0): increasing T decreases K (shifts left).
+Endothermic reaction (ΔH > 0): increasing T increases K (shifts right).
+Think of heat as a product (exothermic) or reactant (endothermic).
+
+Van't Hoff equation: d(ln K)/dT = ΔH°/RT²
+Integrated form: ln(K₂/K₁) = −(ΔH°/R)(1/T₂ − 1/T₁).
+
+Effect of catalyst: NO effect on K or equilibrium position. Only speeds up reaching equilibrium.
+
+ACID-BASE EQUILIBRIA:
+
+Arrhenius acids/bases: H⁺ and OH⁻ in water.
+Brønsted-Lowry: proton donor (acid) and proton acceptor (base).
+Lewis: electron pair acceptor (acid) and donor (base).
+
+Conjugate acid-base pairs: differ by one H⁺.
+Strong acid + strong base → no equilibrium (goes to completion).
+Weak acid/base: partial dissociation.
+
+Ka × Kb = Kw (for conjugate acid-base pair at 25°C).
+pKa + pKb = pKw = 14.
+Strong acid: Ka → ∞, pKa << 0.
+Weak acid: Ka small, pKa > 0.
+Examples: HF (Ka = 6.8×10⁻⁴, pKa = 3.17), CH₃COOH (Ka = 1.8×10⁻⁵, pKa = 4.74).
+NH₃ (Kb = 1.8×10⁻⁵, pKb = 4.74), NH₄⁺ (Ka = 5.6×10⁻¹⁰, pKa = 9.26).
+
+pH calculations:
+Strong acid (concentration C): pH = −log C (for C >> Kw^½).
+Weak acid (concentration C): [H⁺] = √(Ka·C), pH = ½(pKa − log C).
+Polyprotic acids: first dissociation dominates.
+Salt of strong acid + strong base (NaCl): pH = 7.
+Salt of weak acid + strong base (CH₃COONa): basic. pH = 7 + ½pKa + ½log C.
+Salt of strong acid + weak base (NH₄Cl): acidic. pH = 7 − ½pKb − ½log C.
+
+BUFFER SOLUTIONS:
+Resist pH changes on addition of acid or base.
+Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]).
+Buffer range: pKa ± 1 (approximately).
+Buffer capacity: maximum when [A⁻] = [HA] (pH = pKa).
+Adding acid: [HA] increases, [A⁻] decreases → small pH change.
+Adding base: [A⁻] increases, [HA] decreases → small pH change.
+
+Blood buffer system: H₂CO₃/HCO₃⁻ (pKa = 6.1) → blood pH ≈ 7.4.
+Phosphate buffer: H₂PO₄⁻/HPO₄²⁻ (pKa = 7.2) → important in biology.
+
+SOLUBILITY EQUILIBRIA:
+Ksp = solubility product = ion product at saturation.
+For AgCl ⇌ Ag⁺ + Cl⁻: Ksp = [Ag⁺][Cl⁻] = 1.8×10⁻¹⁰.
+Solubility s: s = [Ag⁺] = [Cl⁻] = √Ksp = √(1.8×10⁻¹⁰) = 1.34×10⁻⁵ mol/L.
+For Ag₂CrO₄ ⇌ 2Ag⁺ + CrO₄²⁻: Ksp = (2s)² × s = 4s³.
+
+Common ion effect: adding common ion decreases solubility.
+AgCl in 0.1 M NaCl: [Ag⁺] = Ksp/[Cl⁻] = 1.8×10⁻¹⁰/0.1 = 1.8×10⁻⁹ mol/L (much less than 1.34×10⁻⁵).
+
+Precipitation: occurs when Q > Ksp.
+Selective precipitation: used to separate ions with different Ksp values.
+
+COMPLEX ION EQUILIBRIA:
+Formation constant Kf = stability constant.
+[Cu(NH₃)₄]²⁺: Kf = [Cu(NH₃)₄²⁺]/([Cu²⁺][NH₃]⁴) = 1.2×10¹² (very stable).
+Complex formation increases solubility: AgCl dissolves in NH₃ solution (forms [Ag(NH₃)₂]⁺).
+EDTA: hexadentate ligand, very high Kf with many metal ions. Used in chelation therapy.

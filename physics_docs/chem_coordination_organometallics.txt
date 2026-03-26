@@ -1,0 +1,208 @@
+COORDINATION CHEMISTRY AND ORGANOMETALLICS - COMPREHENSIVE GUIDE
+=================================================================
+
+PART 1: COORDINATION COMPOUNDS
+
+TERMINOLOGY:
+Central metal atom/ion: transition metal, accepts electron pairs.
+Ligand: electron pair donor (Lewis base) bonded to central metal.
+Coordination number (CN): number of donor atoms bonded to central metal.
+Coordination sphere: metal + ligands in square brackets.
+Counter ions: outside square brackets, not bonded to metal.
+Example: [Co(NH₃)₆]³⁺Cl₃⁻: Co³⁺ with 6 NH₃ ligands; Cl⁻ are counter ions.
+
+TYPES OF LIGANDS:
+
+By denticity (number of donor atoms):
+Monodentate: 1 donor atom. NH₃, H₂O, Cl⁻, CN⁻, CO.
+Bidentate: 2 donor atoms. Ethylenediamine (en), oxalate (ox), acetylacetonate (acac).
+Tridentate: 3 donor atoms. Diethylenetriamine (dien).
+Tetradentate: 4 donor atoms. Triethylenetetramine (trien).
+Pentadentate: 5. EDTA²⁻.
+Hexadentate: 6. EDTA⁴⁻ (can occupy all 6 positions of octahedral complex).
+Ambidentate: can bond through either of two different atoms. SCN⁻ (through S or N), NO₂⁻ (through N or O).
+
+IUPAC NOMENCLATURE:
+Rules:
+1. Cation before anion.
+2. In complex ion: ligands named before metal.
+3. Anionic ligands end in -o (Cl⁻ = chlorido, CN⁻ = cyanido, OH⁻ = hydroxido, O²⁻ = oxido, SO₄²⁻ = sulfato).
+4. Neutral ligands use common name (NH₃ = ammine, H₂O = aqua, CO = carbonyl, NO = nitrosyl).
+5. Alphabetical order of ligands.
+6. Multiplying prefixes: di, tri, tetra, penta, hexa (for simple). bis, tris, tetrakis (for complex names).
+7. Metal name unchanged for cationic/neutral complexes; Latin root with -ate suffix for anionic.
+8. Oxidation state of metal in Roman numerals.
+
+Examples:
+[Co(NH₃)₆]³⁺: hexaamminecobalt(III) ion.
+[PtCl₄]²⁻: tetrachloridoplatinate(II) ion.
+[Fe(CN)₆]⁴⁻: hexacyanidoferrate(II) ion.
+[Cr(en)₂Cl₂]⁺: bis(ethylenediamine)dichloridochromium(III) ion.
+K₂[PtCl₆]: potassium hexachloridoplatinate(IV).
+
+WERNER'S THEORY:
+Primary valency (ionizable): shown by oxidation state. Satisfied by anions/neutral molecules.
+Secondary valency (coordinate): coordination number. Always satisfied.
+Spatial arrangement of ligands determines geometry.
+
+EFFECTIVE ATOMIC NUMBER (EAN) RULE (18-electron rule):
+For stable complexes: total electron count = 18 (like noble gas).
+Electrons from metal + electrons from ligands = 18.
+Common for organometallic complexes (CO, cyclopentadienyl).
+Not always followed in classic coordination chemistry.
+
+CHELATE EFFECT:
+Polydentate ligands form more stable complexes than monodentate.
+Thermodynamic origin: ΔS is more positive for chelation (more free particles after displacement).
+Example: [Ni(en)₃]²⁺ is ~10⁸ times more stable than [Ni(NH₃)₆]²⁺.
+Chelate ring size: 5-membered chelate rings most stable, then 6-membered.
+
+CRYSTAL FIELD THEORY (CFT):
+
+Octahedral field (Oh):
+Five d orbitals split into:
+- t₂g (lower energy, 3 orbitals: dxy, dyz, dxz)
+- eg (higher energy, 2 orbitals: dx²-y², dz²)
+Crystal field splitting energy: Δo (or 10Dq).
+t₂g stabilization: −0.4Δo per electron.
+eg destabilization: +0.6Δo per electron.
+Crystal Field Stabilization Energy (CFSE) = −0.4Δo×n(t₂g) + 0.6Δo×n(eg).
+
+Low spin vs High spin (for d⁴ to d⁷):
+Low spin: Δo > pairing energy (P). Electrons pair in t₂g first.
+High spin: Δo < P. Fill all orbitals singly first (Hund's rule).
+Strong field ligands → large Δo → low spin.
+Weak field ligands → small Δo → high spin.
+
+SPECTROCHEMICAL SERIES (increasing Δo):
+I⁻ < Br⁻ < S²⁻ < SCN⁻ < Cl⁻ < NO₃⁻ < F⁻ < OH⁻ < ox < H₂O < NCS⁻ < py < NH₃ < en < bipy < phen < NO₂⁻ < PPh₃ < CN⁻ < CO
+
+Strong field: CN⁻, CO, NO₂⁻. Cause low spin.
+Weak field: I⁻, Br⁻, Cl⁻. Cause high spin.
+
+Tetrahedral field (Td):
+d orbitals split into e (lower) and t₂ (higher).
+Δt ≈ (4/9)Δo (much smaller than octahedral).
+Almost always high spin.
+
+Square planar field:
+d orbitals split into 4 levels.
+dx²-y² highest. dz² stabilized (no ligands on z axis).
+CFSE is very large → only d⁸ metals (Ni²⁺, Pd²⁺, Pt²⁺, Au³⁺) form square planar.
+
+COLORS OF COORDINATION COMPOUNDS:
+Color due to d-d transitions (absorb certain wavelengths, transmit complementary color).
+CFSE determines absorption wavelength.
+Color absorbed vs color observed (complementary):
+Red absorbed → green observed.
+Orange → blue. Yellow → violet. Green → red. Blue → orange.
+[Ti(H₂O)₆]³⁺: absorbs ~500 nm (green) → appears violet/purple.
+[Cu(H₂O)₄]²⁺: absorbs ~800 nm (red) → blue.
+Charge transfer transitions: also cause color (often more intense). MnO₄⁻ (purple).
+d¹⁰ and d⁰ complexes: colorless (no d-d transitions possible). ZnSO₄, TiO₂.
+
+MAGNETIC PROPERTIES:
+μ = √(n(n+2)) BM (spin-only formula, n = number of unpaired electrons).
+Diamagnetic (n=0): repelled by magnetic field. All electrons paired.
+Paramagnetic (n>0): attracted by magnetic field.
+Ferromagnetic (Fe, Co, Ni): spontaneous alignment of unpaired electrons in domains.
+
+Determining unpaired electrons:
+Write electron configuration of metal ion.
+Fill d orbitals according to high spin or low spin.
+Count unpaired electrons.
+
+Example: Fe³⁺ (d⁵):
+High spin (weak field, OH⁻): t₂g³eg²  → 5 unpaired → μ = √35 = 5.92 BM.
+Low spin (strong field, CN⁻): t₂g⁵eg⁰ → 1 unpaired → μ = √3 = 1.73 BM.
+
+ISOMERISM IN COORDINATION COMPOUNDS:
+
+Structural isomers (differ in bonding connectivity):
+1. Ionization isomers: [Co(NH₃)₅Br]SO₄ vs [Co(NH₃)₅SO₄]Br.
+   Different ions in solution.
+2. Linkage isomers: [Co(NH₃)₅ONO]²⁺ vs [Co(NH₃)₅NO₂]²⁺.
+   Ambidentate ligand bonded through different atoms.
+3. Coordination isomers: [Co(NH₃)₆][Cr(CN)₆] vs [Cr(NH₃)₆][Co(CN)₆].
+   Exchange of ligands between complexes.
+4. Solvate (hydrate) isomers: [Cr(H₂O)₆]Cl₃ vs [Cr(H₂O)₅Cl]Cl₂·H₂O.
+   Water inside vs outside coordination sphere.
+
+Stereoisomers (same connectivity, different spatial arrangement):
+1. Geometric (cis-trans):
+   Square planar MA₂B₂: cis (same groups adjacent) vs trans (opposite).
+   Octahedral MA₄B₂: cis (B cis to each other) vs trans (B opposite).
+   Octahedral MA₃B₃: facial (fac, B form face of octahedron) vs meridional (mer, B in plane).
+2. Optical isomers: non-superimposable mirror images.
+   [Co(en)₃]³⁺: Δ (right-handed helix) and Λ (left-handed helix).
+   Rotate plane of polarized light equally but in opposite directions.
+   Resolved by chiral resolving agents.
+
+STABILITY OF COMPLEXES:
+Stability constant (formation constant) Kf = [MLn]/([M][L]ⁿ).
+Large Kf → stable complex.
+Factors increasing stability: high charge on metal, small metal size, good donor ability of ligand, chelate effect, matching of metal-ligand size (HSAB principle).
+
+HSAB Principle (Hard-Soft Acid-Base):
+Hard acids (small, high charge, low polarizability): Mg²⁺, Al³⁺, Ti⁴⁺, Cr³⁺.
+Soft acids (large, low charge, high polarizability): Ag⁺, Au⁺, Pt²⁺, Hg²⁺.
+Hard bases (small, high electronegativity, low polarizability): F⁻, OH⁻, H₂O, NH₃.
+Soft bases (large, polarizable): I⁻, S²⁻, CN⁻, CO, PR₃.
+Rule: Hard acids prefer hard bases; soft acids prefer soft bases.
+Biological implications: Ca²⁺ (hard) prefers O donors (carboxylates, phosphates). Pt²⁺ (soft) prefers N and S donors (DNA, thiol groups — basis of cisplatin anticancer activity).
+
+IMPORTANT COMPLEXES AND APPLICATIONS:
+[Fe(CN)₆]⁴⁻ (ferrocyanide): Prussian blue pigment with Fe³⁺. Antidote for heavy metal poisoning.
+[Fe(CN)₆]³⁻ (ferricyanide): used in photography, blueprints.
+[Ag(S₂O₃)₂]³⁻: fixing agent in photography.
+[Ag(CN)₂]⁻: silver plating, extraction of silver from ores.
+[Au(CN)₂]⁻: extraction of gold (cyanide process).
+[Ni(CO)₄]: Mond process for purifying Ni. Volatile liquid.
+Cisplatin [Pt(NH₃)₂Cl₂] (cis): anticancer drug. Trans isomer is inactive!
+[Co(EDTA)]⁻: used in analytical chemistry, sequestering agent.
+Hemoglobin: Fe²⁺ in porphyrin ring binds O₂.
+Chlorophyll: Mg²⁺ in porphyrin ring → photosynthesis.
+Vitamin B₁₂: Co³⁺ complex. Only organometallic compound in biology.
+
+---
+
+PART 2: ORGANOMETALLIC CHEMISTRY
+
+ORGANOMETALLIC COMPOUNDS:
+Compounds with direct metal-carbon bonds.
+Contrast with coordination compounds: C bonded directly to metal.
+
+TYPES:
+Sigma (σ) bonded: direct metal-C single bond. Grignard (RMgX), organolithium (RLi).
+Pi (π) bonded: metal interacts with π system of organic ligand.
+Carbene: metal-carbon double bond.
+Carbyne: metal-carbon triple bond.
+
+IMPORTANT π LIGANDS:
+Alkenes: η²-alkene complexes (Zeise's salt: K[PtCl₃(C₂H₄)]). η = hapticity (how many C atoms bonded to metal).
+Allyl: η³-C₃H₅ (3 C atoms bonded).
+Cyclopentadienyl (Cp = C₅H₅⁻): η⁵-Cp (5 C atoms bonded). Most important.
+Benzene: η⁶-C₆H₆.
+Carbon monoxide: η¹-CO (bonded through C). Strong field ligand.
+
+METALLOCENES:
+Sandwich compounds: metal between two cyclopentadienyl rings.
+Ferrocene [Fe(η⁵-C₅H₅)₂]: first metallocene (1951). Stable, aromatic.
+Fe²⁺ with 2 Cp⁻ → 18 electrons. Orange solid.
+Nickelocene [Ni(Cp)₂]: 20 electrons (violates 18-electron rule). Less stable.
+Cobaltocene [Co(Cp)₂]: 19 electrons. Paramagnetic.
+
+CARBONYL COMPLEXES:
+CO is a π-acceptor ligand (σ donor + π acceptor = synergistic bonding).
+Ni(CO)₄: tetrahedral, 18 electrons, d¹⁰ Ni⁰.
+Fe(CO)₅: trigonal bipyramidal, 18 electrons, d⁸ Fe⁰.
+Cr(CO)₆: octahedral, 18 electrons.
+IR: free CO at 2143 cm⁻¹. Terminal CO in complexes: ~1850-2125 cm⁻¹. Bridging CO: ~1700-1860 cm⁻¹.
+Lower CO stretching frequency → more back-bonding (more electron-rich metal).
+
+CATALYSIS BY ORGANOMETALLICS:
+Wacker process: CH₂=CH₂ + O₂ → CH₃CHO. Catalyst: PdCl₂/CuCl₂.
+Hydroformylation (Oxo process): RC H=CH₂ + CO + H₂ → RCH₂CH₂CHO. Catalyst: [HCo(CO)₄].
+Ziegler-Natta polymerization: CH₂=CH₂ → polyethylene. Catalyst: TiCl₄/Al(C₂H₅)₃. Stereoregular polymers.
+Monsanto process (acetic acid): CH₃OH + CO → CH₃COOH. Catalyst: [Rh(CO)₂I₂]⁻.
+Wilkinson's catalyst: [RhCl(PPh₃)₃]. Homogeneous hydrogenation of alkenes.

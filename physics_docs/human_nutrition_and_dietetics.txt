@@ -1,0 +1,208 @@
+================================================================================
+                   HUMAN NUTRITION & DIETETICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MACRONUTRIENTS
+------------------
+Macronutrients are required in large amounts and provide energy (calories).
+
+Carbohydrates:
+  4 kcal/gram. Primary fuel source. Recommended: 45–65% of total calories.
+  Simple: Monosaccharides (glucose, fructose) and disaccharides (sucrose, lactose, maltose).
+  Complex: Oligosaccharides and polysaccharides (starch, glycogen, dietary fibre).
+  Glycaemic Index (GI): Rate at which food raises blood glucose. Low GI (e.g., lentils)
+  vs High GI (white bread, glucose). Glycaemic Load = GI × carb content/100.
+  Dietary fibre: Non-digestible polysaccharides. Soluble (oats, legumes → lower LDL);
+  insoluble (wheat bran → promotes motility). Both types: Fermented by gut microbiome
+  → SCFAs (short-chain fatty acids: butyrate, propionate, acetate).
+
+Proteins:
+  4 kcal/gram. Building blocks = 20 amino acids (9 essential; 11 non-essential).
+  Essential amino acids (must come from diet): Leucine, Isoleucine, Valine (BCAAs),
+  Lysine, Methionine, Phenylalanine, Threonine, Tryptophan, Histidine.
+  Complete proteins: Contain all EAAs in adequate amounts (meat, fish, eggs, dairy, soy).
+  Incomplete proteins: Missing one or more EAAs (most plant sources; complement by combining).
+  Recommended intake: 0.8 g/kg/day (sedentary adults); 1.2–2.0 g/kg/day (athletes).
+  Nitrogen balance: Positive (growth, pregnancy, recovery); negative (starvation, illness).
+
+Fats (Lipids):
+  9 kcal/gram. Recommended: 20–35% total calories.
+  Saturated fatty acids (SFAs): No double bonds; solid at room temp; raise LDL.
+  Sources: Butter, coconut oil, red meat.
+  Monounsaturated (MUFAs): One double bond; olive oil, avocado; neutral-beneficial.
+  Polyunsaturated (PUFAs): Multiple double bonds.
+    Omega-3 (ALA, EPA, DHA): Anti-inflammatory; cardioprotective; brain development.
+    Omega-6 (LA, AA): Pro-inflammatory in excess; balance with omega-3 important.
+  Trans fats: Artificially hydrogenated; raise LDL + lower HDL → ban in many countries.
+  Cholesterol: Essential for membranes, hormones; dietary cholesterol has modest effect
+  on blood cholesterol for most people.
+
+1.1 MICRONUTRIENTS
+-------------------
+Vitamins and minerals needed in small amounts but essential for health.
+
+Fat-Soluble Vitamins (A, D, E, K) — stored in body fat; toxicity possible with excess.
+  Vitamin A (retinol/carotenoids): Vision (rhodopsin), immunity, cell differentiation.
+                                   Deficiency → night blindness, xerophthalmia.
+  Vitamin D (cholecalciferol):     Calcium absorption, bone health, immunity, cancer prevention.
+                                   Skin synthesis from UVB. Deficiency → rickets (children),
+                                   osteomalacia (adults). Source: fatty fish, fortified foods.
+  Vitamin E (tocopherol):          Antioxidant; protects PUFAs from oxidation; immune function.
+  Vitamin K (K1 phylloquinone/K2): Blood coagulation (factors II, VII, IX, X); bone health.
+
+Water-Soluble Vitamins (B complex + C) — not stored; regular intake needed.
+  B1 (Thiamine)   : Pyruvate dehydrogenase, alpha-KG dehydrogenase. Deficiency → Beriberi, Wernicke's.
+  B2 (Riboflavin) : FAD/FMN precursor; ETC.
+  B3 (Niacin)     : NAD+/NADP+ precursor. Deficiency → Pellagra (4 Ds: dermatitis, diarrhoea, dementia, death).
+  B5 (Pantothenic): CoA precursor. Rare deficiency.
+  B6 (Pyridoxine) : Transaminase cofactor; haem synthesis; neurotransmitter synthesis.
+  B7 (Biotin)     : Carboxylase reactions (pyruvate carboxylase, acetyl-CoA carboxylase).
+  B9 (Folate)     : 1-carbon metabolism; nucleotide synthesis; neural tube development.
+                    Deficiency → megaloblastic anaemia; neural tube defects.
+  B12 (Cobalamin) : Myelin synthesis; methionine synthesis; works with folate.
+                    Deficiency → megaloblastic anaemia + subacute combined degeneration of cord.
+                    Found only in animal products → vegans at risk.
+  Vitamin C (Ascorbic acid): Collagen synthesis (hydroxylation of proline/lysine);
+                    antioxidant; iron absorption. Deficiency → Scurvy.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ENERGY METABOLISM & BODY WEIGHT REGULATION
+-----------------------------------------------
+Energy Balance:
+  Energy in = Dietary intake (kcal). Energy out = BMR + TEF + physical activity.
+  BMR (Basal Metabolic Rate): ~60–70% of TEE. Estimated: Mifflin-St Jeor equation.
+    Males:   BMR = 10×weight(kg) + 6.25×height(cm) - 5×age + 5
+    Females: BMR = 10×weight(kg) + 6.25×height(cm) - 5×age - 161
+  TEF (Thermic Effect of Food): ~10% TEE. Protein: 20–30%; Carb: 5–10%; Fat: 0–3%.
+  Physical Activity: 15–30% TEE (sedentary to active).
+
+Body Composition:
+  BMI = weight(kg) / height(m)².  Underweight <18.5; Normal 18.5–24.9; Overweight 25–29.9; Obese ≥30.
+  Limitations of BMI: Doesn't distinguish fat from muscle; doesn't reflect distribution.
+  Better metrics: Waist circumference (>88cm women, >102cm men = high risk);
+  waist:hip ratio; DEXA scan (gold standard for body composition).
+
+Obesity Pathophysiology:
+  Set-point theory: Body defends a set body weight; after weight loss, hunger hormones
+  (ghrelin ↑, peptide YY ↓, GLP-1 ↓, leptin ↓) drive weight regain.
+  Adipose tissue dysfunction: Visceral fat → macrophage infiltration → TNF-alpha,
+  IL-6 → systemic inflammation → insulin resistance.
+  Gut microbiome: Differences in Firmicutes:Bacteroidetes ratio in obese vs lean;
+  germ-free mice colonised with obese microbiota gain more fat.
+
+3. NUTRITIONAL BIOCHEMISTRY
+-----------------------------
+Iron Metabolism:
+  Dietary iron: Haem (Fe2+, meat) absorbed 15–35%; Non-haem (Fe3+, plants) 2–20%.
+  Vitamin C reduces Fe3+→Fe2+ → enhances non-haem absorption.
+  Absorption: DMT1 transporter in duodenum → ferritin (storage) or ferroportin (export).
+  Hepcidin: Liver peptide; key regulator of iron homeostasis. Inflammation → hepcidin ↑
+  → ferroportin degradation → iron sequestration (anaemia of chronic disease).
+  Deficiency: IDA (iron deficiency anaemia) — most common nutritional deficiency globally.
+  Excess: Haemochromatosis (HFE gene mutation) → organ damage (liver, heart, pancreas).
+
+Calcium & Bone Health:
+  Calcium: 99% in bone/teeth. Blood Ca2+ tightly regulated. Normal: 2.2–2.6 mmol/L.
+  PTH (raises Ca2+): Bone resorption ↑, kidney reabsorption ↑, 1-alpha hydroxylase ↑.
+  Calcitriol (active Vit D): Intestinal Ca2+ absorption ↑.
+  Calcitonin (lowers Ca2+): Osteoclast inhibition (minor role in humans).
+  Osteoporosis: Low bone mineral density (T-score ≤ -2.5 on DEXA) → fragility fractures.
+  Risk factors: Age, female sex, menopause (oestrogen loss → osteoclast activity ↑),
+  smoking, low Ca2+/Vit D, alcohol, corticosteroids, low BMI.
+  Treatment: Ca2+/Vit D supplements; bisphosphonates (alendronate — osteoclast apoptosis);
+  denosumab (anti-RANKL); romosozumab (anti-sclerostin → anabolic).
+
+4. SPECIAL DIETS & NUTRITIONAL CONSIDERATIONS
+-----------------------------------------------
+Mediterranean Diet:
+  High: Olive oil, vegetables, legumes, fish, nuts, wholegrains, red wine (moderate).
+  Low: Red meat, processed foods, saturated fats.
+  Evidence: ~30% reduction in CVD (PREDIMED trial); reduced T2DM; anti-inflammatory;
+  associated with reduced Alzheimer's risk.
+
+Ketogenic Diet:
+  Very low carbohydrate (<50g/day), high fat, moderate protein.
+  Mechanism: Glycogen depleted → fatty acid oxidation → ketone bodies (BHB, AcAc).
+  Benefits: Seizure control (drug-resistant epilepsy — established since 1920s); weight loss.
+  Risks: "Keto flu" initially; dyslipidaemia (LDL may ↑); kidney stones; unclear long-term effects.
+  Brain uses ketone bodies efficiently when glucose scarce.
+
+Plant-Based Diets:
+  Vegetarian: No meat/fish. Lacto-ovo includes dairy and eggs.
+  Vegan: No animal products.
+  Health benefits: Lower BMI, CVD, T2DM risk, colorectal cancer.
+  Nutritional concerns: B12 (supplement essential for vegans), omega-3 (algal DHA/EPA),
+  iron (non-haem only), zinc, iodine, calcium, vitamin D.
+
+Intermittent Fasting (IF):
+  16:8 (eat within 8h window), 5:2 (normal 5 days; 500kcal restriction 2 days), ADF.
+  Mechanisms: Insulin reduction → lipolysis; ketone production; autophagy activation;
+  mTOR inhibition; AMPK activation; circadian alignment.
+  Evidence: Weight loss; improved insulin sensitivity; reduced inflammation; animal data
+  shows healthspan extension; human trials ongoing for CV/cancer prevention.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. NUTRIGENOMICS & PERSONALISED NUTRITION
+-------------------------------------------
+Nutrigenomics: How nutrients interact with genome to affect gene expression.
+Nutrigenetics: How genetic variation affects nutrient metabolism.
+
+Key Gene-Nutrient Interactions:
+  MTHFR C677T: Impaired MTHFR enzyme → reduced folate metabolism → elevated homocysteine.
+    ~10% of population homozygous. Increased folate intake beneficial; B12/B6 supplementation.
+  APOE genotype: APOE4 allele → LDL raised more by saturated fat intake; higher Alzheimer's risk.
+  FADS1/FADS2: Fatty acid desaturase variants → affect conversion of ALA → EPA/DHA.
+  LCT gene: Lactase persistence polymorphism (T13910C) → maintain lactase into adulthood.
+    Europeans ~70% lactase persistent; Asians/Africans predominantly lactose intolerant.
+  FTO gene: Variants associated with ~2 kg increase in BMI; effect modifiable by exercise.
+  Taste receptor genes: TAS2R38 (bitter taste) influences vegetable intake; PROP tasting.
+
+Microbiome-Diet Interactions:
+  Dietary fibre → SCFAs (butyrate, propionate, acetate) → colonocyte fuel; anti-inflammatory;
+  epigenetic effects (butyrate = HDAC inhibitor).
+  Polyphenols: Processed by gut microbiome → bioavailable metabolites (equol from isoflavones;
+  urolithins from ellagic acid → mitophagy). Dramatic inter-individual variability.
+  Personalised nutrition: Weizmann Institute study — same food causes different glucose
+  responses in different people based on microbiome, genetics, lifestyle.
+
+6. MALNUTRITION — GLOBAL BURDEN
+---------------------------------
+Protein-Energy Malnutrition (PEM):
+  Marasmus: Severe calorie + protein deficiency → muscle and fat wasting; thin; alert.
+  Kwashiorkor: Adequate calories but protein deficient → oedema (hypoalbuminaemia →
+  reduced oncotic pressure); fatty liver; hair changes; dermatitis; irritable.
+  MUAC (mid-upper arm circumference): Field assessment — <11.5cm = severe acute malnutrition.
+  Treatment: RUTF (Ready-to-Use Therapeutic Food): peanut paste + milk powder + sugar +
+  vegetable oil + vitamins/minerals → 500 kcal/100g; 90% recovery rate.
+
+Double Burden of Malnutrition:
+  Simultaneously: Undernutrition (stunting, micronutrient deficiency) + overnutrition
+  (obesity, diet-related NCDs) in same country/community/household.
+  Affects many low/middle-income countries as diets transition from traditional to
+  ultra-processed foods. Driven by urbanisation, food system changes.
+
+Refeeding Syndrome:
+  Life-threatening: Rapid reintroduction of nutrition after prolonged starvation/fasting.
+  Mechanism: Carbohydrate → insulin → cellular K+, Mg2+, PO4³- uptake → severe
+  hypophosphataemia → cardiac arrhythmias, respiratory failure, seizures, death.
+  Prevention: Start feeds slowly (10–20 kcal/kg/day); supplement phosphate, K+, Mg2+,
+  thiamine (Wernicke's prevention) before and during refeeding.
+
+[EMERGING SCIENCE] Postbiotics:
+  Bioactive compounds derived from microbial metabolism — includes SCFAs, bacteriocins,
+  cell wall fragments, EVs (extracellular vesicles). May replicate some probiotic benefits
+  without need for live organisms. Akkermansia muciniphila: Gut barrier protector; associated
+  with metabolic health; pasteurised Am → FDA GRAS status (2023) — basis of first postbiotic supplement.
+
+================================================================================

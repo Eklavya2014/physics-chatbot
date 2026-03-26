@@ -1,0 +1,192 @@
+COLLEGE CHEMISTRY - ADVANCED GUIDE
+=====================================
+
+CHAPTER 1: QUANTUM CHEMISTRY
+
+MOLECULAR ORBITAL THEORY (DETAILED):
+Linear Combination of Atomic Orbitals (LCAO):
+ψ_bonding = ψ_A + ψ_B (constructive interference, lower energy)
+ψ_antibonding = ψ_A - ψ_B (destructive interference, higher energy, denoted *)
+
+MO DIAGRAMS FOR DIATOMIC MOLECULES:
+For Li₂ to N₂: σ1s, σ*1s, σ2s, σ*2s, π2p, π2p, σ2p, π*2p, π*2p, σ*2p
+For O₂ to Ne₂: σ1s, σ*1s, σ2s, σ*2s, σ2p, π2p, π2p, π*2p, π*2p, σ*2p
+
+Bond order = (bonding - antibonding)/2
+O₂: bond order 2, has 2 unpaired electrons (paramagnetic) — explained by MO, not VB theory!
+N₂: bond order 3 (triple bond, very stable)
+F₂: bond order 1, He₂: bond order 0 (doesn't exist)
+
+VALENCE BOND THEORY:
+Bond formed by overlap of atomic orbitals.
+σ bond: head-on overlap, free rotation.
+π bond: lateral overlap, no rotation (causes cis-trans isomerism).
+Resonance: when single Lewis structure inadequate (benzene, O₃, CO₃²⁻).
+Resonance stabilization energy: difference between calculated and actual energy.
+
+MOLECULAR SPECTROSCOPY:
+ΔE = hν = hc/λ = hcν̃ (ν̃ = wavenumber in cm⁻¹)
+
+Rotational spectroscopy (microwave): E_J = BJ(J+1), B = h/(8π²Ic)
+Gives bond lengths and moments of inertia.
+Selection rule: ΔJ = ±1, molecule must have permanent dipole.
+
+Vibrational spectroscopy (IR): E_v = (v + ½)hν, ν = (1/2π)√(k/μ)
+k = force constant (bond strength), μ = reduced mass.
+Selection rule: Δv = ±1, dipole must change during vibration.
+IR active: heteronuclear bonds (C=O, O-H, N-H, C-H, etc.)
+IR inactive: homonuclear bonds (H₂, N₂, O₂).
+Fingerprint region: 600-1500 cm⁻¹ (unique to each molecule).
+
+Raman spectroscopy: complement to IR. Polarizability must change.
+Mutual exclusion rule: for centrosymmetric molecules, IR and Raman bands are mutually exclusive.
+
+ELECTRONIC SPECTROSCOPY (UV-Vis):
+Beer-Lambert law: A = εcl (A = absorbance, ε = molar absorptivity, c = concentration, l = path length)
+A = log(I₀/I) = -log T (T = transmittance)
+Chromophore: group responsible for absorption (C=O, C=C, benzene ring, etc.)
+Auxochrome: shifts absorption to longer wavelength.
+
+NMR SPECTROSCOPY:
+Nuclear Magnetic Resonance: nuclei in magnetic field absorb at specific frequencies.
+¹H NMR: chemical shift (δ, ppm), integration, multiplicity (n+1 rule).
+Chemical shift: δ = (ν_sample - ν_reference)/(ν_spectrometer) × 10⁶
+TMS (tetramethylsilane): reference standard, δ = 0.
+Shielded protons: appear at lower δ (upfield). Deshielded: higher δ (downfield).
+Coupling constant J: splitting due to neighboring H atoms. J in Hz.
+
+MASS SPECTROMETRY:
+Ionize molecule → fragment. M⁺ = molecular ion (gives molecular weight).
+Base peak: most abundant fragment.
+McLafferty rearrangement, α-cleavage, retro Diels-Alder.
+
+---
+
+CHAPTER 2: THERMODYNAMICS (ADVANCED)
+
+CHEMICAL POTENTIAL:
+μ = (∂G/∂n)_{T,P} = μ° + RT ln a (a = activity)
+For ideal solution: a = x (mole fraction)
+For ideal gas: a = P/P° (fugacity = effective pressure for real gases)
+Equilibrium: μ same in all phases/components.
+
+PHASE EQUILIBRIA:
+Gibbs phase rule: F = C - P + 2
+F = degrees of freedom, C = components, P = phases.
+Phase diagram: plot of T vs P showing phases.
+Triple point: solid, liquid, gas coexist.
+Critical point: above which liquid-gas distinction disappears.
+Clausius-Clapeyron equation: dP/dT = ΔH_vap/(TΔV) ≈ P ΔH_vap/(RT²)
+ln(P₂/P₁) = -ΔH_vap/R (1/T₂ - 1/T₁)
+
+ACTIVITY AND FUGACITY:
+For real gases: f = φP (φ = fugacity coefficient)
+For real solutions: a = γx (γ = activity coefficient)
+Raoult's law: ideal solution, γ = 1 for all compositions.
+Henry's law: dilute solution, γ → constant for solute.
+Positive deviation: weaker A-B interactions than A-A, B-B (ethanol-water).
+Negative deviation: stronger A-B (acetone-chloroform).
+
+---
+
+CHAPTER 3: ADVANCED ORGANIC CHEMISTRY
+
+REACTION MECHANISMS IN DETAIL:
+
+SN1 MECHANISM:
+Step 1: Ionization → carbocation (rate-determining step)
+Step 2: Nucleophile attack (fast)
+Favored by: tertiary alkyl halides, polar protic solvents (water, alcohol), weak nucleophiles.
+Racemization: flat carbocation attacked from both sides.
+Rearrangements possible: hydride/methide shift to more stable carbocation.
+
+SN2 MECHANISM:
+Single step: backside attack while leaving group departs simultaneously.
+Favored by: primary alkyl halides, polar aprotic solvents (acetone, DMF, DMSO), strong nucleophiles.
+Inversion of configuration (Walden inversion): like umbrella flipping.
+Second-order kinetics: rate = k[RX][Nu⁻].
+
+E1 vs E2:
+E1: carbocation intermediate, favored by tertiary, protic solvents, weak base.
+E2: concerted, favored by strong base, anti-periplanar arrangement required.
+Zaitsev's rule: major alkene product is more substituted.
+Hofmann's rule: bulky base gives less substituted alkene.
+
+PERICYCLIC REACTIONS (Woodward-Hoffmann rules):
+Orbital symmetry controls these reactions.
+Thermally allowed ≡ photochemically forbidden (and vice versa).
+Electrocyclic reactions: ring opening/closing. Thermal: conrotatory (4n), disrotatory (4n+2).
+Cycloadditions: [4+2] Diels-Alder thermally allowed. [2+2] thermally forbidden.
+Sigmatropic rearrangements: [1,3]-H thermal forbidden; [1,5]-H thermal allowed.
+
+DIELS-ALDER REACTION:
+Diene (4π) + dienophile (2π) → cyclohexene.
+Requires s-cis diene conformation.
+Electron-rich diene + electron-poor dienophile (most favorable).
+Endo rule: kinetic product usually endo (secondary orbital interactions).
+Stereospecific: syn addition, retains stereochemistry of dienophile.
+
+AROMATIC CHEMISTRY:
+Hückel's rule: aromatic if (4n+2) π electrons in continuous cyclic π system.
+Benzene: 6 π electrons (n=1), perfectly stable.
+Naphthalene: 10 π electrons (n=2).
+Annulenes: [4n+2] annulenes are aromatic.
+Anti-aromatic: 4n π electrons (cyclobutadiene: 4 π, very unstable).
+
+EAS reactions and directing effects:
+Activating/ortho-para directors: -OH, -OR, -NH₂, -NR₂, -NHCOR, alkyl groups (donate electrons).
+Deactivating/meta directors: -NO₂, -CN, -COOH, -CHO, -COR, -SO₃H (withdraw electrons).
+Halogens: deactivating but ortho-para directors (lone pair donation overrides induction).
+
+CARBONYL CHEMISTRY:
+Nucleophilic addition to C=O:
+Aldehydes > ketones (steric and electronic).
+Hard nucleophiles add to C=O. Soft nucleophiles prefer conjugate addition (1,4) to α,β-unsaturated carbonyls.
+
+Enolate chemistry: α-carbon deprotonation → enolate → alkylation, aldol, Claisen.
+Aldol: enolate attacks another carbonyl → β-hydroxy carbonyl (aldol product) → dehydration → α,β-unsaturated carbonyl.
+Claisen condensation: ester enolate + ester → β-ketoester.
+Michael addition: nucleophile adds to β-carbon of α,β-unsaturated carbonyl.
+
+HETEROCYCLIC CHEMISTRY:
+Pyridine: 6-membered, N replaces CH. Aromatic, 6π electrons. N lone pair not in aromatic system. Basic (pKa ~5). EAS deactivated, especially at 2,4 positions.
+Pyrrole: 5-membered, NH. Aromatic (N lone pair part of ring). Acidic NH (pKa ~17). EAS activated.
+Furan: O, 5-membered, aromatic. Less aromatic than benzene.
+Thiophene: S, 5-membered, most aromatic of five-membered heterocycles.
+Imidazole: two N atoms, 5-membered. One basic N, one NH. Component of histidine.
+Purine, pyrimidine: components of nucleic acids.
+
+POLYMER CHEMISTRY:
+Addition polymerization: monomers add without byproduct.
+Free radical: initiation, propagation, termination.
+Cationic: carbocation intermediate.
+Anionic: carbanion intermediate.
+Coordination (Ziegler-Natta): stereoregular polymers.
+Condensation polymerization: with byproduct (usually water).
+Nylon 6,6: diamine + diacid. Polyester: diol + diacid. Proteins, polysaccharides.
+
+Degree of polymerization: n = M_polymer/M_monomer
+Number average: M_n = ΣN_iM_i/ΣN_i
+Weight average: M_w = ΣN_iM_i²/ΣN_iM_i
+Polydispersity index: PDI = M_w/M_n (1 for monodisperse, >1 for real polymers)
+
+---
+
+IMPORTANT CONSTANTS AND FORMULAS:
+
+Physical constants:
+R = 8.314 J/mol·K = 0.0821 L·atm/mol·K
+Nₐ = 6.022 × 10²³ mol⁻¹
+F = 96485 C/mol
+h = 6.626 × 10⁻³⁴ J·s
+k_B = 1.38 × 10⁻²³ J/K
+
+Key equations:
+ΔG° = -RT ln K = -nFE°
+pH = pKa + log([A⁻]/[HA]) (Henderson-Hasselbalch)
+Arrhenius: k = Ae^(-Ea/RT)
+Nernst: E = E° - (0.0592/n) log Q (25°C)
+Beer-Lambert: A = εcl
+van't Hoff: ln K₂/K₁ = -ΔH°/R (1/T₂ - 1/T₁)
+Clausius-Clapeyron: ln P₂/P₁ = -ΔH_vap/R (1/T₂ - 1/T₁)
+Gibbs phase rule: F = C - P + 2

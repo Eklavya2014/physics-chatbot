@@ -1,0 +1,223 @@
+================================================================================
+                      DEVELOPMENTAL BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. FROM FERTILISATION TO ORGANISM
+-----------------------------------
+Developmental biology studies how a single fertilised cell (zygote) gives rise to
+a complex, multicellular organism through regulated cell division, differentiation,
+and morphogenesis.
+
+Key Processes:
+- Cell division      : Mitosis produces more cells; meiosis produces gametes.
+- Cell differentiation: Cells become specialised (e.g., muscle, nerve, blood).
+- Morphogenesis      : Cells organise into tissues, organs, and body structures.
+- Growth             : Increase in size of the organism.
+- Apoptosis          : Programmed cell death sculpts structures (e.g., digits).
+
+1.1 FERTILISATION & EARLY DEVELOPMENT (HUMAN)
+-----------------------------------------------
+Fertilisation: Sperm penetrates oocyte → acrosome reaction (sperm enzymes digest
+zona pellucida) → cortical reaction (prevents polyspermy) → 2N zygote formed.
+
+Cleavage: Rapid mitotic divisions with no growth → morula (16-cell solid ball) →
+blastocyst (hollow ball with inner cell mass [ICM] + trophoblast).
+  ICM → embryo proper (all three germ layers + extraembryonic membranes).
+  Trophoblast → placenta.
+
+Implantation: Blastocyst implants in uterine wall (~6–10 days post-fertilisation).
+
+Gastrulation (~week 3): ICM reorganises into three primary germ layers:
+  Ectoderm  → Skin, nervous system, sensory organs.
+  Mesoderm  → Muscle, bone, blood, heart, kidneys, gonads.
+  Endoderm  → Gut lining, liver, pancreas, lungs, thyroid.
+
+Neurulation: Notochord induces overlying ectoderm to form neural plate →
+neural folds rise and fuse → neural tube (→ brain + spinal cord).
+Neural crest cells migrate to form: facial bones, peripheral NS, melanocytes,
+adrenal medulla.
+
+Organogenesis: (~weeks 3–8): Major organs form. Highly sensitive to teratogens
+(alcohol, thalidomide, rubella, valproate) during this period.
+
+1.2 STEM CELLS
+---------------
+Stem cells are undifferentiated cells that can:
+  1. Self-renew: Divide to produce more stem cells.
+  2. Differentiate: Give rise to specialised cell types.
+
+Potency Hierarchy:
+- Totipotent  : Can form entire organism including extraembryonic membranes.
+                Only zygote and first 2–4 blastomeres are totipotent.
+- Pluripotent : Can form all cells of embryo proper (3 germ layers) but not
+                trophoblast. Embryonic stem cells (ESCs); iPSCs.
+- Multipotent : Can form multiple but limited cell types.
+                Example: Haematopoietic stem cell → all blood cell types.
+- Unipotent   : One cell type only. Example: Spermatogonial stem cells.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CELL SIGNALLING IN DEVELOPMENT
+-----------------------------------
+Development is orchestrated by signalling molecules (morphogens and growth factors)
+that act in concentration-dependent gradients to specify cell identity.
+
+2.1 KEY DEVELOPMENTAL SIGNALLING PATHWAYS
+-------------------------------------------
+Wnt Signalling:
+  Wnt OFF: beta-catenin is phosphorylated by destruction complex (APC/Axin/GSK-3)
+           → ubiquitinated → proteasomal degradation.
+  Wnt ON : Wnt binds Frizzled + LRP5/6 → Dishevelled activated → destruction
+           complex inhibited → beta-catenin accumulates → enters nucleus →
+           activates TCF/LEF transcription factors → target genes (Cyclin D1, c-Myc).
+  Roles: Axis specification, intestinal crypt homeostasis, hair follicle cycling.
+  Disease: APC mutations → Wnt overactivation → colorectal cancer.
+
+Notch Signalling:
+  Contact-dependent; lateral inhibition. Delta/Jagged ligand on signal cell binds
+  Notch receptor on receiving cell → gamma-secretase cleaves NICD (Notch intracellular
+  domain) → enters nucleus → activates HES/HEY transcription factors.
+  Roles: Neurogenesis, somitogenesis, vascular patterning, T vs B cell fate.
+
+Hedgehog (Hh) Signalling:
+  Hh absent: PTCH1 inhibits Smoothened (Smo) → Gli transcription factors cleaved
+             to repressor forms.
+  Hh present: Hh binds PTCH1 → Smo activated → Gli activator forms → target genes.
+  SHH: Left-right asymmetry, limb patterning (anterior-posterior axis), floor plate.
+  Disease: PTCH1 mutations → Gorlin syndrome (basal cell carcinomas); Smo mutations
+           common in sporadic BCCs.
+
+TGF-beta/BMP Signalling:
+  Ligand binds type II receptor → phosphorylates type I receptor → Smad2/3 (TGF-b)
+  or Smad1/5/8 (BMP) phosphorylated → complex with Smad4 → nuclear translocation
+  → gene regulation.
+  BMP4: Epidermal vs neural fate (BMP inhibition by chordin/noggin/follistatin
+  → promotes neural tissue; "BMP inhibition = default neural").
+  TGF-beta: Epithelial-mesenchymal transition (EMT) in development and cancer.
+
+3. PATTERN FORMATION & BODY AXES
+----------------------------------
+Anterior-Posterior Axis:
+  Drosophila (model system): Bicoid mRNA localised anteriorly → Bicoid protein
+  gradient → activates anterior genes (e.g., hunchback) in concentration-dependent
+  manner. Posterior: Nanos gradient inhibits Hunchback. Defines head vs tail.
+
+  Hox genes: Highly conserved homeodomain transcription factors that specify
+  segment identity along A-P axis. Collinear expression: 3' Hox genes in anterior;
+  5' Hox genes in posterior. Found in all bilaterian animals.
+
+Dorsal-Ventral Axis:
+  Drosophila: Dorsal protein (NF-kB homolog) gradient; high ventral → neural ectoderm
+  vs mesoderm patterning. Tolloid/Sog (BMP regulator) interaction.
+
+Left-Right Asymmetry:
+  Nodal cilia at embryonic node beat asymmetrically → leftward fluid flow →
+  Nodal signalling on left side only → Lefty (inhibitor) + Pitx2 (transcription factor)
+  → heart, stomach, liver adopt asymmetric positions.
+  Mutations in cilia genes → Kartagener syndrome (situs inversus, bronchiectasis).
+
+4. SEX DETERMINATION & DIFFERENTIATION
+----------------------------------------
+Chromosomal sex: XX = female; XY = male.
+SRY gene (Y chromosome): Encodes testis-determining factor → activates SOX9 →
+Sertoli cells differentiate → AMH (Mullerian Inhibiting Hormone) secreted →
+Mullerian ducts (→ uterus, fallopian tubes) regress.
+Leydig cells: Testosterone → Wolffian ducts develop → vas deferens, epididymis.
+Without SRY: Ovaries develop; Mullerian ducts form uterus/fallopian tubes.
+
+Disorders of Sexual Development (DSDs):
+  Congenital Adrenal Hyperplasia (CAH): 21-hydroxylase deficiency → excess androgens
+  → virilisation of XX individuals.
+  Androgen Insensitivity Syndrome (AIS): XY; non-functional androgen receptor →
+  female phenotype.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. EPIGENETICS IN DEVELOPMENT
+-------------------------------
+Epigenetics: Heritable changes in gene expression without DNA sequence change.
+Critical during development for establishing and maintaining cell identity.
+
+DNA Methylation:
+  CpG methylation by DNMT3A/3B (de novo) established in early embryo.
+  Maintained by DNMT1 (copies methylation pattern after replication).
+  Global demethylation → remethylation occurs twice: at fertilisation and in PGCs.
+  Imprinting: Allele-specific methylation established in germline; maintained
+  throughout life. ~80 imprinted genes in humans.
+
+Genomic Imprinting:
+  Parent-of-origin gene expression. Paternal allele expressed, maternal silenced
+  (or vice versa) due to differential germline methylation.
+  IGF2 (paternal) / H19 (maternal): Regulated by ICR (imprinting control region)
+  CTCF binding when unmethylated (maternal) acts as insulator → H19 expressed.
+  Disorders:
+    Prader-Willi syndrome: Loss of paternal 15q11-13.
+    Angelman syndrome   : Loss of maternal 15q11-13 (UBE3A).
+    Beckwith-Wiedemann  : Biallelic IGF2 expression → overgrowth.
+
+Histone Code:
+  Polycomb group (PcG) complexes: PRC2 (EZH2) deposits H3K27me3 → gene silencing.
+  Trithorax group (TrxG): H3K4me3 → gene activation.
+  Bivalent domains: H3K27me3 + H3K4me3 co-occupancy in ESCs → genes poised for
+  rapid activation or silencing during differentiation.
+
+6. INDUCED PLURIPOTENT STEM CELLS (iPSCs)
+-------------------------------------------
+Yamanaka (2006, Nobel Prize 2012):
+  Adult somatic cells (fibroblasts) reprogrammed to pluripotency by introducing
+  4 transcription factors: OCT4, SOX2, KLF4, c-MYC (Yamanaka factors).
+  Mechanism: Remodelling of epigenetic landscape → pluripotency gene network activated.
+
+iPSC Applications:
+  - Disease modelling (patient-specific "disease in a dish")
+  - Drug screening
+  - Cell therapy (autologous; no immune rejection)
+  - Organ-on-chip development
+
+Organoids:
+  3D self-organising structures derived from stem cells that recapitulate organ
+  architecture and function. Types: intestinal, brain (cerebral), liver, kidney,
+  lung organoids. Key tool for: drug testing, disease modelling, personalised medicine.
+  Cerebral organoids (Lancaster 2013): Model human cortical development; used to
+  study microcephaly and SARS-CoV-2 neurotropism.
+
+7. REGENERATION & AGEING
+--------------------------
+Animal Regeneration:
+  Planaria: Remarkable — can regenerate entire body from tiny fragment.
+            Neoblasts (pluripotent stem cells) drive regeneration.
+  Axolotl:  Regenerates limbs, heart, spinal cord. Dedifferentiation of mature
+            cells → blastema (pool of progenitors) → patterned regrowth.
+  Mammals:  Limited regeneration. Liver: regenerates ~70% mass loss.
+            Heart: Very limited; cardiomyocytes divide at ~1%/year.
+
+Hallmarks of Ageing (Lopez-Otin et al., 2013; updated 2023):
+  Genomic instability, Telomere attrition, Epigenetic alterations,
+  Loss of proteostasis, Deregulated nutrient sensing (mTOR, AMPK, sirtuins),
+  Mitochondrial dysfunction, Cellular senescence, Stem cell exhaustion,
+  Altered intercellular communication, Disabled macroautophagy,
+  Chronic inflammation, Dysbiosis.
+
+Cellular Senescence:
+  Permanent cell cycle arrest in response to DNA damage, oncogene activation,
+  or telomere shortening. Senescent cells secrete SASP (Senescence-Associated
+  Secretory Phenotype): IL-6, IL-8, MMPs → chronic inflammation.
+  Senolytics (dasatinib + quercetin) clear senescent cells → extend healthspan in mice.
+
+[CLINICAL LINK] Congenital malformations affect ~3% of births. Neural tube defects
+(spina bifida, anencephaly) result from failed neurulation; folic acid
+supplementation reduces risk by ~70% (folate is cofactor for nucleotide synthesis
+needed during rapid cell division). Thalidomide (teratogen) inhibits cereblon →
+disrupts FGF signalling → limb truncations (phocomelia) in embryos exposed in
+weeks 3–8 of development.
+
+================================================================================

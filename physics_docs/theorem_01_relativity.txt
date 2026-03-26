@@ -1,0 +1,207 @@
+THEORY OF RELATIVITY - COMPLETE GUIDE
+======================================
+
+PART 1: SPECIAL THEORY OF RELATIVITY (Einstein, 1905)
+
+HISTORICAL BACKGROUND:
+In 1887, Michelson and Morley tried to detect the "luminiferous ether" — the medium thought to carry light waves. Their experiment showed the speed of light is the same in all directions, regardless of Earth's motion. This contradicted classical physics and led Einstein to develop Special Relativity.
+
+THE TWO POSTULATES:
+1. Principle of Relativity: The laws of physics are identical in all inertial (non-accelerating) frames of reference. No experiment can tell you whether you are at rest or moving at constant velocity.
+2. Constancy of Speed of Light: The speed of light in vacuum is c = 3 × 10⁸ m/s, the same for all observers, regardless of the motion of the source or observer.
+
+These two simple postulates, taken together, lead to revolutionary consequences.
+
+LORENTZ FACTOR:
+γ = 1/√(1 - v²/c²)
+- At v = 0: γ = 1 (classical physics)
+- At v = 0.5c: γ = 1.155
+- At v = 0.9c: γ = 2.294
+- At v = 0.99c: γ = 7.089
+- At v = c: γ = ∞ (impossible for massive objects)
+β = v/c (velocity parameter)
+
+TIME DILATION:
+Moving clocks run slower than stationary clocks.
+Δt = γΔt₀
+Δt₀ = proper time (time measured in rest frame of object)
+Δt = dilated time (time measured by observer seeing the clock move)
+
+Example: A muon created in upper atmosphere (at rest, half-life = 2.2 μs) travels at 0.998c.
+γ = 1/√(1 - 0.998²) ≈ 15.8
+Dilated lifetime = 15.8 × 2.2 μs = 34.8 μs
+This allows muons to reach Earth's surface — confirmed experimentally.
+
+Twin Paradox: One twin travels at high speed and returns younger than the stationary twin. The traveling twin's clock truly ran slower — this is not a paradox but a real effect.
+
+LENGTH CONTRACTION:
+Objects moving relative to an observer appear shorter in the direction of motion.
+L = L₀/γ
+L₀ = proper length (length in object's rest frame)
+L = contracted length (measured by observer seeing object move)
+Only occurs in direction of motion; transverse dimensions unchanged.
+
+RELATIVITY OF SIMULTANEITY:
+Two events simultaneous in one frame are NOT simultaneous in another frame moving relative to the first.
+This destroys the concept of absolute time.
+Time interval between events: Δt' = γ(Δt - vΔx/c²)
+
+LORENTZ TRANSFORMATIONS:
+Transform coordinates between two frames S and S' where S' moves at velocity v along x-axis:
+x' = γ(x - vt)
+y' = y
+z' = z
+t' = γ(t - vx/c²)
+Inverse: x = γ(x' + vt'), t = γ(t' + vx'/c²)
+
+RELATIVISTIC VELOCITY ADDITION:
+If object moves at u in frame S, and S moves at v relative to S':
+u' = (u - v)/(1 - uv/c²)
+This ensures the speed of light is always c for all observers.
+Example: Two rockets each moving at 0.9c toward each other.
+Classical answer: 0.9c + 0.9c = 1.8c (wrong!)
+Relativistic answer: (0.9 + 0.9)/(1 + 0.9×0.9) = 1.8/1.81 = 0.994c (always < c)
+
+RELATIVISTIC MOMENTUM:
+p = γmv = mv/√(1 - v²/c²)
+For v << c: p ≈ mv (classical result recovered)
+As v → c: p → ∞ (infinite force needed to reach c)
+
+RELATIVISTIC ENERGY - THE MOST FAMOUS EQUATION:
+Total energy: E = γmc²
+Rest energy: E₀ = mc² (energy of object at rest)
+Kinetic energy: K = (γ - 1)mc² = E - mc²
+For v << c: K ≈ ½mv² (classical result recovered)
+
+Energy-momentum relation: E² = (pc)² + (mc²)²
+For massless particles (photons): E = pc, always travel at c.
+For massive particles at rest: E = mc².
+
+MASS-ENERGY EQUIVALENCE:
+E = mc² means mass and energy are equivalent and interchangeable.
+1 kg of mass = 9 × 10¹⁶ J of energy.
+Nuclear reactions: small loss of mass → enormous energy release.
+Pair production: energy → matter (γ → e⁻ + e⁺)
+Pair annihilation: matter → energy (e⁻ + e⁺ → 2γ)
+
+SPACETIME AND MINKOWSKI SPACE:
+Hermann Minkowski (1908): Space and time are unified into 4D spacetime.
+Spacetime interval: s² = c²t² - x² - y² - z² (invariant for all observers)
+Four-vector: (ct, x, y, z)
+Types of intervals:
+- Timelike (s² > 0): events causally connected, all observers agree on time order
+- Spacelike (s² < 0): events causally unconnected
+- Lightlike/null (s² = 0): connected by light signal
+
+EXPERIMENTAL CONFIRMATIONS OF SPECIAL RELATIVITY:
+1. Michelson-Morley experiment (1887): Speed of light is constant.
+2. Muon decay (cosmic rays): muons reach Earth due to time dilation.
+3. GPS satellites: must correct for both SR and GR effects. Without corrections, GPS would drift by ~10 km/day.
+4. Particle accelerators: relativistic momentum and energy confirmed to great precision.
+5. Relativistic Doppler effect: confirmed in stellar spectroscopy.
+6. Nuclear reactions: E = mc² confirmed in every nuclear reactor and bomb.
+
+---
+
+PART 2: GENERAL THEORY OF RELATIVITY (Einstein, 1915)
+
+KEY INSIGHT - EQUIVALENCE PRINCIPLE:
+Einstein's happiest thought: "A man falling freely does not feel his own weight."
+A person in a freely falling elevator cannot tell (locally) whether they are in free fall or floating in deep space with no gravity.
+A person in an accelerating rocket feels exactly the same as standing on Earth's surface.
+
+This leads to: Gravity and acceleration are locally equivalent.
+Consequence: Gravity is not a force — it is the curvature of spacetime!
+
+EINSTEIN'S FIELD EQUATIONS:
+G_μν + Λg_μν = (8πG/c⁴) T_μν
+G_μν = Einstein tensor (describes curvature of spacetime)
+Λ = cosmological constant (dark energy)
+T_μν = stress-energy tensor (describes matter and energy content)
+"Matter tells spacetime how to curve; spacetime tells matter how to move." — John Wheeler
+
+GEODESICS:
+In curved spacetime, objects follow geodesics — the straightest possible paths.
+What we perceive as gravitational attraction is actually objects following straight paths in curved spacetime.
+Light also follows geodesics (null geodesics).
+
+GRAVITATIONAL TIME DILATION:
+Clocks run slower in stronger gravitational fields.
+Δt_surface/Δt_infinity = √(1 - 2GM/rc²) = √(1 - r_s/r)
+Near a black hole, time slows dramatically.
+GPS satellites are 20,200 km up — their clocks run faster by ~45 μs/day due to weaker gravity.
+Combined with SR time dilation (-7 μs/day), net correction = +38 μs/day.
+
+GRAVITATIONAL REDSHIFT:
+Light climbing out of a gravitational well loses energy → frequency decreases → wavelength increases.
+Δf/f = -GM/(rc²) = -gh/c² (for small heights)
+Pound-Rebka experiment (1959): confirmed gravitational redshift of gamma rays falling in Earth's gravity.
+
+SCHWARZSCHILD SOLUTION:
+First exact solution to Einstein's equations (Karl Schwarzschild, 1916).
+Describes spacetime outside a spherically symmetric mass.
+ds² = -(1 - r_s/r)c²dt² + dr²/(1 - r_s/r) + r²dΩ²
+Schwarzschild radius: r_s = 2GM/c²
+For Sun: r_s = 3 km (Sun's actual radius is 696,000 km)
+For Earth: r_s = 9 mm
+
+BLACK HOLES:
+When a massive star collapses, if its radius < r_s, a black hole forms.
+Event horizon: surface at r = r_s. Inside, escape velocity > c.
+Nothing can escape from inside the event horizon, not even light.
+Singularity: at r = 0, density and curvature become infinite (GR breaks down — quantum gravity needed).
+Types:
+- Schwarzschild: non-rotating, uncharged.
+- Kerr: rotating black hole (most real black holes).
+- Reissner-Nordström: charged, non-rotating.
+- Kerr-Newman: rotating and charged.
+
+Hawking Radiation (1974): Quantum effects cause black holes to slowly evaporate.
+Temperature: T_H = ℏc³/(8πGMk_B)
+Smaller black holes are hotter and evaporate faster.
+
+PREDICTIONS OF GR AND THEIR CONFIRMATION:
+1. Precession of Mercury's perihelion: GR predicts 43 arcsec/century. Observed: 43.1 arcsec/century. ✅
+2. Deflection of starlight by Sun: GR predicts 1.75 arcsec. Eddington (1919) confirmed during solar eclipse. ✅
+3. Gravitational redshift: Confirmed by Pound-Rebka (1959). ✅
+4. Gravitational time dilation: Confirmed by GPS and many experiments. ✅
+5. Frame dragging (Lense-Thirring effect): Rotating mass drags spacetime. Confirmed by Gravity Probe B (2011). ✅
+6. Gravitational waves: Predicted 1916, confirmed by LIGO (2015). ✅
+7. Black holes: Indirect evidence for decades. First image by Event Horizon Telescope (2019). ✅
+8. Expanding universe: GR predicts dynamic universe. Hubble (1929) confirmed expansion. ✅
+
+GRAVITATIONAL WAVES:
+Accelerating masses create ripples in spacetime that propagate at speed c.
+Strain: h = ΔL/L (dimensionless amplitude)
+LIGO detected first gravitational wave: GW150914 (Sep 14, 2015).
+Two black holes merging: masses ~29 M_sun and ~36 M_sun, ~1.3 billion light-years away.
+Peak strain: h ~ 10⁻²¹ (changed LIGO arm length by 1/1000 the width of a proton!)
+Power radiated at peak: ~3.6 × 10⁴⁹ W (more than all stars in observable universe combined, briefly)
+
+COSMOLOGICAL IMPLICATIONS:
+Friedmann equations (from GR):
+H² = 8πGρ/3 - kc²/a² + Λc²/3
+H = ȧ/a (Hubble parameter), a = scale factor, k = curvature, ρ = density
+Solutions:
+- k = 0 (flat): critical density universe.
+- k = +1 (closed): universe eventually recollapses.
+- k = -1 (open): universe expands forever.
+Current evidence: universe is flat (k = 0) with dark energy causing acceleration.
+Cosmological constant Λ represents dark energy = 68% of universe's energy.
+
+IMPORTANT FORMULAS SUMMARY:
+Special Relativity:
+- γ = 1/√(1-β²), β = v/c
+- Time dilation: Δt = γΔt₀
+- Length contraction: L = L₀/γ
+- Relativistic momentum: p = γmv
+- Total energy: E = γmc²
+- Rest energy: E₀ = mc²
+- Energy-momentum: E² = (pc)² + (mc²)²
+- Velocity addition: u' = (u-v)/(1-uv/c²)
+
+General Relativity:
+- Schwarzschild radius: r_s = 2GM/c²
+- Gravitational time dilation: Δt = Δt₀/√(1-r_s/r)
+- Gravitational redshift: Δλ/λ = GM/(rc²)
+- Hawking temperature: T_H = ℏc³/(8πGMk_B)

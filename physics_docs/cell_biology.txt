@@ -1,0 +1,142 @@
+================================================================================
+                           CELL BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS A CELL?
+------------------
+The cell is the fundamental structural and functional unit of all living
+organisms. Every living thing — from a single-celled bacterium to a
+trillion-celled human — is composed of cells. Cells carry out all the
+processes necessary for life: obtaining energy, growing, reproducing, and
+responding to their environment.
+
+Cell Theory (formulated by Schleiden, Schwann, and Virchow, 1830s–1850s):
+  1. All living organisms are composed of one or more cells.
+  2. The cell is the basic unit of life.
+  3. All cells arise from pre-existing cells.
+
+1.1 PROKARYOTIC VS. EUKARYOTIC CELLS
+--------------------------------------
+Feature              | Prokaryotic                  | Eukaryotic
+---------------------|------------------------------|-----------------------------
+Nucleus              | Absent (nucleoid region)     | Present (membrane-bound)
+Size                 | 1–10 µm                      | 10–100 µm
+Organelles           | None (membrane-bound)        | Many (mitochondria, ER, etc.)
+DNA                  | Circular, 1 chromosome       | Linear, multiple chromosomes
+Examples             | Bacteria, Archaea            | Plants, Animals, Fungi
+
+1.2 KEY CELL ORGANELLES
+------------------------
+- Cell Membrane     : Phospholipid bilayer; controls what enters/exits the cell.
+- Nucleus           : Contains DNA; directs cell activities — the "control center."
+- Mitochondria      : Produces ATP via cellular respiration — the "powerhouse."
+- Ribosomes         : Sites of protein synthesis; free or attached to ER.
+- Rough ER          : Synthesizes and processes proteins.
+- Smooth ER         : Produces lipids and detoxifies substances.
+- Golgi Apparatus   : Processes and packages proteins for secretion.
+- Lysosomes         : Contain digestive enzymes; break down waste materials.
+- Chloroplasts      : Found in plant cells; site of photosynthesis.
+- Vacuoles          : Storage organelles; large central vacuole in plant cells.
+- Cell Wall         : Rigid outer layer in plant/fungal/bacterial cells.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CELL MEMBRANE & TRANSPORT
+------------------------------
+The plasma membrane is described by the Fluid Mosaic Model (Singer & Nicolson,
+1972). It is a phospholipid bilayer with embedded proteins, cholesterol, and
+glycolipids. Hydrophobic tails face inward; hydrophilic heads face outward.
+
+Transport Mechanisms:
+- Passive Diffusion      : Small nonpolar molecules (O2, CO2) move down gradient.
+                           No energy required.
+- Facilitated Diffusion  : Movement through channel/carrier proteins; still
+                           down gradient; no ATP needed.
+- Osmosis                : Water moves through semipermeable membrane from low
+                           to high solute concentration.
+- Active Transport       : Movement AGAINST concentration gradient; requires ATP.
+                           Example: Na+/K+ pump (3 Na+ out, 2 K+ in).
+- Endocytosis            : Cell engulfs material — phagocytosis (solids),
+                           pinocytosis (liquids), receptor-mediated.
+- Exocytosis             : Vesicles fuse with membrane to release contents.
+
+3. CELLULAR RESPIRATION
+------------------------
+Converts glucose + oxygen into ATP, CO2, and water.
+Overall equation: C6H12O6 + 6O2 → 6CO2 + 6H2O + 36–38 ATP
+
+Stage                   | Location                    | ATP Yield  | Key Products
+------------------------|-----------------------------|-----------|--------------
+Glycolysis              | Cytoplasm                   | 2 ATP (net)| 2 Pyruvate, 2 NADH
+Pyruvate Oxidation      | Mitochondrial matrix        | 0 ATP      | 2 Acetyl-CoA, 2 NADH
+Krebs Cycle             | Mitochondrial matrix        | 2 ATP      | 6 NADH, 2 FADH2
+Electron Transport Chain| Inner mitochondrial membrane| 32–34 ATP  | H2O
+
+4. PHOTOSYNTHESIS
+-----------------
+Converts light energy into chemical energy (glucose). Occurs in chloroplasts.
+Overall: 6CO2 + 6H2O + Light → C6H12O6 + 6O2
+
+Two Stages:
+- Light-Dependent Reactions (Thylakoid membranes):
+    Chlorophyll absorbs light. Water is split (photolysis), releasing O2.
+    ATP and NADPH are produced.
+- Calvin Cycle / Light-Independent Reactions (Stroma):
+    CO2 is fixed using ATP and NADPH to produce G3P, which builds glucose.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. CELL SIGNALING & SIGNAL TRANSDUCTION
+-----------------------------------------
+Three core steps: Reception → Transduction → Response.
+Ligands bind receptors, triggering intracellular cascades.
+
+Receptor Classes:
+- GPCRs (G-Protein Coupled Receptors): Largest receptor family. Activate
+  adenylyl cyclase (cAMP pathway) or phospholipase C (IP3/DAG pathway).
+- Receptor Tyrosine Kinases (RTKs): Dimerize on ligand binding;
+  autophosphorylate; activate Ras-MAPK and PI3K-Akt pathways.
+- Ion Channel Receptors: Ligand binding opens/closes ion channels.
+  Critical in neurons (e.g., acetylcholine at neuromuscular junction).
+- Nuclear Receptors: Steroid/thyroid hormones enter cell and bind intracellular
+  receptors that act directly as transcription factors.
+
+6. CELL CYCLE & CHECKPOINTS
+-----------------------------
+Regulated by cyclin-CDK complexes.
+
+Checkpoint             | Phase     | What is Checked              | Key Regulator
+-----------------------|-----------|------------------------------|----------------
+G1 Restriction Point   | Late G1   | Cell size, nutrients, growth | Cyclin D/CDK4/6
+G2/M Checkpoint        | G2 → M    | DNA replication, damage      | Cyclin B/CDK1
+Spindle Assembly (SAC) | M phase   | Kinetochore-spindle attach.  | Mad2, BubR1
+
+7. APOPTOSIS (PROGRAMMED CELL DEATH)
+--------------------------------------
+Essential for development, homeostasis, and immune function.
+
+Intrinsic Pathway:
+  Cellular stress → cytochrome c released from mitochondria → apoptosome
+  formation → caspase-9 activation → caspase-3/7 cascade → cell death.
+  Regulated by Bcl-2 family: anti-apoptotic (Bcl-2, Bcl-xL) vs.
+  pro-apoptotic (Bax, Bak, BH3-only proteins).
+
+Extrinsic Pathway:
+  Death ligands (FasL, TNF) bind death receptors → recruit FADD →
+  activate caspase-8 → activate effector caspases directly.
+
+[CLINICAL LINK] Cancer arises when cell cycle checkpoints fail. Mutations in
+tumor suppressors (TP53, RB1) or oncogenes (RAS, MYC) drive uncontrolled
+proliferation. Targeted therapies include imatinib (BCR-ABL inhibitor in CML)
+and trastuzumab (HER2-targeting in breast cancer).
+
+================================================================================

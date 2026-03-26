@@ -1,0 +1,199 @@
+================================================================================
+                      IMMUNOLOGY & DISEASE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE IMMUNE SYSTEM — OVERVIEW
+---------------------------------
+The immune system defends the body against pathogens, cancerous cells, and foreign
+substances. It has two main branches that work together:
+
+Innate Immunity: Non-specific; immediate response (minutes to hours).
+Adaptive Immunity: Specific; slower (days); has memory.
+
+1.1 LINES OF DEFENCE
+---------------------
+First Line (Physical/Chemical barriers):
+- Skin          : Mechanical barrier; low pH (acidic sebum); antimicrobial peptides.
+- Mucous membranes: Trap pathogens; cilia sweep them out.
+- Stomach acid  : pH 1–2 kills most ingested pathogens.
+- Saliva, tears : Lysozyme enzyme breaks down bacterial cell walls.
+- Normal microbiome: Competes with and suppresses pathogens.
+
+Second Line (Innate Immune Response):
+- Phagocytes    : Neutrophils (first responders); macrophages (tissue sentinels).
+- Natural Killer cells: Kill virus-infected and tumour cells.
+- Complement    : Protein cascade; opsonises bacteria; forms membrane attack complex.
+- Inflammation  : Mast cells release histamine → vasodilation, increased permeability
+                  → redness, heat, swelling, pain (cardinal signs).
+- Fever         : Elevated temp inhibits pathogen growth; enhances immune response.
+
+Third Line (Adaptive Immune Response):
+- B cells       : Produce antibodies (humoral immunity).
+- T cells       : Cell-mediated immunity; destroy infected cells.
+- Memory cells  : Enable rapid response upon re-exposure.
+
+1.2 PATHOGENS & DISEASE
+------------------------
+Type       | Examples                      | Treatment
+-----------|-------------------------------|--------------------------------
+Bacteria   | E. coli, Salmonella, TB       | Antibiotics
+Viruses    | Influenza, HIV, SARS-CoV-2    | Antivirals, vaccines
+Fungi      | Candida, Aspergillus          | Antifungals (azoles, polyenes)
+Parasites  | Malaria, tapeworm             | Antiparasitic drugs
+Prions     | CJD, BSE ("mad cow")          | No effective treatment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. INNATE IMMUNITY IN DEPTH
+-----------------------------
+Pattern Recognition Receptors (PRRs):
+  Recognise conserved pathogen structures (PAMPs — pathogen-associated molecular patterns).
+- Toll-like receptors (TLRs): On cell surface and endosomes.
+  TLR4: Detects LPS (gram-negative bacteria) → NF-kB activation → cytokines.
+  TLR3/7/8/9: Detect viral RNA/DNA → interferon production.
+- NOD-like receptors (NLRs): Cytosolic; sense bacterial peptidoglycans.
+  NLRP3 inflammasome: Senses danger signals → caspase-1 → IL-1beta, IL-18 → pyroptosis.
+- RIG-I/MDA5: Cytosolic RNA helicases; detect viral dsRNA → type I interferon.
+
+Complement System (3 pathways):
+  Classical: Antibody-antigen complex activates C1q.
+  Lectin: MBL binds mannose on pathogens.
+  Alternative: Spontaneous C3 hydrolysis on pathogen surfaces.
+  All converge: C3 convertase → C3b (opsonin) + C3a/C5a (anaphylatoxins) +
+  C5b-9 (Membrane Attack Complex — punches holes in bacteria).
+
+Inflammation — Molecular Mediators:
+- Histamine (mast cells)    : Vasodilation, increased permeability.
+- Prostaglandins (COX-1/2)  : Pain, fever, vasodilation. NSAIDs block COX.
+- TNF-alpha, IL-1, IL-6     : Pro-inflammatory cytokines; systemic fever (pyrogens).
+- IL-8 (CXCL8)              : Chemokine; recruits neutrophils to site of infection.
+- IL-10                     : Anti-inflammatory; limits immune response.
+
+3. ADAPTIVE IMMUNITY IN DEPTH
+-------------------------------
+Lymphocyte Development:
+  All from haematopoietic stem cells (bone marrow) →
+  B cells: mature in Bone marrow.
+  T cells: mature in Thymus (positive selection: MHC recognition;
+            negative selection: self-antigen deletion → prevents autoimmunity).
+
+T Cell Activation (requires 3 signals):
+  Signal 1: TCR binds MHC-peptide complex on APC.
+  Signal 2: Co-stimulation — CD28 on T cell binds B7 (CD80/86) on APC.
+            Without signal 2 → anergy (T cell inactivated).
+  Signal 3: Cytokine environment determines T cell differentiation.
+
+T Helper (CD4+) Subsets:
+- Th1  : IFN-gamma → macrophage activation; intracellular pathogens (TB, viruses).
+- Th2  : IL-4, IL-5, IL-13 → B cell activation; antibody class switching; parasites/allergy.
+- Th17 : IL-17 → neutrophil recruitment; extracellular bacteria/fungi.
+- Tregs: Foxp3+; IL-10, TGF-beta; suppress immune response; prevent autoimmunity.
+
+Antibodies (Immunoglobulins):
+  Structure: 2 heavy chains + 2 light chains; Fab (antigen binding) + Fc (effector).
+  Classes and functions:
+    IgM : Pentamer; first antibody in primary response; excellent complement activator.
+    IgG : Most abundant; crosses placenta (neonatal protection); opsonisation.
+    IgA : Dimer in secretions (gut, mucosa); prevents pathogen attachment.
+    IgE : Binds mast cells/basophils; allergic response; antiparasitic.
+    IgD : B cell surface receptor; function not fully understood.
+
+  Antibody effector functions:
+  - Neutralisation: Block pathogen binding to host cells.
+  - Opsonisation: Fc receptors on phagocytes recognise antibody-coated pathogens.
+  - Complement activation (IgM, IgG): Classical pathway → MAC formation.
+  - ADCC: NK cells kill antibody-coated target cells via Fc receptor.
+
+4. VACCINES
+------------
+Type                | Mechanism                         | Examples
+--------------------|-----------------------------------|---------------------------
+Live-attenuated     | Weakened pathogen; strong response | MMR, chickenpox, yellow fever
+Inactivated         | Killed pathogen; safe, less potent | Flu shot, polio (Salk), Hep A
+Subunit/protein     | Purified antigen; very safe        | Hep B, pertussis, HPV (VLP)
+Toxoid              | Inactivated toxin                  | Tetanus, diphtheria
+mRNA                | mRNA encodes antigen; novel; rapid | COVID-19 (Pfizer, Moderna)
+Viral vector        | Adenovirus delivers antigen gene  | COVID-19 (AstraZeneca, J&J)
+
+Herd immunity threshold: Percentage of population that must be immune to prevent
+outbreak spread. Depends on R0 (basic reproduction number).
+Measles R0 ~15 → need ~93% immunity. COVID-19 R0 ~2–3 → ~50–67%.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. IMMUNOLOGICAL TOLERANCE & AUTOIMMUNITY
+-------------------------------------------
+Central Tolerance:
+  T cells in thymus undergo negative selection against self-antigens presented
+  by medullary thymic epithelial cells (mTECs) — driven by AIRE (Autoimmune
+  Regulator) transcription factor. Failure → APECED syndrome.
+  B cells in bone marrow undergo receptor editing or clonal deletion.
+
+Peripheral Tolerance:
+  Anergy, regulatory T cell suppression, and activation-induced cell death (AICD)
+  prevent self-reactive lymphocytes that escape central tolerance from causing damage.
+
+Autoimmune Diseases — Mechanisms:
+  Molecular mimicry: Pathogen antigen resembles self-antigen → cross-reactive immune
+  response. Example: Strep pyogenes M protein mimics cardiac myosin → rheumatic fever.
+  Bystander activation: Tissue damage releases self-antigens → APC activation
+  without infection.
+  Epitope spreading: Initial response to one antigen → spreads to others.
+
+Selected Autoimmune Conditions:
+Condition               | Target                          | Mechanism
+------------------------|----------------------------------|----------------------
+Type 1 Diabetes         | Pancreatic beta cells           | CD8+ T cell destruction
+Rheumatoid Arthritis    | Synovial joints (collagen?)     | Th17, TNF-alpha
+Multiple Sclerosis      | Myelin basic protein            | Th1/Th17, CD8+ T cells
+Systemic Lupus (SLE)    | dsDNA, nucleosomes              | Immune complex deposition
+Graves' Disease         | TSH receptor                    | Stimulatory antibodies
+Myasthenia Gravis       | Nicotinic ACh receptor          | Blocking antibodies
+Celiac Disease          | Tissue transglutaminase + gliadin| CD4+ Th1; anti-tTG IgA
+
+6. TUMOUR IMMUNOLOGY & CANCER IMMUNOTHERAPY
+---------------------------------------------
+Cancer Immunoediting (3 phases):
+  Elimination → Equilibrium → Escape
+  Immune escape mechanisms: MHC I downregulation; PD-L1 upregulation;
+  immunosuppressive TME (regulatory T cells, MDSCs, TGF-beta, IL-10).
+
+Checkpoint Inhibitors:
+  CTLA-4 (on T cells) binds B7 → inhibits activation. Anti-CTLA-4: ipilimumab.
+  PD-1 (on T cells) binds PD-L1/PD-L2 → T cell exhaustion. Anti-PD-1: nivolumab,
+  pembrolizumab. Anti-PD-L1: atezolizumab.
+  Combination ipilimumab + nivolumab: significantly improves melanoma survival.
+
+CAR-T Cell Therapy:
+  Patient's T cells extracted → genetically engineered to express chimeric antigen
+  receptor (CAR) specific for tumour antigen (e.g., CD19 in B cell leukaemia) →
+  expanded → infused back.
+  Approved: tisagenlecleucel (ALL), axicabtagene ciloleucel (DLBCL).
+  Challenges: cytokine release syndrome (CRS), neurotoxicity, antigen escape.
+
+Bispecific Antibodies:
+  Blinatumomab (anti-CD19 x anti-CD3): Brings T cells into proximity with
+  B cell tumours → serial killing. Approved for ALL.
+
+Tumour Microenvironment (TME):
+  Immunosuppressive cells: Tumour-associated macrophages (TAMs, M2 phenotype),
+  MDSCs, Tregs. Immunostimulatory: CD8+ TILs (tumour-infiltrating lymphocytes),
+  NK cells, M1 macrophages. "Hot" (inflamed) vs "cold" (non-inflamed) tumours
+  determine checkpoint inhibitor responsiveness.
+
+[CLINICAL LINK] Sepsis is life-threatening immune dysregulation (hyperinflammation
+followed by immunosuppression). Pathogenesis: PAMPs/DAMPs → systemic cytokine storm
+→ endothelial damage → coagulopathy → multi-organ failure. Treatment: source control,
+antibiotics, IV fluids, vasopressors (norepinephrine). Surviving Sepsis guidelines.
+Mortality: ~15–30% for sepsis; ~40–60% for septic shock.
+
+================================================================================

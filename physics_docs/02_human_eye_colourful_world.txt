@@ -1,0 +1,174 @@
+CHAPTER 2: THE HUMAN EYE AND THE COLOURFUL WORLD
+==================================================
+
+THE HUMAN EYE
+The human eye is a natural optical instrument that enables us to see the world around us.
+
+Structure of the Human Eye:
+- Cornea: The transparent front part of the eye through which light enters.
+- Iris: The colored part of the eye that controls the size of the pupil.
+- Pupil: A small opening in the iris that controls the amount of light entering the eye.
+- Crystalline Lens: A convex lens made of a transparent, flexible material that focuses light on the retina.
+- Retina: The light-sensitive inner surface of the eye where the image is formed.
+- Optic Nerve: Carries visual signals from the retina to the brain.
+- Ciliary Muscles: Muscles that change the curvature (and hence focal length) of the crystalline lens.
+
+How the Eye Works:
+1. Light enters through the cornea.
+2. The iris controls the amount of light by adjusting the pupil size.
+3. The lens focuses the light onto the retina.
+4. The retina converts light into electrical signals.
+5. The optic nerve carries these signals to the brain.
+
+POWER OF ACCOMMODATION
+The ability of the eye to adjust its focal length to see objects at different distances clearly is called the power of accommodation.
+
+- Near Point (Least Distance of Distinct Vision): The minimum distance at which the eye can see an object clearly. For a normal eye, this is 25 cm.
+- Far Point: The maximum distance up to which the eye can see objects clearly. For a normal eye, this is infinity.
+
+When the eye looks at a distant object:
+- Ciliary muscles relax
+- Lens becomes thin (less curved)
+- Focal length increases
+
+When the eye looks at a near object:
+- Ciliary muscles contract
+- Lens becomes thick (more curved)
+- Focal length decreases
+
+DEFECTS OF VISION AND THEIR CORRECTION
+
+1. MYOPIA (Near-Sightedness / Short-Sightedness)
+A person with myopia can see nearby objects clearly but cannot see distant objects clearly.
+
+Cause:
+- The eyeball is elongated (increased focal length)
+- The lens is too curved (decreased focal length)
+- Image of distant object forms in front of the retina
+
+Correction: A concave (diverging) lens of appropriate power is used.
+The lens diverges the rays before they enter the eye, shifting the image back onto the retina.
+
+2. HYPERMETROPIA (Far-Sightedness / Long-Sightedness)
+A person with hypermetropia can see distant objects clearly but cannot see nearby objects clearly.
+
+Cause:
+- The eyeball is too short
+- The focal length of lens is too large
+- Image of near object would form behind the retina
+
+Correction: A convex (converging) lens of appropriate power is used.
+The lens converges the rays before they enter the eye, shifting the image forward onto the retina.
+
+3. PRESBYOPIA
+With age, the ciliary muscles weaken and the lens loses its flexibility. As a result, the near point gradually recedes.
+
+Cause: Weakening of ciliary muscles and loss of lens elasticity due to aging.
+
+Correction: Bifocal lenses (concave on top for distance vision, convex on bottom for near vision).
+
+4. ASTIGMATISM
+The cornea is not uniformly curved, resulting in blurred vision.
+Correction: Cylindrical lenses.
+
+COMPARISON OF DEFECTS
+Defect | Can see clearly | Cannot see clearly | Lens used
+Myopia | Near objects | Far objects | Concave (-)
+Hypermetropia | Far objects | Near objects | Convex (+)
+Presbyopia | Far objects | Near objects | Bifocal
+
+REFRACTION THROUGH A PRISM
+A prism is a transparent medium bounded by two plane surfaces inclined to each other at an angle.
+
+- When white light enters a prism, it bends toward the base.
+- The emergent ray is deviated from the incident ray by an angle called the angle of deviation.
+- Different colors are deviated by different amounts (dispersion).
+
+DISPERSION OF LIGHT
+Dispersion is the phenomenon of splitting of white light into its constituent colors when passed through a prism.
+
+The sequence of colors in the visible spectrum (from most bent to least bent):
+VIBGYOR: Violet, Indigo, Blue, Green, Yellow, Orange, Red
+
+- Violet light: highest frequency, shortest wavelength, maximum deviation
+- Red light: lowest frequency, longest wavelength, minimum deviation
+
+The refractive index is highest for violet and lowest for red.
+
+THE RAINBOW
+A rainbow is a natural spectrum of sunlight in the sky formed due to dispersion of sunlight by tiny water droplets.
+
+How a Rainbow Forms:
+1. Sunlight enters a water droplet and refracts.
+2. It undergoes total internal reflection at the back of the droplet.
+3. It refracts again as it exits the droplet.
+4. This separates white light into its spectrum.
+
+Conditions for a rainbow:
+- It is seen opposite to the sun (observer's back to the sun).
+- Observed in the morning (in the west) or in the evening (in the east).
+- Red color is on the outside, violet on the inside of the primary rainbow.
+
+ATMOSPHERIC REFRACTION
+Refraction of light by the earth's atmosphere is called atmospheric refraction.
+
+Effects of Atmospheric Refraction:
+1. Twinkling of Stars: Stars twinkle because the continuously changing atmosphere refracts starlight differently at different times. Planets don't twinkle because they appear as extended sources.
+
+2. Apparent position of stars: Stars appear slightly higher than their actual position due to atmospheric refraction.
+
+3. Advance sunrise and delayed sunset: The sun is visible about 2 minutes before actual sunrise and 2 minutes after actual sunset because atmospheric refraction bends the sunlight toward us when the sun is slightly below the horizon.
+
+SCATTERING OF LIGHT
+Scattering occurs when light interacts with particles and is redirected in different directions.
+
+Tyndall Effect:
+When a beam of light passes through a colloidal solution or a medium containing fine particles, the path of light becomes visible due to scattering. This is called the Tyndall Effect.
+Examples: Light beam through smoke/dust, beam of headlights in foggy conditions, blue sky.
+
+Rayleigh Scattering:
+Fine particles scatter shorter wavelengths (blue) more than longer wavelengths (red).
+Amount of scattering ∝ 1/λ⁴ (inversely proportional to the fourth power of wavelength)
+
+WHY IS THE SKY BLUE?
+- Sunlight enters the atmosphere and scatters off gas molecules.
+- Blue light (shorter wavelength) is scattered much more than red light.
+- The scattered blue light reaches our eyes from all directions, making the sky appear blue.
+
+WHY DOES THE SUN APPEAR RED AT SUNRISE AND SUNSET?
+- At sunrise and sunset, sunlight travels a longer path through the atmosphere.
+- Most of the blue and shorter wavelengths are scattered away.
+- Only the longer wavelengths (red, orange) reach our eyes.
+- Hence the sun appears red or orange.
+
+WHY ARE DANGER SIGNALS RED?
+- Red light has the longest wavelength among visible colors.
+- It is scattered the least by fog, rain, or dust particles.
+- Therefore, red light can travel the farthest and is visible from the greatest distance.
+- This makes red ideal for danger signals, traffic lights, and brake lights.
+
+IMPORTANT QUESTIONS AND ANSWERS
+
+Q: What is the power of accommodation of the human eye?
+A: The power of accommodation is the ability of the eye lens to adjust its focal length to see objects at different distances clearly. The ciliary muscles control this by changing the curvature of the lens.
+
+Q: A person needs a lens of power -5.5 D. What is the nature of the lens and the defect?
+A: Negative power means a concave lens. The person has myopia (near-sightedness).
+Focal length = 1/P = 1/(-5.5) = -0.18 m = -18 cm
+
+Q: Why can't we see stars during the day?
+A: During the day, the sky is so bright due to scattering of sunlight that the faint light from stars cannot be seen. In a deep well or mine, where the sky appears dark, stars may be visible during the day.
+
+Q: Why do planets not twinkle?
+A: Planets are much closer to Earth than stars and appear as extended sources (small discs) rather than point sources. The variations in light from different points of the disc average out, so planets do not appear to twinkle.
+
+KEY FACTS TO REMEMBER
+- Near point of normal eye = 25 cm
+- Far point of normal eye = infinity
+- Myopia corrected by concave lens (negative power)
+- Hypermetropia corrected by convex lens (positive power)
+- VIBGYOR: order of colors in spectrum
+- Blue sky: due to Rayleigh scattering
+- Red sunrise/sunset: due to scattering of shorter wavelengths
+- Stars twinkle due to atmospheric refraction
+- Rainbow: dispersion + total internal reflection in water droplets

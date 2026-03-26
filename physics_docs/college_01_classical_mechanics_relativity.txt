@@ -1,0 +1,136 @@
+COLLEGE PHYSICS - CLASSICAL MECHANICS AND SPECIAL RELATIVITY
+=============================================================
+
+CHAPTER: ADVANCED CLASSICAL MECHANICS
+
+LAGRANGIAN MECHANICS:
+The Lagrangian: L = T - V (T = kinetic energy, V = potential energy)
+Euler-Lagrange equations: d/dt(∂L/∂q̇ᵢ) - ∂L/∂qᵢ = 0
+qᵢ = generalized coordinates, q̇ᵢ = generalized velocities
+Generalized momentum: pᵢ = ∂L/∂q̇ᵢ
+Generalized force: Qᵢ = ∂L/∂qᵢ
+Advantage: works in any coordinate system; constraints easily handled.
+
+HAMILTONIAN MECHANICS:
+Hamiltonian: H = Σpᵢq̇ᵢ - L = T + V (total energy, in terms of p and q)
+Hamilton's equations: q̇ᵢ = ∂H/∂pᵢ, ṗᵢ = -∂H/∂qᵢ
+Poisson bracket: {A,B} = Σ(∂A/∂qᵢ·∂B/∂pᵢ - ∂A/∂pᵢ·∂B/∂qᵢ)
+Conservation: if ∂H/∂t = 0, then H (energy) is conserved.
+
+CENTRAL FORCE PROBLEM:
+Force directed toward/away from fixed point.
+Angular momentum L = mr²θ̇ = constant (conserved)
+Effective potential: U_eff = V(r) + L²/(2mr²)
+Orbit equation: d²u/dθ² + u = -m/(L²u²) F(1/u) where u = 1/r
+
+KEPLERS LAWS FROM NEWTON'S LAW:
+For F = -GMm/r²:
+Orbit: r = L²/(mk) × 1/(1 + e cos θ) [conic section]
+k = GMm, e = eccentricity.
+e = 0: circle, 0 < e < 1: ellipse, e = 1: parabola, e > 1: hyperbola.
+T² = 4π²a³/(GM) naturally derived.
+
+RIGID BODY DYNAMICS:
+Inertia tensor (Iᵢⱼ) generalizes moment of inertia.
+Euler's equations: I₁ω̇₁ - (I₂-I₃)ω₂ω₃ = τ₁ [and cyclic]
+Principal axes: axes along which inertia tensor is diagonal.
+Angular momentum: L⃗ = I·ω⃗ (matrix multiplication)
+L⃗ not necessarily parallel to ω⃗ unless ω along principal axis.
+
+SMALL OSCILLATIONS:
+Near stable equilibrium, V(q) ≈ V(q₀) + ½k(q-q₀)²
+Normal modes: independent oscillations of coupled system.
+Normal mode frequencies from secular equation: det(K - ω²M) = 0
+
+CHAOS AND NONLINEAR DYNAMICS:
+- Sensitive dependence on initial conditions.
+- Lyapunov exponent measures rate of divergence.
+- Strange attractors in phase space.
+- Period doubling route to chaos.
+- Examples: double pendulum, three-body problem.
+
+---
+
+CHAPTER: SPECIAL THEORY OF RELATIVITY
+
+POSTULATES OF SPECIAL RELATIVITY (Einstein, 1905):
+1. Laws of physics are the same in all inertial frames of reference.
+2. Speed of light in vacuum is c = 3 × 10⁸ m/s, the same for all observers regardless of motion of source or observer.
+
+CONSEQUENCES:
+
+Lorentz Factor: γ = 1/√(1 - v²/c²) ≥ 1
+
+TIME DILATION:
+Moving clocks run slow.
+Δt = γΔt₀ (Δt₀ = proper time in rest frame)
+"Twin paradox": traveling twin ages less than stationary twin.
+
+LENGTH CONTRACTION:
+Moving objects appear shorter in direction of motion.
+L = L₀/γ (L₀ = proper length in rest frame)
+Transverse dimensions unchanged.
+
+RELATIVITY OF SIMULTANEITY:
+Events simultaneous in one frame are not simultaneous in another moving frame.
+
+LORENTZ TRANSFORMATION:
+x' = γ(x - vt)
+t' = γ(t - vx/c²)
+y' = y, z' = z
+
+RELATIVISTIC VELOCITY ADDITION:
+u' = (u - v)/(1 - uv/c²)
+(Never exceeds c for u, v < c)
+
+RELATIVISTIC MOMENTUM:
+p = γmv = mv/√(1-v²/c²)
+For v << c: p ≈ mv (classical result)
+
+RELATIVISTIC ENERGY:
+Total energy: E = γmc²
+Rest energy: E₀ = mc² (most famous equation in physics!)
+Kinetic energy: K = (γ-1)mc²
+Energy-momentum relation: E² = (pc)² + (mc²)²
+For massless particles (photon): E = pc, v = c.
+
+MASS-ENERGY EQUIVALENCE:
+E = mc² means mass and energy are interchangeable.
+Nuclear reactions release energy due to mass defect.
+1 u = 931.5 MeV/c²
+
+DOPPLER EFFECT (RELATIVISTIC):
+f_observed = f_source × √((1-β)/(1+β)) [for recession]
+f_observed = f_source × √((1+β)/(1+β)) [for approach]
+β = v/c
+Redshift: z = Δλ/λ = (f_source/f_observed) - 1
+
+SPACETIME AND MINKOWSKI SPACE:
+Spacetime interval: s² = c²t² - x² - y² - z² (invariant)
+Four-vector: (ct, x, y, z)
+Timelike interval: s² > 0 (causally connected events)
+Spacelike interval: s² < 0 (causally unconnected events)
+Lightlike (null) interval: s² = 0 (connected by light signal)
+
+GENERAL RELATIVITY (brief overview):
+Einstein's 1915 theory of gravity.
+- Gravity is curvature of spacetime caused by mass-energy.
+- Test particle follows geodesic (shortest path in curved spacetime).
+- Einstein field equations: G_μν = 8πG/c⁴ × T_μν
+Predictions:
+- Gravitational time dilation: clocks run slower in stronger gravity.
+- Light bending near massive objects. (Confirmed 1919)
+- Gravitational waves. (Confirmed by LIGO 2015)
+- Black holes: regions where escape velocity > c.
+- Expanding universe.
+- GPS satellites must correct for both special and general relativistic time dilation.
+
+IMPORTANT FORMULAS:
+- γ = 1/√(1-v²/c²)
+- t' = γt₀ (time dilation)
+- L = L₀/γ (length contraction)
+- E = γmc² = √((pc)² + (mc²)²)
+- E₀ = mc²
+- K = (γ-1)mc²
+- p = γmv
+- u' = (u-v)/(1-uv/c²) (velocity addition)

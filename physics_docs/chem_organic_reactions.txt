@@ -1,0 +1,280 @@
+ORGANIC CHEMISTRY - COMPLETE REACTION AND MECHANISM GUIDE
+===========================================================
+
+CHAPTER 1: HYDROCARBONS - COMPLETE GUIDE
+
+ALKANES (CₙH₂ₙ₊₂):
+Nomenclature: methane, ethane, propane, butane, pentane, hexane, heptane, octane, nonane, decane.
+Physical properties: non-polar, low boiling points, increase with chain length. Branching lowers bp.
+Chemical properties: fairly unreactive (C-H and C-C bonds strong).
+
+Reactions of Alkanes:
+1. Combustion: CH₄ + 2O₂ → CO₂ + 2H₂O + heat (complete)
+   Incomplete: 2CH₄ + 3O₂ → 2CO + 4H₂O
+2. Halogenation (free radical substitution):
+   CH₄ + Cl₂ → CH₃Cl + HCl (UV light, room temperature)
+   Mechanism:
+   - Initiation: Cl₂ → 2Cl• (UV light)
+   - Propagation: Cl• + CH₄ → •CH₃ + HCl
+                  •CH₃ + Cl₂ → CH₃Cl + Cl•
+   - Termination: 2Cl• → Cl₂, •CH₃ + Cl• → CH₃Cl, 2•CH₃ → C₂H₆
+3. Pyrolysis (cracking): C₁₆H₃₄ → C₈H₁₈ + C₈H₁₆ (high temperature, no air)
+4. Isomerization: straight chain → branched chain (AlCl₃ catalyst)
+5. Aromatization: C₆H₁₄ → C₆H₆ + 4H₂ (Pt catalyst, high temperature)
+
+ALKENES (CₙH₂ₙ):
+Contain C=C double bond (1 σ + 1 π).
+Preparation:
+1. Dehydration of alcohols: C₂H₅OH → C₂H₄ + H₂O (conc H₂SO₄, 170°C)
+2. Dehydrohalogenation: CH₃CH₂Br + KOH(alc) → CH₂=CH₂ + KBr + H₂O
+3. Reduction of alkynes: HC≡CH + H₂ → H₂C=CH₂ (Lindlar's catalyst, syn addition)
+
+Reactions of Alkenes:
+1. Electrophilic addition (Markovnikov's rule):
+   CH₃-CH=CH₂ + HBr → CH₃-CHBr-CH₃ (major, 2° carbocation more stable)
+   CH₃-CH=CH₂ + HBr → CH₃-CH₂-CH₂Br (minor, anti-Markovnikov with peroxides)
+2. Halogenation: CH₂=CH₂ + Br₂ → CH₂Br-CH₂Br (anti addition, decolorizes Br₂ water — TEST for alkenes)
+3. Hydrogenation: CH₂=CH₂ + H₂ → CH₃-CH₃ (Ni/Pt/Pd catalyst, syn addition)
+4. Hydration: CH₂=CH₂ + H₂O → C₂H₅OH (H₃PO₄ catalyst, Markovnikov)
+5. Ozonolysis: R-CH=CH-R' + O₃ → RCHO + R'CHO (gives aldehydes/ketones)
+6. Epoxidation: alkene + mCPBA → epoxide (peracid, stereospecific syn addition)
+7. Hydroxylation: alkene + OsO₄ → diol (syn addition)
+   alkene + KMnO₄(cold, dilute) → diol (syn), decolorizes pink KMnO₄ — TEST
+   alkene + KMnO₄(hot, conc) → carboxylic acids/CO₂ (cleavage)
+8. Polymerization: nCH₂=CH₂ → (-CH₂-CH₂-)n (polyethylene)
+
+ALKYNES (CₙH₂ₙ₋₂):
+Contain C≡C triple bond (1 σ + 2 π).
+Acidic: terminal alkynes, HC≡C-H, pKa ~25 (can be deprotonated by strong bases like NaNH₂).
+Preparation: CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂ (calcium carbide + water)
+
+Reactions:
+1. Addition reactions similar to alkenes (can add 2 equivalents).
+2. HC≡CH + HBr → CH₂=CHBr (vinyl bromide), then + HBr → CH₃CHBr₂
+3. Hydration: HC≡CH + H₂O → CH₃CHO (acetaldehyde) [HgSO₄/H₂SO₄]
+4. Lindlar reduction: HC≡CH + H₂ → cis-alkene (Lindlar's catalyst = Pd/CaCO₃/Pb(OAc)₂)
+5. Birch reduction: alkyne + Na/NH₃(l) → trans-alkene
+
+BENZENE AND ARENES:
+Benzene (C₆H₆): planar, 120° bond angles, all C-C bonds equal (1.40 Å, between single 1.54 and double 1.34).
+6 π electrons delocalized — aromatic.
+Resonance energy: 150 kJ/mol (extra stability of benzene vs cyclohexatriene).
+Hückel's rule: (4n+2)π electrons → aromatic.
+
+Electrophilic Aromatic Substitution (EAS):
+Mechanism: electrophile attacks π system → arenium ion (σ complex) → proton loss → product.
+
+NITRATION: C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O (conc H₂SO₄, 55°C)
+Electrophile: NO₂⁺ (nitronium ion) formed by: HNO₃ + H₂SO₄ → NO₂⁺ + HSO₄⁻ + H₂O
+
+SULFONATION: C₆H₆ + H₂SO₄(fuming) → C₆H₅SO₃H + H₂O (reversible)
+Electrophile: SO₃
+
+HALOGENATION: C₆H₆ + Cl₂ → C₆H₅Cl + HCl (FeCl₃ or AlCl₃ catalyst, dark)
+Electrophile: Cl⁺ (activated by Lewis acid)
+
+FRIEDEL-CRAFTS ALKYLATION: C₆H₆ + RCl → C₆H₅R + HCl (AlCl₃)
+Problems: polyalkylation, rearrangement.
+
+FRIEDEL-CRAFTS ACYLATION: C₆H₆ + RCOCl → C₆H₅COR + HCl (AlCl₃)
+No rearrangement. Acyl group deactivates ring (stops polyacylation). Preferred over alkylation.
+
+---
+
+CHAPTER 2: ALCOHOLS, PHENOLS AND ETHERS
+
+ALCOHOLS (R-OH):
+Classification: primary (1°), secondary (2°), tertiary (3°).
+Physical properties: higher bp than alkanes (H-bonding), miscible with water (small alcohols).
+
+Preparation:
+1. Hydration of alkenes (Markovnikov).
+2. Reduction: RCHO → RCH₂OH (NaBH₄ or LiAlH₄)
+3. Grignard reaction: RMgX + R'CHO → R'CH(OH)R (secondary alcohol)
+4. Fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (yeast, 37°C)
+
+Reactions:
+1. With Na: 2ROH + 2Na → 2RONa + H₂↑ (less vigorous than water)
+2. With PCl₅: ROH + PCl₅ → RCl + POCl₃ + HCl
+3. With SOCl₂: ROH + SOCl₂ → RCl + SO₂ + HCl (best method, no rearrangement)
+4. Esterification: RCOOH + R'OH ⇌ RCOOR' + H₂O (H₂SO₄ catalyst, reversible)
+5. Dehydration: 
+   Intramolecular (>170°C, excess acid): C₂H₅OH → CH₂=CH₂ + H₂O (alkene)
+   Intermolecular (140°C): 2C₂H₅OH → C₂H₅-O-C₂H₅ + H₂O (ether)
+6. Oxidation:
+   1° alcohol: [O] → aldehyde [O] → carboxylic acid (KMnO₄, K₂Cr₂O₇/H₂SO₄)
+   2° alcohol: [O] → ketone (cannot be further oxidized easily)
+   3° alcohol: resistant to oxidation (no α-H available)
+   Lucas test: ROH + ZnCl₂/HCl → RCl (immediate cloudiness: 3°; slow: 2°; no reaction: 1°)
+7. Iodoform test: CH₃CH(OH)R + I₂/NaOH → CHI₃↓ (yellow) + RCOONa
+   Positive for ethanol, secondary alcohols with methyl group adjacent.
+
+PHENOLS (Ar-OH):
+More acidic than alcohols (pKa ~10 vs ~16-17) due to resonance stabilization of phenoxide.
+Phenol + FeCl₃ → violet/purple color (TEST for phenol).
+Acidic: reacts with NaOH: C₆H₅OH + NaOH → C₆H₅ONa + H₂O (phenol doesn't react with Na₂CO₃).
+Electrophilic substitution: OH is powerful ortho-para director.
+Kolbe reaction: C₆H₅ONa + CO₂ (high P) → C₆H₄(OH)COONa (sodium salicylate) → aspirin.
+Reimer-Tiemann reaction: C₆H₅OH + CHCl₃ + NaOH → o-hydroxybenzaldehyde (salicylaldehyde).
+
+ETHERS (R-O-R'):
+Preparation: Williamson synthesis: RONa + R'X → ROR' + NaX (best method, SN2)
+Low reactivity, used as solvents (diethyl ether, THF, dioxane).
+Cleavage by HI: R-O-R' + HI → RI + R'OH (excess HI → 2RI + H₂O).
+Dry ether: anhydrous ether, used in Grignard reactions.
+
+---
+
+CHAPTER 3: ALDEHYDES, KETONES AND CARBOXYLIC ACIDS
+
+ALDEHYDES AND KETONES:
+Carbonyl group (C=O) — sp2 hybridized carbon, planar, polar.
+Aldehydes: RCHO. Ketones: RCOR'.
+Aldehydes more reactive than ketones (less steric hindrance, electronic effects).
+
+Preparation of Aldehydes:
+1. Oxidation of 1° alcohol: RCH₂OH → RCHO (PCC, or Swern oxidation — avoid over-oxidation)
+2. Rosenmund reduction: RCOCl + H₂ → RCHO + HCl (Pd/BaSO₄)
+3. Stephen's reduction: RCN + SnCl₂/HCl → RCHO + NH₃ (aldehyde from nitrile)
+4. Gattermann-Koch: benzene + CO/HCl → benzaldehyde (AlCl₃/CuCl catalyst)
+
+Nucleophilic Addition to Carbonyl:
+Mechanism: nucleophile attacks electrophilic C → tetrahedral intermediate → protonation.
+With HCN: RCHO + HCN → RCH(OH)CN (cyanohydrin) — useful for chain extension.
+With NaHSO₃: RCHO + NaHSO₃ → RCH(OH)SO₃Na (bisulphite addition compound) — purifies aldehydes.
+With NH₃ derivatives: RCHO + H₂N-X → RCH=N-X + H₂O
+   Hydroxylamine (H₂NOH) → oxime (RCH=NOH)
+   Phenylhydrazine → phenylhydrazone
+   2,4-DNP → orange/yellow precipitate (TEST for C=O)
+With Grignard: RCHO + R'MgX → after hydrolysis: secondary alcohol.
+Acetaldehyde + CH₃MgI → tert-butanol? No, gives sec-butanol.
+
+Distinguishing Tests:
+Tollens' (silver mirror test): RCHO + Ag(NH₃)₂⁺ → RCOO⁻ + Ag↓ (mirror) — only aldehydes.
+Fehling's: only aliphatic aldehydes give red Cu₂O precipitate. Aromatic aldehydes don't.
+Schiff's reagent: RCHO turns colorless → pink/magenta (aldehydes only).
+Iodoform: CH₃CHO and methyl ketones give CHI₃↓ (yellow).
+
+Aldol Condensation:
+2CH₃CHO → CH₃CH(OH)CH₂CHO (3-hydroxybutanal, aldol product) [dilute NaOH]
+→ CH₃CH=CHCHO + H₂O (crotonaldehyde, dehydration on heating) [Aldol condensation]
+Only possible with aldehydes/ketones having α-H.
+
+Cannizzaro Reaction (aldehydes without α-H):
+2HCHO + NaOH → HCOONa + CH₃OH (formaldehyde → formate + methanol)
+2C₆H₅CHO + NaOH → C₆H₅COONa + C₆H₅CH₂OH (benzaldehyde → benzoate + benzyl alcohol)
+
+CARBOXYLIC ACIDS (RCOOH):
+Physical: higher bp due to dimerization (two H-bonds). Vinegar = 5% acetic acid.
+Acidic: Ka values. Factors increasing acidity: EWG, induction, resonance stabilization of anion.
+Acidity order: HCOOH > CH₃COOH > C₂H₅COOH > C₃H₇COOH (inductive effect).
+CCl₃COOH > CHCl₂COOH > CH₂ClCOOH > CH₃COOH (Cl withdraws electrons).
+
+Preparation:
+1. Oxidation of 1° alcohol or aldehyde (KMnO₄, K₂Cr₂O₇/H₂SO₄).
+2. Carbonation of Grignard: RMgX + CO₂ → RCOOMgX → RCOOH.
+3. Hydrolysis of nitrile: RCN + H₂O → RCOOH + NH₃ (acid/base).
+4. Hydrolysis of ester: RCOOR' + NaOH → RCOONa + R'OH (saponification).
+
+Reactions:
+1. Salt formation: RCOOH + NaOH → RCOONa + H₂O.
+2. Esterification: RCOOH + R'OH ⇌ RCOOR' + H₂O (H₂SO₄, reversible).
+3. Acyl chloride: RCOOH + PCl₅ → RCOCl + POCl₃ + HCl (most reactive acid derivative).
+4. Anhydride: 2RCOOH → (RCO)₂O + H₂O (P₂O₅ or dehydration).
+5. Decarboxylation: RCOONa + NaOH → RH + Na₂CO₃ (soda lime, heat) — removes COOH.
+6. Hell-Volhard-Zelinsky: RCOOH + Cl₂ → RCHClCOOH (α-chloro acid, red P catalyst).
+
+---
+
+CHAPTER 4: AMINES AND DIAZONIUM COMPOUNDS
+
+AMINES (R-NH₂, R₂NH, R₃N):
+Classification: primary (1°), secondary (2°), tertiary (3°), quaternary ammonium salt.
+Basic nature: lone pair on N available for donation. Basicity order: 2° > 1° > 3° > NH₃ (in aqueous solution, due to solvation).
+Aromatic amines (aniline) are much less basic than aliphatic (lone pair delocalized into ring).
+
+Preparation:
+1. Reduction of nitro compound: ArNO₂ + 6[H] → ArNH₂ + 2H₂O (Fe/HCl, or H₂/Pt)
+2. Gabriel synthesis: primary amines only. Phthalimide + K → potassium phthalimide + RX → N-alkyl phthalimide → hydrolysis → RNH₂.
+3. Hoffmann bromamide degradation: RCONH₂ + Br₂ + 4NaOH → RNH₂ + Na₂CO₃ + 2NaBr + 2H₂O (1° amine, chain shortening by 1C).
+
+Reactions:
+With HCl: RNH₂ + HCl → RNH₃⁺Cl⁻ (salt formation).
+With acyl chloride: RNH₂ + R'COCl → RNHCOR' + HCl (amide formation, acylation).
+With HNO₂ (NaNO₂/HCl at 0-5°C):
+1° aliphatic: RNH₂ + HNO₂ → ROH + N₂ + H₂O (unstable diazonium)
+1° aromatic: ArNH₂ + HNO₂ → ArN₂⁺Cl⁻ (stable diazonium salt at 0-5°C — important!)
+2° amines: R₂NH + HNO₂ → R₂N-NO (N-nitrosamine, yellow oil)
+3° amines: R₃N + HNO₂ → no reaction (salts in acidic solution)
+
+DIAZONIUM SALTS (ArN₂⁺):
+Prepared at 0-5°C (unstable above this temperature).
+Extremely useful in synthesis — nitrogen can be replaced by many groups.
+
+Reactions of Diazonium Salts:
+Replacement reactions:
+ArN₂⁺ + CuCl → ArCl + N₂ (Sandmeyer reaction)
+ArN₂⁺ + CuBr → ArBr + N₂ (Sandmeyer reaction)
+ArN₂⁺ + CuCN → ArCN + N₂ (Sandmeyer reaction)
+ArN₂⁺ + HBF₄ → ArF + N₂ (Balz-Schiemann reaction)
+ArN₂⁺ + H₃PO₂ + H₂O → ArH + N₂ (Deamination — replaces NH₂ with H)
+ArN₂⁺ + HO⁻/H₂O → ArOH + N₂
+
+Coupling reactions (azo dyes):
+ArN₂⁺ + C₆H₅OH → Ar-N=N-C₆H₄-OH (para-azocompound, orange-red color)
+ArN₂⁺ + ArNH₂ → Ar-N=N-Ar'-NH₂ (coupling with amines)
+Products are azo compounds — used as dyes.
+
+---
+
+CHAPTER 5: POLYMERS
+
+TYPES OF POLYMERIZATION:
+
+Addition (Chain) Polymerization:
+Free radical initiation: R• + CH₂=CH₂ → R-CH₂-CH₂• (and so on)
+No byproduct. Monomers have double bonds.
+Polyethylene (LDPE, HDPE), PVC, Teflon (PTFE), polypropylene, polystyrene, Perspex (PMMA).
+
+Condensation (Step) Polymerization:
+Monomers with two functional groups. Small molecule lost (H₂O, HCl, etc.).
+Nylon 6,6: H₂N-(CH₂)₆-NH₂ + HOOC-(CH₂)₄-COOH → [-NH-(CH₂)₆-NH-CO-(CH₂)₄-CO-]n + nH₂O
+Nylon 6: H₂N-(CH₂)₅-COOH (caprolactam ring opening) → [-NH-(CH₂)₅-CO-]n
+Polyester (Dacron, Terylene): HOCH₂CH₂OH + HOOC-C₆H₄-COOH → polyester + H₂O
+Bakelite: phenol + formaldehyde → thermosetting polymer.
+Melamine-formaldehyde: used in utensils.
+
+RUBBER:
+Natural rubber: cis-1,4-polyisoprene. Elastic but becomes sticky in heat, brittle in cold.
+Vulcanization: rubber + S (140°C) → cross-linked rubber (harder, stronger, more elastic).
+Synthetic rubbers:
+Neoprene (polychloroprene): resistant to oils, flames.
+Buna-S (SBR): styrene + butadiene copolymer. Car tires.
+Buna-N (NBR): butadiene + acrylonitrile. Oil resistant.
+
+CLASSIFICATION BY THERMAL BEHAVIOR:
+Thermoplastics: soften on heating, remold (LDPE, PVC, nylon). Linear/slightly branched.
+Thermosetting: permanent shape after molding (bakelite, melamine). Cross-linked.
+
+BIODEGRADABLE POLYMERS: PHBV (polyhydroxybutyrate-co-hydroxyvalerate), PLA (polylactic acid), nylon-2-nylon-6.
+
+---
+
+IMPORTANT NAMED REACTIONS SUMMARY:
+
+Aldol condensation: aldehyde/ketone + dilute NaOH → β-hydroxy carbonyl compound.
+Cannizzaro reaction: aldehyde without α-H + conc NaOH → acid + alcohol.
+Clemmensen reduction: C=O → CH₂ (Zn-Hg/HCl, acidic conditions).
+Wolf-Kishner reduction: C=O → CH₂ (H₂NNH₂/KOH, basic conditions).
+Rosenmund reduction: RCOCl + H₂ → RCHO (Pd/BaSO₄).
+Gabriel synthesis: primary amine from alkyl halide via phthalimide.
+Hoffmann bromamide: primary amine with one less C from amide + Br₂/NaOH.
+Sandmeyer reaction: ArN₂⁺ + CuX → ArX.
+Kolbe reaction: phenol + CO₂/NaOH → salicylate.
+Reimer-Tiemann: phenol + CHCl₃/NaOH → salicylaldehyde.
+Fries rearrangement: phenyl ester + AlCl₃ → hydroxyaryl ketone.
+Beckmann rearrangement: oxime + H₂SO₄ → amide (ring expansion for cyclic ketones).
+Baeyer-Villiger: ketone + peracid → ester (oxygen insertion).
+Diels-Alder: diene + dienophile → cyclohexene ([4+2] cycloaddition).
+Birch reduction: aromatic + Na/NH₃(l)/ROH → 1,4-cyclohexadiene.
+Schmidt reaction: ketone + HN₃ → amide (N insertion).

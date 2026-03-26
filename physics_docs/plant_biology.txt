@@ -1,0 +1,189 @@
+================================================================================
+                          PLANT BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PLANT CLASSIFICATION & STRUCTURE
+-------------------------------------
+Plants are multicellular, photosynthetic eukaryotes. Kingdom Plantae.
+~400,000 known species.
+
+Major Plant Groups:
+- Non-vascular (Bryophytes) : Mosses, liverworts, hornworts. No true roots/stems.
+                               Depend on water for reproduction.
+- Vascular, seedless        : Ferns, club mosses, horsetails. Have xylem/phloem.
+- Gymnosperms               : Seed plants; naked seeds (no fruit). Conifers, cycads,
+                               ginkgo. Pollinated by wind.
+- Angiosperms               : Flowering plants; seeds enclosed in fruit. Most
+                               diverse plant group (~300,000 species).
+  - Monocots                : 1 seed leaf; parallel leaf veins; fibrous roots.
+                               Examples: grasses, lilies, corn, wheat.
+  - Dicots (Eudicots)       : 2 seed leaves; net-like veins; taproot. Examples:
+                               roses, oaks, beans, tomatoes.
+
+1.1 PLANT ORGANS
+-----------------
+Roots:
+- Anchor plant; absorb water and minerals (via root hairs); store nutrients.
+- Taproot (dicots): single main root.
+- Fibrous roots (monocots): many small roots.
+
+Stems:
+- Support leaves and flowers; transport water/nutrients.
+- Nodes: points where leaves attach. Internodes: stem sections between nodes.
+- Modified stems: rhizomes (ginger), stolons (strawberry), tubers (potato), bulbs (onion).
+
+Leaves:
+- Primary site of photosynthesis.
+- Blade (lamina): flat surface for light capture.
+- Petiole: stalk attaching leaf to stem.
+- Stomata: pores in epidermis for gas exchange; flanked by guard cells.
+- Mesophyll: photosynthetic cells inside leaf.
+  Palisade mesophyll (upper): tightly packed; maximum light absorption.
+  Spongy mesophyll (lower): loosely packed; gas exchange spaces.
+
+Flowers: Reproductive organs.
+- Sepals (calyx)    : Protect flower bud.
+- Petals (corolla)  : Attract pollinators.
+- Stamens           : Male organs (anther + filament); produce pollen.
+- Carpels/Pistil    : Female organs (stigma + style + ovary); contains ovules.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. PLANT TISSUE SYSTEMS
+------------------------
+Three tissue systems run throughout roots, stems, and leaves:
+
+Dermal Tissue:
+- Epidermis        : Outer protective layer; often covered by waxy cuticle.
+- Guard cells      : Control stomatal opening/closing (K+ flux regulates turgor).
+- Root hairs       : Increase surface area for absorption.
+- Trichomes        : Epidermal hairs; reduce water loss; deter herbivores.
+
+Vascular Tissue:
+- Xylem            : Transports water and minerals UPWARD (unidirectional).
+                     Cells: tracheids and vessel elements (dead at maturity; lignified).
+                     Mechanism: cohesion-tension theory (transpiration pull).
+- Phloem           : Transports sugars (sucrose) bidirectionally (source to sink).
+                     Cells: sieve tube elements (alive; no nucleus) + companion cells.
+                     Mechanism: pressure-flow hypothesis.
+
+Ground Tissue:
+- Parenchyma       : Most abundant; thin walls; photosynthesis, storage.
+- Collenchyma      : Unevenly thickened walls; flexible support (celery strings).
+- Sclerenchyma     : Thick, lignified walls; rigid support. Fibres and sclereids.
+
+3. TRANSPORT IN PLANTS
+-----------------------
+Water Movement:
+- Osmosis          : Water enters root hair cells from soil (high water potential).
+- Apoplast pathway : Water moves through cell walls/spaces (outside cell membranes).
+- Symplast pathway : Water moves through cytoplasm via plasmodesmata.
+- Casparian strip  : Suberin band in endodermis forces water into symplast;
+                     controls mineral entry to vascular cylinder.
+- Transpiration    : Evaporation of water from leaves drives upward movement.
+- Transpiration pull + Cohesion (water molecules stick together) + Adhesion
+  (water sticks to xylem walls) = cohesion-tension mechanism.
+
+Stomatal regulation:
+  Light → H+ pumped out of guard cells (H+-ATPase) → K+ influx → osmotic
+  pressure rises → guard cells swell → stomata open.
+  ABA (abscisic acid) triggers stomata closure under drought stress.
+
+Phloem Loading (Source to Sink):
+  Source: Photosynthetic leaves load sucrose into phloem (active transport).
+  Sink: Growing regions, roots, fruits unload sucrose.
+  High osmotic pressure at source → water enters → hydrostatic pressure
+  drives bulk flow of phloem sap toward sink.
+
+4. PLANT HORMONES
+------------------
+Hormone        | Produced In             | Key Effects
+---------------|-------------------------|---------------------------------------------
+Auxin (IAA)    | Shoot apical meristem   | Cell elongation; phototropism; apical dominance
+Cytokinins     | Roots                   | Cell division; delays senescence
+Gibberellins   | Young leaves, seeds     | Stem elongation; seed germination; fruit growth
+Abscisic Acid  | Leaves (drought stress) | Stomatal closure; seed dormancy
+Ethylene       | Ripening fruit, nodes   | Fruit ripening; leaf/fruit abscission
+Brassinosteroids| Young tissues          | Cell elongation; pollen tube growth
+Jasmonates     | Damaged tissue          | Defence responses; wound signalling
+Salicylic Acid | Systemically           | Systemic acquired resistance (SAR) to pathogens
+
+Phototropism: Auxin redistributes to shaded side of shoot → greater elongation
+→ shoot bends toward light.
+Gravitropism: Auxin accumulates on lower side of horizontal root → inhibits
+root elongation on lower side → root curves downward.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ADVANCED PHOTOSYNTHESIS
+---------------------------
+Light reactions (Thylakoid membrane):
+  Photosystem II (P680): H2O oxidised → O2 + H+ + e-. Electrons passed to PQ.
+  Cytochrome b6f complex: Pumps H+ into thylakoid lumen (contributes to PMF).
+  Photosystem I (P700): Electrons re-energised; transferred via ferredoxin
+  to FNR → NADP+ reduced to NADPH.
+  ATP synthase (CF0-CF1): Proton gradient drives ATP synthesis (3H+ per ATP).
+
+Calvin Cycle — 3 stages:
+  Carbon Fixation  : CO2 + RuBP (5C) → 2x 3-phosphoglycerate (3C) [RuBisCO enzyme]
+  Reduction        : 3-PGA → G3P using ATP + NADPH
+  Regeneration     : G3P → RuBP using ATP (3 CO2 fixed per cycle turn)
+  Net: 3CO2 → 1 G3P (used to build glucose, fatty acids, amino acids).
+
+C4 Photosynthesis:
+  Adaptation to hot, dry climates. CO2 first fixed in mesophyll cells by PEP
+  carboxylase (higher CO2 affinity than RuBisCO) → Oxaloacetate → Malate →
+  transported to bundle sheath cells → decarboxylated → CO2 released locally
+  → concentrates CO2 around RuBisCO → suppresses photorespiration.
+  Examples: Maize, sugarcane, sorghum.
+
+CAM (Crassulacean Acid Metabolism):
+  Adaptation to extreme aridity. Stomata open ONLY at night (reduces water loss).
+  CO2 fixed by PEP carboxylase at night → stored as malate in vacuoles.
+  During day: malate decarboxylated → CO2 feeds Calvin cycle with stomata closed.
+  Examples: Cacti, agaves, pineapples, orchids.
+
+6. PLANT DEFENCE & SIGNALLING
+-------------------------------
+Physical Defences:
+  Thorns, spines, trichomes, thick bark, silica deposits, latex canals.
+
+Chemical Defences:
+- Terpenes        : Repel herbivores; toxic to insects (pyrethrin from chrysanthemum).
+- Alkaloids       : Nicotine, caffeine, morphine, quinine — disrupt animal neurology.
+- Phenolics/Tannins: Reduce palatability; inhibit digestion; astringent.
+- Glucosinolates  : In Brassica; hydrolysed by myrosinase → toxic isothiocyanates.
+- Protease inhibitors: Induced by wounding; impair herbivore digestion.
+
+Systemic Acquired Resistance (SAR):
+  Pathogen attack → salicylic acid (SA) synthesis → NPR1 activation →
+  PR (pathogen-related) gene expression → broad-spectrum disease resistance.
+  "Immunisation" of distal uninvaded tissues.
+
+Jasmonate signalling (herbivory response):
+  Herbivore feeding → wound signal (electrical + hydraulic) → jasmonate synthesis
+  (COI1-JAZ pathway) → protease inhibitor production → systemic defence.
+  Volatiles (green leaf volatiles) warn neighbouring plants.
+
+Auxin polar transport:
+  PIN proteins (efflux carriers) localised asymmetrically → directional auxin flow.
+  PIN localisation regulated by endocytosis (clathrin-mediated) and phosphorylation
+  by PINOID kinase. Basis for phyllotaxis (leaf/flower arrangement patterns).
+
+[AGRICULTURAL LINK] Understanding plant biology drives crop improvement:
+  - Green Revolution: Semi-dwarf wheat/rice varieties (Rht/sd1 mutations in
+    gibberellin signalling) → reduced lodging + increased yield.
+  - GMO crops: Bt cotton/corn (Bacillus thuringiensis toxin); herbicide-resistant
+    soybean (EPSPS modification); Golden Rice (beta-carotene biosynthesis genes).
+  - CRISPR in plants: Knockout of mlo gene → powdery mildew resistance in wheat.
+
+================================================================================

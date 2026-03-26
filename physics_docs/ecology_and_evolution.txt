@@ -1,0 +1,259 @@
+================================================================================
+                       ECOLOGY & EVOLUTION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ECOLOGY — LEVELS OF ORGANIZATION
+--------------------------------------
+Ecology is the study of how organisms interact with each other and their environment.
+
+Levels of Ecological Organization:
+  Individual → Population → Community → Ecosystem → Biome → Biosphere
+
+- Individual    : A single organism and its adaptations to the environment.
+- Population    : All individuals of the same species in an area.
+- Community     : All populations of different species in an area.
+- Ecosystem     : A community plus its non-living (abiotic) environment.
+- Biome         : Large regions with similar climate and characteristic biota.
+- Biosphere     : All ecosystems on Earth; the global sum of all life.
+
+1.1 BIOMES OF THE WORLD
+------------------------
+Biome               | Key Features                    | Examples
+--------------------|----------------------------------|------------------------
+Tropical Rainforest | High temp & rainfall; high biodiversity | Amazon, Congo
+Savanna             | Warm, seasonal rainfall; grassland + trees | Serengeti
+Desert              | Very low rainfall (<250mm/yr); extreme temps | Sahara, Gobi
+Temperate Forest    | Distinct seasons; deciduous trees | Eastern USA, Europe
+Boreal Forest (Taiga)| Cold; coniferous trees; long winters | Siberia, Canada
+Tundra              | Permafrost; very short growing season | Arctic, alpine
+Grassland           | Moderate rainfall; few trees | Great Plains, Pampas
+Aquatic (Marine)    | Oceans cover 71% of Earth; highest biodiversity | Coral reefs
+Freshwater          | Rivers, lakes, wetlands | Amazon, Great Lakes
+
+1.2 SPECIES INTERACTIONS
+--------------------------
+Interaction        | Species A Effect | Species B Effect | Example
+-------------------|-----------------|-----------------|------------------
+Mutualism          | +               | +               | Bees & flowers
+Commensalism       | +               | 0               | Orchids on trees
+Parasitism         | +               | -               | Tapeworm & host
+Predation          | +               | -               | Lion & zebra
+Competition        | -               | -               | Two species for food
+Amensalism         | 0               | -               | Penicillium & bacteria
+
+2. EVOLUTION — CORE CONCEPTS
+------------------------------
+Evolution is change in the heritable characteristics of a population over time.
+Charles Darwin (1859, "On the Origin of Species") proposed Natural Selection.
+
+Darwin's Four Postulates:
+  1. Variation: Individuals in a population differ in their traits.
+  2. Heritability: Traits are passed from parents to offspring.
+  3. Differential Survival: Some traits improve survival and reproduction.
+  4. Selection: Individuals with favourable traits reproduce more successfully.
+
+Key Terms:
+- Fitness          : An organism's reproductive success relative to others.
+- Adaptation       : An inherited trait that increases fitness in an environment.
+- Natural Selection : The mechanism driving evolution; "survival of the fittest."
+- Speciation       : The formation of new species from existing ones.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. POPULATION ECOLOGY
+----------------------
+Population dynamics describe how and why population sizes change over time.
+
+Exponential Growth (unlimited resources):
+  dN/dt = rN
+  N = population size; r = intrinsic growth rate; t = time
+  Produces a J-shaped curve. Possible only when resources are unlimited.
+
+Logistic Growth (limited resources):
+  dN/dt = rN × (K - N) / K
+  K = carrying capacity (maximum sustainable population size).
+  Produces an S-shaped (sigmoidal) curve. Population stabilises at K.
+
+Factors limiting population growth:
+  Density-dependent : Competition, predation, disease, starvation (intensify
+                      as population grows).
+  Density-independent: Natural disasters, climate change, habitat destruction
+                       (affect population regardless of size).
+
+Life History Strategies:
+  r-selected species: High reproduction, small body size, short lifespan,
+                      little parental care. Example: mice, insects.
+  K-selected species: Low reproduction, large body size, long lifespan,
+                      high parental investment. Example: elephants, humans.
+
+4. COMMUNITY ECOLOGY
+---------------------
+4.1 Trophic Levels & Energy Flow:
+  Producers (autotrophs) → Primary Consumers → Secondary Consumers →
+  Tertiary Consumers → Decomposers
+
+  10% Rule: Only ~10% of energy is transferred between trophic levels;
+            90% lost as heat and metabolic activity.
+
+4.2 Food Webs:
+  Complex networks of feeding relationships within a community. Keystone species
+  have disproportionately large effects on ecosystem structure relative to their
+  biomass (e.g., sea otters controlling sea urchin populations → kelp forests).
+
+4.3 Ecological Succession:
+  Primary Succession: Colonisation of bare rock/land with no prior soil.
+    Pioneer species (e.g., lichens, mosses) break down rock → soil formation.
+  Secondary Succession: Recovery after disturbance; soil remains.
+    Faster than primary; mid-succession shrubs → climax community (stable forest).
+
+5. BIOGEOCHEMICAL CYCLES
+--------------------------
+Carbon Cycle:
+  CO2 fixed by photosynthesis → stored in organic molecules → released by
+  respiration, decomposition, combustion. Ocean is major carbon sink.
+  Human impact: Fossil fuel burning raises atmospheric CO2 → climate change.
+
+Nitrogen Cycle:
+  N2 (unusable) → Nitrogen fixation (Rhizobium bacteria) → NH3/NH4+ →
+  Nitrification (NH4+ → NO2- → NO3-) → Plant uptake → Decomposition →
+  Denitrification (NO3- → N2, back to atmosphere).
+
+Water Cycle:
+  Evaporation + Transpiration (evapotranspiration) → Condensation →
+  Precipitation → Runoff/Infiltration → back to ocean/groundwater.
+
+Phosphorus Cycle:
+  No atmospheric phase. Weathering of rocks releases PO4³- → absorbed by plants
+  → consumed by animals → returned via decomposition.
+
+5. MECHANISMS OF EVOLUTION
+----------------------------
+Beyond natural selection, other forces drive evolution:
+
+Genetic Drift      : Random change in allele frequencies; most impactful in
+                     small populations.
+  - Founder Effect : Small group establishes new population (e.g., Amish
+                     community with high Ellis-van Creveld syndrome).
+  - Bottleneck Effect: Severe population reduction; random alleles survive
+                     (e.g., cheetahs have very low genetic diversity).
+
+Gene Flow          : Migration of individuals carrying alleles between
+                     populations; increases genetic diversity.
+
+Mutation           : Ultimate source of all new genetic variation.
+
+Sexual Selection   : Traits that improve mating success (not just survival)
+                     are selected for. Example: peacock tail feathers.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. POPULATION GENETICS & HARDY-WEINBERG EQUILIBRIUM
+-----------------------------------------------------
+The Hardy-Weinberg (H-W) principle describes a non-evolving population.
+Allele frequencies remain constant generation-to-generation IF:
+  1. No mutation
+  2. No gene flow
+  3. Very large population (no genetic drift)
+  4. Random mating (panmixia)
+  5. No natural selection
+
+H-W Equations:
+  p + q = 1   (allele frequencies; p = dominant A, q = recessive a)
+  p² + 2pq + q² = 1   (genotype frequencies)
+  p² = AA frequency; 2pq = Aa frequency; q² = aa frequency
+
+Deviation from H-W indicates that evolution is occurring.
+Used to calculate carrier frequencies in genetic counselling.
+Example: If q² (affected) = 1/10,000, then q = 1/100; carrier freq (2pq) ≈ 1/50.
+
+7. SPECIATION
+--------------
+Speciation = formation of new species that are reproductively isolated.
+
+Allopatric Speciation (most common):
+  Geographic barrier (mountain, river, ocean) separates populations →
+  populations evolve independently → reproductive isolation → new species.
+  Example: Darwin's finches (Galapagos Islands); squirrels either side of Grand Canyon.
+
+Sympatric Speciation:
+  New species arise within the same geographic range without physical separation.
+  Mechanisms: polyploidy (common in plants — e.g., wheat is hexaploid);
+  ecological niche divergence; sexual selection.
+
+Reproductive Isolating Mechanisms:
+  Pre-zygotic barriers (prevent mating/fertilisation):
+    - Habitat isolation   : Different habitats; rarely encounter each other.
+    - Temporal isolation  : Different breeding seasons.
+    - Behavioural isolation: Different mating calls, dances, or signals.
+    - Mechanical isolation : Incompatible reproductive structures.
+    - Gametic isolation   : Gametes cannot fertilise each other.
+  Post-zygotic barriers (hybrid is unfit):
+    - Hybrid inviability  : Hybrid embryo fails to develop.
+    - Hybrid sterility    : Hybrid is sterile (e.g., mule = horse x donkey).
+    - Hybrid breakdown    : F1 fertile but F2 offspring inviable/sterile.
+
+8. PHYLOGENETICS & SYSTEMATICS
+--------------------------------
+Phylogenetics reconstructs evolutionary relationships.
+
+Key concepts:
+- Cladogram/Phylogenetic tree: Diagram showing evolutionary relationships.
+- Clade (monophyletic group): Ancestor + ALL its descendants.
+- Synapomorphy: Shared derived character that defines a clade.
+- Homology: Same structure derived from common ancestor (bat wing, human arm).
+- Analogy (homoplasy): Similar function but different evolutionary origin
+  (bird wing, insect wing — convergent evolution).
+
+Tree of Life — Three Domains:
+  Bacteria → Archaea → Eukarya (Plants, Fungi, Animals, Protists)
+  Eukarya and Archaea are sister groups (more closely related to each other).
+
+Molecular Clocks:
+  Neutral mutations accumulate at roughly constant rates. By comparing sequences,
+  scientists estimate divergence times between lineages.
+  Example: Human-chimpanzee divergence ~6–7 million years ago.
+
+9. CONSERVATION BIOLOGY & CLIMATE CHANGE
+-----------------------------------------
+Biodiversity Metrics:
+  Alpha diversity  : Species richness within a habitat.
+  Beta diversity   : Difference in species composition between habitats.
+  Gamma diversity  : Total diversity across a landscape.
+
+Threats to Biodiversity (HIPPO):
+  H - Habitat destruction (leading cause)
+  I - Invasive species
+  P - Pollution
+  P - Population growth (human)
+  O - Overhunting/Overfishing
+
+Conservation Strategies:
+- Protected areas (national parks, marine reserves)
+- Habitat corridors connecting fragmented landscapes
+- Captive breeding and reintroduction programmes
+- Ex-situ conservation (seed banks, zoos)
+- Biodiversity hotspots prioritisation (e.g., tropical Andes, Madagascar)
+
+Climate Change Impacts on Ecosystems:
+- Phenological shifts: Earlier flowering, migration timing mismatches.
+- Range shifts: Species moving poleward or to higher altitudes.
+- Coral bleaching: Ocean warming → symbiotic algae (zooxanthellae) expelled.
+- Ocean acidification: Rising CO2 → H2CO3 → lower pH → affects calcification
+  in molluscs, corals, echinoderms.
+- Trophic cascades disrupted by asynchronous seasonal timing.
+
+[CLIMATE LINK] Planetary Boundaries framework identifies 9 Earth system processes
+with safe operating limits. Biodiversity loss and climate change are among the
+two boundaries already significantly overstepped, with cascading systemic risks
+for all living systems on Earth.
+
+================================================================================

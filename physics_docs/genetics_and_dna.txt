@@ -1,0 +1,187 @@
+================================================================================
+                         GENETICS & DNA
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. DNA STRUCTURE
+----------------
+DNA (Deoxyribonucleic acid) is the molecule carrying genetic information in all
+living organisms. Watson and Crick described its double helix structure in 1953,
+building on Rosalind Franklin's X-ray diffraction data.
+
+Structure:
+- Two antiparallel strands wound in a double helix.
+- Backbone: alternating deoxyribose sugar + phosphate groups.
+- Bases pair via hydrogen bonds: Adenine–Thymine (2 bonds), Guanine–Cytosine (3 bonds).
+- DNA is read 5' to 3'.
+
+DNA vs RNA:
+Feature        | DNA                        | RNA
+---------------|----------------------------|---------------------------
+Sugar          | Deoxyribose                | Ribose
+Strands        | Double-stranded            | Usually single-stranded
+Bases          | A, T, G, C                 | A, U, G, C
+Function       | Stores genetic information  | Carries/translates genetic info
+Location       | Nucleus (mainly)           | Nucleus and cytoplasm
+
+1.1 KEY TERMS
+--------------
+- Gene         : Segment of DNA coding for a protein or functional RNA.
+- Allele       : Alternative forms of a gene (e.g., brown vs blue eye alleles).
+- Genotype     : An organism's genetic makeup (e.g., BB, Bb, bb).
+- Phenotype    : Observable traits (e.g., brown eyes).
+- Homozygous   : Two identical alleles (BB or bb).
+- Heterozygous : Two different alleles (Bb).
+- Dominant     : Allele that masks the other when present (B).
+- Recessive    : Allele masked by the dominant (b).
+
+1.2 MENDELIAN GENETICS
+-----------------------
+Gregor Mendel's laws (derived from pea plant experiments):
+
+Law of Segregation:
+  Each organism has two alleles per trait. During gamete formation, alleles
+  separate so each gamete carries only one allele.
+
+Law of Independent Assortment:
+  Genes for different traits are inherited independently (when on different
+  chromosomes). Basis for the 9:3:3:1 dihybrid ratio.
+
+Monohybrid Cross Example (Tt x Tt):
+  Offspring: 1 TT : 2 Tt : 1 tt → 3 tall : 1 short (3:1 phenotype ratio)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. DNA REPLICATION
+------------------
+Semi-conservative: each new helix = one original strand + one new strand.
+Direction: always 5' → 3'. Occurs in S phase of the cell cycle.
+
+Key Enzymes:
+- Helicase          : Unwinds/separates the double helix.
+- Primase           : Synthesizes short RNA primers as starting points.
+- DNA Polymerase III : Adds complementary nucleotides (5'→3' only).
+- DNA Polymerase I  : Removes RNA primers; replaces with DNA.
+- DNA Ligase        : Seals nicks between Okazaki fragments.
+- Topoisomerase     : Relieves torsional stress ahead of replication fork.
+
+Leading Strand: Synthesized continuously toward the fork.
+Lagging Strand : Synthesized discontinuously as Okazaki fragments.
+
+3. TRANSCRIPTION & TRANSLATION (THE CENTRAL DOGMA)
+----------------------------------------------------
+Information flow: DNA → mRNA → Protein
+
+Transcription (nucleus):
+  RNA polymerase binds the promoter region, unwinds DNA, and synthesizes
+  pre-mRNA complementary to the template strand.
+  Eukaryotic mRNA processing:
+    - 5' cap added (7-methylguanosine)
+    - 3' poly-A tail added
+    - Splicing: introns removed by spliceosomes; exons joined.
+
+Translation (ribosomes):
+  mRNA codons (3-nucleotide sequences) are read by ribosomes.
+  tRNA molecules carry amino acids with matching anticodons.
+
+  Stages:
+    Initiation   : Ribosome assembles at start codon AUG (Met).
+    Elongation   : tRNA brings amino acids; peptide bonds form via
+                   peptidyl transferase activity of the large ribosome subunit.
+    Termination  : Stop codon (UAA, UAG, or UGA) reached; release factor
+                   causes polypeptide release and ribosome disassembly.
+
+4. INHERITANCE PATTERNS BEYOND MENDEL
+---------------------------------------
+- Incomplete Dominance : Heterozygote shows intermediate phenotype.
+                         Example: red x white flowers = pink offspring.
+- Codominance          : Both alleles expressed fully in heterozygote.
+                         Example: AB blood type (IA and IB both expressed).
+- Sex-Linked (X-linked): Gene on X chromosome. Males (XY) only have one copy.
+                         Example: haemophilia, red-green colour blindness.
+- Polygenic Inheritance: Multiple genes control one trait → continuous variation.
+                         Example: skin colour, height, IQ.
+- Epistasis            : One gene masks/modifies expression of another gene.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. GENE REGULATION
+-------------------
+Gene expression is regulated at multiple levels:
+  Transcriptional → Post-transcriptional → Translational → Post-translational
+
+Transcriptional Regulation (Eukaryotes):
+- Enhancers/Silencers: Cis-regulatory elements acting over large distances via
+  chromatin looping. Can be thousands of base pairs from the promoter.
+- Transcription Factors (TFs): Bind specific DNA motifs; recruit coactivators
+  or the Mediator complex to stimulate RNA Pol II.
+- Chromatin Remodeling: SWI/SNF complexes reposition nucleosomes to expose DNA.
+- Histone Modifications:
+    Acetylation (HATs) → open chromatin → active transcription
+    Deacetylation (HDACs) → closed chromatin → gene silencing
+    Methylation (HMTs): context-dependent (H3K4me3 = active; H3K27me3 = silent)
+- DNA Methylation: CpG methylation by DNMTs silences genes. Key in development,
+  imprinting, and cancer (hypermethylation of tumour suppressor promoters).
+
+Post-Transcriptional Regulation:
+- microRNA (miRNA)  : ~22 nt ncRNAs loaded into RISC complex. Bind mRNA 3'UTR;
+                      cause mRNA degradation or translational repression.
+- siRNA             : Small interfering RNA triggers sequence-specific mRNA
+                      cleavage. Basis of RNAi technology.
+- lncRNA            : >200 nt non-coding RNAs regulate chromatin architecture.
+                      Example: Xist mediates X-chromosome inactivation.
+- Alternative Splicing: ~95% of human multi-exon genes alternatively spliced,
+                      producing multiple protein isoforms from one gene.
+
+6. CRISPR-Cas9 GENOME EDITING
+-------------------------------
+Cas9 nuclease is guided to a specific DNA sequence by a single guide RNA (sgRNA).
+It creates a double-strand break (DSB) repaired by:
+
+- NHEJ (Non-Homologous End Joining):
+    Error-prone; introduces indels (insertions/deletions) → disrupts gene.
+    Used for gene knockouts.
+
+- HDR (Homology-Directed Repair):
+    Uses a DNA template for precise edits → gene correction or insertion.
+    Less efficient; requires template DNA.
+
+Advanced CRISPR Tools:
+- Base Editing         : Cytosine base editors (CBEs) or adenine base editors
+                         (ABEs) make single nucleotide changes without DSBs.
+- Prime Editing        : "Search and replace" genome editing via pegRNA +
+                         reverse transcriptase. No DSB required.
+- CRISPRi/CRISPRa      : Catalytically dead dCas9 fused to repressors or
+                         activators for transcriptional control without cutting.
+- CRISPR Screens       : Genome-wide sgRNA libraries identify essential genes
+                         or drug targets at scale.
+
+7. MUTATIONS & DNA REPAIR
+--------------------------
+Types of Mutations:
+- Point Mutation      : Single base change.
+    Silent            : No amino acid change (redundancy of genetic code).
+    Missense          : Different amino acid (e.g., sickle-cell: Glu→Val in HbB).
+    Nonsense          : Premature stop codon → truncated protein.
+- Frameshift          : Insertion/deletion shifts reading frame → usually
+                         non-functional protein.
+- Chromosomal         : Deletions, duplications, inversions, translocations.
+
+DNA Repair Mechanisms:
+- Base Excision Repair (BER)    : Fixes small base lesions (oxidation, alkylation).
+- Nucleotide Excision Repair (NER): Fixes bulky lesions (UV-induced thymine dimers).
+  Defect causes Xeroderma Pigmentosum (extreme UV sensitivity).
+- Mismatch Repair (MMR)         : Corrects replication errors; defect linked to
+  hereditary non-polyposis colorectal cancer (Lynch syndrome).
+- Homologous Recombination (HR) : Error-free DSB repair using sister chromatid.
+  BRCA1/BRCA2 are key HR factors; mutations raise breast/ovarian cancer risk.
+
+================================================================================

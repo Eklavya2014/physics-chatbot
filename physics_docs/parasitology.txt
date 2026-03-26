@@ -1,0 +1,180 @@
+================================================================================
+                          PARASITOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS PARASITOLOGY?
+--------------------------
+Parasitology is the study of parasites — organisms that live on or in a host
+organism and benefit at the host's expense. Parasitism is one of the most
+successful life strategies on Earth; ~50% of all species are parasitic.
+
+Definitions:
+- Parasite      : An organism living at the expense of a host (fitness benefit for
+                  parasite, harm to host).
+- Host          : Organism harbouring the parasite.
+  Definitive host   : Where parasite reaches sexual maturity.
+  Intermediate host : Parasite undergoes asexual/larval development.
+  Reservoir host    : Maintains parasite in nature; source of human infection.
+  Paratenic host    : Transport host; parasite doesn't develop further.
+- Vector        : Organism (usually arthropod) that transmits parasite between hosts.
+- Zoonosis      : Disease transmissible from animals to humans.
+
+Major Groups of Parasites:
+- Protozoa      : Single-celled eukaryotes (Plasmodium, Trypanosoma, Toxoplasma, Giardia).
+- Helminths     : Multicellular worms. Three groups:
+    Nematodes   : Roundworms (Ascaris, hookworm, filaria, pinworm).
+    Trematodes  : Flukes (Schistosoma, liver flukes).
+    Cestodes    : Tapeworms (Taenia, Echinococcus).
+- Ectoparasites : Live on body surface (lice, fleas, ticks, mites, mosquitoes).
+
+1.1 GLOBAL BURDEN OF PARASITIC DISEASE
+----------------------------------------
+Disease          | Parasite           | Vector         | Burden
+-----------------|-------------------|----------------|----------------------------
+Malaria          | Plasmodium spp.   | Anopheles mosquito | ~600,000 deaths/yr
+Lymphatic filariasis | W. bancrofti  | Mosquito       | 120M infected; elephantiasis
+Schistosomiasis  | Schistosoma spp.  | Freshwater snail | 240M infected
+Soil-transmitted helminths | Ascaris, hookworm | Soil contact | >1.5 billion infected
+Chagas disease   | T. cruzi          | Triatomine bug | 6–7M infected
+Leishmaniasis    | Leishmania spp.   | Sandfly        | 1M new cases/yr
+Toxoplasmosis    | T. gondii         | Cat faeces/meat | ~1/3 of world infected
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MALARIA — BIOLOGY & LIFE CYCLE
+-----------------------------------
+Causative agents: Plasmodium falciparum (most deadly), P. vivax (most widespread),
+P. malariae, P. ovale, P. knowlesi.
+
+Life Cycle:
+  Mosquito bite → sporozoites injected → liver (hepatocytes) → merozoites
+  (exoerythrocytic schizogony; P. vivax/ovale form dormant hypnozoites in liver)
+  → red blood cells → ring stage → trophozoite → schizont → merozoites burst
+  RBC (erythrocytic schizogony) → fever/chills every 48h (P. falciparum/vivax)
+  or 72h (P. malariae) correlate with RBC bursting → some → gametocytes →
+  taken up by Anopheles mosquito → sexual reproduction in gut (sporogony) →
+  sporozoites in salivary glands → next bite.
+
+P. falciparum pathogenesis:
+  Infected RBCs express PfEMP1 (variant surface antigen) → cytoadherence to
+  endothelium (via ICAM-1, CD36) + rosetting → microvascular obstruction.
+  Cerebral malaria: Sequestration in brain vessels → coma, seizures.
+  Severe anaemia: RBC destruction + suppressed erythropoiesis.
+  Hypoglycaemia: High parasite metabolic demand + quinine-induced insulin.
+
+Diagnosis: Blood smear microscopy (gold standard); RDT (rapid diagnostic test
+detecting HRP2 or pLDH); PCR for species identification.
+
+Treatment:
+  Uncomplicated: Artemisinin-based combination therapy (ACT) — artemether-lumefantrine;
+  artesunate-amodiaquine.
+  Severe: IV artesunate (replaced quinine).
+  P. vivax/ovale hypnozoites: Primaquine or tafenoquine (check G6PD status first).
+  Prophylaxis: Atovaquone-proguanil; doxycycline; mefloquine.
+
+Resistance: Artemisinin partial resistance (kelch13 mutations) emerging in SE Asia;
+  spread to Africa reported. Chloroquine resistance widespread.
+
+3. TRYPANOSOMIASIS
+-------------------
+African Sleeping Sickness (Trypanosoma brucei):
+  Vector: Tsetse fly (Glossina spp.).
+  T.b. rhodesiense (E Africa): Acute; months. T.b. gambiense (W/C Africa): Chronic; years.
+  Pathogenesis: Bloodstream form (chancre) → lymphatics (lymphadenopathy; Winterbottom's sign)
+  → CNS (stage 2: behavioural changes, sleep disruption, coma → death untreated).
+  Immune evasion: Antigenic variation of Variant Surface Glycoprotein (VSG);
+  switches coat ~every 7 days; parasite always one step ahead of immune response.
+  Treatment: Stage 1: Pentamidine (T.b.g.) or suramin. Stage 2: Nifurtimox-eflornithine
+  (NECT); fexinidazole (oral; WHO essential medicine).
+
+Chagas Disease (T. cruzi):
+  Vector: Triatomine "kissing bugs" (bite near mouth; defecate near wound).
+  Acute: Romaña's sign (periorbital oedema); chagoma; fever.
+  Chronic: Cardiomyopathy (dilated; arrhythmias; sudden death); megacolon; megaoesophagus.
+  Treatment: Benznidazole or nifurtimox (effective in acute; limited in chronic).
+
+4. IMMUNOLOGY OF PARASITISM
+-----------------------------
+Th2 Response & Helminths:
+  Helminths preferentially drive Th2 immunity:
+  IL-4 → IgE production; IL-5 → eosinophilia; IL-13 → mucus, smooth muscle contraction.
+  IgE + mast cells/basophils → degranulation → toxic to helminths (ADCC).
+  Eosinophils: Release major basic protein, eosinophil peroxidase → kill larvae.
+  Regulatory response: Helminths also induce Tregs + IL-10 → dampen immune response
+  → reduce immunopathology; hygiene hypothesis explains increased allergies in helminth-free populations.
+
+Toxoplasma gondii Manipulation:
+  Infects ~1/3 of global population. Definitive host: Cats.
+  In rodents: Infects amygdala neurons; reduces fear of cat odours → infected mice
+  attracted to cat urine → cats eat mice → Toxoplasma completes sexual cycle.
+  In humans: Latent infection; associations with schizophrenia, risk-taking behaviour
+  (controversial but documented).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MOLECULAR PARASITOLOGY
+---------------------------
+Plasmodium Invasion Machinery:
+  Merozoite invasion of RBCs: MSP1 (merozoite surface protein 1) primes; EBAs
+  (erythrocyte binding antigens) and PfRH (reticulocyte homology) ligands bind
+  RBC receptors → rhoptry discharge → tight junction forms → moving junction
+  powered by MyoA/GACT actomyosin motor → parasite enters PV (parasitophorous vacuole).
+  Vaccine targets: PfCSP (circumsporozoite protein) → RTS,S/AS01 (Mosquirix);
+  PfRH5 → blocks RBC invasion (Phase 2 trial efficacy ~50%).
+
+Drug Resistance Mechanisms:
+  Chloroquine resistance: Mutation in PfCRT (chloroquine resistance transporter)
+  → drug effluxed from digestive vacuole.
+  Artemisinin partial resistance: Kelch13 (K13) propeller mutations → parasite
+  enters dormancy (ring stage) during drug exposure → resumes replication.
+  Pyrimethamine resistance: DHFR mutations (dihydrofolate reductase); compound
+  resistance in DHPS also (SP resistance).
+
+Helminth Genomics:
+  C. elegans: Model nematode; 959 somatic cells; first animal genome sequenced;
+  apoptosis, RNAi, and ageing discoveries.
+  Parasitic nematode genomes (Ascaris, Brugia, Necator, Trichinella): Reveal
+  excretory/secretory proteins → immune evasion; potential drug targets.
+  Schistosome genome: Two sexes; females dependent on males for maturation;
+  tegument surface proteins (Sm29, Sm-TSP-2) → vaccine candidates.
+
+6. VECTOR BIOLOGY & CONTROL
+-----------------------------
+Anopheles Mosquito:
+  Anopheles gambiae s.l.: Primary African malaria vector.
+  Feeding: Female feeds on blood for egg development; rest and digest.
+  Olfactory cues: CO2, 1-octen-3-ol, lactic acid attract mosquitoes.
+  Malaria vector competence: Oocysts form on midgut; sporozoites migrate to
+  salivary glands over 10–14 days (extrinsic incubation period).
+  Temperature-sensitive: Warmer temperatures accelerate parasite development
+  → climate change expanding malaria range.
+
+Vector Control Strategies:
+  ITNs (Insecticide-Treated Nets): Pyrethroid-treated; reduces biting by 70–90%.
+  IRS (Indoor Residual Spraying): DDT, pyrethroids; targets resting mosquitoes.
+  Larviciding: Bacillus thuringiensis israelensis (Bti) → kills larvae without
+  environmental harm.
+  Sterile Insect Technique (SIT): Release sterile males → reduced reproduction.
+  Wolbachia: Endosymbiotic bacteria in Aedes aegypti mosquitoes → reduces dengue,
+  Zika, malaria transmission. World Mosquito Program releases Wolbachia-infected
+  mosquitoes; ~77% dengue reduction in Indonesia RCT (2021).
+  Gene Drive (CRISPR): Self-propagating genetic modification spreads through
+  wild population. Female-specific lethality drives population suppression.
+  Cage trials (2018) with An. gambiae showed population crash within 7–11 generations.
+
+[ONE HEALTH LINK] Parasitic diseases at human-animal-environment interface:
+  Echinococcus (hydatid cysts): Dog-sheep cycle; affects farmers globally.
+  Toxocara (visceral larva migrans): Dogs/cats → soil → children; common in low-income areas.
+  Emerging: Baylisascaris (raccoon roundworm); Angiostrongylus cantonensis (rat lungworm)
+  spreading due to climate change and exotic pet trade.
+
+================================================================================

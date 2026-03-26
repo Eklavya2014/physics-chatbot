@@ -1,0 +1,230 @@
+CHAPTER 5: SOURCES OF ENERGY
+==============================
+
+WHAT IS A GOOD SOURCE OF ENERGY?
+A good source of energy is one that:
+- Does a large amount of work per unit volume or mass.
+- Is easily accessible.
+- Is easy to store and transport.
+- Is economical.
+- Is safe to use.
+- Does not pollute the environment.
+
+TYPES OF ENERGY SOURCES
+
+1. Non-Renewable (Conventional) Sources:
+- Fossil fuels: Coal, petroleum, natural gas.
+- Nuclear energy.
+- Will be exhausted eventually.
+- Cannot be replenished in a short time.
+
+2. Renewable (Non-conventional) Sources:
+- Solar energy, wind energy, hydro energy, geothermal energy, biomass, ocean energy.
+- Can be replenished naturally and are inexhaustible.
+- Generally environment-friendly.
+
+FOSSIL FUELS
+Coal, petroleum (oil), and natural gas are called fossil fuels because they were formed from the remains of living organisms millions of years ago under heat and pressure.
+
+Problems with fossil fuels:
+- They are non-renewable (will run out).
+- Burning them causes air pollution (CO₂, SO₂, NO₂).
+- CO₂ is a greenhouse gas causing global warming.
+- SO₂ and NO₂ cause acid rain.
+- Oil spills cause environmental damage.
+
+THERMAL POWER PLANTS
+- Burn coal, oil, or gas to produce steam.
+- Steam drives a turbine connected to a generator.
+- Electrical energy is produced.
+- Efficiency is low (about 35-40%) due to heat losses.
+- Usually built near coal mines or fuel sources.
+
+HYDROELECTRIC POWER PLANTS
+- Use the potential energy of stored water in dams.
+- Water flows down from height → drives turbines → generates electricity.
+- Renewable, no pollution during operation.
+- Dams submerge forests and displace communities.
+- Changes aquatic ecosystems.
+
+Example: Bhakra Nangal Dam (India), Three Gorges Dam (China)
+
+BIOMASS
+Plant and animal waste used as fuel.
+
+Types:
+1. Wood: Traditional fuel. Causes deforestation if not managed.
+2. Agricultural waste: Crop residues burned as fuel.
+3. Animal dung (Gobar): Used to make biogas.
+
+BIOGAS (Gobar Gas)
+Biogas is produced by anaerobic decomposition (without oxygen) of biological waste.
+
+Composition of biogas: Mainly methane (CH₄, 55-70%), CO₂, some H₂, H₂S.
+
+Working of Biogas Plant:
+- A mixing tank where dung and water are mixed into slurry.
+- The slurry is fed into the digester (underground tank).
+- Bacteria decompose the slurry anaerobically, producing biogas.
+- Biogas collects in the gas holder (dome) above the digester.
+- Gas is piped to homes for cooking/lighting.
+- Spent slurry (effluent) is removed as excellent manure.
+
+Advantages of Biogas:
+- Clean fuel (no smoke, no ash).
+- Renewable energy.
+- Slurry is excellent fertilizer.
+- Solves the problem of animal waste disposal.
+- Biogas burns completely (efficient).
+
+WIND ENERGY
+Moving air (wind) has kinetic energy that can be converted to electricity.
+
+Wind Energy Farm:
+- Windmills (turbines) are set up in areas with strong, steady winds.
+- Minimum wind speed needed: 15 km/h.
+- Wind turbines have large blades connected to a generator.
+- Many windmills in a farm can generate significant electricity.
+
+Advantages:
+- Renewable and non-polluting.
+- No fuel cost after installation.
+
+Disadvantages:
+- Wind is not always constant (intermittent).
+- Requires large areas of land.
+- High initial cost.
+- Can be noisy and affect bird life.
+
+Best locations: Coastal areas, open plains, hilltops.
+India's largest wind energy farm: In Tamil Nadu (Kanyakumari area).
+
+SOLAR ENERGY
+Energy obtained from the sun.
+
+Solar Constant: Amount of solar energy reaching the earth's surface = 1.4 kJ/s/m² (1400 W/m²).
+
+Devices using solar energy:
+1. Solar Cooker: Uses a glass-topped box with a mirror reflector to concentrate sunlight and cook food.
+   - Black painted box absorbs maximum heat.
+   - Glass lid creates greenhouse effect.
+   - Mirror reflects more sunlight into box.
+   - Temperature can reach 100-140°C.
+   - Can cook rice, vegetables, dals. Cannot bake bread or fry.
+
+2. Solar Water Heater: Flat plate collectors heat water using sunlight.
+
+3. Solar Cells (Photovoltaic Cells):
+   - Convert sunlight directly into electricity.
+   - Made of semiconductor material (silicon).
+   - A single cell produces about 0.5-1 V.
+   - Many cells combined in a solar panel.
+   - Used in calculators, satellites, street lights, remote areas.
+
+Advantages of Solar Energy:
+- Renewable and inexhaustible.
+- No pollution.
+- Free source.
+- Low maintenance.
+
+Disadvantages:
+- Not available at night or on cloudy days.
+- Requires large areas for significant power.
+- Initial cost is high.
+- Cannot be stored easily (needs batteries).
+
+ENERGY FROM THE SEA
+
+1. Tidal Energy:
+- The rise and fall of sea water due to gravitational pull of moon creates tides.
+- Tidal barrages (dams) across tidal inlets harness this energy.
+- Water flows through turbines during high and low tides.
+- Limitation: Few sites available with large tidal range.
+
+2. Wave Energy:
+- Kinetic energy of ocean surface waves.
+- Devices floating on the surface convert wave motion to electricity.
+- Still largely experimental.
+
+3. Ocean Thermal Energy (OTEC):
+- Uses the temperature difference between warm surface water and cold deep water.
+- Needs a temperature difference of at least 20°C.
+- Warm water evaporates ammonia → drives turbine → cold water condenses ammonia.
+
+GEOTHERMAL ENERGY
+Heat energy from inside the earth (from molten rocks/magma).
+
+- Hot springs and geysers are surface manifestations.
+- Steam from geothermal sources can directly drive turbines.
+- Geothermal power plants are built in geothermally active regions.
+- Available 24/7 (unlike solar/wind).
+- Examples: Iceland, New Zealand, some parts of India.
+
+NUCLEAR ENERGY
+Energy released during nuclear reactions.
+
+1. Nuclear Fission:
+- Heavy nucleus (like Uranium-235, Plutonium-239) splits into smaller nuclei when hit by a neutron.
+- Releases enormous energy + more neutrons → chain reaction.
+- Used in nuclear power plants and atomic bombs.
+- E = mc² (Einstein's equation)
+
+2. Nuclear Fusion:
+- Light nuclei (like hydrogen isotopes) combine at very high temperature to form a heavier nucleus.
+- Releases even more energy than fission.
+- Powers the sun and stars.
+- Fusion bomb (hydrogen bomb).
+- Controlled fusion not yet achieved (still being researched).
+
+Nuclear Power Plant:
+- Nuclear reactor controlled chain reaction.
+- Heat produced → steam → turbine → generator.
+- Uses enriched uranium as fuel.
+- Control rods (cadmium/boron) absorb neutrons to control the reaction.
+
+Advantages of Nuclear Energy:
+- Enormous energy from small amount of fuel.
+- No greenhouse gas emissions during operation.
+
+Disadvantages:
+- Risk of accidents (Chernobyl 1986, Fukushima 2011).
+- Radioactive waste is dangerous for thousands of years.
+- High setup cost.
+- Risk of nuclear weapons proliferation.
+
+ENVIRONMENTAL CONSEQUENCES OF ENERGY USE
+- Burning fossil fuels → CO₂ → Global warming.
+- SO₂ and NO₂ → Acid rain.
+- Nuclear accidents → Radiation hazards.
+- Dams → Displacement, ecological disruption.
+- Wind farms → Land use, impact on birds.
+
+HOW LONG WILL ENERGY SOURCES LAST?
+- Coal: ~200-300 years at current rates.
+- Petroleum: ~50-60 years.
+- Natural gas: ~100 years.
+- Uranium: Several hundred years (with breeder reactors).
+- Renewable sources: Indefinitely.
+
+COMPARISON TABLE
+Source | Renewable | Pollution | Reliability | Cost
+Solar | Yes | No | Intermittent | High initial
+Wind | Yes | No | Intermittent | High initial
+Hydro | Yes | Low | Reliable | High initial
+Biogas | Yes | Low | Reliable | Low
+Fossil Fuels | No | High | Reliable | Moderate
+Nuclear | No | Low (normally) | Reliable | Very high initial
+
+IMPORTANT QUESTIONS AND ANSWERS
+
+Q: What is a solar cell? State its working principle.
+A: A solar cell (photovoltaic cell) is a device that converts solar energy directly into electricity. It works on the photovoltaic effect: when light falls on a semiconductor (silicon) p-n junction, it excites electrons, creating a potential difference (voltage) and causing current to flow.
+
+Q: Why is biogas considered an ideal fuel for villages?
+A: Biogas is ideal for villages because: (1) raw materials (dung, agricultural waste) are readily available, (2) it is clean-burning with no smoke, (3) the slurry is excellent manure for crops, (4) it is renewable, and (5) it eliminates waste disposal problems.
+
+Q: Why are fossil fuels called non-renewable sources of energy?
+A: Fossil fuels formed over millions of years from dead organisms. Once consumed, they cannot be replenished in a human timescale. At current consumption rates, they will be exhausted within a few centuries. Hence they are non-renewable.
+
+Q: What is the difference between nuclear fission and nuclear fusion?
+A: In fission, a heavy nucleus splits into smaller ones releasing energy. In fusion, light nuclei combine to form a heavier nucleus releasing even more energy. Fission is used in nuclear reactors; fusion powers the sun. Fusion requires extremely high temperatures (millions of degrees).

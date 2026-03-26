@@ -1,0 +1,188 @@
+================================================================================
+                      MICROBIOLOGY & VIRUSES
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS MICROBIOLOGY?
+-------------------------
+Microbiology is the study of microorganisms — living things too small to see
+with the naked eye. These include bacteria, archaea, fungi, protists, and viruses.
+Microorganisms were first observed by Antonie van Leeuwenhoek in the 1670s using
+early microscopes.
+
+Major Groups of Microorganisms:
+- Bacteria    : Prokaryotes; diverse metabolism; found in every habitat on Earth.
+- Archaea     : Prokaryotes; often extremophiles (hot springs, salt lakes, deep sea).
+- Fungi       : Eukaryotes; include yeasts, moulds, mushrooms.
+- Protists    : Eukaryotes; diverse group; includes algae, amoeba, paramecia.
+- Viruses     : Non-cellular; require host cells to replicate; debated as "life."
+- Prions      : Misfolded proteins; cause diseases like CJD and BSE.
+
+1.1 BACTERIA — BASIC FEATURES
+-------------------------------
+Structure:
+- Cell wall    : Provides shape and protection. Composition varies.
+- Cell membrane: Controls transport.
+- Nucleoid     : Region containing circular DNA chromosome.
+- Ribosomes    : 70S (smaller than eukaryotic 80S — target for antibiotics).
+- Plasmids     : Small circular DNA; carry extra genes (e.g., antibiotic resistance).
+- Flagella     : For motility.
+- Pili/Fimbriae: Attachment to surfaces; conjugation.
+- Capsule      : Polysaccharide layer; protects from phagocytosis.
+
+Gram Staining (developed by Hans Christian Gram, 1884):
+  Gram-positive (+): Thick peptidoglycan wall; stains purple.
+                     Example: Staphylococcus, Streptococcus, Bacillus.
+  Gram-negative (-): Thin peptidoglycan + outer membrane; stains pink/red.
+                     Example: E. coli, Salmonella, Pseudomonas, Neisseria.
+
+Bacterial Shapes:
+- Coccus       : Spherical (Staphylococcus = clusters; Streptococcus = chains)
+- Bacillus     : Rod-shaped (E. coli, Salmonella)
+- Spirillum    : Spiral/helical (Helicobacter pylori)
+- Vibrio       : Comma-shaped (Vibrio cholerae)
+
+1.2 VIRUSES — BASIC FEATURES
+------------------------------
+Viruses are non-living infectious agents consisting of:
+- Genetic material : DNA or RNA (never both); single- or double-stranded.
+- Capsid          : Protein coat surrounding the genetic material.
+- Envelope        : Lipid membrane (derived from host cell) — present in some viruses.
+
+Viral Classification by Genome:
+  dsDNA  : Herpesviruses, Poxviruses, Adenoviruses
+  ssDNA  : Parvoviruses, Circoviruses
+  dsRNA  : Reoviruses (Rotavirus)
+  +ssRNA : Coronaviruses, Picornaviruses (Poliovirus), Flaviviruses
+  -ssRNA : Influenza, Rabies, Ebola, Measles
+  ssRNA-RT: Retroviruses (HIV) — reverse transcriptase converts RNA → DNA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. BACTERIAL REPRODUCTION & GENETICS
+--------------------------------------
+Binary Fission: Asexual reproduction. Chromosome replicates → cell elongates →
+divides into two identical daughter cells. Can occur every 20 minutes (E. coli).
+
+Generation time: Time for population to double. Under optimal conditions,
+1 bacterium can become >1 billion in ~10 hours.
+
+Bacterial Gene Transfer (horizontal gene transfer):
+- Transformation  : Uptake of free DNA from environment. Basis of natural
+                    competence and lab cloning.
+- Transduction    : DNA transferred between bacteria via bacteriophage (virus).
+  Generalised     : Random bacterial DNA packaged in phage.
+  Specialised     : Specific genes near phage integration site transferred.
+- Conjugation     : Direct cell-to-cell contact via sex pilus; plasmid transferred.
+                    Key mechanism for antibiotic resistance spread.
+- Transposons     : "Jumping genes" — mobile genetic elements that move within/
+                    between genomes; increase genetic diversity.
+
+3. VIRAL REPLICATION CYCLES
+-----------------------------
+Lytic Cycle (productive infection):
+  Attachment → Penetration → Biosynthesis → Maturation → Release (lysis)
+  Host cell is destroyed. Viruses released infect new cells.
+
+Lysogenic Cycle (latent infection):
+  Viral DNA integrates into host chromosome as a PROPHAGE.
+  Replicates with host; does not immediately lyse cell.
+  Stress can trigger switch to lytic cycle (induction).
+  Example: Lambda phage; Herpes simplex virus latency.
+
+HIV Replication (Retrovirus):
+  1. HIV gp120 binds CD4 receptor + CCR5/CXCR4 co-receptor on T helper cells.
+  2. Fusion; HIV RNA genome enters cell.
+  3. Reverse transcriptase converts RNA → dsDNA.
+  4. Integrase inserts viral DNA into host chromosome (provirus).
+  5. Transcription of viral genes; Gag/Pol/Env proteins produced.
+  6. Protease cleaves polyproteins → mature virions.
+  7. Budding from cell membrane.
+  Antiretroviral targets: reverse transcriptase (NRTIs, NNRTIs), integrase
+  (INSTIs), protease (PIs), entry (CCR5 antagonists, fusion inhibitors).
+
+4. MICROBIAL ECOLOGY & THE HUMAN MICROBIOME
+---------------------------------------------
+The human body hosts ~38 trillion microbial cells (comparable to human cells).
+
+Key Microbiome Sites:
+- Gut microbiome   : ~1,000 species; dominated by Firmicutes & Bacteroidetes.
+                     Functions: digestion, vitamin synthesis (K, B12), immune
+                     training, gut-brain axis signalling.
+- Skin microbiome  : Staphylococcus epidermidis predominates; protective role.
+- Oral microbiome  : >700 species; dysbiosis causes dental caries and periodontitis.
+- Vaginal microbiome: Lactobacillus dominant; low pH protects against pathogens.
+
+Dysbiosis: Imbalance of normal microbiome → linked to IBD, obesity, type 2
+diabetes, depression, and C. difficile infection.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ANTIMICROBIAL RESISTANCE (AMR)
+-----------------------------------
+AMR is one of the greatest global health threats of the 21st century.
+WHO estimates 10 million deaths/year by 2050 if unchecked.
+
+Mechanisms of Antibiotic Resistance:
+- Enzymatic inactivation : Beta-lactamases hydrolyse the beta-lactam ring of
+                           penicillins/cephalosporins. ESBLs (extended-spectrum
+                           beta-lactamases) confer resistance to most beta-lactams.
+- Target modification    : MRSA: altered penicillin-binding protein (PBP2a,
+                           encoded by mecA) has low affinity for methicillin.
+                           VRE: altered D-Ala-D-Ala → D-Ala-D-Lac (vancomycin target).
+- Efflux pumps           : Active export of antibiotic from cell (RND family in
+                           gram-negatives; broad substrate specificity).
+- Reduced permeability   : Loss of OmpF/OmpC porins in gram-negatives prevents
+                           antibiotic entry.
+- Target bypass          : Alternative metabolic pathway circumvents drug target.
+
+Antibiotic Classes & Targets:
+Class                 | Example           | Target
+----------------------|-------------------|---------------------------------
+Beta-lactams          | Penicillin, Amox  | PBP → cell wall synthesis
+Glycopeptides         | Vancomycin        | D-Ala-D-Ala → cell wall
+Aminoglycosides       | Gentamicin        | 30S ribosome → mistranslation
+Macrolides            | Erythromycin      | 50S ribosome → translocation
+Fluoroquinolones      | Ciprofloxacin     | DNA gyrase/topoisomerase IV
+Tetracyclines         | Doxycycline       | 30S ribosome → tRNA binding
+Rifampicin            | Rifampin          | RNA polymerase beta subunit
+Polymyxins            | Colistin          | LPS → cell membrane disruption
+
+6. VIROLOGY — ADVANCED MECHANISMS
+------------------------------------
+Antigenic Variation:
+- Antigenic Drift  : Gradual accumulation of point mutations in surface antigens
+                     (haemagglutinin/neuraminidase in influenza). Requires annual
+                     vaccine updates.
+- Antigenic Shift  : Sudden reassortment of genome segments between two different
+                     influenza strains (can only occur in segmented-genome viruses).
+                     Produces novel subtypes → pandemic potential (e.g., H1N1 2009).
+
+Viral Pathogenesis Mechanisms:
+- Cytopathic effects (CPE): Direct cell killing (lysis, syncytia formation).
+- Immune evasion: Downregulation of MHC I (herpesviruses), blocking interferon
+  signalling (influenza NS1 protein), latency establishment.
+- Oncogenesis: Some viruses integrate and activate proto-oncogenes or inactivate
+  tumour suppressors. HPV E6 (degrades p53) and E7 (inactivates Rb) → cervical cancer.
+  Hepatitis B/C → hepatocellular carcinoma; EBV → Burkitt lymphoma.
+
+Interferons (IFN) — Innate Antiviral Defence:
+  Type I IFN (IFN-alpha/beta): Secreted by infected cells; binds IFNAR on
+  neighbouring cells → JAK-STAT signalling → ISGs (interferon-stimulated genes)
+  → antiviral state (PKR activation → translational shutdown; RNase L → RNA degradation;
+  Mx proteins → inhibit viral RNA synthesis).
+
+[CLINICAL LINK] SARS-CoV-2 exploits ACE2 receptor via spike protein (S1 RBD).
+Variants (Alpha, Delta, Omicron) accumulate mutations in spike that increase ACE2
+affinity and immune evasion. mRNA vaccines (Pfizer-BioNTech, Moderna) encode the
+spike protein, inducing neutralising antibodies and T cell responses.
+
+================================================================================

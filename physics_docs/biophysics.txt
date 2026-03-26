@@ -1,0 +1,176 @@
+================================================================================
+                            BIOPHYSICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS BIOPHYSICS?
+-----------------------
+Biophysics applies the principles of physics and mathematics to understand
+biological systems. It bridges biology, chemistry, physics, and mathematics
+to explain how living systems work at the molecular, cellular, and organismal level.
+
+Key Areas:
+- Structural biology   : How molecular structures determine function.
+- Membrane biophysics  : Physics of lipid bilayers and ion transport.
+- Motor proteins       : Mechanical work at molecular scales.
+- Neurophysics         : Electrical properties of neurons.
+- Medical imaging      : MRI, PET, X-ray — physics in diagnostics.
+- Biomechanics         : Forces and motion in biological systems.
+
+1.1 PHYSICAL PROPERTIES OF BIOLOGICAL MOLECULES
+-------------------------------------------------
+Water as a Biological Solvent:
+  Polarity (bent molecule; O is electronegative) → hydrogen bonding.
+  High specific heat capacity (4.18 J/g/°C) → buffers temperature changes.
+  High heat of vaporisation → evaporative cooling (sweating).
+  Cohesion and adhesion → capillary action in plants.
+  Water is densest at 4°C → ice floats → aquatic life survives under ice.
+  Universal solvent: Dissolves polar/ionic molecules; excludes nonpolar (hydrophobic effect).
+
+pH and Buffers:
+  pH = -log[H+]. Neutral = 7. Acidic < 7. Basic > 7.
+  Buffer: Resists pH changes; consists of weak acid + its conjugate base.
+  Henderson-Hasselbalch: pH = pKa + log([A-]/[HA])
+  Biological buffers: Bicarbonate (blood), phosphate (intracellular), proteins (histidine).
+
+Diffusion:
+  Fick's First Law: J = -D(dC/dx)
+  J = flux; D = diffusion coefficient; dC/dx = concentration gradient.
+  Diffusion time scales as distance squared: t ~ x²/2D
+  Small molecules (O2, CO2) diffuse rapidly over short distances (~µm).
+  Limits cell size: Diffusion becomes too slow beyond ~100 µm.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MEMBRANE BIOPHYSICS
+-----------------------
+Lipid Bilayer Physical Properties:
+  Thickness: ~5 nm. Capacitance: ~1 µF/cm². Resistance: very high (~10^9 Ω/cm²).
+  Fluid mosaic model: Lateral diffusion of lipids (~1 µm²/s); flip-flop rare.
+  Phase transition temperature (Tm): Gel phase (ordered) → liquid crystalline (disordered).
+  Cholesterol: Broadens transition; maintains fluidity at low temp; reduces at high temp.
+  Lipid rafts: Liquid-ordered microdomains enriched in cholesterol + sphingomyelin;
+  concentrate signalling proteins (GPI-anchored proteins, src-family kinases).
+
+Goldman-Hodgkin-Katz (GHK) Equation:
+  Describes membrane potential when multiple ions are permeable:
+  Vm = (RT/F) × ln[(PK[K+]o + PNa[Na+]o + PCl[Cl-]i) /
+                    (PK[K+]i + PNa[Na+]i + PCl[Cl-]o)]
+  At rest: PK >> PNa, PCl → Vm ≈ -70 mV.
+  During AP: PNa >> PK → Vm approaches +55 mV (Na+ Nernst potential).
+
+Nernst Equation (single ion):
+  Ex = (RT/zF) × ln([X]o/[X]i)
+  For K+ at 37°C: EK = -94 mV; ENa = +60 mV; ECa = +123 mV; ECl = -65 mV.
+
+3. PROTEIN STRUCTURE & BIOPHYSICS
+-----------------------------------
+Protein Folding:
+  Thermodynamics: Folding driven by hydrophobic effect (burial of nonpolar residues)
+  + van der Waals, H-bonds, ionic interactions, disulphide bonds.
+  Energy landscape: "Funnel" model — native state is global free energy minimum.
+  Levinthal's paradox: Random search of conformational space would take >age of universe;
+  proteins fold in milliseconds via pathways through the energy landscape.
+
+Molecular Chaperones:
+  Assist protein folding; prevent aggregation.
+  HSP70/BiP: Bind exposed hydrophobic patches on unfolded proteins.
+  GroEL/GroES (Hsp60): Barrel-shaped; provide protected folding chamber.
+  HSP90: Stabilises signalling proteins (kinases, steroid receptors).
+  Stress response: Heat, heavy metals, oxidative stress → chaperone upregulation.
+
+Protein Misfolding & Aggregation:
+  Amyloid fibrils: Cross-beta sheet structure; extremely stable.
+  Diseases: Alzheimer's (Abeta42, tau), Parkinson's (alpha-synuclein), Huntington's
+  (polyglutamine), Prion diseases (PrPsc), Type 2 diabetes (IAPP), ALS (SOD1, TDP-43).
+  Mechanisms: Nucleation-polymerisation → seeding → propagation (prion-like spread).
+
+4. SINGLE MOLECULE BIOPHYSICS
+-------------------------------
+Optical Tweezers:
+  Focused laser beam traps and manipulates individual molecules/particles.
+  Measures forces in pico-Newton range (1 pN = 10^-12 N).
+  Applications: Measuring force generated by kinesin (~5 pN); RNA polymerase
+  translocation; DNA mechanical properties; protein unfolding.
+
+Atomic Force Microscopy (AFM):
+  Nanoscale probe scans surface → measures interaction forces.
+  Images single proteins, DNA, cell surfaces at nm resolution.
+  Force spectroscopy: Stretches single proteins → measures unfolding pathways.
+
+FRET (Förster Resonance Energy Transfer):
+  Energy transfer between donor and acceptor fluorophores (1–10 nm range).
+  Efficiency: E = 1/(1 + (R/R0)^6) — extremely sensitive to distance.
+  Applications: Conformational changes in proteins; RNA folding; protein-protein interactions.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. STRUCTURAL BIOLOGY TECHNIQUES
+----------------------------------
+X-ray Crystallography:
+  Protein crystals diffract X-rays → diffraction pattern → electron density map
+  via Fourier transform (phase problem solved by MAD, SAD, or molecular replacement).
+  Resolution: 1–3 Å for most structures. >100,000 structures in PDB (Protein Data Bank).
+  Limitations: Requires crystal formation; static snapshot; some proteins resist crystallisation.
+
+Cryo-Electron Microscopy (Cryo-EM):
+  Proteins flash-frozen in vitreous ice → imaged by electron beam → thousands of
+  2D particle images → computationally reconstructed into 3D map.
+  Resolution revolution (2013): Improved detectors + software → near-atomic resolution.
+  Advantages: No crystallisation; captures multiple conformational states; large complexes.
+  Nobel Prize 2017: Henderson, Frank, Dubochet.
+  Current record: ~1.2 Å resolution (apoferritin, 2020).
+
+NMR Spectroscopy:
+  Atomic nuclei in magnetic field resonate at characteristic frequencies.
+  Chemical shifts, NOEs (nuclear Overhauser effects), J-couplings → distance and
+  dihedral angle restraints → structure calculation.
+  Advantage: Solution state; protein dynamics; H-bond detection.
+  Limitation: Size limit ~50 kDa for standard NMR; TROSY extends to ~1 MDa.
+
+AlphaFold2 (DeepMind, 2021):
+  AI system predicts 3D protein structure from amino acid sequence with near-
+  experimental accuracy. Uses multiple sequence alignments + attention-based
+  neural network (Evoformer + Structure Module). pLDDT confidence score (0–100).
+  AlphaFold Database: 200 million+ predicted structures. Revolutionised structural biology.
+  AlphaFold3 (2024): Extended to protein-DNA, protein-RNA, protein-ligand interactions.
+
+6. MOLECULAR MOTORS
+--------------------
+Myosin (Class II):
+  Walks along actin filaments. Two-headed; power stroke ~5 nm; force ~3–5 pN.
+  ATPase cycle: Detached (ATP bound) → attached-pre-power stroke (ADP+Pi) →
+  power stroke (Pi release) → rigor (ADP release) → ATP binds → detaches.
+  Processivity: Non-processive (skeletal myosin); processive (myosin V, VI).
+
+Kinesin-1:
+  Walks along microtubules toward (+) end (anterograde axonal transport).
+  Hand-over-hand mechanism: 8 nm steps. Force: ~5–7 pN. Processivity: ~1 µm before detachment.
+
+Dynein:
+  Walks toward (-) end of microtubules (retrograde transport; also cilia/flagella).
+  Largest cytoplasmic motor; regulated by dynactin complex.
+  Ciliary dynein: Outer and inner arm dyneins power ciliary beat in 9+2 axoneme.
+
+ATP Synthase (F0F1):
+  Rotary molecular motor. F0 (membrane): c-ring rotates driven by proton gradient.
+  F1 (catalytic): Gamma subunit rotation drives conformational changes in beta subunits
+  → ATP synthesis (binding change mechanism; Boyer). 3 ATP per 360° rotation;
+  3 H+ per ATP in mitochondria. Rotation speed: ~100–150 revolutions/second.
+  Nobel Prize: Boyer and Walker (1997).
+
+[CLINICAL LINK] Kinesin/dynein defects:
+  KIF1B mutations → Charcot-Marie-Tooth disease (peripheral neuropathy).
+  Dynein/dynactin mutations → ALS, Perry syndrome, motor neuron disease.
+  Primary ciliary dyskinesia (PCD): Dynein arm mutations → immotile cilia →
+  bronchiectasis, situs inversus (Kartagener syndrome), infertility.
+
+================================================================================

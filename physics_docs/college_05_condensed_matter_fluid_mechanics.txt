@@ -1,0 +1,142 @@
+COLLEGE PHYSICS - CONDENSED MATTER AND FLUID MECHANICS
+=======================================================
+
+CHAPTER: CONDENSED MATTER PHYSICS
+
+CRYSTAL STRUCTURES:
+- Unit cell: smallest repeating unit of crystal.
+- Bravais lattices: 14 types in 3D.
+- Common structures: Simple cubic (SC), Face-centered cubic (FCC, like Cu, Al), Body-centered cubic (BCC, like Fe, W), Hexagonal close-packed (HCP).
+- Coordination number: number of nearest neighbors. SC=6, BCC=8, FCC=12.
+- Packing fraction: SC=52%, BCC=68%, FCC=74% (most efficient).
+
+X-RAY DIFFRACTION:
+Bragg's law: 2d sin θ = nλ
+d = interplanar spacing, θ = glancing angle, λ = X-ray wavelength.
+Used to determine crystal structure.
+Miller indices (hkl) specify crystal planes.
+
+BAND THEORY OF SOLIDS:
+- Nearly free electron model: nearly free electrons modified by periodic potential.
+- Tight binding model: atomic orbitals overlap to form bands.
+- Band structure: E vs k diagram.
+- Effective mass: m* = ℏ²/(d²E/dk²) (can be negative near band edge)
+- Holes: empty states in valence band, behave as positive charge carriers.
+
+METALS:
+- Partially filled conduction band.
+- Fermi sphere in k-space.
+- Electrical conductivity: σ = ne²τ/m = ne μ (μ = mobility)
+- Drude model: classical, τ = mean free time.
+- Bloch theorem: ψ_k(r) = u_k(r)e^(ik·r) (periodic × plane wave)
+
+SEMICONDUCTORS (detailed):
+- Intrinsic carrier density: n_i = √(N_c N_v) e^(-E_g/2kT)
+- Minority/majority carriers: depend on doping.
+- p-n junction built-in potential: V₀ = (kT/e) ln(N_A N_D/n_i²)
+- MOSFET: voltage-controlled transistor. Basis of all modern electronics.
+- LED: forward-biased p-n junction emits light when electrons recombine with holes.
+- Solar cell: reverse of LED; photon creates electron-hole pair.
+
+SUPERCONDUCTIVITY:
+- Zero electrical resistance below T_c (critical temperature).
+- Meissner effect: perfect diamagnetism (expels all B field).
+- BCS theory: Cooper pairs of electrons (mediated by phonons) in singlet state.
+- Cooper pair binding energy ~ 1 meV.
+- Type I: abrupt transition (Pb, Sn, Hg).
+- Type II: mixed state with vortices (Nb, high-T_c cuprates).
+- High-T_c superconductors: discovered 1986, T_c up to 135 K.
+- Applications: MRI magnets, maglev trains, particle accelerators.
+
+QUANTUM HALL EFFECT:
+In 2D electron gas at strong B field and low T.
+Integer QHE: Hall conductance quantized in integer multiples of e²/h.
+Fractional QHE: fractional multiples due to electron correlations (quasiparticles with fractional charge).
+
+FERROMAGNETISM:
+Exchange interaction: parallel spin alignment energetically favorable.
+Domains: regions of uniform magnetization.
+Curie temperature: T_c above which ferromagnetism vanishes.
+Mean field theory: M = N μ tanh(μB_eff/kT)
+Spin waves (magnons): collective excitations of spin system.
+
+PHONONS:
+Quanta of lattice vibrations.
+Acoustic phonons: atoms move in phase (can be longitudinal or transverse).
+Optical phonons: adjacent atoms move out of phase (in ionic crystals).
+Phonon dispersion: ω vs k.
+Heat conduction by phonons dominant in insulators.
+
+---
+
+CHAPTER: FLUID MECHANICS
+
+FLUID STATICS:
+Pressure at depth: P = P₀ + ρgh
+Pascal's principle: pressure applied to enclosed fluid is transmitted equally.
+Archimedes' principle: buoyant force = weight of displaced fluid. F_b = ρ_fluid V_submerged g.
+
+FLUID DYNAMICS:
+
+Continuity equation (mass conservation):
+A₁v₁ = A₂v₂ (for incompressible fluid)
+∂ρ/∂t + ∇·(ρv⃗) = 0 (general form)
+
+Bernoulli's equation (energy conservation for ideal fluid):
+P + ½ρv² + ρgh = constant (along streamline)
+Applications: airplane wings, venturimeter, Pitot tube.
+
+Torricelli's theorem: v = √(2gh) (speed of efflux)
+
+VISCOSITY:
+- Viscous force: F = ηA dv/dy (η = dynamic viscosity, Pa·s)
+- Kinematic viscosity: ν = η/ρ (m²/s)
+- Stokes' law: F_drag = 6πηrv (for sphere at low Re)
+- Terminal velocity: v_t = 2r²(ρ-ρ_f)g/(9η)
+
+REYNOLDS NUMBER:
+Re = ρvL/η = vL/ν (L = characteristic length)
+- Re < 2000: laminar (smooth, parallel layers).
+- Re > 4000: turbulent (chaotic, eddies).
+- 2000-4000: transition region.
+
+NAVIER-STOKES EQUATIONS:
+ρ(∂v⃗/∂t + v⃗·∇v⃗) = -∇P + η∇²v⃗ + ρg⃗
+General equations of viscous fluid motion.
+Extremely difficult to solve. One of the Millennium Prize Problems (existence and smoothness).
+
+SURFACE TENSION (γ):
+Force per unit length at liquid surface.
+Excess pressure inside bubble: ΔP = 4γ/r (soap bubble, 2 surfaces)
+Excess pressure inside droplet: ΔP = 2γ/r (1 surface)
+Capillary rise: h = 2γ cos θ/(ρgr) (θ = contact angle)
+
+DIMENSIONAL ANALYSIS IN FLUIDS:
+Key dimensionless groups:
+- Reynolds number (Re = ρvL/η): inertia/viscosity.
+- Mach number (Ma = v/c): flow speed/sound speed.
+- Froude number (Fr = v/√(gL)): inertia/gravity.
+- Strouhal number: oscillation frequency × L/v.
+
+SOUND WAVES IN FLUIDS:
+Speed of sound: v = √(B/ρ) (B = bulk modulus)
+For ideal gas: v = √(γRT/M) = √(γP/ρ)
+At 20°C in air: v ≈ 343 m/s.
+Mach cone angle: sin θ = c/v = 1/Ma (for Ma > 1).
+
+TURBULENCE:
+- Energy cascade: energy injected at large scales, cascades to smaller scales, dissipated at smallest scales (Kolmogorov microscale).
+- Kolmogorov length: η_K = (ν³/ε)^(1/4) (ε = energy dissipation rate)
+- Self-similar structure (fractals).
+- Not fully understood — one of greatest unsolved problems in physics.
+
+IMPORTANT FORMULAS:
+- P = P₀ + ρgh (hydrostatic pressure)
+- F_b = ρgV (buoyancy)
+- P + ½ρv² + ρgh = const (Bernoulli)
+- F = ηA dv/dy (viscous force)
+- Re = ρvL/η (Reynolds number)
+- v_t = 2r²Δρg/(9η) (terminal velocity)
+- ΔP = 4γ/r (soap bubble)
+- h = 2γ cos θ/(ρgr) (capillary rise)
+- v_sound = √(γRT/M) (ideal gas)

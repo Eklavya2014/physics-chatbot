@@ -1,0 +1,225 @@
+CLASS 10 CHEMISTRY - COMPLETE GUIDE
+=====================================
+
+CHAPTER 1: CHEMICAL REACTIONS AND EQUATIONS
+
+CHEMICAL REACTION:
+A process in which substances (reactants) are transformed into new substances (products) with different properties.
+
+Signs of a chemical reaction:
+- Change in color
+- Change in temperature (heat released or absorbed)
+- Evolution of gas (bubbles)
+- Formation of precipitate
+- Change in smell
+
+CHEMICAL EQUATION:
+Represents a chemical reaction using symbols and formulas.
+Word equation: Magnesium + Oxygen → Magnesium oxide
+Chemical equation: 2Mg + O₂ → 2MgO
+Balanced equation: follows law of conservation of mass.
+
+BALANCING EQUATIONS:
+Number of atoms of each element must be equal on both sides.
+Example: H₂ + O₂ → H₂O (unbalanced)
+Balanced: 2H₂ + O₂ → 2H₂O
+
+TYPES OF CHEMICAL REACTIONS:
+
+1. Combination (Synthesis): A + B → AB
+Two or more substances combine to form one product.
+Example: CaO + H₂O → Ca(OH)₂ (quicklime + water → slaked lime)
+2C + O₂ → 2CO₂
+
+2. Decomposition: AB → A + B
+Single substance breaks down into two or more simpler substances.
+Types:
+- Thermal decomposition: 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂ (heat)
+- Electrolytic decomposition: 2H₂O → 2H₂ + O₂ (electricity)
+- Photo decomposition: 2AgCl → 2Ag + Cl₂ (sunlight) [used in photography]
+
+3. Displacement: A + BC → AC + B
+More reactive element displaces less reactive element.
+Example: Fe + CuSO₄ → FeSO₄ + Cu (iron displaces copper)
+Zn + H₂SO₄ → ZnSO₄ + H₂ (zinc displaces hydrogen)
+
+4. Double Displacement: AB + CD → AD + CB
+Exchange of ions between two compounds.
+Example: Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl (white precipitate)
+NaOH + HCl → NaCl + H₂O (neutralization)
+
+5. Oxidation-Reduction (Redox):
+Oxidation: loss of electrons (or gain of oxygen, loss of hydrogen)
+Reduction: gain of electrons (or loss of oxygen, gain of hydrogen)
+These always occur together.
+Example: CuO + H₂ → Cu + H₂O
+CuO is reduced (loses oxygen), H₂ is oxidized (gains oxygen)
+
+CORROSION:
+Slow chemical attack of metals by environment.
+Iron rusting: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ → 2Fe₂O₃·3H₂O (rust)
+Prevention: painting, galvanizing, alloying, oiling.
+
+RANCIDITY:
+Oxidation of fats/oils causing bad smell and taste.
+Prevention: antioxidants, airtight containers, refrigeration, nitrogen gas packing.
+
+---
+
+CHAPTER 2: ACIDS, BASES AND SALTS
+
+ACIDS:
+Substances that give H⁺ ions (protons) in aqueous solution.
+Properties: sour taste, turns blue litmus red, pH < 7, conducts electricity.
+Strong acids: HCl, H₂SO₄, HNO₃ (fully dissociate)
+Weak acids: CH₃COOH, H₂CO₃, H₃PO₄ (partially dissociate)
+Uses of H₂SO₄: car batteries, fertilizers, detergents.
+Uses of HNO₃: fertilizers, explosives, dyes.
+Uses of HCl: cleaning metals, digestion (stomach acid).
+
+BASES:
+Substances that give OH⁻ ions in aqueous solution.
+Properties: bitter taste, soapy feel, turns red litmus blue, pH > 7.
+Strong bases: NaOH, KOH, Ca(OH)₂
+Weak bases: NH₄OH, Mg(OH)₂
+Alkali: a base that is soluble in water.
+
+pH SCALE:
+Measures hydrogen ion concentration.
+pH = -log[H⁺]
+pH 0-6: acidic (lower = stronger acid)
+pH 7: neutral
+pH 8-14: basic (higher = stronger base)
+Indicators: litmus, phenolphthalein, methyl orange, universal indicator.
+
+NEUTRALIZATION:
+Acid + Base → Salt + Water
+HCl + NaOH → NaCl + H₂O
+H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O
+
+SALTS:
+Formed by reaction of acid and base.
+NaCl (common salt): used in food, preservation.
+NaHCO₃ (baking soda): used in baking, antacid.
+Na₂CO₃ (washing soda): used in glass making, cleaning.
+CaOCl₂ (bleaching powder): used in disinfection, bleaching.
+Plaster of Paris (CaSO₄·½H₂O): used in bandages, sculptures.
+
+IMPORTANT REACTIONS:
+NaOH + HCl → NaCl + H₂O
+2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O
+Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂
+NaHCO₃ + HCl → NaCl + H₂O + CO₂
+
+---
+
+CHAPTER 3: METALS AND NON-METALS
+
+PHYSICAL PROPERTIES OF METALS:
+Lustrous, malleable, ductile, good conductors of heat and electricity, high melting points (except Hg, Ga), sonorous.
+Exceptions: Na and K are soft metals. Mercury is liquid at room temperature.
+
+PHYSICAL PROPERTIES OF NON-METALS:
+Dull (no lustre), brittle (if solid), poor conductors (except graphite), low melting points.
+Exception: Diamond (hardest natural substance), Graphite (conducts electricity).
+
+CHEMICAL PROPERTIES OF METALS:
+With oxygen: 4Na + O₂ → 2Na₂O (Na burns vigorously)
+                2Mg + O₂ → 2MgO (burns brilliantly white)
+                4Al + 3O₂ → 2Al₂O₃ (forms protective layer)
+With water: 2Na + 2H₂O → 2NaOH + H₂↑ (vigorous, cold water)
+            Mg + 2H₂O → Mg(OH)₂ + H₂↑ (with hot water)
+            3Fe + 4H₂O → Fe₃O₄ + 4H₂↑ (with steam)
+With acids: Zn + H₂SO₄ → ZnSO₄ + H₂↑
+            Fe + 2HCl → FeCl₂ + H₂↑
+
+REACTIVITY SERIES (most to least reactive):
+K > Na > Ca > Mg > Al > Zn > Fe > Ni > Sn > Pb > H > Cu > Hg > Ag > Au > Pt
+Metals above H in series displace H from acids.
+More reactive metals displace less reactive from solutions.
+
+EXTRACTION OF METALS:
+- Highly reactive (K, Na, Ca, Mg, Al): electrolysis
+- Moderately reactive (Zn, Fe, Pb, Cu): reduction with carbon/CO
+- Low reactivity (Hg, Ag, Au): found free or heated in air
+
+REFINING: Electrolytic refining for high purity (Cu, Ag, Au).
+
+CORROSION PREVENTION:
+Galvanizing: coating iron with zinc.
+Alloying: mixing metals (steel, brass, bronze).
+Painting, oiling, electroplating.
+
+ALLOYS AND THEIR COMPOSITIONS:
+Brass: Cu + Zn
+Bronze: Cu + Sn
+Solder: Pb + Sn
+Stainless steel: Fe + Cr + Ni
+Duralumin: Al + Cu + Mg + Mn
+
+---
+
+CHAPTER 4: CARBON AND ITS COMPOUNDS
+
+CARBON:
+Atomic number 6, forms 4 covalent bonds.
+Unique properties: catenation (forms chains with itself), tetravalency.
+
+ALLOTROPES OF CARBON:
+Diamond: each C bonded to 4 others in tetrahedral arrangement. Hardest substance. Insulator.
+Graphite: layers of hexagonal rings. Each C bonded to 3 others. Soft, lubricant. Conductor.
+Fullerene (C₆₀): soccer ball shape. Used in nanotechnology.
+
+HYDROCARBONS:
+Saturated: alkanes (only single bonds) — CₙH₂ₙ₊₂
+Methane (CH₄), Ethane (C₂H₆), Propane (C₃H₈), Butane (C₄H₁₀)
+Unsaturated: alkenes (double bond) — CₙH₂ₙ
+Ethene (C₂H₄), Propene (C₃H₆)
+Alkynes (triple bond) — CₙH₂ₙ₋₂
+Ethyne (C₂H₂) (acetylene)
+
+FUNCTIONAL GROUPS:
+-OH (hydroxyl): alcohols (methanol CH₃OH, ethanol C₂H₅OH)
+-CHO (aldehyde): methanal HCHO, ethanal CH₃CHO
+-COOH (carboxyl): acids (ethanoic acid CH₃COOH — vinegar)
+-CO- (ketone): propanone CH₃COCH₃ (acetone)
+Halogens: chloromethane CH₃Cl
+
+NOMENCLATURE:
+Prefix for carbon number: meth(1), eth(2), prop(3), but(4), pent(5), hex(6)
+Suffix: -ane (alkane), -ene (alkene), -yne (alkyne), -ol (alcohol), -al (aldehyde), -one (ketone), -oic acid (carboxylic acid)
+
+IMPORTANT REACTIONS:
+Combustion: CH₄ + 2O₂ → CO₂ + 2H₂O + heat
+Addition: CH₂=CH₂ + H₂ → CH₃-CH₃ (with Ni catalyst)
+Substitution: CH₄ + Cl₂ → CH₃Cl + HCl (in sunlight)
+Saponification: fat + NaOH → soap + glycerol
+
+SOAPS AND DETERGENTS:
+Soap: sodium salt of long-chain fatty acid. Made by saponification.
+Micelle formation: hydrophobic tail surrounds oil, hydrophilic head faces water.
+Hard water problem: Ca²⁺ and Mg²⁺ react with soap → scum.
+Detergents: work in hard water (synthetic, sulphonate group).
+
+---
+
+CHAPTER 5: PERIODIC CLASSIFICATION
+
+DÖBEREINER'S TRIADS: Groups of 3 elements with middle element's atomic weight = average of other two.
+NEWLANDS' OCTAVES: Every 8th element has similar properties.
+MENDELEEV'S PERIODIC TABLE: Arranged by atomic mass, left gaps for undiscovered elements.
+MODERN PERIODIC TABLE: Arranged by atomic number (Moseley, 1913).
+Modern periodic law: Properties of elements are periodic functions of their atomic numbers.
+
+PERIODIC TABLE STRUCTURE:
+18 groups (vertical columns) — similar chemical properties.
+7 periods (horizontal rows) — same number of electron shells.
+4 blocks: s, p, d, f blocks.
+
+PERIODIC TRENDS:
+Atomic size: increases down group (more shells), decreases across period (more protons pull electrons in).
+Ionization energy: decreases down group, increases across period.
+Electronegativity: decreases down group, increases across period (highest: F).
+Metallic character: increases down group, decreases across period.
+Non-metallic character: decreases down group, increases across period.
+Valency: increases from 1 to 4 then decreases to 0 across period.

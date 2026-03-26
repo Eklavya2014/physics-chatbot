@@ -1,0 +1,247 @@
+CLASS 12 CHEMISTRY - COMPLETE GUIDE
+=====================================
+
+CHAPTER 1: SOLUTIONS
+
+TYPES OF SOLUTIONS: solid-solid (alloys), liquid-liquid, gas-liquid.
+Solubility: maximum amount of solute that dissolves at given temperature.
+Henry's law: solubility of gas ∝ partial pressure. p = K_H × x
+
+COLLIGATIVE PROPERTIES (depend on number, not nature, of solute particles):
+
+1. Relative lowering of vapour pressure:
+(P° - P)/P° = X_solute = n/(N+n) (Raoult's law)
+
+2. Elevation of boiling point:
+ΔT_b = K_b × m (K_b = ebullioscopic constant, m = molality)
+
+3. Depression of freezing point:
+ΔT_f = K_f × m (K_f = cryoscopic constant)
+K_f for water = 1.86 K·kg/mol
+Used to determine molar mass: M = (1000 × K_f × w)/(ΔT_f × W)
+
+4. Osmotic pressure:
+π = MRT (M = molarity, R = gas constant, T = temperature)
+Osmosis: flow of solvent from dilute to concentrated solution through semipermeable membrane.
+Isotonic: same osmotic pressure. Hypertonic: higher concentration. Hypotonic: lower.
+
+VAN'T HOFF FACTOR (i):
+For electrolytes: i > 1 (dissociation). For non-electrolytes: i = 1.
+For association: i < 1.
+Modified colligative properties: ΔT_b = i × K_b × m
+
+---
+
+CHAPTER 2: ELECTROCHEMISTRY
+
+ELECTROCHEMICAL CELLS:
+Galvanic cell: converts chemical energy to electrical energy.
+Electrolytic cell: converts electrical energy to chemical energy.
+
+GALVANIC CELL (Daniell Cell):
+Zn | Zn²⁺ || Cu²⁺ | Cu
+Anode (-): oxidation occurs. Zn → Zn²⁺ + 2e⁻
+Cathode (+): reduction occurs. Cu²⁺ + 2e⁻ → Cu
+Cell potential: E_cell = E_cathode - E_anode
+E°_cell = E°_cathode - E°_anode = 1.10 V (for Daniell cell)
+Salt bridge: maintains electrical neutrality by allowing ion flow.
+
+STANDARD ELECTRODE POTENTIAL:
+Measured relative to Standard Hydrogen Electrode (SHE) = 0.00 V.
+More positive E°: better oxidizing agent. More negative E°: better reducing agent.
+E°(Cu²⁺/Cu) = +0.34 V, E°(Zn²⁺/Zn) = -0.76 V
+
+NERNST EQUATION:
+E = E° - (RT/nF) ln Q = E° - (0.0592/n) log Q (at 25°C)
+n = number of electrons, Q = reaction quotient.
+At equilibrium: E = 0, Q = K → log K = nE°/0.0592
+
+GIBBS ENERGY: ΔG° = -nFE° (F = Faraday = 96485 C/mol)
+ΔG = -nFE
+
+CONDUCTANCE:
+Resistance: R = ρ × l/A (ρ = resistivity)
+Conductance: G = 1/R (Siemens, S)
+Conductivity: κ = 1/ρ = G × l/A (S/m)
+Molar conductivity: Λ_m = κ/C (C = concentration in mol/m³)
+
+Kohlrausch's law: Λ°_m = ν₊λ°₊ + ν₋λ°₋
+(limiting molar conductivity = sum of ionic conductivities)
+Strong electrolytes: Λ_m = Λ°_m - b√C (Debye-Hückel-Onsager equation)
+
+FARADAY'S LAWS OF ELECTROLYSIS:
+1st law: mass deposited ∝ charge passed. m = ZIt = ZQ
+2nd law: mass ∝ equivalent weight. m₁/m₂ = E₁/E₂
+Electrochemical equivalent Z = M/(nF)
+
+BATTERIES:
+Primary (non-rechargeable): Dry cell (Leclanché), Mercury cell.
+Secondary (rechargeable): Lead storage battery, Nickel-cadmium, Lithium ion.
+Lead-acid battery: Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O, E = 2V per cell (12V car battery = 6 cells).
+Fuel cell: H₂ and O₂ combine to give water and electricity continuously.
+
+CORROSION:
+Electrochemical process. Fe acts as anode, C (impurity) as cathode.
+Fe → Fe²⁺ + 2e⁻ (anode). O₂ + H₂O + 4e⁻ → 4OH⁻ (cathode).
+Fe²⁺ + 2OH⁻ → Fe(OH)₂ → Fe₂O₃·xH₂O (rust).
+Prevention: galvanizing, cathodic protection, paint, alloying.
+
+---
+
+CHAPTER 3: CHEMICAL KINETICS
+
+RATE OF REACTION: change in concentration per unit time.
+Rate = -d[A]/dt = +d[B]/dt
+Instantaneous rate: slope of concentration-time curve at that point.
+
+RATE LAW: Rate = k[A]^m[B]^n
+k = rate constant (depends on T, not concentration).
+m, n = order with respect to each reactant (determined experimentally).
+Overall order = m + n.
+
+ZERO ORDER: Rate = k, [A] = [A]₀ - kt, t₁/₂ = [A]₀/2k
+FIRST ORDER: Rate = k[A], [A] = [A]₀ e^(-kt), t₁/₂ = 0.693/k (independent of concentration!)
+SECOND ORDER: Rate = k[A]², 1/[A] = 1/[A]₀ + kt, t₁/₂ = 1/(k[A]₀)
+
+INTEGRATED RATE LAWS:
+First order: log[A] = log[A]₀ - kt/2.303. Graph of log[A] vs t is straight line with slope -k/2.303.
+Radioactive decay follows first-order kinetics.
+
+ACTIVATION ENERGY (Eₐ):
+Minimum energy required for reaction to occur.
+Transition state theory: reactants pass through high-energy transition state.
+Arrhenius equation: k = A e^(-Eₐ/RT)
+ln k = ln A - Eₐ/RT
+log(k₂/k₁) = (Eₐ/2.303R)(1/T₁ - 1/T₂)
+A = pre-exponential/frequency factor.
+
+Effect of temperature: 10°C rise roughly doubles rate (rule of thumb).
+
+COLLISION THEORY:
+Rate = Z × f × p (Z = collision frequency, f = fraction with E > Eₐ, p = steric factor)
+f = e^(-Eₐ/RT)
+
+CATALYSIS:
+Catalyst: increases reaction rate by providing alternative pathway with lower Eₐ.
+Does NOT change equilibrium position or ΔG.
+Homogeneous: same phase as reactants (H₂SO₄ in esterification).
+Heterogeneous: different phase (Pt in hydrogenation).
+Enzyme: biological catalyst (highly specific, very efficient).
+Inhibitor: decreases reaction rate (anti-catalyst).
+
+---
+
+CHAPTER 4: ORGANIC CHEMISTRY
+
+NOMENCLATURE (IUPAC):
+1. Find longest carbon chain (parent chain).
+2. Number from end giving lowest locants to substituents.
+3. Name substituents as prefixes.
+4. Use suffixes for functional groups.
+
+ISOMERISM:
+Structural: same formula, different connectivity.
+- Chain isomerism: different carbon skeletons.
+- Position isomerism: different position of substituent/bond.
+- Functional group isomerism: different functional groups.
+- Metamerism: different alkyl groups on same functional group.
+
+Stereoisomerism: same connectivity, different spatial arrangement.
+- Geometrical (cis-trans): restricted rotation (double bonds, rings).
+- Optical: non-superimposable mirror images (chiral carbon).
+
+REACTIONS:
+
+SUBSTITUTION:
+Nucleophilic (SN1, SN2): at sp3 carbon.
+SN2: one step, inversion of configuration, bimolecular. Favored by primary alkyl halides.
+SN1: two steps, racemization, unimolecular. Favored by tertiary (stable carbocation).
+Electrophilic (EAS): on benzene ring.
+Free radical: alkanes with halogens in UV light.
+
+ADDITION:
+Electrophilic addition (EAS): to alkenes and alkynes.
+Markovnikov's rule: H adds to carbon with more H (less substituted).
+Anti-Markovnikov (peroxide effect): H adds to more substituted carbon (free radical mechanism).
+Nucleophilic addition: to carbonyl compounds (aldehydes, ketones).
+
+ELIMINATION:
+E1, E2: opposite of substitution.
+Saytzeff's rule: major product has more substituted double bond.
+
+NAMED REACTIONS:
+Cannizzaro reaction: aldehyde without α-H with strong base → acid + alcohol.
+Aldol condensation: aldehyde/ketone with dilute base → β-hydroxy carbonyl.
+Clemmensen reduction: C=O → CH₂ with Zn-Hg/HCl.
+Wolf-Kishner reduction: C=O → CH₂ with NH₂NH₂/KOH.
+Fries rearrangement: phenyl ester → hydroxyaryl ketone.
+Beckmann rearrangement: oxime → amide.
+Baeyer's test: pink KMnO₄ decolorized by alkenes/alkynes.
+Tollens' test (silver mirror): aldehydes reduce Ag(NH₃)₂⁺ → Ag mirror.
+Fehling's solution: blue → red precipitate (Cu₂O) with aliphatic aldehydes.
+
+---
+
+CHAPTER 5: COORDINATION COMPOUNDS
+
+WERNER'S THEORY:
+Primary valency (ionizable): shown by oxidation state.
+Secondary valency (coordinate): coordination number, shown in square brackets.
+
+NOMENCLATURE:
+Cation named first, then anion.
+Ligands named before metal. Anionic ligands end in -o, neutral ligands use common names.
+Oxidation state of metal in Roman numerals.
+Example: [Co(NH₃)₆]³⁺ = hexaamminecobalt(III) ion.
+
+CRYSTAL FIELD THEORY:
+d-orbitals split in ligand field.
+Octahedral: t₂g (lower, 3 orbitals) and e_g (higher, 2 orbitals). Splitting = Δₒ.
+Strong field ligands: large Δₒ, low spin. Weak field ligands: small Δₒ, high spin.
+Spectrochemical series: I⁻ < Br⁻ < Cl⁻ < F⁻ < OH⁻ < H₂O < NH₃ < en < CN⁻ < CO
+
+ISOMERISM IN COORDINATION COMPOUNDS:
+Structural: ionization, linkage, coordination, solvate isomers.
+Stereoisomerism: geometrical (cis-trans), optical (Δ, Λ for octahedral).
+
+STABILITY CONSTANT: K_stability = [complex]/[metal][ligand]^n
+Chelate effect: bidentate/polydentate ligands form more stable complexes (entropy factor).
+EDTA: hexadentate ligand, forms very stable complexes with many metal ions.
+
+---
+
+CHAPTER 6: BIOMOLECULES
+
+CARBOHYDRATES (Cx(H₂O)y):
+Monosaccharides: glucose (C₆H₁₂O₆), fructose, galactose. Cannot be hydrolyzed further.
+Glucose structure: open chain (Fischer), cyclic (Haworth, α and β forms).
+Disaccharides: maltose (glucose+glucose), sucrose (glucose+fructose), lactose (glucose+galactose).
+Polysaccharides: starch (storage in plants), glycogen (storage in animals), cellulose (structural in plants).
+Reducing sugars: have free aldehyde/ketone group, reduce Tollens'/Fehling's. Sucrose is non-reducing.
+
+PROTEINS:
+Made of amino acids connected by peptide bonds (-CO-NH-).
+20 standard amino acids. Essential amino acids: must obtain from diet.
+Primary structure: sequence of amino acids.
+Secondary: α-helix, β-pleated sheet (H-bonds).
+Tertiary: overall 3D folding (disulfide, H-bonds, hydrophobic).
+Quaternary: multiple polypeptide chains.
+Denaturation: loss of 3D structure (by heat, pH, chemicals).
+Enzymes: protein catalysts, highly specific (lock-and-key model).
+
+NUCLEIC ACIDS:
+DNA: deoxyribose sugar, A-T and G-C base pairs, double helix, carries genetic info.
+RNA: ribose sugar, single strand, carries genetic info from DNA to ribosome.
+Nucleotide = sugar + phosphate + nitrogenous base.
+Purines: adenine (A), guanine (G). Pyrimidines: thymine (T), cytosine (C), uracil (U).
+
+LIPIDS:
+Triglycerides: glycerol + 3 fatty acids. Saturated (no double bonds), unsaturated (double bonds).
+Saponification: triglyceride + NaOH → soap (sodium salt of fatty acid) + glycerol.
+Phospholipids: cell membrane structure (bilayer).
+Steroids: cholesterol, hormones (testosterone, estrogen, cortisol).
+
+VITAMINS:
+Fat soluble: A, D, E, K (stored in body).
+Water soluble: B-complex, C (not stored, must be regularly consumed).
+Vitamin A: vision. Vitamin C: antioxidant. Vitamin D: calcium absorption. Vitamin K: blood clotting.

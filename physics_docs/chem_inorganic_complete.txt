@@ -1,0 +1,254 @@
+INORGANIC CHEMISTRY - COMPLETE GUIDE
+======================================
+
+CHAPTER 1: HYDROGEN
+
+POSITION IN PERIODIC TABLE:
+Hydrogen is unique — placed in Group 1 (like alkali metals) but also resembles halogens.
+Like alkali metals: forms H⁺ ion, forms metal hydrides.
+Like halogens: forms H⁻ (hydride), diatomic H₂, nonmetallic character.
+Isotopes: Protium (¹H), Deuterium (²H or D), Tritium (³H or T, radioactive).
+Heavy water: D₂O, used as moderator in nuclear reactors.
+
+PREPARATION OF HYDROGEN:
+Lab: Zn + H₂SO₄(dil) → ZnSO₄ + H₂↑
+Industrial (Steam reforming): CH₄ + H₂O → CO + 3H₂ (800°C, Ni catalyst)
+Water gas: C + H₂O → CO + H₂
+Electrolysis: 2H₂O → 2H₂ + O₂
+
+PROPERTIES OF HYDROGEN:
+Colorless, odorless, lightest element. Burns in air: 2H₂ + O₂ → 2H₂O.
+Reducing agent: CuO + H₂ → Cu + H₂O
+Reacts with N₂: N₂ + 3H₂ ⇌ 2NH₃ (Haber process, 450°C, 200 atm, Fe catalyst)
+
+HYDRIDES:
+Ionic (saline): NaH, CaH₂ (react violently with water: NaH + H₂O → NaOH + H₂)
+Covalent: H₂O, NH₃, HCl, CH₄ (molecular)
+Metallic (interstitial): PdH₀.₆, TiH₁.₇ (non-stoichiometric, metal retains properties)
+
+WATER:
+Unique properties due to hydrogen bonding.
+Bent shape (sp³ hybridization), bond angle 104.5°.
+High boiling point (100°C), high surface tension, universal solvent.
+Maximum density at 4°C (anomalous expansion on freezing).
+Autoionization: 2H₂O ⇌ H₃O⁺ + OH⁻, Kw = 10⁻¹⁴ at 25°C.
+Hard water: contains Ca²⁺, Mg²⁺ salts.
+Temporary hardness: Ca(HCO₃)₂ → removed by boiling.
+Permanent hardness: CaSO₄, MgSO₄ → removed by Na₂CO₃, ion exchange resin.
+
+HYDROGEN PEROXIDE (H₂O₂):
+Pale blue liquid, strong oxidizing agent.
+Structure: H-O-O-H with O-O single bond, non-planar.
+Preparation: BaO₂ + H₂SO₄ → BaSO₄ + H₂O₂
+As oxidizer: H₂O₂ + 2KI → 2KOH + I₂
+As reducer: H₂O₂ + Cl₂ → 2HCl + O₂ (reduces with strong oxidizers)
+Uses: bleaching, antiseptic, rocket propellant.
+Stored in dark bottles (decomposes in light): 2H₂O₂ → 2H₂O + O₂
+
+---
+
+CHAPTER 2: S-BLOCK ELEMENTS (Groups 1 and 2)
+
+GROUP 1 - ALKALI METALS (Li, Na, K, Rb, Cs, Fr):
+Electronic configuration: ns¹
+Largest atoms in their periods. Lowest ionization energy. Most electropositive.
+Soft metals, low melting points, low densities (Li, Na, K float on water).
+Flame colors: Li (crimson red), Na (golden yellow), K (lilac/violet), Cs (blue).
+
+Reactions:
+With O₂: Li → Li₂O (oxide), Na → Na₂O₂ (peroxide), K,Rb,Cs → MO₂ (superoxide).
+With water: 2Na + 2H₂O → 2NaOH + H₂↑ (vigorous). Li (gentle), Na (vigorous), K (fire).
+With N₂: Only Li reacts: 6Li + N₂ → 2Li₃N (lithium nitride, anomalous).
+Diagonal relationship of Li with Mg.
+
+IMPORTANT COMPOUNDS:
+NaOH (caustic soda): by electrolysis of brine (chlor-alkali process). Used in soaps, textiles, paper.
+Na₂CO₃ (soda ash, washing soda): Solvay process. Used in glass, soap, paper.
+NaHCO₃ (baking soda): from Solvay process. Used in baking, antacids, fire extinguishers.
+NaCl (common salt): essential for life, food preservation, chemical industry.
+
+GROUP 2 - ALKALINE EARTH METALS (Be, Mg, Ca, Sr, Ba, Ra):
+Electronic configuration: ns²
+Harder than alkali metals, higher melting points, smaller atoms.
+Less reactive than alkali metals (higher ionization energy, smaller size).
+Flame colors: Ca (brick red), Sr (crimson), Ba (apple green).
+Diagonal relationship of Be with Al.
+
+Reactions:
+With water: Be (no reaction), Mg (only hot water), Ca,Sr,Ba (cold water, vigorous).
+Ca + 2H₂O → Ca(OH)₂ + H₂↑
+
+IMPORTANT COMPOUNDS:
+CaO (quicklime): CaCO₃ → CaO + CO₂ (thermal decomposition). Reacts with water → slaked lime.
+Ca(OH)₂ (slaked lime/lime water): used in construction, water treatment, CO₂ detection.
+CaCO₃ (limestone, marble, chalk): used in building, lime production, CO₂ source.
+CaSO₄·2H₂O (gypsum) → CaSO₄·½H₂O (Plaster of Paris, POP). POP + H₂O → hard gypsum.
+MgSO₄·7H₂O (Epsom salt): used as purgative, in dyeing.
+Cement: CaO + SiO₂ + Al₂O₃ + Fe₂O₃ mixture. Sets by hydration.
+
+---
+
+CHAPTER 3: P-BLOCK ELEMENTS
+
+GROUP 13 - BORON FAMILY (B, Al, Ga, In, Tl):
+Electronic configuration: ns²np¹
+Al is most abundant metal in Earth's crust (8.3%).
+Boron: metalloid, hard, semiconductor.
+Al: light, strong, good conductor, forms protective Al₂O₃ layer.
+Anomalous behavior of boron (small size, high charge density, no d-orbitals).
+
+Aluminium extraction (Hall-Heroult process):
+Ore: Bauxite (Al₂O₃·2H₂O)
+Purification (Bayer's process): Al₂O₃·2H₂O + NaOH → NaAlO₂ + H₂O → Al(OH)₃ → Al₂O₃
+Electrolysis of molten Al₂O₃ in cryolite (Na₃AlF₆) at 950°C.
+
+Alum: KAl(SO₄)₂·12H₂O. Used in water purification, dyeing, tanning.
+Borax: Na₂B₄O₇·10H₂O. Borax bead test identifies metal ions by bead colors.
+
+GROUP 14 - CARBON FAMILY (C, Si, Ge, Sn, Pb):
+Electronic configuration: ns²np²
+Carbon: non-metal (diamond, graphite, fullerene). Unique catenation property.
+Silicon: second most abundant element in Earth's crust. Semiconductor. Used in electronics, solar cells.
+Silicones: (R₂SiO)n — water-repellent, heat-resistant polymers.
+Silicates: fundamental unit [SiO₄]⁴⁻ tetrahedron. Basis of rocks and minerals.
+Lead: used in batteries, radiation shielding. Pb and its compounds highly toxic!
+
+CO: colorless, odorless, toxic gas. Binds to hemoglobin (230× better than O₂) → carbon monoxide poisoning.
+CO₂: greenhouse gas. Solid CO₂ = dry ice. Used in fire extinguishers, carbonated drinks.
+SiO₂ (silica/quartz): used in glass, optical fibers, semiconductors. Reacts with HF (only acid to dissolve glass): SiO₂ + 4HF → SiF₄ + 2H₂O.
+
+GROUP 15 - NITROGEN FAMILY (N, P, As, Sb, Bi):
+Electronic configuration: ns²np³
+Nitrogen: 78% of atmosphere. N₂ very stable (N≡N, bond energy 941 kJ/mol).
+Nitrogen cycle: N₂ → NO₃⁻ → NH₄⁺ → N₂.
+
+OXIDES OF NITROGEN:
+N₂O (laughing gas): colorless, used as anesthetic, supports combustion.
+NO: colorless, toxic, important in biology (vasodilator).
+NO₂: brown, toxic, causes acid rain. Equilibrium: 2NO₂ ⇌ N₂O₄.
+N₂O₄: colorless, explosive.
+N₂O₅: white solid, anhydride of HNO₃.
+
+NITRIC ACID (HNO₃) — Ostwald Process:
+Step 1: 4NH₃ + 5O₂ → 4NO + 6H₂O (Pt-Rh catalyst, 800°C)
+Step 2: 2NO + O₂ → 2NO₂
+Step 3: 4NO₂ + O₂ + 2H₂O → 4HNO₃
+Dilute HNO₃ with metals: 8HNO₃(dil) + 3Cu → 3Cu(NO₃)₂ + 2NO + 4H₂O
+Concentrated HNO₃ with metals: 4HNO₃(conc) + Cu → Cu(NO₃)₂ + 2NO₂ + 2H₂O
+Fe, Al, Cr — passivated by concentrated HNO₃ (protective oxide layer).
+Aqua regia: HNO₃ + 3HCl — dissolves Au, Pt. 3HCl + HNO₃ → NOCl + 2Cl + 2H₂O.
+
+PHOSPHORUS:
+Allotropes: white (waxy, toxic, P₄), red (less reactive), black (semiconductor, most stable).
+White phosphorus: P₄ tetrahedral structure, glows in dark (phosphorescence), stored in water.
+Phosphine (PH₃): smells like rotten fish, toxic.
+Phosphoric acid (H₃PO₄): tribasic weak acid. Used in fertilizers, food additive.
+
+GROUP 16 - OXYGEN FAMILY (O, S, Se, Te, Po):
+Electronic configuration: ns²np⁴
+Oxygen: most abundant element in Earth's crust (46% by mass).
+Ozone (O₃): allotrope of oxygen, bent structure, 117°.
+Ozone layer: absorbs harmful UV radiation. Depleted by CFCs.
+Ozone chemistry: O₃ + 2KI → 2KOH + I₂ + O₂ (test for ozone).
+
+SULPHUR:
+Allotropes: rhombic (stable at room T), monoclinic (above 96°C).
+Structure: puckered S₈ crown rings.
+Frasch process: extraction of underground sulphur using superheated water and air.
+
+SULPHURIC ACID (H₂SO₄) — Contact Process:
+Step 1: S + O₂ → SO₂
+Step 2: 2SO₂ + O₂ → 2SO₃ (V₂O₅ catalyst, 450°C)
+Step 3: SO₃ + H₂SO₄ → H₂S₂O₇ (oleum), then H₂S₂O₇ + H₂O → 2H₂SO₄
+King of chemicals — largest industrial chemical.
+Dilute H₂SO₄: typical acid reactions, never with Cu, Ag.
+Concentrated H₂SO₄: oxidizing, dehydrating, fuming. Burns skin.
+Reacts with Cu: Cu + 2H₂SO₄(hot conc) → CuSO₄ + SO₂ + 2H₂O.
+
+GROUP 17 - HALOGENS (F, Cl, Br, I, At):
+Electronic configuration: ns²np⁵. Most electronegative group.
+Most reactive non-metals. All form X⁻ ions.
+Reactivity: F > Cl > Br > I (based on bond energy, electron affinity).
+All exist as diatomic molecules (F₂, Cl₂, Br₂, I₂).
+Colors: F₂ (pale yellow gas), Cl₂ (greenish yellow gas), Br₂ (reddish brown liquid), I₂ (violet solid).
+Interhalogen compounds: ClF, BrF₃, IF₇, etc.
+
+CHLORINE:
+Lab preparation: MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O
+Industrial: electrolysis of brine.
+Bleaching action: Cl₂ + H₂O → HCl + HOCl (HOCl is bleaching agent, oxidizes dyes).
+With NaOH: Cl₂ + 2NaOH → NaCl + NaOCl + H₂O (bleach solution)
+With Ca(OH)₂: 2Cl₂ + 2Ca(OH)₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O (bleaching powder)
+
+HYDROGEN HALIDES (HF, HCl, HBr, HI):
+Acid strength: HF << HCl < HBr < HI (bond strength decreases).
+HF: forms hydrogen bonds (F-H···F), highest boiling point. Attacks glass: 4HF + SiO₂ → SiF₄ + 2H₂O.
+HCl: strong acid, not oxidizing. Reacts with metals, carbonates, etc.
+
+GROUP 18 - NOBLE GASES (He, Ne, Ar, Kr, Xe, Rn):
+Electronic configuration: ns²np⁶ (He: 1s²). Complete octets.
+Monatomic, extremely unreactive (not truly inert anymore).
+Xenon compounds: XeF₂, XeF₄, XeF₆, XeO₃, XeOF₄.
+XeF₂: linear; XeF₄: square planar; XeF₆: distorted octahedral.
+Uses: He (balloons, deep sea diving), Ne (neon signs), Ar (inert atmosphere in welding), Kr,Xe (flash lamps, lasers), Rn (radioactive, cancer treatment).
+
+---
+
+CHAPTER 4: D-BLOCK ELEMENTS (TRANSITION METALS)
+
+GENERAL PROPERTIES:
+Electronic configuration: (n-1)d¹⁻¹⁰ ns¹⁻² (exceptions: Cr, Cu, Mo, Ag, Au).
+Cr: [Ar]3d⁵4s¹ (half-filled d, extra stability)
+Cu: [Ar]3d¹⁰4s¹ (fully-filled d, extra stability)
+
+Properties arise from:
+1. Variable oxidation states (due to comparable energy of 3d and 4s).
+2. Formation of colored compounds (d-d transitions).
+3. Catalytic activity (variable valency, surface adsorption).
+4. Magnetic properties (unpaired d electrons).
+5. Formation of complex compounds.
+6. Alloy formation (similar atomic radii).
+
+VARIABLE OXIDATION STATES:
+Sc: +3 only. Ti: +2,+3,+4. V: +2,+3,+4,+5. Cr: +2,+3,+6. Mn: +2,+3,+4,+6,+7. Fe: +2,+3.
+Cu: +1,+2. Zn: +2 only.
+
+MAGNETIC PROPERTIES:
+Diamagnetic: all electrons paired, repelled by magnetic field. (Zn²⁺, Cu⁺)
+Paramagnetic: unpaired electrons, attracted by magnetic field. (Fe³⁺, Mn²⁺, Cu²⁺)
+Magnetic moment: μ = √(n(n+2)) BM (n = number of unpaired electrons)
+Fe³⁺ (5 unpaired): μ = √35 = 5.92 BM.
+Ferromagnetic: Fe, Co, Ni — permanent magnets (domain alignment).
+
+IMPORTANT COMPOUNDS:
+K₂Cr₂O₇ (potassium dichromate): orange, strong oxidizing agent in acidic medium.
+Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O, E° = +1.33V
+Orange in acidic solution, yellow (CrO₄²⁻) in basic solution.
+Used in volumetric analysis, tanning, dyeing.
+
+KMnO₄ (potassium permanganate): purple/violet, very strong oxidizing agent.
+In acidic medium: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (colorless), E° = +1.51V
+In neutral/alkaline: MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻ (brown precipitate)
+Preparation: 2MnO₂ + 2KOH + O₂ → 2K₂MnO₄, then 3K₂MnO₄ + 2CO₂ → 2KMnO₄ + MnO₂ + 2K₂CO₃
+Used as disinfectant, in volumetric analysis (permanganometry).
+
+---
+
+CHAPTER 5: F-BLOCK ELEMENTS (LANTHANIDES AND ACTINIDES)
+
+LANTHANIDES (Ce to Lu, 4f filling):
+Lanthanide contraction: regular decrease in atomic and ionic radii across the series.
+Caused by poor shielding of f-electrons.
+Effect: Zr and Hf have nearly identical properties. Pt metals have similar properties.
+Oxidation state: predominantly +3.
+Magnetic properties: complex, due to f-electron orbital contribution.
+Uses: magnets (Nd₂Fe₁₄B strongest permanent magnet), lasers, catalysts, phosphors in TVs.
+Cerium: Ce⁴⁺ used as oxidizing agent. Misch metal (alloy for cigarette lighter flints).
+
+ACTINIDES (Th to Lr, 5f filling):
+All radioactive! Most are synthetic (heavier actinides).
+Actinide contraction: similar to lanthanide contraction.
+More variable oxidation states than lanthanides (due to similar energy of 5f, 6d, 7s).
+Th: +4; U: +3,+4,+5,+6; Pu: +3,+4,+5,+6.
+Uranium: nuclear fuel (U-235 fission). UO₂ used in nuclear reactors.
+Plutonium: produced in reactors, used in nuclear weapons and fuel.

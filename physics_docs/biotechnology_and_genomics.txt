@@ -1,0 +1,214 @@
+================================================================================
+                    BIOTECHNOLOGY & GENOMICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BIOTECHNOLOGY — WHAT IS IT?
+--------------------------------
+Biotechnology uses living organisms, cells, or biological systems to develop
+products and technologies that benefit humans. Modern biotechnology began with
+recombinant DNA technology in the 1970s.
+
+Key Applications:
+- Medicine     : Insulin production, vaccines, gene therapy, cancer biologics.
+- Agriculture  : GMO crops, disease-resistant plants, improved yields.
+- Forensics    : DNA fingerprinting, paternity testing, crime scene analysis.
+- Environment  : Bioremediation (bacteria clean up oil spills); biofuels.
+- Industry     : Enzymes in detergents, food production, bioplastics.
+
+1.1 BASIC TOOLS OF BIOTECHNOLOGY
+----------------------------------
+Restriction Enzymes:
+  "Molecular scissors" — cut DNA at specific recognition sequences (4–8 bp).
+  Produce sticky ends (most common) or blunt ends.
+  Example: EcoRI recognises GAATTC → cuts between G and A on both strands.
+  Source: Bacterial immune defence against foreign DNA.
+  Application: Creating recombinant DNA by cutting + ligating DNA fragments.
+
+DNA Ligase:
+  "Molecular glue" — joins DNA fragments by forming phosphodiester bonds.
+  Used together with restriction enzymes in cloning.
+
+Vectors:
+  DNA molecules used to carry foreign DNA into host cells.
+  Types:
+  - Plasmids         : Circular bacterial DNA; most common for small inserts.
+  - Bacteriophages   : Viruses that infect bacteria; larger inserts.
+  - BACs/YACs        : Bacterial/Yeast Artificial Chromosomes; very large inserts.
+  - Viral vectors    : Adenovirus, AAV, lentivirus — used in gene therapy.
+
+Gel Electrophoresis:
+  Separates DNA, RNA, or proteins by size using an electric field.
+  DNA (negatively charged) migrates toward positive electrode.
+  Smaller fragments migrate faster → further from wells.
+  Ethidium bromide or SYBR Green stains DNA → visible under UV light.
+  Used for: visualising PCR products, restriction digests, DNA quality.
+
+PCR (Polymerase Chain Reaction):
+  Amplifies specific DNA sequences exponentially in vitro.
+  Components: Template DNA, two primers, Taq polymerase, dNTPs, buffer.
+  Cycle: Denaturation (94°C) → Annealing (50–65°C) → Extension (72°C)
+  30 cycles → ~1 billion copies from one template molecule.
+  Applications: Diagnostics (COVID-19 PCR test), forensics, cloning, sequencing.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. DNA SEQUENCING
+------------------
+Sanger Sequencing (First Generation):
+  Chain termination method (Sanger, 1977). Uses ddNTPs (dideoxy-nucleotides) that
+  lack 3'-OH → terminate chain extension at different points → fragments of all
+  lengths → separated by electrophoresis → sequence read.
+  Accuracy: Very high (~99.99%). Throughput: Low (one read at a time).
+  Still used for: targeted sequencing, validating Sanger clones, clinical confirmation.
+
+Next-Generation Sequencing (NGS / Short-Read):
+  Massively parallel sequencing — millions of fragments simultaneously.
+  Illumina platform: Sequence by synthesis; fluorescent reversible terminators.
+  Applications:
+  - Whole Genome Sequencing (WGS): Entire ~3.2 Gb human genome.
+  - Whole Exome Sequencing (WES): Coding regions only (~1.5% of genome).
+  - RNA-Seq: Transcriptomics; gene expression profiling.
+  - ChIP-Seq: Maps protein-DNA interactions (TF binding, histone marks).
+  - ATAC-Seq: Open chromatin regions; identifies regulatory elements.
+
+Third-Generation Sequencing (Long-Read):
+  Oxford Nanopore: DNA passes through protein nanopore; ionic current changes
+  identify bases. Reads >100 kb; real-time; no amplification needed.
+  PacBio SMRT: Single-molecule real-time; ~20–30 kb reads; high accuracy HiFi mode.
+  Advantage: Resolve repetitive regions, structural variants, full-length transcripts.
+
+3. GENOMICS
+------------
+The Human Genome Project (HGP):
+  International collaboration (1990–2003). First ~complete human genome sequence.
+  Findings: ~3.2 billion bp; ~20,000–25,000 protein-coding genes; only ~1.5%
+  of genome is protein-coding; ~50% is repetitive sequences (transposons, SINEs, LINEs).
+
+Comparative Genomics:
+  Human-chimp: ~98.7% DNA identity. Human-mouse: ~85% coding region similarity.
+  Synteny: Conservation of gene order between species.
+  Model organisms: E. coli, S. cerevisiae (yeast), C. elegans, Drosophila, zebrafish,
+  mouse — all sequenced; invaluable for understanding human gene function.
+
+Functional Genomics:
+- Transcriptomics : Study of all RNA in a cell (RNA-Seq).
+- Proteomics      : Study of all proteins (mass spectrometry).
+- Metabolomics    : Study of all metabolites.
+- Epigenomics     : Genome-wide epigenetic modifications (ENCODE project).
+- Interactomics   : Protein-protein interaction networks.
+
+GWAS (Genome-Wide Association Studies):
+  Compare SNP frequencies across genomes of affected vs unaffected individuals.
+  Identifies genetic loci associated with complex traits/diseases.
+  Identified variants for: type 2 diabetes (TCF7L2), coronary artery disease,
+  breast cancer (BRCA regions), schizophrenia, Alzheimer's (APOE-e4, CLU, CR1).
+  Limitation: Most GWAS hits are in non-coding regions; missing heritability problem.
+
+4. RECOMBINANT DNA TECHNOLOGY & CLONING
+-----------------------------------------
+Molecular Cloning Workflow:
+  1. Isolate gene of interest (via PCR or restriction digestion).
+  2. Cut vector + insert with compatible restriction enzymes.
+  3. Ligate insert into vector → recombinant plasmid.
+  4. Transform into E. coli (heat shock or electroporation).
+  5. Select transformants (antibiotic resistance marker on vector).
+  6. Screen clones (colony PCR, restriction mapping, sequencing).
+  7. Express protein (IPTG induction if under lac promoter control).
+
+Expression Systems:
+  E. coli      : Fast, cheap; no post-translational modifications.
+  Yeast        : Glycosylation; used for Hep B vaccine antigen, insulin.
+  Insect cells : Baculovirus system; complex proteins.
+  Mammalian    : CHO cells; proper folding/glycosylation; biologics (monoclonal Ab).
+
+Recombinant Products:
+  Insulin (Humulin): First recombinant protein (1982); expressed in E. coli.
+  Erythropoietin (EPO): Treats anaemia in CKD; expressed in CHO cells.
+  Monoclonal antibodies: Adalimumab (anti-TNF); trastuzumab (anti-HER2).
+  Factor VIII/IX: Haemophilia treatment.
+  Vaccines: Hepatitis B surface antigen (yeast); HPV VLPs (yeast).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ADVANCED GENOME EDITING
+----------------------------
+CRISPR-Cas9 (review and advanced):
+  Type II CRISPR system from Streptococcus pyogenes. Cas9 + sgRNA.
+  PAM sequence (NGG): Required adjacent to target for Cas9 cleavage.
+  Delivery: Plasmid, RNP (ribonucleoprotein), LNP (lipid nanoparticle) for in vivo.
+  Off-target effects: Detected by GUIDE-Seq, CIRCLE-Seq, Digenome-Seq.
+  Reduced by: High-fidelity Cas9 variants (eSpCas9, HiFi Cas9), truncated guides.
+
+Prime Editing:
+  PE2: Cas9 nickase (H840A) + reverse transcriptase (M-MLT RT).
+  pegRNA: Extended sgRNA with primer binding site + RT template.
+  No DSB; no donor template required. Can install all 12 types of base substitution
+  plus small indels. PE3: Additional nick on non-edited strand → increases efficiency.
+
+Epigenome Editing:
+  dCas9 (D10A + H840A mutations → catalytically dead) fused to:
+  - DNMT3A          : CpG methylation → gene silencing.
+  - TET1            : Demethylation → gene activation.
+  - p300 (HAT)      : H3K27ac → activate enhancers.
+  - KRAB (repressor) : H3K9me3 → gene silencing.
+  - VPR (activator)  : VP64-p65-Rta → strong gene activation (CRISPRa).
+
+6. SINGLE-CELL GENOMICS
+-------------------------
+scRNA-Seq (Single-cell RNA sequencing):
+  Captures transcriptome of individual cells → reveals cell heterogeneity,
+  rare cell types, cell state transitions.
+  Workflow: Cell isolation (droplet-based: 10x Genomics; plate-based: Smart-Seq2)
+  → cell barcoding → library prep → sequencing → dimensionality reduction
+  (PCA, UMAP/tSNE) → clustering → cell type annotation.
+
+Applications:
+  - Atlas projects: Human Cell Atlas (all cell types in human body).
+  - Cancer: Identify tumour subclones, drug-resistant subpopulations.
+  - Development: Lineage tracing; reconstruct cell fate trajectories (pseudotime).
+  - Immunology: TCR/BCR clonotype tracking; immune cell subset characterisation.
+
+Spatial Transcriptomics:
+  RNA sequencing with spatial coordinates preserved (Visium, MERFISH, seqFISH+).
+  Reveals gene expression within tissue architecture. Nobel Prize 2020 cited
+  related smFISH technology (Seurat + STARmap integration).
+
+7. SYNTHETIC BIOLOGY
+---------------------
+Design principles: Standardised biological parts (BioBricks); rational circuit design.
+
+Gene Circuits:
+  Toggle switches, oscillators (repressilator), logic gates using genetic
+  components (promoters, RBS, coding sequences, terminators).
+  Applications: Biosensors, drug delivery switches, metabolic engineering.
+
+Metabolic Engineering:
+  Redesign microbial metabolism to produce valuable compounds.
+  Artemisinin (anti-malarial): Yeast engineered with plant CYP450 genes.
+  1,3-Propanediol: E. coli engineered to produce from glycerol → bioplastics.
+  Lycopene, resveratrol, opioids: All produced in engineered microbes.
+
+Whole Genome Synthesis:
+  JCVI Syn 1.0 (2010): First synthetic bacterial genome (Mycoplasma mycoides).
+  Sc2.0 project: Synthesising all 16 yeast chromosomes (redesigned; SCRaMbLE
+  recombination system for rapid genome shuffling).
+  Implications for understanding genome design principles.
+
+[CLINICAL LINK] Gene therapy using AAV vectors:
+  Luxturna (AAV2-RPE65): First FDA-approved in vivo gene therapy; treats
+  inherited retinal dystrophy.
+  Zolgensma (AAV9-SMN1): Spinal muscular atrophy (SMA) in infants; single IV dose.
+  Hemgenix (AAV5-FIX): Haemophilia B; first approved for adults.
+  Challenge: Manufacturing scale, immunogenicity, re-dosing limitations.
+  mRNA therapeutics: BNT111 (melanoma mRNA vaccine); personalised neoantigen vaccines.
+
+================================================================================

@@ -1,0 +1,215 @@
+================================================================================
+                         MARINE BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE OCEAN — OVERVIEW
+------------------------
+The ocean covers 71% of Earth's surface and contains 97% of Earth's water.
+Average depth: 3,688 m. Deepest point: Mariana Trench (~11,000 m).
+Marine biology is the study of organisms living in the ocean and other saltwater
+environments (estuaries, coastal wetlands, coral reefs, deep sea).
+
+Ocean Zones by Depth:
+Zone             | Depth Range    | Light         | Key Features
+-----------------|----------------|---------------|----------------------------
+Epipelagic       | 0–200 m        | Sunlit zone   | Photosynthesis; most life
+Mesopelagic      | 200–1,000 m    | Twilight zone | Bioluminescence common
+Bathypelagic     | 1,000–4,000 m  | No light      | High pressure; cold
+Abyssopelagic    | 4,000–6,000 m  | No light      | Extreme pressure; sparse
+Hadopelagic      | >6,000 m       | No light      | Trenches; extremophiles
+
+Ocean Zones by Distance from Shore:
+- Intertidal (littoral): Between high and low tide marks. Most dynamic zone.
+- Neritic zone: Over continental shelf (<200 m deep). High productivity.
+- Oceanic zone: Open ocean beyond continental shelf.
+- Benthic zone: Ocean floor (any depth).
+
+1.1 MAJOR MARINE ECOSYSTEMS
+-----------------------------
+Coral Reefs:
+  "Rainforests of the sea." Cover <1% of ocean floor but house ~25% of all marine species.
+  Built by coral polyps (cnidarians) that secrete calcium carbonate skeletons.
+  Symbiosis: Corals host zooxanthellae (photosynthetic dinoflagellates) in tissues →
+  provide up to 90% of coral's energy via photosynthesis.
+
+Kelp Forests:
+  Giant kelp (Macrocystis pyrifera) grows up to 45 cm/day; forms underwater forests.
+  Habitat for fish, sea otters, invertebrates. Important carbon sink.
+  Keystone species: Sea otters control sea urchins → protect kelp.
+
+Estuaries:
+  Where rivers meet sea. Highly productive; nursery habitat for many species.
+  Salinity varies (brackish water). Examples: Chesapeake Bay, Sundarbans.
+
+Mangroves:
+  Tropical coastal forests; salt-tolerant trees. Roots provide nursery habitat;
+  buffer coastlines against erosion and storm surge; carbon storage.
+
+Deep Sea Hydrothermal Vents:
+  Discovered 1977 (Galapagos Rift). Chemosynthetic ecosystems — no sunlight.
+  Bacteria oxidise H2S → energy (chemolithotrophy) → base of food web.
+  Unique fauna: Tube worms (Riftia pachyptila), vent crabs, vent fish, Pompeii worms.
+
+1.2 MAJOR MARINE ORGANISMS
+----------------------------
+Plankton (drifting organisms):
+  Phytoplankton : Photosynthetic microorganisms (diatoms, dinoflagellates,
+                  cyanobacteria). Produce ~50% of Earth's oxygen.
+  Zooplankton   : Small animals (copepods, krill, jellyfish larvae). Base of
+                  marine food webs.
+
+Marine Invertebrates: Sponges, cnidarians (jellyfish, corals, anemones),
+  echinoderms (sea stars, urchins), molluscs (squid, octopus, clams),
+  crustaceans (crabs, shrimp, lobsters).
+
+Marine Vertebrates: Fishes (cartilaginous: sharks, rays; bony: teleosts),
+  marine reptiles (sea turtles, sea snakes), seabirds, marine mammals
+  (cetaceans, pinnipeds, sirenians, sea otters).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MARINE ECOLOGY
+------------------
+Primary Production in the Ocean:
+  Driven by phytoplankton in the photic zone (top ~200 m).
+  Limited by: light, nutrients (N, P, Fe), temperature, CO2.
+  Iron hypothesis (Martin, 1990): Iron limits primary production in HNLC
+  (High Nutrient, Low Chlorophyll) regions (Southern Ocean, equatorial Pacific).
+  Iron fertilisation experiments: Adding Fe → phytoplankton bloom → carbon export?
+
+Marine Food Webs:
+  Phytoplankton → Zooplankton (copepods, krill) → Small fish (herring, sardines)
+  → Large fish (tuna, cod) → Top predators (sharks, seals, dolphins, orcas)
+  Microbial loop: Bacteria decompose dissolved organic matter → recycled nutrients.
+  Biological pump: Sinking organic particles (marine snow) → carbon to deep ocean.
+
+Upwelling:
+  Wind-driven movement of deep, cold, nutrient-rich water to surface.
+  Supports massive productivity: Humboldt Current (Peru), California Current.
+  El Nino: Weakens upwelling → drastic decline in fish stocks.
+
+3. MARINE ADAPTATIONS
+----------------------
+Pressure Adaptation (Deep Sea):
+  Piezophiles (pressure-loving organisms). Protein adaptations: flexible enzymes,
+  increased unsaturated fatty acids in membranes (maintains fluidity under pressure).
+  Trimethylamine oxide (TMAO): Accumulates in deep-sea fish; counteracts pressure-
+  induced protein destabilisation.
+
+Osmoregulation in Marine Animals:
+  Marine bony fish: Hypoosmotic to seawater → lose water → drink seawater constantly;
+  excrete excess salt via gills (chloride cells) and produce little, concentrated urine.
+  Marine sharks/rays: Osmoconformers; accumulate urea + TMAO to match seawater osmolarity.
+  Marine mammals: Obtain water from food; kidneys concentrate urine; skin waterproof.
+
+Thermoregulation:
+  Ectotherms (fish, invertebrates): Body temperature = water temperature.
+  Some fish (bluefin tuna, great white shark): Partial endothermy via countercurrent
+  heat exchange (rete mirabile) → maintain muscles warmer than water.
+  Marine mammals (cetaceans, pinnipeds): Endothermic; insulated by thick blubber layer.
+
+Bioluminescence:
+  Production of light by living organisms via luciferin + luciferase reaction.
+  ~76% of deep-sea species are bioluminescent.
+  Functions: Predation (anglerfish lure), counter-illumination camouflage,
+  communication (firefly squid), startling predators.
+  Dinoflagellates: Blue bioluminescence in surf ("sea sparkle" = Noctiluca, Lingulodinium).
+
+4. CETACEAN BIOLOGY
+--------------------
+Order Cetacea: Fully aquatic mammals descended from land mammals (~50 Mya).
+Sister group to Artiodactyla (hippopotamuses are closest living relatives).
+
+Suborders:
+  Mysticeti (baleen whales): Filter feeders. Blue whale (largest animal ever,
+  up to 33 m, 173 tonnes). Humpback (breaching, complex songs).
+  Odontoceti (toothed whales): Include dolphins, porpoises, sperm whale, orcas.
+  Echolocation: Produce clicks → reflect off objects → processed in melon/lower jaw.
+  Sperm whale dives to 3,000 m for giant squid; holds breath >90 minutes.
+
+Whale migration: Humpbacks travel up to 25,000 km/year between feeding and breeding grounds.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. OCEAN CHEMISTRY & CLIMATE
+------------------------------
+Ocean Acidification:
+  Ocean absorbs ~25–30% of anthropogenic CO2 emissions.
+  CO2 + H2O → H2CO3 (carbonic acid) → H+ + HCO3- → H+ + CO3 2-
+  Since industrial revolution: ocean pH has dropped from 8.2 → 8.1 (~30% more acidic).
+  Impacts:
+  - Impairs calcification in corals, molluscs, echinoderms, foraminifera
+    (aragonite and calcite saturation states decline).
+  - Affects fish behaviour: olfaction, predator avoidance (clownfish larvae).
+  - Pteropods (sea butterflies): Shell dissolution observed in Southern Ocean.
+
+Ocean Deoxygenation:
+  Warmer water holds less oxygen. Oxygen minimum zones (OMZs) expanding.
+  Hypoxic zones ("dead zones") near coasts driven by nutrient runoff →
+  phytoplankton bloom → decomposition → O2 depletion (Gulf of Mexico, Baltic Sea).
+
+Thermohaline Circulation (Global Ocean Conveyor Belt):
+  Driven by density differences (temperature + salinity).
+  North Atlantic: Warm surface water cools → becomes dense → sinks (NADW) →
+  flows south → upwells in Southern Ocean → returns as surface current.
+  Shutdown risk: Freshwater from melting ice sheets → reduces density → slows AMOC.
+  Consequences: Cooling of NW Europe; disruption of monsoons; sea level rise on NE US coast.
+
+6. CORAL REEF ECOLOGY & BLEACHING
+-----------------------------------
+Coral Biology:
+  Coral polyp: Cnidarian (phylum); has nematocysts for prey capture.
+  Zooxanthellae (Symbiodinium/Cladocopium): Photosynthetic dinoflagellate endosymbionts
+  in gastrodermal cells → provide coral with glucose, amino acids, O2 via photosynthesis
+  → coral provides CO2, nutrients, protected environment.
+
+Coral Bleaching:
+  Mechanism: Thermal stress → oxidative stress in zooxanthellae →
+  reactive oxygen species (ROS) damage photosystems → coral expels zooxanthellae
+  → coral turns white (bleaches) → starvation if symbiont not restored.
+  Threshold: ~1°C above average summer maximum sustained for 4+ weeks.
+  Degree Heating Weeks (DHW): Predictive metric used by NOAA Coral Reef Watch.
+  Mass bleaching events: 1998, 2010, 2015–2017 (Great Barrier Reef: 50% coral death),
+  2022, 2024 (global — 4th mass bleaching event).
+
+Recovery: Possible if thermal stress brief (<8 weeks). Recovery takes 10–15 years.
+Assisted evolution strategies: Coral probiotics, selective breeding of heat-tolerant
+  symbiont strains (Durusdinium trenchii), CRISPR editing of coral genomes.
+
+7. MARINE CONSERVATION & THREATS
+----------------------------------
+Threats:
+  Overfishing         : ~33% of global fish stocks overexploited (FAO 2022).
+                        Bycatch: 40% of global catch is non-target species.
+  Plastic Pollution   : 8 million tonnes plastic enters ocean annually.
+                        Microplastics (<5mm) in all ocean zones; ingested by filter feeders.
+  Habitat Destruction : Trawling damages seafloor; dredging destroys seagrass/coral.
+  Invasive Species    : Crown-of-thorns starfish (coral predator); lionfish (Atlantic).
+  Climate Change      : Sea level rise, warming, acidification, deoxygenation.
+  Noise Pollution     : Ship noise, sonar disrupts cetacean communication/navigation.
+
+Conservation Strategies:
+  Marine Protected Areas (MPAs): ~8% of ocean currently protected; target 30x30.
+  No-take zones show dramatic recovery of fish biomass (50–150% increase in 5 years).
+  Fisheries management: MSC certification, catch quotas, mesh size regulations.
+  Whale sanctuaries; International Whaling Commission (IWC) moratorium (1986).
+  Blue carbon: Protecting mangroves, seagrasses, salt marshes as carbon sinks.
+  Restoration: Coral gardening, oyster reef restoration, seagrass replanting.
+
+[RESEARCH FRONTIER] eDNA (Environmental DNA) sampling:
+  Water samples contain DNA shed by organisms → sequencing reveals community
+  composition without direct observation. Detects rare/cryptic species.
+  Applications: Monitoring invasive species, biodiversity assessments, detecting
+  whale shark or great white shark presence without sighting.
+  Future: Autonomous underwater vehicles (AUVs) + real-time eDNA sensors.
+
+================================================================================

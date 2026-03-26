@@ -1,0 +1,230 @@
+QUANTUM MECHANICS - COMPLETE GUIDE
+====================================
+
+HISTORICAL DEVELOPMENT - THE QUANTUM REVOLUTION
+
+BLACKBODY RADIATION AND PLANCK (1900):
+A blackbody absorbs all radiation and emits radiation based only on temperature.
+Classical physics (Rayleigh-Jeans): u(ω) ∝ ω²kT → diverges at high frequency ("UV catastrophe")
+Planck's solution: Energy is quantized. E = nhf = nℏω (n = 0,1,2,...)
+Planck distribution: u(ω) = (ℏω³/π²c³) × 1/(e^(ℏω/kT) - 1)
+This fit experiment perfectly and launched quantum mechanics.
+Planck's constant: h = 6.626 × 10⁻³⁴ J·s (one of nature's fundamental constants)
+
+PHOTOELECTRIC EFFECT AND EINSTEIN (1905):
+When light shines on metal, electrons are emitted only if frequency exceeds threshold f₀.
+Classical prediction: any frequency should work with enough intensity. Wrong!
+Einstein's explanation: Light comes in quanta called photons. E_photon = hf
+KE_max = hf - φ (φ = work function = minimum energy to release electron)
+Stopping potential: eV₀ = hf - φ
+Nobel Prize 1921. This established the particle nature of light.
+
+COMPTON SCATTERING (1923):
+X-rays scattered by electrons show increased wavelength.
+Compton shift: Δλ = (h/m_e c)(1 - cosθ) = λ_C(1 - cosθ)
+Compton wavelength: λ_C = h/(m_e c) = 2.426 × 10⁻¹² m
+Confirmed photon has momentum: p = h/λ = E/c
+
+DE BROGLIE HYPOTHESIS (1924):
+If light (wave) has particle properties, then matter (particles) should have wave properties.
+de Broglie wavelength: λ = h/p = h/(mv)
+For electron accelerated through voltage V: λ = h/√(2meV) = 1.226/√V nm
+Confirmed by Davisson-Germer experiment (1927): electrons diffracted by crystal.
+
+---
+
+FUNDAMENTAL PRINCIPLES OF QUANTUM MECHANICS
+
+WAVE FUNCTION (Ψ):
+The quantum state of a particle is completely described by its wave function Ψ(x,t).
+Physical meaning (Born interpretation): |Ψ(x,t)|² dx = probability of finding particle between x and x+dx.
+Normalization: ∫|Ψ|²dx = 1 (particle must be somewhere)
+Requirements: continuous, single-valued, finite, square-integrable.
+Superposition principle: if Ψ₁ and Ψ₂ are solutions, so is c₁Ψ₁ + c₂Ψ₂.
+
+SCHRÖDINGER EQUATION:
+Time-dependent: iℏ ∂Ψ/∂t = ĤΨ = [-ℏ²/2m ∇² + V(x)]Ψ
+Time-independent: [-ℏ²/2m d²ψ/dx² + V(x)]ψ = Eψ or Ĥψ = Eψ
+This is the fundamental equation of quantum mechanics — analogous to F=ma in classical physics.
+
+OPERATORS AND OBSERVABLES:
+Every measurable quantity (observable) corresponds to a Hermitian operator.
+Position: x̂ = x (multiply by x)
+Momentum: p̂ = -iℏ d/dx
+Energy (Hamiltonian): Ĥ = p̂²/2m + V = -ℏ²/2m d²/dx² + V
+Angular momentum: L̂_z = -iℏ d/dφ
+
+Expectation value: ⟨A⟩ = ∫Ψ* Â Ψ dx
+Eigenvalue equation: Â ψ = a ψ (a = eigenvalue, ψ = eigenstate)
+Measurement postulate: measuring observable A gives eigenvalue a with probability |⟨a|Ψ⟩|²
+
+HEISENBERG UNCERTAINTY PRINCIPLE (1927):
+Δx · Δp ≥ ℏ/2
+ΔE · Δt ≥ ℏ/2
+ΔL_x · ΔL_y ≥ ℏ/2 |⟨L_z⟩|
+This is NOT due to measurement disturbance — it is a fundamental property of nature.
+A particle simply does not have a definite position AND definite momentum simultaneously.
+Zero-point energy: even in ground state, particle has minimum energy due to uncertainty.
+
+Physical consequences:
+- Atom stability: electron cannot spiral into nucleus (would require Δp → ∞)
+- Nuclear size: Δx ~ 10⁻¹⁵ m → Δp ~ 10⁻²⁰ kg·m/s → minimum KE explains nuclear binding
+- Quantum tunneling: particle can penetrate barriers forbidden classically
+- Vacuum fluctuations: energy uncertainty allows virtual particle creation
+
+---
+
+EXACTLY SOLVABLE QUANTUM SYSTEMS
+
+PARTICLE IN A BOX (Infinite Square Well):
+V(x) = 0 for 0 < x < L, V = ∞ elsewhere.
+Boundary conditions: ψ(0) = ψ(L) = 0
+Solution: ψ_n(x) = √(2/L) sin(nπx/L)
+Energy eigenvalues: E_n = n²π²ℏ²/(2mL²) = n²E₁
+Ground state energy: E₁ = π²ℏ²/(2mL²) ≠ 0 (ZERO-POINT ENERGY - purely quantum!)
+Key insight: Energy is QUANTIZED — only discrete values allowed.
+As n increases, energy increases as n².
+
+QUANTUM HARMONIC OSCILLATOR:
+V(x) = ½mω²x²
+Energy levels: E_n = (n + ½)ℏω, n = 0,1,2,3,...
+Ground state energy: E₀ = ½ℏω (zero-point energy)
+Energy levels are EQUALLY SPACED by ℏω.
+Ground state wavefunction: ψ₀ ∝ e^(-mωx²/2ℏ) (Gaussian)
+Ladder operators: â = √(mω/2ℏ)(x̂ + ip̂/mω), â†= √(mω/2ℏ)(x̂ - ip̂/mω)
+â|n⟩ = √n|n-1⟩ (lowering), â†|n⟩ = √(n+1)|n+1⟩ (raising)
+Applications: phonons, photons, molecular vibrations, field theory.
+
+HYDROGEN ATOM:
+Full 3D solution with Coulomb potential V = -e²/(4πε₀r)
+Energy: E_n = -13.6 eV/n² = -m_e e⁴/(8ε₀²h²n²)
+Quantum numbers:
+n = 1,2,3,... (principal) — determines energy
+l = 0,1,...,n-1 (orbital angular momentum) — determines shape (s,p,d,f)
+m_l = -l,...,0,...,+l (magnetic) — determines orientation
+m_s = ±½ (spin) — intrinsic angular momentum
+
+Orbital shapes: s (l=0, spherical), p (l=1, dumbbell), d (l=2, complex), f (l=3, very complex)
+Degeneracy of nth level: n² (without spin), 2n² (with spin)
+Radial wavefunctions: involve Laguerre polynomials
+Angular wavefunctions: spherical harmonics Y_l^m(θ,φ)
+
+Selection rules for radiative transitions:
+Δn = any, Δl = ±1, Δm_l = 0, ±1, Δm_s = 0
+
+---
+
+QUANTUM PHENOMENA
+
+QUANTUM TUNNELING:
+Particle penetrates a potential barrier even when E < V₀.
+Classically completely forbidden!
+Transmission probability: T ≈ e^(-2κL)
+κ = √(2m(V₀-E))/ℏ, L = barrier width
+Key: thinner barrier and smaller (V₀-E) → more tunneling.
+
+Applications:
+- Alpha decay: alpha particle tunnels out of nucleus (explains radioactive decay rates)
+- Nuclear fusion in stars: protons tunnel through Coulomb barrier
+- Scanning Tunneling Microscope (STM): images individual atoms
+- Tunnel diode: fast switching electronics
+- Flash memory: electrons tunnel through oxide layer
+- Josephson junction: superconducting devices
+
+QUANTUM ENTANGLEMENT:
+Two particles prepared together can be in a correlated quantum state such that measuring one instantaneously determines the state of the other, regardless of distance.
+Bell states (maximally entangled): |Φ+⟩ = (|↑↑⟩ + |↓↓⟩)/√2
+Einstein called it "spooky action at a distance" and thought it showed QM was incomplete.
+Bell's theorem (1964): any local hidden variable theory makes different predictions from QM.
+Aspect experiment (1982): confirmed QM — entanglement is real.
+Does NOT allow faster-than-light communication (no information is transferred).
+Applications: quantum cryptography, quantum computing, quantum teleportation.
+
+QUANTUM SUPERPOSITION:
+A quantum system exists in a superposition of all possible states until measured.
+Schrödinger's cat: superposition of alive and dead until observed.
+Measurement causes "wavefunction collapse" to a definite state.
+Double-slit experiment: single electron goes through BOTH slits simultaneously, creating interference pattern.
+If you measure which slit: interference pattern disappears (measurement destroys superposition).
+
+PAULI EXCLUSION PRINCIPLE:
+No two identical fermions (half-integer spin) can occupy the same quantum state.
+Explains: periodic table structure, stability of matter, white dwarfs, neutron stars.
+Fermions (electrons, protons, neutrons): obey Fermi-Dirac statistics.
+Bosons (photons, gluons): can share same state — Bose-Einstein condensate.
+
+SPIN:
+Intrinsic angular momentum of particles, no classical analogue.
+Electron spin: s = ½, spin angular momentum S = ℏ√(s(s+1)) = ℏ√3/2
+Z-component: S_z = m_s ℏ = ±ℏ/2 ("spin up" or "spin down")
+Stern-Gerlach experiment (1922): confirmed quantization of angular momentum.
+Pauli spin matrices: σ_x = [[0,1],[1,0]], σ_y = [[0,-i],[i,0]], σ_z = [[1,0],[0,-1]]
+
+WAVE-PARTICLE DUALITY (DETAILED):
+Every quantum object exhibits both wave and particle properties.
+Which property manifests depends on what you measure.
+Complementarity principle (Bohr): wave and particle descriptions are complementary — you can't see both at once.
+This is not a limitation of our instruments — it is fundamental to nature.
+The act of measurement inevitably disturbs the system (related to uncertainty principle).
+
+---
+
+INTERPRETATIONS OF QUANTUM MECHANICS
+
+COPENHAGEN INTERPRETATION (Bohr, Heisenberg):
+Most widely taught. Wavefunction is a mathematical tool, not physical reality. Measurement causes collapse. "Shut up and calculate."
+
+MANY-WORLDS INTERPRETATION (Everett, 1957):
+Wavefunction never collapses. Every measurement causes universe to branch. All outcomes happen in parallel universes. No collapse needed.
+
+PILOT WAVE / DE BROGLIE-BOHM:
+Particle always has definite position, guided by pilot wave. Deterministic but non-local.
+
+QUANTUM DECOHERENCE:
+Quantum systems become classical through interaction with environment. Explains why we don't see quantum effects macroscopically.
+
+---
+
+ADVANCED QUANTUM MECHANICS
+
+PERTURBATION THEORY:
+When exact solution unknown, treat H = H₀ + H' (H' small).
+First-order energy: E_n^(1) = ⟨n⁰|H'|n⁰⟩
+First-order state: |n^(1)⟩ = Σ_{k≠n} ⟨k⁰|H'|n⁰⟩/(E_n⁰-E_k⁰) |k⁰⟩
+Applications: Stark effect (electric field), Zeeman effect (magnetic field), fine structure.
+
+VARIATIONAL METHOD:
+⟨E⟩ = ⟨ψ_trial|H|ψ_trial⟩ ≥ E_ground
+Guess trial wavefunction with parameters, minimize energy. Gives upper bound on ground state.
+
+WKB APPROXIMATION:
+For slowly varying potentials. Used for tunneling calculations, quantization conditions.
+Quantization: ∮p dx = (n + ½)h (for bound states)
+
+IDENTICAL PARTICLES:
+Symmetric wavefunction under exchange → bosons → Bose-Einstein statistics.
+Antisymmetric wavefunction → fermions → Fermi-Dirac statistics.
+Ψ_boson(1,2) = Ψ(1,2) + Ψ(2,1) (symmetric)
+Ψ_fermion(1,2) = Ψ(1,2) - Ψ(2,1) (antisymmetric → zero if 1=2 → Pauli principle)
+
+IMPORTANT CONSTANTS:
+h = 6.626 × 10⁻³⁴ J·s (Planck's constant)
+ℏ = 1.055 × 10⁻³⁴ J·s
+m_e = 9.109 × 10⁻³¹ kg
+e = 1.602 × 10⁻¹⁹ C
+a₀ = 0.529 Å (Bohr radius)
+E_R = 13.6 eV (Rydberg energy)
+λ_C = 2.426 pm (Compton wavelength)
+
+IMPORTANT FORMULAS SUMMARY:
+- E = hf = ℏω (photon energy)
+- p = h/λ (photon/de Broglie momentum)
+- λ = h/p (de Broglie wavelength)
+- KE_max = hf - φ (photoelectric effect)
+- Δλ = λ_C(1-cosθ) (Compton scattering)
+- Δx·Δp ≥ ℏ/2 (uncertainty principle)
+- iℏ∂Ψ/∂t = ĤΨ (Schrödinger equation)
+- E_n(box) = n²π²ℏ²/(2mL²)
+- E_n(oscillator) = (n+½)ℏω
+- E_n(hydrogen) = -13.6/n² eV
+- T(tunneling) ≈ e^(-2κL)

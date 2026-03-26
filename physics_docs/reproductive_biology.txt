@@ -1,0 +1,196 @@
+================================================================================
+                       REPRODUCTIVE BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MODES OF REPRODUCTION
+--------------------------
+Asexual Reproduction:
+  One parent; offspring genetically identical (clones). Rapid; no mate required.
+  - Binary fission    : Bacteria split into two equal cells.
+  - Budding           : Offspring grows from parent body (yeast, Hydra).
+  - Fragmentation     : Body parts regenerate into whole organisms (planaria, starfish).
+  - Parthenogenesis   : Egg develops without fertilisation (aphids, Komodo dragons,
+                        some sharks and snakes — facultative parthenogenesis).
+  - Vegetative prop.  : Plants via runners (strawberry), tubers (potato), bulbs (onion).
+  - Sporulation       : Fungi, mosses, ferns produce haploid spores.
+
+Sexual Reproduction:
+  Two parents; genetic recombination; offspring genetically diverse.
+  Advantages: Increases variation → better adaptation to changing environments;
+  removes harmful mutations (Muller's ratchet); Red Queen hypothesis — sexual
+  reproduction is an evolutionary arms race with parasites.
+  Disadvantages: Costly (two-fold cost of males); requires finding mate; dilutes
+  genome by half each generation.
+
+1.1 HUMAN MALE REPRODUCTIVE SYSTEM
+-------------------------------------
+Organs: Testes, epididymis, vas deferens, seminal vesicles, prostate, urethra, penis.
+Testes: Produce sperm (spermatogenesis) and testosterone (Leydig cells).
+  Temperature: Sperm production requires ~2–3°C below core body temp → external testes.
+Spermatogenesis:
+  Spermatogonia → Primary spermatocyte (meiosis I) → Secondary spermatocyte
+  (meiosis II) → Spermatid → Spermatozoon (mature sperm).
+  Duration: ~74 days. Sertoli cells support and nourish developing sperm.
+  Production: ~300 million sperm/day.
+
+Sperm structure: Head (nucleus + acrosome), midpiece (mitochondria for ATP),
+tail (flagellum for motility).
+
+1.2 HUMAN FEMALE REPRODUCTIVE SYSTEM
+---------------------------------------
+Organs: Ovaries, fallopian tubes, uterus, cervix, vagina.
+Oogenesis: Begins before birth — primary oocytes arrested in prophase I until puberty.
+  One oocyte completes meiosis I per cycle; meiosis II only completed if fertilised.
+  At birth: ~1–2 million primary oocytes. At puberty: ~400,000. Lifetime ovulations: ~400.
+
+Menstrual Cycle (~28 days):
+  Follicular phase (days 1–14): FSH → follicle growth → oestrogen rises →
+  LH surge (day 13) → ovulation (day 14).
+  Luteal phase (days 14–28): Corpus luteum → progesterone + oestrogen →
+  endometrium thickens. If no fertilisation → corpus luteum degenerates →
+  hormone drop → menstruation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. FERTILISATION & EARLY EMBRYOGENESIS
+----------------------------------------
+Fertilisation Events:
+  Capacitation: Sperm undergo changes in female reproductive tract → become
+  hyperactivated + able to acrosome react.
+  Chemotaxis: Oocyte releases chemoattractants (progesterone) → guides sperm.
+  Zona binding: Sperm ZP3 receptor binds zona pellucida glycoprotein ZP3.
+  Acrosome reaction: Lysosomal enzymes released → digest zona pellucida.
+  Cortical reaction: Ca2+ wave releases cortical granules → zona hardening
+  (fast block: membrane potential change; slow block: zona hardening) → prevents polyspermy.
+  Pronuclei formation: Sperm and egg nuclei each form pronuclei → fuse → 2N zygote.
+
+Preimplantation development:
+  Day 1–2: Cleavage divisions (totipotent blastomeres).
+  Day 3–4: Morula (16 cells); compaction (tight junctions + gap junctions form).
+  Day 4–5: Blastocyst; cavitation forms blastocoel; ICM (epiblast + hypoblast) + trophoblast.
+  Day 6–10: Implantation in uterine wall; trophoblast invades decidua.
+  Week 2: Bilaminar disc (epiblast + hypoblast). Yolk sac + amniotic cavity form.
+  Week 3: Gastrulation → trilaminar disc.
+
+Placenta Development:
+  Trophoblast differentiates into cytotrophoblast and syncytiotrophoblast.
+  Syncytiotrophoblast invades maternal spiral arteries → remodels them (loss of
+  smooth muscle → low-resistance, high-flow vessels).
+  Failure of spiral artery remodelling → pre-eclampsia.
+  Placental functions: Gas/nutrient/waste exchange; hormone production (hCG, oestrogen,
+  progesterone); immune tolerance (expresses HLA-G to prevent NK cell attack).
+
+3. HORMONAL CONTROL OF REPRODUCTION
+--------------------------------------
+HPG Axis (Hypothalamic-Pituitary-Gonadal):
+  GnRH (pulsatile, hypothalamus) → FSH + LH (anterior pituitary) → gonads.
+  Testosterone/oestrogen → negative feedback on hypothalamus and pituitary.
+  Exception: Pre-ovulatory oestrogen surge → positive feedback → LH surge.
+
+Hormone roles in males:
+  FSH → Sertoli cells → supports spermatogenesis; produces inhibin B (FSH feedback).
+  LH → Leydig cells → testosterone synthesis.
+  Testosterone → male secondary sex characteristics; muscle mass; libido;
+  converted to DHT (5-alpha reductase) → prostate, hair follicles;
+  converted to oestradiol (aromatase) → bone density; male.
+
+Hormone roles in females:
+  FSH → follicle growth; oestrogen production.
+  LH → ovulation trigger; corpus luteum formation; progesterone production.
+  Oestrogen → endometrial proliferation; female secondary sex characteristics;
+  bone density; positive feedback on LH surge.
+  Progesterone → endometrial secretion; maintains pregnancy; inhibits uterine
+  contractions; raises basal body temperature.
+  hCG → maintains corpus luteum in early pregnancy; basis of pregnancy test.
+
+4. CONTRACEPTION & ASSISTED REPRODUCTION
+------------------------------------------
+Contraception Methods:
+Method                 | Mechanism                          | Efficacy (typical use)
+-----------------------|------------------------------------|----------------------
+Combined OCP           | Inhibits ovulation (oestrogen/prog)| ~91%
+Progestogen-only pill  | Cervical mucus thickening + ovul.  | ~91%
+IUD (copper)           | Toxic to sperm; prevents implant.  | >99%
+IUS (Mirena)           | Progesterone; thin endometrium     | >99%
+Condom                 | Barrier; STI protection            | ~85%
+Vasectomy/tubal ligation| Permanent; blocks gamete transport| >99%
+Emergency contraception| Delays/prevents ovulation          | ~85–89%
+
+Assisted Reproductive Technologies (ART):
+  IUI (Intrauterine Insemination): Washed sperm placed directly in uterus.
+  IVF (In Vitro Fertilisation): Ovarian hyperstimulation (FSH injections) →
+  egg retrieval → fertilisation in lab → embryo transfer to uterus.
+  ICSI (Intracytoplasmic Sperm Injection): Single sperm injected into oocyte.
+  Preimplantation Genetic Testing (PGT): Biopsy of 5–8 cell blastomere or TE
+  cells → genetic analysis before transfer. Screens for aneuploidy (PGT-A) or
+  single gene disorders (PGT-M).
+  Cryopreservation: Embryo/oocyte vitrification (ultra-rapid freezing) → storage.
+  Success rates: ~40–50% per cycle for women <35 years; declines with age.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MEIOSIS IN DEPTH
+--------------------
+Meiosis I (Reductional division):
+  Prophase I (longest): Homologous chromosomes synapse (synapsis) → bivalents.
+    Synaptonemal complex (SC): Protein scaffold holding homologs together.
+    Recombination nodules mark crossover sites.
+    Leptotene → Zygotene → Pachytene (crossovers occur) → Diplotene → Diakinesis.
+  Metaphase I: Bivalents align at metaphase plate; kinetochores of homologs
+    face opposite poles (amphitelic orientation).
+  Anaphase I: Homologs separated (not sister chromatids); chiasma resolution.
+  Telophase I/Cytokinesis I: Two haploid cells (each with sister chromatid pairs).
+
+Meiosis II (Equational division):
+  Resembles mitosis; sister chromatids separated. Four haploid cells produced.
+
+Recombination (Crossing Over):
+  SPO11 enzyme creates double-strand breaks → 5' resection → single-strand invasion
+  of homolog (strand exchange mediated by RAD51, DMC1) → Holliday junction →
+  resolution → crossover or non-crossover.
+  At least 1 crossover per chromosome arm required for proper segregation.
+  ~2–3 crossovers per human chromosome per meiosis.
+
+Non-Disjunction & Aneuploidy:
+  Failure of chromosomes to separate properly → extra or missing chromosomes.
+  Trisomy 21 (Down syndrome): Extra chromosome 21; maternal non-disjunction in
+  meiosis I (age-dependent → older mothers at higher risk).
+  Trisomy 18 (Edwards), Trisomy 13 (Patau): Usually fatal.
+  Sex chromosome aneuploidies: Klinefelter (XXY), Turner (45,X), XYY, XXX.
+
+6. EPIGENETIC REPROGRAMMING IN REPRODUCTION
+---------------------------------------------
+Global epigenetic reprogramming occurs at two stages:
+  1. Fertilisation → Early embryo: Genome-wide demethylation (except imprinted
+     loci and some retrotransposons). Paternal genome rapidly demethylated
+     (active, TET-mediated). Maternal genome passively demethylated during cleavage.
+     De novo methylation restored after implantation by DNMT3A/3B.
+  2. Primordial Germ Cells (PGCs): Near-complete demethylation (including
+     imprinted loci) → sex-specific re-imprinting in germline.
+
+Transgenerational Epigenetic Inheritance:
+  Some epigenetic marks escape reprogramming → transmitted to offspring.
+  Examples: Agouti mouse (maternal diet affects coat colour via methylation);
+  Dutch Hunger Winter — grandchildren of famine-exposed women showed altered
+  IGF2 methylation; effects on metabolism and disease risk.
+  Mechanisms: Small RNAs (piRNAs, siRNAs), retained histone modifications,
+  partially methylated regions escaping reprogramming.
+
+[CLINICAL LINK] Recurrent Pregnancy Loss (RPL): Affects ~1–2% of couples.
+Causes: Chromosomal abnormalities (~50%); uterine anomalies; thrombophilias
+(Factor V Leiden, antiphospholipid syndrome); endocrine (thyroid, PCOS);
+immunological (NK cell dysfunction); unexplained (~50%).
+Pre-eclampsia: Defective spiral artery remodelling → placental ischaemia →
+sFlt1 + sEng release → systemic endothelial dysfunction → hypertension + proteinuria.
+Treatment: Aspirin prophylaxis (from 12 weeks); antihypertensives; delivery.
+
+================================================================================

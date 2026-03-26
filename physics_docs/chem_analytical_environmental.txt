@@ -1,0 +1,218 @@
+ANALYTICAL CHEMISTRY - COMPREHENSIVE GUIDE
+==========================================
+
+PART 1: QUALITATIVE ANALYSIS
+
+CATION ANALYSIS (Classical Scheme):
+Group I (Precipitated by HCl): Ag⁺, Pb²⁺, Hg₂²⁺.
+Precipitate: AgCl (white), PbCl₂ (white, soluble in hot water), Hg₂Cl₂ (white, turns black with NH₃).
+Confirmatory: AgCl + NH₃ → [Ag(NH₃)₂]⁺ (soluble); re-precipitate with HNO₃.
+PbCl₂ + H₂SO₄ → PbSO₄ (white precipitate) or yellow with K₂CrO₄.
+
+Group II (Precipitated by H₂S in acidic medium, HCl + H₂S):
+IIA: HgS (black), PbS (black), Bi₂S₃ (black), CuS (black), CdS (yellow).
+IIB: As₂S₃ (yellow), Sb₂S₃ (orange), SnS₂ (yellow).
+Separate IIA (insoluble in yellow ammonium sulfide) from IIB (soluble).
+
+Group III (Precipitated by NH₃/NH₄Cl buffer + H₂S or NH₃):
+IIIA: Fe(OH)₃ (red-brown), Al(OH)₃ (white), Cr(OH)₃ (green) — precipitated by NH₃/NH₄Cl.
+IIIB: NiS, CoS, MnS, ZnS — precipitated by H₂S in alkaline medium.
+
+Group IV (Precipitated by (NH₄)₂CO₃ in NH₃/NH₄⁺ buffer): Ba²⁺, Sr²⁺, Ca²⁺.
+BaCO₃ (white), SrCO₃ (white), CaCO₃ (white).
+Confirm: Ba²⁺ → yellow BaCrO₄ with K₂CrO₄ in acetic acid.
+Sr²⁺ → white SrSO₄. Ca²⁺ → white CaC₂O₄ (oxalate).
+Flame: Ba (apple green), Sr (crimson), Ca (brick red).
+
+Group V (Remain in solution): Mg²⁺, Na⁺, K⁺, NH₄⁺.
+Mg²⁺: white Mg(OH)₂ with NaOH; white MgNH₄PO₄ with Na₂HPO₄/NH₃.
+Na⁺: yellow flame; white NaZn(UO₂)₃(CH₃COO)₉ with zinc uranyl acetate.
+K⁺: lilac flame; white K₂PtCl₆ with chloroplatinic acid; white or yellow KClO₄.
+NH₄⁺: Nessler's reagent → brown; NH₃ gas (turns moist red litmus blue).
+
+ANION ANALYSIS:
+Dilute H₂SO₄ tests:
+CO₃²⁻, HCO₃⁻: CO₂ gas (turns lime water milky).
+SO₃²⁻: SO₂ gas (turns acidified K₂Cr₂O₇ green).
+NO₂⁻: brown NO₂ gas + reddish fumes.
+S²⁻: H₂S gas (rotten egg smell, blackens Pb acetate paper).
+Cl⁻, Br⁻, I⁻: gases in hot concentrated H₂SO₄.
+
+Concentrated H₂SO₄ tests:
+Cl⁻: HCl gas (fumes in air, white fumes with NH₃).
+Br⁻: HBr + Br₂ (orange-brown fumes).
+I⁻: HI + I₂ (violet fumes).
+NO₃⁻: ring test with FeSO₄.
+
+Ring test for NO₃⁻: FeSO₄ added to NO₃⁻ solution, concentrated H₂SO₄ poured carefully down side → brown ring at interface. Fe²⁺ + NO₃⁻ + H₂SO₄ → Fe³⁺ + NO; [Fe(NO)]²⁺ = brown.
+
+Silver nitrate (AgNO₃) tests:
+Cl⁻: white AgCl (insoluble in HNO₃, soluble in NH₃).
+Br⁻: pale yellow AgBr (insoluble in HNO₃, sparingly soluble in NH₃).
+I⁻: yellow AgI (insoluble in HNO₃ and NH₃).
+SO₄²⁻: white BaSO₄ with BaCl₂ (insoluble in HCl — confirmatory).
+
+Barium chloride (BaCl₂) tests:
+SO₄²⁻: white BaSO₄ (insoluble in HCl).
+SO₃²⁻: white BaSO₃ (soluble in HCl, gives SO₂).
+CO₃²⁻: white BaCO₃ (soluble in HCl, gives CO₂).
+
+---
+
+PART 2: QUANTITATIVE ANALYSIS
+
+GRAVIMETRIC ANALYSIS:
+Analyte converted to insoluble precipitate → filter → dry/ignite → weigh.
+Precipitation factors: precipitate must be insoluble, filterable, stable.
+Common precipitating agents:
+BaCl₂ for SO₄²⁻ (as BaSO₄). AgNO₃ for Cl⁻ (as AgCl).
+NH₃ for Al³⁺ (as Al₂O₃ after ignition). Dimethylglyoxime for Ni²⁺ (red chelate).
+Gravimetric factor = molar mass of analyte / molar mass of precipitate × stoichiometric ratio.
+
+VOLUMETRIC ANALYSIS (TITRATIONS):
+
+Acid-Base Titrations:
+Strong acid + strong base: equivalence point at pH 7. Indicators: phenolphthalein (range 8.2-10.0) or methyl orange (3.1-4.4) work.
+Strong acid + weak base: equivalence point pH < 7 (acidic hydrolysis). Methyl orange/red.
+Weak acid + strong base: equivalence point pH > 7. Phenolphthalein.
+Weak acid + weak base: no sharp endpoint. Potentiometric titration.
+
+Indicator theory: HIn ⇌ H⁺ + In⁻ (color change at pKa ± 1).
+Choice: equivalence point pH should be within indicator range.
+
+REDOX TITRATIONS:
+Permanganometry: KMnO₄ (oxidant). Self-indicating (purple → colorless).
+MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (acidic). Titrates: Fe²⁺, C₂O₄²⁻, H₂O₂, Sn²⁺.
+Fe²⁺ titration: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O.
+
+Dichromatometry: K₂Cr₂O₇. External indicator (diphenylamine).
+Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Titrates Fe²⁺.
+
+Iodimetry (direct): Na₂S₂O₃ (sodium thiosulfate) titrates I₂ (starch indicator).
+I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻.
+
+Iodometry (indirect): analyte reacts with I⁻ to produce I₂, which is titrated with Na₂S₂O₃.
+Cu²⁺ + I⁻ → CuI + I₂. Cl₂ + 2KI → 2KCl + I₂.
+
+Cerimetry: Ce⁴⁺ as oxidant. Ce⁴⁺ + e⁻ → Ce³⁺ (E° = +1.72V in H₂SO₄).
+
+COMPLEXOMETRIC TITRATIONS:
+EDTA (ethylenediaminetetraacetic acid, H₄Y): hexadentate ligand, forms 1:1 complex with almost all metal ions.
+M^n+ + Y⁴⁻ → [MY]^(n-4)
+Indicators: Eriochrome Black T (EBT) — wine red with metals, blue free. pH 8-10 (NH₃ buffer).
+pH adjustment: low pH → EDTA protonation (less reactive); high pH → metal hydroxide precipitation.
+
+Hardness of water:
+Total hardness (Ca²⁺ + Mg²⁺): titrate with EDTA at pH 10 (EBT indicator).
+Calcium hardness: titrate with EDTA at pH 12 (murexide indicator, Mg(OH)₂ precipitates).
+Mg hardness = total − calcium hardness.
+Hardness expressed as mg/L CaCO₃ equivalent.
+
+PRECIPITATION TITRATIONS:
+Argentometry: AgNO₃ titrates halides.
+Mohr method: Cl⁻ with AgNO₃, K₂CrO₄ indicator. Ag₂CrO₄ (red) precipitates at equivalence point. pH 6.5-9.
+Volhard method: excess AgNO₃ added, back-titrate with KSCN. NH₄Fe(SO₄)₂ indicator (red [Fe(SCN)]²⁺ at endpoint). Used for Cl⁻, Br⁻, I⁻.
+Fajans method: adsorption indicators (fluorescein for Cl⁻ with AgNO₃).
+
+SPECTROPHOTOMETRIC ANALYSIS:
+Beer-Lambert law: A = εcl.
+ε (molar absorptivity): characteristic of substance, wavelength-dependent.
+Calibration curve: plot A vs c for known concentrations → find c of unknown from A.
+λmax: wavelength of maximum absorbance (use for best sensitivity).
+Colorimetric reagents: form colored products with analyte.
+
+CHROMATOGRAPHY:
+Principle: differential distribution between stationary and mobile phases.
+Rf = distance traveled by compound / distance traveled by solvent (TLC).
+Resolution: ability to separate two adjacent peaks.
+
+Types:
+TLC (Thin Layer Chromatography): silica on glass/aluminum. Polarity-based.
+Column chromatography: same principle as TLC, preparative scale.
+GC (Gas Chromatography): gas mobile phase, separates volatile compounds.
+HPLC (High Performance Liquid Chromatography): liquid mobile phase, high pressure.
+Ion exchange: separates ions (cation/anion exchange resins).
+Gel filtration (size exclusion): separates by molecular size.
+Affinity chromatography: specific binding (enzyme-substrate, antibody-antigen).
+
+---
+
+PART 3: ENVIRONMENTAL CHEMISTRY
+
+GREEN CHEMISTRY PRINCIPLES (12 Principles):
+1. Prevention (waste prevention > treatment).
+2. Atom economy: maximize incorporation of starting materials into product.
+3. Less hazardous syntheses.
+4. Designing safer chemicals.
+5. Safer solvents and auxiliaries.
+6. Design for energy efficiency.
+7. Use of renewable feedstocks.
+8. Reduce derivatives (protecting groups waste steps).
+9. Catalysis (catalytic > stoichiometric reagents).
+10. Design for degradation.
+11. Real-time analysis for pollution prevention.
+12. Inherently safer chemistry for accident prevention.
+
+Atom economy = (MW of desired product / ΣMW of all products) × 100%.
+E-factor = mass of waste / mass of product (lower is greener).
+
+AIR POLLUTION:
+Primary pollutants: directly emitted. CO, SO₂, NOₓ, hydrocarbons, particulates.
+Secondary pollutants: formed in atmosphere. O₃, peroxyacetyl nitrate (PAN), H₂SO₄, HNO₃.
+
+Photochemical smog: NOₓ + hydrocarbons + sunlight → O₃, PAN, aldehydes.
+NO₂ + hν → NO + O (λ < 420 nm). O + O₂ + M → O₃.
+O₃ causes: respiratory problems, crop damage, rubber degradation.
+
+Acid rain: SO₂ + H₂O → H₂SO₃ → H₂SO₄. NOₓ + H₂O → HNO₃.
+pH of normal rain: 5.6 (CO₂ dissolved). Acid rain: pH < 5.6.
+Effects: fish kills, forest damage, corrosion of buildings (limestone: CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂).
+
+Carbon monoxide (CO): binds hemoglobin 230× stronger than O₂. Prevents O₂ transport.
+
+GREENHOUSE EFFECT:
+Greenhouse gases: CO₂, CH₄, N₂O, O₃, CFCs, water vapor.
+IR radiation from Earth absorbed by greenhouse gases → atmosphere warms.
+Global warming potential (GWP): relative warming effect vs CO₂ (= 1).
+CH₄ GWP = 25, N₂O = 298, CFC-11 = 4750.
+CO₂ sources: combustion, deforestation. CO₂ sinks: photosynthesis, oceans.
+CO₂ in atmosphere: ~420 ppm currently (pre-industrial: 280 ppm).
+
+OZONE DEPLETION:
+Stratospheric ozone (15-35 km): protects against UV radiation.
+Formation: O₂ + hν → 2O (UV), O + O₂ → O₃.
+Destruction: O₃ + hν → O + O₂, O + O₃ → 2O₂ (natural).
+CFC mechanism: CFCl₃ + hν → CFCl₂• + Cl•. Cl• + O₃ → ClO + O₂. ClO + O → Cl• + O₂. (Chain reaction!)
+One Cl• destroys ~100,000 O₃ molecules.
+Montreal Protocol (1987): banned CFCs. Replacements: HFCs, HCFCs.
+
+WATER POLLUTION:
+BOD (Biochemical Oxygen Demand): O₂ needed to decompose organic matter. Higher BOD = more polluted.
+COD (Chemical Oxygen Demand): using chemical oxidant.
+DO (Dissolved Oxygen): minimum 6 ppm for healthy aquatic life.
+Eutrophication: excess nutrients (N, P) → algal bloom → O₂ depletion → fish kills.
+Sources of nutrients: fertilizer runoff, sewage.
+
+Heavy metal pollution: Pb, Hg, As, Cd, Cr are toxic even at ppb levels.
+Mercury: methylation by bacteria → methylmercury (bioaccumulation in food chain).
+Minamata disease: mercury poisoning.
+Lead: damages nervous system, especially in children. From leaded paint, old plumbing.
+Arsenic: natural contamination of groundwater in Bangladesh/India. Causes cancer.
+
+SOIL CHEMISTRY:
+pH affects nutrient availability. Optimal for most crops: 6.0-7.0.
+Acidic soil: Al³⁺ and Mn²⁺ become soluble → toxic to plants.
+Liming: CaCO₃ or Ca(OH)₂ raises pH. Also provides Ca²⁺.
+Salinization: excess salt from irrigation → osmotic stress on plants.
+Pesticides: chlorinated organics (DDT) persist (bioaccumulate). Organophosphates more biodegradable.
+
+NUCLEAR CHEMISTRY IN ENVIRONMENT:
+Radon (Rn-222): radioactive decay product of U-238. Accumulates in basements.
+Causes lung cancer.
+Half-life: 3.8 days. Comes from soil and rock.
+
+Carbon-14 dating:
+¹⁴N + n → ¹⁴C + H (in atmosphere by cosmic rays).
+¹⁴C/¹²C ratio constant in living organisms.
+After death: ¹⁴C decreases (t₁/₂ = 5730 years).
+Age = (t₁/₂/ln2) × ln(A₀/A). Useful up to ~50,000 years.

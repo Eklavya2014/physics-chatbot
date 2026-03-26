@@ -1,0 +1,197 @@
+LAWS OF THERMODYNAMICS AND STATISTICAL MECHANICS
+==================================================
+
+THE FOUR LAWS OF THERMODYNAMICS
+
+ZEROTH LAW OF THERMODYNAMICS:
+Statement: If system A is in thermal equilibrium with system C, and system B is in thermal equilibrium with system C, then A and B are in thermal equilibrium with each other.
+Significance: This defines temperature as a meaningful physical quantity. It allows us to use thermometers — if thermometer reads the same for two objects, they are at the same temperature.
+This law was recognized AFTER the first and second laws were established, hence called "zeroth."
+
+FIRST LAW OF THERMODYNAMICS (Conservation of Energy):
+Statement: Energy cannot be created or destroyed, only converted from one form to another.
+Mathematical form: dU = δQ - δW
+ΔU = Q - W
+U = internal energy of system
+Q = heat added TO system (positive when heat flows in)
+W = work done BY system (positive when system expands)
+For infinitesimal process: dU = TdS - PdV + μdN
+
+Different processes:
+Isothermal (constant T): ΔU = 0, Q = W (for ideal gas)
+Adiabatic (Q = 0): ΔU = -W
+Isochoric (constant V): W = 0, ΔU = Q = nCvΔT
+Isobaric (constant P): W = PΔV, Q = nCpΔT
+
+Work done by gas: W = ∫PdV
+For isothermal expansion of ideal gas: W = nRT ln(V₂/V₁)
+For adiabatic: W = (P₁V₁ - P₂V₂)/(γ-1)
+
+SECOND LAW OF THERMODYNAMICS:
+This is the most profound law in physics — it introduces the arrow of time.
+
+Kelvin-Planck statement: It is impossible to construct a heat engine that operates in a cycle and converts ALL heat input into work with no other effect. (Efficiency < 100% always)
+
+Clausius statement: It is impossible for heat to flow spontaneously from a colder to a hotter body without work being done.
+
+Entropy statement: The entropy of an isolated system never decreases. ΔS ≥ 0
+For reversible process: ΔS = 0
+For irreversible process: ΔS > 0
+The universe always evolves toward states of higher entropy.
+
+ENTROPY:
+Thermodynamic definition: dS = δQ_rev/T
+Boltzmann definition: S = k_B ln Ω (Ω = number of microstates)
+This connects macroscopic thermodynamics to microscopic statistical mechanics.
+Units: J/K
+
+Why entropy increases: There are vastly more disordered states than ordered states. Random processes naturally evolve toward more probable (higher entropy) states.
+Example: Gas expands to fill container — there are vastly more ways to distribute molecules throughout volume than to have them all in one corner.
+
+CARNOT'S THEOREM:
+The most efficient heat engine operating between temperatures T_H (hot) and T_C (cold) is the Carnot engine.
+Carnot efficiency: η_Carnot = 1 - T_C/T_H
+No real engine can exceed Carnot efficiency (with same temperature reservoirs).
+Carnot cycle: isothermal expansion → adiabatic expansion → isothermal compression → adiabatic compression.
+
+For Carnot engine:
+Q_H/T_H = Q_C/T_C (heat exchanged proportional to temperature)
+W = Q_H - Q_C
+η = W/Q_H = 1 - Q_C/Q_H = 1 - T_C/T_H
+
+Coefficient of Performance (refrigerator):
+COP = Q_C/W = T_C/(T_H - T_C) (Carnot)
+
+THIRD LAW OF THERMODYNAMICS (Nernst Theorem):
+Statement: As temperature approaches absolute zero, the entropy of a perfect crystal approaches zero.
+lim(T→0) S = 0
+Consequence: It is impossible to reach absolute zero temperature in a finite number of steps.
+At T = 0, all thermal motion ceases, only zero-point quantum motion remains.
+The third law sets the absolute scale of entropy.
+
+---
+
+THERMODYNAMIC POTENTIALS:
+Four potentials, each most useful in different conditions:
+
+Internal energy: U = TS - PV + μN
+dU = TdS - PdV + μdN
+Natural variables: S, V, N
+Use when: isolated system (fixed S, V)
+
+Helmholtz free energy: F = U - TS
+dF = -SdT - PdV + μdN
+Natural variables: T, V, N
+Use when: constant T, V (isothermal, fixed volume)
+F = minimum at equilibrium for constant T, V process.
+Maximum work = -ΔF
+
+Gibbs free energy: G = U - TS + PV = H - TS
+dG = -SdT + VdP + μdN
+Natural variables: T, P, N
+Use when: constant T, P (most laboratory conditions!)
+G = minimum at equilibrium for constant T, P process.
+ΔG < 0: spontaneous process; ΔG = 0: equilibrium; ΔG > 0: non-spontaneous
+
+Enthalpy: H = U + PV
+dH = TdS + VdP + μdN
+Natural variables: S, P
+Heat of reaction at constant pressure = ΔH
+
+Chemical potential: μ = (∂G/∂N)_{T,P} = G/N (for pure substance)
+Equilibrium condition: μ same in all phases.
+Phase transitions occur when chemical potentials are equal.
+
+MAXWELL RELATIONS:
+From exactness of thermodynamic differentials:
+(∂T/∂V)_S = -(∂P/∂S)_V [from dU]
+(∂T/∂P)_S = (∂V/∂S)_P [from dH]
+(∂S/∂V)_T = (∂P/∂T)_V [from dF] ← most useful
+(∂S/∂P)_T = -(∂V/∂T)_P [from dG]
+
+---
+
+STATISTICAL MECHANICS
+
+FUNDAMENTAL POSTULATE:
+For an isolated system in equilibrium, all accessible microstates are equally probable.
+Probability of macrostate ∝ number of microstates (Ω) consistent with it.
+This links microscopic to macroscopic.
+
+BOLTZMANN DISTRIBUTION:
+For system in contact with heat reservoir at temperature T:
+P(state i) = e^(-E_i/k_BT) / Z
+Z = Σ_i e^(-E_i/k_BT) (partition function — the most important quantity in stat mech)
+
+From partition function, derive everything:
+Average energy: ⟨E⟩ = -∂(ln Z)/∂β (β = 1/k_BT)
+Helmholtz free energy: F = -k_BT ln Z
+Entropy: S = k_B(ln Z + β⟨E⟩)
+Pressure: P = k_BT (∂ ln Z/∂V)_T
+Heat capacity: C_v = ∂⟨E⟩/∂T
+
+PARTITION FUNCTION FOR IDEAL GAS:
+Z_N = (V/λ³)^N / N! where λ = √(h²/2πmk_BT) (thermal de Broglie wavelength)
+This gives: PV = Nk_BT (ideal gas law — DERIVED from first principles!)
+
+EQUIPARTITION THEOREM:
+Each quadratic degree of freedom contributes ½k_BT to average energy.
+Translational: ½k_BT per direction → 3/2 k_BT total (3 directions)
+Rotational: ½k_BT per axis of rotation
+Vibrational: k_BT per mode (½ KE + ½ PE)
+
+Total energy:
+Monatomic gas: U = 3/2 Nk_BT, C_v = 3/2 R
+Diatomic (rigid): U = 5/2 Nk_BT, C_v = 5/2 R (3 trans + 2 rot)
+Diatomic (vibrating): U = 7/2 Nk_BT, C_v = 7/2 R
+
+Limitation: Equipartition fails at low T (quantum effects freeze out modes).
+Einstein and Debye models correct this for solids.
+
+QUANTUM STATISTICS:
+Fermions (half-integer spin, e.g., electrons, protons):
+f_FD(ε) = 1/(e^((ε-μ)/k_BT) + 1) (Fermi-Dirac distribution)
+At T = 0: all states below Fermi energy E_F filled, above empty (sharp cutoff).
+E_F = (ℏ²/2m)(3π²n)^(2/3) (n = electron number density)
+Explains: electrical conductivity, specific heat of metals, white dwarf stars.
+
+Bosons (integer spin, e.g., photons, helium-4):
+f_BE(ε) = 1/(e^((ε-μ)/k_BT) - 1) (Bose-Einstein distribution)
+At low T: macroscopic number of particles occupy ground state (Bose-Einstein condensation).
+BEC observed in 1995 (Cornell, Wieman, Ketterle — Nobel Prize 2001).
+Photons (μ = 0): gives Planck distribution for blackbody radiation.
+
+Classical limit (high T, low density): both reduce to Maxwell-Boltzmann:
+f_MB(ε) ∝ e^(-ε/k_BT)
+Maxwell-Boltzmann speed distribution: f(v) = 4πn(m/2πk_BT)^(3/2) v² e^(-mv²/2k_BT)
+v_mp = √(2k_BT/m), v_avg = √(8k_BT/πm), v_rms = √(3k_BT/m)
+
+PHASE TRANSITIONS:
+Order parameter: quantity that is zero in disordered phase, nonzero in ordered phase.
+First-order transition: discontinuous order parameter (melting, boiling).
+Latent heat L = TΔS at transition.
+Second-order (continuous) transition: continuous order parameter, diverging susceptibility.
+Examples: ferromagnet (order parameter = magnetization), superconductor (Cooper pair density).
+Critical point: above T_c, order parameter → 0 continuously.
+
+Critical exponents (near T_c):
+Order parameter: M ∝ (T_c - T)^β
+Susceptibility: χ ∝ |T - T_c|^(-γ)
+Specific heat: C ∝ |T - T_c|^(-α)
+Universality: different systems have same critical exponents if same symmetry class.
+
+FLUCTUATION-DISSIPATION THEOREM:
+Response of system to external perturbation equals its spontaneous fluctuations at equilibrium.
+Johnson-Nyquist noise: ⟨V²⟩ = 4k_BTR·Δf (thermal noise in resistor)
+Einstein relation: D = μk_BT (diffusion constant = mobility × k_BT)
+
+IMPORTANT FORMULAS:
+- ΔU = Q - W (first law)
+- dS = δQ_rev/T (entropy)
+- S = k_B ln Ω (Boltzmann entropy)
+- η_Carnot = 1 - T_C/T_H
+- F = -k_BT ln Z (Helmholtz free energy)
+- Z = Σ e^(-βE_i) (partition function)
+- ⟨E⟩ = -∂ ln Z/∂β
+- PV = Nk_BT (ideal gas, derived)
+- E_F = (ℏ²/2m)(3π²n)^(2/3) (Fermi energy)

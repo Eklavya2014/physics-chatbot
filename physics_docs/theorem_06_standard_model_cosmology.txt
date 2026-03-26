@@ -1,0 +1,199 @@
+MODERN PHYSICS - STANDARD MODEL, COSMOLOGY AND BEYOND
+=======================================================
+
+THE STANDARD MODEL OF PARTICLE PHYSICS
+
+The Standard Model (developed 1970s) is the most successful scientific theory ever — it has made predictions accurate to 1 part in 10 billion.
+
+FUNDAMENTAL PARTICLES:
+
+QUARKS (6 flavors, all have spin ½):
+Up (u): charge +2/3, mass ~2.3 MeV/c²
+Down (d): charge -1/3, mass ~4.8 MeV/c²
+Strange (s): charge -1/3, mass ~95 MeV/c²
+Charm (c): charge +2/3, mass ~1.28 GeV/c²
+Bottom (b): charge -1/3, mass ~4.18 GeV/c²
+Top (t): charge +2/3, mass ~173 GeV/c² (heaviest known particle!)
+Each quark has 3 "color charges" (red, green, blue) — strong force charges.
+Quarks are confined — never observed in isolation. Confinement.
+Anti-quarks have opposite charge and anti-color.
+
+LEPTONS (6 types, all spin ½):
+Electron (e⁻): charge -1, mass 0.511 MeV/c², stable
+Muon (μ⁻): charge -1, mass 105.7 MeV/c², decays in 2.2 μs
+Tau (τ⁻): charge -1, mass 1777 MeV/c², very short-lived
+Electron neutrino (νe): charge 0, very small mass, stable
+Muon neutrino (νμ): charge 0, very small mass
+Tau neutrino (ντ): charge 0, very small mass
+Neutrinos: interact only via weak force and gravity. Pass through Earth almost undisturbed.
+Neutrino oscillation: neutrinos change flavor as they travel (Nobel Prize 2015).
+
+GAUGE BOSONS (force carriers, spin 1):
+Photon (γ): mediates electromagnetic force. Massless. Range = ∞.
+W⁺, W⁻, Z⁰: mediate weak force. Mass ~80-91 GeV/c². Range ~10⁻¹⁸ m.
+Gluons (g): mediate strong force. Massless but carry color → self-interact.
+Graviton: hypothetical, mediates gravity. Spin 2. Not yet in Standard Model.
+
+HIGGS BOSON (spin 0):
+Discovered at CERN (LHC) on July 4, 2012.
+Mass = 125.09 GeV/c²
+Gives mass to W, Z bosons and fermions through Higgs mechanism.
+Higgs field permeates all of space. Particles acquire mass by interacting with this field.
+Nobel Prize 2013 (Higgs, Englert).
+
+FUNDAMENTAL FORCES (from strongest to weakest):
+Strong nuclear: holds quarks in nucleons, nucleons in nucleus.
+Range ~10⁻¹⁵ m. Relative strength: 1.
+Electromagnetic: between charged particles.
+Range = ∞. Relative strength: 1/137 (fine structure constant α).
+Weak nuclear: radioactive beta decay, neutrino interactions.
+Range ~10⁻¹⁸ m. Relative strength: 10⁻⁶.
+Gravity: between all massive objects.
+Range = ∞. Relative strength: 10⁻³⁸ (incredibly weak!).
+
+ELECTROWEAK UNIFICATION:
+At energies > 100 GeV, EM and weak forces merge into electroweak force.
+Glashow-Weinberg-Salam theory (Nobel Prize 1979).
+At low energies, Higgs mechanism breaks symmetry → W, Z become massive, photon stays massless.
+
+QUANTUM CHROMODYNAMICS (QCD):
+Theory of strong force. Quarks carry "color charge" (red, green, blue).
+Gluons carry color — they interact with each other (unlike photons).
+Asymptotic freedom: at very high energies, quarks behave almost freely (Nobel Prize 2004).
+Color confinement: only color-neutral (white) combinations observable.
+Hadrons: colorless combinations of quarks.
+Baryons (qqq): proton (uud), neutron (udd), Λ, Σ, Ξ, Ω baryons.
+Mesons (qq̄): π (pions), K (kaons), J/ψ, Υ mesons.
+
+---
+
+COSMOLOGY AND THE ORIGIN OF THE UNIVERSE
+
+THE BIG BANG THEORY:
+The universe began ~13.8 billion years ago from an extremely hot, dense state.
+Evidence:
+1. Hubble's law (1929): galaxies receding, universe expanding.
+2. Cosmic Microwave Background (CMB, 1965): thermal radiation at 2.725 K.
+3. Primordial nucleosynthesis: predicted H:He ratio 3:1 matches observation.
+4. Large-scale structure: galaxy distribution matches predictions.
+
+TIMELINE OF THE UNIVERSE:
+t = 0: Big Bang singularity (GR breaks down, need quantum gravity)
+t = 10⁻⁴³ s: Planck time — all four forces unified (quantum gravity era)
+t = 10⁻³⁵ s: Inflation begins — exponential expansion by factor ~10⁶⁰
+t = 10⁻³² s: Inflation ends. Universe is flat and homogeneous.
+t = 10⁻¹² s: Electroweak transition — EM and weak forces separate.
+t = 10⁻⁶ s: QCD transition — quarks combine into hadrons (confinement).
+t = 1 s: Neutrino decoupling. n/p ratio freezes.
+t = 3 min: Big Bang nucleosynthesis — H, He, Li formed.
+t = 380,000 yr: Recombination — electrons combine with protons → neutral atoms. CMB emitted.
+t = 200 million yr: First stars form.
+t = 1 billion yr: First galaxies form.
+t = 9.2 billion yr: Solar System forms.
+t = 13.8 billion yr: Today.
+
+COSMIC INFLATION (Alan Guth, 1980):
+Universe expanded exponentially from ~10⁻³⁵ to ~10⁻³² seconds.
+Scale factor increased by factor of 10⁶⁰ or more.
+Explains:
+- Flatness problem: why is universe so flat (k ≈ 0)?
+- Horizon problem: why is CMB so uniform even for regions never in causal contact?
+- Magnetic monopole problem: why haven't we detected monopoles?
+Inflation stretched all quantum fluctuations to macroscopic scales → seeds of structure.
+
+COSMIC MICROWAVE BACKGROUND (CMB):
+Perfect blackbody spectrum at T = 2.725 K.
+Tiny temperature fluctuations ΔT/T ~ 10⁻⁵ (observed by WMAP, Planck satellites).
+These fluctuations are seeds that grew into galaxies and clusters.
+Angular power spectrum of CMB gives precise values of cosmological parameters.
+CMB polarization: B-mode polarization would be signature of gravitational waves from inflation.
+
+CONTENTS OF THE UNIVERSE:
+Ordinary (baryonic) matter: 4.9%
+Dark matter: 26.8%
+Dark energy: 68.3%
+Total adds to 100% — universe is flat.
+
+DARK MATTER:
+Evidence: galaxy rotation curves (velocities don't drop off at large radii).
+Gravitational lensing: more bending than visible matter can produce.
+Galaxy clusters: hot gas held in cluster requires more mass.
+CMB power spectrum: requires dark matter for structure formation.
+What it is: unknown. Candidates: WIMPs (weakly interacting massive particles), axions, sterile neutrinos.
+What it isn't: not black holes, not ordinary matter (BBN constraints).
+
+DARK ENERGY:
+Discovered 1998: supernovae observations showed universe expansion is ACCELERATING.
+Nobel Prize 2011 (Perlmutter, Schmidt, Riess).
+Acts as repulsive energy with negative pressure: w = P/ρ = -1 (cosmological constant).
+Einstein's cosmological constant Λ: vacuum energy density.
+Problem: theoretical prediction of vacuum energy is 10¹²⁰ times larger than observed — the worst prediction in physics!
+
+HUBBLE'S LAW:
+v = H₀d (recession velocity = Hubble constant × distance)
+H₀ = 67-73 km/s/Mpc (current tension between measurements)
+Hubble time: t_H = 1/H₀ ≈ 14 billion years (approximate age of universe)
+Observable universe radius: ~46 billion light-years (larger than 13.8 billion light-years due to expansion)
+
+FATE OF THE UNIVERSE:
+With dark energy (Λ > 0): universe expands forever, accelerating.
+Far future: stars burn out, black holes evaporate (Hawking radiation), cold dark universe.
+"Big Freeze" or "Heat Death": maximum entropy, minimum usable energy.
+
+---
+
+BEYOND THE STANDARD MODEL
+
+PROBLEMS WITH THE STANDARD MODEL:
+1. Gravity not included (no quantum theory of gravity).
+2. Dark matter not explained.
+3. Dark energy not explained.
+4. Matter-antimatter asymmetry: why more matter than antimatter?
+5. Hierarchy problem: why is Higgs mass so much lighter than Planck mass?
+6. Three generations: why three families of quarks and leptons?
+7. Neutrino masses: not in original SM, added ad hoc.
+8. Fine-tuning: many parameters seem to be precisely tuned.
+
+SUPERSYMMETRY (SUSY):
+Every particle has a "superpartner" with spin differing by ½.
+Quarks → squarks, electrons → selectrons, photons → photinos, etc.
+Solves hierarchy problem: quadratic divergences cancel between particles and superpartners.
+Lightest supersymmetric particle (LSP) is a dark matter candidate.
+Not yet confirmed at LHC (as of 2024).
+
+STRING THEORY:
+Replace point particles with tiny 1D strings (~10⁻³⁵ m, Planck length).
+Different vibration modes → different particles.
+Naturally includes gravity (graviton = closed string loop).
+Requires extra dimensions: superstring theory requires 10 dimensions (6 compactified).
+M-theory: 11 dimensions, unifies 5 different string theories.
+No experimental predictions yet testable (too high energy).
+
+LOOP QUANTUM GRAVITY (LQG):
+Quantize spacetime itself (not particles on spacetime).
+Space has discrete structure at Planck scale (10⁻³⁵ m).
+No extra dimensions needed. Background independent.
+Spin networks and spin foams describe quantum spacetime.
+Does not unify gravity with other forces yet.
+
+GRAND UNIFIED THEORIES (GUTs):
+At ~10¹⁵ GeV, strong and electroweak forces unify.
+Predict proton decay: p → e⁺ + π⁰ (not yet observed, lifetime > 10³⁴ years).
+Explain charge quantization.
+May explain matter-antimatter asymmetry (baryogenesis).
+
+PLANCK UNITS (Natural units):
+Planck length: l_P = √(ℏG/c³) = 1.616 × 10⁻³⁵ m
+Planck time: t_P = √(ℏG/c⁵) = 5.391 × 10⁻⁴⁴ s
+Planck mass: m_P = √(ℏc/G) = 2.176 × 10⁻⁸ kg = 1.22 × 10¹⁹ GeV/c²
+Planck energy: E_P = m_P c² = 1.956 × 10⁹ J
+At Planck scale, quantum gravity effects become important.
+
+IMPORTANT NUMBERS IN COSMOLOGY:
+Age of universe: 13.787 billion years
+Size of observable universe: ~46 billion light-years radius
+Number of atoms in observable universe: ~10⁸⁰
+Hubble constant H₀: 67.4 km/s/Mpc (Planck 2018)
+CMB temperature: 2.72548 K
+Baryon-to-photon ratio: η ≈ 6 × 10⁻¹⁰
+Dark energy density: ρ_Λ = 5.9 × 10⁻²⁷ kg/m³

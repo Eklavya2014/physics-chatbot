@@ -1,0 +1,184 @@
+================================================================================
+                 CIRCADIAN BIOLOGY & CHRONOBIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BIOLOGICAL CLOCKS
+---------------------
+Circadian rhythms are internal biological oscillations with a ~24-hour period
+that persist without external time cues. Present in virtually all life forms
+studied — from cyanobacteria to humans.
+Nobel Prize in Physiology or Medicine 2017: Jeffrey Hall, Michael Rosbash,
+Michael Young — for discoveries of the molecular mechanisms of circadian rhythms.
+
+Properties of Circadian Rhythms:
+  1. Endogenous: Self-sustaining ~24h rhythm in constant conditions.
+  2. Entrainable: Can be synchronised (entrained) by external cues (zeitgebers).
+  3. Temperature-compensated: Period remains ~24h across physiological temperatures.
+
+Zeitgebers (time-givers):
+  Light: Strongest zeitgeber. Detected by eyes (ipRGCs); resets SCN.
+  Food timing: Entrains peripheral clocks (liver, intestine) without resetting SCN.
+  Temperature, social cues, exercise: Weaker zeitgebers.
+
+1.1 BIOLOGICAL RHYTHMS
+------------------------
+Type          | Period       | Examples
+--------------|--------------|---------------------------------------------------
+Ultradian     | <24 hours    | REM/NREM sleep cycles (~90 min), heartbeat
+Circadian     | ~24 hours    | Sleep-wake, cortisol, melatonin, body temperature
+Infradian     | >24 hours    | Menstrual cycle (~28 days), seasonal reproduction
+Circannual    | ~1 year      | Hibernation, bird migration, antler growth
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MOLECULAR CLOCK MECHANISM (MAMMALIAN)
+------------------------------------------
+The molecular clock is a transcription-translation feedback loop (TTFL):
+
+Positive limb:
+  CLOCK + BMAL1 heterodimerize → bind E-box elements (CACGTG) in promoters →
+  activate transcription of Per1, Per2, Per3, Cry1, Cry2.
+
+Negative limb:
+  PER and CRY proteins accumulate → form PER/CRY complex (with CK1-epsilon/delta
+  phosphorylation regulating nuclear entry timing) → enter nucleus → inhibit
+  CLOCK/BMAL1 → their own transcription suppressed → levels fall → cycle restarts.
+  Period: ~24 hours.
+
+Stabilising loop:
+  CLOCK/BMAL1 also activates REV-ERB alpha/beta (repressors) and ROR alpha/beta/gamma.
+  REV-ERB competes with ROR for RORE elements in Bmal1 promoter:
+    REV-ERB: Represses Bmal1 → negative.
+    ROR: Activates Bmal1 → positive.
+  This reinforces oscillation robustness.
+
+Post-translational regulation:
+  CK1-epsilon/delta: Phosphorylate PER → nuclear entry + degradation (SCF-beta-TrCP).
+  CK2: Phosphorylates BMAL1 → nuclear retention.
+  FBXL3: E3 ligase ubiquitinates CRY → proteasomal degradation.
+  Tau mutation (CK1-epsilon): Short period (~20h) in hamsters → discovered period
+  length is regulated by PER degradation rate.
+
+3. PHYSIOLOGICAL OUTPUTS OF THE CLOCK
+----------------------------------------
+The SCN coordinates peripheral clocks in every organ via:
+  - Neural signals (sympathetic/parasympathetic nervous system)
+  - Hormonal signals (cortisol, melatonin, growth hormone)
+  - Temperature rhythms (core body temperature oscillates ~0.5°C over 24h)
+  - Feeding-fasting cycles
+
+Melatonin:
+  Produced by pineal gland at night (in all light conditions).
+  Synthesis: Tryptophan → serotonin → N-acetylserotonin → melatonin.
+  Regulated by SCN via NE from superior cervical ganglion → beta-adrenergic receptor.
+  Functions: Darkness signal to body; regulates seasonal reproduction in photoperiodic
+  animals; antioxidant; mild chronobiotic (can shift circadian phase).
+  Melatonin receptor agonists: Ramelteon (insomnia); tasimelteon (non-24h sleep disorder
+  in blind).
+
+Cortisol:
+  Peaks at dawn (~8am); prepares body for day — gluconeogenesis, alertness.
+  Regulated by circadian ACTH release plus glucocorticoid receptor feedback.
+  Clock-disruption → cortisol dysrhythmia → metabolic consequences.
+
+Immune Function:
+  Many immune processes are circadian: NK cell activity peaks at night;
+  adaptive immune responses stronger in afternoon; T cell trafficking peaks
+  during rest phase; inflammatory cytokines oscillate.
+  Vaccination time may matter: Flu vaccines in morning (AM) → higher Ab titres in some studies.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. CIRCADIAN CLOCKS IN PERIPHERAL ORGANS
+------------------------------------------
+Every nucleated cell has a self-sustaining circadian clock. Estimated >40% of
+all protein-coding genes are rhythmically expressed in at least one tissue.
+
+Liver clock:
+  Controls: Glucose metabolism (gluconeogenesis rhythmic), lipid metabolism
+  (bile acid synthesis oscillates), drug metabolism (CYP450 enzymes rhythmic →
+  pharmacokinetics of many drugs depend on dosing time — chronopharmacology).
+  Entrained primarily by feeding time, not light.
+
+Gut clock:
+  Intestinal barrier function circadian: Tight junction proteins (claudins, occludin)
+  oscillate → permeability higher at rest; gut microbiome rhythmic (controlled by
+  host feeding + clock gene expression in enterocytes).
+
+Cardiac clock:
+  Heart rate, blood pressure, stroke volume — all circadian.
+  Myocardial infarction peaks in morning (6am–12pm): Heart rate variability,
+  platelet aggregability, plaque rupture risk, catecholamine surges all peak AM.
+  BMAL1 cardiac KO mice: Dilated cardiomyopathy.
+
+Circadian Clock & Cancer:
+  Many tumours show disrupted clock gene expression. Loss of clock oscillation
+  associated with worse prognosis in several cancers.
+  Clock genes as tumour suppressors: Per2 KO mice develop haematopoietic tumours faster.
+  Chronotherapy: Timing chemotherapy to maximise efficacy and minimise toxicity.
+  Oxaliplatin: Greater cytotoxicity and lower toxicity at peak DPYD (pyrimidine
+  degradation) activity (late afternoon). SWOG trial showed survival benefit for
+  optimally timed chronotherapy in mCRC (controversial; ongoing trials).
+
+5. CIRCADIAN DISRUPTION & DISEASE
+------------------------------------
+Shift Work:
+  ~20% of workers in developed nations. Circadian misalignment between body
+  clock and external environment → increased risk:
+  - Type 2 diabetes (~40% increased risk)
+  - Obesity and metabolic syndrome
+  - Cardiovascular disease (~20% increased CVD risk)
+  - Breast and colorectal cancer (IARC Group 2A: "probably carcinogenic")
+  - Depression, anxiety, cognitive impairment
+  Mechanism: Uncoupling of SCN (light-entrained) from peripheral clocks
+  (food-entrained) → metabolic and inflammatory dysregulation.
+
+Social Jet Lag:
+  Discrepancy between biological sleep timing and social/work schedule.
+  Average ~1.5–2 hours of social jet lag in working-age adults.
+  Associated with obesity, T2DM, cardiovascular risk even in non-shift workers.
+
+Seasonal Affective Disorder (SAD):
+  Depressive episodes correlating with short days/long nights (winter).
+  Mechanism: Delayed circadian phase + altered melatonin profile.
+  Treatment: Light therapy (10,000 lux for 30 min on waking) → phase advance;
+  also agomelatine (melatonin agonist + 5-HT2C antagonist), SSRIs.
+
+Familial Advanced Sleep Phase Syndrome (FASPS):
+  Extreme early chronotype (sleep 7:30pm–4:30am). Autosomal dominant.
+  Mutations: CK1-delta kinase → slower PER2 degradation → short tau →
+  earlier circadian phase. PER2 S662G mutation directly (casein kinase I site).
+
+6. COMPARATIVE CIRCADIAN BIOLOGY
+-----------------------------------
+Cyanobacteria (Synechococcus elongatus):
+  Simplest known circadian clock: Three proteins — KaiA, KaiB, KaiC.
+  KaiC: Phosphorylated (by itself + KaiA) then dephosphorylated (~24h cycle).
+  Remarkable: Reconstituted in test tube with just KaiA + KaiB + KaiC + ATP → maintains
+  ~24h oscillation. First circadian clock reconstituted in vitro.
+
+Drosophila melanogaster Clock:
+  Key proteins: CLK, CYC (CLOCK/BMAL1 homologs), PER, TIM, DBT (CK1-epsilon homolog).
+  Light: Cryptochrome (dCRY) binds TIM in light → rapid TIM degradation → phase reset.
+  (Mammalian CRY is not a photoreceptor; Drosophila TIM has no mammalian homolog.)
+  Pacemaker neurons: Small LNv (sLNv) neurons express PDF neuropeptide → coordinate
+  rest of circadian neuronal network.
+
+[MEDICAL APPLICATION] Circadian medicine:
+  Time-of-day-dependent drug efficacy is well documented:
+  - ACE inhibitors/ARBs: Better BP control taken at bedtime (Hygia Chronotherapy Trial).
+  - Statins: Cholesterol synthesis peaks at night → simvastatin most effective at night.
+  - Aspirin: Aspirin given at bedtime → better platelet aggregation inhibition.
+  - Corticosteroids: Timed to match cortisol peak to reduce HPA suppression.
+  - Immunotherapy: Early clinical evidence that timing PD-1 blockade influences response rates.
+
+================================================================================

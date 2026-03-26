@@ -1,0 +1,128 @@
+COLLEGE PHYSICS - QUANTUM MECHANICS
+=====================================
+
+HISTORICAL BACKGROUND:
+Classical physics failed to explain:
+1. Blackbody radiation (UV catastrophe).
+2. Photoelectric effect.
+3. Atomic stability and line spectra.
+4. Compton scattering.
+
+PLANCK'S QUANTUM HYPOTHESIS (1900):
+Energy is quantized: E = nhf (n = integer)
+Planck's constant: h = 6.626 × 10⁻³⁴ J·s = 4.136 × 10⁻¹⁵ eV·s
+ℏ = h/2π = 1.055 × 10⁻³⁴ J·s
+
+WAVE-PARTICLE DUALITY:
+- Light exhibits both wave (interference, diffraction) and particle (photoelectric effect) nature.
+- Matter exhibits both particle and wave nature (de Broglie, Davisson-Germer).
+- λ = h/p (de Broglie wavelength)
+
+SCHRÖDINGER EQUATION:
+Foundation of quantum mechanics.
+Time-dependent: iℏ ∂Ψ/∂t = ĤΨ = [-ℏ²/2m ∇² + V]Ψ
+Time-independent: ĤΨ = EΨ [-ℏ²/2m ∇² + V]ψ = Eψ
+
+WAVEFUNCTION (Ψ):
+- Ψ contains all information about quantum state.
+- |Ψ|² = probability density.
+- Born interpretation: P(x,t)dx = |Ψ(x,t)|² dx (probability of finding particle in dx).
+- Normalization: ∫|Ψ|² dτ = 1 (particle must be somewhere).
+- Must be continuous, single-valued, finite, and square-integrable.
+
+QUANTUM STATES AND OPERATORS:
+Observable ↔ Hermitian operator.
+Expectation value: <A> = ∫Ψ* Â Ψ dτ
+Momentum operator: p̂ = -iℏ∇
+Energy operator (Hamiltonian): Ĥ = -ℏ²/2m ∇² + V
+
+PARTICLE IN A BOX (Infinite Square Well):
+Boundary conditions: ψ(0) = ψ(L) = 0
+Energy eigenvalues: E_n = n²π²ℏ²/(2mL²) = n²E₁ (n = 1,2,3,...)
+Wavefunctions: ψ_n = √(2/L) sin(nπx/L)
+Zero-point energy: E₁ = π²ℏ²/(2mL²) ≠ 0 (purely quantum effect)
+Energy levels are discrete — quantized.
+
+QUANTUM HARMONIC OSCILLATOR:
+V(x) = ½mω²x²
+Energy levels: E_n = (n + ½)ℏω (n = 0,1,2,...)
+Zero-point energy: E₀ = ½ℏω
+Equally spaced energy levels.
+Creation/annihilation operators: ψ_n = (a†)ⁿ/√n! × ψ₀
+
+HYDROGEN ATOM (QUANTUM MECHANICAL):
+Full solution of Schrödinger equation in 3D.
+Energy: E_n = -13.6/n² eV (same as Bohr model)
+Quantum numbers:
+- Principal: n = 1, 2, 3, ... (energy, size of orbital)
+- Orbital angular momentum: l = 0, 1, ..., n-1 (shape: s,p,d,f)
+- Magnetic: m_l = -l, ..., 0, ..., +l (orientation)
+- Spin: m_s = +½ or -½ (intrinsic angular momentum)
+
+Wavefunctions: ψ_nlm(r,θ,φ) = R_nl(r) × Y_l^m(θ,φ)
+Orbitals: s (l=0, spherical), p (l=1, dumbbell), d (l=2, complex shapes).
+
+PAULI EXCLUSION PRINCIPLE:
+No two electrons in an atom can have the same set of quantum numbers (n, l, m_l, m_s).
+Explains periodic table structure and chemical bonding.
+
+UNCERTAINTY PRINCIPLE (formal):
+ΔxΔp_x ≥ ℏ/2
+ΔEΔt ≥ ℏ/2
+ΔJₓΔJᵧ ≥ ℏ/2 |<Jz>|
+
+SPIN:
+Intrinsic angular momentum of particles.
+Electron spin: s = ½ (fermion).
+Spin angular momentum: S = ℏ√(s(s+1)) = ℏ√3/2
+Z-component: S_z = m_s ℏ = ±ℏ/2
+Bosons (integer spin): photon (s=1), graviton (s=2). Obey Bose-Einstein statistics.
+Fermions (half-integer spin): electron, proton (s=½). Obey Fermi-Dirac statistics. Obey Pauli principle.
+
+TUNNELING:
+Quantum particle can pass through a potential barrier even if E < V₀.
+Transmission coefficient: T ≈ e^(-2κL) where κ = √(2m(V₀-E))/ℏ
+Applications: tunnel diode, scanning tunneling microscope (STM), nuclear fusion in stars, radioactive decay.
+
+QUANTUM ENTANGLEMENT:
+Two particles can be in correlated quantum states such that measuring one instantly affects the other, regardless of distance.
+EPR paradox, Bell's inequality (violation confirmed experimentally).
+Application: quantum cryptography, quantum computing.
+
+PERTURBATION THEORY:
+When H = H₀ + H', exact solution unknown.
+First-order energy correction: E_n^(1) = <n⁰|H'|n⁰>
+First-order state correction: |n^(1)> = Σ_{m≠n} <m⁰|H'|n⁰>/(E_n⁰-E_m⁰) |m⁰>
+
+VARIATIONAL METHOD:
+<E> = <ψ|H|ψ>/<ψ|ψ> ≥ E_ground
+Used to estimate ground state energy.
+
+SELECTION RULES (for hydrogen atom transitions):
+Δl = ±1, Δm_l = 0, ±1 (electric dipole transitions)
+Δn = any, Δs = 0
+
+QUANTUM STATISTICS:
+Fermi-Dirac distribution: f(E) = 1/(e^((E-E_F)/kT) + 1) [fermions]
+Bose-Einstein distribution: n(E) = 1/(e^((E-μ)/kT) - 1) [bosons]
+Classical limit (Maxwell-Boltzmann): f(E) ∝ e^(-E/kT)
+
+Fermi energy E_F: energy below which all states filled at T=0.
+For electrons: E_F = (ℏ²/2m)(3π²n)^(2/3)
+
+IMPORTANT CONSTANTS:
+h = 6.626 × 10⁻³⁴ J·s
+ℏ = 1.055 × 10⁻³⁴ J·s
+m_e = 9.109 × 10⁻³¹ kg
+e = 1.602 × 10⁻¹⁹ C
+a₀ = 0.529 Å (Bohr radius)
+Rydberg energy: E_R = 13.6 eV
+
+IMPORTANT FORMULAS:
+- E = hf = ℏω (photon energy)
+- λ = h/p (de Broglie)
+- ΔxΔp ≥ ℏ/2
+- E_n (box) = n²π²ℏ²/(2mL²)
+- E_n (oscillator) = (n+½)ℏω
+- E_n (hydrogen) = -13.6/n² eV
+- T (tunneling) ≈ e^(-2κL)
