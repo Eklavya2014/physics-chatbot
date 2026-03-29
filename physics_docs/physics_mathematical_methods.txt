@@ -1,0 +1,248 @@
+MATHEMATICAL PHYSICS - COMPLETE GUIDE
+=======================================
+Vectors, Tensors, Complex Analysis, Differential Equations, Group Theory, Fourier Analysis
+
+PART 1: VECTOR CALCULUS
+
+VECTOR OPERATORS:
+Gradient: ∇f = (∂f/∂x)î + (∂f/∂y)ĵ + (∂f/∂z)k̂. Points in direction of maximum increase.
+Divergence: ∇·F = ∂Fx/∂x + ∂Fy/∂y + ∂Fz/∂z. Measures source/sink of field.
+Curl: ∇×F = (∂Fz/∂y - ∂Fy/∂z)î + ... Measures rotation of field.
+Laplacian: ∇²f = ∂²f/∂x² + ∂²f/∂y² + ∂²f/∂z². Very important in physics.
+
+Identities:
+∇·(∇×F) = 0 (curl is divergence-free).
+∇×(∇f) = 0 (gradient is curl-free).
+∇²F = ∇(∇·F) - ∇×(∇×F).
+
+FUNDAMENTAL THEOREMS:
+Divergence theorem (Gauss): ∮F·dA = ∫∫∫ ∇·F dV.
+Stokes theorem: ∮F·dL = ∫∫(∇×F)·dA.
+Green's theorems (2D analogs).
+
+CURVILINEAR COORDINATES:
+Cylindrical (ρ, φ, z):
+x = ρcos φ, y = ρsin φ, z = z.
+∇f = (∂f/∂ρ)ρ̂ + (1/ρ)(∂f/∂φ)φ̂ + (∂f/∂z)ẑ.
+∇²f = (1/ρ)∂/∂ρ(ρ ∂f/∂ρ) + (1/ρ²)∂²f/∂φ² + ∂²f/∂z².
+
+Spherical (r, θ, φ):
+x = r sin θ cos φ, y = r sin θ sin φ, z = r cos θ.
+∇²f = (1/r²)∂/∂r(r²∂f/∂r) + (1/r²sinθ)∂/∂θ(sinθ ∂f/∂θ) + (1/r²sin²θ)∂²f/∂φ².
+Volume element: dV = r² sinθ dr dθ dφ.
+
+---
+
+PART 2: TENSORS
+
+DEFINITION:
+Tensor of rank n: mathematical object with n indices that transforms in a specific way under coordinate transformation.
+Rank 0: scalar. Rank 1: vector. Rank 2: matrix-like (but transforms properly).
+
+NOTATION (Einstein summation):
+Repeated index (one up, one down) implies summation: Aᵢ Bⁱ = Σᵢ AᵢBᵢ.
+Upper (contravariant) index: transforms like coordinates.
+Lower (covariant) index: transforms like gradient.
+
+METRIC TENSOR:
+gᵢⱼ: relates coordinate distances to actual distances.
+ds² = gᵢⱼ dxⁱ dxʲ.
+Flat spacetime: g = diag(1,1,1) (Euclidean) or diag(-1,1,1,1) (Minkowski).
+Curved spacetime: gᵢⱼ varies with position (General Relativity).
+Inverse metric: gⁱʲ gⱼₖ = δⁱₖ.
+Raising/lowering indices: Aⁱ = gⁱʲ Aⱼ.
+
+STRESS TENSOR:
+σᵢⱼ: force per unit area in direction i on surface with normal j.
+Diagonal: normal stresses. Off-diagonal: shear stresses.
+Symmetry: σᵢⱼ = σⱼᵢ (no net torque on volume element).
+Cauchy's equation: ∂σᵢⱼ/∂xⱼ + fᵢ = ρ aᵢ.
+
+ELECTROMAGNETIC FIELD TENSOR:
+Fᵘᵛ: antisymmetric rank-2 tensor containing E and B fields.
+F⁰ⁱ = Eᵢ/c, Fⁱʲ = εᵢⱼₖ Bₖ.
+Maxwell's equations become: ∂ᵥFᵘᵛ = μ₀Jᵘ and ∂[λFᵘᵥ] = 0.
+Elegant covariant formulation of EM.
+
+CHRISTOFFEL SYMBOLS AND COVARIANT DERIVATIVE:
+Γᵅβγ = (1/2) gᵅδ(∂gβδ/∂xγ + ∂gγδ/∂xβ - ∂gβγ/∂xδ).
+Covariant derivative: ∇β Vᵅ = ∂β Vᵅ + Γᵅβγ Vγ.
+Generalizes derivative to curved spaces.
+
+RIEMANN CURVATURE TENSOR:
+Rᵅβγδ: measures intrinsic curvature of spacetime.
+Rᵅβγδ = ∂γΓᵅδβ - ∂δΓᵅγβ + ΓᵅγλΓλδβ - ΓᵅδλΓλγβ.
+Ricci tensor: Rβδ = Rᵅβᵅδ (contraction).
+Ricci scalar: R = gβδRβδ.
+Einstein tensor: Gβδ = Rβδ - ½gβδR.
+Einstein field equations: Gβδ + Λgβδ = (8πG/c⁴)Tβδ.
+
+---
+
+PART 3: COMPLEX ANALYSIS IN PHYSICS
+
+COMPLEX NUMBERS:
+z = x + iy = r e^(iθ) (Euler form). r = |z|, θ = arg(z).
+Euler's formula: e^(iθ) = cos θ + i sin θ. Most beautiful formula: e^(iπ) + 1 = 0.
+Complex conjugate: z* = x - iy. |z|² = zz*.
+
+ANALYTIC FUNCTIONS:
+Complex differentiable everywhere in a region.
+Cauchy-Riemann equations: ∂u/∂x = ∂v/∂y, ∂u/∂y = -∂v/∂x.
+Harmonic functions: ∇²u = 0 (satisfies Laplace equation).
+Conformal mappings: angle-preserving transformations. Used in 2D electrostatics, fluid flow.
+
+CAUCHY'S INTEGRAL THEOREM:
+If f is analytic inside and on contour C: ∮_C f(z) dz = 0.
+Cauchy's integral formula: f(a) = (1/2πi) ∮ f(z)/(z-a) dz.
+Derivatives: f^(n)(a) = (n!/2πi) ∮ f(z)/(z-a)^(n+1) dz.
+
+RESIDUE THEOREM:
+∮ f(z) dz = 2πi Σ Res[f, zₖ] (sum over poles inside contour).
+Residue at simple pole: Res[f, z₀] = lim(z→z₀) (z-z₀)f(z).
+Powerful tool for evaluating real integrals.
+Example: ∫₋∞^∞ 1/(1+x²) dx = π (using residue at z = i).
+
+APPLICATIONS IN PHYSICS:
+Green's functions: solution of differential equations using complex analysis.
+Dispersion relations: Kramers-Kronig relations connect real and imaginary parts of response functions.
+Causality: Im[χ(ω)] determines absorption; Re[χ(ω)] determines dispersion. Related by Hilbert transform.
+Quantum mechanics: analytic continuation of Green's functions → resonances (complex poles).
+Statistical mechanics: partition function as function of complex β = 1/kT.
+
+---
+
+PART 4: DIFFERENTIAL EQUATIONS IN PHYSICS
+
+ORDINARY DIFFERENTIAL EQUATIONS:
+
+First order: dy/dx = f(x,y). Separable, linear, exact forms.
+Second order linear: ay'' + by' + cy = f(x). Most important in physics.
+Homogeneous + Particular solution. Characteristic equation for constant coefficients.
+Simple harmonic oscillator: ẍ + ω₀²x = 0. Solution: x = A cos(ω₀t + φ).
+Damped oscillator: ẍ + 2γẋ + ω₀²x = 0. Three cases: underdamped (γ<ω₀), critically damped (γ=ω₀), overdamped (γ>ω₀).
+Driven oscillator: ẍ + 2γẋ + ω₀²x = F₀cos(ωt)/m. Steady state: x = A(ω)cos(ωt+φ).
+Resonance at ω ≈ ω₀ (for weak damping).
+
+PARTIAL DIFFERENTIAL EQUATIONS:
+
+Wave equation: ∂²u/∂t² = v² ∇²u. D'Alembert solution: u(x,t) = f(x-vt) + g(x+vt).
+
+Diffusion/Heat equation: ∂u/∂t = D ∇²u. Solutions involve error functions (1D) or eigenfunctions.
+Gaussian packet broadens with time: σ(t) = √(2Dt).
+
+Laplace equation: ∇²u = 0. Describes electrostatic potential, gravitational potential, steady heat flow.
+Solutions: spherical harmonics (spherical symmetry), Fourier series (rectangular), Bessel functions (cylindrical).
+
+Poisson equation: ∇²u = -ρ/ε₀. Laplace + source term.
+
+Schrödinger equation: iℏ∂Ψ/∂t = ĤΨ. See quantum mechanics section.
+
+SEPARATION OF VARIABLES:
+Assume u(r,t) = R(r)T(t). Gets separate ODEs. Works for linear PDEs with separable geometry.
+Produces eigenvalue problem. Solutions are eigenfunctions.
+
+SPECIAL FUNCTIONS:
+Legendre polynomials P_l(cos θ): angular part of spherical solutions. l = 0,1,2,...
+P₀ = 1, P₁ = cos θ, P₂ = (3cos²θ-1)/2.
+Spherical harmonics Y_l^m(θ,φ) = N P_l^m(cos θ) e^(imφ).
+Orthonormality: ∫ Y_l^m* Y_l'^m' sinθ dθ dφ = δ_ll' δ_mm'.
+
+Bessel functions J_n(kr): radial solutions in cylindrical coordinates.
+Oscillatory behavior, like sinusoidal but with r-dependent period.
+Zeros: J₀(x) = 0 at x = 2.405, 5.520, 8.654, ...
+
+Hermite polynomials: harmonic oscillator wavefunctions.
+H₀ = 1, H₁ = 2x, H₂ = 4x²-2, H₃ = 8x³-12x.
+
+Laguerre polynomials: radial wavefunctions of hydrogen atom.
+
+---
+
+PART 5: GROUP THEORY IN PHYSICS
+
+BASIC DEFINITIONS:
+Group G: set of elements with operation * satisfying closure, associativity, identity, inverse.
+Abelian group: a*b = b*a for all a,b.
+Cyclic group Z_n: n elements, generated by one element.
+Symmetric group S_n: all permutations of n objects. |S_n| = n!
+
+REPRESENTATIONS:
+Representation: homomorphism from group to matrices.
+Faithful: one-to-one. Reducible: can be block-diagonalized. Irreducible (irrep): cannot be reduced further.
+Regular representation: group acts on itself.
+Character χ(g): trace of representation matrix. Same for all elements in same conjugacy class.
+Character table: irreps × conjugacy classes → characters.
+
+CONTINUOUS GROUPS (LIE GROUPS):
+Group with continuous parameters. Generated by Lie algebra (infinitesimal generators).
+Commutation relations: [Xᵢ, Xⱼ] = Cᵢⱼₖ Xₖ (Cᵢⱼₖ = structure constants).
+
+Important groups:
+SO(3): rotations in 3D. Generators: angular momentum operators Jₓ, Jᵧ, Jᵤ.
+[Jₓ,Jᵧ] = iℏJᵤ and cyclic. Casimir: J² = Jₓ²+Jᵧ²+Jᵤ².
+SU(2): 2×2 unitary matrices with det=1. Spinors. Double cover of SO(3).
+SU(3): 8 generators (Gell-Mann matrices). QCD gauge group.
+U(1): complex numbers of magnitude 1. QED gauge group.
+Poincaré group: Lorentz transformations + translations. Symmetry group of special relativity.
+
+APPLICATIONS IN PHYSICS:
+
+Atomic physics: SO(3) symmetry → conservation of angular momentum → selection rules.
+Representations labeled by l (orbital) and m (magnetic quantum number).
+Spin: SU(2) representations. Half-integer spin from SU(2) not in SO(3).
+Addition of angular momentum: Clebsch-Gordan coefficients.
+
+Particle physics: SU(3) flavor symmetry → predicts hadron multiplets (Eightfold Way, Gell-Mann 1961).
+Predicted omega baryon (Ω⁻) discovered 1964 → triumph of group theory.
+Standard Model gauge group: SU(3)_C × SU(2)_L × U(1)_Y.
+
+Crystal symmetry: 32 crystallographic point groups. 230 space groups.
+Group theory determines: allowed crystal structures, selection rules for optical transitions, phonon modes.
+
+---
+
+PART 6: FOURIER ANALYSIS
+
+FOURIER SERIES (periodic functions):
+f(x) = a₀/2 + Σ [aₙcos(nπx/L) + bₙsin(nπx/L)] for x in [-L, L].
+aₙ = (1/L)∫f(x)cos(nπx/L)dx. bₙ = (1/L)∫f(x)sin(nπx/L)dx.
+Complex form: f(x) = Σ cₙ e^(inπx/L). cₙ = (1/2L)∫f(x)e^(-inπx/L)dx.
+Parseval's theorem: Σ|cₙ|² = (1/2L)∫|f(x)|²dx. Conservation of energy.
+
+FOURIER TRANSFORM (aperiodic functions):
+F(k) = (1/√2π) ∫ f(x) e^(-ikx) dx.
+f(x) = (1/√2π) ∫ F(k) e^(ikx) dk.
+Uncertainty principle: ΔxΔk ≥ 1/2. (Bandwidth theorem).
+Convolution theorem: F[f*g] = F[f] × F[g]. Convolution in real space = multiplication in frequency space.
+Important pairs: Gaussian ↔ Gaussian. Rectangle ↔ sinc. Delta function ↔ constant.
+
+APPLICATIONS:
+Signal processing: filter design, spectral analysis.
+Quantum mechanics: wavefunction in position ↔ momentum space.
+Diffraction: Fraunhofer diffraction pattern = Fourier transform of aperture function.
+NMR/MRI: raw data = Fourier transform of image. Reconstruction by inverse FT.
+X-ray crystallography: diffraction pattern = Fourier transform of electron density.
+Solving differential equations: converts PDEs to algebraic equations.
+
+LAPLACE TRANSFORM:
+F(s) = ∫₀^∞ f(t) e^(-st) dt.
+Useful for solving ODEs with initial conditions, circuit analysis.
+Transforms: 1 → 1/s. e^(at) → 1/(s-a). sin(ωt) → ω/(s²+ω²). δ(t) → 1.
+Convolution theorem: L[f*g] = F(s)G(s).
+Final value theorem: lim(t→∞) f(t) = lim(s→0) sF(s).
+Inverse: Bromwich integral (complex contour integral).
+
+GREEN'S FUNCTIONS:
+Solution of L[G(x,x')] = δ(x-x') where L is linear differential operator.
+Particular solution: y(x) = ∫G(x,x')f(x')dx'.
+Physically: response at x to impulse at x'.
+Retarded Green's function: satisfies causality (effect after cause).
+Applications: electrostatics, quantum scattering, wave propagation.
+
+IMPORTANT CONSTANTS AND IDENTITIES:
+Cauchy integral: ∮ z^n dz = 2πi δ_{n,-1}.
+Parseval: ∫|f|²dx = ∫|F|²dk.
+Convolution: (f*g)(x) = ∫f(y)g(x-y)dy.
+Dirac delta: ∫f(x)δ(x-a)dx = f(a). δ(g(x)) = Σ δ(x-xᵢ)/|g'(xᵢ)| (xᵢ = zeros of g).
+Step function: θ(x) = 0 (x<0), 1 (x>0). dθ/dx = δ(x).

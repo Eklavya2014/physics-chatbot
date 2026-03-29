@@ -1,0 +1,224 @@
+FOOD CHEMISTRY, FORENSIC CHEMISTRY AND COMPUTATIONAL CHEMISTRY
+================================================================
+
+PART 1: FOOD CHEMISTRY
+
+WATER IN FOOD:
+Water activity (aw): aw = P/P₀ = partial pressure of water / vapor pressure of pure water.
+aw determines microbial growth, chemical reactions, shelf life.
+aw < 0.6: no microbial growth. aw < 0.3: very stable.
+Methods of reducing aw: drying, adding sugar/salt (osmotic), freezing.
+Maillard reaction requires some water; very dry food doesn't brown as well.
+
+CARBOHYDRATES IN FOOD:
+Sugars: sucrose (table sugar), glucose, fructose, lactose, maltose.
+Sweetness relative to sucrose (=100): fructose (173), glucose (74), sucrose (100), maltose (32), lactose (16).
+Invert sugar: sucrose hydrolyzed to glucose + fructose. Sweeter, hygroscopic.
+Caramelization: sugar heated above 160°C → dehydration, isomerization, polymerization → brown color, caramel flavor.
+Maillard reaction: reducing sugar + amino acid → melanoidins (brown), complex flavors. Requires heat, low aw.
+Key reactions: Amadori rearrangement, Strecker degradation → aroma compounds.
+Maillard at: bread crust, roasted coffee, grilled meat, chocolate.
+No Maillard in pure fat frying (no amino acids or sugars).
+
+PROTEINS IN FOOD:
+Denaturation: unfolding by heat, acid, base, mechanical action.
+Coagulation: denatured proteins aggregate (egg white, cheese, tofu).
+Gelation: protein network traps water (gelatin, egg custard).
+Hydrolysis: enzymatic (cheese ripening, meat tenderizing) or acid/base → shorter peptides → flavor.
+Meat tenderizers: papain (papaya), bromelain (pineapple), actinidin (kiwi) → hydrolyze muscle proteins.
+Maillard reaction with Lys, Arg reduces nutritive value (loss of essential amino acids).
+Functional properties: emulsification (lecithin, egg yolk), foaming (egg white), gelling, water-binding.
+
+LIPIDS IN FOOD:
+Fats and oils: saturated fats solid (butter, coconut oil), unsaturated liquid (vegetable oils).
+Smoke point: temperature at which oil starts to smoke → breakdown begins → unhealthy compounds.
+Hydrogenation: adds H₂ across double bonds. Partial hydrogenation → trans fats (unhealthy).
+Oxidative rancidity: autoxidation of unsaturated fatty acids. Free radical chain reaction.
+Initiation: R-H + O₂ → R• (heat, light, metals catalyze). Propagation: R• + O₂ → ROO•. ROO• + R-H → ROOH + R•.
+Hydrolytic rancidity: enzymes or moisture hydrolyze ester bonds → free fatty acids → off-flavors.
+Antioxidants: BHA, BHT (synthetic), vitamin E (natural), vitamin C (water-soluble, prevents initiation), rosemary extract.
+
+EMULSIONS:
+Oil-in-water (o/w): oil droplets in water. Milk, mayonnaise, vinaigrette (w/o).
+Water-in-oil (w/o): water droplets in oil. Butter, margarine.
+Emulsifiers: amphiphilic molecules at interface. Lecithin (egg yolk), milk proteins, mono- and diglycerides.
+HLB value (Hydrophilic-Lipophilic Balance): 1-6 for w/o, 8-18 for o/w.
+Homogenization: reduce droplet size → more stable emulsion.
+Stability: affected by creaming/sedimentation, flocculation, coalescence, Ostwald ripening.
+
+FOOD ADDITIVES:
+Preservatives: sodium benzoate (C₆H₅COONa, acidic foods), sodium nitrite (prevents botulism in cured meats), sulfur dioxide (wine, dried fruit).
+Antioxidants: BHA, BHT, TBHQ, vitamin E, ascorbic acid.
+Colors: carotenoids (natural yellow-orange), anthocyanins (red-blue, pH indicator!), chlorophyll (green), curcumin (yellow), synthetic azo dyes.
+Flavors: esters (fruity), aldehydes, ketones, terpenes.
+Thickeners: starch, pectin, guar gum, xanthan gum, carrageenan, agar, gelatin.
+Pectin: from citrus peel/apple pomace. Methylated galacturonic acid polymer. Forms gel with sugar + acid (jam). Low-methoxy pectin needs Ca²⁺.
+Leavening: NaHCO₃ (baking soda) + acid → CO₂. Baking powder = NaHCO₃ + dry acid + starch.
+Sweeteners: saccharin (300× sweeter), aspartame (200×), sucralose (600×), stevia (200-300×), acesulfame-K (200×).
+
+FERMENTATION:
+Alcoholic fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (Saccharomyces cerevisiae).
+Beer: malted barley → mash → ferment → hops for bitterness.
+Wine: grape juice → yeast → ethanol + CO₂.
+Distillation: increases alcohol content (spirits).
+Lactic acid fermentation: lactose → lactic acid (yogurt, cheese, sauerkraut, kimchi).
+Acetic acid fermentation: ethanol → acetic acid (Acetobacter aerobically). Vinegar.
+Bread: yeast fermentation → CO₂ raises dough. Gluten network traps gas.
+Soy sauce: koji mold (Aspergillus) on soybeans → enzymes break down proteins and starches → complex flavors.
+
+---
+
+PART 2: FORENSIC CHEMISTRY
+
+FORENSIC SCIENCE: application of science to legal questions.
+Physical evidence: fingerprints, fibers, DNA, gunshot residue, glass, paint, documents, drugs, poisons.
+
+DNA ANALYSIS:
+STR (Short Tandem Repeat) analysis: most common in forensics.
+13 CODIS loci (FBI database): probability of random match < 1 in 10¹⁸ for unrelated individuals.
+PCR amplifies tiny amounts of DNA.
+Mitochondrial DNA: maternally inherited, useful for hair without follicle, skeletal remains.
+Y-STR: paternal lineage. Useful in sexual assault cases.
+Familial DNA searching: partial match → identify relatives → narrow suspects.
+Touch DNA: epithelial cells from skin contact. Very low amount → contamination concern.
+DNA phenotyping: predict appearance (eye color, hair color, skin tone) from DNA.
+
+FINGERPRINT ANALYSIS:
+Three types: loops (60-65%), whorls (30-35%), arches (5%).
+Ridge characteristics (minutiae): bifurcations, ridge endings, dots. >12-16 points needed for match.
+Development methods:
+Latent prints (not visible): aluminium powder (light surfaces), black powder (dark), fluorescent powder.
+Cyanoacrylate (super glue) fuming: reacts with sweat residue → white polymer.
+Ninhydrin: reacts with amino acids (purple Ruhemann's purple).
+1,8-Diazafluoren-9-one (DFO): fluorescence.
+Vacuum metal deposition (VMD): most sensitive, especially for plastics.
+AFIS: Automated Fingerprint Identification System. Digital comparison.
+
+DRUG ANALYSIS:
+Presumptive tests: colorimetric, fast, cheap, but not definitive.
+Marquis reagent (H₂SO₄/formaldehyde): heroin (purple → black), MDMA (purple), amphetamine (orange-brown).
+Duquenois-Levine: cannabis (purple).
+Cobalt thiocyanate: cocaine (blue).
+Simon's test: secondary amines (MDMA gives blue, MDA doesn't).
+Confirmatory tests: GC-MS (gold standard), HPLC-MS/MS, NMR.
+GC-MS identifies: molecular weight (MS), fragmentation pattern (unique fingerprint), retention time (GC).
+Illicit drug identification: cocaine, heroin, methamphetamine, MDMA, cannabis, fentanyl.
+
+TOXICOLOGY:
+LD₅₀: lethal dose for 50% of test population. Measure of toxicity.
+Acute vs chronic poisoning.
+Post-mortem toxicology: blood, urine, vitreous humor, hair, liver.
+Blood: best for recent exposure. Post-mortem redistribution is concern.
+Urine: metabolites. Detection window longer than blood.
+Hair: historical record. ~1.5 cm/month growth. Can detect exposure timeline.
+Vitreous humor: isolated from circulation → less redistribution. CO, ethanol.
+
+Common poisons:
+Cyanide (HCN, KCN): inhibits cytochrome c oxidase → cells can't use O₂. Cherry/bitter almond odor.
+Antidote: hydroxocobalamin (binds CN⁻), sodium thiosulfate.
+Carbon monoxide: binds hemoglobin (240× stronger than O₂). Cherry-red appearance.
+Antidote: 100% O₂, hyperbaric O₂.
+Arsenic: trioxide As₂O₃ tasteless, odorless. Inhibits cellular enzymes (thiol groups). Detected by Marsh test, AAS.
+Lead: neurological damage (especially children). Inhibits ALA dehydratase (heme synthesis). Blood lead level.
+Strychnine: blocks glycine receptors → spastic paralysis.
+Organophosphates: irreversible AChE inhibitors. Nerve agents (sarin, VX), pesticides (malathion).
+
+ARSON INVESTIGATION:
+Accelerant identification: GC-MS of fire debris. Gasoline, kerosene, diesel have characteristic patterns.
+Solid phase microextraction (SPME): extract volatiles from debris.
+Comparison with reference standards in library.
+
+DOCUMENT EXAMINATION:
+Ink dating: TLC, LC-MS of ink components. Degradation products.
+Paper analysis: fiber analysis (microscopy), watermarks, coating composition.
+Altered documents: indented writing (ESDA — electrostatic detection apparatus), erasures (IR), additions.
+Questioned signatures: comparison with known exemplars.
+
+BALLISTICS AND GUNSHOT RESIDUE (GSR):
+GSR particles: lead, antimony, barium from primer ignition. Detected by SEM-EDX.
+Unique morphology: spherical solidified droplets.
+Collected from: hands, face, clothes within 4-6 hours of discharge.
+Primer-less/green ammunition: changing GSR composition.
+
+GLASS ANALYSIS:
+Refractive index: measured by immersion method. Very discriminating.
+Elemental analysis: LA-ICP-MS. Highly discriminating.
+Fracture patterns: radial and concentric cracks. Sequence of impacts.
+3R rule: radial cracks form first, concentric cracks terminate at radial.
+
+---
+
+PART 3: COMPUTATIONAL CHEMISTRY
+
+QUANTUM CHEMISTRY METHODS:
+Ab initio: from first principles, no empirical parameters.
+Hartree-Fock (HF): mean-field approximation. Each electron sees average field of all others.
+Basis sets: mathematical functions to represent orbitals. STO-3G (minimal), 6-31G, cc-pVTZ (large).
+Limitations of HF: no electron correlation. Overestimates bond lengths.
+Post-HF methods include electron correlation:
+MP2 (Møller-Plesset perturbation theory): adds pairwise correlation. Much better geometries and energies.
+CCSD(T) (coupled cluster singles, doubles, perturbative triples): "gold standard" of quantum chemistry.
+CI (Configuration Interaction): includes multiple electron configurations. FCI = exact within basis set.
+Computational scaling: HF ~N⁴, MP2 ~N⁵, CCSD(T) ~N⁷. Very expensive for large molecules.
+
+DENSITY FUNCTIONAL THEORY (DFT):
+Kohn-Sham DFT: replace many-electron wavefunction with electron density ρ(r).
+E = T[ρ] + E_ne[ρ] + E_ee[ρ] + E_xc[ρ].
+E_xc: exchange-correlation functional. Exact form unknown → approximations.
+LDA (Local Density Approximation): uses uniform electron gas xc.
+GGA: Generalized Gradient Approximation. B88, PBE. Better than LDA.
+Hybrid functionals: mix HF exchange with DFT. B3LYP (most popular), PBE0, HSE06.
+Range-separated: CAM-B3LYP for excited states, charge transfer.
+DFT scaling: ~N³. Much cheaper than post-HF for large molecules.
+Applications: drug-protein interactions, reaction mechanisms, materials properties.
+
+MOLECULAR MECHANICS (MM):
+Classical force field: atoms as balls, bonds as springs. No quantum mechanics.
+V = bonds + angles + torsions + electrostatics + van der Waals.
+Force fields: AMBER (biomolecules), CHARMM (biomolecules), OPLS (liquids), UFF (any element).
+Very fast: millions of atoms possible.
+No bond breaking/forming (traditional MM).
+Used for: protein structure, membrane simulations, crystal packing.
+
+MOLECULAR DYNAMICS (MD):
+Solve Newton's equations of motion for all atoms.
+Forces from force field (MM-MD) or QM (AIMD — ab initio MD).
+Time step: typically 1-2 fs. Total simulation: ns to μs for MM, ps for AIMD.
+Applications: protein folding, drug binding, membrane transport, polymer properties.
+Enhanced sampling methods: umbrella sampling, metadynamics, replica exchange MD → access rare events.
+
+QM/MM (Hybrid):
+Active site treated with QM (accurate). Rest of protein with MM (fast).
+Used for: enzyme mechanisms, drug binding, photochemical processes in proteins.
+
+MOLECULAR DOCKING:
+Find binding pose and affinity of drug in protein active site.
+Search algorithm: genetic algorithm, Monte Carlo, shape matching.
+Scoring function: estimate binding free energy.
+Programs: AutoDock, Glide (Schrödinger), GOLD, DOCK.
+High-throughput virtual screening: screen millions of compounds → prioritize for synthesis/testing.
+
+STRUCTURE PREDICTION:
+Protein structure: AlphaFold2 (DeepMind, 2021) revolutionized field. Predicts structure from sequence with near-experimental accuracy.
+Based on attention-based neural network (transformer architecture).
+Predicted >200 million protein structures (essentially all known proteins)!
+Before: experimental structure (X-ray, cryo-EM, NMR) or homology modeling.
+Crystal structure prediction: predict crystal structure from molecular formula. Still challenging.
+Materials design: high-throughput DFT screening → find new battery materials, catalysts, topological insulators.
+Materials Project, AFLOW, AFLOWLIB: databases of calculated properties for thousands of materials.
+
+MACHINE LEARNING IN CHEMISTRY:
+Neural network potentials (NNPs): trained on DFT data, speed of MM with accuracy near DFT.
+DeePMD, SchNet, PaiNN, MACE: graph neural network potentials.
+Chemical property prediction: predict melting point, solubility, toxicity, NMR shifts from structure.
+Drug discovery: generative models design new drug molecules. Reinforcement learning optimizes properties.
+Reaction prediction: predict products, yields, conditions.
+SMILES notation: text representation of molecular structure. C=CC=O (but-3-en-2-one).
+Graph neural networks: atoms as nodes, bonds as edges.
+
+QUANTUM COMPUTING FOR CHEMISTRY:
+Variational Quantum Eigensolver (VQE): find ground state energy on quantum computer.
+Quantum Phase Estimation: more accurate but needs more qubits/gate fidelity.
+Potential: solve electronic structure exactly for systems where classical methods fail (strongly correlated).
+Applications: N₂ binding (Haber process optimization), high-Tc superconductors, drug design.
+Current limitation: noisy qubits (NISQ era). Future fault-tolerant QC needed for chemistry applications.

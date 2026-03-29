@@ -1,0 +1,272 @@
+NUCLEAR AND PARTICLE PHYSICS - DETAILED GUIDE
+===============================================
+
+PART 1: NUCLEAR PHYSICS
+
+NUCLEAR PROPERTIES:
+Nucleus contains protons (Z) and neutrons (N). Mass number A = Z + N.
+Nuclide notation: ᴬzX (A = mass number, Z = atomic number).
+Isotopes: same Z, different N (e.g., ¹H, ²H, ³H).
+Isobars: same A, different Z (e.g., ¹⁴C and ¹⁴N).
+Isotones: same N, different Z.
+Mirror nuclei: Z and N swapped (e.g., ³He and ³H).
+
+NUCLEAR SIZE:
+Nuclear radius: R = R₀A^(1/3), R₀ = 1.2 fm = 1.2 × 10⁻¹⁵ m.
+Volume ∝ A → constant density for all nuclei.
+Nuclear density: ρ ≈ 2.3 × 10¹⁷ kg/m³ (same for all nuclei!).
+For comparison: water = 10³ kg/m³, white dwarf ~10⁹ kg/m³.
+
+NUCLEAR FORCES:
+Residual strong force (nuclear force) between nucleons.
+Properties:
+- Very short range (~1-2 fm). Negligible beyond ~3 fm.
+- Very strong (strongest known force at nuclear scales).
+- Charge independent (same n-n, p-p, n-p force).
+- Spin dependent (stronger when spins parallel).
+- Saturates (each nucleon interacts only with neighbors).
+- Exchange force: mediated by pions (π mesons), as proposed by Yukawa.
+- Has a repulsive core at very short distances (<0.4 fm).
+
+BINDING ENERGY:
+Mass defect: Δm = [Zm_p + Nm_n] - M_nucleus.
+Binding energy: BE = Δm × c².
+Per nucleon: BE/A (peaks at Fe-56, ~8.8 MeV/nucleon).
+1 u = 931.5 MeV/c².
+
+SEMI-EMPIRICAL MASS FORMULA (Bethe-Weizsäcker):
+BE = aᵥA - aₛA^(2/3) - a_cZ(Z-1)/A^(1/3) - a_a(A-2Z)²/A ± δ/A^(1/2)
+Volume term: aᵥ ≈ 15.75 MeV (bulk binding).
+Surface term: aₛ ≈ 17.8 MeV (surface nucleons less bound).
+Coulomb term: a_c ≈ 0.711 MeV (proton repulsion).
+Asymmetry term: a_a ≈ 23.7 MeV (favors N ≈ Z).
+Pairing term: δ = +34 MeV (even-even), 0 (odd-A), -34 MeV (odd-odd).
+
+NUCLEAR MODELS:
+
+Liquid Drop Model:
+Nucleus like a liquid drop. Justifies semi-empirical formula.
+Explains: binding energies, fission mechanism.
+Fails: magic numbers, shell structure.
+
+Shell Model (Independent Particle Model):
+Nucleons move in average potential created by all other nucleons.
+Energy levels fill according to Pauli principle.
+Magic numbers: 2, 8, 20, 28, 50, 82, 126 → extra stability (closed shells).
+Nuclei with magic N or Z: especially stable.
+Doubly magic: ⁴He (Z=N=2), ¹⁶O (Z=N=8), ⁴⁰Ca (Z=N=20), ²⁰⁸Pb (Z=82, N=126).
+Explains: nuclear spins, magnetic moments, excited states.
+
+Collective Model (Bohr-Mottelson):
+Combines shell model with collective nuclear deformation.
+Explains: rotational and vibrational spectra of nuclei.
+Quadrupole deformation: nuclei not always spherical.
+
+RADIOACTIVE DECAY:
+
+Alpha Decay (α):
+Emits ⁴He nucleus. ᴬzX → ᴬ⁻⁴_(z-2)Y + ⁴₂He.
+Q = [M(X) - M(Y) - M(He)]c² > 0.
+Alpha particle tunnels through Coulomb barrier.
+Gamow theory: decay rate ∝ exp(-2G) where G is Gamow factor.
+Explains: why α-emitters have very different half-lives despite similar Q values.
+Alpha particles: monoenergetic, travel ~few cm in air, stopped by paper.
+
+Beta Decay:
+β⁻ decay: n → p + e⁻ + ν̄_e. Mass number same, Z increases by 1.
+β⁺ decay: p → n + e⁺ + νe. Z decreases by 1. Only in nuclei (free proton is stable).
+Electron capture: p + e⁻ → n + νe. Z decreases by 1. Competes with β⁺.
+Neutrino emitted: explains continuous energy spectrum of β particles (Pauli, 1930).
+Beta particles: continuous spectrum (0 to Q), penetrate few mm of Al.
+Parity violation: Wu experiment (1957) showed weak force violates parity!
+
+Gamma Decay:
+Excited nucleus emits γ photon. No change in A or Z.
+Often follows α or β decay (leaves nucleus in excited state).
+Mössbauer effect: recoil-free γ emission by nuclei in crystal → very precise spectroscopy.
+
+Selection rules:
+Angular momentum change: |ΔJ| determines multipolarity of γ.
+Electric multipole (E1, E2, ...) vs magnetic multipole (M1, M2, ...).
+Higher multipolarity → longer lifetime.
+
+NUCLEAR REACTIONS:
+Q value: Q = (M_reactants - M_products)c² (in MeV using atomic masses).
+Positive Q: exothermic (energy released). Negative Q: endothermic (threshold energy needed).
+Cross section (σ): effective area for reaction. Units: barn (1 b = 10⁻²⁸ m²).
+Reaction rate: R = N₁N₂σv (N = number densities, v = relative velocity).
+Compound nucleus mechanism: projectile absorbed → compound nucleus → decay.
+Direct reactions: fast reactions without compound nucleus formation.
+
+FISSION (detailed):
+Heavy nucleus (A > 200) absorbs neutron → excited compound nucleus → deforms → splits.
+U-235 + n → U-236* → Ba-141 + Kr-92 + 3n + ~200 MeV per fission.
+Energy released: mostly as KE of fragments (~168 MeV), remaining as γ, neutrons, β.
+Chain reaction: k (multiplication factor).
+k < 1: subcritical (reaction dies out). k = 1: critical (steady state). k > 1: supercritical (exponential growth).
+Critical mass: minimum mass for self-sustaining chain reaction (~50 kg for U-235 bare sphere, less with reflector/moderation).
+Prompt vs delayed neutrons: 99.36% prompt, 0.64% delayed (enable control of reactors!).
+
+Reactor components:
+Fuel: enriched U-235 (3-5%) in UO₂ pellets. Natural uranium (0.7% U-235) with heavy water moderator.
+Moderator: slows neutrons to thermal energies. H₂O, D₂O, graphite.
+Coolant: removes heat. H₂O, D₂O, CO₂, liquid Na (fast reactors).
+Control rods: absorb neutrons (Cd, B). Raise: power increases. Lower: power decreases. Fully in: SCRAM.
+Reflector: reduces neutron leakage.
+
+Reactor types:
+PWR (Pressurized Water Reactor): most common. Pressurized water as coolant and moderator.
+BWR (Boiling Water Reactor): water boils in reactor.
+CANDU: Canadian Deuterium Uranium. Uses natural uranium (no enrichment needed). Heavy water moderator.
+Fast breeder reactor: fast neutrons, no moderator. Converts U-238 to Pu-239 (breeds more fuel than it uses).
+
+FUSION (detailed):
+Light nuclei combine at very high temperature → heavy nucleus + energy.
+Main reactions:
+D + T → He-4 (3.5 MeV) + n (14.1 MeV). Most promising for reactors.
+D + D → T + p (4.03 MeV) or He-3 + n (3.27 MeV).
+p + p → D + e⁺ + ν (0.42 MeV). Powers the Sun (pp chain, requires 10⁷ K).
+
+Lawson criterion: n τ_E T ≥ 10²¹ keV·s/m³ (n = density, τ_E = energy confinement time, T = temperature).
+Requirements: T ~ 10⁸ K, n ~ 10²⁰ m⁻³, confinement time ~1 s.
+
+Confinement approaches:
+Magnetic confinement: Tokamak (JET, ITER). Plasma confined by strong magnetic fields in toroidal shape.
+ITER: international project in France. First to produce more energy than it consumes (Q > 1). Completion ~2025+.
+Inertial confinement: laser or ion beams compress and heat pellet. NIF (National Ignition Facility). Achieved ignition in 2022!
+Magnetic mirror, stellarator: alternative magnetic configurations.
+
+Solar fusion: pp chain (main in Sun), CNO cycle (important in massive stars).
+pp chain: 4¹H → ⁴He + 2e⁺ + 2νe + 26.7 MeV. Takes ~10 billion years in Sun.
+
+---
+
+PART 2: PARTICLE PHYSICS (DETAILED)
+
+STANDARD MODEL PARTICLES:
+
+QUARKS:
+Confined by color force (QCD). Never observed free (confinement).
+Three generations: (u,d), (c,s), (t,b).
+Colors: red, green, blue (and anti-colors). Each quark carries one color.
+Gluons: 8 gluons carry color charge and also interact with each other.
+Asymptotic freedom: coupling constant decreases at high energy → quarks nearly free at very high E.
+Confinement: coupling increases at low energy → quarks permanently confined.
+
+Hadrons (made of quarks):
+Baryons: qqq (color neutral). Proton (uud), neutron (udd), Lambda (uds), Sigma, Xi, Omega.
+Anti-baryons: q̄q̄q̄. Anti-proton, anti-neutron.
+Mesons: qq̄. Pion (ud̄, ūd, (uū-dd̄)/√2), Kaon (us̄, etc.), J/ψ (cc̄), Upsilon (bb̄).
+Exotic hadrons: tetraquarks (qqq̄q̄), pentaquarks (qqqqq̄). Discovered at LHCb.
+
+LEPTONS:
+Three generations: (e,νe), (μ,νμ), (τ,ντ).
+Electron: stable, mass 0.511 MeV/c².
+Muon: 105.7 MeV/c², decays to e + νμ + ν̄e in 2.2 μs.
+Tau: 1776.9 MeV/c², very short-lived (~10⁻¹³ s).
+Neutrinos: extremely light (< eV), barely interact. Three flavors oscillate into each other!
+Neutrino oscillations: requires nonzero mass. Nobel Prize 2015 (Takaaki Kajita, Arthur McDonald).
+
+BOSONS:
+Photon (γ): spin 1, massless, EM force. Range = ∞.
+W⁺, W⁻, Z⁰: spin 1, mass ~80-91 GeV/c², weak force. Range ~10⁻¹⁸ m.
+Gluons (g): spin 1, 8 types, massless, strong force. Range ~1 fm (confined).
+Higgs (H⁰): spin 0, mass 125.09 GeV/c². Gives mass to W, Z and fermions.
+Graviton (hypothetical): spin 2, massless, gravity. Not yet in Standard Model.
+
+ELECTROWEAK THEORY:
+At energies > ~100 GeV: EM and weak forces unify into electroweak force.
+Glashow-Weinberg-Salam (1967-68). Nobel Prize 1979.
+Gauge group: SU(2)_L × U(1)_Y.
+Below ~100 GeV: spontaneous symmetry breaking by Higgs mechanism.
+Higgs gives mass to W⁺, W⁻, Z⁰. Photon remains massless.
+W and Z discovered at CERN in 1983 (Rubbia, van der Meer — Nobel 1984).
+
+HIGGS MECHANISM:
+Higgs field permeates all space.
+Particles acquire mass by interacting with Higgs field (like moving through molasses).
+Stronger interaction = heavier particle.
+Photon doesn't interact = massless.
+Higgs boson: excitation of Higgs field. Discovered July 4, 2012 at CERN LHC.
+Mass = 125.09 ± 0.24 GeV/c². Nobel Prize 2013 (Higgs, Englert).
+
+SYMMETRIES AND CONSERVATION LAWS:
+CPT theorem: product of C, P, T is always conserved. (Fundamental theorem of QFT)
+C (charge conjugation): particles ↔ antiparticles. Violated in weak interactions.
+P (parity): mirror reflection. Violated in weak interactions (Wu experiment, 1957).
+T (time reversal): t → -t. Violated in K and B meson decays.
+CP violation: allows matter-antimatter asymmetry in Universe.
+Baryon number: conserved in all known interactions.
+Lepton number: conserved in SM, but neutrino mass implies possible violation.
+
+FEYNMAN DIAGRAMS (detailed):
+Represent terms in perturbation series.
+Vertices: coupling constants (e for QED, g_s for QCD, g_w for weak).
+Propagators: internal lines → virtual particles.
+α_QED = e²/(4πε₀ℏc) ≈ 1/137 (fine structure constant).
+α_s ≈ 0.1 at 100 GeV (strong coupling, QCD).
+Higher order diagrams → smaller corrections (if coupling < 1).
+QED: most precisely tested theory. g-2 of electron: theory and experiment agree to 12 significant figures!
+
+BEYOND STANDARD MODEL:
+Problems: no dark matter candidate, no gravity, hierarchy problem, matter-antimatter asymmetry.
+Supersymmetry (SUSY): every particle has superpartner differing by spin 1/2. Not yet confirmed at LHC.
+String theory: particles are vibrating 1D strings. Requires 10-11 dimensions.
+Grand Unified Theories (GUT): strong + electroweak unify at ~10¹⁵ GeV.
+Proton decay: predicted by GUTs. Not yet observed (τ_p > 10³⁴ years).
+Dark matter candidates: WIMPs, axions, sterile neutrinos.
+Dark energy: cosmological constant, quintessence.
+
+---
+
+PART 3: PLASMA PHYSICS
+
+PLASMA: fourth state of matter. Ionized gas with roughly equal numbers of positive ions and electrons.
+Quasi-neutral: n_e ≈ n_i on macroscopic scales.
+Examples: Sun interior (10⁷ K), solar corona (10⁶ K), lightning, neon signs, fusion reactors, Earth's ionosphere, flames.
+>99% of visible matter in universe is plasma!
+
+PLASMA PARAMETERS:
+Debye length: λ_D = √(ε₀kT/ne²). Distance over which charge is shielded.
+Plasma frequency: ω_p = √(ne²/ε₀m_e). Frequency of collective electron oscillations.
+EM waves with ω < ω_p cannot propagate in plasma (reflected). Explains why AM radio reflects off ionosphere.
+Plasma parameter: Λ = n λ_D³ >> 1 (many particles per Debye sphere → weakly coupled plasma).
+
+WAVES IN PLASMA:
+Electromagnetic: transverse, ω² = ω_p² + c²k² (modified dispersion relation).
+Langmuir waves: longitudinal electron oscillations at ω ≈ ω_p.
+Ion acoustic waves: low frequency, like sound but electrostatic.
+Alfvén waves: propagate along magnetic field. ω = k v_A (v_A = B/√(μ₀ρ) = Alfvén speed).
+Magnetosonic waves: compressional wave in magnetized plasma.
+
+MAGNETOHYDRODYNAMICS (MHD):
+Plasma as conducting fluid. Combines fluid mechanics + electromagnetism.
+Ideal MHD: magnetic field frozen into fluid (Alfvén frozen-in theorem).
+Magnetic pressure: B²/(2μ₀). Balances gas pressure in equilibrium.
+β = 2μ₀nkT/B² (ratio of plasma pressure to magnetic pressure).
+MHD instabilities: kink instability, sausage instability, Rayleigh-Taylor.
+
+FUSION PLASMA:
+Temperature needed: T ~ 10⁸ K (10 keV). No material can contain this!
+Magnetic confinement: toroidal field + poloidal field = helical field → keeps plasma from hitting walls.
+Tokamak: toroidal chamber + transformer to drive toroidal current → creates poloidal field.
+Key parameters: safety factor q, plasma current Ip, toroidal field BT.
+Energy confinement time τ_E: longer → better plasma performance.
+H-mode: high confinement mode. Discovered at ASDEX (Germany) 1982. Used in all modern tokamaks.
+Disruption: sudden loss of plasma confinement → must be avoided/mitigated.
+
+PLASMA INSTABILITIES:
+Drift instabilities: due to density/temperature gradients.
+Kelvin-Helmholtz: shear flow instability.
+Magnetorotational instability (MRI): important in accretion disks around black holes.
+Two-stream instability: counter-streaming beams → plasma waves → beam heating.
+
+PLASMA APPLICATIONS:
+Fusion energy: ITER, JET, NIF.
+Plasma processing: semiconductor manufacturing (etching, deposition). Critical for making chips.
+Plasma TVs: rare now but used plasma discharge to create light.
+Fluorescent lights: plasma discharge excites Hg atoms → UV → phosphor → visible light.
+Lightning: natural plasma discharge.
+Plasma arc cutting and welding: industrial metalworking.
+Ion thrusters: spacecraft propulsion (Hall effect thruster, ion engine).
+Plasma medicine: sterilization, wound healing, cancer treatment.

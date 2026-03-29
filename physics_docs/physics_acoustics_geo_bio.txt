@@ -1,0 +1,243 @@
+ACOUSTICS, GEOPHYSICS, ATMOSPHERIC AND BIOPHYSICS
+===================================================
+
+PART 1: ACOUSTICS
+
+SOUND WAVES:
+Longitudinal pressure waves in a medium.
+Speed: v = √(B/ρ) where B = bulk modulus, ρ = density.
+In ideal gas: v = √(γP/ρ) = √(γRT/M).
+At 0°C in air: 331 m/s. At 20°C: 343 m/s. v ∝ √T.
+In water: ~1500 m/s. In steel: ~5000 m/s.
+Speed increases with temperature, decreases with density increase, increases with elasticity increase.
+
+SOUND CHARACTERISTICS:
+Frequency (pitch): higher f = higher pitch. Human range: 20 Hz - 20 kHz.
+Infrasound: < 20 Hz (earthquakes, elephants, whales). Ultrasound: > 20 kHz.
+Amplitude (loudness): related to pressure variation.
+Timbre (quality): determined by mixture of harmonics.
+
+INTENSITY AND DECIBELS:
+Intensity: I = P/A = power per unit area (W/m²).
+I = (1/2)ρvA²ω² (A = displacement amplitude, ω = angular frequency).
+I = (ΔP_max)²/(2ρv) (ΔP_max = pressure amplitude).
+I ∝ 1/r² (inverse square law for point source).
+Reference intensity: I₀ = 10⁻¹² W/m² (threshold of hearing at 1 kHz).
+Sound level: β = 10 log₁₀(I/I₀) dB.
+Threshold of hearing: 0 dB. Whisper: 30 dB. Normal conversation: 60 dB. Pain threshold: 120-130 dB.
+Each 10 dB = 10× intensity. Each 6 dB ≈ doubling of amplitude.
+
+DOPPLER EFFECT (DETAILED):
+f' = f(v ± v_O)/(v ∓ v_S)
+v = speed of sound, v_O = observer speed, v_S = source speed.
+Upper signs: approaching. Lower signs: receding.
+Applications: police radar, medical ultrasound, weather radar, astronomy (radial velocity of stars).
+Doppler broadening: thermal motion of atoms → broadened spectral lines.
+
+MACH NUMBER AND SONIC BOOM:
+Mach number: Ma = v_S/v (v_S = source speed, v = sound speed).
+Ma < 1: subsonic. Ma = 1: sonic. Ma > 1: supersonic.
+Mach cone: shock wave formed when Ma > 1.
+Half-angle of cone: sin θ = v/v_S = 1/Ma.
+Sonic boom: pressure shock wave → loud noise.
+
+STANDING WAVES AND RESONANCE:
+Strings (both ends fixed):
+λ_n = 2L/n, f_n = nv/(2L) = nf₁.
+All harmonics present. f₁ = v/(2L) = (1/2L)√(T/μ).
+
+Open pipe (both ends open):
+λ_n = 2L/n, f_n = nv/(2L). All harmonics.
+
+Closed pipe (one end closed):
+λ_n = 4L/n (n = 1,3,5,...), f_n = nv/(4L). Only odd harmonics.
+f₁ = v/(4L). Lower fundamental than open pipe of same length.
+
+Resonance: driving frequency = natural frequency → maximum amplitude.
+Quality factor Q: Q = f_res/Δf = resonant frequency/bandwidth. High Q = sharp resonance.
+
+BEATS:
+Two waves with slightly different frequencies f₁ and f₂.
+Beat frequency: f_beat = |f₁ - f₂|.
+Amplitude oscillates at f_beat. Perceived as periodic loudness variation.
+Used in tuning instruments.
+
+REVERBERATION:
+Multiple reflections of sound in enclosed space.
+Reverberation time T₆₀: time for sound to decay by 60 dB after source stops.
+Sabine's formula: T₆₀ = 0.161V/(Σa_i S_i) (V = volume, a_i = absorption coefficient, S_i = area).
+Concert halls: T₆₀ ~ 1.5-2 s (music). Lecture halls: 0.5-1 s (speech clarity).
+Anechoic chamber: T₆₀ ≈ 0 (all surfaces absorb sound).
+
+ULTRASOUND:
+Frequency > 20 kHz.
+Medical ultrasound: 1-20 MHz. Wavelength ~ 0.1-1.5 mm in tissue.
+Piezoelectric transducer: converts electrical to mechanical vibration (and vice versa).
+A-scan: amplitude vs depth. B-scan: 2D image. Doppler: blood flow velocity.
+No ionizing radiation → safe for fetal imaging.
+Industrial: non-destructive testing, cleaning, welding, sonar.
+
+SONAR:
+Sound Navigation and Ranging. Uses sound to detect objects underwater.
+Active sonar: emits pulse, detects echo. Passive: only listens.
+Range: d = v_sound_in_water × t/2 (t = round trip time).
+v_sound_in_seawater ≈ 1500 m/s (depends on temperature, salinity, pressure).
+Applications: submarine detection, depth sounding, whale communication research.
+
+---
+
+PART 2: GEOPHYSICS
+
+EARTH'S STRUCTURE:
+Crust: 0-30 km (continental), 0-10 km (oceanic). Low density, silica-rich.
+Mantle: 30-2900 km. Solid silicate rock, slowly convecting.
+Outer core: 2900-5100 km. Liquid iron-nickel. Convection generates magnetic field.
+Inner core: 5100-6370 km. Solid iron-nickel. T ≈ 5000°C, P ≈ 360 GPa.
+Boundaries: Mohorovičić (Moho) = crust-mantle. Gutenberg = mantle-core. Lehmann = outer-inner core.
+
+SEISMIC WAVES:
+Body waves: travel through Earth's interior.
+P waves (Primary/Compressional): longitudinal, fastest (~6-14 km/s), travel through solid and liquid.
+S waves (Secondary/Shear): transverse, slower (~3-7 km/s), travel through solid ONLY (not liquid).
+Surface waves: travel along Earth's surface, slower, cause most earthquake damage.
+Love waves: horizontal shear.
+Rayleigh waves: retrograde elliptical motion.
+
+SEISMOLOGY:
+Seismometer: detects ground motion. Modern seismometers detect 10⁻¹² m displacements.
+Richter scale: M_L = log₁₀(A) - log₁₀(A₀). Each unit = 10× amplitude = ~31.6× energy.
+Moment magnitude scale M_w: M_w = (2/3)(log₁₀ M₀ - 9.1). M₀ = seismic moment.
+Shadow zone: S-wave shadow (105°-140° from epicenter) → proved liquid outer core.
+P-wave velocity increase at 2900 km → refracted P waves, proved outer core.
+Travel time tomography: 3D map of Earth's interior from seismic wave travel times.
+
+PLATE TECTONICS:
+Theory developed 1960s. Explains earthquakes, volcanoes, mountain building.
+Lithosphere (crust + rigid upper mantle) divided into ~15 major plates.
+Plates move 1-10 cm/year on top of asthenosphere (partially molten mantle).
+Plate boundaries:
+Divergent: plates move apart. Mid-ocean ridges (sea floor spreading). New crust formed. Rift valleys.
+Convergent: plates collide. Subduction zone (oceanic plate dips under). Mountains, volcanoes, deep earthquakes.
+Transform: plates slide past each other. Strike-slip faults. Shallow earthquakes. San Andreas Fault.
+
+Evidence: matching rock types/fossils across oceans, paleomagnetism, sea floor spreading age pattern.
+
+EARTH'S MAGNETIC FIELD:
+Generated by convection in liquid outer core (dynamo theory).
+Dipole field tilted ~11° from rotation axis.
+Magnetic poles wander slowly. Field strength varies.
+Magnetic field reversals: ~every 200,000-300,000 years on average (irregular). Geomagnetic reversal.
+Currently weakening (~5% per century).
+Magnetosphere: Earth's field extends to ~10 Earth radii on day side, longer on night side.
+Van Allen belts: trapped energetic particles in Earth's magnetic field.
+Aurora: charged particles from solar wind enter atmosphere near poles → excite atoms → light.
+
+GRAVITY AND GEODESY:
+g varies: equator (9.78 m/s²) to poles (9.83 m/s²) due to rotation and shape.
+Geoid: equipotential surface of gravity (mean sea level extended over land).
+Gravimeter: measures small variations in g (sensitive to underground structures).
+Used in: oil/mineral exploration, monitoring volcanoes/aquifers, measuring ice loss.
+GRACE satellites: measure gravity variations → track ice sheet melting, groundwater changes.
+
+ATMOSPHERIC SCIENCE:
+Layers:
+Troposphere: 0-12 km. Most weather. T decreases with height (lapse rate: -6.5°C/km).
+Stratosphere: 12-50 km. T increases (ozone absorbs UV). Very stable, no mixing.
+Mesosphere: 50-85 km. T decreases. Coldest part of atmosphere.
+Thermosphere: 85-600+ km. T increases dramatically (solar radiation).
+Exosphere: >600 km. Grades into space.
+
+Atmospheric pressure: P = P₀ exp(-h/H), H = scale height ≈ 8.5 km.
+Barometric formula: derived from hydrostatic equilibrium dP/dz = -ρg.
+
+---
+
+PART 3: BIOPHYSICS
+
+BIOPHYSICS: application of physics methods to biological systems.
+
+CELL BIOPHYSICS:
+Cell membrane: lipid bilayer ~5-8 nm thick.
+Membrane potential: typically -70 mV (inside negative relative to outside).
+Resting potential maintained by ion pumps (Na/K-ATPase) and selective permeability.
+Ion channels: proteins that allow specific ions to pass.
+Nernst equation: E = (RT/zF) ln([ion]_out/[ion]_in).
+Goldman equation: considers multiple ions simultaneously.
+
+Action potential:
+Resting: -70 mV. Depolarization trigger → voltage-gated Na channels open → Na⁺ rushes in → membrane potential rises to +40 mV → Na channels close → K channels open → repolarization → hyperpolarization → back to rest.
+Speed: 0.1-120 m/s (unmyelinated to heavily myelinated axons).
+Saltatory conduction: myelinated axons → signal jumps from node to node (faster, less energy).
+
+Membrane biophysics:
+Fluid mosaic model: membrane is fluid 2D liquid with proteins floating in it.
+Diffusion coefficient of lipids in membrane: ~1 μm²/s.
+Osmosis: water moves through semipermeable membrane from low to high solute concentration.
+Osmotic pressure: π = iMRT.
+
+PROTEIN BIOPHYSICS:
+Protein folding: governed by thermodynamics. ΔG of folding typically -20 to -60 kJ/mol.
+Hydrophobic effect: dominant driving force. Entropy gain of water.
+Levinthal's paradox: random search through all conformations would take longer than age of universe → must fold through specific pathways.
+Folding funnel: energy landscape with funnel shape toward native state.
+Molecular dynamics simulation: compute forces on all atoms → simulate folding (microseconds to milliseconds with special hardware).
+
+Single molecule techniques:
+Optical tweezers: focused laser beam traps dielectric particle. Forces: 0.1-100 pN. Study motor proteins, DNA mechanics.
+Magnetic tweezers: magnetic field pulls magnetic bead. DNA topology, protein unfolding.
+AFM (Atomic Force Microscopy): image surfaces, measure forces (antigen-antibody, protein unfolding).
+FRET (Förster Resonance Energy Transfer): energy transfer between fluorophores → measure distances 1-10 nm in real time.
+
+MEDICAL IMAGING PHYSICS:
+
+X-ray imaging:
+X-rays produced by deceleration of electrons (bremsstrahlung) and characteristic radiation.
+Absorbed by tissue (differential absorption → contrast).
+Beer's law: I = I₀ e^(-μx) (μ = linear attenuation coefficient).
+Bone (high Z) absorbs more than soft tissue.
+CT (Computed Tomography): multiple X-ray projections → reconstruct 3D image.
+Filtered back-projection reconstruction algorithm.
+Dose: CT scan gives ~10 mSv (vs 2.5 mSv natural background/year).
+
+MRI (Magnetic Resonance Imaging):
+Based on NMR of hydrogen atoms in body.
+Strong magnetic field (1.5-3 T) → nuclear spins align.
+RF pulse at Larmor frequency: ω₀ = γB₀ (γ = gyromagnetic ratio = 2.675 × 10⁸ rad/s/T for ¹H).
+After pulse: spins precess and relax → induce signal in receiver coil.
+T1 (spin-lattice relaxation), T2 (spin-spin relaxation) → tissue contrast.
+No ionizing radiation → safe. Excellent soft tissue contrast.
+fMRI: detects BOLD signal (blood oxygenation) → brain activity imaging.
+
+PET (Positron Emission Tomography):
+Patient injected with positron-emitting radionuclide (¹⁸F-FDG for glucose metabolism).
+Positron annihilates with electron → two 511 keV γ photons emitted in opposite directions.
+Coincidence detection → reconstruct 3D distribution of tracer.
+Shows metabolic activity (not just anatomy). Cancer, Alzheimer's, cardiac imaging.
+
+Ultrasound imaging: see Acoustics section.
+
+RADIATION BIOPHYSICS:
+Types of ionizing radiation: α, β, γ, X-ray, neutrons.
+Linear Energy Transfer (LET): energy deposited per unit path length.
+α particles: high LET (most damaging per unit dose, but short range).
+γ/X-rays: low LET, penetrating.
+Relative Biological Effectiveness (RBE): damage relative to X-rays.
+Gray (Gy): absorbed dose = 1 J/kg.
+Sievert (Sv): equivalent dose = dose × radiation weighting factor.
+Background radiation: ~2.5 mSv/year (from cosmic rays, radon, food, ground).
+DNA double-strand breaks: most damaging. Can cause mutations, cancer.
+Radiation therapy: kills cancer cells (rapidly dividing cells more sensitive to radiation).
+
+BIOMECHANICS:
+Forces in the body: muscles, joints, bones.
+Bone: composite material (hydroxyapatite crystals + collagen fibers). Tensile strength ~150 MPa.
+Cartilage: viscoelastic. Young's modulus ~1 MPa.
+Muscles: generate force by actin-myosin interaction. Cross-bridge cycling powered by ATP.
+Hill's muscle model: force-velocity relationship: (F + a)(v + b) = (F₀ + a)b.
+
+Fluid mechanics in biology:
+Blood flow: non-Newtonian fluid, pulsatile, complex geometry.
+Reynolds number for arteries: Re = ρvD/η ~1000 (laminar). Transition in aorta during exercise.
+Poiseuille's law: Q = πr⁴ΔP/(8ηL). Flow ∝ r⁴ → small changes in radius greatly affect flow.
+Arteriosclerosis: narrowing of arteries → reduced flow, increased pressure.
+Murray's law: optimal branching: r₀³ = r₁³ + r₂³ (minimizes pumping energy).

@@ -1,0 +1,225 @@
+PHOTOCHEMISTRY, SUPRAMOLECULAR AND ASTROCHEMISTRY
+===================================================
+
+PART 1: PHOTOCHEMISTRY
+
+LIGHT ABSORPTION:
+Beer-Lambert law: A = εcl = log(I₀/I).
+Molar absorptivity ε: depends on wavelength and molecule.
+Chromophore: part of molecule responsible for absorption.
+Forbidden transitions: low ε. Allowed (electric dipole): high ε.
+Franck-Condon principle: electronic transitions occur faster than nuclear motion → vertical transitions on energy diagram.
+
+EXCITED STATES:
+Singlet state (S): all electrons paired. S₀ (ground), S₁, S₂ (excited singlets).
+Triplet state (T): two unpaired electrons with parallel spins. T₁, T₂. Usually lower energy than corresponding singlet.
+Intersystem crossing (ISC): singlet → triplet. Spin-forbidden but allowed by spin-orbit coupling.
+Heavy atom effect: ISC enhanced by heavy atoms (I, Br, Pb). Phosphorescence enhanced.
+
+JABLONSKI DIAGRAM:
+S₀ → S₁ (or S₂): absorption. Fs timescale.
+S₂ → S₁: internal conversion (IC). Very fast (10⁻¹² s).
+S₁ → S₀ + hν: fluorescence. Stokes shift (emit at longer λ than absorbed). ns timescale.
+S₁ → T₁: intersystem crossing (ISC). μs-ms.
+T₁ → S₀ + hν: phosphorescence. Long lifetime (ms-s). Longer wavelength than fluorescence.
+S₁ → S₀ (heat): internal conversion. Compete with fluorescence.
+Quantum yield Φ: fraction of excited states that undergo a particular pathway.
+Φ_fluor + Φ_IC + Φ_ISC + Φ_rxn = 1.
+
+PHOTOCHEMICAL REACTIONS:
+Grotthus-Draper law: only light ABSORBED can cause photochemical change.
+Stark-Einstein law: one quantum of light absorbed per molecule (one photon = one molecule excited).
+Quantum yield Φ: molecules reacted / photons absorbed. Can be > 1 if chain reaction.
+Actinometry: measure number of photons absorbed (calibration using ferrioxalate).
+
+PRIMARY PHOTOCHEMICAL PROCESSES:
+Photodissociation: Cl₂ + hν → 2Cl•. Initiates free radical chain reactions.
+Photoionization: molecule + hν → molecule⁺ + e⁻.
+Photoisomerization: cis ↔ trans isomerism (e.g., retinal in vision).
+Energy transfer: excited donor transfers energy to acceptor (Dexter mechanism: exchange; Förster/FRET: dipole-dipole).
+Electron transfer: photoinduced oxidation-reduction.
+
+EXAMPLES OF PHOTOCHEMICAL REACTIONS:
+Vision: 11-cis-retinal + hν → all-trans-retinal. Triggers nerve impulse. Very fast (200 fs) and efficient.
+Photosynthesis: 6CO₂ + 6H₂O + hν → C₆H₁₂O₆ + 6O₂. Uses light energy to fix CO₂. Quantum efficiency ~95%!
+Vitamin D synthesis: 7-dehydrocholesterol + UV → previtamin D₃ → vitamin D₃.
+Photography: AgBr + hν → Ag + Br (latent image). Development amplifies signal.
+Ozone photolysis: O₃ + hν (< 310 nm) → O(¹D) + O₂. O(¹D) + H₂O → 2OH• (powerful oxidant in atmosphere).
+Norrish reactions: Type I (α-cleavage of carbonyl), Type II (γ-hydrogen abstraction).
+
+PHOTOCATALYSIS:
+Semiconductor photocatalysis: TiO₂ + hν (< 390 nm) → e⁻(CB) + h⁺(VB).
+h⁺ + H₂O → OH• + H⁺. e⁻ + O₂ → O₂•⁻.
+OH• oxidizes organic pollutants → CO₂ + H₂O (photodegradation).
+Applications: self-cleaning glass, air purification, water treatment.
+Hydrogen production: 2H₂O + hν → 2H₂ + O₂ (artificial photosynthesis). Intense research.
+Dye-sensitized solar cells (DSSC/Grätzel cell): dye absorbs light → injects electron into TiO₂.
+
+FLUORESCENCE APPLICATIONS:
+FRET: Förster Resonance Energy Transfer. Donor-acceptor distance measurement. E = 1/(1+(r/R₀)⁶). Used in biophysics.
+FLIM: Fluorescence Lifetime Imaging Microscopy.
+FRAP: Fluorescence Recovery After Photobleaching. Membrane fluidity.
+STORM/PALM: super-resolution microscopy (Nobel 2014). Beyond diffraction limit using single molecule switching.
+
+---
+
+PART 2: SUPRAMOLECULAR CHEMISTRY
+
+DEFINITION:
+Chemistry beyond the molecule. Study of assemblies held together by non-covalent interactions.
+"Chemistry beyond the covalent bond" — Jean-Marie Lehn (Nobel 1987 with Cram and Pedersen).
+
+NON-COVALENT INTERACTIONS:
+Hydrogen bonds: 10-40 kJ/mol. Directional. DNA, proteins, many host-guest systems.
+Ion-dipole: metal ion coordination. Key in crown ether complexes.
+Dipole-dipole: polar molecules. 1-5 kJ/mol.
+π-π stacking: aromatic rings. 2-5 kJ/mol. DNA base stacking, protein structure.
+Cation-π: cation interacts with π system. 5-80 kJ/mol. K⁺ in ion channels.
+Hydrophobic effect: entropic. Drives self-assembly in water.
+van der Waals: ubiquitous, weak individually but important collectively.
+
+HOST-GUEST CHEMISTRY:
+Host: larger molecule with cavity. Guest: smaller molecule that fits in cavity.
+Association constant Ka = [H·G]/([H][G]). Selectivity: host binds specific guest.
+
+Crown ethers (Pedersen, 1967):
+Cyclic polyethers with oxygen donors.
+18-crown-6 (18 atoms in ring, 6 oxygens): selective for K⁺ (diameter match).
+15-crown-5: selective for Na⁺.
+Benzo-crown ethers: useful for transport, switches.
+
+Cryptands (Lehn):
+3D bicyclic polyethers. Even more selective than crown ethers.
+[2.2.2]-cryptand: very strong binding of K⁺ (K_stability = 10⁵·⁵).
+"Cryptates" = cryptand-metal complexes.
+
+Calixarenes:
+Bowl-shaped macrocycles made from phenol + formaldehyde.
+calix[4]arene, calix[6]arene, calix[8]arene.
+Conformations: cone, partial cone, 1,2-alternate, 1,3-alternate.
+Bind various guests including neutral molecules, cations, anions.
+
+Cucurbiturils:
+Pumpkin-shaped molecules made from glycoluril + formaldehyde.
+CB[7] (cucurbit[7]uril): extremely tight binding (Ka up to 10¹⁷ M⁻¹!).
+Applications: drug delivery, sensing, catalysis.
+
+Cyclodextrins:
+Cyclic oligosaccharides. α (6 glucose), β (7), γ (8).
+Hydrophobic interior, hydrophilic exterior. Bind hydrophobic guests.
+Used in: pharmaceuticals (encapsulate drugs → improve solubility, stability), food flavoring, cosmetics.
+β-cyclodextrin + ibuprofen: better drug delivery.
+
+Pillararenes: relatively new. Pillar-shaped macrocycles with many functional groups.
+
+SELF-ASSEMBLY:
+Molecules spontaneously organize into ordered structures.
+Thermodynamic control: reach lowest free energy state.
+Molecular recognition: shape, charge, H-bonding complementarity.
+
+Liquid crystals:
+Intermediate between solid and liquid. Orientational order, positional disorder (in some).
+Thermotropic: temperature-driven transitions.
+Lyotropic: concentration-driven (surfactants in water, biological membranes).
+Nematic: orientational order only. Used in LCD displays.
+Smectic: layers in addition to orientation.
+Cholesteric: helical arrangement. Structural color (butterfly wings, beetle shells, plant cellulose).
+
+Micelles and vesicles:
+Surfactant: amphiphile (hydrophilic head + hydrophobic tail).
+CMC (Critical Micelle Concentration): below CMC → monomers. Above → micelles.
+Spherical micelle: hydrophobic tails inside, heads outside.
+Bilayer vesicle (liposome): encloses aqueous core. Drug delivery.
+Membrane in biology = bilayer of phospholipids + embedded proteins.
+
+Rotaxanes and catenanes (mechanical bonds):
+Rotaxane: dumbbell-shaped molecule threaded through macrocycle. Bulky stoppers prevent unthreading.
+Catenane: two interlocked rings.
+Molecular motors and switches: controllable mechanical motion using light, pH, redox.
+Fraser Stoddart (Nobel 2016): designed and built molecular machines from interlocked molecules.
+Molecular elevator, molecular muscle, molecular car.
+
+SUPRAMOLECULAR MATERIALS:
+Metal-organic frameworks (MOFs): 3D networks of metal nodes + organic linkers.
+Extremely high surface area (>7000 m²/g, world record).
+MOF-5, IRMOF series, ZIF-8 (zeolitic imidazolate framework), MIL-101.
+Applications: gas storage and separation (H₂, CO₂, CH₄), catalysis, drug delivery, sensing.
+
+Covalent organic frameworks (COFs): pure organic porous crystals.
+Built from light elements (C, H, N, O, B). 2D or 3D.
+
+Hydrogels: cross-linked hydrophilic polymer networks swollen with water. Soft, biocompatible.
+Applications: contact lenses, wound dressings, drug delivery, tissue engineering.
+Stimuli-responsive: change properties with pH, temperature, light.
+
+---
+
+PART 3: ASTROCHEMISTRY
+
+CHEMISTRY IN SPACE:
+Conditions: very low density (10⁻²-10⁶ particles/cm³ vs 10¹⁹ particles/cm³ at STP).
+Temperatures: 10-100 K (cold clouds) to millions K (stellar surfaces).
+Radiation: intense UV, cosmic rays (penetrate everywhere).
+Almost no thermodynamic equilibrium → non-equilibrium chemistry.
+
+INTERSTELLAR MEDIUM (ISM):
+Atomic hydrogen (HI): detected by 21-cm radio emission (hyperfine transition).
+Molecular clouds: denser regions. Temperature 10-50 K. Observed by radio astronomy.
+Key molecules detected in space (>250 known):
+Simple: H₂, CO (most abundant after H₂), N₂, OH, HCN, NH₃, H₂O.
+Complex organic molecules (COMs): CH₃OH (methanol), HCOOH (formic acid), CH₃CHO (acetaldehyde), CH₃NH₂, glycine (amino acid — disputed detection).
+Polycyclic aromatic hydrocarbons (PAHs): benzene rings. ~20% of carbon in ISM!
+Fullerene C₆₀: detected in space. Circumstellar shells, planetary nebulae.
+
+FORMATION OF MOLECULES IN SPACE:
+Gas-phase reactions:
+Ion-molecule reactions: very fast, no activation barrier. e.g., H₂⁺ + H₂ → H₃⁺ + H. H₃⁺ is key ion in ISM chemistry.
+Radiative association: A + B → AB + hν. Slow, but important for H₂.
+Dissociative recombination: AB⁺ + e⁻ → A + B. Destroys ions.
+
+Grain surface chemistry:
+Dust grains (silicates, carbonaceous): sites for chemistry.
+H atoms land on grain, diffuse, combine: H + H → H₂ (main route).
+Hydrogenation on grains: CO + H → HCO → H₂CO → CH₃OH.
+Ice mantles: H₂O, CO, CO₂, CH₄, NH₃ ices on cold grains.
+UV photolysis and cosmic ray processing of ices → complex molecules.
+
+STELLAR NUCLEOSYNTHESIS:
+Big Bang: H, He, Li made in first 3 minutes.
+Stellar: pp chain and CNO cycle → He-4. Triple alpha → C-12. C+He → O-16.
+Heavier elements up to Fe by successive fusion in massive stars.
+Core collapse supernova: Fe core collapses → neutron star + shock wave.
+r-process: rapid neutron capture in supernova or neutron star merger → heavy elements (Au, Pt, U).
+s-process: slow neutron capture in AGB stars → elements up to Bi.
+Cosmic abundances: H (71%), He (28%), O (0.7%), C (0.3%), Ne, Fe, N, Si, Mg, S.
+
+PLANETARY ATMOSPHERES:
+Venus: 96.5% CO₂, 3.5% N₂. T = 460°C (runaway greenhouse). P = 90 atm.
+Mars: 95% CO₂, 2.7% N₂, 1.6% Ar. T = -60°C average. P = 0.006 atm.
+Earth: 78% N₂, 21% O₂, 1% Ar, 0.04% CO₂. Unique O₂ from photosynthesis.
+Jupiter: 90% H₂, 10% He. Great Red Spot = storm >300 years.
+Titan (Saturn's moon): 95% N₂, 5% CH₄. Has methane lakes. Haze of organics. Prebiotic chemistry?
+
+ORIGIN OF LIFE CHEMISTRY:
+Miller-Urey experiment (1953): simulated early Earth (CH₄, NH₃, H₂, H₂O) + lightning → amino acids.
+Hydrothermal vents: alkaline vents (Lost City). Mineral surfaces catalyze reactions. H₂ energy source.
+RNA world hypothesis: RNA served as both genetic material and catalyst (ribozyme) before DNA and proteins.
+Ribose synthesis: formose reaction. Complex, requires borate minerals for stabilization.
+Meteorites: carbonaceous chondrites contain amino acids (Murchison meteorite, 1969) → 70+ amino acids, some not in biology.
+Panspermia: life (or precursors) delivered to Earth from space? (Possible, not proven.)
+
+ATMOSPHERIC CHEMISTRY:
+Tropospheric chemistry:
+OH radical: most important oxidant. Formed from O₃ + hν → O(¹D) + H₂O → 2OH.
+OH oxidizes hydrocarbons, CO, SO₂, NO. Tropospheric lifetime of most gases limited by OH.
+NOₓ chemistry: NO + HO₂ → NO₂ + OH. NO₂ + hν → NO + O → O₃ (photochemical smog).
+Methane oxidation: CH₄ + OH → CH₃ + H₂O → (via O₂, NO) → eventually CO₂ + H₂O.
+
+Stratospheric chemistry:
+O₂ + hν (< 242 nm) → 2O. O + O₂ + M → O₃ (formation).
+O₃ + hν → O + O₂ (O₃ photolysis, key UV shield). O + O₃ → 2O₂ (natural destruction).
+Ozone depletion catalytic cycles:
+ClO cycle: Cl + O₃ → ClO + O₂. ClO + O → Cl + O₂. Net: O₃ + O → 2O₂.
+HOₓ cycle: OH + O₃ → HO₂ + O₂. HO₂ + O → OH + O₂.
+NOₓ cycle: NO + O₃ → NO₂ + O₂. NO₂ + O → NO + O₂.
+CFCs most damaging because: long tropospheric lifetime → reaches stratosphere → UV photolysis → Cl atoms.

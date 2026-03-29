@@ -1,0 +1,219 @@
+ASTROPHYSICS, COSMOLOGY AND SPACE SCIENCE - COMPREHENSIVE
+===========================================================
+
+PART 1: STARS AND STELLAR PHYSICS
+
+STELLAR CLASSIFICATION:
+Spectral types (OBAFGKM + LTY for cool stars, brown dwarfs):
+O: >30,000 K. Blue. Ionized He. Rigel-like. Most luminous, rarest.
+B: 10,000-30,000 K. Blue-white. Neutral He. Spica, Regulus.
+A: 7,500-10,000 K. White. Strong H lines. Sirius, Vega.
+F: 6,000-7,500 K. Yellow-white. Ca II beginning. Procyon, Canopus.
+G: 5,200-6,000 K. Yellow. Strong Ca II. Sun, Capella.
+K: 3,700-5,200 K. Orange. Metal lines. Arcturus, Aldebaran.
+M: 2,400-3,700 K. Red. TiO bands. Betelgeuse, Proxima Cen.
+Mnemonic: "Oh Be A Fine Girl Kiss Me."
+
+Luminosity classes (Yerkes): Ia (bright supergiant), Ib (supergiant), II (bright giant), III (giant), IV (subgiant), V (main sequence/dwarf), VI/sd (subdwarf), VII/D (white dwarf).
+Sun: G2V. Full spec type tells temp (G2) + luminosity class (V = main sequence).
+
+HERTZSPRUNG-RUSSELL DIAGRAM:
+Plot of luminosity (or absolute magnitude) vs temperature (or spectral type).
+Main sequence: 90% of stars. Fusing H in core. ZAMS (zero-age main sequence).
+Giant branch: red giants. H shell burning. Expanded, cool.
+Horizontal branch: He core burning.
+Asymptotic giant branch (AGB): double shell burning (H+He). Very luminous, variable.
+White dwarf: lower left. Hot but small. Supported by electron degeneracy pressure.
+
+HR diagram tells us: age of star clusters (turnoff point), stellar evolution stage, star properties.
+
+STELLAR STRUCTURE:
+Equations of stellar structure:
+1. Hydrostatic equilibrium: dP/dr = -Gm(r)ρ/r².
+2. Mass continuity: dm/dr = 4πr²ρ.
+3. Energy transport: dT/dr = -3κρL/(16πacr²T³) (radiative) or adiabatic gradient (convective).
+4. Energy generation: dL/dr = 4πr²ρε (ε = energy generation rate).
+
+Virial theorem: thermal KE = -(1/2) × gravitational PE. Contraction → heat up.
+
+Sun's properties:
+Mass: 1.99 × 10³⁰ kg. Radius: 6.96 × 10⁸ m.
+Luminosity: 3.83 × 10²⁶ W. Surface T: 5778 K. Core T: ~1.5 × 10⁷ K. Core density: ~150 g/cm³.
+Age: 4.6 Gyr. Remaining main sequence lifetime: ~5 Gyr.
+Solar constant: 1361 W/m² at 1 AU.
+
+STELLAR EVOLUTION:
+
+Low mass stars (< 8 M☉):
+1. Molecular cloud → collapse (Jeans criterion: M > M_J = ~(kT/Gm_H)^(3/2) × ρ^(-1/2)).
+2. Protostar: accretion phase. Luminosity from gravitational contraction.
+3. T Tauri star: pre-main sequence. Contracting, variable.
+4. Main sequence: H → He core fusion (pp chain for M < 1.5M☉, CNO cycle for heavier).
+5. Subgiant: H exhausted in core. Core contracts, H shell burning begins.
+6. Red giant branch: expanding envelope. Core heats up. He flash (degenerate He core).
+7. Horizontal branch: He core burning (triple-alpha → C, C+He → O).
+8. AGB: He shell + H shell burning. Thermal pulses. Heavy element synthesis (s-process). Mass loss.
+9. Planetary nebula: expelled envelope illuminated by hot core.
+10. White dwarf: inert C-O core. ~Earth size. Supported by electron degeneracy.
+    Cools over billions of years → cold black dwarf (none yet, universe too young).
+    Chandrasekhar limit: 1.4 M☉. Above this → collapses.
+
+Massive stars (> 8 M☉):
+1-4: Similar but faster (lifetimes ~ millions not billions of years).
+5. Supergiant: many nuclear burning shells (H, He, C, Ne, O, Si from outside in).
+6. Iron core: Fe cannot fuse exothermically. Inert core grows to Chandrasekhar limit.
+7. Core collapse: core collapses in ~0.25 s. Neutron star or black hole forms.
+8. Core bounce → shock wave → Type II supernova. Luminosity 10⁴³ J over ~months.
+9. Heavy elements (r-process: rapid neutron capture) synthesized and ejected.
+
+STELLAR REMNANTS:
+White dwarf:
+- C-O composition (typically). Some O-Ne-Mg.
+- Radius ~ Earth. Mass ~ 0.6 M☉ typically.
+- Electron degeneracy pressure supports against gravity.
+- Chandrasekhar limit: M_Ch = 5.83/μₑ² M☉ ≈ 1.4 M☉.
+- Cooling track: DA (H atmosphere), DB (He atmosphere), other types.
+- Type Ia supernova: WD in binary accretes → reaches M_Ch → runaway thermonuclear explosion → no remnant. Used as standard candles.
+
+Neutron star:
+- Formed in core-collapse SN of 8-20 M☉ stars.
+- Mass: 1.4-3 M☉. Radius: ~10 km. Density: ~10¹⁷ kg/m³.
+- Neutron degeneracy pressure supports. Tolman-Oppenheimer-Volkoff limit: ~2-3 M☉.
+- Composition: mostly neutrons, proton fraction ~5-10%. Quark matter in core?
+- Pulsars: rotating neutron stars emitting beams of radiation. P = 1.4 ms to 8 s.
+- Millisecond pulsars: spun up by accretion. Very stable clocks.
+- Magnetars: very strong B field (~10¹⁵ G). Soft gamma repeaters (SGRs).
+- Neutron star mergers (GW170817, 2017): r-process nucleosynthesis confirmed! Gold, platinum from mergers!
+
+Black holes:
+- Formed when > 3 M☉ core can't be supported.
+- Event horizon: r_s = 2GM/c².
+- Stellar BH: 3-100 M☉.
+- Intermediate mass BH: 100-10⁵ M☉. Evidence growing.
+- Supermassive BH: 10⁶-10¹⁰ M☉. In centers of most galaxies.
+- Sgr A*: Milky Way center, ~4 × 10⁶ M☉. Imaged by EHT (2022).
+- M87*: 6.5 × 10⁹ M☉. First BH image (EHT 2019).
+
+---
+
+PART 2: GALAXIES AND LARGE-SCALE STRUCTURE
+
+MILKY WAY:
+Barred spiral galaxy (SBbc type). Diameter ~100,000 light-years. Thickness ~1000 ly.
+Stellar mass: ~5 × 10¹⁰ M☉. Total mass (with DM halo): ~10¹² M☉.
+~200-400 billion stars. ~100 billion planets.
+Sun's location: ~26,000 ly from center, ~20 ly above midplane.
+Galactic rotation: Sun orbits at 220 km/s, period ~225 million years (galactic year).
+Flat rotation curve: evidence for dark matter halo.
+Components: disk (thin + thick), bulge, halo (globular clusters, metal-poor stars), dark matter halo.
+
+GALAXY CLASSIFICATION (Hubble):
+Elliptical (E0-E7): elliptical, no dust/gas, old stars.
+Lenticular (S0): disk + bulge, little gas, between elliptical and spiral.
+Spiral (Sa-Sd): disk with spiral arms, gas, young stars, HII regions.
+Barred spiral (SBa-SBd): bar through center, spiral arms from bar ends.
+Irregular: no regular form. Magellanic Clouds.
+
+Galaxy interactions:
+Tidal disruption. Mergers → form ellipticals.
+Starburst galaxies: rapid star formation triggered by interaction.
+Active galactic nuclei (AGN): powered by accreting SMBH.
+Seyfert galaxies, quasars (quasi-stellar objects), blazars, radio galaxies: all AGN types at different viewing angles (unified model).
+Quasar: most luminous persistent objects. L > 10¹² L☉. Visible to z > 7.
+
+DARK MATTER:
+Evidence:
+1. Galaxy rotation curves: v(r) flat beyond optical disk → need unseen mass.
+2. Galaxy clusters: virial theorem applied to cluster galaxies → need 10× more mass.
+3. Gravitational lensing: light bent more than visible mass explains.
+4. Bullet cluster: X-ray gas (normal matter) separated from lensing mass (DM) after cluster collision.
+5. CMB power spectrum: requires DM for structure formation.
+6. Large-scale structure: simulations with DM match observed filaments, voids.
+
+Candidates:
+WIMPs: weakly interacting massive particles. Predicted by SUSY. m ~ 10-1000 GeV. Direct detection experiments (LUX, XENON1T, PandaX): not yet detected!
+Axions: very light particles proposed to solve strong CP problem. Axion dark matter experiments (ADMX).
+Sterile neutrinos: right-handed neutrinos.
+Primordial black holes: formed before stellar evolution. Constrained but not excluded.
+
+LARGE-SCALE STRUCTURE:
+Cosmic web: filaments, walls, clusters, voids. Largest structures in universe.
+Galaxy clusters: 10¹³-10¹⁵ M☉. Thousands of galaxies. Dominated by DM and hot intracluster gas.
+Galaxy superclusters: Virgo (containing Milky Way), Laniakea (500 Mly diameter!).
+Voids: underdense regions between filaments. ~250 Mly diameter.
+Baryon Acoustic Oscillations (BAO): sound waves in early universe frozen at recombination → standard ruler (~150 Mpc comoving scale).
+Used to measure dark energy equation of state.
+
+---
+
+PART 3: COSMOLOGY
+
+BIG BANG AND EARLY UNIVERSE:
+t = 0: singularity. All matter, energy, spacetime in infinitely hot, dense state.
+t = 10⁻⁴³ s (Planck time): quantum gravity era. Physics unknown.
+t = 10⁻³⁵ s: inflation begins. Exponential expansion by ~e^60.
+t = 10⁻³² s: inflation ends. Universe reheats. Particles created.
+t = 10⁻¹² s: electroweak phase transition. EM and weak forces separate.
+t = 10⁻⁶ s: quark-hadron transition. Quarks confine into protons, neutrons.
+t = 1 s: neutrino decoupling. p/n ratio frozen at ~7:1.
+t = 3 min: Big Bang nucleosynthesis. ⁴He, D, ³He, ⁷Li formed. 24.8% He by mass.
+t = 380,000 years: recombination. Electrons + protons → hydrogen atoms. Universe transparent. CMB emitted!
+t = 200 Myr: first stars (Population III stars). Very massive, metal-free.
+t = 400-500 Myr: reionization. First stars/galaxies reionize the IGM.
+t = 1 Gyr: galaxy formation well underway.
+t = 9.2 Gyr: Solar System forms.
+t = 13.8 Gyr: today.
+
+CMB (COSMIC MICROWAVE BACKGROUND):
+Perfect blackbody at T = 2.72548 K. Discovered by Penzias & Wilson (1965, Nobel 1978).
+Temperature anisotropies: δT/T ~ 10⁻⁵. Seeds of structure.
+Measured by COBE (Nobel 2006), WMAP, Planck (2009-2013).
+Angular power spectrum: peaks at l ~ 200 (θ ~ 1°) related to sound horizon.
+Peak positions: constrain geometry (flat universe), baryon density, matter density.
+E-mode polarization: confirmed. B-mode: from gravitational waves (primordial). Not yet detected.
+
+COSMOLOGICAL PARAMETERS (Planck 2018):
+H₀ = 67.4 km/s/Mpc (Hubble constant). Tension with local measurements (73 km/s/Mpc)!
+Ω_b = 0.049 (baryons). Ω_c = 0.265 (cold dark matter). Ω_Λ = 0.685 (dark energy). Total Ω = 1.0 (flat!).
+t₀ = 13.787 ± 0.020 Gyr (age of universe).
+σ₈ = 0.811 (amplitude of matter power spectrum on 8 h⁻¹ Mpc scale).
+n_s = 0.965 (scalar spectral index, < 1 = red tilt, predicted by inflation).
+
+DARK ENERGY:
+Discovered 1998: Type Ia supernovae at high redshift dimmer than expected → universe accelerating!
+Nobel Prize 2011: Perlmutter, Schmidt, Riess.
+Cosmological constant Λ: vacuum energy density. w = P/ρ = -1.
+Equation of state: a(t) ∝ e^(H₀√Λ/3 × t) (de Sitter expansion).
+Hubble tension: H₀ from CMB (67.4) vs local measurements (73). Significant discrepancy. New physics?
+
+FATE OF UNIVERSE:
+Current: accelerating expansion (dark energy dominated).
+Far future:
+~10¹⁴ years: last stars burn out.
+~10³⁷ years: proton decay (if SUSY or GUT correct). Neutron stars and white dwarfs dissolve.
+~10⁶⁷ years: stellar-mass BH evaporation (Hawking radiation).
+~10¹⁰⁰ years: supermassive BH evaporation.
+→ Cold, dark, vast universe: "Big Freeze" or "Heat Death."
+Alternative: Big Rip (if w < -1): dark energy grows → tears apart structures. Not favored by data.
+
+EXOPLANETS:
+First confirmed detection: 1992 (pulsar timing). 1995: first around sun-like star (51 Pegasi b, Mayor & Queloz, Nobel 2019).
+As of 2024: >5500 confirmed exoplanets.
+Detection methods: radial velocity (stellar wobble), transit (dip in brightness), direct imaging, microlensing, astrometry.
+Kepler space telescope (2009-2018): found >2600 exoplanets. Revolutionized field.
+TESS, CHEOPS, PLATO: current/future transit missions.
+JWST: characterize exoplanet atmospheres. Water, CO₂ detected.
+Habitable zone: range of orbital distances where liquid water can exist on surface.
+~10-20% of Sun-like stars have Earth-sized planet in habitable zone.
+Nearest exoplanet: Proxima Centauri b (4.2 ly). In habitable zone!
+Biosignatures: O₂, O₃, CH₄ (in disequilibrium), N₂O. JWST searching.
+
+GRAVITATIONAL WAVES:
+LIGO (Hanford + Livingston, USA), Virgo (Italy), KAGRA (Japan).
+Detected events:
+GW150914: binary black hole merger. First detection (Sep 14, 2015). Nobel 2017 (Weiss, Barish, Thorne).
+GW170817: binary neutron star merger. Multi-messenger (γ-ray, optical, X-ray, radio). r-process confirmed.
+O3 run (2019-2020): ~90 events. Mostly BBH, some NSBH.
+O4 run (2023+): ongoing. More events.
+Pulsar Timing Arrays (PTA): recently detected gravitational wave background (nanohertz). Multiple PTAs (2023).
+Future: LISA (space-based, 2030s), Einstein Telescope, Cosmic Explorer.
