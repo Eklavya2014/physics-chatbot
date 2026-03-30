@@ -388,7 +388,7 @@ def get_confidence(results):
     else:             return "🔴 Very Low",            "conf-low"
 
 # ── Feature 1: Normal Ask ─────────────────────────────────────
-def ask_question(question, vs, history_text):
+def ask_question(question, vs, history_text, is_creative=False):
     results = vs.similarity_search_with_score(question, k=4)
     conf_label, conf_class = get_confidence(results)
     context = "\n\n".join([r[0].page_content for r in results]) if results else ""
@@ -1300,7 +1300,7 @@ def show_app():
 
         with st.chat_message("assistant"):
             with st.spinner("🔁 Thinking..."):
-                answer, conf_label, conf_class = ask_question(question, vs, history_text)
+                answer, conf_label, conf_class = ask_question(question, vs, history_text, st.session_state.get("creative_mode", False))
                 st.write(answer)
                 st.markdown(f'<span class="{conf_class}">📊 {conf_label}</span>', unsafe_allow_html=True)
 
