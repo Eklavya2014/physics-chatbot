@@ -1,0 +1,1182 @@
+PHYSICS 9C LAB
+MANUAL
+Tom Weideman
+University of California, Davis
+
+UCD: Physics 9C Lab
+
+This text is disseminated via the Open Education Resource (OER) LibreTexts Project
+(https://LibreTexts.org) and like the thousands of other texts available within this powerful platform, it is
+freely available for reading, printing, and "consuming."
+The LibreTexts mission is to bring together students, faculty, and scholars in a collaborative effort to
+provide an accessible, and comprehensive platform that empowers our community to develop, curate,
+adapt, and adopt openly licensed resources and technologies; through these efforts we can reduce the
+financial burden born from traditional educational resource costs, ensuring education is more accessible
+for students and communities worldwide.
+Most, but not all, pages in the library have licenses that may allow individuals to make changes, save,
+and print this book. Carefully consult the applicable license(s) before pursuing such effects. Instructors
+can adopt existing LibreTexts texts or Remix them to quickly build course-specific resources to meet the
+needs of their students. Unlike traditional textbooks, LibreTexts’ web based origins allow powerful
+integration of advanced features and new technologies to support learning.
+LibreTexts is the adaptable, user-friendly non-profit open education resource platform that educators
+trust for creating, customizing, and sharing accessible, interactive textbooks, adaptive homework, and
+ancillary materials. We collaborate with individuals and organizations to champion open education
+initiatives, support institutional publishing programs, drive curriculum development projects, and more.
+The LibreTexts libraries are Powered by NICE CXone Expert and was supported by the Department of
+Education Open Textbook Pilot Project, the California Education Learning Lab, the UC Davis Office of
+the Provost, the UC Davis Library, the California State University Affordable Learning Solutions
+Program, and Merlot. This material is based upon work supported by the National Science Foundation
+under Grant No. 1246120, 1525057, and 1413739.
+Any opinions, findings, and conclusions or recommendations expressed in this material are those of the
+author(s) and do not necessarily reflect the views of the National Science Foundation nor the US
+Department of Education.
+Have questions or comments? For information about adoptions or adaptions contact
+info@LibreTexts.org or visit our main website at https://LibreTexts.org.
+This text was compiled on 02/11/2026
+
+1 https://phys.libretexts.org/@go/page/23093TABLE OF CONTENTS
+Licensing
+Read Me: About Labs in Physics 9
+Lab 1: Static Electric Charge
+1.1: Background Material
+1.2: Activities
+Lab 2: Electrostatic Potential
+2.1: Background Material
+2.2: Activities
+Lab 3: Capacitors
+3.1: Background Material
+3.2: Activities
+Lab 4: DC Circuits
+4.1: Background Material
+4.2: Activities
+Lab 5: RC Circuits
+5.1: Background Material
+5.2: Activities
+Lab 6: Engineering with Magnetism
+6.1: Background Material
+6.2: Activities
+Lab 7: Electromagnetic Induction
+7.1: Background Material
+7.2: Activities
+Lab 8: Inductance
+8.1: Background Material
+8.2: Activities
+Index
+Glossary
+Detailed Licensing
+
+1 https://phys.libretexts.org/@go/page/65509Licensing
+A detailed breakdown of this resource's licensing can be fo und in Back Matter/Detailed Licensing.
+
+1CHAPTER OVERVIEW
+Lab 1: Static Electric Charge
+1.1: Background Material
+1.2: Activities
+This page titled Lab 1: Static Electric Charge is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom
+Weideman directly on the LibreTexts platform.
+
+1.1.1 https://phys.libretexts.org/@go/page/593461.1: Background Material
+Text References
+electric charge and force
+dipoles
+conductors
+Producing Static Charge
+For this lab, you will need a means for producing larg e amounts of static charge. All of the most effective methods with common
+household items consist of cloth-rubbing insulating materials such as plastic, acrylic, rubber, and latex. Various materials can also
+be used as the rubbing cloth, including natural fibe rs like wool or cotton, as well as synthetic materials like polyester and nylon, or
+blends between both. Different rubbing materials may work better with certain insulating materials, and you may want to
+experiment to determine what works best.
+Removing Static Charge
+In order to keep controls on your experiments, you may wish to remove charge from something you have already charged. Th ere
+are a couple of useful methods for this. The first i nvolves humidity. It turns out that water molecules i n the air are quite effective at
+picking up static charge off surfaces, and carrying them away. This explains why, in colder northern clima tes, static discharges, like
+shocks to fingers when touching doorknobs, are more c ommon in the winter, when the humidity is significantl y lower. If you are
+doing this lab in a humid climate, you may find it c hallenging to keep an object charged for any signifi cant period of time. Anyway,
+this does provide a means for removing charge – breathing hot breath on the object a few times often does the trick. Touch ing the
+object on a grounded metal like a water faucet can a lso help, though since the object is an insulator, you will want to make contact
+with as many places on the rod as possible, as the charge will no t flow across the insulator to a single point of contact.
+This page titled 1.1: Background Material is shared under a CC BY-SA license and was authored, remixed, and/or curated by Tom Weideman.
+
+1.2.1 https://phys.libretexts.org/@go/page/593471.2: Activities
+Equipment
+scotch tape
+drinking straws and cups
+balloons
+foam pads
+aluminum foil balls on thread
+plastic tubes
+pvc pipe segments
+plastic bottles
+aluminum cans
+The General Idea
+This lab is all about static electric charge. We are going to explore three elements of this phenomenon, t hough this exploration will
+be observational, and not quantitative like most of our experiments are. These three elements are:
+1. Cataloging the signs of charge accumulated on variou s objects.
+2. Recording the importance of the specific action on the sign of charge accumulated (can one object be made to hol d different
+signs of charge if different actions are taken?).
+3. Examining the difference between how insulators (non-m etals) and conductors (metals) behave with static charge present.
+Atoms are neutrally-charged, but we can separate a fe w of the electrons from their atoms, making the objec t where the electrons
+accumulate negatively-charged, and the object from which they were taken positively-charged. We will do this with "surface
+interactions" – namely, friction and adhesion (pulli ng sticky tape from a surface). We won't know specifi cally when we charge
+something positive or negative, but if we define one case as "positive," we can use attractive or repulsiv e static electric force to
+determine the signs of all the other charge accumulatio ns we manage to create.
+Some Things to Think About
+You will need to create what is essentially a "detector. " This is just something that you can use to observe the
+attraction/repulsion of the charges you are cataloging. This detector should have the following properties:
+It should be sensitive. That is, it should move easily and unambiguously under t he influence of a static electric attraction or
+repulsion.
+The sign of charge held on this detector needs to be con sistent and repeatable. It is a disaster for consistent resu lts if your
+detector has a positive sign at the start of your experime nt and a negative charge at the end. Note that this means th at if you
+need to "recharge" it, you better do it exactly as you did the first time.
+Always remain aware of your procedures. Electric charge c an be carried on your hands, for example. One good rule of thumb
+is to always "discharge" objects and your hands before em barking on a new measurement. Probably the best way to do th is is
+with humidity – hot breath provides water vapor that picks up spare charge and carries it into the air. Another is to tou ch a
+"grounded conductor" such as a chalk tray, or doorknob, but keep in mind that this will tend to only discharge t he part of your
+insulator that comes in contact with it, and charge can be left elsewhere on it.
+The scotch tape is particularly interesting. Sticking it to a surface and pulling it off suddenly will charge it, and different signs
+of charge can be produced for different surfaces. You h ave lots of surfaces to work with to see this in action (a nd you can even
+pull two pieces of tape apart!).
+Aluminum cans don't require a lot of force to get them rol ling, so laying them on their sides may produce some i nteresting
+results. In particular, try attracting/repelling a can that you have not charged at all. Try it with both signs of c harge. Can you
+explain the result? Ask your TA if you have the explanat ion right.
+Your lab report should include a catalog (perhaps in tabul ar form?) of objects that you charged, the specifics of how
+you charged them, and the sign of the charge (relative t o your detector, which you can define as "positive") in eac h case. It
+
+1.2.2 https://phys.libretexts.org/@go/page/59347should also give an account of what you observed with a co nductor like the aluminum can, along with some specula tion about
+what might be happening in that case.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+Controls
+There are only a few things to keep in mind in order to keep your experiment under control. Remembering to neutralize charge
+between tests, as mentioned above is one of them. Anot her has to do with when the experiment turns to condu ctors. As these
+materials will allow charge to flow through them, a sin gle point of contact is enough to discharge the ent ire object, so if you wish to
+keep a conductor charged, you will want to insulate it from its surroundings. Also, don't forget that your own body can collect and
+distribute charge. It is not a great conductor, but i f in one part of the experiment you collected charg e on your fingertips, this charge
+could have an adverse effect on a later part of the expe riment.
+Also keep in mind that after a cloth is used to rub the insulator, the cloth is charged (charge is conserved, so if there is net charge
+on the insulator, there is the opposite net charge o n the cloth). If that cloth is reused, it may deposi t charge and have the opposite of
+the desired effect. Humidity should help with this as well.
+This page titled 1.2: Activities is shared under a CC BY-SA license and was authored, remixed, and/or curated by Tom Weideman.
+
+1CHAPTER OVERVIEW
+Lab 2: Electrostatic Potential
+2.1: Background Material
+2.2: Activities
+This page titled Lab 2: Electrostatic Potential is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom
+Weideman directly on the LibreTexts platform.
+
+2.1.1 https://phys.libretexts.org/@go/page/593492.1: Background Material
+Text References
+force and potential energy
+electric fields at conducting surfaces
+relationship between electric potential and field, equip otential surfaces
+using graphs to determine functional dependence
+Potentials in General
+It's quite possible that you are taking on this week 's lab without having seen the topic of electric pote ntial in lecture (or perhaps you
+have seen it only briefly). Given that this is a lab about electric potential, this might seem to pose a problem, but a brief review of
+the concept of potential energy from Physics 9A (see the first text reference above) should be sufficie nt to get you where you need
+to be for this lab.
+In Physics 9A, we linked the ideas of potential energy and force. We found that the force vector at a poin t in space is determined
+from the gradient of the potential energy function at that point. In conceptual terms, it works like this: Place yourself at a point in
+space, and note the potential energy at that positi on. Then turn around and around, noting the nearby potential energies that you see
+in every direction. Whichever direction points to the nearby potential energy that is the biggest drop from where you are
+positioned, that is the direction that the force is exe rted.
+If you turn to look in a direction in which the pote ntial energy doesn't change at all, then there is no component of the force in that
+direction. If you start traveling around in the sp ace, always moving in directions where the potential remains the same, then your
+motion is confined to something called an equipotential surface. With no component of the force acting parallel t o the
+equipotential surface, the total force vector must be p erpendicular to it.
+Now in Physics 9C, we are using language we did not use in Physics 9A. What we called a "potential energy functi on" we now
+refer to as a "scalar field." Note that it means the very same thing – every point in space has associate d with it a scalar number. The
+force vectors we derived from gradients of this field are different at every point in space, so with a vect or defined at every point in
+space, we refer to that as a "vector field." The on ly other leap we take in Physics 9C is that we use a sc alar field that is not
+potential energy, and a vector field that is not fo rce. Instead, they are electrostatic potential and el ectric field, respectively. They
+have different physical meanings and are measured with different units than their 9A counterparts, but the basic ideas are exactly
+the same: There are equipotential surfaces – surfaces of equal electrostatic potential (voltage) – and a vector (electric) field that
+is perpendicular to those surfaces everywhere.
+Measuring Device for Potential Differences
+This week's lab involves a voltage supply connected to a pair of conductors that can come in different sha pes. One conductor will
+be held at a lower potential, and the other at a hig her potential. This potential difference will produce an electric field between the
+two conductors, which is manifested as a continuously-vary ing electric potential in the space separating them.
+We will use a device called a multimeter to measure the potential difference between two poin ts in our apparatus. We will be
+measuring AC voltages (we will not worry about what "AC" m eans, or why we use it for this lab) in the 0-20 volt r ange, so the
+setting to use on the multimeter is, unsurprisingly, AC 2 0V (in the "V~" section).
+Figure 2.1.1 – Multimeter
+
+2.1.2 https://phys.libretexts.org/@go/page/59349
+The two ports where you plug the probe wires are the b lack "COM", and the red " ". In order to measure a pot ential difference
+between two points in the apparatus, the leads (probe wires) o f the multimeter need to touch those two points.
+Apparatus
+In order to create a potential field that we can mea sure with this device, we will connect two conductors to sources of positive and
+negative charge, and probe the region between them t o map surfaces of equal potential. The multimeter c an't measure the
+potentials in the air between the conductors, but it can do it in water, so the two conductors are positioned i nside a tray with a thin
+layer of water in it.
+We obviously cannot mark the points in the water tha t we have probed, so we have a piece of graph paper p ositioned beneath the
+transparent tray that we can use to note the location we have probed, and an identical piece of graph pap er where we can record the
+positions of our measurements.
+Figure 2.1.2 – The Apparatus
+
+2.1.3 https://phys.libretexts.org/@go/page/59349Equipotential Surfaces
+At least part of this lab will consist of determining the equipotential surfaces. As with all potentials, we need to set a zero reference
+point. We know that conductors are equipotentials (i. e. every point on and in a piece of metal is at the same potential), so we will
+declare one of the two conductors in the apparatus t o be at potential. It is standard practice to call such a place the "ground"
+and it is labeled with a symbol resembling this:
+. You will find just such a label on the Pasco box. If you connect the "COM"
+probe of the multimeter (with an alligator clip) to the conductor connected to this ground, then the oth er probe will measure the
+potential of other positions relative to that groun d. Note that in the picture above, both probes are t ouching the same conductor, so
+the potential difference shown on the multimeter display is zero.
+To find surfaces of equal potential (well, as we are co nfined to measuring in two dimensions, these are actua lly curved lines rather
+than surfaces), we only need to choose a potential (say 1 volt), and probe different positions in the wate r until the multimeter reads
+1 volt, and record that position on the transcripti on paper. With several points recorded, we can "connect -the-dots" with a smooth
+curve to trace the equipotential. Then we can move o n to 2 volts, 3 volts, and so on. With each of the c onductors itself being an
+equipotential, we should expect the equipotential surfac es to gradually "morph" from one conductor to the other.
+This page titled 2.1: Background Material is shared under a CC BY-SA license and was authored, remixed, and/or curated by Tom Weideman.
+
+2.2.1 https://phys.libretexts.org/@go/page/593502.2: Activities
+Equipment
+clear plastic tray containing a thin layer of water
+aluminum electrodes (one flat, one small cylinder, one large cylinder)
+multimeter with probe wire
+Pasco box and laptop
+graph paper template
+data sheet
+wires
+alligator clips
+The General Idea
+There are two parts to this lab. In the first part, your goal is simply to map the equipotential surface s of integer voltages (,
+, etc.) that exist between two conductors (electrodes) – one flat, and one a small cylinder – across which a total potential
+difference of approximately has been created. You s hould show that this map is consistent with the fact t hat the electrodes
+are themselves equipotentials, and use the map to ap proximate the electric field lines that pass between the t wo electrodes.
+The second part of the lab is more quantitative, and seeks to experimentally settle the following dispute: If we arrange two
+cylindrical electrodes coaxially, then we find that the equipotential surfaces are (unsurprisingly) cir cular, centered at the common
+axis of the electrodes. But we also notice that unlike equipotentials between parallel flat electrodes, the se circular equipotentials
+are not equally-spaced. Both parties in the dispute agree that this reflects the fact that the electric field gets weaker as the position
+gets farther from the axis (measured by the radial d istance from that axis), but one group claims that the field gets weaker in
+proportion to, while the other group claims it gets weaker in proportion to. By making measurements of v oltage at many
+distances from the axis, you will use graphical techniques to determine which of these assertions is correct.
+Some Things to Think About
+Warnings
+No, you don't have to worry about being electrocuted in th is lab, though your instincts about mixing electricity a nd water are
+good ones!
+Don't let the electrodes touch each other when the power is on, as this will short the Pasco output.
+Setup – You should be familiar with most of this from the Background Material:
+Connect one wire to the flat electrode and one to the s mall circular electrode using the alligator clips, and th e plug the other
+ends of the wires into the
+and
+ports of the Pasco box.
+Place the appropriate template face-up under the transpar ent tray, add a thin (no more than a quarter-inch) layer of water to
+the tray, and place the two electrodes into the tray direc tly above their template positions.
+Connect the wire from the black "COM" port of the multimeter to one of the electrodes using an alligator clip, and conn ect
+the probe wire to the red " " port of the multimeter.
+Put the multimeter into the setting in the "~V" sector of the dial.
+Make sure the laptop is connected to the Pasco box through th e USB cable, start it up, and in the 9C folder on the desktop,
+run the "Electrostatic_Potential" application. You sh ould not change any of the default settings. Turn the power on when
+you are ready to take data.
+The data sheet provided has one side for transcribing points of the equipotentials in part 1, and a handy table avai lable for
+recording data for part 2.
+Part 1
+You should confirm that the minimum and maximum potent ials are where you think they are.
+Note that while you will stick the point of the probe into the plastic below the surface of the water, it is the water where the
+potential is being measured, which means you will want to make sure that the probe tip is vertical when taking a measurement
+
+2.2.2 https://phys.libretexts.org/@go/page/59350(you will note that in regions where the potential is ch anging very fast, slanting the tip of the probe can account f or a substantial
+potential difference compared to the vertical).
+Mark several points at each integer voltage, though you will f ind that there are weird effects that occur near the edge s of the
+water (edges of regions always cause issues with electric fiel ds), so you may not want to record points too close to the edges.
+In your lab report, you should include:
+a picture of your logged data points, along with the sket ched equipotential lines they create, and a sketch of t he electric field
+lines derived from these equipotentials
+analysis of how the equipotentials and field lines "make se nse"
+Part 2
+The most important thing to keep in mind here is that the two prospective theories are about the electric field, bu t what you will
+be measuring is electric potentials – these are not the same thing, and you will need to "translate" between the two before you
+can even decide which graphs you need to generate! [Reminder:, so given the functions you are testing for
+, what are you testing for?]
+This is the quantitative portion of the lab – you are not restricted to integer potentials, nor are you looking to sketch
+equipotentials. This should make the acquisition of data easier than in part 1. Nevertheless, it would be a good ide a to
+informally confirm that the equipotentials are roughly wh at you expect them to be.
+As you are only looking for a functional dependence, you c an use whatever units of length measurement you wish. You mig ht
+find "grid squares" easier to work with than (say) centimete rs.
+Use the usual online graphing calculator for the best-fit lines. Here is a reminder of how to use this tool:
+click the "+" button in the upper-left corner and select "table"
+enter the values you wish to graph (those that reflect the f unctional dependence you are testing, not the raw values you
+recorded!)
+include a formula in the next box that looks like:, and a best-fit line will be drawn through the points (the
+subscripts are added by inserting an underscore: " " is " _1 ")
+In your lab report, you should include at least:
+your table of recorded values
+best fit line graphs for the two proposed "theories", alon g with a conclusion of which one fits better
+analysis/discussion of the result
+As an extra "bonus," you can explore what is going-on inside the center ring. Do you expect there to be an electric field in
+there? From your answer to this question, what would you expect to find the potential to look like in there? Go ahead a nd test
+it! If you think you have it figured out, this is your chan ce to show-off to your TA – see if they confirm your brill iant
+conclusions.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+This page titled 2.2: Activities is shared under a CC BY-SA license and was authored, remixed, and/or curated by Tom Weideman.
+
+1CHAPTER OVERVIEW
+Lab 3: Capacitors
+3.1: Background Material
+3.2: Activities
+This page titled Lab 3: Capacitors is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly
+on the LibreTexts platform.
+
+3.1.1 https://phys.libretexts.org/@go/page/578173.1: Background Material
+Text References
+networks of capacitors
+The Equipment
+There are a number of things one needs to know about the equ ipment in order to navigate this lab without mishaps.
+Safety and Good Habits
+The first thing to remember is that the main purpose of a capacitor electrical component is to store elect rical energy, often so that it
+can be discharged quickly. While the capacitors you are using do not boast of large capacitances, nor wil l we charge them using a
+high voltage, it is a good idea to get in the habit of never (intentionally or accidentally) completin g a circuit involving yourself and
+the two leads of a capacitor. (This includes when you think it is uncharged.) When you are done using a capaci tor (i.e. between
+experiments) it is good practice to discharge it com pletely by connecting a wire across is. This not onl y removes any possible
+shock danger, but also gives you a capacitor whose state of charge you know about for the next experiment.
+Polarity of Capacitors
+The capacitors you will be using in this lab contain an electrolyte. This particular design of capacito r has a "polarity", which means
+that it only charges properly in one direction – yo u need to connect a specific lead of the capacitor to the (+) side of a charging
+battery, and the other lead to the (–) side. Connect ing them backward not only causes them to function imp roperly, but in extreme
+cases can ruin the component. You will use capacitors connected to a plastic component board, and their l eads are colored red
+(positive) and black (negative). When connected to a battery, the signs of the capacitor leads need t o be matched to those of the
+battery (positive-to-positive, negative-to-negative). You will also use some loose capacitors, and the pol arity of those is determined
+by the length of the wires protruding from them – the longer of the two leads is the positive one.
+Figure 3.1.1 – Component Board
+Figure 3.1.2 – Loose Capacitors
+
+3.1.2 https://phys.libretexts.org/@go/page/57817
+The "Battery"
+The device you will be using for a battery doesn't lo ok like any battery you have seen before (the wire c oming from it that plugs
+into an outlet is a dead giveaway). While it is clea rly drawing electrical energy from the outlet, this nevertheless behaves exactly
+like a battery – it provides a fixed voltage for cir cuits. And it has the added bonus that it doesn't r un down and end up in a landfill.
+While the voltage is supposed to be 9 volts, it will no t be precisely this, and as usual, you will want to d o a pre-experiment
+calibration check by measuring the true voltage directly with the multimeter.
+The Multimeter
+We will be measuring DC voltages in the 0-20 volt rang e, so the setting to use on the multimeter is, unsurp risingly, DC 20V. The
+two ports where you plug the probe wires are the black "COM", and the red " ".
+Figure 3.1.3 – Multimeter
+Measuring Capacitance
+This lab involves testing what we have learned about c apacitance, and using this knowledge to compute unknown capacitance. The
+"obvious" way to measure the capacitance of a compon ent is to put a known voltage across it, then measure t he charge that
+accumulates, and compute the ratio. The problem with this plan is that while we have a multimeter to measu re voltage, we
+don't have a device to measure charge on a capacito r plate. So instead what we will do is use what we know to
+
+3.1.3 https://phys.libretexts.org/@go/page/57817measure relative capacitance, and then is this to compare an unknown capacitance with a known one. For example, if we know t hat
+two capacitors possess equal charge (how do we assure t his?), and we happen to know the voltages across each o f them (measured
+by a multimeter), then we can compute the ratio of their capacitances:
+So if we know one of the capacitances, we also know the other.
+This page titled 3.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+3.2.1 https://phys.libretexts.org/@go/page/578183.2: Activities
+Equipment
+component board
+9V DC power supply ("battery")
+multimeter
+loose capacitors
+wires
+alligator clips
+The General Idea
+There are two parts to this lab. In the first part, you are given two different capacitors from a manufactu rer who asks that you
+check that they have capacitances in approximately t he correct ratio. In part 2, you are given a known capacitor and must use it to
+find the approximate capacitance of another unknown capacitor. For confirmation purposes, you are asked to do this latter
+measurement two different ways. One of these ways must involve charging one capacitor with another (rather than charging both
+with the battery). In both cases, all you have at your dis posal to work with is a battery and a voltmeter.
+Some Things to Think About
+Part 1
+In the Background Material, a way of comparing capacitance ratios is discussed. How can we be assured of charging both
+capacitors equally?
+You are told that the ratio of the two capacitances of t he capacitors on the component board is supposed to be 0.47.
+The percentage uncertainty in capacitances acceptable to the manufacturer that has hired you is fairly large – abo ut 15%.
+Discuss whether the ratio you find is "correct" to within t his tolerance
+Indicate which capacitor is the one with the larger of the two capacitances.
+Part 2
+You now are told that the larger of the two capacitances o n the component board is.
+Choose one of the three varieties of loose capacitors to m easure.
+Use the alligator clips to make connections with the loos e capacitor, and be sure to observe proper polarity!
+Naturally one method you can use is the same as part 1. Bu t you will have to give some thought about how to perform t he
+second measurement. Obviously to charge one capacitor with another, the first capacitor needs to already be charg ed, and this
+you will do with the battery. Again, when connecting the ch arged capacitor with the uncharged one, make sure they ar e
+connected positive-to-positive, negative-to-negative.
+When you charge one capacitor with the battery, does it matt er which one you choose to charge?
+Your capacitor-charges-capacitor calculation will depe nd upon starting with one capacitor uncharged, so you need to make sure
+that this is true by shorting it beforehand.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+
+This page titled 3.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+1CHAPTER OVERVIEW
+Lab 4: DC Circuits
+4.1: Background Material
+4.2: Activities
+This page titled Lab 4: DC Circuits is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+4.1.1 https://phys.libretexts.org/@go/page/230414.1: Background Material
+Text References
+resistance
+measuring devices and systems of resistors
+Kirchhoff's rules
+Measuring Resistance
+The first part of this lab requires that we measure the resistance through a piece of conducting paper. There are a couple ways we
+can measure a resistance. The first that comes to m ind is to use Ohm's law: Measure the voltage across the "resistor" with a
+voltmeter, and the current that passes through it with an ammeter, and the ratio of these gives the resista nce. But our multimeter
+does both of these jobs at once – just turn the dial into the ohmmeter region (labeled with an " "), and connect the leads (one in the
+black COM port and the other in the red V Hz port) to t he opposite ends of the resistor, and the display rea ds the resistance. You
+will likely have to adjust the dial to find the righ t range of values – you can select maximum values f rom 200 to 200M ("M"
+stands for "mega" = "million").
+Resistivity
+While resistance is a property of a specific object, resistivity is a property of a material that can have any shape or size. The shape
+and size combined with the resistivity is what determ ines an object's resistance. The simplest model to d iscuss the relationship is a
+rectangular prism:
+Figure 4.1.1 – Resistor Model
+The ohmmeter in this figure is measuring the resistanc e along the direction joining the two leads – down th e length of the prism.
+If current were to flow along this direction, it would pass through a cross-sectional area equal to the pr oduct of the width and
+thickness:. The resistance of this object is related t o the resistivity of the material from which it is constr ucted according to:
+In our lab, we will measure the dimensions of such an object, and use an ohmmeter to measure its resistanc e, thereby allowing us to
+compute the resistivity of the material.
+Confirmation of Kirchhoff's Rules
+The second part of this lab consists of connecting a s mall network of batteries and resistors in order to confirm Kirchhoff's rules. In
+order to make this confirmation, one needs to measur e both voltage drops with a voltmeter and currents wit h an ammeter. Both
+these meters can be selected in the multimeter. The voltmeter you already know from a previous lab. The ammeter section of the
+dial is labeled with an "A" with dots and dashes after it (not the wavy line). Just as in the case of the vo ltmeter from the previous
+lab, this meter is for direct current circuits like we are working with here.
+
+4.1.2 https://phys.libretexts.org/@go/page/23041There is one critical piece of information about con necting these two types of meters to measure quantitie s in a circuit. Not
+following this can damage (or at least temporarily d isable) the ammeter. While voltmeters can be used i n a "probing manner"
+connect each lead to opposite ends of a resistor to measure the voltage drop, ammeters must be connected into the circuit. That is,
+if you want to measure current with an ammeter, you mu st disconnect your circuit and connect the ammeter into the branch through
+which you wish to measure the current. If you are not taking your circuit apart to put your ammeter into it, then you are using the
+ammeter incorrectly, and are likely to disable your multimeter and aggravate your TA. If you have any q uestions about your
+connection, ask your TA for confirmation that your set up is okay before powering it up.
+In order to create this network, you will need two batt eries and several resistors. The batteries are the pl ug-in DC power supplies
+like you used in the previous lab. The resistors you wi ll find on one side of the component board – they ar e the objects with two
+black jacks:
+Figure 4.1.2 – Component Board
+This page titled 4.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+4.2.1 https://phys.libretexts.org/@go/page/230424.2: Activities
+Equipment
+metal board with conducting paper strips
+magnetic electrode plates
+component board
+15V & 9V DC power supplies
+multimeters
+wires
+ruler
+The General Idea
+This lab consists of two very distinct parts. In Part 1, you will be measuring the resistivity of some con ducting paper, confirming
+your answer with two separate sets of data. In Part 2, y ou will set up a DC network (subject to certain require ments) and use it to
+test/confirm Kirchhoff's rules.
+Some Things to Think About
+Part 1
+The formula that relates the resistance to the resisti vity includes the dimensions of the resistor (see Figur e 4.1.1 in the
+Background Material). In our case, the "rectangular prisms" are strips of pa per. It's difficult to measure their thicknesses, so it
+is provided for you:.
+Note that the magnetic electrodes have holes into which the banana leads of the wires fit nicely. They also stick to t he board
+and make it easy to define endpoints of the strip "resistor. " The electrodes and wires are also very good conductors, so
+since they are in series with the strips, they contribu te a negligible amount to the resistance measurement.
+We are able to vary the length of the strip resistor by si mply moving the electrodes, and we can vary the width of th e resistor by
+using different paper strips.
+You are expected to treat each of the dimension variabl es separately (i.e. hold one fixed while varying the othe r), generating for
+your lab report a data table and a best-fit linear grap h for each one. (Use the usual desmos online graphing calculator.)
+The resistivity can then be extracted from the two best-f it lines, and compared.
+Comment on what conditions might affect the outcome. Thi s can be speculation or actual weird fluctuations in r esults whose
+cause you were able to deduce. You should feel free to do a ncillary quick tests to check your ideas.
+Part 2
+Here are the required elements of your network:
+It must include at least four resistors and two batteries.
+It must include at least two loops (i.e. there must be branc h points).
+The batteries must appear in different branches.
+Each branch with a battery in it must also include at le ast one resistor (this is to avoid any nasty short-circui ting).
+Your lab report needs to include a large circuit diagram that matches the network that you wired in the real world. It needs to be
+large enough that you can label everything that you mea sure, including:
+the resistances (use the ohmmeter, as you did in Part 1, and do n't do these measurements while they are connected to
+anything else!)
+the emfs of the batteries
+the currents through each branch
+the voltage drops across the resistors (you need to in dicate a loop direction to do this)
+When measuring the battery emfs and voltage drops around loop s, you need to be especially careful to record the prope r signs,
+which means you have to remain consistent with the directi on of the voltmeter.
+Before you measure the currents, check with your TA to make sure y ou are doing it right, because connecting an ammeter
+incorrectly can result in a nuclear detonation and the exti nction of all life within a 5-mile radius. Okay, it isn't th at bad, but we
+
+4.2.2 https://phys.libretexts.org/@go/page/23042don't want to damage/disable the multimeters. When you get t he green light from the TA, be sure to make a note of
+the directions of the currents you measure.
+With all the data gathered in one place on the schematic, do the arithmetic to show that the loop rule holds for at least two loops,
+and that the junction rule holds for at least one juncti on.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+This page titled 4.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+1CHAPTER OVERVIEW
+Lab 5: RC Circuits
+5.1: Background Material
+5.2: Activities
+This page titled Lab 5: RC Circuits is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly
+on the LibreTexts platform.
+
+5.1.1 https://phys.libretexts.org/@go/page/230445.1: Background Material
+Text References
+discharging capacitor
+charging capacitor
+Component Board Again
+We'll be using the component board again for various parts of this lab. See the diagram below for the comp onents you will be
+using in this lab:
+Reading an Oscilloscope
+At first glance, an oscilloscope is an intimidating de vice, with a daunting number of knobs and switches. We will not concern
+ourselves with the various nuances of this device, and will instead focus on taking away some of the mystery, so that we can use
+it. First and foremost, this device is a voltmeter. Two leads come out of each "channel," and the o-scope me asures the difference in
+voltage between these two leads.
+Where an oscilloscope differs from a standard voltm eter is that it also reflects the time dependence of that voltage difference. If we
+connect a regular voltmeter across a component for wh ich the voltage is varying with time, the needle of t he voltmeter would jump
+around in response to the changing voltage drop. An o scilloscope graphs the time dependence of that changing voltage – the
+vertical axis of the output is the voltage drop, and the h orizontal axis is time.
+The scope does not graph the voltage between fixed s tarting and ending times – it graphs continually. It's easiest to think of it as
+"wrapping around" – when the plot gets to the right s ide of the screen, it continues plotting from the left side. For this reason, this
+device is most effective for studying periodic time dependence (thus the prefix "oscillo-"). Thes e plots repeat themselves, leaving a
+static pattern on the screen that can easily be studied.
+Let's look at what some of the important knobs do (again, we will not take the time to learn every nuance of this d evice here):
+Figure 7.1.1 – Oscilloscope
+
+5.1.2 https://phys.libretexts.org/@go/page/23044
+The simplest of the knobs to understand are the positio n knobs – these move the whole graph up/down and right /left. This
+adjustment is available to make it easier to read val ues off the graph. At the bottom of the vertical part of the front panel are the
+ports where the probes connect to the device. For our lab, we will only be measuring a single voltage diffe rence, so there is only a
+cable attached to channel 1.
+The important knobs to understand are those labeled "VOLTS/DIV" and "SEC/DIV" (for our experiment, only the knob setting for
+channel 1 matters). We'll look at each knob in turn, but first you should note that the o-scope screen is divided into a grid of large
+squares, which are each subdivided horizontally and v ertically with 5 tick marks. It is the lattice of gr id lines (the blocks) that are
+calibrated to the knob settings – the smaller tick marks re present one fifth of these measurements.
+1. VOLTS/DIV – The number found within the bracket equals the val ue of each vertical division of a block. You'll note that there
+are two brackets – so which one gives the proper number? Both, beca use they measure in different units. The multiplier n ext to
+each bracket indicates how much the actual value is amplif ied by the oscilloscope before graphing it note that in both cases, a
+difference of one vertical block represents a voltage d ifference of 0.02 volts:
+Reading the left bracket: The signal is multiplied by 1, an d a block measures 20 millivolts.
+Reading the right bracket: The signal is multiplied by 1 0, and a block measures 0.2 volts.
+2. SEC/DIV – In this case, there is only one place to read the time intervals for blocks – between the two lines that rad iate from
+the center of the knob. This particular knob is set at 2 milliseconds.
+It should be clear that turning the vertical knob cl ockwise will make a graph shorter (each block's vertica l value is increased), and
+turning the horizontal knob clockwise will squeeze togeth er the wave peaks (each block's horizontal value is incre ased).
+This page titled 5.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+5.2.1 https://phys.libretexts.org/@go/page/230455.2: Activities
+Equipment
+component board
+15V DC power supply
+variable capacitor
+Pasco box and laptop
+oscilloscope
+wires
+The General Idea
+The experiment portion of this lab is straightforwar d. You are given a variable capacitor, and are asked to compute its capacitance
+based on what you know about its geometric structure. Then you are tasked with checking this computation by connecting it into an
+RC circuit with a known resistance, and viewing the tim e dependence of its voltage on an oscilloscope. Th ere is, however, an
+exploratory preamble to the experiment, in which you will write up only a brief summary of your findings i n the lab report.
+The first part of this preamble consists of spending a little time exploring the properties of an LED li ght bulb (in the context of an
+RC circuit, of course). The second involves tinkering with an oscilloscope until you become familiar with its mo st basic functions.
+Some Things to Think About
+Part 1: Exploration – LED
+Just about everyone has heard of LED lights. Far fewer k now what "LED" stands for (light emitting diode). Fewer still know what
+the properties of such a component are in a circuit. Your task here is to find out, and to use it in an R C circuit to observe that
+circuit's time-dependent behavior. Like any other li ght, its brightness indicates the amount of current ru nning through it. Besides
+the LED light on the component board, you will need t he capacitor next to it (see the Background Material for a picture),
+and of course the DC power supply. Feel free to conne ct the LED with one or more of the other two component s in any way
+you see fit, subject only to the following restriction:
+Like capacitors we have used in past labs, this one has a s pecific polarity. When connected to the power supply, the pos itive
+(red) lead of the capacitor must be connected to the positive l ead of the battery.
+Make a mention of whatever you discover about any spec ial properties of the LED in your lab report. You m ay want to ask your
+TA if what you have discovered "is really a thing."
+Part 2: Exploration – Oscilloscope
+reference – You may want to refer back to the Background Material during this activity, to help you keep track of how the
+oscilloscope knobs affect what you see.
+practice – Throughout this exploration, you should not be satisf ied with seeing how knobs affect the pattern on the screen ("Oh,
+this knob makes the wave taller!") – you should become comf ortable with reading the numerical values that the device
+measures, and how to read the new numbers shown when the knob settings ar e changed.
+settings – to check and then never change once they are correct a re:
+In the TRIGGER section set the slide switches to...
+MODE: P-P AUTO
+SOURCE: CH 1 and LINE
+All the smaller dials labeled "CAL" within the three larg est dials (for voltage and time) should be turned fully c lockwise.
+In the HORIZONTAL section, set the slide switch to X1.
+In the CH 1 part of the VERTICAL section set the slide switche s to...
+upper slide switch: CH 1
+lower slide switch: DC
+The CH 2 part of the VERTICAL section can be ignored (the pr obe wires should be connected into the CH 1 connector).
+
+5.2.2 https://phys.libretexts.org/@go/page/23045calibration – Turn on the oscilloscope, and once you see its “trace” (t he blue-green luminescent line), set the voltage in the
+CH1 part of the VERTICAL section to 5 volts per division (we us e 1x, so ignore the 10x), and set the time scale in the
+HORIZONTAL section around the middle of its settings. Then plac e the oscilloscope leads across your 15V “battery,” black to
+black and red to red. While watching carefully, temporar ily move the bottom slide switch in the CH1 part of the VERT ICAL
+section to GND (essentially making the input zero) then ba ck to DC. This should tell you something about the position ing of the
+beam.
+play time! – Open the laptop computer file “RC_Circuits,” and click the ON button in the Signal Generator window. Place the
+scope leads across the Output 1 signal generator outputs of the Pasco box, black to
+, and red to
+. Play around with the
+onscreen Waveform, Frequency and Amplitude settings (in the i nterest of efficiency, 2 or 3 waveforms should be plenty), an d
+scope V olts/Div, Sec/Div, and Position controls. Note: The defaults obscured under "Offset and Limits" in the laptop
+software are chosen to protect our equipment – don’t change them! As noted earlier, be sure that you can read numbers off
+the screen properly, and that they confirm what signal y ou know is being sent from the Pasco box. Consult your TA to confirm
+that you are getting things right, or if you have any pr oblems with the equipment.
+Part 3: Experiment – Confirming Capacitance
+variable capacitor – The device in the plastic box with a know that turns some interleaving metal plates is a variable capacitor.
+Turning the dial can move the plates into parallel posit ions, or remove them from those positions, thereby chan ging it total
+capacitance. The plates that rotate are charged with one sign, and the stationary plates are charged with the oppo site sign, giving
+something (when the plates are meshed) that looks like the diagram below, up-close. The important thing to note is that each
+gap represents an individual capacitor, and since all of the positive plates are at the same potential as each othe r, as are all the
+negative plates, these individual capacitors are connec ted in parallel.
+safety – For your own safety, and to protect this quite delicate instrument (did we mention that the plates are separated by a
+quarter of a millimeter?!), please:
+Never touch the plates!
+Be careful not to drop the device or try to "repair" it. If you suspect that it is shorted because it doesn't seem to be
+functioning properly, and/or you can feel/hear the pla tes rubbing each other when you turn the dial, just let you r TA know,
+and they will check it and get you a replacement if needed.
+Be sure to connect a conductor (short the capacitor) bet ween tasks or when you are done with it, so that there is no l ingering
+charge within it.
+specifications – The semicircular plates of this capacitor have a diam eter of about and the spacings (when interleaved)
+are about.
+compute capacitance – The main thrust of the experiment is to compare the capacitance found using the oscilloscope readings
+for an RC circuit to the computed capacitance. The inf ormation above should be sufficient to compute an appro ximate
+capacitance from its geometrical structure.
+RC circuit – The RC circuit you will be building consists of the va riable capacitor, the resistor (see the Background
+Material for a reminder of which component this is), and the Pasco sign al generator. (Question to ponder: Why can't we just
+use the DC power supply?) Here are a few suggestions for the settings of the signal generator:
+waveform: square
+frequency:
+amplitude: (since amplitude is half the total maximum fluctuat ion, this is a variation in the voltage)
+
+5.2.3 https://phys.libretexts.org/@go/page/23045oscilloscope connection – Remember that the oscilloscope is a voltmeter, which m eans we can use it to indirectly measure the
+time dependence of either the current (if we measure the vo ltage across the resistor) or the charge (measuring the voltage across
+the capacitance). Important additional note: The oscilloscope won’t read vo ltage properly unless its black lead is effectively
+attached to the signal generator’ s
+jack, i.e., either to that jack or to a wire going there. So p ay attention to the order in which
+you wire the resistor and capacitor in series; if you want to “look” at the capacitor voltage, make sure it has one lead going to
+the signal generator’ s
+jack, and if you want to “look” at the resistor, make sur e it has one lead going there. Of course, in this
+series circuit, they can’t both go there.
+observe the effect of changing capacitance – When everything is set up and your oscilloscope is rea ding values properly, turn
+the dial of your variable capacitor to see what effect i t has on the output. Explain this effect in your lab repo rt.
+oscilloscope readings and math – You will be computing the maximum capacitance of this variable capacitor (the same thing
+you computed earlier, when all the plates are interlea ved). To compute the capacitance from the data you tak e, you will need to
+properly read the numbers from the oscilloscope, and appl y them to the mathematical relation for either or for a
+charging or discharging RC circuit. You know the resistan ce of the circuit, and the time dependence, and that is all you need.
+sources of error – Be sure to make a brief approximate accounting of where errors can creep into this experiment. Mentioning
+error sources is useful, making reasoned approximations o f percentage error, when possible, is better.
+things to include in lab report – Besides the items explicitly mentioned above and detail s of the computations you make, it's
+always a good idea to have some record of your raw data in the r eport, so you should include a photo of the oscilloscope
+reading + dial settings.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+This page titled 5.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+1CHAPTER OVERVIEW
+Lab 6: Engineering with Magnetism
+6.1: Background Material
+6.2: Activities
+This page titled Lab 6: Engineering with Magnetism is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom
+Weideman directly on the LibreTexts platform.
+
+6.1.1 https://phys.libretexts.org/@go/page/589126.1: Background Material
+Text References
+a direct-current motor
+Building a Commutator for a DC Motor
+From the standpoint of designing a dc motor, the tric kiest part is designing the commutator (see the text reference given above for
+an explanation of what this is). In this lab, we will st ick to the simplest design for a commutator possible. Unl ike the diagram of
+the motor in the text reference, our commutator will not reverse the direction of the current with every 180 degree rotation. Rather,
+it will simply cut off the current for 180 degrees o ut of every full revolution. So for half of every re volution there will be a torque
+driving the rotation, and for the other half, the mo tor's angular momentum will carry it around until it can get it's next "kick" of
+torque.
+To accomplish this, we will exploit the fact that the wire we will be using for our coil is insulated. In our simple design, the wire
+used for our coil also serves the purpose of the moto r's axle. The wire is wound several times until a coil h as been fashioned, with
+the ends of the wire sticking out both ends. Then t hose loose ends are wound around the opposite sides of the coil, so that the coil
+is held tightly together, and the loose ends provide an ax le for the coil's rotation.
+Figure 6.1.1 – Single Wire Makes Both Coil and Axle
+Now if the insulation is stripped from the two loose en ds, this can be rested on leads that are at a potentia l difference – with gravity
+assuring a good connection, but nothing to impede th e coil's rotation – and current will flow through the coil. But as stated above,
+we don't want the current to flow through the coil at all times, but only half of every rotation, so for o ne side of the axle, we should
+only strip off the insulation on 180 degrees of the wire. You will have to determine where that stripping begins and ends, based on
+what orientation you want the coil to have in the mag netic field when the current begins and ends (hint: se e the diagram in the text
+reference!).
+Building a Speaker
+We know that the force on a wire in a magnetic field depends upon the current flowing through that wire. So if, in some fixed
+magnetic field, we vary the current in a wire in some periodic fashion (let's say harmonically), then the force on that wire varies
+with the same period. This varying force leads to mech anical vibration of that wire with the same period, and this mechanical
+vibration can produce sound with – you guessed it – the sa me frequency. This is how a speaker works.
+Like the motor, we will need a coil to concentrate a lot of current into a small space in order to get a decent amount of magnetic
+force. Unlike the motor, we will not need to use wire heavy enough to work as an axle. Thinner wire is also pre ferred in part
+because it has less inertia, which means it is accele rated more by a magnetic force. This allows it to vibr ate more effectively,
+especially at higher frequencies.
+Also, the coil itself does not move a lot of air when it vibrates, so it is best to attach it to a sort of "bladder" (in our case, the bottom
+of a lightweight cup) which will move a lot of air when it vi brates with the coil.
+This page titled 6.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+6.2.1 https://phys.libretexts.org/@go/page/589146.2: Activities
+Equipment
+wire (2 or 3 different gauges)
+magnets
+dc power supply
+paper clips
+tape
+assorted cups
+sandpaper
+Pasco box and laptop
+banana-tip connecting wires
+alligator clips
+The General Idea
+This lab involves no experimentation. Rather, it is a n opportunity to use some of our knowledge about magn etic forces and torques
+on current-carrying wires to design and construct two basic devices: a direct-current electric motor, and a sound speaker. The main
+goal is to get these working, but if you do this relat ively quickly and have some spare time, then you can feel free to improve your
+design – have some fun with this!
+Some Things to Think About
+Part 1: DC Motor
+safety – The power supply you use for the motor in this lab has the potential to hurt you, so be careful with it. If you wa nt to
+see how your motor functions at higher voltage (which resul ts in a faster speed), ask your TA to assist you. Otherwise the
+setting at which you find the voltage will be plenty to dem onstrate your motor's operation.
+axle – The parts of the wire that serve as an axle need to r est on the conducting leads connected to the battery, and must be free
+to turn while not falling off the leads. Using paper clips wit h small loops in them (into which the axle goes) work well fo r these
+conducting leads. Also note that you want the axle as straig ht as possible – if the coil "dips", then the weight imbalanc e
+provides torque that the magnetic torque may not overcome.
+commutator – The Background Material describes how to create a working commutator for your motor. You need to figure out
+what orientation the coil needs to have when the current f lips from 'on' to 'off', and then use the sandpaper to take off the
+insulation such that this is actualized. Be sure that you a re correct (maybe check with your TA?) before actually sa nding, or you
+may end up wasting wire.
+magnets – This motor works best when the magnetic field at the coil i s as strong as possible. These fields weaken with
+distance, so getting the magnets as close as possible to th e coil (without the coil rubbing on it) is key.
+starting it up – You will need a small "kick" to get it going, but the n it should keep going (and even speed up!). You'll find th at
+it only maintains it rotation in one direction (why?), but typically a kick in either direction will do the trick (if you kick it the
+wrong way, it will reverse direction and keep going).
+Part 2: Speaker
+bladder – As mentioned in the Background Material, the vibration of the coil can best be heard when it cau ses a bladder to
+vibrate that compresses/rarefacts larger volumes of air than the coil would by itself. You don't need to be fanc y about this
+attachment – just taping the coil to the bottom of a cup wo rks fine.
+function generator – The Pasco application "Engineering_with_Magnetism" is used here to provide the periodic time-varying
+voltage (and therefore current) needed to get the coil to v ibrate. Just connect the two jacks from the Pasco box to the two leads
+of your coil. You may need to increase the amplitude somewh at from the default in order raise the decibel level of th e sound to
+the audible range. You should check several frequencie s to see that the pitch of the sound changes as you would expe ct.
+magnets – There is no need to attach the magnets to your speaker. Once the current is flowing, just bring the magnets close to
+the coil, and listen for the sound (and note that when you take them away, the sound goes away!).
+
+6.2.2 https://phys.libretexts.org/@go/page/58914Clean Up
+When you are finished, you need to disassemble your devices, so that future lab participants can work from scratch like you did.
+We would like to re-use most of the seemingly-disposa ble materials (certainly the cups, and possibly even the paper clips). Your
+wire coils you can take home, or give to your TA for recycli ng.
+Lab Report
+The lab report you upload in this case will consist o f a short video of your two working prototypes (obviou sly sound will be
+necessary for the speaker video). The videos should inc lude a piece of paper in the frame with the names of your group members.
+This page titled 6.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+1CHAPTER OVERVIEW
+Lab 7: Electromagnetic Induction
+7.1: Background Material
+7.2: Activities
+This page titled Lab 7: Electromagnetic Induction is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom
+Weideman directly on the LibreTexts platform.
+
+7.1.1 https://phys.libretexts.org/@go/page/230507.1: Background Material
+Text References
+Faraday's Law
+Magnetic Field of a Loop
+Faraday's Law with a Coil and a Magnet
+In the first part of the lab, we slide a coil of wire past a permanent magnet (whose field is oriented perpe ndicular to the surface of
+the coil). The magnetic field is not uniform, which means that the strength of the flux of the field th rough the coil changes as the
+coil gets closer to or more distant from the magnet. Thus moving the coil in such a situation should ind uce an emf in the coil. This
+coil can then act like a battery, "pushing" current out from whichever coil lead becomes the higher pote ntial (determined by
+Lenz's law).
+Figure 7.1.1 – Experimental Apparatus, Part 1
+Faraday's Law with Two Coils
+If we arrange two conducting coils coaxially, and run a current through one of them, it will produce a magn etic field that passes
+through the other. If we vary this current over time, then the magnetic flux through the second coil will change with time, inducing
+an emf in the second coil according to Faraday's law. This lab explores this very scenario. A computer ge nerates a
+sinusoidal current through one coil, and the second coil is connected to an oscilloscope that measures th e emf induced. With the
+current varying periodically, the flux (and therefo re the emf) varies periodically as well, making the osci lloscope the perfect device
+to measure the time dependence of the emf.
+Here is the experimental setup:
+Figure 7.1.2 – Experimental Apparatus, Part 2
+
+7.1.2 https://phys.libretexts.org/@go/page/23050
+The analysis of this experiment (i.e. "solving the phys ics problem") consists of three steps:
+1. Determine the magnetic field in the region of space where the detector coil is located, in terms of the curren t flowing
+through the field coil. In this case the "region of space " is the center of the field coil, and the radius of the detector coil is
+sufficiently small that the field is reasonably unifor m across its area, simplifying the next step...
+2. Compute the flux of magnetic field through the detect or coil.
+3. Derive the induced emf in the detector coil from Fara day's law.
+
+This page titled 7.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+7.2.1 https://phys.libretexts.org/@go/page/592047.2: Activities
+Equipment
+coil with magnet-on-pedestal
+compass
+large wire coil
+solenoid
+oscilloscope
+Pasco box with voltmeter connection wires
+laptop
+wires
+The General Idea
+The goal of this lab is to look at Faraday's law of in duction and Lenz's law, qualitatively in the first pa rt, and quantitatively in the
+second. In each case the source of the magnetic field is different – a permanent magnet is used in the f irst part, and a currentcarrying coil in the second.
+Part 1 – Moving a Coil Near a Permanent Magnet
+You have at your disposal a small dowel pedestal (on top of which rests a magnet), and a plastic loop that contains two coils of wire
+(one red, one black). The magnetic field of the mag net is not uniform, so moving a coil near it should c hange the flux and induce
+an emf across the leads of the coil. The only restric tion we have on "moving the coil near it" is to keep the coil threaded onto the
+plexiglass tube. Other than that, you should explore c hanges with as much variation as possible. At a minimum, you should try
+different speeds, different directions of motion, dif ferent wire connections, and both orientations of th e coil. Here are some details
+you need to know to get this to work:
+The Pasco software on the laptop you will use is "Electromagne tic_Induction_1."
+The voltage sensor cable needs to be connected into p ort A of the Pasco box. These are the leads across which the i nduced emf
+is measured.
+The red and black wires are wound around the coil in th e same direction, each with 25 turns. It is possible to exper iment with
+only one color of wire (giving you a result with 25 turns), a nd then repeat it with both coils involved together in ser ies (giving
+you a result with 50 turns).
+The voltage sensor wires are colored red and black. Whe n the red lead is at higher potential than the black lead, then this shows
+up on the graph in the laptop above the axis.
+You have a compass at your disposal to determine which magnetic pole is facing up at the top of the pedestal (it 's easiest to test
+by removing the plexiglass and turning the pedestal side ways). For reference, the Earth's northern pole is actually a south
+magnetic pole (field lines go into it).
+Part 2 – Varying the Magnetic Field by Varying the Source Current
+We couldn't do a lot of quantitative study in part 1, because we don't have a good way of determining the numerical value of the
+magnetic field flux as a function of time. In this p art, we create a varying magnetic field ourselves th rough the use of a varying
+current in a loop. Here is some information about the equi pment at your disposal:
+The Pasco software on the laptop you will use is "Electromagne tic_Induction_2."
+The large coil of wire has 100 turns in it, and has a radiu s of.
+The cylindrical "probe" is a coil with 1000 turns, and i t has a radius of.
+After you click the "On" button, the software provides a per iodic signal to the large coil from the
+, and
+jacks in the Pasco
+box. You can change the frequency from the default to what ever you want (within reason!). You should not make any chan ges
+to the default amplitude.
+The software displays (when you click the "Monitor" but ton) the output current in the graph on the right. You can use the
+coordinate tool
+to get greater precision for values on this graph.
+The oscilloscope is connected to the cylindrical probe, a nd measures the induced emf in that coil.
+Ch k k h h ill i h d f l h h l i d i
+
+7.2.2 https://phys.libretexts.org/@go/page/59204Check to make sure that the oscilloscope settings are on the proper defaults, as they were the last time you used it:In the TRIGGER section set the slide switches to...
+MODE: P-P AUTO
+SOURCE: CH 1 and LINE
+All the smaller dials labeled "CAL" within the three larg est dials (for voltage and time) should be turned fully c lockwise.
+In the HORIZONTAL section, set the slide switch to X1.
+In the CH 1 part of the VERTICAL section set the slide switche s to...
+upper slide switch: CH 1
+lower slide switch: DC
+Some Things to Think About
+Part 1
+Here are some questions for you to consider when expla ining how (or if) the behavior you observe is consist ent with Faraday's and
+Lenz's laws.
+What seems to affect the peak emf that is measured?
+If you want to compare the results of one coil (say just red) to two coils (both red and black)...
+... how you will need to connect the leads?
+... how will you keep the speed variable unchanged between these two tests?
+How does the result of moving the loop upward compare to movin g it down?
+What effect is there (if any) when you turn the loop over and repeat the procedure?
+If you move the coil at different speeds, the rate of flux change is different, but what about the total flux change, added up over
+the whole time of the drop? Does this depend upon the speed of coil movement? [Note: There is an "area-under-curve" to ol
+in the software, and. To use this, select the part of the gr aph that you which to integrate using the
+tool.]
+Do the polarity of the magnet and the sign of the induced e mf agree with Lenz's law?
+You can take screen shots of what is displayed on th e laptop for your lab report to help you make clear er descriptions of the
+behavior of the induced emf under various conditions.
+Part 2
+The point to this experiment is to confirm Faraday's la w with a known magnetic field. Clearly the signal gen erator is providing the
+measurable current that makes this field, but we only have a limited knowledge of field strength in the vi cinity of a loop of current.
+We need to exploit this knowledge to be able to cla im that we know the (approximate) field strength. Some questions to consider
+as you work your way through this:
+Are the frequencies of the oscillating current and induce d emf equal? Should they be?
+Is the orientation of the probe (e.g. standing upright vs. laying on its side) important to the experiment?
+We know that the current varies sinusoidally, and we know the frequency of that oscillation. How do we go from this to induc ed
+emf?
+What do you think are the biggest sources of error in the experiment, and approximately what is the weakest link per centage
+error? Do your results confirm Faraday's law within this margin?
+You can take screen shots of what is displayed on the l aptop and pictures of the oscilloscope output (and k nob settings) for your lab
+report.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedback from your lab TA whenever you find that your group is at an impa sse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+
+7.2.3 https://phys.libretexts.org/@go/page/59204This page titled 7.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+1CHAPTER OVERVIEW
+Lab 8: Inductance
+8.1: Background Material
+8.2: Activities
+This page titled Lab 8: Inductance is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly
+on the LibreTexts platform.
+
+8.1.1 https://phys.libretexts.org/@go/page/230538.1: Background Material
+Text References
+LR Circuits
+A Decaying Circuit
+To study the effect of inductance, we will create a c ircuit in which an initial current that flows steadil y through the inductor, decays
+down to zero. To set up this scenario, we employ the followi ng circuit:
+Figure 8.1.1 – Decaying LR Circuit
+The circuit includes a battery, a resistor, an induc tor, and a switch. A voltmeter is used to measure the voltage drop across the
+inductor at all times. Note that the circuit diagram inclu des the internal resistances present in the battery and indu ctor.
+The process begins with a closed switch, such that cu rrents are flowing through both the resistor and the inductor. It is left closed a
+long time, so that the inductor has no potential drop resulting from a varying current – it only comes fr om its internal resistance.
+The graph of the voltage measured by the voltmeter a s a function of time is a flat horizontal line while the switch remains closed.
+We will make direct measurements of the resistances of the resistor and the inductor with an ohmmeter, but this doesn't work for
+the battery. To get a measurement of the battery's i nternal resistance, we will measure its terminal volta ge with no current (i.e. with
+a voltmeter), and compare it to the current that flo ws from the battery in the "before" setting, which we ca n get from the voltmeter
+reading and the load resistances.
+Very suddenly the switch is then opened, taking the ba ttery out of the circuit. One question we will seek to answer is, "What
+should the voltmeter measure at the moment when the s witch is closed, and as a function of time thereafter?" Then from the timedependence of the voltmeter reading after the switch is opened, we'll use our usual graphical approach of converting the data into
+what we expect to be a straight line in order to find the time constant of this circuit, and from that the value of the inductance of our
+inductor.
+Where to Find Things
+We will be using the component board one last time i n this experiment. Here is where you will find the co mponents we will be
+using:
+Figure 8.1.1 – Component Board
+
+8.1.2 https://phys.libretexts.org/@go/page/23053
+This page titled 8.1: Background Material is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman
+directly on the LibreTexts platform.
+
+8.2.1 https://phys.libretexts.org/@go/page/592608.2: Activities
+Equipment
+component board
+multimeter
+power supply
+Pasco Box, voltage probe leads, and laptop
+wires
+The General Idea
+We are looking to study the exponential decay of th e current in an LR circuit. To accomplish this, we nee d to design a circuit that
+gets current flowing through an inductor connected to a resistor, and then allow it to run down. This is tr icky, because to get the
+current flowing we need a battery (power supply), but when t he decay begins, the battery can no longer be present.
+The circuit diagram in the Background Material shows us exactly how we can accomplish this: We crea te two parallel branches
+from the battery, one where current is flowing through the inductor, and one where current is flowing throug h a resistor. If we then
+suddenly open the switch to the battery, taking it ou t of the circuit (in our case, this requires unceremo niously yanking a lead out of
+the power supply), then there is current present in the induc tor when it is alone with a resistor in a circuit.
+What we will be measuring is the time-dependent volta ge drop across the inductor, the exponential behavior of which will
+mimic that of the current flowing through it. The u ltimate "problem" we are asked to solve is to determ ine the inductance of the
+inductor from voltage-vs-time data. Given that we kn ow (or can look-up) the role that inductance and resi stance play in the time
+evolution of the decaying current, an appropriate be st-fit line for the data (as well as a direct measur ement of the resistance with an
+ohmmeter) will give us what we seek.
+Here are some of the details you will need to know for the p rocedure:
+See the Background Material page for a picture of where the inductor and resistor ar e located on the component board.
+You have a multimeter with which you can measure the resis tance of the inductor, and check the indicated resistan ce for
+the resistor.
+The voltage sensors should be connected to the Pasco box in port A, and the software on the laptop that should be runni ng is
+"Inductance."
+After you get the circuit connected and start the curren t flowing for a short time, you can assume that there is a steady current
+through the inductor. All you need to do then is:
+start the recording of data in the software
+quickly pull one of the leads out of the power supply (Note: The software is written to automatically stop recor ding after one
+second, so you need to disconnect the power supply prett y soon after you start recording.)
+check to see if the data is fairly "clean" (you will have to blow-up the graph to look at its features better), an d if it is not, go
+ahead and run it again
+If you have trouble getting a graph to come out without wil d jumps (especially during the exponential decay), ask your TA for
+assistance.
+The graph is created from data points that are plotted, a nd while it should certainly look like an exponentially decaying
+function, you will need to use the actual data to create a b est-fit line and extract the information you need.
+Some Things to Think About
+There are a few details that need to be incorporated into and some things to look out for in what is otherwi se a very straightforward
+procedure.
+The inductor has an internal resistance that needs to be a ccounted for – you have a multimeter at your disposal fo r this.
+You should check to see if the minimum and maximum vol tages encountered are what you would expect them to be. The flat
+line before the switch is opened is easy enough to check, but t he sharp peak poses a little physics puzzle for you to solve.
+
+8.2.2 https://phys.libretexts.org/@go/page/59260The simplest approach for analyzing the data from the de caying voltage is something you have done many times in past labs
+(with the exception of the first two steps):
+magnify the screen until you can distinguish the data poin ts
+use the
+tool to extract the voltage values of 8 to 10 data points (It's probably a good idea to just choose the data points a t
+regular intervals)
+construct a table of raw data, adding a column for some ca lculated values that you expect to demonstrate a linear
+relationship
+plot the expected linear function in the usual graphing calculator
+run the linear regression to get the slope
+extract the value you are looking for from the result
+Be sure to include (at a minimum) a screen capture of your Pasco data, the data table you constructed, the best fi t line and their
+results, and of course your analysis discussion, in your la b report.
+Lab Report
+Craft a lab report for these activities and analysis, making sure to include every contributing group m ember's name on the front
+page. You are strongly encouraged to refer back to the Read Me as you do this, to make sure that you are not leaving out anything
+important. You should also feel free to get feedbac k from your lab TA whenever you find that your group requires clarification or
+is at an impasse.
+Every member of the group must upload a separate digi tal copy of the report to their lab assignment in Ca nvas prior to leaving the
+lab classroom. These reports are not to be written outside the lab settin g.
+This page titled 8.2: Activities is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom Weideman directly on
+the LibreTexts platform.
+
+Read Me.1 https://phys.libretexts.org/@go/page/45417Read Me: About Labs in Physics 9
+The Purpose of Labs
+There are many reasons to include a mandatory lab co mponent to the Physics 9-series. Among the benefits to a STEM education
+are:
+experiencing physical phenomena first-hand, to supplemen t the mathematically-abstract experience of lectures and p roblemsolving
+learning very broadly how one can go beyond what just intuit ively seems right and actually test an idea by devising an
+experiment
+learning experimental skills, like minimizing errors a nd controlling for irrelevant factors
+learning data analysis skills, like using graphs and statistica l examination
+learning to use uncertainty analysis to determine when a pr oposition is confirmed or refuted by the data
+Some of the earliest labs in Physics 9A are somewhat less about physics, and more about developing some of the se skills. At that
+point not a lot of physics has been learned yet, and these skills are needed throughout the 9-series.
+Experiment Types
+There are four basic varieties of experiments that will occur in these labs. Occasionally an experiment may have elements of more
+than one of these types.
+Simple, repeatable, observations – These are the most informal sorts of experiments. T hey typically do not involve a lot of
+mathematical modeling, and instead are focused on more g eneral features. The most challenging aspect of these k inds of
+experiments is objectivity – the experimenter must come into them with an open mind, simply documenting what is ob served
+without constructing elaborate explanations for what th ey are witnessing. One of the worst mistakes that can occur in these is to
+inadvertently "put your thumb on the scale" (introduce hum an error) because a certain result is expected. You shoul d go to great
+lengths to avoid this critical error.
+Confirmation of a Single Hypothesis – A prediction is made regarding the outcome of a speci fic scenario. The result is
+never exactly what is predicted, but the amount of uncertainty measure d and computed is used to determine if the experimental
+result is "close enough" to the predicted to result to be considered a confirmation.
+Independent Confirmations – Armed with the theoretical background to compute a phy sical quantity, the experimenter
+devises two separate, completely independent experiments to measure that value. Each experiment gives its own result and its
+own uncertainty range, and the goal is to check if the two e xperiments confirm the same number within these uncerta inties.
+Choose the Better Theory – Two mathematical models are proposed to explain a sing le observed phenomenon. The
+experiment seeks to determine which of the two theories be st describes the relationship between the variables present.
+Typical Elements of Lab Meetings and Reports
+Below is a list of common tasks performed in laboratory meetings, and items included in submitted lab reports:
+Short test runs of an apparatus are performed to "get a feel " for what is going to happen, and to assist in designing t he setup in
+an optimal manner. These do not include actual data ac quisition, and also should not be overused – some variatio n in results is
+expected, and variation is not an indication that the d esign needs to be tweaked indefinitely.
+Careful runs of the apparatus are performed, with multip le experimenters observing or playing a role in maint aining a smooth
+operation.
+Multiple runs are taken for each data point, to reduce sta tistical uncertainty. Sometimes the statistical uncert ainty is computed
+and included in the analysis, other times just an average result of a few runs is used (because the statistical unc ertainty only
+contributes a very small amount to the overall uncertainty). Doing this also helps weed-out weird anomalous runs where
+something unexpected and unnoticed happens (i.e. the remo val of rogue data).
+Data tables are created (and included in the lab report). These include both raw data and values computed from th at data, and
+are organized in a fashion that's easy for someone reading the lab report to review.
+
+Read Me.2 https://phys.libretexts.org/@go/page/45417Graphs (virtually always linearized – see here for more details) are produced, and best-fit curves (i.e. lines) are used to draw
+conclusions about the mathematical model used to explain the phenomenon tested in the experiment.
+Uncertainties of two types are computed:
+statistical – standard deviations of measurements with random errors introduced by the imperfect apparatus or b y human
+involvement
+estimated – educated guesses about how accurately one can expect a measuring device to function.
+Lab reports are written with contributions from all group members. The text does not need to be verbose or over ly-details, but
+should get to the point and include most or all of the follo wing points:
+what you set out to test (explain the problem)
+how you set up your apparatus to accomplish the test
+what you expect to see (hypothesis)
+your results (data tables, graphs, computations, general discussion, etc.)
+checking to see if your results confirm the hypothesis to wit hin the uncertainties (it is okay if this is not confirmed – s taying
+agnostic about the final result is an important quality)
+an accounting of the weaknesses in your apparatus or proce dure, and suggestions for how these can be improved in futur e
+attempts
+Organization of Reports
+You are not required to follow a specific template fo r the format of your lab reports. However, it might be helpful to keep things
+organized in your head to follow something resembling th is:
+Goal – Give a description of what you hope to accomplish or lear n in this particular lab.
+Hypothesis – If the lab is one in which an hypothesis is tested, then e xpressing it explicitly is a good idea.
+Procedure – Give a details description of what you did in your experi ment, from the preparation.calibration of the equipment,
+to the method of taking data. It is tempting here to some times give some numbers you recorded, but for the sake of
+organization it's a good idea to resist this. Also, while it is appropriate at times to give a short explanation of why you did
+something a certain way, this should be kept very brief, or this section will start treading heavily on the later s ection on analysis.
+Data – Display all the data you recorded, without including any d iscussion of what it means. This includes one-time
+measurements as well as tables. It's okay to include com puted values (if, for example, every recorded number n eeds to be
+squared to be put into a graph), but save the main calculati ons toward a result for the next section.
+Analysis and Conclusions – This includes everything else:
+physics that needs to be explained to get to your answer (free- body diagrams, algebra, etc.)
+graphs and calculations of final results or uncertainti es
+a description of likely sources of error, and ways to impro ve the experiment (i.e. reducing errors/uncertainties)
+final narrative that ties together the results of the ex periment vis-a-vis the goal and/or hypothesis
+A Final Word
+These labs are intentionally not set up to be "cookbo ok" exercises. There will be some guiding questions to answer in the lab
+report, and some hints for how to proceed, but for th e most part, the design of the experiment and the la yout of the lab reports are
+up to you (your time is limited, so don't get too fa ncy with this). Keep in mind that you have two goals: The first is to convince
+yourself of the conclusion (i.e. perform a detail-or iented experiment), and the second is to write a clear lab report that conveys a
+convincing argument to the reader. Pro-tip for succes sful experimenters: Try to be more skeptical of your own work than the
+audience you seek to convince.
+This page titled Read Me: About Labs in Physics 9 is shared under a CC BY-SA 4.0 license and was authored, remixed, and/or curated by Tom
+Weideman directly on the LibreTexts platform.
+
+1 https://phys.libretexts.org/@go/page/23091Index
+
+1 https://phys.libretexts.org/@go/page/29063Glossary
+Sample Word 1 | Sample Definition 1
+
+1 https://phys.libretexts.org/@go/page/65510Detailed Licensing
+Overview
+Title: UCD: Physics 9C Lab
+Webpages: 49
+All licenses found:
+CC BY-SA 4.0: 81.6% (40 pages)
+Undeclared: 18.4% (9 pages)
+By Page
+UCD: Physics 9C Lab - CC BY-SA 4.0
+Front Matter - Undeclared
+TitlePage - Undeclared
+InfoPage - Undeclared
+Table of Contents - Undeclared
+Licensing - Undeclared
+Lab 1: Static Electric Charge - CC BY-SA 4.0
+1.1: Background Material - CC BY-SA 4.0
+1.1: Background Material (remote) - CC BY-SA 4.0
+1.2: Activities - CC BY-SA 4.0
+1.2: Activities (remote) - CC BY-SA 4.0
+Lab 2: Electrostatic Potential - CC BY-SA 4.0
+2.1: Background Material - CC BY-SA 4.0
+2.1: Background Material (remote) - CC BY-SA 4.0
+2.2: Activities - CC BY-SA 4.0
+2.2: Activities (remote) - CC BY-SA 4.0
+Lab 3: Capacitors - CC BY-SA 4.0
+3.1: Background Material - CC BY-SA 4.0
+3.1: Background Material (Remote) - CC BY-SA 4.0
+3.2: Activities - CC BY-SA 4.0
+3.2: Activities (remote) - CC BY-SA 4.0
+Lab 4: DC Circuits - CC BY-SA 4.0
+4.1: Background Material - CC BY-SA 4.0
+4.1: Background Material (remote) - CC BY-SA 4.04.2: Activities - CC BY-SA 4.0
+4.2: Activities (remote) - CC BY-SA 4.0
+Lab 5: RC Circuits - CC BY-SA 4.0
+5.1: Background Material - CC BY-SA 4.0
+5.1: Background Material (Remote) - CC BY-SA 4.0
+5.2: Activities - CC BY-SA 4.0
+5.2: Activities (Remote) - CC BY-SA 4.0
+Lab 6: Engineering with Magnetism - CC BY-SA 4.0
+6.1: Background Material - CC BY-SA 4.0
+6.1: Background Material (Remote) - CC BY-SA 4.0
+6.2: Activities - CC BY-SA 4.0
+6.2: Activities (Remote) - CC BY-SA 4.0
+Lab 7: Electromagnetic Induction - CC BY-SA 4.0
+7.1: Background Material - CC BY-SA 4.0
+7.2: Activities - CC BY-SA 4.0
+7.2: Activities (Remote) - CC BY-SA 4.0
+Lab 8: Inductance - CC BY-SA 4.0
+8.1: Background Material - CC BY-SA 4.0
+8.2: Activities - CC BY-SA 4.0
+8.2: Activities (remote) - CC BY-SA 4.0
+Read Me: About Labs in Physics 9 - CC BY-SA 4.0
+Back Matter - Undeclared
+Index - Undeclared
+Glossary - Undeclared
+Detailed Licensing - Undeclared
