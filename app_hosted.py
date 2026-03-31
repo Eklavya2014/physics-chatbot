@@ -1,8 +1,6 @@
 import streamlit as st
 import os
 import datetime
-import streamlit.components.v1
-
 st.set_page_config(
     page_title="PhysIQ — Science & English Tutor",
     page_icon="⚛️",
@@ -389,7 +387,7 @@ def get_confidence(results):
 
 # ── Feature 1: Normal Ask ─────────────────────────────────────
 def ask_question(question, vs, history_text):
-    results = vs.similarity_search_with_score(question, k=4)
+    results = vs.similarity_search_with_score(question, k=4) if vs else []
     conf_label, conf_class = get_confidence(results)
     context = "\n\n".join([r[0].page_content for r in results]) if results else ""
 
@@ -400,6 +398,8 @@ def ask_question(question, vs, history_text):
                         "informal", "comprehension", "figure of speech", "metaphor", "simile",
                         "alliteration", "rebuttal", "thesis", "introduction", "conclusion"]
     is_english = any(w in question.lower() for w in english_keywords)
+
+    is_creative = st.session_state.get("creative_mode", False)
 
     if is_english:
         system = """You are an expert English Language and Literature teacher and creative writing coach.
@@ -419,9 +419,6 @@ Always follow proper writing conventions and rules. When asked to write somethin
 
 If asked to write an essay/letter/story etc., actually WRITE it — do not just explain how to write it.
 Be creative, use vivid language, strong vocabulary, and varied sentence structures."""
-    else:
-        is_creative = st.session_state.get("creative_mode", False)
-    is_coding = st.session_state.get("coding_mode", False)
     if is_creative:
         system = """You are a brilliant, creative English writing expert with the literary sensibility of a published author and the precision of an English professor.
 You write with vivid imagery, original metaphors, varied sentence rhythms, and emotional intelligence.
@@ -513,64 +510,118 @@ Now explain this simply, like you're talking to a curious 12-year-old:"""
 # ── Feature 4: Animated Teaching ─────────────────────────────
 def generate_animation_script(question, answer):
     """Ask AI to generate a JSON animation script for the canvas animator."""
-    system = """You are a scientific animation director. Given a question and its answer,
-produce a JSON animation script that visually explains the concept.
+    system = """You are a scientific animation director for an advanced educational platform.
+Given a question and answer, produce a rich JSON animation scene using multiple objects.
 
-Return ONLY valid JSON, nothing else. Choose the best animation type:
-- "atom": for atomic structure, valency, electron config, periodic table
-- "molecule": for molecular structure, bonding, VSEPR, compounds
-- "wave": for waves, sound, light waves, EM spectrum, SHM (wave form)
-- "circuit": for electric circuits, Ohm's law, current flow
-- "forces": for Newton's laws, vectors, force diagrams
-- "thermodynamics": for gas laws, kinetic theory, temperature
-- "projectile": for projectile motion, kinematics
-- "light": for refraction, reflection, Snell's law, optics
-- "electromagnetic": for electric fields, magnetic fields, charges
-- "reaction": for chemical reactions, equations, reactants/products
-- "pendulum": for pendulum, SHM, oscillations
-- "spring": for spring-mass system, Hooke's law, SHM
+CRITICAL: Return ONLY valid JSON. No markdown, no explanation, just JSON.
 
-JSON SCHEMAS by type:
+The JSON format uses a SCENE GRAPH — an array of objects you can freely combine and position:
 
-ATOM: {"type":"atom","subtitle":"...","protons":N,"neutrons":N,"nucleus_radius":30,
-"shells":[[e1,e2,...],[...]],"info_text":"...","legend":[{"color":"#hex","label":"..."}]}
-shells is array of arrays, each inner array has number of electrons per shell.
-Example for Carbon: "shells":[[2],[4]] means 2 in first shell, 4 in second.
+{
+  "subtitle": "Short description",
+  "info_text": "Educational explanation shown at bottom (under 120 words)",
+  "time_scale": 1.0,
+  "bg_gradient": "#color or null",
+  "legend": [{"color": "#hex", "label": "name"}],
+  "steps": [
+    {"title": "Step 1", "info": "What is happening in step 1..."},
+    {"title": "Step 2", "info": "What is happening in step 2..."}
+  ],
+  "step_duration": 5,
+  "connections": [
+    {"from": 0, "to": 2, "type": "arrow", "color": "#color", "label": "label"}
+  ],
+  "objects": [
+    { object1 },
+    { object2 },
+    ...many more objects as needed...
+  ]
+}
 
-MOLECULE: {"type":"molecule","subtitle":"...","atoms":[{"symbol":"O","x":0,"y":0,"color":"#hex","label":"...","radius":22}],
-"bonds":[{"from":0,"to":1,"order":1}],"info_text":"..."}
-x,y in range -1 to 1. order 1=single, 2=double, 3=triple.
+POSITIONING: Use x,y in scene units (-1 to 1, y up) OR x_px,y_px in pixels.
+Use x: -0.5 for left, 0 for center, 0.5 for right. y: 0.3 for above center, -0.3 for below.
 
-WAVE: {"type":"wave","subtitle":"...","waves":[{"color":"#hex","amplitude":60,"wavelength":150,
-"speed":0.03,"label":"Wave name","y_offset":0,"show_wavelength":true}],"info_text":"..."}
+AVAILABLE OBJECT TYPES (create as many as needed):
 
-CIRCUIT: {"type":"circuit","subtitle":"...","nodes":[{"x":-0.8,"y":-0.5},{"x":0.8,"y":-0.5},{"x":0.8,"y":0.5},{"x":-0.8,"y":0.5}],
-"wires":[{"from":0,"to":1,"speed":0.015}],"components":[{"type":"battery","x":-0.8,"y":0,"voltage":9,"label":"9V"},{"type":"resistor","x":0,"y":-0.5,"resistance":100}],"info_text":"..."}
+PARTICLES AND ATOMS:
+{"type":"atom","x":0,"y":0,"r":0.18,"protons":6,"neutrons":6,"shells":[[2],[4]],"animation":"none"}
+{"type":"nucleus","x":0,"y":0,"r":0.05,"protons":6,"neutrons":6}
+{"type":"electron","x":0.2,"y":0,"r":0.025,"color":"#4da6ff","animation":"orbit","orbit_r":0.15,"speed":0.8,"phase":0}
+{"type":"proton","x":0,"y":0,"r":0.03,"animation":"pulse"}
+{"type":"neutron","x":0.02,"y":0.02,"r":0.03}
+{"type":"charge","x":0,"y":0,"r":0.04,"color":"#ff5555","sign":"+","field_lines":6,"animation":"pulse"}
 
-FORCES: {"type":"forces","subtitle":"...","object":{"x":0.5,"y":0.5,"label":"Block","mass":"2kg"},
-"forces":[{"label":"Weight","angle":90,"magnitude":100,"color":"#ff5555","value":"20N"},{"label":"Normal","angle":-90,"magnitude":100,"color":"#44ff88","value":"20N"}],"info_text":"..."}
+SHAPES AND CONTAINERS:
+{"type":"circle","x":0,"y":0,"r":0.08,"color":"#4da6ff","text":"H₂O","text_size":14,"stroke":"#white","animation":"float"}
+{"type":"rect","x":0,"y":0,"w":0.2,"h":0.1,"color":"#4da6ff","corner_radius":6,"text":"Block m=2kg","fill_alpha":0.8}
+{"type":"gas_particles","x":0,"y":0,"count":25,"temperature":1.5,"box_w":0.35,"box_h":0.25,"color":"#4da6ff"}
 
-THERMODYNAMICS: {"type":"thermodynamics","subtitle":"...","num_particles":30,"temperature":300,
-"pressure":"P","volume":"V","moles":"n","label":"Gas at 300K","info_text":"..."}
+LABELS AND FORMULAS:
+{"type":"label","x":0,"y":0.4,"text":"Hydrogen Atom (Z=1)","color":"#58a6ff","size":15}
+{"type":"formula_box","x":0,"y":-0.4,"formula":"F = ma","description":"Newton\'s Second Law","width":0.3,"height":0.1,"color":"#ffd166"}
+{"type":"text","x":-0.6,"y":0.35,"text":"n=1","color":"#8b949e","size":11}
 
-PROJECTILE: {"type":"projectile","subtitle":"...","initial_velocity":25,"angle":45,"gravity":9.8,"info_text":"..."}
+ARROWS AND CONNECTIONS:
+{"type":"arrow","x":0,"y":0,"tx":0.3,"ty":0,"color":"#ff5555","label_text":"Force F","line_width":2.5}
+{"type":"double_arrow","x":-0.2,"y":-0.3,"tx":0.2,"ty":-0.3,"color":"#ffd166","label_text":"Range"}
+{"type":"orbit_path","x":0,"y":0,"r":0.18,"color":"#4da6ff","y_ratio":0.55}
 
-LIGHT: {"type":"light","subtitle":"...","n1":1.0,"n2":1.5,"incident_angle":45,"info_text":"..."}
+WAVES AND FIELDS:
+{"type":"wave","x":0,"y":0.1,"width":0.9,"amp":0.07,"wavelength":0.25,"speed":40,"color":"#06d6a0","label_top":"Transverse Wave","animation":"none"}
+{"type":"wave","x":0,"y":-0.1,"width":0.9,"amp":0.05,"wavelength":0.2,"speed":50,"color":"#ff5555"}
+{"type":"sine_wave_3d","x":0,"y":0,"wavelength_px":null,"amp_e":null,"width":0.8,"speed":45}
+{"type":"magnetic_field","x":0,"y":0,"cols":5,"rows":4,"direction":"out","color":"#4da6ff","spacing_x":0.1,"spacing_y":0.09}
+{"type":"electric_field_line","x":0,"y":0.2,"color":"#ff5555","len":0.15,"angle":90}
 
-ELECTROMAGNETIC: {"type":"electromagnetic","subtitle":"...","charge_pattern":"alternating",
-"rows":3,"cols":5,"label":"Electric Field","info_text":"..."}
+CIRCUIT COMPONENTS:
+{"type":"wire","x":-0.5,"y":0.3,"tx":0.5,"ty":0.3,"animate_current":true,"speed":0.5,"electron_count":4}
+{"type":"battery_obj","x":-0.5,"y":0,"voltage":"9V","color":"#ffd166"}
+{"type":"resistor_obj","x":0,"y":0.3,"len":0.2,"color":"#ff8c42","label_text":"R=100Ω"}
+{"type":"capacitor_obj","x":0.3,"y":0.3,"color":"#4da6ff"}
+{"type":"inductor_obj","x":-0.2,"y":-0.3,"len":0.2,"color":"#ff8c42"}
 
-REACTION: {"type":"reaction","subtitle":"...","equation":"2H2 + O2 → 2H2O",
-"reactants":[{"symbol":"H₂","formula":"2H₂","color":"#4da6ff"},{"symbol":"O₂","formula":"O₂","color":"#ff5555"}],
-"products":[{"symbol":"H₂O","formula":"2H₂O","color":"#44ffaa"}],
-"catalyst":"Pt catalyst","conditions":"High temp","info_text":"..."}
+MOTION AND MECHANICS:
+{"type":"projectile_obj","x":-0.6,"y":-0.2,"v0":18,"angle":45,"gravity":9.8,"scale":null,"speed":0.7}
+{"type":"pendulum_obj","x":0,"y":0.35,"length":0.28,"amplitude":28,"color":"#ff5555","show_formula":true}
+{"type":"spring_obj","x":-0.4,"y":0,"tx":0.1,"ty":0,"coils":10,"color":"#8b949e","animation":"oscillate_x","amp":0.12,"freq":2}
 
-PENDULUM: {"type":"pendulum","subtitle":"...","length":200,"amplitude":30,"info_text":"..."}
+OPTICS:
+{"type":"snell_diagram","x":0,"y":0,"n1":1.0,"n2":1.5,"incident_angle":40,"ray_len":null}
+{"type":"photon","x":-0.5,"y":0.1,"speed":80,"angle":0,"color":"#ffffff"}
 
-SPRING: {"type":"spring","subtitle":"...","spring_constant":10,"mass":1,"amplitude":80,"info_text":"..."}
+BIOLOGY:
+{"type":"dna_helix","x":0,"y":0,"height":0.5,"width":0.1,"turns":4}
+{"type":"neuron","x":-0.1,"y":0,"color":"#4da6ff","dendrites":5}
 
-Pick the most appropriate type. Make the info_text educational and concise (under 100 words).
-Return ONLY the JSON object."""
+ENERGY LEVELS:
+{"type":"energy_level","x":0,"y":-0.2,"width":0.4,"energy_label":"E₁=-13.6eV","color":"#4da6ff","label_text":"n=1 ground state"}
+{"type":"electron_jump","x":0,"y":0,"levels":[-0.3,-0.15,0,0.15],"period":5}
+
+MOLECULAR BONDS:
+{"type":"molecular_bond","x":-0.1,"y":0,"tx":0.1,"ty":0,"order":2,"bond_color":"#ffd166"}
+
+CHARTS:
+{"type":"axis","x":0,"y":-0.1,"length":0.45,"x_label":"t (s)","y_label":"x (m)","ticks":4}
+{"type":"graph_line","x":0,"y":-0.1,"points":[[0,0],[1,0.5],[2,1.8],[3,4],[4,7]],"scale_x":null,"scale_y":null,"color":"#4da6ff"}
+{"type":"graph_bar","x":0,"y":0,"bars":[{"label":"H","value":10,"color":"#4da6ff"},{"label":"He","value":7,"color":"#ff5555"}],"max_height":0.3}
+
+ANIMATIONS available for any object:
+"none" | "orbit" (use orbit_r, speed, phase) | "oscillate_x" (use amp, freq) |
+"oscillate_y" | "pulse" | "float" | "spin" (use speed) | "blink" (use freq) |
+"bounce" | "wave_travel"
+
+BUILD COMPLEX SCENES by combining many objects. Examples:
+- Hydrogen atom: nucleus + orbit_path + electron orbiting + labels + formula_box + energy levels
+- Circuit: multiple wires + battery + resistor + capacitor + label for each + formula box with V=IR
+- Wave: two waves + axis + labels for each property + arrows showing differences
+- Newton laws: rect (block) + multiple force arrows + formula box + axis + labels
+- DNA: dna_helix + labels for each part + formula box + legend
+
+Always create AT LEAST 6-12 objects for a rich educational scene.
+Add labels, formula_boxes, and axes to make it truly educational.
+Use "steps" array to create a guided walkthrough of the concept.
+Return ONLY the JSON object.
+"""
 
     user = f"""Question: {question}
 
@@ -584,36 +635,72 @@ Generate the animation JSON for this concept:"""
         return None
     # Extract JSON from response
     raw = raw.strip()
-    # Find JSON object
     start = raw.find('{')
     end   = raw.rfind('}') + 1
     if start == -1 or end == 0:
         return None
     try:
-        return json.loads(raw[start:end])
-    except:
+        data = json.loads(raw[start:end])
+        # Ensure it has objects array (new format)
+        if 'objects' not in data and 'type' in data:
+            # Convert old format to new scene graph format
+            data = convert_old_to_new(data)
+        return data
+    except Exception as e:
         return None
+
+def convert_old_to_new(old):
+    """Convert legacy animation format to new scene-graph format."""
+    t = old.get('type','atom')
+    objects = []
+    subtitle = old.get('subtitle','Animation')
+    info = old.get('info_text','')
+    
+    if t=='atom':
+        objects.append({"type":"atom","x":0,"y":0.05,"r":0.2,
+            "protons":old.get('protons',1),"neutrons":old.get('neutrons',0),
+            "shells":old.get('shells',[[1]])})
+        objects.append({"type":"label","x":0,"y":-0.4,"text":subtitle,"color":"#58a6ff","size":14})
+    elif t=='wave':
+        for i,w in enumerate(old.get('waves',[])):
+            objects.append({"type":"wave","x":0,"y":w.get('y_offset',0)*0.3,
+                "width":0.85,"amp":w.get('amplitude',60)/400,
+                "wavelength":w.get('wavelength',150)/400,"speed":w.get('speed',0.03)*2000,
+                "color":w.get('color','#44ffaa'),"label_top":w.get('label','')})
+    else:
+        objects.append({"type":"label","x":0,"y":0,"text":subtitle,"color":"#58a6ff","size":16})
+        objects.append({"type":"formula_box","x":0,"y":-0.25,"formula":info[:40] if info else t,
+            "color":"#4da6ff","width":0.5,"height":0.12})
+    
+    return {"subtitle":subtitle,"info_text":info,"objects":objects,
+            "legend":old.get('legend',[]),"bg_gradient":None}
 
 def show_animator_panel(animation_data):
     """Render the HTML5 Canvas animator in Streamlit."""
-    import json, urllib.parse
-    encoded = urllib.parse.quote(json.dumps(animation_data))
+    import json
     with open("animator.html", "r") as f:
         html_content = f.read()
     # Inject data directly into the HTML
     inject_script = f"""
 <script>
 window.addEventListener('load', function() {{
-  try {{
-    const data = {json.dumps(animation_data)};
-    scene = data;
-    if(scene._particles) delete scene._particles;
-    document.getElementById('loading').style.display='none';
-    document.getElementById('subtitle-text').textContent = scene.subtitle||scene.type||'Animation';
-    document.getElementById('info-panel').textContent = scene.info_text||'';
-    if(scene.legend) updateLegend(scene.legend);
-  }} catch(e) {{ console.error(e); }}
-}}, 500);
+  setTimeout(function() {{
+    try {{
+      const data = {json.dumps(animation_data)};
+      if (typeof loadScene === 'function') {{
+        loadScene(data);
+      }} else {{
+        scene = data;
+        const loading = document.getElementById('loading');
+        const subtitle = document.getElementById('subtitle');
+        const infoPanel = document.getElementById('infopanel');
+        if (loading) loading.style.display = 'none';
+        if (subtitle) subtitle.textContent = scene.subtitle || scene.type || 'Animation';
+        if (infoPanel) infoPanel.textContent = scene.info_text || '';
+      }}
+    }} catch(e) {{ console.error(e); }}
+  }}, 500);
+}});
 </script>"""
     html_content = html_content.replace('</body>', inject_script + '</body>')
     st.components.v1.html(html_content, height=520, scrolling=False)
