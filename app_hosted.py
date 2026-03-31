@@ -36,7 +36,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "show_animator": False, "animation_data": None, "quiz_state": None, "quiz_active": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "animation_data": None, "quiz_state": None, "quiz_active": False,
 }
 for k, v in defaults.items():
     if k not in st.session_state:
@@ -388,7 +388,7 @@ def get_confidence(results):
     else:             return "🔴 Very Low",            "conf-low"
 
 # ── Feature 1: Normal Ask ─────────────────────────────────────
-def ask_question(question, vs, history_text, is_creative=False):
+def ask_question(question, vs, history_text):
     results = vs.similarity_search_with_score(question, k=4)
     conf_label, conf_class = get_confidence(results)
     context = "\n\n".join([r[0].page_content for r in results]) if results else ""
@@ -421,6 +421,7 @@ If asked to write an essay/letter/story etc., actually WRITE it — do not just 
 Be creative, use vivid language, strong vocabulary, and varied sentence structures."""
     else:
         is_creative = st.session_state.get("creative_mode", False)
+    is_coding = st.session_state.get("coding_mode", False)
     if is_creative:
         system = """You are a brilliant, creative English writing expert with the literary sensibility of a published author and the precision of an English professor.
 You write with vivid imagery, original metaphors, varied sentence rhythms, and emotional intelligence.
@@ -969,6 +970,86 @@ def show_quiz_ui():
                 st.rerun()
 
 
+
+# ══════════════════════════════════════════════════════════════
+#  CODING CONNECTOR
+# ══════════════════════════════════════════════════════════════
+
+CODING_LANGUAGES = {
+    "python":"Python","java":"Java","c++":"C++","cpp":"C++",
+    "c#":"C#","csharp":"C#","javascript":"JavaScript","js":"JavaScript",
+    "typescript":"TypeScript","ts":"TypeScript","roblox":"Roblox Lua",
+    "lua":"Lua","rust":"Rust","go":"Go","golang":"Go","swift":"Swift",
+    "kotlin":"Kotlin","sql":"SQL","html":"HTML","css":"CSS",
+    "react":"React/JSX","php":"PHP","ruby":"Ruby","bash":"Bash/Shell",
+    "r":"R","matlab":"MATLAB","dart":"Dart","flutter":"Flutter",
+}
+
+CODING_TRIGGERS = [
+    "write code","write a","create a","build a","make a","develop",
+    "program","script","function","class","implement","code for",
+    "generate code","write me","create me","can you code","how to code",
+    "ursina","pygame","flask","fastapi","django","react","pandas",
+    "numpy","tensorflow","pytorch","opencv","roblox","unity","game",
+]
+
+def is_coding_request(message):
+    msg = message.lower()
+    # Check if any language mentioned
+    lang_found = any(lang in msg for lang in CODING_LANGUAGES.keys())
+    # Check if coding trigger present
+    trigger_found = any(t in msg for t in CODING_TRIGGERS)
+    return lang_found or trigger_found or st.session_state.get("coding_mode", False)
+
+def detect_language(message):
+    msg = message.lower()
+    for key, lang in CODING_LANGUAGES.items():
+        if key in msg:
+            return lang
+    return "Python"  # default
+
+def generate_code(question, vs, language="Python"):
+    results = vs.similarity_search_with_score(question, k=3) if vs else []
+    context = "\n\n".join([r[0].page_content for r in results]) if results else ""
+
+    system = f"""You are an elite {language} programmer with 15+ years of experience.
+You write clean, efficient, well-commented, production-quality code.
+RULES:
+1. Write COMPLETE, WORKING code — never truncate or use placeholder comments like "# add code here"
+2. Include ALL necessary imports at the top
+3. Add clear comments explaining complex logic
+4. Follow best practices and design patterns for {language}
+5. If the user asks for a game/app, write the FULL implementation
+6. You can write up to 2000 lines if needed — never cut short
+7. After the code, write a brief explanation of how it works
+8. If using a library (ursina, pygame, pandas etc), use it correctly with real API calls
+9. Make the code actually runnable with zero modifications needed
+10. For Roblox Lua, use proper Roblox API (Services, Instances, Events)
+
+LIBRARIES YOU KNOW PERFECTLY:
+Python: numpy, pandas, matplotlib, seaborn, scikit-learn, tensorflow, pytorch,
+        flask, fastapi, django, sqlalchemy, pygame, ursina, opencv, requests,
+        beautifulsoup4, pillow, pydantic, asyncio, aiohttp, celery, redis,
+        plotly, dash, streamlit, gradio, transformers, langchain, openai
+Java: Spring Boot, Hibernate, Maven, Gradle, JUnit, Mockito
+C++: STL, Boost, OpenGL, SDL2, SFML, CMake
+JavaScript: React, Vue, Angular, Express, Next.js, Node.js, TypeScript
+Roblox Lua: All Roblox services, DataStore, TweenService, RemoteEvents
+Rust: tokio, serde, actix-web, reqwest
+Go: gin, echo, gorm, cobra
+
+Write the code now:"""
+
+    user = f"""Relevant documentation:
+{context}
+
+Task: {question}
+
+Write complete, working {language} code:"""
+
+    return call_hf(system, user, max_tokens=2000)
+
+
 # ══════════════════════════════════════════════════════════════
 #  MAIN APP
 # ══════════════════════════════════════════════════════════════
@@ -1034,19 +1115,27 @@ def show_app():
 
         # ── Numerical Solver Panel ─────────────────────────────
         # ── Creative Mode Toggle ───────────────────────────────
-        st.markdown('<div class="section-label">✍️ Writing Mode</div>', unsafe_allow_html=True)
-        creative_on = st.toggle(
-            "🎨 Creative / English Mode",
-            value=st.session_state.creative_mode,
-            help="Turn ON for essays, debates, stories, poems, letters. Turn OFF for Physics & Chemistry."
-        )
+        st.markdown('<div class="section-label">🎛️ Mode Select</div>', unsafe_allow_html=True)
+        creative_on = st.toggle("✍️ Creative/English Mode", value=st.session_state.creative_mode,
+            help="Essays, debates, letters, stories, poems")
         if creative_on != st.session_state.creative_mode:
             st.session_state.creative_mode = creative_on
+            if creative_on: st.session_state.coding_mode = False
             st.rerun()
+
+        coding_on = st.toggle("💻 Coding Mode", value=st.session_state.coding_mode,
+            help="Python, Java, C++, C#, Roblox Lua, JS and more")
+        if coding_on != st.session_state.coding_mode:
+            st.session_state.coding_mode = coding_on
+            if coding_on: st.session_state.creative_mode = False
+            st.rerun()
+
         if st.session_state.creative_mode:
-            st.success("✍️ Creative Mode ON — Ask me to write essays, debates, letters, stories, poems!")
+            st.success("✍️ English/Creative Mode ON")
+        elif st.session_state.coding_mode:
+            st.success("💻 Coding Mode ON — Ask me to write code in any language!")
         else:
-            st.info("⚛️ Science Mode — Ask Physics & Chemistry questions")
+            st.info("⚛️ Science Mode")
 
         st.divider()
         st.markdown('<div class="section-label">🔢 Numerical Solver</div>', unsafe_allow_html=True)
@@ -1286,8 +1375,28 @@ def show_app():
                     st.error("Could not generate quiz. Please try again with a specific topic.")
             st.rerun()
         else:
-            # ── Normal question ───────────────────────────────
-            st.session_state.messages.append({"role": "user", "content": question})
+            # ── Coding request ────────────────────────────────
+            if is_coding_request(question):
+                lang = detect_language(question)
+                st.session_state.messages.append({"role": "user", "content": question})
+                save_message("user", question)
+                with st.chat_message("user"):
+                    st.write(question)
+                with st.chat_message("assistant"):
+                    with st.spinner(f"💻 Writing {lang} code..."):
+                        code_answer = generate_code(question, vs, lang)
+                    if code_answer:
+                        st.markdown(code_answer)
+                        st.session_state.messages.append({
+                            "role":"assistant","content":code_answer,
+                            "confidence":"💻 Code","conf_class":"conf-high"
+                        })
+                        save_message("assistant", code_answer, "code")
+                        st.session_state.pending_feedback = {"question":question,"answer":code_answer}
+                st.rerun()
+            else:
+                # ── Normal question ─────────────────────────────
+                st.session_state.messages.append({"role": "user", "content": question})
         save_message("user", question)
 
         with st.chat_message("user"):
@@ -1300,7 +1409,7 @@ def show_app():
 
         with st.chat_message("assistant"):
             with st.spinner("🔁 Thinking..."):
-                answer, conf_label, conf_class = ask_question(question, vs, history_text, st.session_state.get("creative_mode", False))
+                answer, conf_label, conf_class = ask_question(question, vs, history_text)
                 st.write(answer)
                 st.markdown(f'<span class="{conf_class}">📊 {conf_label}</span>', unsafe_allow_html=True)
 
