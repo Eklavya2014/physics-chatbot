@@ -1,0 +1,615 @@
+ROBLOX LUA - COMPLETE GAME DEVELOPMENT GUIDE
+=============================================
+
+ROBLOX LUA BASICS:
+Roblox uses Luau (typed Lua). Scripts run on Server (Script) or Client (LocalScript).
+RemoteEvents and RemoteFunctions communicate between server and client.
+Services accessed via game:GetService("ServiceName")
+
+-- Variables
+local x = 10            -- number
+local name = "Player"   -- string
+local flag = true       -- boolean
+local nothing = nil     -- nil
+local t = {1,2,3}       -- table (array)
+local d = {key="val"}   -- table (dictionary)
+
+-- Types (Roblox specific)
+local v3 = Vector3.new(0, 10, 0)
+local v2 = Vector2.new(100, 50)
+local cf = CFrame.new(0,5,0)
+local color = Color3.new(1, 0, 0)        -- RGB 0-1
+local color2 = Color3.fromRGB(255,0,0)   -- RGB 0-255
+local ud = UDim2.new(0.5, 0, 0.5, 0)    -- scale+offset
+
+SERVICES:
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerStorage = game:GetService("ServerStorage")
+local Workspace = game:GetService("Workspace")
+local SoundService = game:GetService("SoundService")
+local DataStoreService = game:GetService("DataStoreService")
+local MarketplaceService = game:GetService("MarketplaceService")
+local TeleportService = game:GetService("TeleportService")
+local ChatService = game:GetService("Chat")
+local HttpService = game:GetService("HttpService")
+local PhysicsService = game:GetService("PhysicsService")
+local CollectionService = game:GetService("CollectionService")
+
+PLAYER MANAGEMENT:
+local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(player)
+    print(player.Name .. " joined!")
+    local leaderstats = Instance.new("Folder")
+    leaderstats.Name = "leaderstats"
+    leaderstats.Parent = player
+    
+    local coins = Instance.new("IntValue")
+    coins.Name = "Coins"
+    coins.Value = 0
+    coins.Parent = leaderstats
+    
+    player.CharacterAdded:Connect(function(character)
+        local humanoid = character:WaitForChild("Humanoid")
+        humanoid.Died:Connect(function()
+            print(player.Name .. " died!")
+        end)
+    end)
+end)
+
+Players.PlayerRemoving:Connect(function(player)
+    print(player.Name .. " left!")
+    -- save data here
+end)
+
+-- Get all players
+for _, player in ipairs(Players:GetPlayers()) do
+    print(player.Name)
+end
+
+-- Local player (LocalScript only)
+local localPlayer = Players.LocalPlayer
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local rootPart = character:WaitForChild("HumanoidRootPart")
+
+INSTANCES AND PARTS:
+-- Create part
+local part = Instance.new("Part")
+part.Name = "MyPart"
+part.Size = Vector3.new(4, 1, 4)
+part.Position = Vector3.new(0, 5, 0)
+part.Color = Color3.fromRGB(255, 0, 0)
+part.Material = Enum.Material.SmoothPlastic
+part.Anchored = true
+part.CanCollide = true
+part.Transparency = 0.5
+part.Parent = workspace
+
+-- Models
+local model = Instance.new("Model")
+model.Name = "Building"
+model.Parent = workspace
+
+-- Find instances
+local part = workspace:FindFirstChild("MyPart")
+local part2 = workspace:WaitForChild("MyPart", 5)  -- wait up to 5 seconds
+local parts = workspace:GetChildren()
+local allParts = workspace:GetDescendants()
+local tagged = CollectionService:GetTagged("Enemy")
+
+-- Destroy
+part:Destroy()
+
+TWEENS AND ANIMATIONS:
+local TweenService = game:GetService("TweenService")
+
+local goal = {Position = Vector3.new(0, 20, 0), Color = Color3.new(0,1,0)}
+local info = TweenInfo.new(
+    2,                          -- time
+    Enum.EasingStyle.Bounce,   -- style
+    Enum.EasingDirection.Out,  -- direction
+    0,                          -- repeat count (-1 = infinite)
+    false,                      -- reverse
+    0                           -- delay
+)
+local tween = TweenService:Create(part, info, goal)
+tween:Play()
+tween.Completed:Connect(function() print("Tween done!") end)
+tween:Pause(); tween:Cancel()
+
+-- Animations
+local AnimationController = humanoid.Animator
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://YOUR_ANIM_ID"
+local track = AnimationController:LoadAnimation(animation)
+track:Play()
+track:Stop()
+track.Stopped:Connect(function() print("Anim stopped") end)
+
+REMOTEEVENTS (Server-Client Communication):
+-- In ReplicatedStorage, create RemoteEvent named "DamageEvent"
+
+-- Server Script (fires to client)
+local event = game.ReplicatedStorage.DamageEvent
+event:FireClient(player, damage)     -- fire to one player
+event:FireAllClients(damage)         -- fire to all
+
+-- LocalScript (fires to server)
+event:FireServer(data)
+
+-- Server Script (listens)
+event.OnServerEvent:Connect(function(player, data)
+    print(player.Name, "sent:", data)
+end)
+
+-- LocalScript (listens)
+event.OnClientEvent:Connect(function(data)
+    print("Got from server:", data)
+end)
+
+-- RemoteFunction (returns value)
+local func = game.ReplicatedStorage.GetData
+-- Server
+func.OnServerInvoke = function(player, request)
+    return {coins=100, level=5}
+end
+-- Client
+local result = func:InvokeServer("getStats")
+
+DATASTORE (Save Player Data):
+local DataStoreService = game:GetService("DataStoreService")
+local playerData = DataStoreService:GetDataStore("PlayerData")
+
+local function saveData(player)
+    local data = {
+        coins = player.leaderstats.Coins.Value,
+        level = player.leaderstats.Level.Value
+    }
+    local success, err = pcall(function()
+        playerData:SetAsync("Player_"..player.UserId, data)
+    end)
+    if not success then warn("Save failed:", err) end
+end
+
+local function loadData(player)
+    local success, data = pcall(function()
+        return playerData:GetAsync("Player_"..player.UserId)
+    end)
+    if success and data then
+        player.leaderstats.Coins.Value = data.coins or 0
+        player.leaderstats.Level.Value = data.level or 1
+    end
+end
+
+-- Also use UpdateAsync for atomic updates
+playerData:UpdateAsync("Player_"..userId, function(oldData)
+    oldData = oldData or {coins=0}
+    oldData.coins += 100
+    return oldData
+end)
+
+GAME MECHANICS:
+-- Touched event
+part.Touched:Connect(function(hit)
+    local humanoid = hit.Parent:FindFirstChild("Humanoid")
+    if humanoid then
+        humanoid:TakeDamage(20)
+    end
+end)
+
+-- Raycast
+local origin = rootPart.Position
+local direction = rootPart.CFrame.LookVector * 50
+local raycastParams = RaycastParams.new()
+raycastParams.FilterDescendantsInstances = {character}
+raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+
+local result = workspace:Raycast(origin, direction, raycastParams)
+if result then
+    print("Hit:", result.Instance.Name, "at", result.Position)
+end
+
+-- RunService loops
+RunService.Heartbeat:Connect(function(deltaTime)
+    -- runs every frame (server + client)
+    character.HumanoidRootPart.CFrame *= CFrame.new(0, deltaTime*5, 0)
+end)
+
+RunService.RenderStepped:Connect(function(deltaTime)
+    -- runs before frame render (client only)
+end)
+
+-- Coroutines
+local co = coroutine.create(function()
+    while true do
+        print("Tick")
+        task.wait(1)
+    end
+end)
+coroutine.resume(co)
+
+-- Better: use task library
+task.spawn(function()     -- fire and forget
+    task.wait(2)
+    print("After 2 seconds")
+end)
+task.delay(3, function()  -- delayed execution
+    print("After 3 seconds")
+end)
+task.defer(function()     -- deferred to next frame
+    print("Next frame")
+end)
+
+UI ELEMENTS (LocalScript):
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player.PlayerGui
+
+-- Create ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.ResetOnSpawn = false
+gui.Parent = playerGui
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.3, 0, 0.2, 0)
+frame.Position = UDim2.new(0.35, 0, 0.4, 0)
+frame.BackgroundColor3 = Color3.fromRGB(30,30,30)
+frame.BackgroundTransparency = 0.2
+frame.Parent = gui
+
+local button = Instance.new("TextButton")
+button.Text = "Click Me!"
+button.Size = UDim2.new(0.8, 0, 0.3, 0)
+button.Position = UDim2.new(0.1, 0, 0.35, 0)
+button.BackgroundColor3 = Color3.fromRGB(0,120,220)
+button.TextColor3 = Color3.new(1,1,1)
+button.FontFace = Font.fromEnum(Enum.Font.GothamBold)
+button.TextSize = 18
+button.Parent = frame
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 8)
+UICorner.Parent = button
+
+button.MouseButton1Click:Connect(function()
+    print("Button clicked!")
+    event:FireServer("buttonClicked")
+end)
+
+-- UserInputService
+local UIS = game:GetService("UserInputService")
+UIS.InputBegan:Connect(function(input, gameProcessed)
+    if gameProcessed then return end
+    if input.KeyCode == Enum.KeyCode.E then
+        print("E pressed!")
+    end
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        print("Left click!")
+    end
+end)
+
+-- Mobile support
+UIS.TouchTap:Connect(function(positions, gameProcessed) ... end)
+
+===================================================
+SQL - COMPLETE DATABASE GUIDE
+===================================================
+
+SQL BASICS:
+SQL (Structured Query Language) for relational databases.
+Databases: PostgreSQL, MySQL, SQLite, SQL Server, Oracle.
+Case insensitive for keywords. Statements end with ;
+
+DATA TYPES:
+INTEGER/INT, BIGINT, SMALLINT
+DECIMAL(p,s), NUMERIC(p,s), FLOAT, DOUBLE PRECISION, REAL
+VARCHAR(n), CHAR(n), TEXT
+DATE, TIME, TIMESTAMP, TIMESTAMPTZ
+BOOLEAN, UUID, JSON, JSONB (PostgreSQL)
+BLOB, BYTEA (binary)
+
+DDL (Data Definition Language):
+CREATE TABLE users (
+    id          SERIAL PRIMARY KEY,
+    email       VARCHAR(200) UNIQUE NOT NULL,
+    username    VARCHAR(50) NOT NULL,
+    age         INTEGER CHECK(age >= 0 AND age <= 150),
+    salary      DECIMAL(10,2) DEFAULT 0.00,
+    is_active   BOOLEAN DEFAULT true,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dept_id     INTEGER REFERENCES departments(id) ON DELETE SET NULL
+);
+
+CREATE INDEX idx_users_email ON users(email);
+CREATE INDEX idx_users_dept ON users(dept_id);
+CREATE UNIQUE INDEX idx_users_username ON users(username);
+
+ALTER TABLE users ADD COLUMN phone VARCHAR(20);
+ALTER TABLE users DROP COLUMN phone;
+ALTER TABLE users ALTER COLUMN salary SET DEFAULT 1000;
+ALTER TABLE users RENAME COLUMN username TO user_name;
+ALTER TABLE users ADD CONSTRAINT fk_dept FOREIGN KEY(dept_id) REFERENCES departments(id);
+
+DROP TABLE IF EXISTS users;
+TRUNCATE TABLE users;  -- delete all rows, reset auto-increment
+
+DML (Data Manipulation Language):
+-- INSERT
+INSERT INTO users (email, username, age) VALUES ('alice@example.com', 'alice', 25);
+INSERT INTO users VALUES (DEFAULT, 'bob@example.com', 'bob', 30, DEFAULT, DEFAULT, DEFAULT, 1);
+INSERT INTO users (email, username) SELECT email, name FROM old_users WHERE active=true;
+
+-- SELECT
+SELECT * FROM users;
+SELECT id, email, age FROM users;
+SELECT DISTINCT dept_id FROM users;
+SELECT u.email, d.name as dept_name FROM users u JOIN departments d ON u.dept_id = d.id;
+SELECT *, ROW_NUMBER() OVER(PARTITION BY dept_id ORDER BY salary DESC) as rank FROM users;
+
+-- WHERE conditions
+SELECT * FROM users WHERE age > 25 AND is_active = true;
+SELECT * FROM users WHERE age BETWEEN 20 AND 30;
+SELECT * FROM users WHERE email LIKE '%@gmail.com';
+SELECT * FROM users WHERE email ILIKE '%gmail%';  -- case insensitive (PostgreSQL)
+SELECT * FROM users WHERE dept_id IN (1, 2, 3);
+SELECT * FROM users WHERE dept_id IS NULL;
+SELECT * FROM users WHERE dept_id IS NOT NULL;
+
+-- UPDATE
+UPDATE users SET salary = salary * 1.1, is_active = true WHERE dept_id = 1;
+UPDATE users SET age = age + 1 WHERE email = 'alice@example.com' RETURNING *;
+
+-- DELETE
+DELETE FROM users WHERE is_active = false;
+DELETE FROM users WHERE created_at < NOW() - INTERVAL '1 year';
+
+JOINS:
+-- INNER JOIN: only matching rows
+SELECT u.name, d.dept_name FROM users u
+INNER JOIN departments d ON u.dept_id = d.id;
+
+-- LEFT JOIN: all from left, matching from right (NULL if no match)
+SELECT u.name, d.dept_name FROM users u
+LEFT JOIN departments d ON u.dept_id = d.id;
+
+-- RIGHT JOIN: all from right table
+-- FULL OUTER JOIN: all from both tables
+
+-- SELF JOIN
+SELECT a.name as employee, b.name as manager FROM users a
+LEFT JOIN users b ON a.manager_id = b.id;
+
+-- CROSS JOIN: all combinations
+SELECT p.name, c.name FROM products p CROSS JOIN categories c;
+
+AGGREGATION:
+SELECT dept_id, COUNT(*) as count, AVG(salary) as avg_salary,
+       MAX(salary) as max_sal, MIN(salary) as min_sal, SUM(salary) as total
+FROM users
+GROUP BY dept_id
+HAVING COUNT(*) > 5
+ORDER BY avg_salary DESC
+LIMIT 10 OFFSET 20;
+
+-- WINDOW FUNCTIONS
+SELECT name, salary,
+    RANK() OVER(ORDER BY salary DESC) as rank,
+    DENSE_RANK() OVER(ORDER BY salary DESC) as dense_rank,
+    ROW_NUMBER() OVER(PARTITION BY dept_id ORDER BY salary DESC) as dept_rank,
+    LAG(salary) OVER(ORDER BY created_at) as prev_salary,
+    LEAD(salary) OVER(ORDER BY created_at) as next_salary,
+    AVG(salary) OVER(PARTITION BY dept_id) as dept_avg,
+    SUM(salary) OVER(ORDER BY created_at ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) as running_total
+FROM users;
+
+-- SUBQUERIES
+SELECT name FROM users WHERE salary > (SELECT AVG(salary) FROM users);
+SELECT * FROM users WHERE dept_id IN (SELECT id FROM departments WHERE budget > 100000);
+
+-- CTE (Common Table Expression)
+WITH high_earners AS (
+    SELECT * FROM users WHERE salary > 80000
+),
+dept_stats AS (
+    SELECT dept_id, AVG(salary) avg_sal FROM users GROUP BY dept_id
+)
+SELECT h.name, h.salary, d.avg_sal FROM high_earners h
+JOIN dept_stats d ON h.dept_id = d.dept_id
+ORDER BY h.salary DESC;
+
+-- RECURSIVE CTE
+WITH RECURSIVE org_chart AS (
+    SELECT id, name, manager_id, 0 as level FROM employees WHERE manager_id IS NULL
+    UNION ALL
+    SELECT e.id, e.name, e.manager_id, oc.level+1 FROM employees e
+    JOIN org_chart oc ON e.manager_id = oc.id
+)
+SELECT * FROM org_chart ORDER BY level;
+
+===================================================
+RUST - QUICK REFERENCE
+===================================================
+fn main() {
+    let x: i32 = 5;           // immutable
+    let mut y = 10;           // mutable
+    let z = x + y;
+    println!("{} {} {}", x, y, z);
+    
+    // Ownership
+    let s1 = String::from("hello");
+    let s2 = s1;              // s1 moved, no longer valid
+    let s3 = s2.clone();      // deep copy
+    
+    // References (borrowing)
+    let len = calculate_length(&s2);  // borrow
+    fn calculate_length(s: &String) -> usize { s.len() }
+    
+    // Slices
+    let s = String::from("hello world");
+    let hello = &s[0..5];
+    
+    // Structs
+    #[derive(Debug, Clone)]
+    struct Point { x: f64, y: f64 }
+    impl Point {
+        fn new(x: f64, y: f64) -> Self { Point {x, y} }
+        fn distance(&self) -> f64 { (self.x*self.x+self.y*self.y).sqrt() }
+    }
+    
+    // Enums
+    enum Shape { Circle(f64), Rectangle(f64,f64), Triangle(f64,f64,f64) }
+    impl Shape {
+        fn area(&self) -> f64 {
+            match self {
+                Shape::Circle(r) => std::f64::consts::PI * r * r,
+                Shape::Rectangle(w,h) => w*h,
+                Shape::Triangle(a,b,c) => { let s=(a+b+c)/2.0; (s*(s-a)*(s-b)*(s-c)).sqrt() }
+            }
+        }
+    }
+    
+    // Error handling with Result and Option
+    let result: Result<i32,String> = Ok(42);
+    let n = result.unwrap_or(0);
+    let opt: Option<i32> = Some(5);
+    if let Some(v) = opt { println!("{}", v); }
+    
+    // Traits
+    trait Greet { fn hello(&self) -> String; }
+    impl Greet for Point { fn hello(&self) -> String { format!("({},{})",self.x,self.y) } }
+    
+    // Closures
+    let add = |a: i32, b: i32| a + b;
+    let nums = vec![1,2,3,4,5];
+    let squares: Vec<i32> = nums.iter().map(|x| x*x).collect();
+    let evens: Vec<&i32> = nums.iter().filter(|&&x| x%2==0).collect();
+    let sum: i32 = nums.iter().sum();
+}
+
+===================================================
+GO - QUICK REFERENCE
+===================================================
+package main
+import ("fmt"; "strings"; "sort"; "errors")
+
+func main() {
+    // Variables
+    x := 10; var y int = 20
+    const PI = 3.14159
+    
+    // Slices (dynamic arrays)
+    s := []int{1,2,3}
+    s = append(s, 4,5)
+    s2 := make([]int, 5, 10)
+    copy(s2, s)
+    
+    // Maps
+    m := map[string]int{"a":1,"b":2}
+    m["c"] = 3; delete(m,"a")
+    val, ok := m["b"]
+    
+    // Structs
+    type Point struct { X,Y float64 }
+    p := Point{X:1.0, Y:2.0}
+    
+    // Methods
+    func (p Point) Distance() float64 { return math.Sqrt(p.X*p.X+p.Y*p.Y) }
+    
+    // Interfaces
+    type Shape interface { Area() float64; Perimeter() float64 }
+    
+    // Goroutines and channels
+    ch := make(chan int, 10)
+    go func() { ch <- computeValue() }()
+    result := <-ch
+    
+    // Error handling
+    if err != nil { return fmt.Errorf("wrap: %w", err) }
+    
+    // Defer
+    defer file.Close()
+    
+    // Select
+    select {
+        case msg := <-ch1: fmt.Println(msg)
+        case ch2 <- value: fmt.Println("sent")
+        default: fmt.Println("no activity")
+    }
+}
+
+===================================================
+SWIFT - QUICK REFERENCE (iOS/macOS)
+===================================================
+import Foundation; import UIKit; import SwiftUI
+
+var x: Int = 10; let y = 3.14; var name: String? = nil
+let unwrapped = name ?? "Default"
+if let n = name { print(n) }  // optional binding
+guard let n = name else { return }  // guard
+
+// Collections
+var arr = [1,2,3]; arr.append(4); arr.filter{$0>2}.map{$0*2}
+var dict = ["key":"val"]; dict["k2"] = "v2"
+
+// Structs and Classes
+struct Point { var x,y: Double; func distance()->Double {sqrt(x*x+y*y)} }
+class Animal { var name:String; init(name:String){self.name=name}; func speak()->String{"..."} }
+class Dog:Animal { override func speak()->String{"\(name) Woof!"} }
+
+// Protocols
+protocol Drawable { func draw(); var description:String {get} }
+extension Dog:Drawable { func draw(){print(speak())}; var description:String{name} }
+
+// Enums with associated values
+enum Result<T> { case success(T); case failure(Error) }
+
+// SwiftUI
+struct ContentView: View {
+    @State private var count = 0
+    var body: some View {
+        VStack {
+            Text("Count: \(count)").font(.largeTitle)
+            Button("Increment") { count += 1 }.padding()
+        }
+    }
+}
+
+===================================================
+KOTLIN - QUICK REFERENCE (Android/JVM)
+===================================================
+fun main() {
+    val x: Int = 10; var y = 20  // val=immutable, var=mutable
+    val name: String? = null      // nullable
+    println(name?.length ?: 0)    // safe call + elvis
+    
+    // Data classes
+    data class Person(val name: String, val age: Int)
+    val alice = Person("Alice", 25)
+    val older = alice.copy(age=26)
+    val (n,a) = alice  // destructuring
+    
+    // Sealed classes
+    sealed class Shape { class Circle(val r:Double):Shape(); class Rect(val w:Double,val h:Double):Shape() }
+    fun area(s:Shape):Double = when(s) { is Shape.Circle -> Math.PI*s.r*s.r; is Shape.Rect -> s.w*s.h }
+    
+    // Extensions
+    fun String.isPalindrome(): Boolean = this == this.reversed()
+    
+    // Coroutines
+    import kotlinx.coroutines.*
+    runBlocking {
+        val result = async { fetchData() }
+        val data = result.await()
+        launch { processData(data) }
+    }
+    
+    // Lambda and higher-order functions
+    val nums = listOf(1,2,3,4,5)
+    nums.filter{it>2}.map{it*it}.reduce{a,b->a+b}
+    nums.groupBy{it%2==0}  // {true:[2,4], false:[1,3,5]}
+}

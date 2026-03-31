@@ -1,0 +1,801 @@
+JAVA - COMPLETE PROGRAMMING GUIDE
+===================================
+
+JAVA BASICS:
+Java is compiled to bytecode, runs on JVM. Statically typed, object-oriented.
+javac Hello.java → Hello.class → java Hello
+Main method: public static void main(String[] args)
+Primitive types: byte(8), short(16), int(32), long(64), float(32), double(64), char(16), boolean
+Wrapper classes: Integer, Long, Double, Boolean, Character, String (immutable)
+
+SYNTAX:
+public class Main {
+    public static void main(String[] args) {
+        // variables
+        int x = 10;
+        double pi = 3.14159;
+        String name = "Alice";
+        boolean flag = true;
+        final int MAX = 100;  // constant
+        
+        // String operations
+        String s = "Hello World";
+        s.length(), s.charAt(0), s.substring(1,4)
+        s.toLowerCase(), s.toUpperCase(), s.trim()
+        s.contains("lo"), s.startsWith("He"), s.endsWith("ld")
+        s.replace("l","L"), s.split(" "), s.indexOf("o")
+        String.format("Name: %s, Age: %d", name, 25)
+        
+        // StringBuilder (mutable)
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hello").append(" ").append("World");
+        sb.insert(5, ",").delete(0,3).reverse();
+        String result = sb.toString();
+        
+        // Arrays
+        int[] arr = {1,2,3,4,5};
+        int[] arr2 = new int[10];
+        int[][] matrix = new int[3][4];
+        Arrays.sort(arr);
+        Arrays.fill(arr, 0);
+        Arrays.copyOf(arr, 5);
+        System.arraycopy(src,0,dst,0,len);
+        
+        // Control flow
+        for (int i=0; i<10; i++) { ... }
+        for (String item : collection) { ... }  // enhanced for
+        while (condition) { ... }
+        do { ... } while (condition);
+        
+        // Switch expression (Java 14+)
+        String day = switch(num) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            default -> "Unknown";
+        };
+    }
+}
+
+CLASSES AND OOP:
+public class Animal {
+    // Fields
+    private String name;
+    protected int age;
+    public static int count = 0;
+    
+    // Constructor
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+        count++;
+    }
+    
+    // Copy constructor
+    public Animal(Animal other) {
+        this.name = other.name;
+        this.age = other.age;
+    }
+    
+    // Getters/Setters
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    
+    // Methods
+    public String speak() { return name + " makes a sound"; }
+    
+    // Static method
+    public static int getCount() { return count; }
+    
+    // toString, equals, hashCode
+    @Override public String toString() { return "Animal(" + name + ")"; }
+    @Override public boolean equals(Object o) {
+        if (this==o) return true;
+        if (!(o instanceof Animal)) return false;
+        Animal a = (Animal) o;
+        return Objects.equals(name, a.name) && age == a.age;
+    }
+    @Override public int hashCode() { return Objects.hash(name, age); }
+}
+
+// Inheritance
+public class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+    
+    @Override
+    public String speak() { return getName() + " says Woof!"; }
+}
+
+// Interface
+public interface Drawable {
+    void draw();  // abstract
+    default void print() { System.out.println("Drawing: " + this); }
+    static Drawable create() { return () -> System.out.println("Default"); }
+}
+
+// Abstract class
+public abstract class Shape {
+    protected String color;
+    public abstract double area();
+    public abstract double perimeter();
+    public void describe() {
+        System.out.printf("%s: area=%.2f%n", color, area());
+    }
+}
+
+// Enum
+public enum Direction {
+    NORTH(0,1), SOUTH(0,-1), EAST(1,0), WEST(-1,0);
+    private final int dx, dy;
+    Direction(int dx, int dy) { this.dx=dx; this.dy=dy; }
+    public int getDx() { return dx; }
+}
+
+// Record (Java 16+)
+public record Point(double x, double y) {
+    public double distance() { return Math.sqrt(x*x + y*y); }
+}
+
+GENERICS:
+public class Stack<T> {
+    private List<T> items = new ArrayList<>();
+    public void push(T item) { items.add(item); }
+    public T pop() { return items.remove(items.size()-1); }
+    public T peek() { return items.get(items.size()-1); }
+    public boolean isEmpty() { return items.isEmpty(); }
+}
+
+public <T extends Comparable<T>> T findMax(List<T> list) {
+    return list.stream().max(Comparator.naturalOrder()).orElseThrow();
+}
+
+// Wildcards
+void printList(List<?> list) { list.forEach(System.out::println); }
+void addNumbers(List<? extends Number> list) { ... }
+void addToList(List<? super Integer> list) { list.add(42); }
+
+COLLECTIONS:
+import java.util.*;
+List<String> list = new ArrayList<>();
+List<String> linked = new LinkedList<>();
+List<String> fixed = Arrays.asList("a","b","c");
+List<String> immutable = List.of("a","b","c");
+
+Map<String,Integer> map = new HashMap<>();
+Map<String,Integer> sorted = new TreeMap<>();
+Map<String,Integer> linked_map = new LinkedHashMap<>();
+map.put("key",1); map.get("key"); map.getOrDefault("k",0);
+map.putIfAbsent("k",1); map.computeIfAbsent("k", k -> k.length());
+map.forEach((k,v) -> System.out.println(k+":"+v));
+map.entrySet(), map.keySet(), map.values()
+
+Set<String> set = new HashSet<>();
+Set<String> treeSet = new TreeSet<>();
+set.add("a"); set.contains("a"); set.remove("a");
+
+Queue<Integer> queue = new LinkedList<>();
+Deque<Integer> deque = new ArrayDeque<>();
+PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+queue.offer(1); queue.poll(); queue.peek();
+
+STREAMS (Java 8+):
+import java.util.stream.*;
+List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+
+// Filter and map
+List<Integer> result = numbers.stream()
+    .filter(n -> n % 2 == 0)
+    .map(n -> n * n)
+    .sorted()
+    .collect(Collectors.toList());
+
+// Reduce
+int sum = numbers.stream().reduce(0, Integer::sum);
+Optional<Integer> max = numbers.stream().max(Integer::compareTo);
+
+// Collectors
+Map<Boolean,List<Integer>> partitioned = numbers.stream()
+    .collect(Collectors.partitioningBy(n -> n%2==0));
+Map<Integer,List<String>> grouped = words.stream()
+    .collect(Collectors.groupingBy(String::length));
+String joined = words.stream().collect(Collectors.joining(", ","[","]"));
+IntSummaryStatistics stats = numbers.stream()
+    .collect(Collectors.summarizingInt(Integer::intValue));
+
+// FlatMap
+List<String> words = sentences.stream()
+    .flatMap(s -> Arrays.stream(s.split(" ")))
+    .collect(Collectors.toList());
+
+// Parallel stream
+long count = numbers.parallelStream().filter(n->n>5).count();
+
+EXCEPTION HANDLING:
+try {
+    int result = Integer.parseInt("abc");
+} catch (NumberFormatException e) {
+    System.err.println("Parse error: " + e.getMessage());
+} catch (Exception e) {
+    e.printStackTrace();
+} finally {
+    // cleanup
+}
+
+// Custom exception
+public class AppException extends RuntimeException {
+    private final int code;
+    public AppException(String msg, int code) {
+        super(msg); this.code = code;
+    }
+    public int getCode() { return code; }
+}
+
+// Try-with-resources (AutoCloseable)
+try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+    String line;
+    while ((line = br.readLine()) != null) System.out.println(line);
+}
+
+MULTITHREADING:
+// Thread
+Thread t = new Thread(() -> System.out.println("Running in thread"));
+t.start(); t.join();
+
+// ExecutorService
+ExecutorService executor = Executors.newFixedThreadPool(4);
+Future<Integer> future = executor.submit(() -> heavyComputation());
+int result = future.get();  // blocks until done
+executor.shutdown();
+
+// CompletableFuture
+CompletableFuture.supplyAsync(() -> fetchData())
+    .thenApply(data -> process(data))
+    .thenAccept(result -> save(result))
+    .exceptionally(ex -> { log(ex); return null; });
+
+// Synchronized
+private final Object lock = new Object();
+synchronized(lock) { /* critical section */ }
+
+// concurrent collections
+ConcurrentHashMap<String,Integer> concurrentMap = new ConcurrentHashMap<>();
+BlockingQueue<Task> taskQueue = new LinkedBlockingQueue<>();
+AtomicInteger counter = new AtomicInteger(0);
+counter.incrementAndGet(); counter.compareAndSet(expected, update);
+
+===================================================
+C++ - COMPLETE PROGRAMMING GUIDE
+===================================================
+
+C++ BASICS:
+C++ is compiled, statically typed, supports both procedural and OOP.
+g++ -std=c++17 -O2 -Wall main.cpp -o main
+#include <iostream>, #include <vector>, #include <string>, #include <algorithm>
+using namespace std; (avoid in headers)
+int, long, long long, unsigned, float, double, long double, char, bool, wchar_t
+auto: compiler infers type. decltype(expr): type of expression.
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <memory>
+using namespace std;
+
+int main() {
+    // Variables
+    int x = 10;
+    auto y = 3.14;  // double
+    const int MAX = 100;
+    constexpr int SIZE = 256;  // compile-time constant
+    
+    // References and pointers
+    int a = 5;
+    int& ref = a;   // reference (alias)
+    int* ptr = &a;  // pointer
+    *ptr = 10;      // dereference
+    ptr = nullptr;  // null pointer (C++11)
+    
+    // Arrays
+    int arr[5] = {1,2,3,4,5};
+    int* dynamic = new int[10];
+    delete[] dynamic;
+    
+    // String
+    string s = "Hello World";
+    s.length(), s.size(), s.substr(0,5), s.find("lo")
+    s += " more", s.append("more"), s.c_str()
+    to_string(42), stoi("42"), stod("3.14")
+    
+    return 0;
+}
+
+CLASSES AND OOP:
+class Animal {
+private:
+    string name;
+    int age;
+    static int count;
+
+public:
+    // Constructors
+    Animal(string name, int age) : name(name), age(age) { count++; }
+    Animal(const Animal& other) : name(other.name), age(other.age) {}  // copy
+    Animal(Animal&& other) noexcept : name(move(other.name)), age(other.age) {}  // move
+    
+    // Destructor
+    virtual ~Animal() { count--; }
+    
+    // Getters
+    string getName() const { return name; }
+    
+    // Virtual function (polymorphism)
+    virtual string speak() const { return name + " makes a sound"; }
+    virtual string speak(int times) const;  // overloaded
+    
+    // Operator overloading
+    bool operator==(const Animal& other) const { return name == other.name; }
+    Animal& operator=(const Animal& other) {
+        if (this != &other) { name=other.name; age=other.age; }
+        return *this;
+    }
+    friend ostream& operator<<(ostream& os, const Animal& a) {
+        return os << "Animal(" << a.name << ")";
+    }
+    
+    static int getCount() { return count; }
+};
+
+int Animal::count = 0;
+
+// Inheritance
+class Dog : public Animal {
+private:
+    string breed;
+public:
+    Dog(string name, int age, string breed) : Animal(name, age), breed(breed) {}
+    string speak() const override { return getName() + " says Woof!"; }
+    string speak(int times) const override {
+        string result;
+        for(int i=0;i<times;i++) result += "Woof! ";
+        return result;
+    }
+};
+
+// Abstract class
+class Shape {
+public:
+    virtual ~Shape() = default;
+    virtual double area() const = 0;  // pure virtual
+    virtual double perimeter() const = 0;
+    virtual void draw() const { cout << "Drawing shape\n"; }
+};
+
+// Templates
+template<typename T>
+class Stack {
+    vector<T> data;
+public:
+    void push(T val) { data.push_back(val); }
+    T pop() { T v=data.back(); data.pop_back(); return v; }
+    T& top() { return data.back(); }
+    bool empty() const { return data.empty(); }
+    size_t size() const { return data.size(); }
+};
+
+template<typename T, typename U>
+auto add(T a, U b) -> decltype(a+b) { return a+b; }
+
+SMART POINTERS (C++11):
+unique_ptr<Animal> a = make_unique<Dog>("Rex",3,"Lab");
+shared_ptr<Animal> b = make_shared<Animal>("Cat",2);
+weak_ptr<Animal> c = b;  // doesn't affect ref count
+auto* raw = a.get();     // get raw pointer
+a.reset();               // release ownership
+a = move(another_unique);  // transfer ownership
+
+STL CONTAINERS:
+vector<int> v = {1,2,3}; v.push_back(4); v.emplace_back(5);
+v.size(), v.empty(), v.front(), v.back(), v[0], v.at(0)
+v.begin(), v.end(), v.rbegin(), v.rend()
+v.insert(v.begin()+2, 10); v.erase(v.begin()+2);
+v.reserve(100); v.resize(50,0); v.clear(); v.shrink_to_fit();
+
+list<int> lst; lst.push_back(1); lst.push_front(0);
+map<string,int> m; m["key"]=1; m.count("key"); m.find("key");
+unordered_map<string,int> um;  // O(1) average
+set<int> s; s.insert(5); s.count(5); s.lower_bound(3);
+priority_queue<int> pq; pq.push(3); pq.top(); pq.pop();
+queue<int> q; q.push(1); q.front(); q.pop();
+deque<int> dq; dq.push_front(0); dq.push_back(1);
+
+STL ALGORITHMS:
+sort(v.begin(),v.end()); sort(v.begin(),v.end(),greater<int>());
+stable_sort(v.begin(),v.end(),[](int a,int b){return a>b;});
+find(v.begin(),v.end(),5); find_if(v.begin(),v.end(),[](int x){return x>3;});
+count(v.begin(),v.end(),3); count_if(v.begin(),v.end(),[](int x){return x%2;});
+min_element(v.begin(),v.end()); max_element(v.begin(),v.end());
+accumulate(v.begin(),v.end(),0); reduce(v.begin(),v.end());
+transform(v.begin(),v.end(),out.begin(),[](int x){return x*2;});
+copy_if(src.begin(),src.end(),back_inserter(dst),[](int x){return x>0;});
+remove_if(v.begin(),v.end(),[](int x){return x<0;});  // use with erase
+binary_search(v.begin(),v.end(),5);
+lower_bound(v.begin(),v.end(),5); upper_bound(v.begin(),v.end(),5);
+next_permutation(v.begin(),v.end()); reverse(v.begin(),v.end());
+unique(v.begin(),v.end()); rotate(v.begin(),v.begin()+2,v.end());
+
+MOVE SEMANTICS AND RVALUE:
+string makeString() { return "hello"; }  // returns rvalue
+string s = makeString();  // move constructor called (no copy)
+vector<string> vec;
+vec.push_back(move(s));  // move s into vector
+vec.emplace_back("direct");  // construct in-place
+
+LAMBDA:
+auto square = [](int x) { return x*x; };
+auto add = [](int a, int b) -> int { return a+b; };
+int offset = 5;
+auto add_offset = [offset](int x) { return x+offset; };  // capture by value
+auto modify = [&offset](int x) { offset=x; };  // capture by reference
+auto capture_all = [=](){};  // all by value
+auto capture_all_ref = [&](){};  // all by reference
+
+MODERN C++ FEATURES:
+// Structured bindings (C++17)
+auto [x,y,z] = make_tuple(1,2.0,"three");
+for (auto& [key,val] : mymap) { ... }
+
+// if/switch with initializer (C++17)
+if (auto it = m.find(key); it != m.end()) { use(it->second); }
+
+// Optional (C++17)
+optional<int> findValue(vector<int>& v, int target) {
+    auto it = find(v.begin(),v.end(),target);
+    if (it==v.end()) return nullopt;
+    return *it;
+}
+if (auto val = findValue(v,5)) cout << *val;
+
+// Variant (C++17)
+variant<int,double,string> v = 42;
+if (holds_alternative<int>(v)) cout << get<int>(v);
+visit([](auto& val){ cout << val; }, v);
+
+===================================================
+C# - COMPLETE PROGRAMMING GUIDE
+===================================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+C# BASICS:
+C# is managed, runs on .NET CLR. Statically typed, multi-paradigm.
+dotnet new console -n MyApp; dotnet run; dotnet build
+Value types: int,long,double,float,decimal,bool,char,struct,enum
+Reference types: class,interface,delegate,array,string
+
+class Program {
+    static async Task Main(string[] args) {
+        // Variables
+        int x = 10;
+        var y = 3.14;       // type inference
+        const int MAX = 100;
+        string name = "Alice";
+        string? nullable = null;  // nullable reference type (C# 8+)
+        
+        // String interpolation
+        Console.WriteLine($"Hello {name}, you are {x} years old");
+        string formatted = $"{3.14159:F2}";  // "3.14"
+        
+        // Verbatim string
+        string path = @"C:\Users\Alice\file.txt";
+        
+        // String methods
+        name.ToUpper(), name.ToLower(), name.Trim()
+        name.Contains("li"), name.StartsWith("A"), name.EndsWith("e")
+        name.Substring(1,3), name.Replace("l","L"), name.Split(',')
+        string.Join(",", array), string.IsNullOrEmpty(name)
+        
+        // var, dynamic
+        var list = new List<int> {1,2,3};
+        dynamic d = "hello"; d = 42;  // dynamic type
+        
+        // Tuples (C# 7+)
+        var point = (X:1.0, Y:2.0);
+        var (x2,y2) = GetCoordinates();
+        
+        // Pattern matching (C# 9+)
+        object obj = 42;
+        if (obj is int n && n > 0) Console.WriteLine($"Positive int: {n}");
+        string desc = obj switch {
+            int i when i < 0 => "negative",
+            int i => $"int: {i}",
+            string s => $"string: {s}",
+            _ => "unknown"
+        };
+    }
+}
+
+CLASSES AND OOP:
+public class Animal {
+    // Properties (auto-implemented)
+    public string Name { get; set; }
+    public int Age { get; private set; }
+    public static int Count { get; private set; }
+    
+    // Full property with backing field
+    private string _breed;
+    public string Breed {
+        get => _breed;
+        set => _breed = value ?? throw new ArgumentNullException();
+    }
+    
+    // Init-only property (C# 9+)
+    public string Id { get; init; }
+    
+    // Constructor
+    public Animal(string name, int age) {
+        Name = name; Age = age; Count++;
+        Id = Guid.NewGuid().ToString();
+    }
+    
+    // Expression-bodied members
+    public virtual string Speak() => $"{Name} makes a sound";
+    public override string ToString() => $"Animal({Name}, {Age})";
+    public override bool Equals(object obj) => obj is Animal a && Name==a.Name;
+    public override int GetHashCode() => HashCode.Combine(Name, Age);
+    
+    // Events
+    public event EventHandler<string> Spoke;
+    protected virtual void OnSpoke(string sound) => Spoke?.Invoke(this, sound);
+    
+    // Indexer
+    private string[] traits = new string[5];
+    public string this[int index] {
+        get => traits[index];
+        set => traits[index] = value;
+    }
+    
+    // Finalizer
+    ~Animal() { Count--; }
+}
+
+// Record (C# 9+) - immutable data class
+public record Person(string Name, int Age) {
+    public string Greeting => $"Hello, I'm {Name}";
+}
+var p1 = new Person("Alice", 25);
+var p2 = p1 with { Age = 26 };  // non-destructive mutation
+
+// Struct
+public struct Point {
+    public double X { get; set; }
+    public double Y { get; set; }
+    public Point(double x, double y) { X=x; Y=y; }
+    public double Distance => Math.Sqrt(X*X+Y*Y);
+}
+
+// Interface
+public interface IDrawable {
+    void Draw();
+    string Description { get; }
+    static abstract IDrawable Create();  // C# 11 static abstract
+    default void Print() => Console.WriteLine(Description);
+}
+
+// Generic class
+public class Repository<T> where T : class, IEntity, new() {
+    private List<T> _items = new();
+    public void Add(T item) => _items.Add(item);
+    public T GetById(int id) => _items.FirstOrDefault(x => x.Id == id);
+    public IEnumerable<T> GetAll() => _items.AsReadOnly();
+}
+
+LINQ:
+var numbers = Enumerable.Range(1, 20);
+
+// Query syntax
+var evens = from n in numbers where n%2==0 select n*n;
+
+// Method syntax
+var result = numbers
+    .Where(n => n % 2 == 0)
+    .Select(n => n * n)
+    .OrderByDescending(n => n)
+    .Take(5)
+    .ToList();
+
+var people = new List<Person> { ... };
+var grouped = people.GroupBy(p => p.Department)
+                    .Select(g => new { Dept=g.Key, Count=g.Count(), AvgAge=g.Average(p=>p.Age) });
+var joined = from p in people join d in depts on p.DeptId equals d.Id select new {p.Name,d.DeptName};
+
+// Aggregate
+int sum = numbers.Sum();
+double avg = numbers.Average();
+int max = numbers.Max();
+bool any = numbers.Any(n => n > 15);
+bool all = numbers.All(n => n > 0);
+var first = numbers.First(n => n > 5);
+var firstOrDefault = numbers.FirstOrDefault(n => n > 100);
+var dict = people.ToDictionary(p => p.Id, p => p.Name);
+var lookup = people.ToLookup(p => p.Dept);
+
+ASYNC/AWAIT:
+public async Task<string> FetchDataAsync(string url) {
+    using var client = new HttpClient();
+    var response = await client.GetAsync(url);
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadAsStringAsync();
+}
+
+// Parallel tasks
+var tasks = urls.Select(url => FetchDataAsync(url));
+var results = await Task.WhenAll(tasks);
+var first = await Task.WhenAny(tasks);
+
+// CancellationToken
+public async Task LongRunningTask(CancellationToken ct) {
+    while (!ct.IsCancellationRequested) {
+        await Task.Delay(1000, ct);
+        DoWork();
+    }
+}
+
+===================================================
+JAVASCRIPT - COMPLETE GUIDE
+===================================================
+
+JS BASICS:
+Interpreted, dynamic, prototype-based, multi-paradigm.
+Runs in browser and Node.js. ES6+ features essential.
+let/const (block-scoped), var (function-scoped, avoid)
+
+TYPES AND OPERATIONS:
+let x = 10;           // number (all numbers are float64)
+let s = "hello";      // string
+let b = true;         // boolean
+let n = null;         // null
+let u = undefined;    // undefined
+let sym = Symbol("id"); // symbol (unique)
+let big = 9007199254740991n;  // BigInt
+
+typeof x    // "number"
+typeof null // "object" (historical bug!)
+x == "10"   // true (coercion)
+x === "10"  // false (strict, no coercion) ← always use ===
+
+// Nullish coalescing and optional chaining
+let name = user?.profile?.name ?? "Anonymous";
+let price = product?.price ?? 0;
+
+STRINGS:
+const s = "Hello World";
+s.length, s[0], s.at(-1)  // at() supports negatives
+s.toUpperCase(), s.toLowerCase(), s.trim(), s.trimStart(), s.trimEnd()
+s.split(" "), s.includes("lo"), s.startsWith("He"), s.endsWith("ld")
+s.indexOf("o"), s.lastIndexOf("o"), s.slice(1,4), s.substring(1,4)
+s.replace("l","L"), s.replaceAll("l","L")
+s.padStart(10,"0"), s.padEnd(10)
+s.repeat(3), s.charAt(0), s.charCodeAt(0)
+Template literals: `Hello ${name}, you are ${age} years old`
+
+ARRAYS:
+const arr = [1,2,3,4,5];
+arr.push(6), arr.pop(), arr.shift(), arr.unshift(0)
+arr.splice(2,1,10,11)  // at index 2, remove 1, insert 10,11
+arr.slice(1,4)          // extract (doesn't modify)
+arr.indexOf(3), arr.includes(3), arr.findIndex(x=>x>3)
+arr.find(x=>x>3), arr.filter(x=>x>3), arr.map(x=>x*2)
+arr.reduce((acc,x)=>acc+x, 0), arr.reduceRight(...)
+arr.some(x=>x>4), arr.every(x=>x>0)
+arr.sort((a,b)=>a-b), arr.reverse(), arr.flat(2), arr.flatMap(x=>[x,x*2])
+arr.fill(0,2,4), arr.copyWithin(0,3)
+Array.from("hello"), Array.from({length:5},(_,i)=>i)
+[...arr1,...arr2]  // spread
+const [first,...rest] = arr  // destructuring
+
+OBJECTS:
+const obj = {name:"Alice", age:25};
+obj.name, obj["age"], obj.address?.city  // optional chaining
+const {name,age,...rest} = obj;  // destructuring
+const {name:n, age:a=0} = obj;  // rename and default
+const merged = {...obj1,...obj2};  // spread
+
+Object.keys(obj), Object.values(obj), Object.entries(obj)
+Object.assign({},obj1,obj2)
+Object.freeze(obj), Object.seal(obj)
+Object.fromEntries(entries)
+
+FUNCTIONS:
+function regular(a, b=0) { return a+b; }
+const arrow = (a, b) => a+b;
+const arrowBlock = (a) => { const r=a*2; return r; };
+function* generator() { yield 1; yield 2; yield 3; }
+async function asyncFn() { const r=await fetch(url); return r.json(); }
+
+// Closures
+function makeCounter() {
+    let count=0;
+    return { increment:()=>++count, get:()=>count };
+}
+
+// IIFE
+(function() { /* immediately invoked */ })();
+
+// Rest parameters
+function sum(...nums) { return nums.reduce((a,b)=>a+b,0); }
+
+// Currying
+const multiply = a => b => a*b;
+const double = multiply(2);
+
+CLASSES:
+class Animal {
+    #name;  // private field (ES2022)
+    static count = 0;
+    
+    constructor(name, age) {
+        this.#name = name;
+        this.age = age;
+        Animal.count++;
+    }
+    
+    get name() { return this.#name; }
+    set name(val) { if(val) this.#name = val; }
+    
+    speak() { return `${this.#name} makes a sound`; }
+    static getCount() { return Animal.count; }
+    
+    toString() { return `Animal(${this.#name})`; }
+}
+
+class Dog extends Animal {
+    constructor(name, age, breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+    speak() { return `${this.name} says Woof!`; }
+}
+
+PROMISES AND ASYNC:
+const p = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Done!"), 1000);
+});
+p.then(r=>console.log(r)).catch(e=>console.error(e)).finally(()=>cleanup());
+
+Promise.all([p1,p2,p3])      // all must resolve
+Promise.allSettled([p1,p2])  // wait for all regardless
+Promise.race([p1,p2])        // first to settle
+Promise.any([p1,p2])         // first to resolve
+
+async function fetchUser(id) {
+    try {
+        const response = await fetch(`/api/users/${id}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        return data;
+    } catch(err) {
+        console.error("Fetch failed:", err);
+        throw err;
+    }
+}
+
+MODULES (ES6):
+// Export
+export const PI = 3.14159;
+export function add(a,b) { return a+b; }
+export class Calculator { ... }
+export default class App { ... }
+
+// Import
+import { PI, add } from './math.js';
+import App, { PI as pi } from './app.js';
+import * as math from './math.js';
+const module = await import('./dynamic.js');  // dynamic import

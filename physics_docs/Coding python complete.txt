@@ -1,0 +1,502 @@
+PYTHON PROGRAMMING - COMPLETE GUIDE WITH LIBRARIES
+====================================================
+
+PYTHON BASICS:
+Python is a high-level, interpreted, dynamically typed language known for readability.
+Version: Python 3.x (always use 3.x, not 2.x).
+Run: python3 script.py. Interactive: python3.
+
+DATA TYPES:
+int: 42, -7, 0
+float: 3.14, -2.5, 1e10
+complex: 3+4j
+str: "hello", 'world', """multiline"""
+bool: True, False
+list: [1, 2, 3] — mutable, ordered
+tuple: (1, 2, 3) — immutable, ordered
+set: {1, 2, 3} — unordered, unique
+dict: {"key": "value"} — key-value pairs
+None: null equivalent
+
+TYPE CONVERSION:
+int("42") → 42. float("3.14") → 3.14. str(42) → "42". list((1,2,3)) → [1,2,3]
+type(x) → returns type. isinstance(x, int) → bool.
+
+OPERATORS:
+Arithmetic: +, -, *, /, //(floor div), %(modulo), **(power)
+Comparison: ==, !=, <, >, <=, >=
+Logical: and, or, not
+Bitwise: &, |, ^, ~, <<, >>
+Assignment: =, +=, -=, *=, /=, //=, **=, %=
+Walrus: x := expression (assigns and returns value)
+
+STRINGS (DETAILED):
+s = "Hello, World!"
+s.upper(), s.lower(), s.title(), s.strip(), s.split(",")
+s.replace("Hello","Hi"), s.find("World"), s.startswith("H")
+s.format(): "My name is {}".format("Alice")
+f-strings: f"My name is {name} and I am {age} years old"
+s[0], s[-1], s[1:5], s[::2] (slicing)
+len(s), "".join(["a","b","c"]), s.count("l")
+
+LISTS:
+lst = [1, 2, 3, 4, 5]
+lst.append(6), lst.extend([7,8]), lst.insert(0, 0)
+lst.remove(3), lst.pop(), lst.pop(0)
+lst.sort(), lst.sort(reverse=True), sorted(lst)
+lst.reverse(), lst.index(2), lst.count(2)
+lst.copy(), lst.clear()
+List comprehension: [x**2 for x in range(10) if x%2==0]
+
+DICTIONARIES:
+d = {"name":"Alice", "age":30}
+d["name"], d.get("name","default")
+d.keys(), d.values(), d.items()
+d.update({"city":"NYC"}), d.pop("age")
+Dict comprehension: {k:v for k,v in items.items() if v>0}
+defaultdict, OrderedDict (from collections)
+
+CONTROL FLOW:
+if x > 0:
+    print("positive")
+elif x < 0:
+    print("negative")
+else:
+    print("zero")
+
+for i in range(10):
+    if i == 5: continue
+    if i == 8: break
+    print(i)
+
+while condition:
+    ...
+
+for i, val in enumerate(lst):
+    print(i, val)
+
+for k, v in d.items():
+    print(k, v)
+
+FUNCTIONS:
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+# *args and **kwargs
+def func(*args, **kwargs):
+    print(args)    # tuple
+    print(kwargs)  # dict
+
+# Lambda
+square = lambda x: x**2
+
+# Decorators
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Before")
+        result = func(*args, **kwargs)
+        print("After")
+        return result
+    return wrapper
+
+@decorator
+def my_func():
+    pass
+
+CLASSES:
+class Animal:
+    species = "Unknown"  # class variable
+
+    def __init__(self, name, age):
+        self.name = name  # instance variable
+        self.age = age
+
+    def speak(self):
+        return f"{self.name} makes a sound"
+
+    def __str__(self):
+        return f"Animal({self.name}, {self.age})"
+
+    def __repr__(self):
+        return f"Animal(name={self.name!r}, age={self.age!r})"
+
+    @classmethod
+    def from_string(cls, s):
+        name, age = s.split(",")
+        return cls(name, int(age))
+
+    @staticmethod
+    def is_animal(obj):
+        return isinstance(obj, Animal)
+
+class Dog(Animal):
+    def __init__(self, name, age, breed):
+        super().__init__(name, age)
+        self.breed = breed
+
+    def speak(self):
+        return f"{self.name} barks!"
+
+MAGIC METHODS (__dunder__):
+__init__, __str__, __repr__, __len__, __getitem__, __setitem__
+__add__, __sub__, __mul__, __eq__, __lt__, __gt__
+__enter__, __exit__ (context managers)
+__iter__, __next__ (iterators)
+__call__ (callable objects)
+
+EXCEPTIONS:
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+except (TypeError, ValueError):
+    pass
+else:
+    print("No exception")
+finally:
+    print("Always runs")
+
+raise ValueError("Custom error")
+raise RuntimeError("Something went wrong") from original_error
+
+Custom exceptions:
+class CustomError(Exception):
+    def __init__(self, message, code=None):
+        super().__init__(message)
+        self.code = code
+
+FILE I/O:
+with open("file.txt", "r") as f:
+    content = f.read()
+    lines = f.readlines()
+
+with open("file.txt", "w") as f:
+    f.write("Hello\n")
+
+with open("file.txt", "a") as f:
+    f.write("Appended\n")
+
+# CSV
+import csv
+with open("data.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row)
+
+# JSON
+import json
+with open("data.json", "r") as f:
+    data = json.load(f)
+json.dumps(data, indent=2)
+
+GENERATORS:
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a+b
+
+gen = fibonacci()
+next(gen)  # 0
+next(gen)  # 1
+
+# Generator expression
+gen_expr = (x**2 for x in range(100))
+
+ITERTOOLS (import itertools):
+itertools.count(start, step)
+itertools.cycle(iterable)
+itertools.repeat(elem, n)
+itertools.chain(*iterables)
+itertools.combinations(iterable, r)
+itertools.permutations(iterable, r)
+itertools.product(*iterables)
+itertools.groupby(iterable, key)
+itertools.islice(iterable, stop)
+
+FUNCTOOLS:
+from functools import reduce, partial, lru_cache, wraps
+reduce(lambda x,y: x+y, [1,2,3,4])
+partial(pow, base=2)  # pre-fill arguments
+@lru_cache(maxsize=128)  # memoization decorator
+
+COLLECTIONS:
+from collections import Counter, defaultdict, deque, namedtuple, OrderedDict
+Counter("hello")  # Counter({'l':2,'h':1,'e':1,'o':1})
+defaultdict(list)  # default value for missing keys
+deque([1,2,3], maxlen=3)  # efficient append/pop from both ends
+Point = namedtuple('Point', ['x','y'])
+
+CONTEXT MANAGERS:
+class ManagedResource:
+    def __enter__(self):
+        print("Acquiring resource")
+        return self
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Releasing resource")
+        return False  # don't suppress exceptions
+
+from contextlib import contextmanager
+@contextmanager
+def managed():
+    print("Enter")
+    yield
+    print("Exit")
+
+ASYNC/AWAIT:
+import asyncio
+
+async def fetch_data(url):
+    await asyncio.sleep(1)  # simulate I/O
+    return "data"
+
+async def main():
+    results = await asyncio.gather(
+        fetch_data("url1"),
+        fetch_data("url2"),
+    )
+    print(results)
+
+asyncio.run(main())
+
+---
+
+NUMPY - NUMERICAL COMPUTING:
+import numpy as np
+
+# Arrays
+a = np.array([1, 2, 3, 4, 5])
+b = np.zeros((3,4)), np.ones((2,3)), np.eye(4)
+c = np.arange(0, 10, 0.5)
+d = np.linspace(0, 1, 100)
+e = np.random.rand(3,3), np.random.randn(100)
+
+# Operations (vectorized, very fast)
+a + b, a * b, a ** 2, np.sqrt(a)
+np.sum(a), np.mean(a), np.std(a), np.max(a), np.min(a)
+np.dot(A, B), A @ B  # matrix multiplication
+np.transpose(A), A.T
+np.reshape(a, (2,3)), a.flatten()
+
+# Indexing and slicing
+a[0], a[-1], a[1:4], a[::2]
+A[0,:], A[:,0], A[1:3, 1:3]
+Boolean indexing: a[a > 3]
+Fancy indexing: a[[0,2,4]]
+
+# Linear algebra
+np.linalg.inv(A)     # inverse
+np.linalg.det(A)     # determinant
+np.linalg.eig(A)     # eigenvalues, eigenvectors
+np.linalg.solve(A,b) # solve Ax=b
+np.linalg.norm(v)    # vector norm
+
+# Broadcasting: operations between arrays of different shapes
+a = np.array([[1,2,3],[4,5,6]])  # (2,3)
+b = np.array([10,20,30])         # (3,) → broadcasts to (2,3)
+a + b  # works!
+
+---
+
+PANDAS - DATA ANALYSIS:
+import pandas as pd
+
+# Series
+s = pd.Series([1,2,3,4], index=['a','b','c','d'])
+
+# DataFrame
+df = pd.DataFrame({'A':[1,2,3], 'B':[4,5,6], 'C':[7,8,9]})
+df = pd.read_csv("data.csv")
+df = pd.read_excel("data.xlsx")
+df = pd.read_json("data.json")
+df = pd.read_sql(query, connection)
+
+# Exploration
+df.head(10), df.tail(5)
+df.shape, df.dtypes, df.describe()
+df.info(), df.columns, df.index
+df.isnull().sum()  # count missing values
+
+# Selection
+df['A']           # single column → Series
+df[['A','B']]     # multiple columns → DataFrame
+df.loc[0]         # row by label
+df.iloc[0]        # row by position
+df.loc[df['A']>1] # boolean filtering
+df.query("A > 1 and B < 6")
+
+# Cleaning
+df.dropna()                      # drop rows with NaN
+df.fillna(0)                     # fill NaN with value
+df.fillna(df.mean())             # fill with column means
+df.drop_duplicates()             # remove duplicate rows
+df.rename(columns={'A':'Alpha'}) # rename columns
+df['A'] = df['A'].astype(float)  # type conversion
+
+# Operations
+df['D'] = df['A'] + df['B']     # new column
+df.apply(lambda x: x*2)         # apply function
+df['A'].map({1:'one', 2:'two'}) # map values
+
+# GroupBy
+df.groupby('A').sum()
+df.groupby('A').agg({'B':'mean', 'C':'sum'})
+df.groupby('A').transform('mean')
+
+# Merge/Join
+pd.merge(df1, df2, on='key', how='inner')
+pd.merge(df1, df2, left_on='A', right_on='B', how='left')
+pd.concat([df1, df2], axis=0)  # stack rows
+pd.concat([df1, df2], axis=1)  # stack columns
+
+# Pivot
+df.pivot_table(values='D', index='A', columns='B', aggfunc='mean')
+
+# Sorting
+df.sort_values('A', ascending=False)
+df.sort_values(['A','B'])
+
+# String operations
+df['Name'].str.upper()
+df['Name'].str.contains('Alice')
+df['Name'].str.replace('Alice','Bob')
+
+---
+
+MATPLOTLIB - PLOTTING:
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+# Basic plots
+plt.plot(x, y, 'r--', linewidth=2, label='Line')
+plt.scatter(x, y, c='blue', s=50, alpha=0.7)
+plt.bar(categories, values, color='steelblue')
+plt.barh(categories, values)  # horizontal
+plt.hist(data, bins=30, density=True)
+plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.boxplot(data)
+plt.violinplot(data)
+plt.imshow(image, cmap='gray')
+plt.contour(X, Y, Z)
+plt.contourf(X, Y, Z)
+
+# Figure and axes
+fig, ax = plt.subplots(2, 3, figsize=(12,8))
+fig, axes = plt.subplots(1, 2, sharex=True)
+
+ax.plot(x, y)
+ax.set_title("Title"), ax.set_xlabel("X"), ax.set_ylabel("Y")
+ax.legend(), ax.grid(True, alpha=0.3)
+ax.set_xlim(0, 10), ax.set_ylim(-5, 5)
+ax.set_xticks([0,2,4,6,8,10])
+
+plt.tight_layout()
+plt.savefig("plot.png", dpi=300, bbox_inches='tight')
+plt.show()
+
+---
+
+SCIKIT-LEARN - MACHINE LEARNING:
+from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, LabelEncoder
+from sklearn.linear_model import LinearRegression, LogisticRegression, Ridge, Lasso
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.svm import SVC, SVR
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.decomposition import PCA
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Pipeline
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train_scaled, y_train)
+y_pred = model.predict(X_test_scaled)
+print(accuracy_score(y_test, y_pred))
+
+---
+
+REQUESTS - HTTP:
+import requests
+r = requests.get("https://api.example.com/data", params={"key":"val"}, headers={"Authorization":"Bearer token"})
+r.status_code, r.json(), r.text, r.content
+requests.post(url, json={"data":"value"})
+requests.put(url, data=form_data)
+
+---
+
+FLASK - WEB:
+from flask import Flask, request, jsonify, render_template
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/api/data", methods=["GET","POST"])
+def api():
+    if request.method == "POST":
+        data = request.json
+        return jsonify({"status":"ok", "received": data})
+    return jsonify({"message":"hello"})
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
+
+---
+
+TENSORFLOW/KERAS:
+import tensorflow as tf
+from tensorflow import keras
+
+model = keras.Sequential([
+    keras.layers.Dense(128, activation='relu', input_shape=(784,)),
+    keras.layers.Dropout(0.2),
+    keras.layers.Dense(64, activation='relu'),
+    keras.layers.Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.2)
+model.evaluate(X_test, y_test)
+model.predict(X_new)
+model.save("model.h5")
+
+---
+
+URSINA ENGINE (3D GAME ENGINE):
+from ursina import *
+
+app = Ursina()
+
+class Player(Entity):
+    def __init__(self):
+        super().__init__(
+            model='cube',
+            color=color.orange,
+            scale=(1,2,1),
+            position=(0,1,0)
+        )
+        self.speed = 5
+
+    def update(self):
+        self.x += held_keys['d'] * self.speed * time.dt
+        self.x -= held_keys['a'] * self.speed * time.dt
+        self.z -= held_keys['w'] * self.speed * time.dt
+        self.z += held_keys['s'] * self.speed * time.dt
+
+ground = Entity(model='plane', scale=20, texture='grass')
+player = Player()
+camera.z = -10
+
+Sky()
+DirectionalLight()
+
+app.run()
