@@ -1,6 +1,8 @@
 import streamlit as st
 import os
 import datetime
+import streamlit.components.v1
+
 st.set_page_config(
     page_title="PhysIQ — Science & English Tutor",
     page_icon="⚛️",
@@ -34,7 +36,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "animation_data": None, "quiz_state": None, "quiz_active": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False,
 }
 for k, v in defaults.items():
     if k not in st.session_state:
@@ -387,7 +389,7 @@ def get_confidence(results):
 
 # ── Feature 1: Normal Ask ─────────────────────────────────────
 def ask_question(question, vs, history_text):
-    results = vs.similarity_search_with_score(question, k=4) if vs else []
+    results = vs.similarity_search_with_score(question, k=4)
     conf_label, conf_class = get_confidence(results)
     context = "\n\n".join([r[0].page_content for r in results]) if results else ""
 
@@ -398,8 +400,6 @@ def ask_question(question, vs, history_text):
                         "informal", "comprehension", "figure of speech", "metaphor", "simile",
                         "alliteration", "rebuttal", "thesis", "introduction", "conclusion"]
     is_english = any(w in question.lower() for w in english_keywords)
-
-    is_creative = st.session_state.get("creative_mode", False)
 
     if is_english:
         system = """You are an expert English Language and Literature teacher and creative writing coach.
@@ -419,8 +419,13 @@ Always follow proper writing conventions and rules. When asked to write somethin
 
 If asked to write an essay/letter/story etc., actually WRITE it — do not just explain how to write it.
 Be creative, use vivid language, strong vocabulary, and varied sentence structures."""
+    else:
+        is_creative = st.session_state.get("creative_mode", False)
+    is_coding = st.session_state.get("coding_mode", False)
+    # Personalisation from user profile
+    profile_ctx = build_personalisation_context(st.session_state.get("user_profile"))
     if is_creative:
-        system = """You are a brilliant, creative English writing expert with the literary sensibility of a published author and the precision of an English professor.
+        system = ("""You are a brilliant, creative English writing expert with the literary sensibility of a published author and the precision of an English professor.
 You write with vivid imagery, original metaphors, varied sentence rhythms, and emotional intelligence.
 When asked to write essays, debates, letters, stories, poems, diary entries, speeches, or any creative writing:
 - Follow the correct format and rules for that genre meticulously
@@ -430,12 +435,32 @@ When asked to write essays, debates, letters, stories, poems, diary entries, spe
 - Create atmosphere, mood, and emotional resonance
 - Show don't tell
 - Always explain the rules/structure you used after your writing
-If asked about grammar, literature, or comprehension — explain clearly with examples."""
+If asked about grammar, literature, or comprehension — explain clearly with examples.""") + profile_ctx
     else:
-        system = """You are an expert tutor covering Physics, Chemistry, and English from Class 10 to College level.
-For science: answer clearly with step-by-step explanations and formulas where needed.
-For English: follow correct format rules, use sophisticated language, and explain your approach.
-If unsure, say so honestly."""
+        system = """You are PhysIQ — an expert AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science from Class 10 to College level.
+
+CRITICAL RULE — UNDERSTAND INTENT FIRST:
+Before answering, decide what the user ACTUALLY wants:
+1. EXPLANATION: "What is Newton's law?" / "Explain photosynthesis" / "How does DNA work?" → Give a clear educational explanation with examples and formulas.
+2. CALCULATION: "Calculate the force when..." / "Find the pH of..." → Solve step-by-step with working shown.
+3. DEFINITION: "What is entropy?" / "Define oxidation" → Give a precise definition with context.
+4. COMPARISON: "Difference between..." / "Compare X and Y" → Structured comparison.
+5. CONCEPT QUESTION: "Why does ice float?" / "How do planes fly?" → Intuitive explanation first, then technical detail.
+6. CONVERSATIONAL: "Hello", "Thanks", "That was helpful" → Respond naturally and warmly.
+
+NEVER write computer code unless the user EXPLICITLY asks for code (e.g. "write a Python program", "code for me").
+If someone asks "how does Python handle memory?" — explain the concept, do NOT write Python code.
+If someone asks "what is a for loop?" — explain with a simple example, do NOT write a full program.
+
+FORMAT YOUR ANSWERS WELL:
+- Use clear headings for complex topics
+- Use bullet points for lists
+- Show formulas clearly: F = ma, E = mc²
+- Give real-world examples
+- Keep answers focused and not too long unless detail is needed
+- Be encouraging and friendly
+
+If you don't know something or are unsure, say so honestly."""
 
     user = f"""Conversation so far:
 {history_text if history_text else "(First question)"}
@@ -538,90 +563,54 @@ The JSON format uses a SCENE GRAPH — an array of objects you can freely combin
   ]
 }
 
-POSITIONING: Use x,y in scene units (-1 to 1, y up) OR x_px,y_px in pixels.
-Use x: -0.5 for left, 0 for center, 0.5 for right. y: 0.3 for above center, -0.3 for below.
+POSITIONING RULES — VERY IMPORTANT — read carefully:
+- x goes from -1 (far left) to +1 (far right). Center is x=0.
+- y goes from -0.9 (bottom) to +0.9 (top). Center is y=0.
+- SPREAD objects out! Never put two objects at exactly the same position.
+- Minimum distance between any two objects: 0.18 units.
+- For atoms/molecules: put the main object at center (0,0), labels BELOW at y=-0.4
+- For diagrams with left+right sides: use x=-0.55 and x=+0.55
+- For top+bottom rows: use y=+0.3 and y=-0.3
+- Formula boxes always go at y=-0.42 (near bottom, above info panel)
+- Title labels always go at y=+0.42 (near top)
+- Legends go to the right side, x=+0.7
 
-AVAILABLE OBJECT TYPES (create as many as needed):
+LAYOUT TEMPLATES (use these patterns):
 
-PARTICLES AND ATOMS:
-{"type":"atom","x":0,"y":0,"r":0.18,"protons":6,"neutrons":6,"shells":[[2],[4]],"animation":"none"}
-{"type":"nucleus","x":0,"y":0,"r":0.05,"protons":6,"neutrons":6}
-{"type":"electron","x":0.2,"y":0,"r":0.025,"color":"#4da6ff","animation":"orbit","orbit_r":0.15,"speed":0.8,"phase":0}
-{"type":"proton","x":0,"y":0,"r":0.03,"animation":"pulse"}
-{"type":"neutron","x":0.02,"y":0.02,"r":0.03}
-{"type":"charge","x":0,"y":0,"r":0.04,"color":"#ff5555","sign":"+","field_lines":6,"animation":"pulse"}
+ATOM LAYOUT (example for Carbon):
+- Atom at center: {"type":"atom","x":0,"y":0.05,"r":0.2,...}
+- Title above: {"type":"label","x":0,"y":0.44,"text":"Carbon (C) — Z=6",...}
+- Formula below: {"type":"formula_box","x":-0.3,"y":-0.43,"formula":"Shells: 2,4",...}
+- Energy level (right): {"type":"formula_box","x":0.4,"y":0,"formula":"Valency = 4",...}
 
-SHAPES AND CONTAINERS:
-{"type":"circle","x":0,"y":0,"r":0.08,"color":"#4da6ff","text":"H₂O","text_size":14,"stroke":"#white","animation":"float"}
-{"type":"rect","x":0,"y":0,"w":0.2,"h":0.1,"color":"#4da6ff","corner_radius":6,"text":"Block m=2kg","fill_alpha":0.8}
-{"type":"gas_particles","x":0,"y":0,"count":25,"temperature":1.5,"box_w":0.35,"box_h":0.25,"color":"#4da6ff"}
+LEFT-RIGHT LAYOUT (two things to compare):
+- Left object: x=-0.45, y=0
+- Right object: x=+0.45, y=0  
+- Label left: x=-0.45, y=-0.22
+- Label right: x=+0.45, y=-0.22
+- Arrow between: from x=-0.2 to x=+0.2
 
-LABELS AND FORMULAS:
-{"type":"label","x":0,"y":0.4,"text":"Hydrogen Atom (Z=1)","color":"#58a6ff","size":15}
-{"type":"formula_box","x":0,"y":-0.4,"formula":"F = ma","description":"Newton\'s Second Law","width":0.3,"height":0.1,"color":"#ffd166"}
-{"type":"text","x":-0.6,"y":0.35,"text":"n=1","color":"#8b949e","size":11}
+TOP-BOTTOM LAYOUT (cause and effect):
+- Top object: x=0, y=+0.3
+- Arrow down: ty=0 (center)
+- Bottom object: x=0, y=-0.15
 
-ARROWS AND CONNECTIONS:
-{"type":"arrow","x":0,"y":0,"tx":0.3,"ty":0,"color":"#ff5555","label_text":"Force F","line_width":2.5}
-{"type":"double_arrow","x":-0.2,"y":-0.3,"tx":0.2,"ty":-0.3,"color":"#ffd166","label_text":"Range"}
-{"type":"orbit_path","x":0,"y":0,"r":0.18,"color":"#4da6ff","y_ratio":0.55}
+MULTI-OBJECT LAYOUT (4-6 things):
+- Top left: x=-0.45, y=+0.28
+- Top right: x=+0.45, y=+0.28
+- Middle left: x=-0.45, y=-0.08
+- Middle right: x=+0.45, y=-0.08
+- Formula box bottom: x=0, y=-0.43
 
-WAVES AND FIELDS:
-{"type":"wave","x":0,"y":0.1,"width":0.9,"amp":0.07,"wavelength":0.25,"speed":40,"color":"#06d6a0","label_top":"Transverse Wave","animation":"none"}
-{"type":"wave","x":0,"y":-0.1,"width":0.9,"amp":0.05,"wavelength":0.2,"speed":50,"color":"#ff5555"}
-{"type":"sine_wave_3d","x":0,"y":0,"wavelength_px":null,"amp_e":null,"width":0.8,"speed":45}
-{"type":"magnetic_field","x":0,"y":0,"cols":5,"rows":4,"direction":"out","color":"#4da6ff","spacing_x":0.1,"spacing_y":0.09}
-{"type":"electric_field_line","x":0,"y":0.2,"color":"#ff5555","len":0.15,"angle":90}
+CLARITY RULES:
+1. Each object must have a "caption" or nearby label so user knows what it is
+2. Never put a label on top of another object — offset labels by at least 0.12 units
+3. Use formula_box for equations — place at bottom (y=-0.42)
+4. Use "steps" array to guide the user through the animation step by step
+5. Keep legends minimal — only include if there are 3+ different colored things
+6. The info_text at the bottom should explain WHAT IS HAPPENING right now
 
-CIRCUIT COMPONENTS:
-{"type":"wire","x":-0.5,"y":0.3,"tx":0.5,"ty":0.3,"animate_current":true,"speed":0.5,"electron_count":4}
-{"type":"battery_obj","x":-0.5,"y":0,"voltage":"9V","color":"#ffd166"}
-{"type":"resistor_obj","x":0,"y":0.3,"len":0.2,"color":"#ff8c42","label_text":"R=100Ω"}
-{"type":"capacitor_obj","x":0.3,"y":0.3,"color":"#4da6ff"}
-{"type":"inductor_obj","x":-0.2,"y":-0.3,"len":0.2,"color":"#ff8c42"}
-
-MOTION AND MECHANICS:
-{"type":"projectile_obj","x":-0.6,"y":-0.2,"v0":18,"angle":45,"gravity":9.8,"scale":null,"speed":0.7}
-{"type":"pendulum_obj","x":0,"y":0.35,"length":0.28,"amplitude":28,"color":"#ff5555","show_formula":true}
-{"type":"spring_obj","x":-0.4,"y":0,"tx":0.1,"ty":0,"coils":10,"color":"#8b949e","animation":"oscillate_x","amp":0.12,"freq":2}
-
-OPTICS:
-{"type":"snell_diagram","x":0,"y":0,"n1":1.0,"n2":1.5,"incident_angle":40,"ray_len":null}
-{"type":"photon","x":-0.5,"y":0.1,"speed":80,"angle":0,"color":"#ffffff"}
-
-BIOLOGY:
-{"type":"dna_helix","x":0,"y":0,"height":0.5,"width":0.1,"turns":4}
-{"type":"neuron","x":-0.1,"y":0,"color":"#4da6ff","dendrites":5}
-
-ENERGY LEVELS:
-{"type":"energy_level","x":0,"y":-0.2,"width":0.4,"energy_label":"E₁=-13.6eV","color":"#4da6ff","label_text":"n=1 ground state"}
-{"type":"electron_jump","x":0,"y":0,"levels":[-0.3,-0.15,0,0.15],"period":5}
-
-MOLECULAR BONDS:
-{"type":"molecular_bond","x":-0.1,"y":0,"tx":0.1,"ty":0,"order":2,"bond_color":"#ffd166"}
-
-CHARTS:
-{"type":"axis","x":0,"y":-0.1,"length":0.45,"x_label":"t (s)","y_label":"x (m)","ticks":4}
-{"type":"graph_line","x":0,"y":-0.1,"points":[[0,0],[1,0.5],[2,1.8],[3,4],[4,7]],"scale_x":null,"scale_y":null,"color":"#4da6ff"}
-{"type":"graph_bar","x":0,"y":0,"bars":[{"label":"H","value":10,"color":"#4da6ff"},{"label":"He","value":7,"color":"#ff5555"}],"max_height":0.3}
-
-ANIMATIONS available for any object:
-"none" | "orbit" (use orbit_r, speed, phase) | "oscillate_x" (use amp, freq) |
-"oscillate_y" | "pulse" | "float" | "spin" (use speed) | "blink" (use freq) |
-"bounce" | "wave_travel"
-
-BUILD COMPLEX SCENES by combining many objects. Examples:
-- Hydrogen atom: nucleus + orbit_path + electron orbiting + labels + formula_box + energy levels
-- Circuit: multiple wires + battery + resistor + capacitor + label for each + formula box with V=IR
-- Wave: two waves + axis + labels for each property + arrows showing differences
-- Newton laws: rect (block) + multiple force arrows + formula box + axis + labels
-- DNA: dna_helix + labels for each part + formula box + legend
-
-Always create AT LEAST 6-12 objects for a rich educational scene.
-Add labels, formula_boxes, and axes to make it truly educational.
-Use "steps" array to create a guided walkthrough of the concept.
-Return ONLY the JSON object.
-"""
+Return ONLY the JSON object."""
 
     user = f"""Question: {question}
 
@@ -677,30 +666,24 @@ def convert_old_to_new(old):
 
 def show_animator_panel(animation_data):
     """Render the HTML5 Canvas animator in Streamlit."""
-    import json
+    import json, urllib.parse
+    encoded = urllib.parse.quote(json.dumps(animation_data))
     with open("animator.html", "r") as f:
         html_content = f.read()
     # Inject data directly into the HTML
     inject_script = f"""
 <script>
 window.addEventListener('load', function() {{
-  setTimeout(function() {{
-    try {{
-      const data = {json.dumps(animation_data)};
-      if (typeof loadScene === 'function') {{
-        loadScene(data);
-      }} else {{
-        scene = data;
-        const loading = document.getElementById('loading');
-        const subtitle = document.getElementById('subtitle');
-        const infoPanel = document.getElementById('infopanel');
-        if (loading) loading.style.display = 'none';
-        if (subtitle) subtitle.textContent = scene.subtitle || scene.type || 'Animation';
-        if (infoPanel) infoPanel.textContent = scene.info_text || '';
-      }}
-    }} catch(e) {{ console.error(e); }}
-  }}, 500);
-}});
+  try {{
+    const data = {json.dumps(animation_data)};
+    scene = data;
+    if(scene._particles) delete scene._particles;
+    document.getElementById('loading').style.display='none';
+    document.getElementById('subtitle-text').textContent = scene.subtitle||scene.type||'Animation';
+    document.getElementById('info-panel').textContent = scene.info_text||'';
+    if(scene.legend) updateLegend(scene.legend);
+  }} catch(e) {{ console.error(e); }}
+}}, 500);
 </script>"""
     html_content = html_content.replace('</body>', inject_script + '</body>')
     st.components.v1.html(html_content, height=520, scrolling=False)
@@ -1072,21 +1055,60 @@ CODING_LANGUAGES = {
     "r":"R","matlab":"MATLAB","dart":"Dart","flutter":"Flutter",
 }
 
-CODING_TRIGGERS = [
-    "write code","write a","create a","build a","make a","develop",
-    "program","script","function","class","implement","code for",
-    "generate code","write me","create me","can you code","how to code",
-    "ursina","pygame","flask","fastapi","django","react","pandas",
-    "numpy","tensorflow","pytorch","opencv","roblox","unity","game",
+# Phrases that STRONGLY indicate user wants code written
+CODING_WRITE_TRIGGERS = [
+    "write code", "write a program", "write a script", "write a function",
+    "write a class", "write a game", "write an app", "write a bot",
+    "create a program", "create a script", "create a game", "create an app",
+    "build a program", "build a game", "build an app", "build a website",
+    "make a program", "make a game", "make a script", "make an app",
+    "code for me", "generate code", "can you code", "write me code",
+    "implement a", "develop a", "program a", "give me the code",
+    "show me the code", "write the code", "full code", "complete code",
+]
+
+# Words that just mention coding but user wants EXPLANATION, not code
+CODING_EXPLAIN_TRIGGERS = [
+    "what is", "explain", "how does", "difference between", "what are",
+    "define", "tell me about", "describe", "why does", "how do",
+    "what does", "meaning of", "concept of", "theory", "example of",
+    "when to use", "pros and cons", "advantages", "disadvantages",
 ]
 
 def is_coding_request(message):
-    msg = message.lower()
-    # Check if any language mentioned
-    lang_found = any(lang in msg for lang in CODING_LANGUAGES.keys())
-    # Check if coding trigger present
-    trigger_found = any(t in msg for t in CODING_TRIGGERS)
-    return lang_found or trigger_found or st.session_state.get("coding_mode", False)
+    """Only return True when user CLEARLY wants code written, not just asking a question."""
+    if st.session_state.get("coding_mode", False):
+        return True
+    msg = message.lower().strip()
+
+    # Strong action words that mean "write me code"
+    strong_actions = [
+        "write code", "write a program", "write a script", "write a function",
+        "write a class", "create a program", "create an app", "build a program",
+        "build an app", "build a game", "code for me", "generate code",
+        "implement a", "develop a", "program that", "write me code",
+        "give me code", "make a program", "make a game", "can you code",
+        "write the code", "create the code", "build the code",
+        "make a script", "write a bot", "create a bot",
+    ]
+    # Library names that only appear in coding contexts
+    strong_libraries = [
+        "ursina", "pygame", "tkinter", "kivy", "flask app", "fastapi",
+        "django app", "tensorflow model", "pytorch model", "react component",
+        "express server", "spring boot", "roblox script", "arduino code",
+    ]
+
+    if any(a in msg for a in strong_actions):
+        return True
+    if any(lib in msg for lib in strong_libraries):
+        return True
+
+    # Language + explicit code word combo
+    lang_keys = list(CODING_LANGUAGES.keys())
+    has_lang = any(f" {lang} " in f" {msg} " for lang in lang_keys)
+    has_code_word = any(w in msg for w in ["code", "program", "script", "function", "class", "syntax"])
+    return has_lang and has_code_word
+
 
 def detect_language(message):
     msg = message.lower()
@@ -1135,6 +1157,705 @@ Task: {question}
 Write complete, working {language} code:"""
 
     return call_hf(system, user, max_tokens=2000)
+
+
+
+# ══════════════════════════════════════════════════════════════
+#  PDF READER
+# ══════════════════════════════════════════════════════════════
+
+def extract_pdf_text(pdf_file):
+    """Extract text from uploaded PDF file."""
+    try:
+        import io
+        from pypdf import PdfReader
+        reader = PdfReader(io.BytesIO(pdf_file.read()))
+        text = ""
+        for i, page in enumerate(reader.pages):
+            page_text = page.extract_text()
+            if page_text:
+                text += f"\n--- Page {i+1} ---\n{page_text}"
+        return text.strip()
+    except Exception as e:
+        return None
+
+def answer_from_pdf(pdf_text, question):
+    """Use AI to answer a question based on PDF content."""
+    # Trim PDF text to avoid token overflow
+    trimmed = pdf_text[:4000] if len(pdf_text) > 4000 else pdf_text
+    system = """You are an expert tutor. A student has uploaded a PDF document and asked a question about it.
+Read the document carefully and answer the question accurately and clearly.
+If the answer is not in the document, say so honestly.
+Format your answer with clear sections if needed."""
+    user = f"""PDF Content:
+{trimmed}
+
+Student's question: {question}
+
+Answer based on the PDF:"""
+    return call_hf(system, user, max_tokens=1500)
+
+def summarise_pdf(pdf_text):
+    """Generate a structured summary of a PDF."""
+    trimmed = pdf_text[:5000] if len(pdf_text) > 5000 else pdf_text
+    system = """You are an expert academic summariser.
+Create a clear, structured summary of this document with:
+- Main topic and purpose
+- Key concepts covered  
+- Important facts, formulas, or findings
+- Conclusions or takeaways
+Use bullet points and headers for clarity."""
+    user = f"""Document to summarise:\n{trimmed}\n\nProvide a structured summary:"""
+    return call_hf(system, user, max_tokens=1200)
+
+
+
+# ══════════════════════════════════════════════════════════════
+#  VOICE CONNECTOR
+# ══════════════════════════════════════════════════════════════
+
+def generate_voice_answer(question, full_answer):
+    """Generate a short, spoken-friendly version of the answer."""
+    system = """You are a friendly science tutor speaking out loud.
+Convert this answer into a SHORT spoken response (under 60 words).
+Rules:
+- Speak naturally, like talking to a student face-to-face
+- No markdown, no bullet points, no symbols like * or #
+- No formulas with special characters — say them in words (e.g. "F equals m times a")
+- Get straight to the point
+- End with one short key fact
+- Sound warm and encouraging"""
+    user = f"""Question: {question}
+Full answer: {full_answer[:800]}
+
+Write a short spoken version (under 60 words):"""
+    return call_hf(system, user, max_tokens=200)
+
+def show_voice_ui():
+    """Render the voice interface HTML component."""
+    voice_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: transparent;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 12px;
+    padding: 12px;
+  }
+  .voice-panel {
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 18px 24px;
+    width: 100%;
+    max-width: 520px;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 14px;
+  }
+  .voice-title {
+    color: #58a6ff; font-size: 14px; font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .controls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  
+  .mic-btn {
+    width: 64px; height: 64px; border-radius: 50%;
+    border: none; cursor: pointer;
+    background: linear-gradient(135deg, #1f6feb, #388bfd);
+    color: white; font-size: 26px;
+    box-shadow: 0 0 0 0 rgba(88,166,255,0.4);
+    transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mic-btn:hover { transform: scale(1.05); }
+  .mic-btn.listening {
+    background: linear-gradient(135deg, #b91c1c, #ef4444);
+    animation: pulse-ring 1.2s infinite;
+  }
+  .mic-btn.speaking {
+    background: linear-gradient(135deg, #15803d, #22c55e);
+    animation: pulse-ring 1.5s infinite;
+  }
+  @keyframes pulse-ring {
+    0%   { box-shadow: 0 0 0 0   rgba(88,166,255,0.5); }
+    70%  { box-shadow: 0 0 0 20px rgba(88,166,255,0); }
+    100% { box-shadow: 0 0 0 0   rgba(88,166,255,0); }
+  }
+  
+  .stop-btn {
+    width: 42px; height: 42px; border-radius: 50%; border: none;
+    background: #21262d; color: #e6edf3; font-size: 16px;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .stop-btn:hover { background: #30363d; }
+
+  .status {
+    color: #8b949e; font-size: 12px; text-align: center;
+    min-height: 18px; transition: color 0.3s;
+  }
+  .status.listening { color: #ef4444; font-weight: 600; }
+  .status.speaking { color: #22c55e; font-weight: 600; }
+
+  .transcript {
+    background: #0d1117; border: 1px solid #21262d; border-radius: 10px;
+    padding: 10px 14px; color: #e6edf3; font-size: 13px;
+    min-height: 38px; width: 100%; text-align: center;
+    font-style: italic; display: none;
+  }
+  .transcript.visible { display: block; }
+
+  .voice-select-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .voice-select-row label { color: #8b949e; font-size: 11px; }
+  select {
+    background: #21262d; color: #e6edf3; border: 1px solid #30363d;
+    border-radius: 8px; padding: 5px 10px; font-size: 12px; cursor: pointer;
+    max-width: 220px;
+  }
+
+  .speed-row { display: flex; align-items: center; gap: 10px; }
+  .speed-row label { color: #8b949e; font-size: 11px; }
+  input[type=range] { width: 100px; accent-color: #58a6ff; }
+  .speed-val { color: #58a6ff; font-size: 11px; font-weight: 600; width: 28px; }
+
+  .hint { color: #484f58; font-size: 10px; text-align: center; }
+  .send-btn {
+    background: #238636; color: white; border: none;
+    border-radius: 8px; padding: 7px 18px; font-size: 12px;
+    cursor: pointer; transition: all 0.2s; display: none;
+  }
+  .send-btn.visible { display: block; }
+  .send-btn:hover { background: #2ea043; }
+</style>
+</head>
+<body>
+<div class="voice-panel">
+  <div class="voice-title">🎙️ Voice Connector</div>
+
+  <div class="voice-select-row">
+    <label>Voice:</label>
+    <select id="voiceSelect">
+      <option value="">Loading voices...</option>
+    </select>
+  </div>
+
+  <div class="speed-row">
+    <label>Speed:</label>
+    <input type="range" id="speedRange" min="0.6" max="1.8" step="0.1" value="1.0">
+    <span class="speed-val" id="speedVal">1.0x</span>
+    <label style="margin-left:8px">Pitch:</label>
+    <input type="range" id="pitchRange" min="0.5" max="2.0" step="0.1" value="1.0">
+    <span class="speed-val" id="pitchVal">1.0</span>
+  </div>
+
+  <div class="controls">
+    <button class="mic-btn" id="micBtn" title="Hold to speak / Click to start">🎙️</button>
+    <button class="stop-btn" id="stopBtn" title="Stop speaking">⏹</button>
+  </div>
+
+  <div class="status" id="status">Click the mic and ask your question</div>
+  <div class="transcript" id="transcript"></div>
+  <button class="send-btn" id="sendBtn">➤ Ask PhysIQ</button>
+  <div class="hint">Supports: Chrome, Edge, Safari | Speak clearly</div>
+</div>
+
+<script>
+const micBtn    = document.getElementById('micBtn');
+const stopBtn   = document.getElementById('stopBtn');
+const sendBtn   = document.getElementById('sendBtn');
+const status    = document.getElementById('status');
+const transcript = document.getElementById('transcript');
+const voiceSel  = document.getElementById('voiceSelect');
+const speedIn   = document.getElementById('speedRange');
+const pitchIn   = document.getElementById('pitchRange');
+const speedVal  = document.getElementById('speedVal');
+const pitchVal  = document.getElementById('pitchVal');
+
+let recognition = null;
+let synth = window.speechSynthesis;
+let voices = [];
+let currentText = '';
+let isListening = false;
+
+// ── SPEED & PITCH ──────────────────────────────────────────
+speedIn.oninput = () => speedVal.textContent = parseFloat(speedIn.value).toFixed(1)+'x';
+pitchIn.oninput = () => pitchVal.textContent = parseFloat(pitchIn.value).toFixed(1);
+
+// ── LOAD VOICES ────────────────────────────────────────────
+function loadVoices(){
+  voices = synth.getVoices().filter(v =>
+    v.lang.startsWith('en') || v.lang.startsWith('hi') || v.lang.startsWith('fr')
+  );
+  if(voices.length === 0){ setTimeout(loadVoices, 300); return; }
+
+  voiceSel.innerHTML = '';
+  const groups = {
+    'English (US)': voices.filter(v=>v.lang==='en-US'),
+    'English (UK)': voices.filter(v=>v.lang==='en-GB'),
+    'English (AU)': voices.filter(v=>v.lang==='en-AU'),
+    'English (IN)': voices.filter(v=>v.lang==='en-IN'),
+    'Hindi': voices.filter(v=>v.lang.startsWith('hi')),
+    'French': voices.filter(v=>v.lang.startsWith('fr')),
+    'Other English': voices.filter(v=>v.lang.startsWith('en') &&
+      !['en-US','en-GB','en-AU','en-IN'].includes(v.lang)),
+  };
+  Object.entries(groups).forEach(([grpName, grpVoices])=>{
+    if(!grpVoices.length) return;
+    const grp = document.createElement('optgroup');
+    grp.label = grpName;
+    grpVoices.forEach(v=>{
+      const opt = document.createElement('option');
+      opt.value = v.name;
+      opt.textContent = `${v.name}${v.localService?' ★':''}`;
+      grp.appendChild(opt);
+    });
+    voiceSel.appendChild(grp);
+  });
+  // Default to a nice voice
+  const preferred = ['Google UK English Female','Microsoft Libby','Samantha','Google US English'];
+  for(const p of preferred){
+    const found = voices.find(v=>v.name===p);
+    if(found){ voiceSel.value=found.name; break; }
+  }
+}
+synth.onvoiceschanged = loadVoices;
+loadVoices();
+
+// ── SPEECH RECOGNITION ────────────────────────────────────
+function startListening(){
+  if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
+    status.textContent = '❌ Speech recognition not supported. Use Chrome or Edge.';
+    return;
+  }
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  recognition = new SR();
+  recognition.continuous = false;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+  recognition.maxAlternatives = 3;
+
+  recognition.onstart = () => {
+    isListening = true;
+    micBtn.classList.add('listening');
+    micBtn.textContent = '🔴';
+    status.textContent = '🎙️ Listening... speak now';
+    status.className = 'status listening';
+    transcript.textContent = '';
+    transcript.classList.remove('visible');
+    sendBtn.classList.remove('visible');
+    currentText = '';
+  };
+
+  recognition.onresult = (e) => {
+    let interim = '', final = '';
+    for(let i=e.resultIndex;i<e.results.length;i++){
+      if(e.results[i].isFinal) final += e.results[i][0].transcript;
+      else interim += e.results[i][0].transcript;
+    }
+    const display = final || interim;
+    transcript.textContent = '"' + display + '"';
+    transcript.classList.add('visible');
+    if(final){ currentText = final; }
+  };
+
+  recognition.onend = () => {
+    isListening = false;
+    micBtn.classList.remove('listening');
+    micBtn.textContent = '🎙️';
+    if(currentText){
+      status.textContent = '✅ Got it! Click "Ask PhysIQ" to send';
+      status.className = 'status';
+      sendBtn.classList.add('visible');
+    } else {
+      status.textContent = 'No speech detected. Try again.';
+      status.className = 'status';
+    }
+  };
+
+  recognition.onerror = (e) => {
+    isListening = false;
+    micBtn.classList.remove('listening');
+    micBtn.textContent = '🎙️';
+    const msgs = {
+      'no-speech': 'No speech detected. Try again.',
+      'audio-capture': 'No microphone found.',
+      'not-allowed': '🔒 Microphone access denied. Allow it in browser settings.',
+      'network': 'Network error. Check connection.',
+    };
+    status.textContent = msgs[e.error]||'Error: '+e.error;
+    status.className = 'status';
+  };
+
+  recognition.start();
+}
+
+micBtn.onclick = () => {
+  if(isListening){ recognition?.stop(); }
+  else { startListening(); }
+};
+
+// ── SEND TO STREAMLIT ─────────────────────────────────────
+sendBtn.onclick = () => {
+  if(!currentText) return;
+  window.parent.postMessage({type:'voice_question', text: currentText}, '*');
+  status.textContent = '⏳ Sending to PhysIQ...';
+  sendBtn.classList.remove('visible');
+  transcript.classList.remove('visible');
+  currentText = '';
+};
+
+// ── TEXT TO SPEECH ────────────────────────────────────────
+function speak(text){
+  synth.cancel();
+  if(!text) return;
+  // Clean text for speaking
+  const clean = text
+    .replace(/[#*_`>]/g,'')
+    .replace(/\*\*/g,'')
+    .replace(/\n/g,' ')
+    .replace(/[\[\]\(\)]/g,'')
+    .replace(/https?:\/\/\S+/g,'')
+    .substring(0, 600);
+
+  const utt = new SpeechSynthesisUtterance(clean);
+  utt.rate  = parseFloat(speedIn.value);
+  utt.pitch = parseFloat(pitchIn.value);
+  const selectedName = voiceSel.value;
+  const selectedVoice = voices.find(v=>v.name===selectedName);
+  if(selectedVoice) utt.voice = selectedVoice;
+
+  utt.onstart = () => {
+    micBtn.classList.add('speaking');
+    micBtn.textContent = '🔊';
+    status.textContent = '🔊 Speaking...';
+    status.className = 'status speaking';
+  };
+  utt.onend = () => {
+    micBtn.classList.remove('speaking');
+    micBtn.textContent = '🎙️';
+    status.textContent = 'Done! Click mic to ask another question';
+    status.className = 'status';
+  };
+  synth.speak(utt);
+}
+
+stopBtn.onclick = () => {
+  synth.cancel();
+  if(recognition && isListening){ recognition.stop(); }
+  micBtn.classList.remove('listening','speaking');
+  micBtn.textContent = '🎙️';
+  status.textContent = 'Stopped. Click mic to start again.';
+  status.className = 'status';
+};
+
+// ── RECEIVE REPLY FROM STREAMLIT ──────────────────────────
+window.addEventListener('message', e => {
+  if(e.data?.type === 'voice_reply'){
+    speak(e.data.text);
+  }
+});
+</script>
+</body>
+</html>
+"""
+    st.components.v1.html(voice_html, height=340, scrolling=False)
+
+
+
+# ══════════════════════════════════════════════════════════════
+#  USER PROFILE & PERSONALISATION SYSTEM
+# ══════════════════════════════════════════════════════════════
+
+def save_user_profile(profile_data):
+    """Save analysed profile to Supabase."""
+    try:
+        import json
+        get_authed_client().table("user_profiles").upsert({
+            "user_id": get_user_id(),
+            "profile_json": json.dumps(profile_data),
+            "updated_at": datetime.datetime.utcnow().isoformat()
+        }, on_conflict="user_id").execute()
+    except Exception as e:
+        pass  # table may not exist yet, fail silently
+
+def load_user_profile():
+    """Load saved profile from Supabase."""
+    try:
+        import json
+        res = get_authed_client().table("user_profiles").select("*").eq(
+            "user_id", get_user_id()).execute()
+        if res.data:
+            return json.loads(res.data[0]["profile_json"])
+    except:
+        pass
+    return None
+
+def analyse_user_profile(messages, past_convos, quiz_mistakes):
+    """Use AI to deeply analyse all user data and build a profile."""
+    # Build a summary of all interactions
+    recent_questions = [m["content"] for m in messages if m["role"]=="user"][-30:]
+    past_questions = [p["content"] for p in past_convos if p.get("role")=="user"][-50:]
+    all_questions = list(set(recent_questions + past_questions))
+
+    mistake_topics = [m.get("topic","") for m in quiz_mistakes] if quiz_mistakes else []
+    wrong_questions = [m.get("question","") for m in quiz_mistakes] if quiz_mistakes else []
+
+    if len(all_questions) < 2:
+        return None
+
+    system = """You are an expert educational psychologist and learning analyst.
+Analyse the student's conversation history, quiz mistakes, and question patterns.
+Return ONLY a valid JSON object with this exact structure — no extra text:
+
+{
+  "weak_concepts": ["concept1", "concept2", "concept3"],
+  "strong_concepts": ["concept1", "concept2", "concept3"],
+  "favourite_topics": ["topic1", "topic2"],
+  "learning_style": "Visual / Reading / Problem-solving / Conceptual",
+  "preferred_detail_level": "Simple / Balanced / Detailed / Expert",
+  "asking_pattern": "e.g. Asks short direct questions / Asks deep theoretical questions",
+  "personality": "e.g. Curious and explorative / Goal-oriented / Creative",
+  "how_to_reply": "e.g. Use analogies, keep it short, avoid jargon",
+  "improvement_plan": ["tip1", "tip2", "tip3"],
+  "strengths_summary": "One sentence about what they are best at",
+  "weakness_summary": "One sentence about their main gap",
+  "engagement_level": "High / Medium / Low",
+  "topics_explored": ["topic1", "topic2", "topic3", "topic4", "topic5"],
+  "recommended_next": ["topic1", "topic2", "topic3"]
+}"""
+
+    user = f"""Student's questions (most recent first):
+{chr(10).join([f'- {q}' for q in all_questions[:40]])}
+
+Quiz mistakes (topics where errors occurred):
+{chr(10).join([f'- {t}: {q}' for t,q in zip(mistake_topics[:15], wrong_questions[:15])])}
+
+Analyse this student deeply and return the JSON profile:"""
+
+    import json
+    raw = call_hf(system, user, max_tokens=800)
+    if not raw:
+        return None
+    raw = raw.strip()
+    start = raw.find("{")
+    end = raw.rfind("}") + 1
+    if start == -1:
+        return None
+    try:
+        return json.loads(raw[start:end])
+    except:
+        return None
+
+def build_personalisation_context(profile):
+    """Build a short context string to inject into every AI response."""
+    if not profile:
+        return ""
+    style = profile.get("how_to_reply", "")
+    level = profile.get("preferred_detail_level", "Balanced")
+    personality = profile.get("personality", "")
+    weak = profile.get("weak_concepts", [])
+    strong = profile.get("strong_concepts", [])
+    context = f"""\n\n[STUDENT PROFILE — adjust your response accordingly:
+- Detail level: {level}
+- How they like replies: {style}
+- Personality: {personality}
+- Strong in: {", ".join(strong[:3]) if strong else "general"}
+- Needs help with: {", ".join(weak[:3]) if weak else "varies"}
+Always match your tone and depth to this profile.]"""
+    return context
+
+def show_profile_page():
+    """Render the full user profile dashboard."""
+    profile = st.session_state.get("user_profile")
+    user_name = st.session_state.user.user_metadata.get("full_name", "Student")
+    dark = st.session_state.dark_mode
+    bg2  = "#161b22" if dark else "#ffffff"
+    acc  = "#58a6ff"
+    grn  = "#3fb950"
+    red  = "#f85149"
+    yel  = "#d29922"
+
+    st.markdown(f"## 👤 {user_name}'s Learning Profile")
+    st.caption("Automatically generated from your conversations and quiz history")
+
+    col_refresh, col_back = st.columns([1,4])
+    with col_refresh:
+        if st.button("🔄 Refresh Profile", use_container_width=True):
+            with st.spinner("🧠 Analysing your learning history..."):
+                msgs = st.session_state.get("messages",[])
+                past = load_past_conversations()
+                mistakes = load_quiz_mistakes()
+                new_profile = analyse_user_profile(msgs, past, mistakes)
+                if new_profile:
+                    st.session_state.user_profile = new_profile
+                    save_user_profile(new_profile)
+                    st.success("✅ Profile updated!")
+                    st.rerun()
+                else:
+                    st.warning("Not enough conversation data yet. Ask more questions first!")
+    with col_back:
+        if st.button("← Back to Chat", use_container_width=True):
+            st.session_state.show_profile = False
+            st.rerun()
+
+    if not profile:
+        # Try loading from Supabase
+        saved = load_user_profile()
+        if saved:
+            st.session_state.user_profile = saved
+            profile = saved
+        else:
+            st.info("📊 No profile yet! Ask some questions in the chat first, then click 🔄 Refresh Profile")
+            st.markdown("""
+            **The profile will show:**
+            - 🔴 Topics where you need improvement
+            - 🟢 Topics where you are strong
+            - ❤️ Your favourite subjects
+            - 🎯 How the AI should talk to you
+            - 📈 A personalised improvement plan
+            """)
+            return
+
+    # ── Score cards ───────────────────────────────────────────
+    st.markdown("---")
+    c1, c2, c3, c4 = st.columns(4)
+    metrics = [
+        (c1, "🏆 Strengths", len(profile.get("strong_concepts",[])), grn),
+        (c2, "📚 Topics Done", len(profile.get("topics_explored",[])), acc),
+        (c3, "⚠️ Weak Areas", len(profile.get("weak_concepts",[])), red),
+        (c4, "🎯 Engagement", profile.get("engagement_level","?"), yel),
+    ]
+    for col, label, val, color in metrics:
+        with col:
+            st.markdown(f"""
+            <div style="background:{bg2};border:1px solid {color}30;border-left:4px solid {color};
+            border-radius:10px;padding:14px 16px;text-align:center;margin-bottom:8px">
+                <div style="color:{color};font-size:0.8rem;font-weight:600;margin-bottom:4px">{label}</div>
+                <div style="color:#e6edf3;font-size:1.6rem;font-weight:700">{val}</div>
+            </div>""", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ── Two column layout ─────────────────────────────────────
+    left, right = st.columns(2)
+
+    with left:
+        # Strong concepts
+        strong = profile.get("strong_concepts", [])
+        if strong:
+            st.markdown(f"### 🟢 You're Great At")
+            for s in strong:
+                st.markdown(f"""<div style="background:{bg2};border:1px solid {grn}40;border-radius:8px;
+                padding:8px 14px;margin:4px 0;color:#e6edf3;font-size:13px">
+                ✅ {s}</div>""", unsafe_allow_html=True)
+        st.markdown("")
+
+        # Favourite topics
+        favs = profile.get("favourite_topics", [])
+        if favs:
+            st.markdown(f"### ❤️ Favourite Topics")
+            for f2 in favs:
+                st.markdown(f"""<div style="background:{bg2};border:1px solid {acc}40;border-radius:8px;
+                padding:8px 14px;margin:4px 0;color:#e6edf3;font-size:13px">
+                ❤️ {f2}</div>""", unsafe_allow_html=True)
+
+    with right:
+        # Weak concepts
+        weak = profile.get("weak_concepts", [])
+        if weak:
+            st.markdown(f"### 🔴 Needs Improvement")
+            for w in weak:
+                st.markdown(f"""<div style="background:{bg2};border:1px solid {red}40;border-radius:8px;
+                padding:8px 14px;margin:4px 0;color:#e6edf3;font-size:13px">
+                ⚠️ {w}</div>""", unsafe_allow_html=True)
+        st.markdown("")
+
+        # Topics explored
+        explored = profile.get("topics_explored", [])
+        if explored:
+            st.markdown(f"### 🗺️ Topics Explored")
+            for t in explored[:6]:
+                st.markdown(f"""<div style="background:{bg2};border:1px solid #30363d;border-radius:8px;
+                padding:8px 14px;margin:4px 0;color:#8b949e;font-size:12px">
+                📖 {t}</div>""", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ── Learning style card ───────────────────────────────────
+    st.markdown("### 🧠 Your Learning DNA")
+    dna1, dna2 = st.columns(2)
+    with dna1:
+        style_items = [
+            ("Learning Style", profile.get("learning_style","?"), "🎓"),
+            ("Detail Level", profile.get("preferred_detail_level","?"), "📏"),
+            ("Asking Pattern", profile.get("asking_pattern","?"), "💬"),
+            ("Personality", profile.get("personality","?"), "🌟"),
+            ("Engagement", profile.get("engagement_level","?"), "⚡"),
+        ]
+        for label, val, icon in style_items:
+            st.markdown(f"""<div style="background:{bg2};border:1px solid #30363d;border-radius:10px;
+            padding:12px 16px;margin:6px 0;display:flex;align-items:center;gap:12px">
+            <span style="font-size:1.3rem">{icon}</span>
+            <div><div style="color:#8b949e;font-size:10px;font-weight:600;letter-spacing:1px">{label.upper()}</div>
+            <div style="color:#e6edf3;font-size:13px;font-weight:500">{val}</div></div>
+            </div>""", unsafe_allow_html=True)
+
+    with dna2:
+        # How AI talks to this user
+        how = profile.get("how_to_reply","")
+        if how:
+            st.markdown(f"""<div style="background:linear-gradient(135deg,#1f6feb20,#388bfd10);
+            border:1px solid {acc}40;border-radius:12px;padding:16px;margin-bottom:10px">
+            <div style="color:{acc};font-weight:700;margin-bottom:8px;font-size:13px">🤖 How PhysIQ Talks to You</div>
+            <div style="color:#e6edf3;font-size:13px;line-height:1.6">{how}</div>
+            </div>""", unsafe_allow_html=True)
+
+        # Summaries
+        s_sum = profile.get("strengths_summary","")
+        w_sum = profile.get("weakness_summary","")
+        if s_sum:
+            st.markdown(f"""<div style="background:{bg2};border:1px solid {grn}40;border-radius:10px;
+            padding:12px 16px;margin:6px 0">
+            <div style="color:{grn};font-size:11px;font-weight:700;margin-bottom:4px">YOUR STRENGTH</div>
+            <div style="color:#e6edf3;font-size:12px">{s_sum}</div>
+            </div>""", unsafe_allow_html=True)
+        if w_sum:
+            st.markdown(f"""<div style="background:{bg2};border:1px solid {red}40;border-radius:10px;
+            padding:12px 16px;margin:6px 0">
+            <div style="color:{red};font-size:11px;font-weight:700;margin-bottom:4px">YOUR MAIN GAP</div>
+            <div style="color:#e6edf3;font-size:12px">{w_sum}</div>
+            </div>""", unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ── Improvement plan ─────────────────────────────────────
+    plan = profile.get("improvement_plan", [])
+    rec  = profile.get("recommended_next", [])
+    if plan:
+        st.markdown("### 📈 Your Personalised Improvement Plan")
+        for i, tip in enumerate(plan, 1):
+            st.markdown(f"""<div style="background:{bg2};border:1px solid #30363d;border-left:4px solid {acc};
+            border-radius:10px;padding:12px 16px;margin:6px 0;color:#e6edf3;font-size:13px">
+            <span style="color:{acc};font-weight:700">Step {i}:</span> {tip}
+            </div>""", unsafe_allow_html=True)
+
+    if rec:
+        st.markdown("### 🎯 What to Study Next")
+        cols_rec = st.columns(min(len(rec), 3))
+        for i, topic in enumerate(rec[:3]):
+            with cols_rec[i]:
+                if st.button(f"📖 {topic}", use_container_width=True, key=f"rec_{i}"):
+                    st.session_state.show_profile = False
+                    st.session_state.messages.append({
+                        "role":"user","content":f"Teach me about {topic}"
+                    })
+                    st.rerun()
+
+    st.markdown("---")
+    st.caption("Profile is rebuilt whenever you click 🔄 Refresh Profile. The more you use PhysIQ, the more accurate it gets!")
 
 
 # ══════════════════════════════════════════════════════════════
@@ -1189,6 +1910,18 @@ def show_app():
                 st.session_state.dark_mode = not st.session_state.dark_mode
                 st.rerun()
 
+        col_prof, col_out = st.columns(2)
+        with col_prof:
+            if st.button("👤 My Profile", use_container_width=True):
+                st.session_state.show_profile = True
+                # Auto-load saved profile
+                if not st.session_state.user_profile:
+                    saved = load_user_profile()
+                    if saved:
+                        st.session_state.user_profile = saved
+                st.rerun()
+        with col_out:
+            pass
         if st.button("🚪 Sign Out", use_container_width=True):
             supabase.auth.sign_out()
             for k in ["user","access_token","messages","pending_feedback","backend_ready","vs","Document"]:
@@ -1203,6 +1936,11 @@ def show_app():
         # ── Numerical Solver Panel ─────────────────────────────
         # ── Creative Mode Toggle ───────────────────────────────
         st.markdown('<div class="section-label">🎛️ Mode Select</div>', unsafe_allow_html=True)
+        voice_on = st.toggle("🎙️ Voice Mode", value=st.session_state.voice_mode,
+            help="Speak your question, hear the answer")
+        if voice_on != st.session_state.voice_mode:
+            st.session_state.voice_mode = voice_on
+            st.rerun()
         creative_on = st.toggle("✍️ Creative/English Mode", value=st.session_state.creative_mode,
             help="Essays, debates, letters, stories, poems")
         if creative_on != st.session_state.creative_mode:
@@ -1271,6 +2009,28 @@ def show_app():
                     st.write(p["content"])
 
         st.divider()
+        # ── PDF Reader ──────────────────────────────────────
+        st.divider()
+        st.markdown('<div class="section-label">📄 PDF Reader</div>', unsafe_allow_html=True)
+        uploaded_pdf = st.file_uploader("Upload a PDF", type="pdf", key="pdf_upload",
+            label_visibility="collapsed")
+        if uploaded_pdf:
+            if st.button("📖 Summarise PDF", use_container_width=True):
+                with st.spinner("📖 Reading PDF..."):
+                    pdf_text = extract_pdf_text(uploaded_pdf)
+                if pdf_text:
+                    summary = summarise_pdf(pdf_text)
+                    if summary:
+                        st.session_state.pdf_text = pdf_text
+                        st.session_state.pdf_name = uploaded_pdf.name
+                        reply = f"📄 **Summary of {uploaded_pdf.name}:**\n\n{summary}"
+                        st.session_state.messages.append({"role":"assistant","content":reply})
+                        st.rerun()
+                else:
+                    st.error("Could not read PDF. Make sure it contains text (not scanned images).")
+            if st.session_state.get("pdf_text"):
+                st.success(f"✅ {st.session_state.get('pdf_name','PDF')} loaded — ask questions about it!")
+
         # Past mistakes
         past_mistakes = load_quiz_mistakes()
         if past_mistakes:
@@ -1432,6 +2192,43 @@ def show_app():
 
     if question:
         st.session_state.simplify_target = None
+
+        # ── Voice question flag ──────────────────────────────
+        is_voice_q = st.session_state.get("_is_voice_question", False)
+        if is_voice_q:
+            st.session_state._is_voice_question = False
+
+        # ── Auto-update profile every 20 messages ───────────
+        if len(st.session_state.messages) % 20 == 0 and len(st.session_state.messages) > 0:
+            import threading
+            def bg_profile():
+                try:
+                    past = load_past_conversations()
+                    mistakes = load_quiz_mistakes()
+                    p = analyse_user_profile(st.session_state.messages, past, mistakes)
+                    if p:
+                        st.session_state.user_profile = p
+                        save_user_profile(p)
+                except: pass
+            threading.Thread(target=bg_profile, daemon=True).start()
+
+        # ── PDF question ─────────────────────────────────────
+        if st.session_state.get("pdf_text"):
+            pdf_keywords = ["in the pdf","from the pdf","the document","the pdf","page","according to","it says","uploaded"]
+            if any(k in question.lower() for k in pdf_keywords):
+                st.session_state.messages.append({"role":"user","content":question})
+                save_message("user", question)
+                with st.chat_message("user"):
+                    st.write(question)
+                with st.chat_message("assistant"):
+                    with st.spinner("📄 Reading PDF to answer..."):
+                        pdf_ans = answer_from_pdf(st.session_state.pdf_text, question)
+                    if pdf_ans:
+                        st.markdown(pdf_ans)
+                        st.session_state.messages.append({"role":"assistant","content":pdf_ans,
+                            "confidence":"📄 PDF Answer","conf_class":"conf-high"})
+                        save_message("assistant", pdf_ans, "pdf")
+                st.rerun()
 
         # ── Detect quiz request ───────────────────────────────
         if is_quiz_request(question):
