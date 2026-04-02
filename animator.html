@@ -81,15 +81,23 @@ window.addEventListener('resize', resize);
 resize();
 
 let scene = null, T = 0, stepTimer = 0, curStep = 0;
+let bgImage = null, bgImageLoaded = false;
 
 // ═══════════════════════════════════════════════════════════
 //  COORDINATE HELPERS
-//  All positions use fractions of the ANIMATION AREA
-//  x=0.5 → horizontal centre, y=0.5 → vertical centre
-//  x=0.1 → 10% from left,    y=0.1 → 10% from top
+//  Positions support the app's scene coordinates:
+//  x: -1 (far left) to +1 (far right), 0 = centre
+//  y: -0.9 (bottom) to +0.9 (top), 0 = centre
+//  Legacy 0..1 fractions are still accepted for older scenes
 // ═══════════════════════════════════════════════════════════
-function ax(fx){ return fx * W; }
-function ay(fy){ return AY + fy * AH; }
+function ax(fx){
+  if(fx >= 0 && fx <= 1) return fx * W;
+  return ((fx + 1) / 2) * W;
+}
+function ay(fy){
+  if(fy >= 0 && fy <= 1) return AY + fy * AH;
+  return AY + ((0.9 - fy) / 1.8) * AH;
+}
 function as(fs){ return fs * Math.min(W, AH); }
 
 // ═══════════════════════════════════════════════════════════
@@ -754,6 +762,30 @@ function renderObj(obj){
     }
 
     // ── FALLBACK ─────────────────────────────────────────────
+    case 'image_obj':{
+      if(obj._imgEl&&obj._imgLoaded){
+        const iw=obj.width_px||(obj.iw||0.25)*W;
+        const ih=obj.height_px||(obj.ih||0.25)*AH;
+        ctx.save();
+        if(obj.corner_radius){
+          ctx.beginPath();
+          ctx.roundRect(rx-iw/2,ry-ih/2,iw,ih,obj.corner_radius);
+          ctx.clip();
+        }
+        ctx.globalAlpha=obj.opacity||1;
+        ctx.drawImage(obj._imgEl,rx-iw/2,ry-ih/2,iw,ih);
+        ctx.restore(); ctx.globalAlpha=1;
+        if(obj.stroke){ctx.strokeStyle=obj.stroke;ctx.lineWidth=1.5;
+          ctx.strokeRect(rx-iw/2,ry-ih/2,iw,ih);}
+      } else if(!obj._imgEl&&obj.src){
+        obj._imgEl=new Image(); obj._imgLoaded=false;
+        obj._imgEl.crossOrigin='anonymous';
+        obj._imgEl.onload=()=>{obj._imgLoaded=true;};
+        obj._imgEl.src=obj.src;
+      }
+      if(obj.caption)lbl(rx,ry+30,obj.caption,col(obj.color),10);
+      break;
+    }
     default:
       ball(x,y,r*rScale,col);
       if(obj.text||obj.lbl) lbl(x,y+r*rScale+13,obj.text||obj.lbl,col,10);
@@ -820,6 +852,14 @@ function render(){
 // ═══════════════════════════════════════════════════════════
 function load(data){
   scene=data; T=0; stepTimer=0; curStep=0;
+  // Load background image if AI provided one
+  bgImage=null; bgImageLoaded=false;
+  if(data.bg_image_b64){
+    bgImage=new Image();
+    bgImage.onload=()=>{ bgImageLoaded=true; };
+    bgImage.onerror=()=>{ bgImageLoaded=false; bgImage=null; };
+    bgImage.src='data:image/png;base64,'+data.bg_image_b64;
+  }
   // Reset gas particle caches
   (scene.objects||[]).forEach(o=>{ if(o._p) delete o._p; });
   document.getElementById('loading').style.display='none';
