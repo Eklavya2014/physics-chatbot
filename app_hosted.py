@@ -36,7 +36,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
 }
 for k, v in defaults.items():
     if k not in st.session_state:
@@ -666,8 +666,7 @@ def convert_old_to_new(old):
 
 def show_animator_panel(animation_data):
     """Render the HTML5 Canvas animator in Streamlit."""
-    import json, urllib.parse
-    encoded = urllib.parse.quote(json.dumps(animation_data))
+    import json
     with open("animator.html", "r") as f:
         html_content = f.read()
     # Inject data directly into the HTML
@@ -679,8 +678,10 @@ window.addEventListener('load', function() {{
     scene = data;
     if(scene._particles) delete scene._particles;
     document.getElementById('loading').style.display='none';
-    document.getElementById('subtitle-text').textContent = scene.subtitle||scene.type||'Animation';
-    document.getElementById('info-panel').textContent = scene.info_text||'';
+    const subtitleEl = document.getElementById('subtitle');
+    const infoEl = document.getElementById('info-text');
+    if (subtitleEl) subtitleEl.textContent = scene.subtitle || scene.type || 'Animation';
+    if (infoEl) infoEl.textContent = scene.info_text || '';
     if(scene.legend) updateLegend(scene.legend);
   }} catch(e) {{ console.error(e); }}
 }}, 500);
@@ -1231,338 +1232,297 @@ Full answer: {full_answer[:800]}
 Write a short spoken version (under 60 words):"""
     return call_hf(system, user, max_tokens=200)
 
+@st.cache_resource(show_spinner=False)
+def load_local_asr():
+    """Load a lightweight local Whisper pipeline for transcription."""
+    import torch
+    from transformers import pipeline
+
+    device = 0 if torch.cuda.is_available() else -1
+    return pipeline(
+        "automatic-speech-recognition",
+        model="openai/whisper-tiny.en",
+        device=device,
+    )
+
+def transcribe_audio_hf(audio_bytes):
+    """Transcribe recorded audio using a local Whisper pipeline."""
+    import io
+    import numpy as np
+    from scipy.io import wavfile
+
+    try:
+        sample_rate, audio_array = wavfile.read(io.BytesIO(audio_bytes))
+        if audio_array.ndim > 1:
+            audio_array = audio_array.mean(axis=1)
+        if np.issubdtype(audio_array.dtype, np.integer):
+            max_val = np.iinfo(audio_array.dtype).max
+            audio_array = audio_array.astype(np.float32) / max(max_val, 1)
+        else:
+            audio_array = audio_array.astype(np.float32)
+
+        asr = load_local_asr()
+        result = asr({"raw": audio_array, "sampling_rate": int(sample_rate)})
+        text = result.get("text") if isinstance(result, dict) else None
+        if text and str(text).strip():
+            return str(text).strip(), None
+        return None, "The audio was processed, but no speech was detected."
+    except Exception as e:
+        return None, f"Local transcription failed: {str(e)[:160]}"
+
 def show_voice_ui():
-    """Render the voice interface HTML component."""
-    voice_html = """
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    background: transparent;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex; flex-direction: column;
-    align-items: center; gap: 12px;
-    padding: 12px;
-  }
-  .voice-panel {
-    background: linear-gradient(135deg, #0d1117, #161b22);
-    border: 1px solid #30363d;
-    border-radius: 16px;
-    padding: 18px 24px;
-    width: 100%;
-    max-width: 520px;
-    display: flex; flex-direction: column;
-    align-items: center; gap: 14px;
-  }
-  .voice-title {
-    color: #58a6ff; font-size: 14px; font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  .controls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
-  
-  .mic-btn {
-    width: 64px; height: 64px; border-radius: 50%;
-    border: none; cursor: pointer;
-    background: linear-gradient(135deg, #1f6feb, #388bfd);
-    color: white; font-size: 26px;
-    box-shadow: 0 0 0 0 rgba(88,166,255,0.4);
-    transition: all 0.2s;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .mic-btn:hover { transform: scale(1.05); }
-  .mic-btn.listening {
-    background: linear-gradient(135deg, #b91c1c, #ef4444);
-    animation: pulse-ring 1.2s infinite;
-  }
-  .mic-btn.speaking {
-    background: linear-gradient(135deg, #15803d, #22c55e);
-    animation: pulse-ring 1.5s infinite;
-  }
-  @keyframes pulse-ring {
-    0%   { box-shadow: 0 0 0 0   rgba(88,166,255,0.5); }
-    70%  { box-shadow: 0 0 0 20px rgba(88,166,255,0); }
-    100% { box-shadow: 0 0 0 0   rgba(88,166,255,0); }
-  }
-  
-  .stop-btn {
-    width: 42px; height: 42px; border-radius: 50%; border: none;
-    background: #21262d; color: #e6edf3; font-size: 16px;
-    cursor: pointer; transition: all 0.2s;
-  }
-  .stop-btn:hover { background: #30363d; }
+    """Render a native Streamlit voice panel using microphone recording."""
+    st.markdown("Record a short question, transcribe it, then send it into the chat.")
 
-  .status {
-    color: #8b949e; font-size: 12px; text-align: center;
-    min-height: 18px; transition: color 0.3s;
-  }
-  .status.listening { color: #ef4444; font-weight: 600; }
-  .status.speaking { color: #22c55e; font-weight: 600; }
+    if st.session_state.get("voice_clear_pending"):
+        st.session_state.voice_transcript = ""
+        st.session_state.voice_transcript_editor = ""
+        st.session_state.voice_clear_pending = False
 
-  .transcript {
-    background: #0d1117; border: 1px solid #21262d; border-radius: 10px;
-    padding: 10px 14px; color: #e6edf3; font-size: 13px;
-    min-height: 38px; width: 100%; text-align: center;
-    font-style: italic; display: none;
-  }
-  .transcript.visible { display: block; }
+    audio = st.audio_input("🎙️ Record your question", key="voice_audio_input")
+    if audio is None:
+        st.caption("Tap record, speak clearly, and stop when you're done.")
+        return
 
-  .voice-select-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
-  .voice-select-row label { color: #8b949e; font-size: 11px; }
-  select {
-    background: #21262d; color: #e6edf3; border: 1px solid #30363d;
-    border-radius: 8px; padding: 5px 10px; font-size: 12px; cursor: pointer;
-    max-width: 220px;
-  }
+    st.audio(audio)
 
-  .speed-row { display: flex; align-items: center; gap: 10px; }
-  .speed-row label { color: #8b949e; font-size: 11px; }
-  input[type=range] { width: 100px; accent-color: #58a6ff; }
-  .speed-val { color: #58a6ff; font-size: 11px; font-weight: 600; width: 28px; }
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("📝 Transcribe", use_container_width=True, key="voice_transcribe_btn"):
+            with st.spinner("🎧 Converting your speech to text..."):
+                transcript, error = transcribe_audio_hf(audio.getvalue())
+            if transcript:
+                st.session_state.voice_transcript = transcript
+                st.session_state.voice_transcript_editor = transcript
+                st.success("✅ Speech detected and transcribed.")
+            else:
+                st.error(f"❌ Could not transcribe this recording. {error or ''}".strip())
+    with col2:
+        if st.button("🧹 Clear Voice", use_container_width=True, key="voice_clear_btn"):
+            st.session_state.voice_transcript = ""
+            st.session_state.voice_transcript_editor = ""
+            st.rerun()
 
-  .hint { color: #484f58; font-size: 10px; text-align: center; }
-  .send-btn {
-    background: #238636; color: white; border: none;
-    border-radius: 8px; padding: 7px 18px; font-size: 12px;
-    cursor: pointer; transition: all 0.2s; display: none;
-  }
-  .send-btn.visible { display: block; }
-  .send-btn:hover { background: #2ea043; }
-</style>
-</head>
-<body>
-<div class="voice-panel">
-  <div class="voice-title">🎙️ Voice Connector</div>
+    if "voice_transcript_editor" not in st.session_state:
+        st.session_state.voice_transcript_editor = st.session_state.get("voice_transcript", "")
 
-  <div class="voice-select-row">
-    <label>Voice:</label>
-    <select id="voiceSelect">
-      <option value="">Loading voices...</option>
-    </select>
-  </div>
+    transcript_value = st.text_area(
+        "Transcript",
+        placeholder="Your recorded question will appear here...",
+        key="voice_transcript_editor",
+        height=100,
+    )
+    st.session_state.voice_transcript = transcript_value
 
-  <div class="speed-row">
-    <label>Speed:</label>
-    <input type="range" id="speedRange" min="0.6" max="1.8" step="0.1" value="1.0">
-    <span class="speed-val" id="speedVal">1.0x</span>
-    <label style="margin-left:8px">Pitch:</label>
-    <input type="range" id="pitchRange" min="0.5" max="2.0" step="0.1" value="1.0">
-    <span class="speed-val" id="pitchVal">1.0</span>
-  </div>
+    if st.button("➤ Ask PhysIQ", use_container_width=True, key="voice_send_btn"):
+        if transcript_value.strip():
+            st.session_state._voice_question = transcript_value.strip()
+            st.session_state._is_voice_question = True
+            st.session_state.voice_transcript = ""
+            st.session_state.voice_clear_pending = True
+            st.rerun()
+        else:
+            st.warning("Record something first, then transcribe it before sending.")
 
-  <div class="controls">
-    <button class="mic-btn" id="micBtn" title="Hold to speak / Click to start">🎙️</button>
-    <button class="stop-btn" id="stopBtn" title="Stop speaking">⏹</button>
-  </div>
 
-  <div class="status" id="status">Click the mic and ask your question</div>
-  <div class="transcript" id="transcript"></div>
-  <button class="send-btn" id="sendBtn">➤ Ask PhysIQ</button>
-  <div class="hint">Supports: Chrome, Edge, Safari | Speak clearly</div>
-</div>
 
-<script>
-const micBtn    = document.getElementById('micBtn');
-const stopBtn   = document.getElementById('stopBtn');
-const sendBtn   = document.getElementById('sendBtn');
-const status    = document.getElementById('status');
-const transcript = document.getElementById('transcript');
-const voiceSel  = document.getElementById('voiceSelect');
-const speedIn   = document.getElementById('speedRange');
-const pitchIn   = document.getElementById('pitchRange');
-const speedVal  = document.getElementById('speedVal');
-const pitchVal  = document.getElementById('pitchVal');
 
-let recognition = null;
-let synth = window.speechSynthesis;
-let voices = [];
-let currentText = '';
-let isListening = false;
+# ══════════════════════════════════════════════════════════════
+#  IMAGE GENERATOR CONNECTOR
+# ══════════════════════════════════════════════════════════════
 
-// ── SPEED & PITCH ──────────────────────────────────────────
-speedIn.oninput = () => speedVal.textContent = parseFloat(speedIn.value).toFixed(1)+'x';
-pitchIn.oninput = () => pitchVal.textContent = parseFloat(pitchIn.value).toFixed(1);
+IMAGE_TRIGGER_WORDS = [
+    "generate an image", "create an image", "make an image",
+    "draw", "generate a picture", "create a picture",
+    "show me a picture", "show me an image", "visualise",
+    "generate a photo", "create a photo", "make a photo",
+    "render", "illustrate", "generate a diagram",
+    "create a 3d", "make a 3d", "generate a 3d",
+    "show me a 3d", "3d model of", "2d image of",
+    "image of", "picture of", "photo of",
+]
 
-// ── LOAD VOICES ────────────────────────────────────────────
-function loadVoices(){
-  voices = synth.getVoices().filter(v =>
-    v.lang.startsWith('en') || v.lang.startsWith('hi') || v.lang.startsWith('fr')
-  );
-  if(voices.length === 0){ setTimeout(loadVoices, 300); return; }
+def is_image_request(message):
+    msg = message.lower()
+    return any(t in msg for t in IMAGE_TRIGGER_WORDS)
 
-  voiceSel.innerHTML = '';
-  const groups = {
-    'English (US)': voices.filter(v=>v.lang==='en-US'),
-    'English (UK)': voices.filter(v=>v.lang==='en-GB'),
-    'English (AU)': voices.filter(v=>v.lang==='en-AU'),
-    'English (IN)': voices.filter(v=>v.lang==='en-IN'),
-    'Hindi': voices.filter(v=>v.lang.startsWith('hi')),
-    'French': voices.filter(v=>v.lang.startsWith('fr')),
-    'Other English': voices.filter(v=>v.lang.startsWith('en') &&
-      !['en-US','en-GB','en-AU','en-IN'].includes(v.lang)),
-  };
-  Object.entries(groups).forEach(([grpName, grpVoices])=>{
-    if(!grpVoices.length) return;
-    const grp = document.createElement('optgroup');
-    grp.label = grpName;
-    grpVoices.forEach(v=>{
-      const opt = document.createElement('option');
-      opt.value = v.name;
-      opt.textContent = `${v.name}${v.localService?' ★':''}`;
-      grp.appendChild(opt);
-    });
-    voiceSel.appendChild(grp);
-  });
-  // Default to a nice voice
-  const preferred = ['Google UK English Female','Microsoft Libby','Samantha','Google US English'];
-  for(const p of preferred){
-    const found = voices.find(v=>v.name===p);
-    if(found){ voiceSel.value=found.name; break; }
-  }
-}
-synth.onvoiceschanged = loadVoices;
-loadVoices();
+def build_image_prompt(user_request, context_answer=""):
+    """Use AI to craft a perfect, detailed image generation prompt."""
+    system = """You are a world-class AI image prompt engineer.
+Given a user request, create the PERFECT image generation prompt for FLUX.1.
+Your prompt must produce hyperrealistic, stunning, award-winning images.
 
-// ── SPEECH RECOGNITION ────────────────────────────────────
-function startListening(){
-  if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
-    status.textContent = '❌ Speech recognition not supported. Use Chrome or Edge.';
-    return;
-  }
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  recognition = new SR();
-  recognition.continuous = false;
-  recognition.interimResults = true;
-  recognition.lang = 'en-US';
-  recognition.maxAlternatives = 3;
+Rules:
+1. Start with the most important subject
+2. Include: lighting, style, quality keywords, camera/perspective details
+3. For 3D: add "hyperrealistic 3D render, octane render, physically based rendering, ray tracing, 8K, ultra detailed"
+4. For scientific: add "scientific illustration, photorealistic, detailed, accurate, educational"
+5. For diagrams: add "clean vector illustration, white background, professional, labeled"
+6. ALWAYS end with: "sharp focus, high resolution, 8K UHD, masterpiece, best quality"
+7. Keep prompt under 200 words
+8. Return ONLY the prompt text, nothing else"""
 
-  recognition.onstart = () => {
-    isListening = true;
-    micBtn.classList.add('listening');
-    micBtn.textContent = '🔴';
-    status.textContent = '🎙️ Listening... speak now';
-    status.className = 'status listening';
-    transcript.textContent = '';
-    transcript.classList.remove('visible');
-    sendBtn.classList.remove('visible');
-    currentText = '';
-  };
+    user = f"""User wants: {user_request}
+Context (if any): {context_answer[:200] if context_answer else "none"}
 
-  recognition.onresult = (e) => {
-    let interim = '', final = '';
-    for(let i=e.resultIndex;i<e.results.length;i++){
-      if(e.results[i].isFinal) final += e.results[i][0].transcript;
-      else interim += e.results[i][0].transcript;
+Write the perfect image generation prompt:"""
+
+    prompt = call_hf(system, user, max_tokens=250)
+    return prompt.strip() if prompt else user_request
+
+def generate_image_hf(prompt, width=1024, height=1024, model="flux"):
+    """Generate image using Hugging Face text-to-image."""
+    import base64
+    import io
+    from huggingface_hub import InferenceClient
+
+    # Model options — FLUX.1-schnell is free and excellent
+    models = {
+        "flux":   "black-forest-labs/FLUX.1-schnell",
+        "flux_dev": "black-forest-labs/FLUX.1-dev",
+        "sdxl":   "stabilityai/stable-diffusion-xl-base-1.0",
+        "sdxl_turbo": "stabilityai/sdxl-turbo",
     }
-    const display = final || interim;
-    transcript.textContent = '"' + display + '"';
-    transcript.classList.add('visible');
-    if(final){ currentText = final; }
-  };
+    model_order = [models.get(model, models["flux"]), models["sdxl"], models["sdxl_turbo"]]
 
-  recognition.onend = () => {
-    isListening = false;
-    micBtn.classList.remove('listening');
-    micBtn.textContent = '🎙️';
-    if(currentText){
-      status.textContent = '✅ Got it! Click "Ask PhysIQ" to send';
-      status.className = 'status';
-      sendBtn.classList.add('visible');
-    } else {
-      status.textContent = 'No speech detected. Try again.';
-      status.className = 'status';
+    try:
+        errors = []
+        for model_id in model_order:
+            try:
+                client = InferenceClient(provider="hf-inference", api_key=HF_TOKEN, timeout=180)
+                image = client.text_to_image(
+                    prompt,
+                    model=model_id,
+                    width=width if "sdxl" not in model_id else min(width, 1024),
+                    height=height if "sdxl" not in model_id else min(height, 1024),
+                    num_inference_steps=4 if "FLUX.1-schnell" in model_id else 20,
+                    guidance_scale=0.0 if "FLUX.1-schnell" in model_id else 7.5,
+                )
+                buffer = io.BytesIO()
+                image.save(buffer, format="PNG")
+                b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+                return b64, None
+            except Exception as model_error:
+                errors.append(f"{model_id}: {str(model_error)[:140]}")
+        return None, "Generation failed: " + " | ".join(errors[:3])
+    except Exception as e:
+        return None, f"Error: {str(e)[:100]}"
+
+def detect_image_style(message):
+    """Detect if user wants 2D, 3D, diagram, or photo."""
+    msg = message.lower()
+    if any(x in msg for x in ["3d","three d","three-d","render","hyperrealistic","photorealistic"]):
+        return "3d", 1024, 1024
+    elif any(x in msg for x in ["diagram","chart","schematic","blueprint","2d","flat","vector"]):
+        return "diagram", 1024, 768
+    elif any(x in msg for x in ["landscape","panorama","wide"]):
+        return "landscape", 1280, 768
+    elif any(x in msg for x in ["portrait","person","human","face"]):
+        return "portrait", 768, 1024
+    else:
+        return "general", 1024, 1024
+
+def enhance_prompt_for_style(prompt, style):
+    """Add style-specific quality keywords."""
+    style_suffixes = {
+        "3d": ", hyperrealistic 3D render, octane render, physically based rendering, ray tracing, subsurface scattering, ultra detailed, photorealistic, 8K UHD, masterpiece, best quality, sharp focus, professional lighting, studio quality, highly detailed",
+        "diagram": ", clean scientific illustration, precise, labeled, white background, professional diagram, vector style, educational, high resolution, sharp, clear",
+        "landscape": ", epic landscape photography, golden hour lighting, ultra wide angle, 8K UHD, masterpiece, photorealistic, award winning photography, sharp focus, vivid colors",
+        "portrait": ", portrait photography, professional lighting, bokeh background, 8K, photorealistic, ultra detailed skin texture, cinematic, high quality",
+        "general": ", ultra detailed, photorealistic, 8K UHD, masterpiece, best quality, sharp focus, vivid colors, professional, award winning",
     }
-  };
+    suffix = style_suffixes.get(style, style_suffixes["general"])
+    # Avoid duplicate quality words
+    if "8K" not in prompt and "masterpiece" not in prompt:
+        return prompt + suffix
+    return prompt
 
-  recognition.onerror = (e) => {
-    isListening = false;
-    micBtn.classList.remove('listening');
-    micBtn.textContent = '🎙️';
-    const msgs = {
-      'no-speech': 'No speech detected. Try again.',
-      'audio-capture': 'No microphone found.',
-      'not-allowed': '🔒 Microphone access denied. Allow it in browser settings.',
-      'network': 'Network error. Check connection.',
-    };
-    status.textContent = msgs[e.error]||'Error: '+e.error;
-    status.className = 'status';
-  };
+def show_generated_image(b64_image, prompt, style, user_question):
+    """Display the generated image beautifully in Streamlit."""
+    import base64
+    try:
+        img_data = base64.b64decode(b64_image)
+    except Exception:
+        st.error("❌ The generated image could not be decoded.")
+        return
 
-  recognition.start();
-}
+    st.image(img_data, use_container_width=True)
 
-micBtn.onclick = () => {
-  if(isListening){ recognition?.stop(); }
-  else { startListening(); }
-};
+    # Action buttons below image
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        # Download button
+        st.download_button(
+            "⬇️ Download",
+            data=img_data,
+            file_name=f"physiq_{style}_{int(__import__('time').time())}.png",
+            mime="image/png",
+            use_container_width=True
+        )
+    with col2:
+        if st.button("🎬 Animate This", key=f"anim_img_{hash(prompt)}", use_container_width=True):
+            # Store image for animator
+            st.session_state.animator_bg_image = b64_image
+            st.session_state.animator_bg_prompt = prompt
+            # Generate animation with image as background
+            with st.spinner("🎬 Building animation..."):
+                anim = generate_animation_script(user_question,
+                    f"Create animation using this image as reference: {prompt[:100]}")
+                if anim:
+                    anim["bg_image_b64"] = b64_image
+                    st.session_state.animation_data = anim
+                    st.session_state.show_animator = True
+                    st.rerun()
+    with col3:
+        if st.button("🔄 Regenerate", key=f"regen_{hash(prompt)}", use_container_width=True):
+            st.session_state._regen_prompt = prompt
+            st.session_state._regen_style = style
+            st.session_state._regen_question = user_question
+            st.rerun()
 
-// ── SEND TO STREAMLIT ─────────────────────────────────────
-sendBtn.onclick = () => {
-  if(!currentText) return;
-  window.parent.postMessage({type:'voice_question', text: currentText}, '*');
-  status.textContent = '⏳ Sending to PhysIQ...';
-  sendBtn.classList.remove('visible');
-  transcript.classList.remove('visible');
-  currentText = '';
-};
+    # Show prompt used
+    with st.expander("🔍 Prompt used"):
+        st.code(prompt, language=None)
 
-// ── TEXT TO SPEECH ────────────────────────────────────────
-function speak(text){
-  synth.cancel();
-  if(!text) return;
-  // Clean text for speaking
-  const clean = text
-    .replace(/[#*_`>]/g,'')
-    .replace(/\*\*/g,'')
-    .replace(/\n/g,' ')
-    .replace(/[\[\]\(\)]/g,'')
-    .replace(/https?:\/\/\S+/g,'')
-    .substring(0, 600);
+def handle_image_request(question, vs):
+    """Full pipeline: detect → craft prompt → generate → display."""
+    # Detect style and dimensions
+    style, width, height = detect_image_style(question)
 
-  const utt = new SpeechSynthesisUtterance(clean);
-  utt.rate  = parseFloat(speedIn.value);
-  utt.pitch = parseFloat(pitchIn.value);
-  const selectedName = voiceSel.value;
-  const selectedVoice = voices.find(v=>v.name===selectedName);
-  if(selectedVoice) utt.voice = selectedVoice;
+    # Get some context from knowledge base
+    context = ""
+    if vs:
+        try:
+            results = vs.similarity_search_with_score(question, k=2)
+            context = results[0][0].page_content[:300] if results else ""
+        except: pass
 
-  utt.onstart = () => {
-    micBtn.classList.add('speaking');
-    micBtn.textContent = '🔊';
-    status.textContent = '🔊 Speaking...';
-    status.className = 'status speaking';
-  };
-  utt.onend = () => {
-    micBtn.classList.remove('speaking');
-    micBtn.textContent = '🎙️';
-    status.textContent = 'Done! Click mic to ask another question';
-    status.className = 'status';
-  };
-  synth.speak(utt);
-}
+    # Build optimised prompt
+    with st.spinner("🎨 Crafting the perfect prompt..."):
+        raw_prompt = build_image_prompt(question, context)
 
-stopBtn.onclick = () => {
-  synth.cancel();
-  if(recognition && isListening){ recognition.stop(); }
-  micBtn.classList.remove('listening','speaking');
-  micBtn.textContent = '🎙️';
-  status.textContent = 'Stopped. Click mic to start again.';
-  status.className = 'status';
-};
+    # Add quality enhancers
+    final_prompt = enhance_prompt_for_style(raw_prompt, style)
 
-// ── RECEIVE REPLY FROM STREAMLIT ──────────────────────────
-window.addEventListener('message', e => {
-  if(e.data?.type === 'voice_reply'){
-    speak(e.data.text);
-  }
-});
-</script>
-</body>
-</html>
-"""
-    st.components.v1.html(voice_html, height=340, scrolling=False)
+    # Generate
+    style_labels = {
+        "3d": "⚡ Generating hyperrealistic 3D image with FLUX.1...",
+        "diagram": "📐 Generating scientific diagram...",
+        "landscape": "🌄 Generating landscape...",
+        "portrait": "👤 Generating portrait...",
+        "general": "🖼️ Generating image",
+    }
+    spinner_msg = style_labels.get(style, "🖼️ Generating image...")
 
+    with st.spinner(spinner_msg):
+        b64, error = generate_image_hf(final_prompt, width, height)
+
+    if error:
+        st.error(f"❌ {error}")
+        st.info("💡 Tip: FLUX.1 model sometimes needs a moment to warm up. Try again in 30 seconds.")
+        return None, final_prompt
+
+    return b64, final_prompt
 
 
 # ══════════════════════════════════════════════════════════════
@@ -1898,6 +1858,10 @@ def show_app():
     vs       = st.session_state.vs
     Document = st.session_state.Document
 
+    if st.session_state.get("show_profile"):
+        show_profile_page()
+        return
+
     # ── SIDEBAR ────────────────────────────────────────────────
     with st.sidebar:
         # Theme toggle
@@ -2066,9 +2030,22 @@ def show_app():
     with col_tog:
         st.write("")  # spacer
 
+    if st.session_state.get("voice_mode"):
+        st.markdown("**🎙️ Voice Panel**")
+        show_voice_ui()
+        st.caption("Speak into the mic, then send the transcript into the chat.")
+        st.divider()
+
     # ── Chat history ───────────────────────────────────────────
     for i, msg in enumerate(st.session_state.messages):
         with st.chat_message(msg["role"]):
+            if msg.get("is_image") and msg.get("b64"):
+                try:
+                    import base64
+                    img_bytes = base64.b64decode(msg["b64"])
+                    st.image(img_bytes, use_container_width=True)
+                except Exception:
+                    st.warning("This saved image could not be displayed.")
             st.write(msg["content"])
 
             if msg["role"] == "assistant":
@@ -2188,7 +2165,9 @@ def show_app():
                     st.rerun()
 
     # ── Chat input ─────────────────────────────────────────────
-    question = st.chat_input("Ask about Physics, Chemistry, or English Writing...")
+    question = st.session_state.pop("_voice_question", None)
+    if not question:
+        question = st.chat_input("Ask about Physics, Chemistry, or English Writing...")
 
     if question:
         st.session_state.simplify_target = None
@@ -2228,6 +2207,53 @@ def show_app():
                         st.session_state.messages.append({"role":"assistant","content":pdf_ans,
                             "confidence":"📄 PDF Answer","conf_class":"conf-high"})
                         save_message("assistant", pdf_ans, "pdf")
+                st.rerun()
+
+        # ── Image generation request ─────────────────────────
+        if is_image_request(question) or st.session_state.get("_regen_prompt"):
+            regen = st.session_state.get("_regen_prompt")
+            regen_style = st.session_state.get("_regen_style", "general")
+            regen_q = st.session_state.get("_regen_question", question)
+            if regen:
+                st.session_state._regen_prompt = None
+                st.session_state._regen_style = None
+                st.session_state._regen_question = None
+                # Re-generate with same prompt
+                act_question = regen_q
+                st.session_state.messages.append({"role":"user","content":f"[Regenerate] {regen_q}"})
+                save_message("user", f"[Regenerate] {regen_q}")
+                with st.chat_message("user"):
+                    st.write(f"🔄 Regenerating: {regen_q}")
+                with st.chat_message("assistant"):
+                    style, w, h = detect_image_style(regen_q)
+                    final_p = enhance_prompt_for_style(regen, style)
+                    with st.spinner("🖼️ Regenerating image..."):
+                        b64, err = generate_image_hf(final_p, w, h)
+                    if b64:
+                        show_generated_image(b64, final_p, style, regen_q)
+                        reply = f"🎨 Regenerated! Style: **{style.upper()}** | Resolution: {w}×{h}px"
+                        st.session_state.messages.append({"role":"assistant","content":reply,"is_image":True,"b64":b64})
+                        save_message("assistant", reply)
+                    else:
+                        st.error(f"❌ {err}")
+                st.rerun()
+            else:
+                st.session_state.messages.append({"role":"user","content":question})
+                save_message("user", question)
+                with st.chat_message("user"):
+                    st.write(question)
+                with st.chat_message("assistant"):
+                    b64, final_prompt = handle_image_request(question, vs)
+                    if b64:
+                        show_generated_image(b64, final_prompt, detect_image_style(question)[0], question)
+                        _, w, h = detect_image_style(question)
+                        style = detect_image_style(question)[0]
+                        reply = f"🎨 Generated! Style: **{style.upper()}** | Resolution: {w}×{h}px using FLUX.1"
+                        st.session_state.messages.append({
+                            "role":"assistant","content":reply,
+                            "is_image":True,"b64":b64,"prompt":final_prompt
+                        })
+                        save_message("assistant", reply)
                 st.rerun()
 
         # ── Detect quiz request ───────────────────────────────
