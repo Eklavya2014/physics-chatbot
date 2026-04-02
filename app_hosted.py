@@ -1,6 +1,8 @@
 import streamlit as st
 import os
 import datetime
+import re
+import urllib.parse
 import streamlit.components.v1
 
 st.set_page_config(
@@ -36,7 +38,8 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "visit_count": 0, "session_restored": False,
 }
 for k, v in defaults.items():
     if k not in st.session_state:
@@ -184,6 +187,28 @@ inject_theme()
 #  LANDING PAGE
 # ══════════════════════════════════════════════════════════════
 def show_landing():
+    # Inject localStorage session restore on first load
+    if not st.session_state.get("session_restored"):
+        inject_session_persistence()
+        st.session_state.session_restored = True
+        # Check URL params for restored session
+        try:
+            params = st.query_params
+            at = params.get("restore_at","")
+            rt = params.get("restore_rt","")
+            em = params.get("restore_em","")
+            vc = int(params.get("restore_vc",0))
+            if at and at != "":
+                if restore_session_from_js(at, rt, em, "", "", vc):
+                    try:
+                        del st.query_params["restore_at"]
+                        del st.query_params["restore_rt"]
+                        del st.query_params["restore_em"]
+                        del st.query_params["restore_vc"]
+                    except: pass
+                    st.rerun()
+        except: pass
+
     # Theme toggle top-right
     col_sp, col_btn = st.columns([5,1])
     with col_btn:
@@ -257,6 +282,9 @@ def show_landing():
                         st.session_state.access_token = res.session.access_token
                         st.session_state.show_landing = False
                         st.toast("✅ Welcome back!")
+                        # Save session to localStorage
+                        save_session_to_js(res.user, res.session.access_token,
+                            getattr(res.session,"refresh_token",""))
                         st.rerun()
                     except Exception as e:
                         st.error(f"❌ {e}")
@@ -341,6 +369,105 @@ def delete_all_data():
         get_authed_client().table("learned_answers").delete().eq("user_id", uid).execute()
     except Exception as e:
         st.error(f"❌ {e}")
+
+
+# ══════════════════════════════════════════════════════════════
+#  PERSISTENT LOGIN (localStorage-based, re-auth every 15 visits)
+# ══════════════════════════════════════════════════════════════
+
+VISITS_BEFORE_REAUTH = 15
+
+def inject_session_persistence():
+    """Inject JS to save/restore session from localStorage."""
+    st.components.v1.html("""
+<script>
+(function(){
+  // ── Restore saved session on load ──
+  const saved = localStorage.getItem('physiq_session');
+  if(saved){
+    try{
+      const d = JSON.parse(saved);
+      // Send to Streamlit via query param hack
+      if(d.access_token && d.refresh_token){
+        window.parent.postMessage({
+          type:'physiq_restore_session',
+          access_token: d.access_token,
+          refresh_token: d.refresh_token,
+          user_email: d.user_email,
+          user_id: d.user_id,
+          user_name: d.user_name,
+          visit_count: d.visit_count||0
+        },'*');
+      }
+    }catch(e){}
+  }
+
+  // ── Listen for save-session from Streamlit ──
+  window.addEventListener('message', function(e){
+    if(e.data && e.data.type==='physiq_save_session'){
+      const existing = JSON.parse(localStorage.getItem('physiq_session')||'{}');
+      const vc = (existing.visit_count||0)+1;
+      localStorage.setItem('physiq_session', JSON.stringify({
+        access_token: e.data.access_token,
+        refresh_token: e.data.refresh_token,
+        user_email: e.data.user_email,
+        user_id: e.data.user_id,
+        user_name: e.data.user_name,
+        visit_count: vc,
+        saved_at: Date.now()
+      }));
+    }
+    if(e.data && e.data.type==='physiq_clear_session'){
+      localStorage.removeItem('physiq_session');
+    }
+    if(e.data && e.data.type==='physiq_restore_session'){
+      // Already handled above on load
+    }
+  });
+})();
+</script>
+""", height=0)
+
+def restore_session_from_js(access_token, refresh_token, user_email, user_id, user_name, visit_count):
+    """Try to restore session from saved token."""
+    if st.session_state.get("user"):
+        return True
+    try:
+        res = supabase.auth.set_session(access_token, refresh_token)
+        if res and res.user:
+            st.session_state.user = res.user
+            st.session_state.access_token = access_token
+            st.session_state.show_landing = False
+            st.session_state.visit_count = visit_count
+            return True
+    except:
+        pass
+    return False
+
+def save_session_to_js(user, access_token, refresh_token=""):
+    """Tell JS to save session to localStorage."""
+    name = ""
+    try: name = user.user_metadata.get("full_name","")
+    except: pass
+    st.components.v1.html(f"""
+<script>
+window.parent.postMessage({{
+  type:'physiq_save_session',
+  access_token:{repr(access_token)},
+  refresh_token:{repr(refresh_token or "")},
+  user_email:{repr(user.email or "")},
+  user_id:{repr(str(user.id))},
+  user_name:{repr(name)},
+}}, '*');
+</script>
+""", height=0)
+
+def clear_session_from_js():
+    """Tell JS to clear localStorage session."""
+    st.components.v1.html("""
+<script>window.parent.postMessage({type:'physiq_clear_session'},'*');</script>
+""", height=0)
+
 
 # ══════════════════════════════════════════════════════════════
 #  BACKEND
@@ -1157,7 +1284,7 @@ Task: {question}
 
 Write complete, working {language} code:"""
 
-    return call_hf(system, user, max_tokens=2000)
+    return call_hf(system, user, max_tokens=30000)
 
 
 
@@ -1245,6 +1372,39 @@ def load_local_asr():
         device=device,
     )
 
+def normalize_voice_text(text):
+    """Clean transcript text and decode stray URL-encoded mic payloads."""
+    cleaned = str(text or "").strip()
+    if not cleaned:
+        return ""
+
+    if "%" in cleaned and re.search(r"%[0-9A-Fa-f]{2}", cleaned):
+        decoded = urllib.parse.unquote_plus(cleaned).strip()
+        if decoded:
+            cleaned = decoded
+
+    return " ".join(cleaned.split())
+
+def consume_browser_voice_query():
+    """Pick up browser speech input passed through the URL and feed it into chat."""
+    try:
+        raw_text = st.query_params.get("voice_text", "")
+    except Exception:
+        raw_text = ""
+
+    question = normalize_voice_text(raw_text)
+
+    for key in ("voice_text", "voice_nonce"):
+        try:
+            del st.query_params[key]
+        except Exception:
+            pass
+
+    if question:
+        st.session_state._voice_question = question
+        st.session_state._is_voice_question = True
+        st.rerun()
+
 def transcribe_audio_hf(audio_bytes):
     """Transcribe recorded audio using a local Whisper pipeline."""
     import io
@@ -1264,8 +1424,9 @@ def transcribe_audio_hf(audio_bytes):
         asr = load_local_asr()
         result = asr({"raw": audio_array, "sampling_rate": int(sample_rate)})
         text = result.get("text") if isinstance(result, dict) else None
-        if text and str(text).strip():
-            return str(text).strip(), None
+        normalized = normalize_voice_text(text)
+        if normalized:
+            return normalized, None
         return None, "The audio was processed, but no speech was detected."
     except Exception as e:
         return None, f"Local transcription failed: {str(e)[:160]}"
@@ -1286,9 +1447,22 @@ def show_voice_ui():
 
     st.audio(audio)
 
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("📝 Transcribe", use_container_width=True, key="voice_transcribe_btn"):
+        if st.button("⚡ Ask in ~3 sec", use_container_width=True, key="voice_quick_ask_btn"):
+            with st.spinner("🎧 Converting your speech to text..."):
+                transcript, error = transcribe_audio_hf(audio.getvalue())
+            if transcript:
+                st.session_state.voice_transcript = transcript
+                st.session_state.voice_transcript_editor = transcript
+                st.session_state._voice_question = transcript
+                st.session_state._is_voice_question = True
+                st.session_state.voice_clear_pending = True
+                st.rerun()
+            else:
+                st.error(f"❌ Could not transcribe this recording. {error or ''}".strip())
+    with col2:
+        if st.button("📝 Transcribe Only", use_container_width=True, key="voice_transcribe_btn"):
             with st.spinner("🎧 Converting your speech to text..."):
                 transcript, error = transcribe_audio_hf(audio.getvalue())
             if transcript:
@@ -1297,7 +1471,7 @@ def show_voice_ui():
                 st.success("✅ Speech detected and transcribed.")
             else:
                 st.error(f"❌ Could not transcribe this recording. {error or ''}".strip())
-    with col2:
+    with col3:
         if st.button("🧹 Clear Voice", use_container_width=True, key="voice_clear_btn"):
             st.session_state.voice_transcript = ""
             st.session_state.voice_transcript_editor = ""
@@ -1315,14 +1489,242 @@ def show_voice_ui():
     st.session_state.voice_transcript = transcript_value
 
     if st.button("➤ Ask PhysIQ", use_container_width=True, key="voice_send_btn"):
-        if transcript_value.strip():
-            st.session_state._voice_question = transcript_value.strip()
+        cleaned_transcript = normalize_voice_text(transcript_value)
+        if cleaned_transcript:
+            st.session_state._voice_question = cleaned_transcript
             st.session_state._is_voice_question = True
-            st.session_state.voice_transcript = ""
+            st.session_state.voice_transcript = cleaned_transcript
             st.session_state.voice_clear_pending = True
             st.rerun()
         else:
             st.warning("Record something first, then transcribe it before sending.")
+
+def inject_voice_chat_bridge(enabled):
+    """Attach a browser mic button near the chat bar and speak replies aloud."""
+    st.components.v1.html(f"""
+<script>
+(function() {{
+  const enabled = {str(enabled).lower()};
+  const SILENCE_MS = 2200;
+  const parentWin = window.parent;
+  const doc = parentWin.document;
+  const bridge = parentWin.__physiqVoiceBridge = parentWin.__physiqVoiceBridge || {{}};
+
+  function setButtonState(state, text, title) {{
+    const btn = doc.getElementById("physiq-chat-mic-btn");
+    if (!btn) return;
+    btn.dataset.state = state;
+    btn.textContent = text;
+    btn.title = title;
+    btn.style.background = state === "listening" ? "#d97706" : "#0ea5e9";
+    btn.style.boxShadow = state === "listening"
+      ? "0 0 0 6px rgba(217, 119, 6, 0.18)"
+      : "0 10px 25px rgba(14, 165, 233, 0.26)";
+  }}
+
+  function speakText(text) {{
+    const cleaned = String(text || "").replace(/[#*_`>-]/g, " ").replace(/\\s+/g, " ").trim();
+    if (!cleaned || !("speechSynthesis" in parentWin)) return;
+    parentWin.speechSynthesis.cancel();
+    const utterance = new parentWin.SpeechSynthesisUtterance(cleaned);
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    const voices = parentWin.speechSynthesis.getVoices();
+    const preferred = voices.find(v => /en-IN|en-GB|en-US/i.test(v.lang || "")) || voices[0];
+    if (preferred) utterance.voice = preferred;
+    parentWin.speechSynthesis.speak(utterance);
+  }}
+
+  if (!bridge.ttsBound) {{
+    bridge.ttsBound = true;
+    bridge.speakText = speakText;
+    parentWin.addEventListener("message", function(event) {{
+      if (event.data && event.data.type === "physiq_tts" && event.data.text) {{
+        speakText(event.data.text);
+      }}
+    }});
+    if ("speechSynthesis" in parentWin) {{
+      parentWin.speechSynthesis.onvoiceschanged = function() {{}};
+      parentWin.speechSynthesis.getVoices();
+    }}
+  }}
+
+  function clearSilenceTimer() {{
+    if (bridge.silenceTimer) {{
+      parentWin.clearTimeout(bridge.silenceTimer);
+      bridge.silenceTimer = null;
+    }}
+  }}
+
+  function sendTranscript(text) {{
+    const finalText = String(text || "").replace(/\\s+/g, " ").trim();
+    if (!finalText) {{
+      setButtonState("idle", "🎙️", "Start voice input");
+      return;
+    }}
+    clearSilenceTimer();
+    setButtonState("sending", "⏳", "Sending your question...");
+    const url = new URL(parentWin.location.href);
+    url.searchParams.set("voice_text", finalText);
+    url.searchParams.set("voice_nonce", String(Date.now()));
+    parentWin.location.href = url.toString();
+  }}
+
+  function stopListening(sendNow) {{
+    clearSilenceTimer();
+    bridge.recognizing = false;
+    bridge.stopRequested = true;
+    if (bridge.recognition) {{
+      try {{ bridge.recognition.stop(); }} catch (e) {{}}
+    }}
+    const finalText = [bridge.finalTranscript || "", bridge.interimTranscript || ""].join(" ").replace(/\\s+/g, " ").trim();
+    bridge.finalTranscript = "";
+    bridge.interimTranscript = "";
+    if (sendNow && finalText) {{
+      sendTranscript(finalText);
+    }} else {{
+      setButtonState("idle", "🎙️", "Start voice input");
+    }}
+  }}
+
+  function resetSilenceTimer() {{
+    clearSilenceTimer();
+    bridge.silenceTimer = parentWin.setTimeout(function() {{
+      stopListening(true);
+    }}, SILENCE_MS);
+  }}
+
+  function recognitionCtor() {{
+    return parentWin.SpeechRecognition || parentWin.webkitSpeechRecognition || window.SpeechRecognition || window.webkitSpeechRecognition;
+  }}
+
+  function startListening() {{
+    const SpeechRecognition = recognitionCtor();
+    if (!SpeechRecognition) {{
+      setButtonState("error", "🚫", "Speech recognition is not supported in this browser");
+      return;
+    }}
+
+    bridge.finalTranscript = "";
+    bridge.interimTranscript = "";
+    bridge.stopRequested = false;
+    bridge.recognition = new SpeechRecognition();
+    bridge.recognition.lang = "en-US";
+    bridge.recognition.continuous = true;
+    bridge.recognition.interimResults = true;
+    bridge.recognition.maxAlternatives = 1;
+
+    bridge.recognition.onstart = function() {{
+      bridge.recognizing = true;
+      setButtonState("listening", "🔴", "Listening... stop speaking for 2.2 seconds to send");
+    }};
+
+    bridge.recognition.onresult = function(event) {{
+      let finals = bridge.finalTranscript || "";
+      let interim = "";
+      for (let i = event.resultIndex; i < event.results.length; i++) {{
+        const result = event.results[i];
+        const part = (result[0] && result[0].transcript) ? result[0].transcript : "";
+        if (result.isFinal) {{
+          finals += " " + part;
+        }} else {{
+          interim += " " + part;
+        }}
+      }}
+      bridge.finalTranscript = finals.trim();
+      bridge.interimTranscript = interim.trim();
+      const heard = [bridge.finalTranscript, bridge.interimTranscript].join(" ").trim();
+      setButtonState("listening", heard ? "🗣️" : "🔴", heard ? `Heard: ${{heard}}` : "Listening...");
+      if (heard) resetSilenceTimer();
+    }};
+
+    bridge.recognition.onerror = function(event) {{
+      bridge.recognizing = false;
+      clearSilenceTimer();
+      const msg = event && event.error ? String(event.error) : "voice error";
+      setButtonState("error", "⚠️", `Microphone error: ${{msg}}`);
+    }};
+
+    bridge.recognition.onend = function() {{
+      clearSilenceTimer();
+      const heard = [bridge.finalTranscript || "", bridge.interimTranscript || ""].join(" ").trim();
+      const shouldSend = !bridge.stopRequested && heard;
+      bridge.recognizing = false;
+      bridge.stopRequested = false;
+      if (shouldSend) {{
+        sendTranscript(heard);
+      }} else {{
+        setButtonState("idle", "🎙️", "Start voice input");
+      }}
+    }};
+
+    try {{
+      bridge.recognition.start();
+    }} catch (error) {{
+      bridge.recognizing = false;
+      setButtonState("error", "⚠️", "Could not start microphone");
+    }}
+  }}
+
+  function mountButton() {{
+    const chatInput = doc.querySelector('[data-testid="stChatInput"]');
+    const existing = doc.getElementById("physiq-chat-mic-btn");
+
+    if (!enabled) {{
+      if (existing) existing.remove();
+      if (bridge.recognizing) stopListening(false);
+      return;
+    }}
+
+    if (!chatInput) {{
+      parentWin.setTimeout(mountButton, 400);
+      return;
+    }}
+
+    const rect = chatInput.getBoundingClientRect();
+    const bottom = Math.max(18, parentWin.innerHeight - rect.bottom + 14);
+    const right = Math.max(84, parentWin.innerWidth - rect.right + 88);
+
+    const btn = existing || doc.createElement("button");
+    btn.id = "physiq-chat-mic-btn";
+    btn.type = "button";
+    btn.textContent = "🎙️";
+    btn.title = "Start voice input";
+    btn.onclick = function() {{
+      if (bridge.recognizing) {{
+        stopListening(true);
+      }} else {{
+        startListening();
+      }}
+    }};
+    btn.style.position = "fixed";
+    btn.style.right = `${{right}}px`;
+    btn.style.bottom = `${{bottom}}px`;
+    btn.style.width = "48px";
+    btn.style.height = "48px";
+    btn.style.borderRadius = "999px";
+    btn.style.border = "none";
+    btn.style.color = "#fff";
+    btn.style.fontSize = "20px";
+    btn.style.cursor = "pointer";
+    btn.style.zIndex = "99999";
+    btn.style.transition = "all 0.18s ease";
+    btn.style.display = "flex";
+    btn.style.alignItems = "center";
+    btn.style.justifyContent = "center";
+    btn.style.background = "#0ea5e9";
+    btn.style.boxShadow = "0 10px 25px rgba(14, 165, 233, 0.26)";
+
+    if (!existing) doc.body.appendChild(btn);
+  }}
+
+  mountButton();
+  parentWin.setTimeout(mountButton, 900);
+  parentWin.addEventListener("resize", mountButton);
+}})();
+</script>
+""", height=0)
 
 
 
@@ -1818,10 +2220,184 @@ def show_profile_page():
     st.caption("Profile is rebuilt whenever you click 🔄 Refresh Profile. The more you use PhysIQ, the more accurate it gets!")
 
 
+
+# ══════════════════════════════════════════════════════════════
+#  WEB SEARCH CONNECTOR
+#  Free APIs only: Wikipedia, arXiv, OpenLibrary, DuckDuckGo
+#  All free for commercial use, no API keys required
+# ══════════════════════════════════════════════════════════════
+
+import re as _re
+
+WEB_SEARCH_TRIGGERS = [
+    "search for","look up","find information","what is the latest",
+    "current","recent","news about","search the web","look online",
+    "find out","google","web search","search online","what happened",
+    "today","2024","2025","latest research","recent study","new paper",
+    "who is","where is","when did","how many","what country",
+]
+
+def needs_web_search(question, confidence_class):
+    """Decide if web search would help."""
+    msg = question.lower()
+    low_conf = confidence_class in ["conf-low","conf-med"]
+    has_trigger = any(t in msg for t in WEB_SEARCH_TRIGGERS)
+    is_factual = any(x in msg for x in ["who","what","when","where","how many","which","list of"])
+    return (low_conf and is_factual) or has_trigger
+
+def search_wikipedia(query, sentences=4):
+    """Search Wikipedia — completely free, no key needed."""
+    try:
+        import urllib.request, urllib.parse, json
+        q = urllib.parse.quote(query)
+        url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{q}"
+        req = urllib.request.Request(url, headers={"User-Agent":"PhysIQ/1.0 (educational)"})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            data = json.loads(r.read())
+        if data.get("type") == "disambiguation":
+            return None
+        extract = data.get("extract","")
+        # Return first N sentences
+        sents = extract.split(". ")
+        return ". ".join(sents[:sentences]) + ("." if len(sents)>sentences else "")
+    except:
+        return None
+
+def search_arxiv(query, max_results=3):
+    """Search arXiv for scientific papers — completely free."""
+    try:
+        import urllib.request, urllib.parse
+        q = urllib.parse.quote(query)
+        url = f"http://export.arxiv.org/api/query?search_query=all:{q}&start=0&max_results={max_results}&sortBy=relevance"
+        req = urllib.request.Request(url, headers={"User-Agent":"PhysIQ/1.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            xml = r.read().decode("utf-8")
+        # Parse entries
+        titles = _re.findall(r'<title>(.*?)</title>', xml)[1:]  # skip feed title
+        summaries = _re.findall(r'<summary>(.*?)</summary>', xml, _re.DOTALL)
+        results = []
+        for i, (t, s) in enumerate(zip(titles[:max_results], summaries[:max_results])):
+            t = t.strip().replace("\n"," ")
+            s = s.strip().replace("\n"," ")[:200]
+            results.append(f"📄 **{t}**: {s}...")
+        return results if results else None
+    except:
+        return None
+
+def search_duckduckgo(query):
+    """DuckDuckGo Instant Answer API — free, no key, good for facts."""
+    try:
+        import urllib.request, urllib.parse, json
+        q = urllib.parse.quote(query)
+        url = f"https://api.duckduckgo.com/?q={q}&format=json&no_redirect=1&no_html=1&skip_disambig=1"
+        req = urllib.request.Request(url, headers={"User-Agent":"PhysIQ/1.0"})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            data = json.loads(r.read())
+        abstract = data.get("AbstractText","").strip()
+        answer = data.get("Answer","").strip()
+        definition = data.get("Definition","").strip()
+        related = [t.get("Text","") for t in data.get("RelatedTopics",[])[:2] if t.get("Text")]
+        result = answer or abstract or definition
+        if result:
+            return result + (" | " + " | ".join(related) if related else "")
+        return None
+    except:
+        return None
+
+def search_openlibrary(query):
+    """Open Library search — free, great for book/author queries."""
+    try:
+        import urllib.request, urllib.parse, json
+        q = urllib.parse.quote(query)
+        url = f"https://openlibrary.org/search.json?q={q}&limit=3&fields=title,author_name,first_publish_year,subject"
+        req = urllib.request.Request(url, headers={"User-Agent":"PhysIQ/1.0"})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            data = json.loads(r.read())
+        docs = data.get("docs",[])[:3]
+        results = []
+        for d in docs:
+            t = d.get("title","?")
+            a = ", ".join(d.get("author_name",["Unknown"])[:2])
+            y = d.get("first_publish_year","")
+            results.append(f"📚 *{t}* by {a} ({y})")
+        return results if results else None
+    except:
+        return None
+
+def web_search_all(query):
+    """Run all free searches and compile results."""
+    results = {}
+    # Wikipedia (most reliable for facts)
+    wiki = search_wikipedia(query)
+    if wiki: results["Wikipedia"] = wiki
+    # DuckDuckGo instant answers
+    ddg = search_duckduckgo(query)
+    if ddg: results["DuckDuckGo"] = ddg
+    # arXiv for science topics
+    sci_words = ["physics","chemistry","quantum","atom","molecule","theorem",
+                 "research","paper","study","formula","equation","theory"]
+    if any(w in query.lower() for w in sci_words):
+        arxiv = search_arxiv(query)
+        if arxiv: results["arXiv"] = arxiv
+    # Open Library for books/authors
+    book_words = ["book","author","novel","written by","publication","published"]
+    if any(w in query.lower() for w in book_words):
+        books = search_openlibrary(query)
+        if books: results["Open Library"] = books
+    return results
+
+def format_web_results(results):
+    """Format search results into readable text for AI context."""
+    if not results:
+        return ""
+    lines = ["\n[WEB SEARCH RESULTS — use these to enrich your answer:]"]
+    for source, data in results.items():
+        lines.append(f"\n📡 {source}:")
+        if isinstance(data, list):
+            for item in data:
+                lines.append(f"  • {item}")
+        else:
+            lines.append(f"  {data}")
+    lines.append("[End of web results]\n")
+    return "\n".join(lines)
+
+def answer_with_web_search(question, vs, history_text):
+    """Ask question WITH web search context added."""
+    # Run web searches
+    web_results = web_search_all(question)
+    web_context = format_web_results(web_results)
+    # Also get RAG context
+    rag_context = ""
+    if vs:
+        try:
+            results = vs.similarity_search_with_score(question, k=3)
+            rag_context = "\n\n".join([r[0].page_content for r in results])
+        except: pass
+    system = """You are an expert tutor with access to live web search results.
+Use BOTH your knowledge AND the web search results to give the most accurate, up-to-date answer.
+Always mention if information comes from a web source.
+Be accurate, clear and educational."""
+    user = f"""Context from knowledge base:
+{rag_context}
+
+{web_context}
+
+Conversation:
+{history_text}
+
+Question: {question}
+
+Answer (use web results where relevant):"""
+    answer = call_hf(system, user, max_tokens=1500)
+    sources = list(web_results.keys()) if web_results else []
+    return answer, sources
+
+
 # ══════════════════════════════════════════════════════════════
 #  MAIN APP
 # ══════════════════════════════════════════════════════════════
 def show_app():
+    consume_browser_voice_query()
     user_name = st.session_state.user.user_metadata.get("full_name", st.session_state.user.email)
 
     # ── Load backend ───────────────────────────────────────────
@@ -1888,6 +2464,7 @@ def show_app():
             pass
         if st.button("🚪 Sign Out", use_container_width=True):
             supabase.auth.sign_out()
+            clear_session_from_js()
             for k in ["user","access_token","messages","pending_feedback","backend_ready","vs","Document"]:
                 st.session_state[k] = None if k in ["user","access_token"] else \
                                       [] if k=="messages" else \
@@ -1919,12 +2496,20 @@ def show_app():
             if coding_on: st.session_state.creative_mode = False
             st.rerun()
 
+        web_on = st.toggle("🌐 Web Search", value=st.session_state.get("web_search_mode",False),
+            help="Auto-searches Wikipedia, arXiv, DuckDuckGo for extra info")
+        if web_on != st.session_state.get("web_search_mode",False):
+            st.session_state.web_search_mode = web_on
+            st.rerun()
+
         if st.session_state.creative_mode:
             st.success("✍️ English/Creative Mode ON")
         elif st.session_state.coding_mode:
-            st.success("💻 Coding Mode ON — Ask me to write code in any language!")
+            st.success("💻 Coding Mode ON — Up to 2000 lines!")
         else:
             st.info("⚛️ Science Mode")
+        if st.session_state.get("web_search_mode"):
+            st.success("🌐 Web Search ON — Wikipedia, arXiv, DuckDuckGo active")
 
         st.divider()
         st.markdown('<div class="section-label">🔢 Numerical Solver</div>', unsafe_allow_html=True)
@@ -2030,11 +2615,9 @@ def show_app():
     with col_tog:
         st.write("")  # spacer
 
+    inject_voice_chat_bridge(st.session_state.get("voice_mode", False))
     if st.session_state.get("voice_mode"):
-        st.markdown("**🎙️ Voice Panel**")
-        show_voice_ui()
-        st.caption("Speak into the mic, then send the transcript into the chat.")
-        st.divider()
+        st.caption("Use the mic button beside the chat bar. After 2.2 seconds of silence, your question sends automatically and the reply is spoken aloud.")
 
     # ── Chat history ───────────────────────────────────────────
     for i, msg in enumerate(st.session_state.messages):
@@ -2165,8 +2748,10 @@ def show_app():
                     st.rerun()
 
     # ── Chat input ─────────────────────────────────────────────
-    question = st.session_state.pop("_voice_question", None)
-    if not question:
+    voice_q = st.session_state.pop("_voice_question", None)
+    if voice_q:
+        question = normalize_voice_text(voice_q)
+    else:
         question = st.chat_input("Ask about Physics, Chemistry, or English Writing...")
 
     if question:
@@ -2293,7 +2878,7 @@ def show_app():
                 with st.chat_message("user"):
                     st.write(question)
                 with st.chat_message("assistant"):
-                    with st.spinner(f"💻 Writing {lang} code..."):
+                    with st.spinner(f"💻 Writing {lang} code (up to 2000 lines)..."):
                         code_answer = generate_code(question, vs, lang)
                     if code_answer:
                         st.markdown(code_answer)
@@ -2318,9 +2903,33 @@ def show_app():
         ])
 
         with st.chat_message("assistant"):
-            with st.spinner("🔁 Thinking..."):
-                answer, conf_label, conf_class = ask_question(question, vs, history_text)
+            use_web = st.session_state.get("web_search_mode", False)
+            with st.spinner("🔁 Thinking..." + (" + 🌐 searching web..." if use_web else "")):
+                if use_web:
+                    answer, sources = answer_with_web_search(question, vs, history_text)
+                    conf_label = "🌐 Web + AI"
+                    conf_class = "conf-high"
+                    if not answer:
+                        answer, conf_label, conf_class = ask_question(question, vs, history_text)
+                        sources = []
+                else:
+                    answer, conf_label, conf_class = ask_question(question, vs, history_text)
+                    sources = []
+                    # Auto web search on low confidence
+                    if conf_class == "conf-low" and needs_web_search(question, conf_class):
+                        with st.spinner("🌐 Confidence low — checking web..."):
+                            web_r = web_search_all(question)
+                            if web_r:
+                                web_ctx = format_web_results(web_r)
+                                sources = list(web_r.keys())
+                                # Re-ask with web context
+                                sys2 = "You are an expert tutor. Use the web results to improve your answer."
+                                usr2 = f"Web results:{web_ctx}\nQuestion:{question}\nImprove this answer:{answer}"
+                                better = call_hf(sys2, usr2, max_tokens=1200)
+                                if better: answer = better; conf_label = "🌐 Web-enhanced"
                 st.write(answer)
+                if sources:
+                    st.caption(f"📡 Sources: {', '.join(sources)}")
                 st.markdown(f'<span class="{conf_class}">📊 {conf_label}</span>', unsafe_allow_html=True)
 
                 st.session_state.messages.append({
@@ -2329,6 +2938,15 @@ def show_app():
                 })
                 save_message("assistant", answer, conf_label)
                 st.session_state.pending_feedback = {"question": question, "answer": answer}
+
+                # TTS voice reply if voice mode on
+                if st.session_state.get("voice_mode"):
+                    with st.spinner("🔊 Preparing voice..."):
+                        short = generate_voice_answer(question, answer)
+                    if short:
+                        st.components.v1.html(f"""<script>
+setTimeout(()=>{{window.parent.postMessage({{type:'physiq_tts',text:{repr(short)}}}, '*');}},400);
+</script>""", height=0)
 
         st.rerun()
 
