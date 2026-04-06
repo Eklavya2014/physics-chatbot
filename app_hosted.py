@@ -37,7 +37,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "show_video_creator": False, "video_script": None, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
     "custom_plugins": {}, "tool_creator_html": None, "tool_creator_mode": None, "tool_creator_name": "",
     "visit_count": 0, "session_restored": False,
 }
@@ -564,40 +564,110 @@ When asked to write essays, debates, letters, stories, poems, diary entries, spe
 - Always explain the rules/structure you used after your writing
 If asked about grammar, literature, or comprehension — explain clearly with examples.""") + profile_ctx
     else:
-        system = """You are PhysIQ — an expert AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science from Class 10 to College level.
+        system = """You are PhysIQ — a brilliant, deeply knowledgeable AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science.
 
-CRITICAL RULE — UNDERSTAND INTENT FIRST:
-Before answering, decide what the user ACTUALLY wants:
-1. EXPLANATION: "What is Newton's law?" / "Explain photosynthesis" / "How does DNA work?" → Give a clear educational explanation with examples and formulas.
-2. CALCULATION: "Calculate the force when..." / "Find the pH of..." → Solve step-by-step with working shown.
-3. DEFINITION: "What is entropy?" / "Define oxidation" → Give a precise definition with context.
-4. COMPARISON: "Difference between..." / "Compare X and Y" → Structured comparison.
-5. CONCEPT QUESTION: "Why does ice float?" / "How do planes fly?" → Intuitive explanation first, then technical detail.
-6. CONVERSATIONAL: "Hello", "Thanks", "That was helpful" → Respond naturally and warmly.
+═══════════════════════════════════════════════════════════
+CORE INTELLIGENCE RULES — READ EVERY ONE CAREFULLY
+═══════════════════════════════════════════════════════════
 
-NEVER write computer code unless the user EXPLICITLY asks for code (e.g. "write a Python program", "code for me").
-If someone asks "how does Python handle memory?" — explain the concept, do NOT write Python code.
-If someone asks "what is a for loop?" — explain with a simple example, do NOT write a full program.
+RULE 1 — UNDERSTAND THE TRUE QUESTION:
+Users often ask questions indirectly. You MUST figure out what they actually mean:
+• "Why are cars dipped in iron?" → They mean zinc, not iron. This is GALVANISATION.
+• "Why does ice feel cold?" → They mean: what causes the sensation of cold?
+• "Why does bread rise?" → FERMENTATION and CO₂ from yeast.
+• "How does salt melt ice?" → FREEZING POINT DEPRESSION (colligative property).
+• "Why is sky blue?" → RAYLEIGH SCATTERING of sunlight.
+• "Why do we feel heavier in a lift going up?" → PSEUDO FORCE / apparent weight.
+• "How do planes stay up?" → BERNOULLI'S PRINCIPLE + lift force.
+• "Why do stars twinkle?" → ATMOSPHERIC REFRACTION / scintillation.
+• "Why do we get tan in sunlight?" → MELANIN production triggered by UV radiation.
+• "Why does soap clean?" → MICELLES formation, hydrophilic/hydrophobic ends.
+• "What makes soda fizzy?" → CO₂ dissolved under pressure — HENRY'S LAW.
+• "Why is blood red?" → HAEMOGLOBIN and its iron-containing haem group.
+• If a user says something wrong (like "iron" when they mean "zinc"), gently CORRECT them while answering.
 
-FORMAT YOUR ANSWERS WELL:
-- Use clear headings for complex topics
-- Use bullet points for lists
-- Show formulas clearly: F = ma, E = mc²
-- Give real-world examples
-- Keep answers focused and not too long unless detail is needed
-- Be encouraging and friendly
+RULE 2 — CONCEPTUAL REASONING:
+For "WHY" questions, ALWAYS explain the underlying scientific principle:
+1. State the phenomenon plainly in 1 sentence
+2. Name the scientific concept/law it involves
+3. Explain the mechanism (what actually happens at atomic/molecular level)
+4. Give a real-world example or analogy
+5. If relevant, mention the formula
 
-If you don't know something or are unsure, say so honestly."""
+RULE 3 — NEVER WRITE CODE UNLESS EXPLICITLY ASKED:
+"Write a Python program" → write code.
+"What is Python used for?" → explain, NO code.
+"How does a computer process data?" → explain the concept, NO code.
+"What is a function in programming?" → explain with a simple English example, not a full code file.
 
-    user = f"""Conversation so far:
-{history_text if history_text else "(First question)"}
+RULE 4 — MATCH ANSWER DEPTH TO QUESTION:
+• Simple factual question → Short, direct answer (2-4 sentences)
+• "Explain..." or "How does..." → Medium answer with structure
+• "Give me a detailed analysis..." → Long, thorough explanation
+• Conversational messages ("thanks", "ok", "hello") → Brief, warm reply
 
-Relevant Knowledge:
-{context}
+RULE 5 — FORMAT FOR CLARITY:
+• Use **bold** for key terms and scientific names
+• Use formulas: F = ma, λ = h/mv, ΔG = ΔH - TΔS
+• Use bullet points ONLY for lists, not for everything
+• Give analogies — compare to everyday things students know
+• Be warm, encouraging, never condescending
 
-Question: {question}
+RULE 6 — CORRECT MISCONCEPTIONS:
+If the user's question contains a factual error, always say so kindly:
+"Actually, a small correction — it's zinc, not iron that's used in galvanisation! 
+Here's why: [explanation]"
 
-Answer:"""
+RULE 7 — CONTEXTUAL AWARENESS:
+Use the conversation history to understand follow-up questions:
+• "And why does that happen?" → refers to the last topic discussed
+• "What about at higher temperatures?" → continuation of previous question
+• "Explain that more simply" → re-explain the last answer more simply
+
+═══════════════════════════════════════════════════════════
+SUBJECT EXPERTISE
+═══════════════════════════════════════════════════════════
+PHYSICS: Mechanics, Thermodynamics, Waves, Optics, Electromagnetism, 
+         Modern Physics, Quantum Mechanics, Relativity, Nuclear Physics,
+         Astrophysics, Fluid Mechanics, SHM, Magnetism
+CHEMISTRY: Periodic Table, Chemical Bonding, Organic Chemistry (all reactions),
+           Electrochemistry, Thermodynamics, Equilibrium, Kinetics, 
+           Coordination Compounds, Polymers, Biomolecules, Environmental Chemistry,
+           Galvanisation, Corrosion, Acids/Bases, Redox reactions
+MATHEMATICS: Algebra, Calculus, Statistics, Trigonometry, Geometry,
+             Differential Equations, Linear Algebra, Probability
+BIOLOGY: Cell Biology, Genetics, Evolution, Human Physiology, Ecology,
+         Photosynthesis, Respiration, Nervous System, Endocrinology
+GENERAL SCIENCE: Everyday phenomena explained scientifically
+
+If the answer is not in your knowledge base context, use your own deep knowledge.
+If truly uncertain, say so clearly."""
+
+    # Build smarter user message with intent hints
+    q_lower = question.lower()
+    intent_hint = ""
+    if any(w in q_lower for w in ["why","how come","what makes","reason for","cause of"]):
+        intent_hint = "\n[Intent: Conceptual explanation needed — explain the scientific principle behind this]"
+    elif any(w in q_lower for w in ["what is","define","meaning of","full form"]):
+        intent_hint = "\n[Intent: Definition/explanation needed]"
+    elif any(w in q_lower for w in ["calculate","find","solve","compute","what is the value"]):
+        intent_hint = "\n[Intent: Numerical calculation needed — show step-by-step working]"
+    elif any(w in q_lower for w in ["difference","compare","contrast","vs","versus","better"]):
+        intent_hint = "\n[Intent: Comparison needed — structured side-by-side comparison]"
+    elif any(w in q_lower for w in ["list","name","give examples","types of"]):
+        intent_hint = "\n[Intent: List/enumeration needed]"
+
+    user = f"""Previous conversation:
+{history_text if history_text else "(This is the student's first question)"}
+
+Knowledge base context:
+{context if context else "(No specific context found — use your expert knowledge)"}
+{intent_hint}
+
+Student's question: {question}
+
+Think carefully about what the student is actually asking — they may have used imprecise language. 
+Understand the true concept, correct any misconceptions gently, and give the best possible answer:"""
 
     answer = call_hf(system, user)
     return answer or "Could not generate a response.", conf_label, conf_class
@@ -2757,12 +2827,23 @@ def plugin_tool_creator(request=""):
     """Load tool creator from external HTML file."""
     try:
         with open("tool_creator_plugin.html", "r", encoding="utf-8") as _f:
-            return _f.read()
+            html = _f.read()
+            try:
+                import json
+                initial_request = json.dumps(request or "")
+            except Exception:
+                initial_request = '""'
+            return html.replace("__INITIAL_TOOL_REQUEST__", initial_request)
     except FileNotFoundError:
         return """<!DOCTYPE html><html><body style="background:#0d1117;color:#e6edf3;padding:20px;font-family:sans-serif">
 <h3 style="color:#ff8c42">🔧 Tool Creator</h3>
 <p>File <code>tool_creator_plugin.html</code> not found. Make sure it's in your project folder.</p>
 </body></html>"""
+
+def render_tool_creator_plugin(context: str = "") -> None:
+    """Render the external Tool Creator plugin safely inside Streamlit."""
+    html_content = plugin_tool_creator(context)
+    st.components.v1.html(html_content, height=720, scrolling=True)
 
 
 def render_plugin(plugin_key: str, context: str = "") -> None:
@@ -2970,6 +3051,551 @@ def show_plugin_store():
 
 
 
+
+# ══════════════════════════════════════════════════════════════
+#  VIDEO CREATOR CONNECTOR
+#  Creates educational/presentation videos using HTML5 Canvas
+#  + MediaRecorder API. No external services needed.
+#  Supports: Text slides, diagrams, animations, voiceover
+# ══════════════════════════════════════════════════════════════
+
+VIDEO_TRIGGERS = [
+    "create a video","make a video","generate a video","video about",
+    "video on","make me a video","record a video","educational video",
+    "presentation video","explainer video","animation video",
+    "video creator","video maker","make a clip","video for",
+]
+
+def is_video_request(message):
+    msg = message.lower()
+    return any(t in msg for t in VIDEO_TRIGGERS)
+
+def generate_video_script(topic, style="educational"):
+    """AI generates a structured video script with scenes."""
+    system = """You are an expert video scriptwriter and educator.
+Generate a structured video script for the given topic.
+Return ONLY a valid JSON object with this structure:
+{
+  "title": "Video title",
+  "duration": 45,
+  "theme_color": "#4da6ff",
+  "bg_color": "#0d1117",
+  "text_color": "#e6edf3",
+  "accent_color": "#06d6a0",
+  "scenes": [
+    {
+      "type": "title_card",
+      "duration": 4,
+      "title": "Main title here",
+      "subtitle": "Subtitle or context",
+      "bg_gradient": ["#0d1117","#1a1a2e"]
+    },
+    {
+      "type": "text_slide", 
+      "duration": 6,
+      "heading": "Section heading",
+      "points": ["Point 1 text", "Point 2 text", "Point 3 text"],
+      "icon": "⚛️"
+    },
+    {
+      "type": "formula_slide",
+      "duration": 5,
+      "heading": "Key Formula",
+      "formula": "F = ma",
+      "explanation": "Force equals mass times acceleration",
+      "units": "Newtons (N)"
+    },
+    {
+      "type": "diagram_slide",
+      "duration": 7,
+      "heading": "Diagram title",
+      "elements": [
+        {"shape":"circle","x":0.3,"y":0.5,"r":0.08,"color":"#ff5555","label":"Nucleus"},
+        {"shape":"circle","x":0.7,"y":0.5,"r":0.04,"color":"#4da6ff","label":"Electron"},
+        {"shape":"arrow","x1":0.38,"y1":0.5,"x2":0.62,"y2":0.5,"color":"#06d6a0","label":"Force"}
+      ]
+    },
+    {
+      "type": "summary_slide",
+      "duration": 5,
+      "heading": "Key Takeaways",
+      "points": ["Key point 1","Key point 2","Key point 3"],
+      "call_to_action": "Practice problems in PhysIQ!"
+    }
+  ]
+}
+
+Scene types available: title_card, text_slide, formula_slide, diagram_slide, 
+                       comparison_slide, summary_slide, quote_slide
+Make 5-8 scenes. Total duration 40-90 seconds.
+Return ONLY the JSON, no explanation."""
+
+    user = f"Create an educational video script about: {topic}"
+    import json
+    raw = call_hf(system, user, max_tokens=2000)
+    if not raw: return None
+    raw = raw.strip()
+    start = raw.find("{"); end = raw.rfind("}") + 1
+    if start < 0: return None
+    try:
+        return json.loads(raw[start:end])
+    except:
+        return None
+
+def show_video_creator(topic="", script=None):
+    """Render the video creator canvas app."""
+    import json
+    script_json = json.dumps(script) if script else "null"
+
+    video_html = f"""<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{background:#060b18;font-family:'Segoe UI',sans-serif;color:#e6edf3;overflow:hidden}}
+#app{{display:flex;flex-direction:column;height:100vh}}
+.toolbar{{background:#0d1117;border-bottom:1px solid #30363d;padding:10px 16px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
+.tit{{color:#58a6ff;font-weight:700;font-size:14px;flex:1}}
+.tbtn{{background:#21262d;border:1px solid #30363d;color:#e6edf3;border-radius:8px;
+  padding:6px 14px;cursor:pointer;font-size:12px;transition:all .15s}}
+.tbtn:hover{{background:#30363d}}
+.tbtn.rec{{background:#b91c1c;border-color:#ef4444;color:#fff;animation:pulse 1s infinite}}
+.tbtn.primary{{background:#238636;border-color:#2ea043;color:#fff}}
+.tbtn.primary:hover{{background:#2ea043}}
+@keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(239,68,68,.5)}}70%{{box-shadow:0 0 0 8px rgba(239,68,68,0)}}100%{{box-shadow:0 0 0 0 rgba(239,68,68,0)}}}}
+.main-area{{display:flex;flex:1;overflow:hidden}}
+.canvas-wrap{{flex:1;display:flex;align-items:center;justify-content:center;background:#000;position:relative}}
+#vc{{border:2px solid #30363d;max-width:100%;max-height:100%}}
+.sidebar{{width:220px;background:#0d1117;border-left:1px solid #30363d;overflow-y:auto;padding:12px}}
+.sth{{color:#58a6ff;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px}}
+.scene-card{{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px 10px;
+  margin-bottom:6px;cursor:pointer;font-size:11px;color:#8b949e;transition:all .15s}}
+.scene-card:hover,.scene-card.active{{border-color:#58a6ff;color:#e6edf3}}
+.scene-card.active{{background:#1f2937}}
+.scene-num{{color:#58a6ff;font-weight:700;font-size:10px}}
+.timeline{{background:#0d1117;border-top:1px solid #30363d;padding:10px 16px;height:80px}}
+.tl-inner{{display:flex;gap:4px;height:100%;align-items:center}}
+.tl-scene{{border-radius:4px;height:44px;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;font-size:10px;color:#fff;font-weight:600;
+  border:1px solid transparent;transition:all .15s;min-width:40px;flex-shrink:0}}
+.tl-scene:hover{{border-color:#58a6ff}}
+.tl-scene.active{{border-color:#58a6ff;border-width:2px}}
+.status{{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+  background:rgba(0,0,0,.7);padding:5px 14px;border-radius:20px;font-size:11px;color:#8b949e}}
+.controls{{display:flex;gap:6px;align-items:center}}
+.pbar-wrap{{flex:1;height:4px;background:#21262d;border-radius:2px;cursor:pointer}}
+.pbar-fill{{height:100%;background:#58a6ff;border-radius:2px;transition:width .1s}}
+.time-lbl{{font-size:11px;color:#8b949e;min-width:70px}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="toolbar">
+    <span class="tit">🎬 PhysIQ Video Creator</span>
+    <div class="controls">
+      <button class="tbtn" id="prevBtn" onclick="prevScene()">⏮ Prev</button>
+      <button class="tbtn" id="playBtn" onclick="togglePlay()">▶ Play</button>
+      <button class="tbtn" id="nextBtn" onclick="nextScene()">Next ⏭</button>
+      <div class="pbar-wrap" onclick="seekBar(event)"><div class="pbar-fill" id="pbarFill" style="width:0%"></div></div>
+      <span class="time-lbl" id="timeLbl">0:00 / 0:00</span>
+    </div>
+    <button class="tbtn primary" id="recBtn" onclick="startRecord()">⏺ Export Video</button>
+    <button class="tbtn" onclick="downloadScript()">📄 Script JSON</button>
+  </div>
+  <div class="main-area">
+    <div class="canvas-wrap">
+      <canvas id="vc" width="960" height="540"></canvas>
+      <div class="status" id="status">Loading video...</div>
+    </div>
+    <div class="sidebar">
+      <div class="sth">SCENES</div>
+      <div id="sceneList"></div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="tl-inner" id="tlInner"></div>
+  </div>
+</div>
+
+<script>
+var script = {script_json};
+var SCENE_COLORS = ['#1f6feb','#238636','#9333ea','#b91c1c','#0891b2','#c2410c','#166534','#1e3a5f'];
+var canvas = document.getElementById('vc');
+var ctx = canvas.getContext('2d');
+var W = canvas.width, H = canvas.height;
+var currentScene = 0, playing = false, animT = 0;
+var recordingChunks = [], recorder = null, isRecording = false;
+var totalTime = 0, elapsed = 0, raf = null, lastTs = null;
+
+function initScript() {{
+  if(!script) {{ renderNoScript(); return; }}
+  totalTime = 0;
+  (script.scenes||[]).forEach(function(s){{ totalTime += (s.duration||5); }});
+  buildSidebar();
+  buildTimeline();
+  renderScene(0);
+  document.getElementById('status').textContent = 'Ready — ' + (script.scenes||[]).length + ' scenes, ' + totalTime + 's total';
+  document.getElementById('timeLbl').textContent = '0:00 / ' + fmt(totalTime);
+}}
+
+function fmt(s) {{
+  return Math.floor(s/60)+':'+(s%60<10?'0':'')+Math.floor(s%60);
+}}
+
+function buildSidebar() {{
+  var sl = document.getElementById('sceneList');
+  sl.innerHTML = '';
+  (script.scenes||[]).forEach(function(s,i) {{
+    var d = document.createElement('div');
+    d.className = 'scene-card' + (i===0?' active':'');
+    d.id = 'sc'+i;
+    d.onclick = (function(idx){{ return function(){{ jumpToScene(idx); }}; }})(i);
+    d.innerHTML = '<div class="scene-num">Scene ' + (i+1) + ' · ' + (s.duration||5) + 's</div>' +
+      '<div>' + (s.title||s.heading||s.type) + '</div>';
+    sl.appendChild(d);
+  }});
+}}
+
+function buildTimeline() {{
+  var tl = document.getElementById('tlInner');
+  tl.innerHTML = '';
+  (script.scenes||[]).forEach(function(s,i) {{
+    var d = document.createElement('div');
+    d.className = 'tl-scene' + (i===0?' active':'');
+    d.id = 'tl'+i;
+    d.style.background = SCENE_COLORS[i%SCENE_COLORS.length];
+    d.style.width = Math.max(40, (s.duration||5)/totalTime*100) + 'px';
+    d.textContent = (i+1);
+    d.onclick = (function(idx){{ return function(){{ jumpToScene(idx); }}; }})(i);
+    tl.appendChild(d);
+  }});
+}}
+
+function jumpToScene(idx) {{
+  currentScene = idx;
+  animT = 0;
+  var prev = 0;
+  for(var i=0;i<idx;i++) prev += ((script.scenes||[])[i]||{{duration:5}}).duration||5;
+  elapsed = prev;
+  updateActive();
+  renderScene(idx);
+}}
+
+function updateActive() {{
+  document.querySelectorAll('.scene-card').forEach(function(el,i){{
+    el.classList.toggle('active', i===currentScene);
+  }});
+  document.querySelectorAll('.tl-scene').forEach(function(el,i){{
+    el.classList.toggle('active', i===currentScene);
+  }});
+  var pct = totalTime>0 ? elapsed/totalTime*100 : 0;
+  document.getElementById('pbarFill').style.width = pct + '%';
+  document.getElementById('timeLbl').textContent = fmt(elapsed) + ' / ' + fmt(totalTime);
+}}
+
+function togglePlay() {{
+  playing = !playing;
+  document.getElementById('playBtn').textContent = playing ? '⏸ Pause' : '▶ Play';
+  if(playing) {{ lastTs = null; raf = requestAnimationFrame(animate); }}
+  else if(raf) cancelAnimationFrame(raf);
+}}
+
+function animate(ts) {{
+  if(!lastTs) lastTs = ts;
+  var dt = (ts - lastTs)/1000;
+  lastTs = ts;
+  if(!playing) return;
+  animT += dt;
+  elapsed = Math.min(elapsed + dt, totalTime);
+  var scenes = script.scenes||[];
+  var sc = scenes[currentScene]||{{}};
+  if(animT >= (sc.duration||5)) {{
+    animT = 0;
+    if(currentScene < scenes.length-1) {{
+      currentScene++;
+    }} else {{
+      playing = false;
+      document.getElementById('playBtn').textContent = '▶ Play';
+      elapsed = totalTime;
+      updateActive();
+      return;
+    }}
+  }}
+  renderScene(currentScene, animT);
+  updateActive();
+  if(playing) raf = requestAnimationFrame(animate);
+}}
+
+function prevScene() {{ if(currentScene>0){{ jumpToScene(currentScene-1); }} }}
+function nextScene() {{ if(script && currentScene<(script.scenes||[]).length-1) jumpToScene(currentScene+1); }}
+
+function seekBar(e) {{
+  var r = e.currentTarget.getBoundingClientRect();
+  var pct = (e.clientX - r.left)/r.width;
+  elapsed = pct * totalTime;
+  var acc = 0;
+  var scenes = (script&&script.scenes)||[];
+  for(var i=0;i<scenes.length;i++) {{
+    acc += (scenes[i].duration||5);
+    if(elapsed <= acc) {{ currentScene = i; animT = elapsed-(acc-(scenes[i].duration||5)); break; }}
+  }}
+  renderScene(currentScene, animT);
+  updateActive();
+}}
+
+// ── RENDER FUNCTIONS ────────────────────────────────────────
+function clearCanvas(bg) {{
+  ctx.fillStyle = bg||script.bg_color||'#0d1117';
+  ctx.fillRect(0,0,W,H);
+}}
+
+function drawGrad(c1,c2) {{
+  var g=ctx.createLinearGradient(0,0,W,H);
+  g.addColorStop(0,c1);g.addColorStop(1,c2);
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+}}
+
+function wrapText(txt, x, y, maxW, lineH, color, size, bold) {{
+  ctx.font=(bold?'bold ':'')+size+'px Segoe UI';
+  ctx.fillStyle=color;
+  var words=txt.split(' '),line='';
+  for(var n=0;n<words.length;n++){{
+    var test=line+words[n]+' ';
+    if(ctx.measureText(test).width>maxW&&n>0){{
+      ctx.fillText(line,x,y);line=words[n]+' ';y+=lineH;
+    }}else line=test;
+  }}
+  ctx.fillText(line,x,y);return y+lineH;
+}}
+
+function drawSlideIn(progress, sceneFunc) {{
+  ctx.save();
+  var offset = (1-Math.min(1,progress*3)) * 60;
+  ctx.translate(0, -offset);
+  ctx.globalAlpha = Math.min(1, progress*3);
+  sceneFunc();
+  ctx.restore();
+}}
+
+function renderScene(idx, t) {{
+  t = t||0;
+  var scenes = (script&&script.scenes)||[];
+  var s = scenes[idx]||{{}};
+  var progress = Math.min(1, t/Math.max(0.001,(s.duration||5)));
+  var tc = script&&script.text_color||'#e6edf3';
+  var ac = script&&script.accent_color||'#06d6a0';
+  var thc = script&&script.theme_color||'#58a6ff';
+
+  if(s.type==='title_card') {{
+    var bg = (s.bg_gradient&&s.bg_gradient.length>=2)?s.bg_gradient:['#0d1117','#1a1a2e'];
+    drawGrad(bg[0],bg[1]);
+    // Animated particles
+    for(var i=0;i<20;i++) {{
+      var px=(Math.sin(t*0.5+i*0.8)*0.4+0.5)*W;
+      var py=(Math.cos(t*0.3+i*1.2)*0.4+0.5)*H;
+      ctx.fillStyle='rgba(88,166,255,0.1)';
+      ctx.beginPath();ctx.arc(px,py,3+Math.sin(t+i)*2,0,Math.PI*2);ctx.fill();
+    }}
+    // Title
+    ctx.textAlign='center';
+    var alpha=Math.min(1,progress*4);
+    ctx.globalAlpha=alpha;
+    ctx.font='bold 56px Segoe UI';ctx.fillStyle=thc;
+    ctx.fillText(s.title||'PhysIQ',W/2,H*0.42);
+    ctx.font='22px Segoe UI';ctx.fillStyle=tc;ctx.globalAlpha=Math.min(1,progress*3-0.5);
+    ctx.fillText(s.subtitle||'',W/2,H*0.55);
+    ctx.globalAlpha=1;
+    // Bottom accent line
+    var lw=W*0.3*Math.min(1,progress*4);
+    ctx.fillStyle=ac;ctx.fillRect(W/2-lw/2,H*0.65,lw,3);
+    ctx.textAlign='left';
+
+  }} else if(s.type==='text_slide'||s.type==='bullet_slide') {{
+    clearCanvas();
+    // Header bar
+    ctx.fillStyle=thc;ctx.fillRect(0,0,W*Math.min(1,progress*3),8);
+    // Icon + heading
+    ctx.font='bold 36px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='left';
+    ctx.fillText((s.icon||'📌')+' '+(s.heading||s.title||''),50,80);
+    // Divider
+    ctx.fillStyle=thc;ctx.globalAlpha=0.3;ctx.fillRect(50,95,W-100,2);ctx.globalAlpha=1;
+    // Points
+    var pts=s.points||[];
+    pts.forEach(function(pt,i){{
+      var reveal=Math.min(1,progress*(pts.length+1)-(i+0.5));
+      if(reveal<=0)return;
+      ctx.globalAlpha=reveal;
+      var y=150+i*72;
+      // Bullet dot
+      ctx.fillStyle=ac;ctx.beginPath();ctx.arc(60,y+2,7,0,Math.PI*2);ctx.fill();
+      ctx.font='20px Segoe UI';ctx.fillStyle=tc;
+      wrapText(pt,82,y,W-130,28,tc,20,false);
+      ctx.globalAlpha=1;
+    }});
+    ctx.textAlign='left';
+
+  }} else if(s.type==='formula_slide') {{
+    clearCanvas();
+    ctx.fillStyle=thc;ctx.fillRect(0,0,W,8);
+    ctx.font='bold 28px Segoe UI';ctx.fillStyle=tc;
+    ctx.textAlign='center';ctx.fillText(s.heading||'Formula',W/2,70);
+    // Formula box
+    var alpha2=Math.min(1,progress*3);ctx.globalAlpha=alpha2;
+    ctx.fillStyle='rgba(31,111,235,0.15)';ctx.strokeStyle=thc;ctx.lineWidth=2;
+    ctx.beginPath();ctx.roundRect(W*0.15,H*0.3,W*0.7,H*0.22,16);ctx.fill();ctx.stroke();
+    ctx.font='bold 64px Courier New';ctx.fillStyle=ac;
+    ctx.fillText(s.formula||'F = ma',W/2,H*0.45);
+    ctx.globalAlpha=1;
+    ctx.font='20px Segoe UI';ctx.fillStyle=tc;
+    ctx.fillText(s.explanation||'',W/2,H*0.63);
+    ctx.font='16px Segoe UI';ctx.fillStyle='#8b949e';
+    ctx.fillText('Units: '+(s.units||''),W/2,H*0.72);
+    ctx.textAlign='left';
+
+  }} else if(s.type==='diagram_slide') {{
+    clearCanvas();
+    ctx.fillStyle=thc;ctx.fillRect(0,0,W,8);
+    ctx.font='bold 28px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='center';
+    ctx.fillText(s.heading||'Diagram',W/2,60);
+    ctx.textAlign='left';
+    var els=s.elements||[];
+    els.forEach(function(el,i){{
+      var reveal=Math.min(1,progress*(els.length+1)-(i*0.8));
+      if(reveal<=0)return;
+      ctx.globalAlpha=reveal;
+      var ex=el.x*W,ey=el.y*H;
+      if(el.shape==='circle'){{
+        var er=(el.r||0.05)*Math.min(W,H);
+        ctx.fillStyle=el.color||ac;
+        ctx.beginPath();ctx.arc(ex,ey,er,0,Math.PI*2);ctx.fill();
+        if(el.label){{
+          ctx.font='bold 14px Segoe UI';ctx.fillStyle='#fff';ctx.textAlign='center';
+          ctx.fillText(el.label,ex,ey+er+20);ctx.textAlign='left';
+        }}
+      }} else if(el.shape==='rect'){{
+        var rw=(el.w||0.15)*W,rh=(el.h||0.08)*H;
+        ctx.fillStyle=el.color||thc;
+        ctx.beginPath();ctx.roundRect(ex-rw/2,ey-rh/2,rw,rh,8);ctx.fill();
+        if(el.label){{
+          ctx.font='14px Segoe UI';ctx.fillStyle='#fff';ctx.textAlign='center';
+          ctx.fillText(el.label,ex,ey+5);ctx.textAlign='left';
+        }}
+      }} else if(el.shape==='arrow'){{
+        var ax1=el.x1*W,ay1=el.y1*H,ax2=el.x2*W,ay2=el.y2*H;
+        var ang=Math.atan2(ay2-ay1,ax2-ax1);
+        ctx.strokeStyle=el.color||ac;ctx.lineWidth=3;
+        ctx.beginPath();ctx.moveTo(ax1,ay1);ctx.lineTo(ax2,ay2);ctx.stroke();
+        ctx.fillStyle=el.color||ac;
+        ctx.beginPath();ctx.moveTo(ax2,ay2);
+        ctx.lineTo(ax2-14*Math.cos(ang-0.4),ay2-14*Math.sin(ang-0.4));
+        ctx.lineTo(ax2-14*Math.cos(ang+0.4),ay2-14*Math.sin(ang+0.4));
+        ctx.closePath();ctx.fill();
+        if(el.label){{
+          ctx.font='13px Segoe UI';ctx.fillStyle=el.color||ac;ctx.textAlign='center';
+          ctx.fillText(el.label,(ax1+ax2)/2,(ay1+ay2)/2-14);ctx.textAlign='left';
+        }}
+      }}
+      ctx.globalAlpha=1;
+    }});
+
+  }} else if(s.type==='summary_slide'||s.type==='conclusion_slide') {{
+    drawGrad('#0d1117','#1a1a2e');
+    ctx.fillStyle=ac;ctx.fillRect(0,0,W,8);
+    ctx.font='bold 34px Segoe UI';ctx.fillStyle=ac;ctx.textAlign='center';
+    ctx.fillText(s.heading||'Key Takeaways',W/2,70);
+    ctx.globalAlpha=0.3;ctx.fillStyle=ac;ctx.fillRect(W/2-120,85,240,3);ctx.globalAlpha=1;
+    var pts2=s.points||[];
+    pts2.forEach(function(pt,i){{
+      var reveal=Math.min(1,progress*(pts2.length+1)-(i+0.5));
+      if(reveal<=0)return;
+      ctx.globalAlpha=reveal;
+      ctx.font='bold 18px Segoe UI';ctx.fillStyle=ac;ctx.textAlign='center';
+      ctx.fillText('✓',W*0.2,135+i*60);
+      ctx.font='18px Segoe UI';ctx.fillStyle=tc;
+      ctx.fillText(pt,W/2,135+i*60);
+      ctx.globalAlpha=1;
+    }});
+    if(s.call_to_action&&progress>0.7){{
+      ctx.globalAlpha=Math.min(1,(progress-0.7)*4);
+      ctx.font='bold 18px Segoe UI';ctx.fillStyle='#ffd166';ctx.textAlign='center';
+      ctx.fillText('→ '+(s.call_to_action||''),W/2,H-60);
+      ctx.globalAlpha=1;
+    }}
+    ctx.textAlign='left';
+
+  }} else if(s.type==='quote_slide') {{
+    drawGrad('#1a1a2e','#0d1117');
+    ctx.font='italic bold 22px Georgia';ctx.fillStyle=ac;ctx.textAlign='center';
+    ctx.globalAlpha=Math.min(1,progress*2);
+    ctx.fillText('"'+(s.quote||s.text||'')+'"',W/2,H*0.42);
+    ctx.font='18px Segoe UI';ctx.fillStyle='#8b949e';ctx.globalAlpha=Math.min(1,progress*1.5-0.3);
+    ctx.fillText('— '+(s.author||''),W/2,H*0.56);
+    ctx.globalAlpha=1;ctx.textAlign='left';
+
+  }} else {{
+    // Fallback
+    clearCanvas();
+    ctx.font='bold 24px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='center';
+    ctx.fillText(s.title||s.heading||s.type||'Scene '+(idx+1),W/2,H/2);
+    ctx.textAlign='left';
+  }}
+
+  // Scene number watermark
+  ctx.font='11px Segoe UI';ctx.fillStyle='rgba(255,255,255,0.2)';ctx.textAlign='right';
+  ctx.fillText((idx+1)+'/'+(script.scenes||[]).length,W-16,H-14);
+  ctx.textAlign='left';
+}}
+
+function renderNoScript() {{
+  clearCanvas('#060b18');
+  ctx.font='bold 28px Segoe UI';ctx.fillStyle='#58a6ff';ctx.textAlign='center';
+  ctx.fillText('🎬 No video script loaded',W/2,H/2-20);
+  ctx.font='16px Segoe UI';ctx.fillStyle='#8b949e';
+  ctx.fillText('Ask PhysIQ to create a video about any topic',W/2,H/2+20);
+  ctx.textAlign='left';
+  document.getElementById('status').textContent='No script loaded';
+}}
+
+// ── EXPORT VIDEO ─────────────────────────────────────────────
+async function startRecord() {{
+  if(isRecording){{
+    recorder&&recorder.stop();return;
+  }}
+  var stream=canvas.captureStream(30);
+  recorder=new MediaRecorder(stream,{{mimeType:'video/webm;codecs=vp9'}});
+  recordingChunks=[];
+  recorder.ondataavailable=function(e){{if(e.data.size>0)recordingChunks.push(e.data);}};
+  recorder.onstop=function(){{
+    var blob=new Blob(recordingChunks,{{type:'video/webm'}});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');a.href=url;a.download='physiq_video.webm';a.click();
+    isRecording=false;
+    document.getElementById('recBtn').textContent='⏺ Export Video';
+    document.getElementById('recBtn').classList.remove('rec');
+    document.getElementById('status').textContent='Video saved!';
+  }};
+  recorder.start();isRecording=true;
+  document.getElementById('recBtn').textContent='⏹ Stop & Save';
+  document.getElementById('recBtn').classList.add('rec');
+  document.getElementById('status').textContent='🔴 Recording...';
+  // Auto-play through all scenes
+  currentScene=0;elapsed=0;
+  if(!playing)togglePlay();
+}}
+
+function downloadScript() {{
+  if(!script)return;
+  var b=new Blob([JSON.stringify(script,null,2)],{{type:'application/json'}});
+  var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='video_script.json';a.click();
+}}
+
+initScript();
+</script>
+</body></html>"""
+    return video_html
+
+
 # ══════════════════════════════════════════════════════════════
 #  MAIN APP
 # ══════════════════════════════════════════════════════════════
@@ -3067,6 +3693,9 @@ def show_app():
 
         coding_on = st.toggle("💻 Coding Mode", value=st.session_state.coding_mode,
             help="Python, Java, C++, C#, Roblox Lua, JS and more")
+        if st.button("🎬 Video Creator", use_container_width=True, key="open_video"):
+            st.session_state.show_video_creator = not st.session_state.get("show_video_creator", False)
+            st.rerun()
         if coding_on != st.session_state.coding_mode:
             st.session_state.coding_mode = coding_on
             if coding_on: st.session_state.creative_mode = False
@@ -3581,6 +4210,28 @@ window.addEventListener('message',e=>{
                             "confidence":"📄 PDF Answer","conf_class":"conf-high"})
                         save_message("assistant", pdf_ans, "pdf")
                 st.rerun()
+
+        # ── Video creation request ───────────────────────────
+        if is_video_request(question):
+            st.session_state.messages.append({"role":"user","content":question})
+            save_message("user", question)
+            with st.chat_message("user"): st.write(question)
+            topic = question.lower()
+            for t in VIDEO_TRIGGERS: topic = topic.replace(t,"").strip()
+            topic = topic.strip(" onaboutfor:,") or "General Science"
+            with st.chat_message("assistant"):
+                with st.spinner(f"🎬 Writing video script on '{topic}'..."):
+                    vscript = generate_video_script(topic)
+                if vscript:
+                    reply = f"🎬 Video script created for **{topic}**! Opening the Video Creator now..."
+                    st.write(reply)
+                    st.session_state.messages.append({"role":"assistant","content":reply})
+                    save_message("assistant", reply)
+                    st.session_state.video_script = vscript
+                    st.session_state.show_video_creator = True
+                else:
+                    st.error("Could not generate video script. Try again.")
+            st.rerun()
 
         # ── Image generation request ─────────────────────────
         if is_image_request(question) or st.session_state.get("_regen_prompt"):
