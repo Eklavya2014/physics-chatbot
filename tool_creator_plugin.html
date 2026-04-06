@@ -1,168 +1,1190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tool Creator</title>
+  <style>
+    :root {
+      --bg: #0a0f1a;
+      --panel: rgba(15, 23, 42, 0.92);
+      --panel-2: rgba(17, 24, 39, 0.88);
+      --line: rgba(148, 163, 184, 0.18);
+      --text: #e5eefc;
+      --muted: #9bb0d1;
+      --accent: #7dd3fc;
+      --accent-2: #f59e0b;
+      --success: #34d399;
+      --danger: #f87171;
+      --shadow: 0 22px 70px rgba(2, 6, 23, 0.45);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.15), transparent 30%),
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 25%),
+        linear-gradient(160deg, #050914 0%, #0b1220 45%, #0d1426 100%);
+    }
+    .shell {
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 20px;
+      background: linear-gradient(145deg, rgba(18, 28, 49, 0.96), rgba(11, 18, 34, 0.94));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.02em;
+    }
+    .hero p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 760px;
+    }
+    .badge {
+      background: rgba(125, 211, 252, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(125, 211, 252, 0.25);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 16px;
+    }
+    .panel {
+      background: linear-gradient(180deg, rgba(14, 20, 36, 0.96), rgba(10, 15, 26, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .panel-head {
+      padding: 16px 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .panel-head h2 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .panel-head span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .panel-body { padding: 18px; }
+    .row {
+      display: grid;
+      grid-template-columns: 1.2fr 0.42fr;
+      gap: 12px;
+    }
+    .field { margin-bottom: 12px; }
+    .field label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(7, 11, 21, 0.92);
+      color: var(--text);
+      border-radius: 14px;
+      padding: 12px 13px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(125, 211, 252, 0.5);
+      box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.08);
+    }
+    textarea {
+      min-height: 240px;
+      resize: vertical;
+      line-height: 1.5;
+      font-family: "SFMono-Regular", Consolas, monospace;
+    }
+    .hint {
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 14px;
+    }
+    .chip {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      background: rgba(11, 17, 31, 0.9);
+      color: var(--text);
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+    .chip:hover {
+      transform: translateY(-1px);
+      border-color: rgba(125, 211, 252, 0.35);
+      background: rgba(20, 31, 53, 0.96);
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .tab {
+      flex: 1;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      background: rgba(7, 11, 21, 0.8);
+      color: var(--muted);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .tab.active {
+      color: #06111f;
+      background: linear-gradient(90deg, var(--accent), #c4f1ff);
+      border-color: transparent;
+    }
+    .actions, .preview-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+    button:hover { transform: translateY(-1px); }
+    button.primary {
+      background: linear-gradient(90deg, #67e8f9, #38bdf8);
+      color: #062033;
+      box-shadow: 0 10px 24px rgba(56, 189, 248, 0.25);
+    }
+    button.secondary {
+      background: rgba(14, 22, 39, 0.94);
+      color: var(--text);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+    button.success {
+      background: linear-gradient(90deg, #22c55e, #34d399);
+      color: #082414;
+    }
+    button.warn {
+      background: linear-gradient(90deg, #fbbf24, #fb923c);
+      color: #2a1300;
+    }
+    .progress {
+      margin-top: 14px;
+      height: 10px;
+      background: rgba(9, 13, 24, 0.95);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+    }
+    .progress > div {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #67e8f9, #34d399);
+      transition: width 0.18s ease;
+    }
+    .status {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: rgba(8, 13, 24, 0.96);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      min-height: 48px;
+      color: var(--muted);
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .metric {
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      background: rgba(8, 13, 24, 0.96);
+      border-radius: 16px;
+      padding: 12px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    iframe {
+      width: 100%;
+      height: 520px;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      background: #fff;
+      border-radius: 18px;
+    }
+    .placeholder {
+      height: 520px;
+      border-radius: 18px;
+      border: 1px dashed rgba(148, 163, 184, 0.18);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--muted);
+      padding: 28px;
+      background: linear-gradient(160deg, rgba(6, 10, 19, 0.96), rgba(11, 17, 31, 0.96));
+    }
+    .small {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    @media (max-width: 1100px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="hero">
+      <div>
+        <h1>Tool Creator</h1>
+        <p>Build polished browser plugins in seconds. This version skips the slow browser AI conversion loop and uses fast local generators for common tool types like formula finders, calculators, converters, checkers, and searchable reference tools.</p>
+      </div>
+      <div class="badge">Instant Build Mode</div>
+    </div>
+
+    <div class="grid">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Design Brief</h2>
+            <span>Describe the tool once, then build it instantly.</span>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="field">
+              <label for="name">Plugin Name</label>
+              <input id="name" placeholder="Physics Formula Finder">
+            </div>
+            <div class="field">
+              <label for="icon">Icon</label>
+              <input id="icon" value="🧠" maxlength="4">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="desc">Description</label>
+            <textarea id="desc" style="min-height:96px;font-family:inherit;" placeholder="Search mechanics, optics, electricity, or chemistry formulas with variables, units, and quick explanations."></textarea>
+            <div class="hint">You can paste a plain-English request here if you are not writing code.</div>
+          </div>
+
+          <div class="field">
+            <label>Starter Blueprints</label>
+            <div class="chips">
+              <button class="chip" onclick="loadSample('formula')">Physics Formula Finder</button>
+              <button class="chip" onclick="loadSample('unit')">Unit Converter</button>
+              <button class="chip" onclick="loadSample('bmi')">BMI Calculator</button>
+              <button class="chip" onclick="loadSample('grade')">Grade Calculator</button>
+              <button class="chip" onclick="loadSample('prime')">Prime Checker</button>
+              <button class="chip" onclick="loadSample('fib')">Fibonacci Generator</button>
+              <button class="chip" onclick="loadSample('compiled')">Function from Code</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Source Style</label>
+            <div class="tabs">
+              <button class="tab active" id="tab_python" onclick="setLanguage('python')">Python</button>
+              <button class="tab" id="tab_java" onclick="setLanguage('java')">Java</button>
+              <button class="tab" id="tab_notes" onclick="setLanguage('notes')">Blueprint</button>
+            </div>
+            <textarea id="code" placeholder="def bmi(weight, height):&#10;    return weight / (height * height)"></textarea>
+            <div class="hint">If you write a simple function with a return statement, Tool Creator will turn it into an interactive plugin automatically.</div>
+          </div>
+
+          <div class="actions">
+            <button class="primary" onclick="buildNow()">⚡ Build Instantly</button>
+            <button class="secondary" onclick="clearAll()">Reset</button>
+          </div>
+
+          <div class="progress"><div id="bar"></div></div>
+          <div class="status" id="status">Ready. Pick a blueprint or describe a tool and build it instantly.</div>
+
+          <div class="metrics">
+            <div class="metric">
+              <strong id="metric_kind">-</strong>
+              <span>Detected tool type</span>
+            </div>
+            <div class="metric">
+              <strong id="metric_inputs">0</strong>
+              <span>Interactive inputs</span>
+            </div>
+            <div class="metric">
+              <strong id="metric_ready">No</strong>
+              <span>Ready for install</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Preview</h2>
+            <span>Install, publish, or download the generated plugin.</span>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div id="preview_placeholder" class="placeholder">
+            <div>
+              <h3 style="margin:0 0 10px;font-size:22px;color:#e5eefc;">No plugin built yet</h3>
+              <p style="margin:0;max-width:460px;">Tool Creator now builds locally. There is no waiting on “AI converting to browser plugin...” anymore for these common tool types.</p>
+            </div>
+          </div>
+          <iframe id="preview" style="display:none;" title="Plugin Preview"></iframe>
+
+          <div class="preview-actions">
+            <button class="success" onclick="installPlugin()">Install Plugin</button>
+            <button class="warn" onclick="publishPlugin()">Publish to Shop</button>
+            <button class="secondary" onclick="downloadPlugin()">Download HTML</button>
+          </div>
+          <div class="small">Install adds the plugin to the current app session. Publish sends it to the community shop through the app’s existing query-parameter flow.</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const INITIAL_TOOL_REQUEST = __INITIAL_TOOL_REQUEST__;
+    let currentLang = "python";
+    let builtPayload = null;
+    let builtHtml = "";
+
+    const FORMULAS = [
+      { name: "Newton's Second Law", category: "Mechanics", formula: "F = m * a", variables: "F force (N), m mass (kg), a acceleration (m/s^2)", note: "Use when force changes motion.", keys: "force mass acceleration newton mechanics" },
+      { name: "Velocity", category: "Mechanics", formula: "v = d / t", variables: "v velocity (m/s), d distance (m), t time (s)", note: "Average speed in a direction.", keys: "velocity speed distance time motion" },
+      { name: "Acceleration", category: "Mechanics", formula: "a = (v - u) / t", variables: "a acceleration, u initial velocity, v final velocity, t time", note: "Change in velocity over time.", keys: "acceleration change velocity time kinematics" },
+      { name: "Momentum", category: "Mechanics", formula: "p = m * v", variables: "p momentum, m mass, v velocity", note: "Useful in collisions and impulse questions.", keys: "momentum collision impulse mass velocity" },
+      { name: "Work", category: "Mechanics", formula: "W = F * d", variables: "W work (J), F force (N), d displacement (m)", note: "For constant force in direction of motion.", keys: "work energy force distance joule" },
+      { name: "Kinetic Energy", category: "Mechanics", formula: "KE = 0.5 * m * v^2", variables: "m mass, v velocity", note: "Energy of motion.", keys: "kinetic energy motion mass velocity" },
+      { name: "Potential Energy", category: "Mechanics", formula: "PE = m * g * h", variables: "m mass, g gravity, h height", note: "Gravitational stored energy.", keys: "potential energy gravity height" },
+      { name: "Pressure", category: "Fluids", formula: "P = F / A", variables: "P pressure, F force, A area", note: "Force spread across an area.", keys: "pressure force area fluids" },
+      { name: "Density", category: "Fluids", formula: "rho = m / V", variables: "rho density, m mass, V volume", note: "Mass per unit volume.", keys: "density mass volume rho" },
+      { name: "Ohm's Law", category: "Electricity", formula: "V = I * R", variables: "V voltage, I current, R resistance", note: "Core relation for simple circuits.", keys: "ohm voltage current resistance electricity" },
+      { name: "Electric Power", category: "Electricity", formula: "P = V * I", variables: "P power, V voltage, I current", note: "Rate of electrical energy transfer.", keys: "power voltage current watt electricity" },
+      { name: "Coulomb's Law", category: "Electricity", formula: "F = k * q1 * q2 / r^2", variables: "F electrostatic force, q1 and q2 charges, r separation", note: "Force between point charges.", keys: "coulomb charge electrostatic force" },
+      { name: "Wave Speed", category: "Waves", formula: "v = f * lambda", variables: "v wave speed, f frequency, lambda wavelength", note: "Links wave speed, frequency, wavelength.", keys: "wave speed frequency wavelength lambda" },
+      { name: "Lens Formula", category: "Optics", formula: "1/f = 1/v + 1/u", variables: "f focal length, v image distance, u object distance", note: "For thin lenses.", keys: "lens optics focal length image object" },
+      { name: "Mirror Formula", category: "Optics", formula: "1/f = 1/v + 1/u", variables: "f focal length, v image distance, u object distance", note: "Same relation for spherical mirrors with sign convention.", keys: "mirror optics focal length image object" },
+      { name: "Snell's Law", category: "Optics", formula: "n1 * sin(theta1) = n2 * sin(theta2)", variables: "n1 and n2 refractive indices, theta1 and theta2 angles", note: "Refraction at a boundary.", keys: "snell refraction refractive index light optics" },
+      { name: "Heat Energy", category: "Thermal", formula: "Q = m * c * deltaT", variables: "Q heat, m mass, c specific heat capacity, deltaT temperature change", note: "Energy needed to change temperature.", keys: "heat thermal specific heat temperature" },
+      { name: "Ideal Gas Law", category: "Chemistry", formula: "P * V = n * R * T", variables: "P pressure, V volume, n moles, R gas constant, T temperature", note: "Gas relationship for many chemistry problems.", keys: "gas ideal gas pressure volume temperature" },
+      { name: "Molarity", category: "Chemistry", formula: "M = n / V", variables: "M molarity, n moles of solute, V volume in liters", note: "Concentration of a solution.", keys: "molarity concentration moles solution chemistry" },
+      { name: "pH", category: "Chemistry", formula: "pH = -log10[H+]", variables: "[H+] hydrogen ion concentration", note: "Measures acidity.", keys: "ph acidity hydrogen ion chemistry" }
+    ];
+
+    const SAMPLES = {
+      formula: {
+        name: "Physics Formula Finder",
+        icon: "🧲",
+        desc: "Search formulas from mechanics, optics, electricity, waves, thermal physics, and chemistry. Show formula, variables, and quick explanations.",
+        lang: "notes",
+        code: "Build a searchable physics and chemistry formula finder with categories, quick search, and a formula card for each result."
+      },
+      unit: {
+        name: "Unit Converter",
+        icon: "📏",
+        desc: "Convert length, mass, time, temperature, and speed with clean instant results.",
+        lang: "notes",
+        code: "Build a fast unit converter that supports meters, kilometers, centimeters, kilograms, grams, seconds, minutes, hours, Celsius, Fahrenheit, Kelvin, m/s, and km/h."
+      },
+      bmi: {
+        name: "BMI Calculator",
+        icon: "⚖️",
+        desc: "Calculate body mass index and show category guidance.",
+        lang: "python",
+        code: "def bmi(weight_kg, height_m):\n    return weight_kg / (height_m * height_m)"
+      },
+      grade: {
+        name: "Grade Calculator",
+        icon: "📝",
+        desc: "Compute total percentage and assign a grade band.",
+        lang: "python",
+        code: "def percentage(score, total):\n    return (score / total) * 100"
+      },
+      prime: {
+        name: "Prime Checker",
+        icon: "🔢",
+        desc: "Check whether a number is prime and explain the result.",
+        lang: "python",
+        code: "def is_prime(n):\n    return n > 1 and all(n % i != 0 for i in range(2, int(n ** 0.5) + 1))"
+      },
+      fib: {
+        name: "Fibonacci Generator",
+        icon: "🌀",
+        desc: "Generate the first n Fibonacci numbers quickly.",
+        lang: "java",
+        code: "public static int fibonacci(int n) {\n    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);\n}"
+      },
+      compiled: {
+        name: "Surface Area Tool",
+        icon: "📦",
+        desc: "Turn a simple formula function into an interactive calculator.",
+        lang: "python",
+        code: "def cube_surface_area(side):\n    return 6 * side * side"
+      }
+    };
+
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    function setStatus(text, tone) {
+      const box = $("status");
+      box.textContent = text;
+      box.style.color = tone === "error" ? "var(--danger)" : tone === "success" ? "var(--success)" : "var(--muted)";
+    }
+
+    function setProgress(value) {
+      $("bar").style.width = Math.max(0, Math.min(100, value)) + "%";
+    }
+
+    function setMetric(kind, inputs, ready) {
+      $("metric_kind").textContent = kind;
+      $("metric_inputs").textContent = String(inputs);
+      $("metric_ready").textContent = ready ? "Yes" : "No";
+    }
+
+    function titleCase(text) {
+      return (text || "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\b\w/g, function(match) { return match.toUpperCase(); });
+    }
+
+    function slugify(text) {
+      const base = (text || "plugin").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+      return base || "plugin";
+    }
+
+    function escapeHtml(text) {
+      return String(text || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      ["python", "java", "notes"].forEach(function(name) {
+        $("tab_" + name).classList.toggle("active", name === lang);
+      });
+    }
+
+    function clearAll() {
+      $("name").value = "";
+      $("icon").value = "🧠";
+      $("desc").value = "";
+      $("code").value = "";
+      setLanguage("python");
+      builtPayload = null;
+      builtHtml = "";
+      $("preview").style.display = "none";
+      $("preview_placeholder").style.display = "grid";
+      setStatus("Cleared. Ready for the next plugin idea.", "");
+      setProgress(0);
+      setMetric("-", 0, false);
+    }
+
+    function loadSample(key) {
+      const sample = SAMPLES[key];
+      if (!sample) return;
+      $("name").value = sample.name;
+      $("icon").value = sample.icon;
+      $("desc").value = sample.desc;
+      $("code").value = sample.code;
+      setLanguage(sample.lang);
+      setStatus("Blueprint loaded. Build whenever you are ready.", "");
+      setProgress(12);
+    }
+
+    function inferNameFromRequest(text) {
+      const cleaned = titleCase((text || "").replace(/^build\s+/i, "").replace(/^make\s+/i, ""));
+      if (!cleaned) return "";
+      if (cleaned.length > 48) {
+        return cleaned.split(" ").slice(0, 5).join(" ");
+      }
+      return cleaned;
+    }
+
+    function normalizeExpr(expr) {
+      let out = String(expr || "").trim();
+      out = out.replace(/\bmath\./gi, "Math.");
+      out = out.replace(/\bpow\s*\(/g, "Math.pow(");
+      out = out.replace(/\bsqrt\s*\(/g, "Math.sqrt(");
+      out = out.replace(/\bsin\s*\(/g, "Math.sin(");
+      out = out.replace(/\bcos\s*\(/g, "Math.cos(");
+      out = out.replace(/\btan\s*\(/g, "Math.tan(");
+      out = out.replace(/\blog10\s*\(/g, "Math.log10(");
+      out = out.replace(/\blog\s*\(/g, "Math.log(");
+      out = out.replace(/\babs\s*\(/g, "Math.abs(");
+      out = out.replace(/\bround\s*\(/g, "Math.round(");
+      out = out.replace(/\bceil\s*\(/g, "Math.ceil(");
+      out = out.replace(/\bfloor\s*\(/g, "Math.floor(");
+      out = out.replace(/\bpi\b/gi, "Math.PI");
+      out = out.replace(/\band\b/g, "&&");
+      out = out.replace(/\bor\b/g, "||");
+      return out;
+    }
+
+    function parseParams(raw, lang) {
+      return String(raw || "")
+        .split(",")
+        .map(function(part) { return part.trim(); })
+        .filter(Boolean)
+        .map(function(part) {
+          if (lang === "python") {
+            return part.split("=")[0].split(":")[0].trim();
+          }
+          const bits = part.replace(/final\s+/g, "").trim().split(/\s+/);
+          return bits[bits.length - 1].replace(/\[\]/g, "").trim();
+        })
+        .filter(function(name) { return /^[A-Za-z_][A-Za-z0-9_]*$/.test(name); });
+    }
+
+    function parseSimpleFunction(code, lang) {
+      const src = String(code || "");
+      if (!src.trim()) return null;
+
+      if (lang === "python") {
+        const match = src.match(/def\s+([A-Za-z_]\w*)\s*\(([^)]*)\)\s*:[\s\S]*?return\s+([^\n#]+)/m);
+        if (!match) return null;
+        const params = parseParams(match[2], "python");
+        if (!params.length) return null;
+        return {
+          name: match[1],
+          params: params,
+          expr: normalizeExpr(match[3]),
+          lang: "python"
+        };
+      }
+
+      if (lang === "java") {
+        const match = src.match(/(?:public|private|protected)?\s*(?:static\s+)?[\w<>\[\]]+\s+([A-Za-z_]\w*)\s*\(([^)]*)\)\s*\{[\s\S]*?return\s+([^;]+);/m);
+        if (!match) return null;
+        const params = parseParams(match[2], "java");
+        if (!params.length) return null;
+        return {
+          name: match[1],
+          params: params,
+          expr: normalizeExpr(match[3]),
+          lang: "java"
+        };
+      }
+
+      return null;
+    }
+
+    function getMeta() {
+      const name = $("name").value.trim() || inferNameFromRequest($("desc").value) || "Custom Plugin";
+      return {
+        name: name,
+        icon: $("icon").value.trim() || "🧠",
+        description: $("desc").value.trim() || "Custom interactive tool",
+        code: $("code").value,
+        lang: currentLang
+      };
+    }
+
+    function detectKind(meta, code) {
+      const text = (meta.name + " " + meta.description + " " + code).toLowerCase();
+      if (/(unit converter|convert units|celsius|fahrenheit|kelvin|km\/h|m\/s|meters|kilometers)/.test(text)) return "Unit Converter";
+      if (/(bmi|body mass)/.test(text)) return "BMI Calculator";
+      if (/(grade|gpa|percentage|score|marks)/.test(text)) return "Grade Calculator";
+      if (/(prime|divisible)/.test(text)) return "Prime Checker";
+      if (/(fibonacci|fib sequence)/.test(text)) return "Fibonacci Generator";
+      const compiled = parseSimpleFunction(code, meta.lang);
+      if (compiled && !/(physics|chemistry|formula finder|equation finder|reference tool)/.test(text)) return "Function Tool";
+      if (/(formula finder|equation finder|physics|chemistry|equation|law|optics|ohm|snell|gas|molarity|kinetic|momentum)/.test(text)) return "Formula Finder";
+      return "Generic Workspace";
+    }
+
+    function pluginShell(meta, body, script) {
+      return `<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${escapeHtml(meta.name)}</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0d1117;font-family:'Segoe UI',sans-serif;padding:14px;color:#e6edf3}
-.wrap{background:#161b22;border:1px solid #ff8c42;border-radius:14px;padding:16px}
-.title{color:#ff8c42;font-weight:700;font-size:14px;margin-bottom:4px}
-.sub{color:#8b949e;font-size:11px;margin-bottom:14px;line-height:1.5}
-.ltabs{display:flex;gap:6px;margin-bottom:10px}
-.ltab{padding:5px 14px;border-radius:6px;border:1px solid #30363d;background:#21262d;
-  color:#8b949e;cursor:pointer;font-size:12px}
-.ltab.on{background:#ff8c42;color:#000;border-color:#ff8c42;font-weight:700}
-.ed{width:100%;height:240px;background:#0d1117;border:1px solid #30363d;border-radius:10px;
-  padding:12px;color:#e6edf3;font-family:'Courier New',monospace;font-size:12px;
-  line-height:1.6;resize:vertical;tab-size:4;outline:none}
-.ed:focus{border-color:#ff8c42}
-.mgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
-.ml{color:#8b949e;font-size:10px;font-weight:600;letter-spacing:.8px;margin-bottom:4px}
-.mi{background:#0d1117;border:1px solid #30363d;border-radius:8px;
-  padding:7px 10px;color:#e6edf3;font-size:12px;width:100%;outline:none}
-.mi:focus{border-color:#ff8c42}
-.brow{display:flex;gap:8px;margin-bottom:10px}
-.bgo{flex:1;background:#ff8c42;color:#000;border:none;border-radius:8px;
-  padding:9px;cursor:pointer;font-weight:700;font-size:13px}
-.bgo:disabled{background:#30363d;color:#8b949e;cursor:not-allowed}
-.bcl{background:#21262d;color:#8b949e;border:1px solid #30363d;border-radius:8px;
-  padding:9px 14px;cursor:pointer;font-size:12px}
-.pbar{height:4px;background:#21262d;border-radius:2px;margin:8px 0;overflow:hidden;display:none}
-.pfill{height:100%;background:linear-gradient(90deg,#ff8c42,#ffd166);border-radius:2px;
-  transition:width .4s}
-.sbox{font-size:11px;color:#8b949e;margin-bottom:10px;display:none}
-.sl{margin:4px 0;display:flex;gap:6px;align-items:center}
-.pvw{border:1px solid #238636;border-radius:10px;overflow:hidden;display:none}
-.pvh{background:#161b22;padding:10px 14px;display:flex;align-items:center;
-  justify-content:space-between;border-bottom:1px solid #30363d}
-.pvt{color:#3fb950;font-weight:700;font-size:12px}
-.pvbs{display:flex;gap:6px}
-.pvb{border:none;border-radius:6px;padding:5px 12px;cursor:pointer;font-size:11px;font-weight:600}
-.pvif{width:100%;height:320px;border:none;background:#fff}
-.sams{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.sam{background:#21262d;border:1px solid #30363d;border-radius:10px;
-  padding:4px 10px;font-size:11px;color:#8b949e;cursor:pointer}
-.sam:hover{border-color:#ff8c42;color:#ff8c42}
-.tip{background:#0d1117;border:1px solid #30363d;border-radius:8px;
-  padding:10px 12px;font-size:11px;color:#8b949e;line-height:1.7;margin-top:10px}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(160deg,#f6fbff,#eef4ff 55%,#fef7ed);color:#10233f}
+.app{max-width:980px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(145deg,#10233f,#1d4c7d 58%,#2f7cc5);color:#fff;padding:22px;border-radius:24px;box-shadow:0 24px 60px rgba(16,35,63,.18)}
+.hero h1{margin:0 0 8px;font-size:30px}
+.hero p{margin:0;line-height:1.6;color:rgba(255,255,255,.86)}
+.hero .pill{display:inline-block;margin-top:14px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.14);font-size:12px;font-weight:700}
+.card{margin-top:18px;background:#fff;border:1px solid rgba(16,35,63,.08);border-radius:22px;padding:18px;box-shadow:0 12px 34px rgba(16,35,63,.08)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#5b6f8e;margin-bottom:6px}
+input,textarea,select{width:100%;padding:12px 13px;border-radius:14px;border:1px solid rgba(16,35,63,.12);background:#f8fbff;color:#10233f;font-size:14px;box-sizing:border-box}
+textarea{min-height:120px;resize:vertical}
+button{border:0;border-radius:14px;padding:12px 16px;font-size:14px;font-weight:800;cursor:pointer}
+.primary{background:linear-gradient(90deg,#0ea5e9,#38bdf8);color:#fff}
+.secondary{background:#edf4ff;color:#18406b}
+.success{background:#dcfce7;color:#166534}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.result{margin-top:14px;padding:16px;border-radius:18px;background:#f8fbff;border:1px solid rgba(16,35,63,.08)}
+.muted{color:#607089;font-size:14px;line-height:1.6}
+.stat{display:inline-block;padding:7px 11px;border-radius:999px;background:#eef7ff;color:#14507b;font-size:12px;font-weight:700;margin-right:8px;margin-top:8px}
+.formula-list{display:grid;gap:12px}
+.formula-card{border:1px solid rgba(16,35,63,.08);border-radius:18px;padding:14px;background:#fff}
+.formula-card h3{margin:0 0 6px}
+.formula{font-size:22px;font-weight:800;color:#0f3d69}
+.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff7ed;color:#9a3412;font-size:12px;font-weight:700;margin-bottom:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:780px){.grid,.two{grid-template-columns:1fr}.app{padding:16px}.hero h1{font-size:24px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="title">🔧 Tool Creator — Code Editor</div>
-  <div class="sub">Write normal Python or Java code. The AI reads your logic and builds an interactive plugin automatically.<br>
-  <b style="color:#ff8c42">No HTML or JavaScript knowledge needed.</b></div>
-
-  <div class="sams">
-    <div class="sam" onclick="ls('bmi')">📊 BMI Calc</div>
-    <div class="sam" onclick="ls('fib')">🔢 Fibonacci</div>
-    <div class="sam" onclick="ls('temp')">🌡️ Temp Convert</div>
-    <div class="sam" onclick="ls('prime')">🔍 Prime Checker</div>
-    <div class="sam" onclick="ls('grade')">📝 Grade Calc</div>
-  </div>
-
-  <div class="ltabs">
-    <div class="ltab on" id="tpy" onclick="sl('python')">🐍 Python</div>
-    <div class="ltab" id="tjv" onclick="sl('java')">☕ Java</div>
-  </div>
-
-  <textarea class="ed" id="ed" placeholder="Write your Python or Java code here..." onkeydown="tk(event)" spellcheck="false"></textarea>
-
-  <div class="mgrid">
-    <div><div class="ml">PLUGIN NAME</div><input class="mi" id="pn" placeholder="e.g. BMI Calculator"></div>
-    <div><div class="ml">ICON</div><input class="mi" id="pi" placeholder="emoji" value="🔧" maxlength="4"></div>
-    <div><div class="ml">DESCRIPTION</div><input class="mi" id="pd" placeholder="What does it do?"></div>
-  </div>
-
-  <div class="brow">
-    <button class="bgo" id="gbtn" onclick="go()">🤖 Analyse &amp; Build Plugin</button>
-    <button class="bcl" onclick="clr()">🗑️ Clear</button>
-  </div>
-
-  <div class="pbar" id="pb"><div class="pfill" id="pf" style="width:0%"></div></div>
-  <div class="sbox" id="sb"></div>
-
-  <div class="pvw" id="pw">
-    <div class="pvh">
-      <span class="pvt" id="pt">✅ Plugin Ready</span>
-      <div class="pvbs">
-        <button class="pvb" style="background:#238636;color:#fff" onclick="inst()">⬇️ Install</button>
-        <button class="pvb" style="background:#1f6feb;color:#fff" onclick="pub()">🌐 Publish to Store</button>
-        <button class="pvb" style="background:#21262d;color:#e6edf3;border:1px solid #30363d" onclick="sv()">💾 Save</button>
-      </div>
-    </div>
-    <iframe class="pvif" id="pf2"></iframe>
-  </div>
-
-  <div class="tip">💡 <b style="color:#ff8c42">How it works:</b> Write any calculation, conversion, or logic in Python/Java. The AI converts your functions into an interactive browser tool with inputs, buttons, and styled results matching PhysIQ.</div>
+<div class="app">
+  <section class="hero">
+    <h1>${escapeHtml(meta.icon)} ${escapeHtml(meta.name)}</h1>
+    <p>${escapeHtml(meta.description)}</p>
+    <div class="pill">Built with Tool Creator Instant Mode</div>
+  </section>
+  ${body}
 </div>
+<script>${script}<\/script>
+</body>
+</html>`;
+    }
 
-<script>
-var lang='python', gh='', pd2=null;
-var S={
-  bmi:"def calculate_bmi(weight_kg, height_m):\n    bmi = weight_kg / (height_m ** 2)\n    if bmi < 18.5: cat = 'Underweight'\n    elif bmi < 25: cat = 'Normal weight'\n    elif bmi < 30: cat = 'Overweight'\n    else: cat = 'Obese'\n    return round(bmi, 2), cat\n\nbmi, cat = calculate_bmi(70, 1.75)\nprint('BMI:', bmi, '-', cat)",
-  fib:"def fibonacci(n):\n    seq = [0, 1]\n    for i in range(2, n):\n        seq.append(seq[-1] + seq[-2])\n    return seq[:n]\n\nprint('Fibonacci(10):', fibonacci(10))",
-  temp:"def c_to_f(c): return (c * 9/5) + 32\ndef f_to_c(f): return (f - 32) * 5/9\ndef c_to_k(c): return c + 273.15\n\nprint('100C =', c_to_f(100), 'F')\nprint('212F =', f_to_c(212), 'C')\nprint('0C =', c_to_k(0), 'K')",
-  prime:"def is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0: return False\n    return True\n\ndef primes_up_to(limit):\n    return [n for n in range(2, limit+1) if is_prime(n)]\n\nprint('Primes up to 30:', primes_up_to(30))",
-  grade:"def get_grade(marks):\n    avg = sum(marks) / len(marks)\n    if avg >= 90: g = 'A+'\n    elif avg >= 80: g = 'A'\n    elif avg >= 70: g = 'B'\n    elif avg >= 60: g = 'C'\n    elif avg >= 50: g = 'D'\n    else: g = 'F'\n    return round(avg, 1), g\n\navg, grade = get_grade([85, 90, 78, 92, 88])\nprint('Average:', avg, '| Grade:', grade)"
-};
-
-function sl(l){lang=l;document.getElementById('tpy').classList.toggle('on',l==='python');document.getElementById('tjv').classList.toggle('on',l==='java');}
-function ls(k){
-  var ed=document.getElementById('ed');
-  ed.value=S[k].replace(/\\n/g,'\n');
-  var nm={bmi:'BMI Calculator',fib:'Fibonacci Generator',temp:'Temperature Converter',prime:'Prime Checker',grade:'Grade Calculator'};
-  var ic={bmi:'📊',fib:'🔢',temp:'🌡️',prime:'🔍',grade:'📝'};
-  var ds={bmi:'Calculate Body Mass Index from weight and height',fib:'Generate Fibonacci number sequences',temp:'Convert between Celsius Fahrenheit and Kelvin',prime:'Check if numbers are prime and list primes',grade:'Calculate average grade from subject marks'};
-  document.getElementById('pn').value=nm[k];
-  document.getElementById('pi').value=ic[k];
-  document.getElementById('pd').value=ds[k];
-}
-function tk(e){if(e.key==='Tab'){e.preventDefault();var t=e.target,s=t.selectionStart;t.value=t.value.substring(0,s)+'    '+t.value.substring(t.selectionEnd);t.selectionStart=t.selectionEnd=s+4;}}
-function step(txt){var b=document.getElementById('sb');b.style.display='block';var d=document.createElement('div');d.className='sl';d.innerHTML='<span style="color:#ff8c42">▶</span><span>'+txt+'</span>';b.appendChild(d);}
-function setp(p){document.getElementById('pf').style.width=p+'%';}
-function clr(){document.getElementById('ed').value='';['pn','pd'].forEach(function(i){document.getElementById(i).value='';});document.getElementById('pi').value='🔧';document.getElementById('sb').innerHTML='';document.getElementById('sb').style.display='none';document.getElementById('pw').style.display='none';document.getElementById('pb').style.display='none';gh='';pd2=null;}
-
-function go(){
-  var code=document.getElementById('ed').value.trim();
-  if(!code){alert('Please write some code first!');return;}
-  var name=document.getElementById('pn').value||'My Plugin';
-  var icon=document.getElementById('pi').value||'🔧';
-  var desc=document.getElementById('pd').value||'Custom plugin';
-  document.getElementById('gbtn').disabled=true;
-  document.getElementById('gbtn').textContent='⏳ Building...';
-  document.getElementById('pb').style.display='block';
-  document.getElementById('sb').innerHTML='';
-  document.getElementById('pw').style.display='none';
-  setp(10);step('Reading your '+lang+' code...');
-  setTimeout(function(){setp(35);step('Understanding functions and logic...');},500);
-  setTimeout(function(){setp(60);step('AI converting to browser plugin...');},1000);
-  var sys='You are an expert developer. The user wrote '+lang+' code. Convert it into a beautiful self-contained HTML+JS plugin.\n\nRULES:\n1. Recreate the EXACT logic in JavaScript\n2. Create labeled input fields for every function parameter\n3. Show step-by-step results with clear formatting\n4. Dark theme: body bg #0d1117, cards #161b22, accent #ff8c42\n5. Rounded corners, smooth design, responsive\n6. Return ONLY complete HTML starting with <!DOCTYPE html>\n7. No external dependencies';
-  var usr='Convert this '+lang+' code into an interactive browser plugin:\n\n```'+lang+'\n'+code+'\n```\n\nPlugin name: '+name+'\nIcon: '+icon+'\nDescription: '+desc+'\n\nBuild a complete HTML tool that recreates this functionality with nice input fields and results.';
-  window.parent.postMessage({type:'plugin_ai_call',id:'toolcreate',system:sys,user:usr,max_tokens:3000},'*');
-}
-
-window.addEventListener('message',function(e){
-  if(e.data&&e.data.type==='plugin_ai_response'&&e.data.id==='toolcreate'){
-    setp(90);step('Rendering preview...');
-    var raw=e.data.result||'';
-    var s=raw.indexOf('<!DOCTYPE');if(s<0)s=raw.indexOf('<html');
-    var en=raw.lastIndexOf('</html>')+7;
-    gh=s>=0&&en>s?raw.slice(s,en):raw;
-    document.getElementById('pf2').srcdoc=gh;
-    document.getElementById('pt').textContent='✅ '+document.getElementById('pn').value+' Ready!';
-    document.getElementById('pw').style.display='block';
-    setp(100);step('Done! Plugin ready to install or publish to store.');
-    pd2={name:document.getElementById('pn').value,icon:document.getElementById('pi').value,desc:document.getElementById('pd').value,html:gh,lang:lang,code:document.getElementById('ed').value};
-    document.getElementById('gbtn').disabled=false;
-    document.getElementById('gbtn').textContent='🤖 Analyse & Build Plugin';
-    window.parent.postMessage({type:'plugin_result',plugin:'tool_creator',result:JSON.stringify(pd2)},'*');
+    function buildFormula(meta) {
+      const data = JSON.stringify(FORMULAS);
+      const body = `
+<section class="card">
+  <div class="grid">
+    <div class="field">
+      <label>Search formula</label>
+      <input id="q" placeholder="Try force, refraction, gas, pressure, momentum">
+    </div>
+    <div class="field">
+      <label>Category</label>
+      <select id="cat">
+        <option value="">All categories</option>
+        <option>Mechanics</option>
+        <option>Fluids</option>
+        <option>Electricity</option>
+        <option>Waves</option>
+        <option>Optics</option>
+        <option>Thermal</option>
+        <option>Chemistry</option>
+      </select>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="primary" id="search_btn">Search</button>
+    <button class="secondary" id="clear_btn">Clear</button>
+  </div>
+  <div class="result">
+    <div class="muted">Find equations by concept, topic, or variable name.</div>
+    <div id="results" class="formula-list" style="margin-top:14px;"></div>
+  </div>
+</section>`;
+      const script = `
+const formulas=${data};
+function render(items){
+  const root=document.getElementById('results');
+  if(!items.length){
+    root.innerHTML='<div class="muted">No formula matched that search yet. Try a broader word like force, wave, gas, or optics.</div>';
+    return;
   }
-});
+  root.innerHTML=items.map(function(item){
+    return '<div class="formula-card">'
+      + '<div class="tag">'+item.category+'</div>'
+      + '<h3>'+item.name+'</h3>'
+      + '<div class="formula">'+item.formula+'</div>'
+      + '<p class="muted"><strong>Variables:</strong> '+item.variables+'</p>'
+      + '<p class="muted">'+item.note+'</p>'
+      + '</div>';
+  }).join('');
+}
+function search(){
+  const q=(document.getElementById('q').value||'').toLowerCase().trim();
+  const cat=document.getElementById('cat').value;
+  const items=formulas.filter(function(item){
+    const hay=(item.name+' '+item.formula+' '+item.variables+' '+item.note+' '+item.keys).toLowerCase();
+    const matchesQ=!q||hay.indexOf(q)!==-1;
+    const matchesCat=!cat||item.category===cat;
+    return matchesQ&&matchesCat;
+  });
+  render(items);
+}
+document.getElementById('search_btn').onclick=search;
+document.getElementById('clear_btn').onclick=function(){
+  document.getElementById('q').value='';
+  document.getElementById('cat').value='';
+  render(formulas);
+};
+document.getElementById('q').addEventListener('input',search);
+document.getElementById('cat').addEventListener('change',search);
+render(formulas.slice(0,8));`;
+      return { html: pluginShell(meta, body, script), inputs: 2 };
+    }
 
-function inst(){if(!pd2)return;window.parent.postMessage({type:'install_custom_plugin',data:pd2},'*');step('✅ Plugin installed in PhysIQ!');}
-function pub(){if(!pd2)return;window.parent.postMessage({type:'publish_plugin',data:pd2},'*');step('🌐 Publishing to community store...');}
-function sv(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=(document.getElementById('pn').value||'plugin').replace(/[^a-z0-9]/gi,'_')+'.html';a.click();}
-</script>
+    function buildUnit(meta) {
+      const body = `
+<section class="card">
+  <div class="two">
+    <div class="field">
+      <label>Category</label>
+      <select id="kind">
+        <option value="length">Length</option>
+        <option value="mass">Mass</option>
+        <option value="time">Time</option>
+        <option value="temperature">Temperature</option>
+        <option value="speed">Speed</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Value</label>
+      <input id="value" type="number" step="any" placeholder="12.5">
+    </div>
+    <div class="field">
+      <label>From</label>
+      <select id="from"></select>
+    </div>
+    <div class="field">
+      <label>To</label>
+      <select id="to"></select>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="primary" id="convert_btn">Convert</button>
+  </div>
+  <div id="out" class="result">
+    <div class="muted">Pick units and convert instantly.</div>
+  </div>
+</section>`;
+      const script = `
+const defs={
+  length:{units:{m:1,km:1000,cm:0.01,mm:0.001}},
+  mass:{units:{kg:1,g:0.001,mg:0.000001,lb:0.45359237}},
+  time:{units:{s:1,min:60,h:3600}},
+  speed:{units:{'m/s':1,'km/h':0.2777777778,'mph':0.44704}},
+  temperature:{units:{C:1,F:1,K:1}}
+};
+function fillUnits(){
+  const kind=document.getElementById('kind').value;
+  const names=Object.keys(defs[kind].units);
+  ['from','to'].forEach(function(id){
+    const sel=document.getElementById(id);
+    sel.innerHTML=names.map(function(name){return '<option value="'+name+'">'+name+'</option>';}).join('');
+  });
+  document.getElementById('to').selectedIndex=Math.min(1,names.length-1);
+}
+function convertTemp(value,from,to){
+  let c=value;
+  if(from==='F') c=(value-32)*5/9;
+  if(from==='K') c=value-273.15;
+  if(to==='C') return c;
+  if(to==='F') return c*9/5+32;
+  if(to==='K') return c+273.15;
+  return c;
+}
+function convert(){
+  const kind=document.getElementById('kind').value;
+  const value=Number(document.getElementById('value').value);
+  const from=document.getElementById('from').value;
+  const to=document.getElementById('to').value;
+  if(Number.isNaN(value)){
+    document.getElementById('out').innerHTML='<div class="muted">Enter a number first.</div>';
+    return;
+  }
+  let result=0;
+  if(kind==='temperature'){
+    result=convertTemp(value,from,to);
+  }else{
+    result=value*defs[kind].units[from]/defs[kind].units[to];
+  }
+  document.getElementById('out').innerHTML='<div class="stat">'+kind.toUpperCase()+'</div><h2 style="margin:12px 0 6px;">'+value+' '+from+' = '+result.toFixed(6).replace(/\\.0+$/,'').replace(/(\\.\\d*?)0+$/,'$1')+' '+to+'</h2><div class="muted">Use this for quick unit conversion without switching tools.</div>';
+}
+document.getElementById('kind').addEventListener('change',fillUnits);
+document.getElementById('convert_btn').onclick=convert;
+fillUnits();`;
+      return { html: pluginShell(meta, body, script), inputs: 4 };
+    }
+
+    function buildBmi(meta) {
+      const body = `
+<section class="card">
+  <div class="two">
+    <div class="field">
+      <label>Weight (kg)</label>
+      <input id="w" type="number" step="any" placeholder="68">
+    </div>
+    <div class="field">
+      <label>Height (m)</label>
+      <input id="h" type="number" step="any" placeholder="1.72">
+    </div>
+  </div>
+  <div class="actions">
+    <button class="primary" id="calc">Calculate BMI</button>
+  </div>
+  <div id="out" class="result"><div class="muted">Enter weight and height to calculate BMI.</div></div>
+</section>`;
+      const script = `
+function calc(){
+  const w=Number(document.getElementById('w').value);
+  const h=Number(document.getElementById('h').value);
+  if(!(w>0&&h>0)){
+    document.getElementById('out').innerHTML='<div class="muted">Use positive values for both fields.</div>';
+    return;
+  }
+  const bmi=w/(h*h);
+  let band='Normal';
+  if(bmi<18.5) band='Underweight';
+  else if(bmi<25) band='Healthy';
+  else if(bmi<30) band='Overweight';
+  else band='Obesity range';
+  document.getElementById('out').innerHTML='<div class="stat">BMI</div><h2 style="margin:12px 0 6px;">'+bmi.toFixed(2)+'</h2><div class="muted">Category: <strong>'+band+'</strong></div>';
+}
+document.getElementById('calc').onclick=calc;`;
+      return { html: pluginShell(meta, body, script), inputs: 2 };
+    }
+
+    function buildGrade(meta) {
+      const body = `
+<section class="card">
+  <div class="two">
+    <div class="field">
+      <label>Score</label>
+      <input id="score" type="number" step="any" placeholder="82">
+    </div>
+    <div class="field">
+      <label>Total</label>
+      <input id="total" type="number" step="any" placeholder="100">
+    </div>
+  </div>
+  <div class="actions">
+    <button class="primary" id="grade_btn">Calculate Grade</button>
+  </div>
+  <div id="out" class="result"><div class="muted">Enter earned marks and total marks.</div></div>
+</section>`;
+      const script = `
+function band(pct){
+  if(pct>=90) return 'A';
+  if(pct>=80) return 'B';
+  if(pct>=70) return 'C';
+  if(pct>=60) return 'D';
+  return 'F';
+}
+document.getElementById('grade_btn').onclick=function(){
+  const score=Number(document.getElementById('score').value);
+  const total=Number(document.getElementById('total').value);
+  if(Number.isNaN(score)||Number.isNaN(total)||!(total>0)||score<0){
+    document.getElementById('out').innerHTML='<div class="muted">Enter valid score values.</div>';
+    return;
+  }
+  const pct=(score/total)*100;
+  document.getElementById('out').innerHTML='<div class="stat">PERCENTAGE</div><h2 style="margin:12px 0 6px;">'+pct.toFixed(2)+'%</h2><div class="muted">Grade band: <strong>'+band(pct)+'</strong></div>';
+};`;
+      return { html: pluginShell(meta, body, script), inputs: 2 };
+    }
+
+    function buildPrime(meta) {
+      const body = `
+<section class="card">
+  <div class="field">
+    <label>Number</label>
+    <input id="n" type="number" step="1" placeholder="29">
+  </div>
+  <div class="actions">
+    <button class="primary" id="prime_btn">Check Number</button>
+  </div>
+  <div id="out" class="result"><div class="muted">Enter a whole number to test whether it is prime.</div></div>
+</section>`;
+      const script = `
+function isPrime(n){
+  if(n<=1||n%1!==0) return false;
+  for(let i=2;i<=Math.floor(Math.sqrt(n));i+=1){
+    if(n%i===0) return false;
+  }
+  return true;
+}
+document.getElementById('prime_btn').onclick=function(){
+  const n=Number(document.getElementById('n').value);
+  if(!Number.isFinite(n)){
+    document.getElementById('out').innerHTML='<div class="muted">Enter a valid integer.</div>';
+    return;
+  }
+  const whole=Math.trunc(n);
+  const ok=isPrime(whole);
+  document.getElementById('out').innerHTML='<div class="stat">'+(ok?'PRIME':'NOT PRIME')+'</div><h2 style="margin:12px 0 6px;">'+whole+'</h2><div class="muted">'+(ok?'This number is divisible only by 1 and itself.':'This number has factors besides 1 and itself.')+'</div>';
+};`;
+      return { html: pluginShell(meta, body, script), inputs: 1 };
+    }
+
+    function buildFib(meta) {
+      const body = `
+<section class="card">
+  <div class="field">
+    <label>How many terms?</label>
+    <input id="count" type="number" step="1" placeholder="8">
+  </div>
+  <div class="actions">
+    <button class="primary" id="fib_btn">Generate Sequence</button>
+  </div>
+  <div id="out" class="result"><div class="muted">Generate the first n Fibonacci numbers.</div></div>
+</section>`;
+      const script = `
+document.getElementById('fib_btn').onclick=function(){
+  const n=Math.max(1,Math.min(40,Math.trunc(Number(document.getElementById('count').value)||0)));
+  if(!n){
+    document.getElementById('out').innerHTML='<div class="muted">Enter a number between 1 and 40.</div>';
+    return;
+  }
+  const seq=[];
+  for(let i=0;i<n;i+=1){
+    if(i<2) seq.push(i);
+    else seq.push(seq[i-1]+seq[i-2]);
+  }
+  document.getElementById('out').innerHTML='<div class="stat">SEQUENCE</div><h2 style="margin:12px 0 10px;">'+seq.join(', ')+'</h2><div class="muted">Generated '+n+' terms.</div>';
+};`;
+      return { html: pluginShell(meta, body, script), inputs: 1 };
+    }
+
+    function buildCompiled(meta, compiled) {
+      const fields = compiled.params.map(function(param) {
+        return `<div class="field"><label>${escapeHtml(titleCase(param))}</label><input id="f_${escapeHtml(param)}" type="number" step="any" placeholder="Enter ${escapeHtml(param)}"></div>`;
+      }).join("");
+      const paramsJson = JSON.stringify(compiled.params);
+      const exprJson = JSON.stringify(compiled.expr);
+      const body = `
+<section class="card">
+  <div class="grid">
+    ${fields}
+  </div>
+  <div class="actions">
+    <button class="primary" id="run_btn">Run ${escapeHtml(titleCase(compiled.name))}</button>
+  </div>
+  <div id="out" class="result">
+    <div class="muted">This tool was compiled from your ${escapeHtml(compiled.lang)} function and is ready to use.</div>
+  </div>
+</section>`;
+      const script = `
+const params=${paramsJson};
+const expr=${exprJson};
+document.getElementById('run_btn').onclick=function(){
+  const values=[];
+  for(let i=0;i<params.length;i+=1){
+    const val=Number(document.getElementById('f_'+params[i]).value);
+    if(Number.isNaN(val)){
+      document.getElementById('out').innerHTML='<div class="muted">Enter numeric values for every field.</div>';
+      return;
+    }
+    values.push(val);
+  }
+  try{
+    const fn=new Function(...params,'return ('+expr+');');
+    const result=fn(...values);
+    document.getElementById('out').innerHTML='<div class="stat">RESULT</div><h2 style="margin:12px 0 8px;">'+result+'</h2><div class="muted">Expression used: '+expr.replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';
+  }catch(err){
+    document.getElementById('out').innerHTML='<div class="muted">Could not evaluate this function in the browser. Try a simple return expression.</div>';
+  }
+};`;
+      return { html: pluginShell(meta, body, script), inputs: compiled.params.length };
+    }
+
+    function buildGeneric(meta) {
+      const body = `
+<section class="card">
+  <div class="field">
+    <label>What should this tool help with?</label>
+    <textarea id="goal" style="font-family:inherit;">${escapeHtml(meta.description)}</textarea>
+  </div>
+  <div class="field">
+    <label>Key details</label>
+    <textarea id="details" style="font-family:inherit;" placeholder="Paste formulas, requirements, scoring rules, notes, or steps.">${escapeHtml(meta.code)}</textarea>
+  </div>
+  <div class="actions">
+    <button class="primary" id="summarize_btn">Organize Tool Plan</button>
+  </div>
+  <div id="out" class="result"><div class="muted">This workspace is a fast fallback when your request does not match a built-in tool type yet.</div></div>
+</section>`;
+      const script = `
+document.getElementById('summarize_btn').onclick=function(){
+  const goal=document.getElementById('goal').value.trim();
+  const details=document.getElementById('details').value.trim();
+  const bullets=details.split(/\\n+/).filter(Boolean).slice(0,6).map(function(line){return '<li>'+line.replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</li>';}).join('');
+  document.getElementById('out').innerHTML='<div class="stat">WORKSPACE</div><h2 style="margin:12px 0 8px;">'+(goal||'Custom tool plan')+'</h2><div class="muted">Use this as a structured browser workspace while you refine the exact tool behavior.</div><ul class="muted">'+(bullets||'<li>Add requirements above to make this more specific.</li>')+'</ul>';
+};`;
+      return { html: pluginShell(meta, body, script), inputs: 2 };
+    }
+
+    function buildPlugin(meta) {
+      const kind = detectKind(meta, meta.code);
+      const compiled = parseSimpleFunction(meta.code, meta.lang);
+      if (kind === "Formula Finder") return { kind: kind, result: buildFormula(meta) };
+      if (kind === "Unit Converter") return { kind: kind, result: buildUnit(meta) };
+      if (kind === "BMI Calculator") return { kind: kind, result: buildBmi(meta) };
+      if (kind === "Grade Calculator") return { kind: kind, result: buildGrade(meta) };
+      if (kind === "Prime Checker") return { kind: kind, result: buildPrime(meta) };
+      if (kind === "Fibonacci Generator") return { kind: kind, result: buildFib(meta) };
+      if (kind === "Function Tool" && compiled) return { kind: kind, result: buildCompiled(meta, compiled) };
+      return { kind: kind, result: buildGeneric(meta) };
+    }
+
+    function showPreview(html) {
+      builtHtml = html;
+      $("preview").srcdoc = html;
+      $("preview").style.display = "block";
+      $("preview_placeholder").style.display = "none";
+    }
+
+    function buildNow() {
+      const meta = getMeta();
+      if (!meta.name.trim()) {
+        setStatus("Give the plugin a name first.", "error");
+        return;
+      }
+
+      setProgress(18);
+      setStatus("Reading the design brief...", "");
+
+      const built = buildPlugin(meta);
+      setProgress(58);
+      setStatus("Generating the browser plugin locally...", "");
+
+      builtPayload = {
+        name: meta.name,
+        icon: meta.icon,
+        description: meta.description,
+        html: built.result.html,
+        code: meta.code,
+        lang: meta.lang,
+        slug: slugify(meta.name)
+      };
+
+      showPreview(built.result.html);
+      setMetric(built.kind, built.result.inputs, true);
+      setProgress(100);
+      setStatus("Built in seconds. Ready to install, publish, or download.", "success");
+    }
+
+    function navigateWithPayload(param, payload) {
+      if (!payload || !payload.html) {
+        setStatus("Build the plugin first.", "error");
+        return;
+      }
+      try {
+        const target = new URL(document.referrer || window.location.href);
+        target.searchParams.set(param, encodeURIComponent(JSON.stringify(payload)));
+        window.open(target.toString(), "_top");
+      } catch (err) {
+        setStatus("Could not hand off the plugin to the app. Try downloading it instead.", "error");
+      }
+    }
+
+    function installPlugin() {
+      navigateWithPayload("install_plugin", builtPayload);
+    }
+
+    function publishPlugin() {
+      navigateWithPayload("publish_plugin", builtPayload);
+    }
+
+    function downloadPlugin() {
+      if (!builtPayload || !builtPayload.html) {
+        setStatus("Build the plugin first.", "error");
+        return;
+      }
+      const blob = new Blob([builtPayload.html], { type: "text/html;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = slugify(builtPayload.name) + ".html";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+      setStatus("Downloaded the plugin HTML file.", "success");
+    }
+
+    $("code").addEventListener("keydown", function(event) {
+      if (event.key !== "Tab") return;
+      event.preventDefault();
+      const start = this.selectionStart;
+      const end = this.selectionEnd;
+      this.value = this.value.slice(0, start) + "    " + this.value.slice(end);
+      this.selectionStart = this.selectionEnd = start + 4;
+    });
+
+    if (INITIAL_TOOL_REQUEST && INITIAL_TOOL_REQUEST !== "null") {
+      $("desc").value = String(INITIAL_TOOL_REQUEST);
+      const inferred = inferNameFromRequest(String(INITIAL_TOOL_REQUEST));
+      if (inferred) $("name").value = inferred;
+      if (/formula|physics|equation|law/i.test(String(INITIAL_TOOL_REQUEST))) {
+        loadSample("formula");
+        $("desc").value = String(INITIAL_TOOL_REQUEST);
+        if (inferred) $("name").value = inferred;
+        setStatus("Loaded a formula-finder starter from the current request.", "");
+        setProgress(10);
+      } else {
+        setStatus("Context loaded from the app. You can build immediately or refine the brief.", "");
+        setProgress(10);
+      }
+    } else {
+      loadSample("formula");
+    }
+  </script>
 </body>
 </html>
