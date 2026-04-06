@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d1117;font-family:'Segoe UI',sans-serif;padding:14px;color:#e6edf3}
+.wrap{background:#161b22;border:1px solid #ff8c42;border-radius:14px;padding:16px}
+.title{color:#ff8c42;font-weight:700;font-size:14px;margin-bottom:4px}
+.sub{color:#8b949e;font-size:11px;margin-bottom:14px;line-height:1.5}
+.ltabs{display:flex;gap:6px;margin-bottom:10px}
+.ltab{padding:5px 14px;border-radius:6px;border:1px solid #30363d;background:#21262d;
+  color:#8b949e;cursor:pointer;font-size:12px}
+.ltab.on{background:#ff8c42;color:#000;border-color:#ff8c42;font-weight:700}
+.ed{width:100%;height:240px;background:#0d1117;border:1px solid #30363d;border-radius:10px;
+  padding:12px;color:#e6edf3;font-family:'Courier New',monospace;font-size:12px;
+  line-height:1.6;resize:vertical;tab-size:4;outline:none}
+.ed:focus{border-color:#ff8c42}
+.mgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
+.ml{color:#8b949e;font-size:10px;font-weight:600;letter-spacing:.8px;margin-bottom:4px}
+.mi{background:#0d1117;border:1px solid #30363d;border-radius:8px;
+  padding:7px 10px;color:#e6edf3;font-size:12px;width:100%;outline:none}
+.mi:focus{border-color:#ff8c42}
+.brow{display:flex;gap:8px;margin-bottom:10px}
+.bgo{flex:1;background:#ff8c42;color:#000;border:none;border-radius:8px;
+  padding:9px;cursor:pointer;font-weight:700;font-size:13px}
+.bgo:disabled{background:#30363d;color:#8b949e;cursor:not-allowed}
+.bcl{background:#21262d;color:#8b949e;border:1px solid #30363d;border-radius:8px;
+  padding:9px 14px;cursor:pointer;font-size:12px}
+.pbar{height:4px;background:#21262d;border-radius:2px;margin:8px 0;overflow:hidden;display:none}
+.pfill{height:100%;background:linear-gradient(90deg,#ff8c42,#ffd166);border-radius:2px;
+  transition:width .4s}
+.sbox{font-size:11px;color:#8b949e;margin-bottom:10px;display:none}
+.sl{margin:4px 0;display:flex;gap:6px;align-items:center}
+.pvw{border:1px solid #238636;border-radius:10px;overflow:hidden;display:none}
+.pvh{background:#161b22;padding:10px 14px;display:flex;align-items:center;
+  justify-content:space-between;border-bottom:1px solid #30363d}
+.pvt{color:#3fb950;font-weight:700;font-size:12px}
+.pvbs{display:flex;gap:6px}
+.pvb{border:none;border-radius:6px;padding:5px 12px;cursor:pointer;font-size:11px;font-weight:600}
+.pvif{width:100%;height:320px;border:none;background:#fff}
+.sams{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.sam{background:#21262d;border:1px solid #30363d;border-radius:10px;
+  padding:4px 10px;font-size:11px;color:#8b949e;cursor:pointer}
+.sam:hover{border-color:#ff8c42;color:#ff8c42}
+.tip{background:#0d1117;border:1px solid #30363d;border-radius:8px;
+  padding:10px 12px;font-size:11px;color:#8b949e;line-height:1.7;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="title">🔧 Tool Creator — Code Editor</div>
+  <div class="sub">Write normal Python or Java code. The AI reads your logic and builds an interactive plugin automatically.<br>
+  <b style="color:#ff8c42">No HTML or JavaScript knowledge needed.</b></div>
+
+  <div class="sams">
+    <div class="sam" onclick="ls('bmi')">📊 BMI Calc</div>
+    <div class="sam" onclick="ls('fib')">🔢 Fibonacci</div>
+    <div class="sam" onclick="ls('temp')">🌡️ Temp Convert</div>
+    <div class="sam" onclick="ls('prime')">🔍 Prime Checker</div>
+    <div class="sam" onclick="ls('grade')">📝 Grade Calc</div>
+  </div>
+
+  <div class="ltabs">
+    <div class="ltab on" id="tpy" onclick="sl('python')">🐍 Python</div>
+    <div class="ltab" id="tjv" onclick="sl('java')">☕ Java</div>
+  </div>
+
+  <textarea class="ed" id="ed" placeholder="Write your Python or Java code here..." onkeydown="tk(event)" spellcheck="false"></textarea>
+
+  <div class="mgrid">
+    <div><div class="ml">PLUGIN NAME</div><input class="mi" id="pn" placeholder="e.g. BMI Calculator"></div>
+    <div><div class="ml">ICON</div><input class="mi" id="pi" placeholder="emoji" value="🔧" maxlength="4"></div>
+    <div><div class="ml">DESCRIPTION</div><input class="mi" id="pd" placeholder="What does it do?"></div>
+  </div>
+
+  <div class="brow">
+    <button class="bgo" id="gbtn" onclick="go()">🤖 Analyse &amp; Build Plugin</button>
+    <button class="bcl" onclick="clr()">🗑️ Clear</button>
+  </div>
+
+  <div class="pbar" id="pb"><div class="pfill" id="pf" style="width:0%"></div></div>
+  <div class="sbox" id="sb"></div>
+
+  <div class="pvw" id="pw">
+    <div class="pvh">
+      <span class="pvt" id="pt">✅ Plugin Ready</span>
+      <div class="pvbs">
+        <button class="pvb" style="background:#238636;color:#fff" onclick="inst()">⬇️ Install</button>
+        <button class="pvb" style="background:#1f6feb;color:#fff" onclick="pub()">🌐 Publish to Store</button>
+        <button class="pvb" style="background:#21262d;color:#e6edf3;border:1px solid #30363d" onclick="sv()">💾 Save</button>
+      </div>
+    </div>
+    <iframe class="pvif" id="pf2"></iframe>
+  </div>
+
+  <div class="tip">💡 <b style="color:#ff8c42">How it works:</b> Write any calculation, conversion, or logic in Python/Java. The AI converts your functions into an interactive browser tool with inputs, buttons, and styled results matching PhysIQ.</div>
+</div>
+
+<script>
+var lang='python', gh='', pd2=null;
+var S={
+  bmi:"def calculate_bmi(weight_kg, height_m):\n    bmi = weight_kg / (height_m ** 2)\n    if bmi < 18.5: cat = 'Underweight'\n    elif bmi < 25: cat = 'Normal weight'\n    elif bmi < 30: cat = 'Overweight'\n    else: cat = 'Obese'\n    return round(bmi, 2), cat\n\nbmi, cat = calculate_bmi(70, 1.75)\nprint('BMI:', bmi, '-', cat)",
+  fib:"def fibonacci(n):\n    seq = [0, 1]\n    for i in range(2, n):\n        seq.append(seq[-1] + seq[-2])\n    return seq[:n]\n\nprint('Fibonacci(10):', fibonacci(10))",
+  temp:"def c_to_f(c): return (c * 9/5) + 32\ndef f_to_c(f): return (f - 32) * 5/9\ndef c_to_k(c): return c + 273.15\n\nprint('100C =', c_to_f(100), 'F')\nprint('212F =', f_to_c(212), 'C')\nprint('0C =', c_to_k(0), 'K')",
+  prime:"def is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0: return False\n    return True\n\ndef primes_up_to(limit):\n    return [n for n in range(2, limit+1) if is_prime(n)]\n\nprint('Primes up to 30:', primes_up_to(30))",
+  grade:"def get_grade(marks):\n    avg = sum(marks) / len(marks)\n    if avg >= 90: g = 'A+'\n    elif avg >= 80: g = 'A'\n    elif avg >= 70: g = 'B'\n    elif avg >= 60: g = 'C'\n    elif avg >= 50: g = 'D'\n    else: g = 'F'\n    return round(avg, 1), g\n\navg, grade = get_grade([85, 90, 78, 92, 88])\nprint('Average:', avg, '| Grade:', grade)"
+};
+
+function sl(l){lang=l;document.getElementById('tpy').classList.toggle('on',l==='python');document.getElementById('tjv').classList.toggle('on',l==='java');}
+function ls(k){
+  var ed=document.getElementById('ed');
+  ed.value=S[k].replace(/\\n/g,'\n');
+  var nm={bmi:'BMI Calculator',fib:'Fibonacci Generator',temp:'Temperature Converter',prime:'Prime Checker',grade:'Grade Calculator'};
+  var ic={bmi:'📊',fib:'🔢',temp:'🌡️',prime:'🔍',grade:'📝'};
+  var ds={bmi:'Calculate Body Mass Index from weight and height',fib:'Generate Fibonacci number sequences',temp:'Convert between Celsius Fahrenheit and Kelvin',prime:'Check if numbers are prime and list primes',grade:'Calculate average grade from subject marks'};
+  document.getElementById('pn').value=nm[k];
+  document.getElementById('pi').value=ic[k];
+  document.getElementById('pd').value=ds[k];
+}
+function tk(e){if(e.key==='Tab'){e.preventDefault();var t=e.target,s=t.selectionStart;t.value=t.value.substring(0,s)+'    '+t.value.substring(t.selectionEnd);t.selectionStart=t.selectionEnd=s+4;}}
+function step(txt){var b=document.getElementById('sb');b.style.display='block';var d=document.createElement('div');d.className='sl';d.innerHTML='<span style="color:#ff8c42">▶</span><span>'+txt+'</span>';b.appendChild(d);}
+function setp(p){document.getElementById('pf').style.width=p+'%';}
+function clr(){document.getElementById('ed').value='';['pn','pd'].forEach(function(i){document.getElementById(i).value='';});document.getElementById('pi').value='🔧';document.getElementById('sb').innerHTML='';document.getElementById('sb').style.display='none';document.getElementById('pw').style.display='none';document.getElementById('pb').style.display='none';gh='';pd2=null;}
+
+function go(){
+  var code=document.getElementById('ed').value.trim();
+  if(!code){alert('Please write some code first!');return;}
+  var name=document.getElementById('pn').value||'My Plugin';
+  var icon=document.getElementById('pi').value||'🔧';
+  var desc=document.getElementById('pd').value||'Custom plugin';
+  document.getElementById('gbtn').disabled=true;
+  document.getElementById('gbtn').textContent='⏳ Building...';
+  document.getElementById('pb').style.display='block';
+  document.getElementById('sb').innerHTML='';
+  document.getElementById('pw').style.display='none';
+  setp(10);step('Reading your '+lang+' code...');
+  setTimeout(function(){setp(35);step('Understanding functions and logic...');},500);
+  setTimeout(function(){setp(60);step('AI converting to browser plugin...');},1000);
+  var sys='You are an expert developer. The user wrote '+lang+' code. Convert it into a beautiful self-contained HTML+JS plugin.\n\nRULES:\n1. Recreate the EXACT logic in JavaScript\n2. Create labeled input fields for every function parameter\n3. Show step-by-step results with clear formatting\n4. Dark theme: body bg #0d1117, cards #161b22, accent #ff8c42\n5. Rounded corners, smooth design, responsive\n6. Return ONLY complete HTML starting with <!DOCTYPE html>\n7. No external dependencies';
+  var usr='Convert this '+lang+' code into an interactive browser plugin:\n\n```'+lang+'\n'+code+'\n```\n\nPlugin name: '+name+'\nIcon: '+icon+'\nDescription: '+desc+'\n\nBuild a complete HTML tool that recreates this functionality with nice input fields and results.';
+  window.parent.postMessage({type:'plugin_ai_call',id:'toolcreate',system:sys,user:usr,max_tokens:3000},'*');
+}
+
+window.addEventListener('message',function(e){
+  if(e.data&&e.data.type==='plugin_ai_response'&&e.data.id==='toolcreate'){
+    setp(90);step('Rendering preview...');
+    var raw=e.data.result||'';
+    var s=raw.indexOf('<!DOCTYPE');if(s<0)s=raw.indexOf('<html');
+    var en=raw.lastIndexOf('</html>')+7;
+    gh=s>=0&&en>s?raw.slice(s,en):raw;
+    document.getElementById('pf2').srcdoc=gh;
+    document.getElementById('pt').textContent='✅ '+document.getElementById('pn').value+' Ready!';
+    document.getElementById('pw').style.display='block';
+    setp(100);step('Done! Plugin ready to install or publish to store.');
+    pd2={name:document.getElementById('pn').value,icon:document.getElementById('pi').value,desc:document.getElementById('pd').value,html:gh,lang:lang,code:document.getElementById('ed').value};
+    document.getElementById('gbtn').disabled=false;
+    document.getElementById('gbtn').textContent='🤖 Analyse & Build Plugin';
+    window.parent.postMessage({type:'plugin_result',plugin:'tool_creator',result:JSON.stringify(pd2)},'*');
+  }
+});
+
+function inst(){if(!pd2)return;window.parent.postMessage({type:'install_custom_plugin',data:pd2},'*');step('✅ Plugin installed in PhysIQ!');}
+function pub(){if(!pd2)return;window.parent.postMessage({type:'publish_plugin',data:pd2},'*');step('🌐 Publishing to community store...');}
+function sv(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=(document.getElementById('pn').value||'plugin').replace(/[^a-z0-9]/gi,'_')+'.html';a.click();}
+</script>
+</body>
+</html>
