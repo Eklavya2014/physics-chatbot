@@ -1,0 +1,196 @@
+================================================================================
+                  AGEING BIOLOGY & LONGEVITY SCIENCE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHY DO WE AGE?
+------------------
+Ageing is the progressive decline in physiological function that increases vulnerability
+to disease and death. Maximum human lifespan ~120–125 years (Jeanne Calment: 122 years).
+Life expectancy (global average 2024): ~73 years.
+
+Evolutionary Theories of Ageing:
+  Disposable Soma Theory (Kirkwood): Body invests limited energy in reproduction vs.
+    repair. After reproductive success, repair becomes less worthwhile → ageing.
+  Antagonistic Pleiotropy (Williams): Genes beneficial early in life (reproduction) may be
+    harmful later. Selection cannot remove them because benefits outweigh later costs.
+    Example: Testosterone → reproduction early; prostate cancer and CVD later.
+  Mutation Accumulation (Medawar): Late-acting harmful mutations accumulate because
+    selection pressure is weak after reproductive age.
+
+1.1 CHANGES WITH AGEING
+-------------------------
+System           | Changes with Ageing
+-----------------|----------------------------------------------------------
+Cardiovascular   | Arterial stiffening; ↓ max HR; diastolic dysfunction
+Respiratory      | ↓ lung elasticity; ↓ FEV1/FVC; reduced gas exchange
+Musculoskeletal  | Sarcopenia (muscle loss); osteoporosis; joint degeneration
+Neurological     | Neuronal loss; synaptic changes; slower processing
+Immune           | Immunosenescence; inflammageing; reduced vaccine response
+Metabolic        | Insulin resistance; ↓ BMR; adipose redistribution
+Renal            | ↓ GFR by ~1 mL/min/year after age 40; reduced concentrating ability
+Skin             | Collagen loss; reduced elastin; thinner epidermis; slower healing
+Reproductive     | Menopause (women ~51); declining testosterone (men, gradual)
+Sensory          | Presbyopia; presbycusis; reduced taste/smell sensitivity
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CELLULAR & MOLECULAR HALLMARKS OF AGEING
+---------------------------------------------
+(Based on Lopez-Otin et al., Cell 2023 — 12 Hallmarks)
+
+1. Genomic Instability:
+   Accumulation of DNA damage over time: DSBs, point mutations, insertions, deletions.
+   Reduced DNA repair capacity (decreased NER, NHEJ efficiency with age).
+   Somatic mutation burden increases exponentially with age.
+
+2. Telomere Attrition:
+   Telomeres: Repetitive sequences (TTAGGG)n + shelterin complex; protect chromosome ends.
+   ~50–200 bp lost per cell division (end-replication problem).
+   Critical shortening → p53-mediated replicative senescence or apoptosis.
+   Telomerase (hTERT + hTERC): Reverse transcriptase; maintains telomeres in stem cells + cancer.
+   Dyskeratosis congenita: Telomerase mutations → premature ageing syndrome.
+
+3. Epigenetic Alterations:
+   Global DNA hypomethylation + focal hypermethylation at CpG islands with age.
+   Epigenetic clocks (Horvath 2013; GrimAge): DNA methylation patterns predict biological age.
+   Histone modifications shift: H3K9me3 and H3K27me3 distribution changes.
+   Chromatin becomes less compact; heterochromatin erosion → retrotransposon activation.
+
+4. Loss of Proteostasis:
+   Protein homeostasis maintained by: Chaperones (HSP70, HSP90, GroEL); UPS (ubiquitin-
+   proteasome system); autophagy (macroautophagy, CMA, mitophagy).
+   With ageing: All three decline → protein aggregation (hallmark of neurodegenerative disease).
+   Heat shock response (HSR) declines with age → less upregulation of chaperones after stress.
+
+5. Disabled Macroautophagy:
+   Autophagy clears damaged organelles, protein aggregates, pathogens.
+   mTORC1 activation (common with ageing/obesity) suppresses autophagy.
+   ATG gene expression declines with age. Beclin-1 levels fall.
+   Caloric restriction → mTOR inhibition → autophagy activation → lifespan extension.
+
+6. Deregulated Nutrient Sensing:
+   IIS (Insulin/IGF-1 signalling): Hyperactivation → accelerated ageing.
+     FOXO transcription factors: Downstream of insulin pathway; when dephosphorylated
+     (low IIS) → nuclear → activate stress resistance + longevity genes.
+     DAF-2 (C. elegans IGF-1R) mutants: 100% lifespan extension. daf-16 (FOXO) required.
+   mTOR: Nutrient sensor. Rapamycin (mTORC1 inhibitor) extends lifespan in multiple organisms
+     including mice. Clinical trials ongoing.
+   AMPK: Activated by low energy → catabolic; promotes autophagy; extends lifespan.
+   Sirtuins (SIRT1–7): NAD+-dependent deacylases. SIRT1 activated by CR/NAD+ →
+     deacetylates FOXO, p53, NF-kB → stress resistance. SIRT3: Mitochondrial; reduces ROS.
+
+7. Mitochondrial Dysfunction:
+   Mitochondrial quality declines with age: Fewer, less efficient, accumulate mtDNA mutations.
+   Electron transport chain → reactive oxygen species (ROS) → oxidative damage (Harman, 1956).
+   Modern view: ROS are also signalling molecules (mitohormesis — low ROS → adaptive response).
+   Mitophagy (PINK1-Parkin pathway): Targets damaged mitochondria for autophagy. Declines with age.
+
+8. Cellular Senescence:
+   Permanent cell cycle arrest in response to telomere shortening, DNA damage, oncogene activation.
+   SASP: IL-6, IL-8, MMPs, VEGF → chronic sterile inflammation (inflammageing).
+   p16INK4a + p21 markers increase with age in tissues.
+   Senolytics: Selectively kill senescent cells → extend healthspan in mice.
+     Dasatinib + quercetin; navitoclax (BCL-2/BCL-xL inhibitor); fisetin; ABT-263.
+
+9. Stem Cell Exhaustion:
+   Haematopoietic stem cell (HSC) output declines; clonal haematopoiesis increases (DNMT3A,
+   TET2, ASXL1 mutations → clonal expansion; MDS/leukaemia risk; CVD risk).
+   Intestinal stem cell turnover maintained but niche support declines.
+   Muscle satellite cells: Reduced number and activation in old muscle → impaired regeneration.
+
+10. Altered Intercellular Communication:
+    Inflammageing: Low-grade chronic inflammation driven by NF-kB, SASP, senescent cells,
+    gut dysbiosis, accumulated damage signals, mitochondrial DNA leakage → cGAS-STING pathway.
+    Parabiosis experiments: Connecting old + young mouse blood → old tissue rejuvenation.
+    Young blood factors: GDF11 (controversial), GPLD1, klotho.
+    Old blood factors (geronegative): TGF-beta, eotaxin/CCL11, beta-2-microglobulin.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. MODEL ORGANISMS IN AGEING RESEARCH
+---------------------------------------
+C. elegans (Nematode):
+  Lifespan: 2–3 weeks. Transparent. All 959 cells mapped. Genetic tools superb.
+  daf-2 (IGF-1R) mutants: 2x lifespan. daf-16 (FOXO): Required for longevity.
+  age-1 (PI3K): Null → 10x lifespan extension.
+  clk-1 (CoQ biosynthesis): Mitochondrial function and ageing.
+  eat-2 (CR model): Reduced feeding → 20% lifespan extension.
+  isp-1 (Complex III): ETC reduction → extended lifespan via ROS signalling.
+
+Drosophila melanogaster:
+  Lifespan: 60–80 days. Powerful genetics; >20,000 characterised genes.
+  dFOXO overexpression in fat body → 20–50% lifespan extension.
+  Methuselah (mth) receptor mutants: ~35% longer-lived; stress resistant.
+  Sir2 overexpression → lifespan extension (controversial).
+  Dietary restriction in Drosophila: Extends lifespan but optimum nutrient:lifespan curve.
+
+Mice:
+  Lifespan: 2–3 years. Mammalian; closest model to humans.
+  Rapamycin (mTOR inhibitor): ~10–15% median lifespan extension even started at 20 months!
+  Growth hormone receptor KO (Laron mice): ~40% lifespan extension; small body; low IGF-1.
+  Ames + Snell dwarf mice: GH/IGF-1 deficient → 40–65% lifespan extension.
+  p16INK4a-ATTAC mice: Selective depletion of senescent cells → extended healthspan.
+
+Naked Mole Rat (Heterocephalus glaber):
+  Lives up to 37 years (vs. ~3 years for similar-sized mice). Cancer essentially absent.
+  Mechanisms: Superior protein quality control; low metabolic rate; low ROS production;
+  high molecular chaperone levels; high poly-unsaturated fatty acids in membranes;
+  unique RNA ribosomal modifications → more accurate protein translation.
+  High hyaluronic acid (HMM-HA) → anti-cancer mechanism.
+
+4. LONGEVITY INTERVENTIONS
+-----------------------------
+Caloric Restriction (CR):
+  Most robust lifespan-extending intervention across many species. ~20–40% CR.
+  Mechanisms: ↓ mTOR, ↓ IIS, ↑ AMPK, ↑ autophagy, ↑ sirtuins, ↑ FOXO.
+  CALERIE trial (humans, 2-year 25% CR): Improved metabolic markers; reduced biological age.
+  CR mimetics: Metformin (AMPK), rapamycin (mTOR), resveratrol (SIRT1), NAD+ precursors.
+
+Rapamycin:
+  Most consistently life-extending drug in mice. Clinical trials in humans (PEARL trial
+  for disease prevention; INVOKE for immunosenescence in elderly).
+  Allosteric mTORC1 inhibitor. Concerns: Immunosuppression; wound healing; metabolic effects
+  (hyperglycaemia, hyperlipidaemia at high doses). Intermittent dosing may reduce SE.
+
+NAD+ Precursors (NR, NMN):
+  NAD+ declines with age → reduced sirtuin/PARP activity.
+  NR (nicotinamide riboside) and NMN (nicotinamide mononucleotide) → raise NAD+.
+  Mice: Extended healthspan, improved muscle/cognition/vascular function. Human trials ongoing.
+
+Yamanaka Factor Partial Reprogramming:
+  Transient expression of OSKM (Oct4, Sox2, Klf4, c-Myc) in aged cells → erasure of
+  epigenetic ageing marks → restored function WITHOUT loss of cell identity.
+  Juan Carlos Izpisua Belmonte lab: Partial reprogramming of mice → 50% lifespan extension.
+  Epigenetic age reversal: Specific factors (OSK without c-Myc) can reverse ageing of
+  retinal ganglion cells → restore vision in old mice (Sinclair lab, 2020).
+  Clinical translation: Retinal disease (Leber's hereditary optic neuropathy clinical trial).
+
+5. EPIGENETIC CLOCKS & BIOLOGICAL AGE
+----------------------------------------
+Horvath Clock (2013): 353 CpG sites → predict chronological age ±3.6 years from DNA methylation.
+GrimAge Clock: Predicts mortality risk; includes DNAm-based surrogate biomarkers.
+DunedinPACE: Pace of ageing clock; captures rate of biological ageing (tracks longitudinally).
+PhenoAge (Levine): Composite of clinical + methylation data.
+Protein clock (Argentieri et al., 2024): ~3,000 plasma proteins → strong age predictor.
+
+Accelerated epigenetic ageing associated with: Smoking, obesity, depression, low SES,
+childhood adversity, HIV infection, many cancers. Decelerated with: Caloric restriction,
+exercise, Mediterranean diet, HRT (in women), education.
+
+[FUTURE OUTLOOK] The first drugs to modulate biological ageing may reach clinical use
+in the 2030s. Current leading candidates: Rapamycin/rapalogs; senolytics (Unity Biotechnology
+trials for osteoarthritis, AMD); NAD+ precursors; GLP-1 agonists (reduce inflammageing).
+The goal is extending HEALTHSPAN (healthy years) rather than just lifespan.
+The TAME trial (Targeting Aging with Metformin): Landmark clinical trial testing whether
+metformin can delay onset of age-related diseases in 3,000+ non-diabetic older adults.
+
+================================================================================

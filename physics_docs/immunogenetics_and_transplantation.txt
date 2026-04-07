@@ -1,0 +1,173 @@
+================================================================================
+             IMMUNOGENETICS & TRANSPLANTATION BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE MHC (MAJOR HISTOCOMPATIBILITY COMPLEX)
+----------------------------------------------
+The MHC (called HLA — Human Leukocyte Antigen — in humans) is the most polymorphic
+region of the human genome. Located on chromosome 6p21. ~4 Mb; >200 genes.
+MHC class I and II proteins present peptides to T cells — central to adaptive immunity.
+
+MHC Class I:
+  Present on ALL nucleated cells + platelets (not RBCs).
+  Structure: Alpha chain (encoded by MHC) + beta-2-microglobulin (chromosome 15).
+  Peptide binding: 8–10 amino acid peptides from intracellular proteins (endogenous antigen).
+  Presents to: CD8+ cytotoxic T cells.
+  Function: "Self-surveillance" → virus-infected or cancerous cells express abnormal peptides → CD8+ kill.
+  Genes: HLA-A, HLA-B, HLA-C.
+
+MHC Class II:
+  Present on antigen-presenting cells (APCs): Dendritic cells, macrophages, B cells, thymic epithelium.
+  Structure: Alpha + Beta chain (both encoded by MHC).
+  Peptide binding: 13–25 amino acid peptides from extracellular proteins (exogenous antigen).
+  Presents to: CD4+ helper T cells.
+  Genes: HLA-DR, HLA-DQ, HLA-DP.
+
+HLA Polymorphism:
+  HLA-B: >7,000 known alleles; HLA-A: >6,500; HLA-DRB1: >3,500. Most polymorphic human genes.
+  Most polymorphism in peptide-binding groove → different antigens presented.
+  Co-dominantly expressed: Both maternal and paternal alleles expressed → up to 6 class I + 12 class II specificities.
+  Linkage disequilibrium: Alleles at HLA loci inherited in haplotype blocks (e.g., HLA-A3-B7-DR15).
+
+1.1 HLA & DISEASE ASSOCIATIONS
+--------------------------------
+Disease                        | HLA Association         | RR   | Mechanism
+-------------------------------|-------------------------|------|------------------------
+Ankylosing spondylitis         | HLA-B27                 | ~90  | CD8+ T cells; arthritogenic peptides?
+Type 1 Diabetes                | HLA-DR3, DR4; DQ8, DQ2  | 25   | Autoimmune beta cell destruction
+Coeliac disease                | HLA-DQ2, DQ8            | 15   | Gluten peptide presentation
+Rheumatoid arthritis           | HLA-DR4 (shared epitope)| 4    | Citrullinated peptide presentation
+Narcolepsy                     | HLA-DQB1*06:02          | 1000 | Autoimmunity to hypocretin neurons
+Multiple sclerosis             | HLA-DRB1*15:01          | 3    | Myelin antigen presentation
+Psoriasis                      | HLA-C*06:02             | 10   | Unknown
+Abacavir hypersensitivity      | HLA-B*57:01             | High | Altered peptide presentation → T cell activation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ANTIGEN PROCESSING & PRESENTATION
+---------------------------------------
+MHC Class I Pathway (endogenous/cytosolic):
+  Intracellular proteins → ubiquitin-tagged → 26S proteasome → peptides (7–30 aa) →
+  TAP1/TAP2 (Transporter associated with Antigen Processing) → ER →
+  Tapasin + Calnexin + Calreticulin + ERp57 → loading complex → optimal peptide loaded →
+  beta-2-microglobulin + HLA heavy chain + peptide complex → Golgi → cell surface.
+  Immunoproteasome: Inducible by IFN-gamma; altered cleavage specificity → better antigenic peptides.
+
+Cross-presentation:
+  DCs can load exogenous antigens onto MHC class I → prime CD8+ T cells against extracellular pathogens.
+  Pathways: Retrograde transport from phagosome to cytosol → proteasome → TAP → MHC I.
+    Or: Vacuolar pathway (protease + MHC I in endolysosome).
+  Critical for: Anti-viral immunity, antitumour responses, vaccines.
+
+MHC Class II Pathway (exogenous/endolysosomal):
+  Extracellular proteins → endocytosis → endosomes (acidification) → lysosomal proteases
+  (cathepsins B, D, L, S) → peptides (13–25 aa) → MHC II loaded in late endosomal compartment (MIIC).
+  CLIP (Class II-associated Invariant chain Peptide): Blocks peptide binding groove until MIIC.
+  HLA-DM: Chaperone; removes CLIP; facilitates optimal peptide loading.
+  HLA-DO: Inhibits DM; expressed in B cells and thymus.
+
+3. TRANSPLANTATION IMMUNOLOGY
+--------------------------------
+Rejection Mechanisms:
+  Direct recognition: Recipient T cells recognise intact donor MHC (with donor peptides) on graft APCs.
+    High precursor frequency T cells → main driver of acute rejection. "Missing self" NK pathway.
+  Indirect recognition: Donor antigens shed from graft → processed by recipient APCs → peptides
+    presented on recipient MHC → recipient T cell response. Drives chronic rejection.
+  Hyperacute rejection: Pre-formed antibodies (ABO, HLA) → complement activation → vascular thrombosis → graft loss within minutes-hours.
+  Acute rejection: T cell-mediated (cellular) within days-months. Responds to immunosuppression.
+  Chronic rejection: Months-years; intimal hyperplasia; antibody-mediated (ABMR); fibrosis.
+
+HLA Matching:
+  More HLA matches → better graft survival. Full 10/10 match ideal (HLA-A, B, C, DRB1, DQ).
+  Kidney transplant: DR mismatch most important. Each mismatch → reduced 5-year graft survival.
+  Crossmatch: Recipient serum + donor lymphocytes → detect preformed anti-HLA antibodies.
+    Positive crossmatch (cytotoxic) → contraindication to transplant.
+  Virtual crossmatch: Compare recipient anti-HLA antibodies (specificity) vs donor HLA typing.
+  DSAs (Donor-Specific Antibodies): Measured by Luminex; correlated with ABMR risk.
+
+Immunosuppression:
+  Induction: High-dose at time of transplant. IL-2 receptor antibodies (basiliximab, daclizumab);
+    anti-thymocyte globulin (ATG) depletes T cells.
+  Maintenance:
+    Calcineurin inhibitors (tacrolimus/FK506, ciclosporin): Inhibit calcineurin → NFAT dephosphorylation
+      fails → IL-2 transcription inhibited → T cell activation blocked.
+    mTOR inhibitors (sirolimus, everolimus): Block IL-2 signalling → T cell proliferation.
+    Antiproliferatives (mycophenolate mofetil): Blocks IMPDH → ↓ guanosine nucleotides → lymphocyte-specific.
+    Corticosteroids: Broad anti-inflammatory; suppress cytokines.
+  Rejection treatment: High-dose methylprednisolone; ATG; plasmapheresis (for ABMR); rituximab.
+
+4. NK CELLS & INNATE LYMPHOID CELLS
+--------------------------------------
+Natural Killer (NK) Cells:
+  Innate lymphocytes; no rearranged receptors; recognise "missing self" and "induced self."
+  Missing self: Cells that lose MHC I (virus-infected, cancer) → NK cells kill.
+    KIRs (Killer Immunoglobulin-like Receptors): Inhibitory KIRs recognise MHC I → inhibit NK.
+    NKG2A/CD94: Inhibitory; recognises HLA-E.
+    If MHC I lost → inhibitory signals disappear → NK cell activated.
+  Induced self: Stress ligands (MICA/B, ULBPs) upregulated on transformed cells → bind NKG2D (activating receptor).
+  Activation: NKG2D, NCRs (NKp30/44/46), NKp80, DNAM-1 → cytotoxicity + cytokine production.
+  Cytotoxicity: Perforin + granzymes → apoptosis; ADCC via CD16/FcgammaRIII.
+  KIR/HLA genetics: KIR gene content highly variable. KIR-HLA combinations influence NK alloreactivity,
+    HIV resistance, pregnancy success, HSCT outcomes.
+
+Innate Lymphoid Cells (ILCs):
+  Parallel to T helper cell subsets but no antigen-specific receptor.
+  ILC1: IFN-gamma; intracellular pathogens; parallel to Th1.
+  ILC2: IL-4, IL-5, IL-13; helminths, allergic inflammation; parallel to Th2.
+  ILC3: IL-17, IL-22; extracellular bacteria/fungi, gut immunity; parallel to Th17.
+  NK cells: Cytotoxic ILC; parallel to CD8+ T cells.
+  ILC2 in allergy: Activated by TSLP, IL-25, IL-33 from epithelial cells → Th2 cytokines → eosinophils, IgE.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ANTIBODY DIVERSITY GENERATION
+-----------------------------------
+V(D)J Recombination:
+  Immunoglobulin (Ig) and TCR genes assembled from gene segments in lymphocyte development.
+  Heavy chain: ~44 VH + ~27 DH + 6 JH segments → combinatorial diversity.
+  Light chain (kappa): ~40 Vk + 5 Jk.
+  RAG1/RAG2 recombinase: Creates DNA DSBs at RSS (recombination signal sequences);
+    Artemis + Ku70/80 + DNA-PKcs: NHEJ repair; but imprecise → junctional diversity (N and P nucleotides).
+
+Somatic Hypermutation (SHM):
+  Activated B cells in germinal centres (GCs). AID (Activation-Induced Cytidine Deaminase)
+  → deaminates cytosine → uracil in Ig variable regions → error-prone repair → mutations.
+  Rate: ~10^-3 mutations/bp/division (10^6× background). Most mutations in CDR (Complementarity Determining Regions).
+  Affinity maturation: B cells with higher-affinity BCRs outcompete others for T cell help → selected → memory + plasma cells.
+  GC reaction: B cells cycle between dark zone (proliferation + SHM) and light zone (selection by FDC antigen + T helper cells).
+
+Class Switch Recombination (CSR):
+  AID-mediated; switches Ig constant region → changes antibody effector function.
+  IgM → IgG (most abundant), IgA (mucosal), IgE (allergy/parasites).
+  Cytokine signals: IL-4 → IgE/IgG1; IL-10 → IgA; IFN-gamma → IgG3; TGF-beta → IgA/IgG4.
+
+6. COMPLEMENT GENETICS & DISEASE
+-----------------------------------
+Complement gene polymorphisms → many immune diseases.
+  C3 polymorphisms: Slow vs Fast alleles affect complement activation strength.
+  C4 copy number variation: C4A and C4B gene duplications. Low C4A → SLE risk.
+  Factor H (CFH): Regulates alternative pathway. CFH Y402H variant → AMD (macular degeneration) risk; increased C3b deposition on RPE.
+  MASP-2: Component of lectin pathway. Deficiency → recurrent infections.
+  C3 deficiency: Recurrent encapsulated bacteria (Streptococcus pneumoniae, Haemophilus influenzae, Neisseria meningitidis).
+  Terminal complement (C5-C9) deficiency: Specifically prone to Neisseria meningitidis.
+  Paroxysmal nocturnal haemoglobinuria (PNH): PIGA mutation → absent GPI-anchored CD55/CD59 on RBCs
+    → uncontrolled complement → haemolysis.
+    Eculizumab (anti-C5): Transformed PNH treatment; prevents haemolysis.
+    Ravulizumab (long-acting anti-C5): Monthly vs eculizumab's biweekly.
+
+[FUTURE] HLA-matched cell therapy:
+  iPSC-derived "universal donor" cell lines: CRISPR knockout HLA class I + II + B2M + CIITA;
+  express NK-inhibitory ligands (HLA-E with single peptide) → avoid both T cell and NK cell rejection.
+  Being developed for: Universal iPSC-derived cardiomyocytes, islets, NK cells, CAR-T cells.
+  Eliminates need for immunosuppression if successful. Early clinical trials expected 2025–2028.
+
+================================================================================

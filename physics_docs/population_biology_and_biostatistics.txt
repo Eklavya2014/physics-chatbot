@@ -1,0 +1,185 @@
+================================================================================
+              POPULATION BIOLOGY & BIOSTATISTICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. POPULATION BIOLOGY FUNDAMENTALS
+------------------------------------
+A population is a group of individuals of the same species occupying the same area
+at the same time, capable of interbreeding.
+
+Population Characteristics:
+  Population size (N)     : Total number of individuals.
+  Population density      : Individuals per unit area/volume.
+  Dispersion pattern      : Clumped (most common), uniform, random.
+  Age structure           : Distribution of individuals across age classes.
+  Sex ratio               : Proportion of males to females.
+  Birth rate (b)          : Births per individual per time unit.
+  Death rate (d)          : Deaths per individual per time unit.
+  Immigration (i)         : Individuals moving in.
+  Emigration (e)          : Individuals moving out.
+  Rate of increase: r = b - d + i - e. If r > 0: growing; r < 0: declining; r = 0: stable.
+
+Survivorship Curves:
+  Type I   : Low early mortality; high survival until old age; then rapid death. (Humans, elephants)
+  Type II  : Constant mortality rate throughout life. (Birds, squirrels, hydra)
+  Type III : Very high early mortality; survivors live long. (Fish, oysters, many plants)
+
+1.1 LIFE TABLES
+----------------
+Life tables track survival and reproduction through age classes.
+  lx : Probability of surviving from birth to age x.
+  mx : Average number of female offspring per female at age x.
+  Net Reproductive Rate R0 = Σ(lx × mx) = average number of offspring per female.
+    R0 > 1: Population growing. R0 = 1: Stable. R0 < 1: Declining.
+  Generation time T = Σ(x × lx × mx) / R0.
+  Intrinsic rate of increase r ≈ ln(R0) / T.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. POPULATION GENETICS IN DEPTH
+---------------------------------
+Genetic Drift in Small Populations:
+  Effective population size (Ne): Size of ideal population with same genetic drift.
+  Ne < N always (bottlenecks, unequal sex ratio, variance in offspring number).
+  Genetic drift rate: ~1/(2Ne) per generation.
+  Inbreeding coefficient F: Probability that two alleles are identical by descent.
+    F increases as population size decreases → inbreeding depression (homozygosity → deleterious recessive phenotypes).
+  Minimum Viable Population (MVP): ~500–5,000 individuals for long-term genetic viability.
+
+Mutation-Selection Balance:
+  Deleterious mutations removed by selection but replenished by mutation.
+  At equilibrium: q (mutant allele freq) ≈ √(μ/s) for recessive; μ/s for dominant.
+  Where μ = mutation rate, s = selection coefficient.
+  Explains persistence of rare recessive diseases.
+
+Molecular Evolution:
+  Neutral theory (Kimura, 1968): Most molecular variation is neutral, fixed by drift.
+  Nearly-neutral theory (Ohta): Slightly deleterious mutations — drift vs selection
+    depends on Ne. Small Ne → slightly deleterious mutations can fix by drift.
+  Rate of neutral evolution = mutation rate (independent of population size).
+  Positive selection: dN/dS > 1 (nonsynonymous > synonymous substitution rate) → adaptive evolution.
+  Purifying selection: dN/dS < 1 → functional constraint on protein sequence.
+  Tests for selection: Tajima's D; McDonald-Kreitman test; selective sweep detection (iHS, XP-EHH).
+
+3. METAPOPULATION THEORY
+--------------------------
+Metapopulation: Network of spatially separated local populations connected by dispersal.
+Levins Model:
+  dp/dt = m × p × (1-p) - e × p
+  p = fraction of patches occupied; m = colonisation rate; e = extinction rate.
+  Equilibrium p* = 1 - (e/m). Metapopulation persists only if m > e.
+  Rescue effect: Immigrants from occupied patches reduce local extinction probability.
+  Species-Area Relationship: S = c × A^z (S = species, A = area, z ≈ 0.25–0.35).
+    Fragmentation → smaller patches → fewer species → conservation implications.
+
+Island Biogeography (MacArthur & Wilson, 1967):
+  Species richness = immigration rate and extinction rate balance.
+  Large islands + close to mainland → more species.
+  Turnover: Continuous extinction + colonisation even at equilibrium.
+  Applied to habitat fragments → minimum patch size for conservation.
+
+4. BIOSTATISTICS — CORE CONCEPTS
+-----------------------------------
+Descriptive Statistics:
+  Mean (x̄): Arithmetic average. Sensitive to outliers.
+  Median: Middle value. Robust to outliers.
+  Mode: Most frequent value.
+  Variance (s²): Average squared deviation from mean.
+  Standard deviation (s): √variance. Same units as data.
+  Standard error (SE): s/√n. Uncertainty of the mean estimate.
+  95% Confidence Interval: x̄ ± 1.96×SE (for large n). Range likely containing true mean.
+
+Probability Distributions:
+  Normal (Gaussian): Bell-shaped; symmetric; mean = median = mode.
+    68-95-99.7 rule: 68% within 1SD, 95% within 2SD, 99.7% within 3SD.
+  Binomial: Discrete; n trials; p probability each. Mean = np; var = np(1-p).
+  Poisson: Count data; rare events. Mean = variance = λ.
+  t-distribution: Like normal but heavier tails; used for small samples.
+  Chi-squared: Sum of squared standard normals; used for categorical data.
+  F-distribution: Ratio of variances; used in ANOVA.
+
+Hypothesis Testing:
+  Null hypothesis (H0): No effect/difference. Alternative (H1): Effect exists.
+  P-value: Probability of data as extreme or more extreme if H0 true.
+    p < 0.05: Reject H0 (conventional threshold). Not probability H0 is true.
+  Type I error (alpha): Reject true H0. False positive. α = 0.05.
+  Type II error (beta): Fail to reject false H0. False negative. β = 0.20 (typical).
+  Power: 1 - β = probability of detecting true effect. Increases with: larger n, larger effect, lower variability.
+  Multiple testing correction: Bonferroni (α/n tests); FDR (Benjamini-Hochberg).
+
+Key Statistical Tests:
+  t-test (independent, paired): Compare means; normally distributed; two groups.
+  Mann-Whitney U: Non-parametric equivalent of independent t-test.
+  ANOVA: Compare means across 3+ groups. Post-hoc: Tukey, Bonferroni.
+  Chi-squared test: Association between categorical variables. Expected vs observed.
+  Fisher's exact test: Small sample categorical data.
+  Pearson correlation (r): Linear association between two continuous variables (-1 to +1).
+  Spearman (rho): Rank-based; non-parametric correlation.
+  Simple/Multiple linear regression: Predict continuous outcome from predictor(s).
+  Logistic regression: Predict binary outcome; outputs odds ratios.
+  Kaplan-Meier: Survival analysis; time to event.
+  Cox proportional hazards: Regression for survival data; hazard ratios.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. QUANTITATIVE GENETICS
+--------------------------
+Heritability:
+  H² (broad): Proportion of phenotypic variance due to all genetic variance.
+    H² = VG / VP = (VA + VD + VI) / (VA + VD + VI + VE)
+  h² (narrow): Proportion due to additive genetic variance only.
+    h² = VA / VP. Predicts response to selection.
+  Response to selection: R = h² × S (S = selection differential).
+  Examples: h² for height ~0.8; intelligence ~0.5–0.8; personality traits ~0.3–0.5.
+
+QTL (Quantitative Trait Loci) Mapping:
+  Localise genomic regions contributing to continuous traits.
+  Linkage mapping: F2 or backcross progeny; ANOVA of trait vs marker genotype.
+  GWAS: Association of SNPs with trait in unrelated individuals.
+  Polygenic risk scores (PRS): Weighted sum of risk alleles across many loci.
+    PRS for height explains ~25% variance; for coronary artery disease ~10%.
+  Mendelian randomisation: Use genetic variants as instrumental variables to
+    establish causal effects of exposures (like BMI) on outcomes (like CHD).
+
+6. CONSERVATION GENETICS
+--------------------------
+Genetic Diversity Metrics:
+  Ho (observed heterozygosity): Proportion of heterozygous individuals.
+  He (expected heterozygosity): Expected under HWE = 1 - Σpi².
+  Allelic richness: Number of alleles per locus.
+  Fst (fixation index): Genetic differentiation between populations (0=none; 1=complete).
+    Fst = (HT - HS) / HT. High Fst → strong population structure → limited gene flow.
+
+Genetic Erosion:
+  Small isolated populations → genetic drift → loss of alleles → reduced adaptive potential.
+  Inbreeding depression: Recessive deleterious alleles expressed → reduced fitness.
+  Outbreeding depression: Crossing highly diverged populations → disruption of local adaptations.
+  Genetic rescue: Deliberate introduction of new individuals → restore genetic diversity.
+    Florida panther: Genetic rescue with 8 Texas pumas (1995) → dramatic demographic recovery.
+
+Ancient DNA in Conservation:
+  Historical DNA from museum specimens reveals past genetic diversity.
+  Can quantify genetic erosion since human impact began.
+  Thylacine (Tasmanian tiger): Genome reconstructed → de-extinction program (Colossal Biosciences).
+  Woolly mammoth: Genome 95%+ complete; cold-adaptation genes identified; Colossal program
+    aims to produce cold-adapted Asian elephant × mammoth hybrid (Mammophant) by 2028.
+
+[STATISTICAL NOTE] Replication crisis in biology:
+  Many published findings fail to replicate (e.g., Open Science Collaboration 2015: only 36%
+  of psychology studies replicated). In biology/medicine: NEJM 2011 showed <25% of landmark
+  cancer biology papers replicated (Begley & Ellis).
+  Causes: Small sample sizes; p-hacking; HARKing (hypothesising after results known);
+  publication bias; flexible data analysis; lack of pre-registration.
+  Solutions: Pre-registration; larger samples; open data; reproducible analysis pipelines;
+  registered reports; multilab replications; Bayesian statistics.
+
+================================================================================

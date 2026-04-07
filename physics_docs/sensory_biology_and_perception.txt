@@ -1,0 +1,191 @@
+================================================================================
+                  SENSORY BIOLOGY & PERCEPTION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. SENSES & SENSORY RECEPTORS
+--------------------------------
+Sensory biology studies how organisms detect and interpret stimuli from their
+internal and external environments. All sensory perception begins with transduction:
+converting a stimulus into an electrical signal (action potential).
+
+Sensory Receptor Types:
+  Mechanoreceptors   : Respond to physical deformation/pressure.
+    Meissner's corpuscles (light touch), Merkel discs (sustained pressure), Pacinian corpuscles
+    (vibration), Ruffini endings (skin stretch). Hair cells (hearing, balance, lateral line).
+  Thermoreceptors    : Respond to temperature changes.
+    Warm receptors: C fibres (TRPV1–4). Cold receptors: A-delta fibres (TRPM8).
+  Nociceptors        : Detect potentially damaging stimuli (pain). A-delta (sharp) + C fibres (dull).
+  Photoreceptors     : Respond to light. Rods (dim light), cones (colour). Opsins (GPCR family).
+  Chemoreceptors     : Respond to chemical stimuli. Olfactory, taste, carotid body (O2/CO2/pH).
+  Electroreceptors   : Detect electric fields. Sharks, electric eels, platypus.
+  Magnetoreceptors   : Detect Earth's magnetic field. Birds, sea turtles, monarch butterflies.
+  Proprioceptors     : Detect body position/movement. Muscle spindles, Golgi tendon organs.
+  Osmoreceptors      : Detect changes in osmolarity. Hypothalamus.
+  Baroreceptors      : Detect blood pressure changes. Carotid sinus, aortic arch.
+
+Receptor Physiology:
+  Generator potential: Graded receptor potential proportional to stimulus intensity.
+  Adequate stimulus: The specific stimulus each receptor type is tuned to respond to.
+  Adaptation: Tonic receptors (sustained response); Phasic receptors (respond to change only).
+    Pacinian corpuscle: Fast-adapting; responds to onset/offset, not sustained pressure.
+    Merkel discs: Slow-adapting; sustained response to steady pressure.
+  Sensory coding: Rate coding (frequency of APs); population coding (pattern across neurons).
+  Weber's Law: ΔI/I = k (just noticeable difference proportional to stimulus intensity).
+  Fechner's Law: Perceived sensation ∝ log(stimulus intensity).
+  Stevens' Power Law: S = k × I^n (perceived sensation = constant × intensity^exponent).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. VISION IN DEPTH
+-------------------
+Eye Anatomy:
+  Cornea: Outer transparent layer; 70% of light focusing.
+  Lens: Adjustable focusing (accommodation); crystallin proteins.
+  Retina: Contains photoreceptors + several neuron layers.
+  Fovea: Centre of visual field; highest density of cones (0 rods); highest acuity.
+  Optic disc (blind spot): Where optic nerve exits; no photoreceptors.
+
+Phototransduction:
+  Rods (scotopic vision, dim light): Rhodopsin = opsin + 11-cis-retinal.
+    Light → retinal isomerises to all-trans → opsin activates → metarhodopsin II →
+    activates transducin (Gt, a G-protein) → activates PDE6 (cGMP phosphodiesterase) →
+    cGMP decreases → cyclic nucleotide-gated (CNG) channels close → less Na+/Ca2+ influx →
+    membrane hyperpolarises → less glutamate release → ON bipolar cells activated (disinhibited).
+  Cones: Three types (L: 560nm red; M: 530nm green; S: 420nm blue).
+    Trichromacy: Colour perception from relative stimulation of 3 cone types.
+    Colour blindness: Most common Daltonism = L/M cone opsin gene mutation on X chromosome.
+    Red-green colour blindness: ~8% males; ~0.4% females.
+
+Retinal Processing:
+  Photoreceptors → Bipolar cells → Retinal ganglion cells (RGCs) → Optic nerve.
+  Horizontal cells: Lateral inhibition (sharpen contrast at borders).
+  Amacrine cells: Regulate bipolar → RGC transmission; motion detection.
+  RGC types: M-cells (magnocellular): Motion, depth, low contrast.
+    P-cells (parvocellular): Colour, fine detail, high contrast.
+    ipRGCs (intrinsically photosensitive, melanopsin): Circadian entrainment, pupil reflex.
+
+Visual Pathway:
+  RGCs → optic nerve → optic chiasm (nasal fibres cross; temporal stay ipsilateral) →
+  optic tract → LGN (lateral geniculate nucleus of thalamus) → optic radiation →
+  primary visual cortex (V1, striate cortex, Brodmann area 17, calcarine sulcus).
+  Dorsal stream ("where/how"): V1 → V2 → V5/MT → parietal cortex. Spatial, motion, action.
+  Ventral stream ("what"): V1 → V2 → V4 → V8 → IT cortex. Object, face, colour recognition.
+
+3. HEARING & VESTIBULAR SYSTEM
+--------------------------------
+Outer Ear → Tympanic Membrane → Middle Ear Ossicles (Malleus-Incus-Stapes) →
+Oval Window → Cochlea (fluid-filled spiral, 2.5 turns).
+
+Cochlear Mechanics:
+  Sound waves → pressure waves in perilymph → basilar membrane vibrates.
+  Tonotopy: High frequency (base, stiff), low frequency (apex, floppy).
+  Hair cells (on organ of Corti on basilar membrane):
+    Outer hair cells: Electromotile (prestin, voltage-dependent); cochlear amplification.
+    Inner hair cells: Sensory transduction; afferent input to auditory nerve.
+  Mechanoelectrical transduction:
+    Basilar membrane deflects → stereocilia (of hair cells) tilt → tip links pull open
+    MET channels (TMC1/TMC2) → K+ influx (from endolymph, high K+) + Ca2+ → depolarisation
+    → basolateral Ca2+ channels open → neurotransmitter (glutamate) → spiral ganglion neurons.
+
+Auditory Pathway:
+  Cochlear nerve → Cochlear nucleus → Superior olivary nucleus (binaural comparison for sound localisation)
+  → Inferior colliculus (midbrain) → Medial geniculate nucleus (thalamus) → Primary auditory cortex (A1).
+  Interaural time difference (ITD): <700 µs detected by MSO → horizontal sound localisation.
+  Interaural level difference (ILD): Intensity difference → LSO → high frequency localisation.
+
+Vestibular System:
+  Semicircular canals (3, orthogonal): Detect rotational acceleration. Endolymph inertia → cupula deflected → hair cells.
+  Otolith organs: Utricle (horizontal) + Saccule (vertical): Detect linear acceleration + gravity.
+    Otoliths (calcium carbonate crystals on gelatinous membrane) → inertia → shear force on hair cells.
+  Vestibulo-ocular reflex (VOR): Stabilises gaze during head movements. Latency <5 ms.
+  Vestibulo-spinal reflex: Maintains posture and balance.
+
+4. OLFACTION & TASTE
+---------------------
+Olfaction (Smell):
+  ~400 functional olfactory receptor (OR) genes in humans (~1,000 in mice — humans lost ~60%).
+  ORs: GPCRs; expressed in olfactory sensory neurons in olfactory epithelium.
+  ~10 million ORs in nose; each neuron expresses only ONE OR type (one neuron-one receptor rule).
+  Buck & Axel (Nobel 2004): Identified OR gene family; decoded olfactory system.
+  Odorant → OR → Golf (specific Galpha) → adenylyl cyclase III → cAMP → CNG channel → Ca2+/Na+ → AP.
+  Olfactory bulb: Glomeruli (axons from same OR type converge) → mitral/tufted cells →
+    piriform cortex, amygdala, entorhinal cortex (direct access to limbic system — emotion + memory).
+  Olfactory coding: Combinatorial; each odorant activates a specific pattern of receptors.
+
+Gustation (Taste):
+  5 basic tastes: Sweet, Salty, Sour, Bitter, Umami (+Fat = potential 6th taste).
+  Taste cells in taste buds on tongue papillae (fungiform, foliate, circumvallate).
+  Sweet (T1R2+T1R3): GPCR; sucrose, glucose, fructose, saccharin, aspartame.
+  Umami (T1R1+T1R3): Glutamate, aspartate, IMP.
+  Bitter (T2R family, ~25 genes): Diverse; many toxic compounds → aversion.
+  Salty: ENaC (epithelial Na+ channel) → Na+ influx → depolarisation.
+  Sour: H+ ions; OTOP1 (proton channel) in type III taste cells → Ca2+ release.
+  Taste signal → chorda tympani (VII) or glossopharyngeal (IX) → nucleus tractus solitarius → thalamus → gustatory cortex (insula/frontal operculum).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PAIN BIOLOGY (NOCICEPTION)
+-------------------------------
+Nociceptors: Free nerve endings in skin, muscle, viscera, joints.
+  A-delta fibres: Myelinated; fast sharp pain (first pain); mechanical + thermal nociception.
+  C fibres: Unmyelinated; slow burning pain (second pain); polymodal (chemical, thermal, mechanical).
+
+Peripheral Sensitisation:
+  Tissue damage → inflammatory mediators: PGE2, bradykinin, ATP, NGF, histamine, serotonin.
+  These sensitise nociceptors: ↓threshold (↑TRPV1 sensitivity); ↑spontaneous activity.
+  Primary hyperalgesia: Reduced pain threshold at injury site.
+
+Central Sensitisation:
+  Repeated C-fibre stimulation → spinal dorsal horn neurons (wide dynamic range, WDR):
+    Glutamate + SP → NMDA receptor activation → remove Mg2+ block → long-term potentiation-like change.
+    Windup: Increasing AP response to same stimulus → central sensitisation.
+    Allodynia: Touch → pain (Abeta fibres now activate pain pathways).
+  Descending modulation: Periaqueductal grey (PAG) → Raphe nuclei + locus coeruleus →
+    release of serotonin + noradrenaline in spinal cord → inhibit pain transmission.
+
+TRP Channels in Pain:
+  TRPV1: Capsaicin receptor; activated by heat >43°C; protons; endocannabinoids.
+    Paradox: Chronic TRPV1 activation → desensitisation → analgesia (capsaicin cream).
+  TRPA1: Cold + chemical nociception; mustard oil, allicin (garlic); menthol (partial agonist).
+  TRPM8: Cold thermoreceptor; menthol receptor; activates at <26°C.
+  TRPV2: High threshold heat (>52°C).
+
+6. ELECTRORECEPTION & MAGNETORECEPTION
+-----------------------------------------
+Electroreception:
+  Passive: Ampullae of Lorenzini in sharks → detect bioelectric fields of prey (<1 µV).
+    Tuberous organs: In weakly electric fish → detect distortions of self-generated field.
+  Active electroreception (Electric fish): Generate electric field; sense distortions.
+    Weakly electric fish: Gymnarchids (wave; fixed EOD frequency); Mormyrids (pulse EOD).
+    Electrocytes: Modified muscle cells; generate electric discharge.
+    Electric eel (Electrophorus electricus): Up to 860V from electrocytes in series.
+    Apteronotus: Jamming avoidance response — recognises and avoids interference with conspecifics.
+
+Magnetoreception:
+  Mechanisms (controversial/debated):
+    Magnetite-based: Magnetic crystals in tissue → deflect → mechanoreceptor signal.
+      Found: Salmon noses, bird beaks (trigeminal nerve pathway), sea turtle brain.
+    Cryptochrome-based (radical pair mechanism): Blue-light sensitive flavoprotein in retina.
+      FAD → radical pair state → lifetime/spin state modulated by Earth's magnetic field.
+      Provides compass sense (inclination, not polarity). Birds, Drosophila, plants.
+  Magnetic map: Sea turtles use magnetic field intensity + inclination angle as GPS-like coordinates.
+  Bar-tailed godwit: Migrates 11,000 km nonstop Alaska → New Zealand; uses magnetic sense among others.
+
+[CLINICAL LINK] Deafness genetics:
+  >100 genes for hereditary hearing loss. Most common: GJB2 (Connexin 26) — gap junctions in cochlea;
+  autosomal recessive; 50% of congenital sensorineural deafness.
+  Cochlear implant: Bypass damaged hair cells → electrode array in scala tympani →
+  direct stimulation of auditory nerve. 22 electrodes encode frequency place map.
+  ~700,000 implanted worldwide; most effective neural prosthesis developed.
+  Gene therapy for deafness: AAV-mediated OTOF (otoferlin) delivery → restored hearing in congenitally deaf children (Nantes, China 2024 — breakthrough results).
+
+================================================================================

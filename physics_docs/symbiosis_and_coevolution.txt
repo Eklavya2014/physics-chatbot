@@ -1,0 +1,163 @@
+================================================================================
+                    SYMBIOSIS & COEVOLUTION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. SYMBIOSIS
+-------------
+Symbiosis (Greek: "living together"): A close, persistent, intimate relationship
+between two or more different species. All symbiotic relationships fall on a spectrum
+from highly beneficial to highly harmful.
+
+Types of Symbiosis:
+  Mutualism      : Both species benefit (+/+). Most productive; often highly coevolved.
+  Commensalism   : One benefits, other unaffected (+/0). Rare in strict sense.
+  Parasitism     : One benefits, other harmed (+/-). Most common symbiosis in nature.
+  Competition    : Both harmed (-/-). Not always considered symbiosis.
+  Amensalism     : One harmed, other unaffected (0/-). Penicillium kills bacteria.
+  Predation      : Consumer kills and eats prey; sometimes considered parasitism.
+
+1.1 MUTUALISM EXAMPLES
+------------------------
+Obligate mutualism (neither partner can survive without the other):
+  - Mycorrhizal fungi + plants: ~450 million years co-evolution. Plant provides C;
+    fungus provides P, N, water. Plants without mycorrhizae grow poorly on low-P soils.
+  - Rhizobium + legumes: N2 fixation; 12–40% crop nitrogen from symbiosis in well-nodulated legumes.
+  - Yucca moth + Yucca plant: Moth pollinates yucca; lays eggs in flower; larvae eat some seeds.
+  - Ants + acacia trees: Ants defend tree against herbivores; tree provides food (Beltian bodies)
+    + shelter (hollow thorns). Ants prune competing vegetation around tree.
+  - Bobtail squid + Aliivibrio fischeri: Bioluminescent bacteria in light organ; squid provides
+    nutrients + housing; bacteria produce counter-illumination camouflage.
+  - Fig + fig wasp: Each fig species has unique fig wasp pollinator. Wasp lays eggs in fig;
+    pollinates flowers; ~80 million years co-evolution.
+  - Coral + zooxanthellae: Covered in marine biology document.
+  - Termites + gut microbiome: Protists + bacteria in hindgut ferment cellulose → energy.
+
+Facultative mutualism (both benefit but can survive without the other):
+  - Cleaner wrasse + client fish: Removes ectoparasites from client. Cleaning stations.
+  - Oxpecker + large mammals: Removes ticks from buffalo/rhino (also disputed — feeds on wounds).
+  - Cattle egret + large herbivores: Feeds on insects disturbed by grazing animals.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. COEVOLUTION
+---------------
+Coevolution: Reciprocal evolutionary changes between two or more species due to
+their ecological interaction. Each species acts as a selective pressure on the other.
+
+Coevolutionary Arms Races:
+  Host-Parasite: Parasite evolves to exploit host → host evolves resistance →
+  parasite evolves counter-resistance (Red Queen hypothesis).
+  Predator-Prey: Cheetah speed co-evolves with Thomson's gazelle escape speed.
+  Plant-Herbivore: Plants evolve toxins (alkaloids, glucosinolates) → herbivores
+    evolve detoxification enzymes → plants evolve more potent toxins.
+    Example: Monarch butterfly detoxifies milkweed cardenolides → specialist herbivore.
+    Specialist vs generalist herbivores: Specialists tolerate host toxins; generalists avoid.
+
+Diffuse Coevolution:
+  Most coevolution is not pairwise — involves multiple species.
+  Pollination syndromes: Flower shape, colour, scent, reward type adapted to pollinator guild.
+    Bee flowers: Yellow/blue; UV guides; landing platform; scent; open during day.
+    Moth flowers: White; strong night scent; deep tube (hawkmoth tongue).
+    Bird flowers: Red (birds lack smell sensitivity); copious nectar; sturdy perch/none.
+    Bat flowers: Dull; musty smell; large; open at night; robust.
+
+3. ENDOSYMBIOSIS
+-----------------
+Secondary endosymbiosis: Eukaryote engulfs another eukaryote → multilayered chloroplasts.
+  Cryptophytes, diatoms, dinoflagellates, euglenoids: All have secondary plastids.
+  Kleptoplasty: Sea slugs (Elysia chlorotica) retain chloroplasts from algae → remain
+  photosynthetically active for months; horizontal gene transfer of algal genes into sea slug genome.
+
+Wolbachia:
+  Gram-negative alpha-proteobacterium; intracellular endosymbiont of ~60–70% of insect species.
+  Maternally inherited (in cytoplasm of eggs). Evolution of selfish element:
+  Cytoplasmic incompatibility (CI): Wolbachia-infected males cannot successfully fertilise
+  uninfected females → infected females have reproductive advantage → Wolbachia spreads.
+  Male killing: Kills male offspring → more daughters (infected) → more Wolbachia spread.
+  Feminisation: Converts genetic males into females.
+  Parthenogenesis induction: Unfertilised eggs develop into females.
+  Obligate mutualism: Some species cannot reproduce without Wolbachia (filarial nematodes;
+  some Drosophila populations).
+  Biocontrol: Wolbachia reduces dengue/Zika/malaria transmission in mosquitoes.
+
+4. POLLINATION BIOLOGY
+------------------------
+~87% of flowering plant species are pollinated by animals. Co-evolutionary relationship
+between flowers and pollinators is one of the great drivers of angiosperm diversification.
+
+Pollinator Types & Adaptations:
+  Honeybees: Most important agricultural pollinator. Communicate flower location (waggle dance).
+    Eusocial; colonial; carry pollen in corbiculae (pollen baskets) on hindlegs.
+    Colour vision: UV, blue, green (not red). Favourite flowers: Blue, yellow, white.
+  Bumblebees: Important wild pollinators. Buzz pollination (sonication): Vibrate thorax at
+    resonant frequency of anthers → releases pollen trapped in poricidal anthers (tomato, blueberry).
+  Butterflies: Long tongues; prefer clustered flowers; important for milkweed, lantana.
+  Hawkmoths: Long proboscis; hover while feeding; night-blooming flowers with strong scent.
+  Hummingbirds: New World only; hover; prefer red tubular flowers with copious nectar.
+  Bats: Old World fruit bats (Pteropodidae) pollinate >500 plant species including banana, mango, durian.
+
+Decline of Pollinators:
+  Colony collapse disorder (CCD) in honeybees: Varroa mite + Nosema + neonicotinoids + habitat loss.
+  Wild bee decline: ~40% wild bee species threatened. Loss of wildflowers; pesticides; parasites; climate.
+  Economic impact: >€150 billion/year crop production value dependent on pollinators.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MOLECULAR COEVOLUTION
+--------------------------
+Gene-for-Gene Hypothesis (Flor, 1956):
+  In plant-pathogen interactions: For each R (resistance) gene in the host, there is a
+  corresponding Avr (avirulence) gene in the pathogen.
+  Pathogen Avr protein detected by plant R protein (NBS-LRR) → ETI → hypersensitive response.
+  Pathogen evolves to lose/modify Avr gene → escape ETI → plant evolves new R gene.
+  Arms race at molecular level: Rapidly evolving NBS-LRR gene families; Avr genes under
+  strong diversifying selection. Evidenced by patterns of positive selection in both.
+
+Reciprocal Evolution of Immune Receptors:
+  MHC polymorphism: Pathogen diversity → strong diversifying selection on MHC genes →
+  humans have most diverse MHC of any known species.
+  Host antiviral genes (restriction factors) under extreme positive selection:
+    TRIM5alpha, APOBEC3G (HIV restriction), MX1 (influenza), tetherin/BST-2.
+    Viral antagonists (HIV Vif degrades APOBEC3G) coevolve with host restriction.
+
+Endogenous Retroviruses (ERVs):
+  ~8% of human genome consists of retrovirally-derived sequences (vs ~1.5% protein-coding).
+  Ancient viral integrations now "domesticated" as host genes:
+    Syncytins (ERVW-1): Fusogenic envelope protein → syncytiotrophoblast formation in placenta.
+    HARBI1, PGBD5: Transposase-derived genes → DNA repair functions.
+    Arc (Activity-Regulated Cytoskeleton): Capsid-like protein → transports mRNA between neurons
+    → critical for synaptic plasticity; evolved from Ty3/gypsy retrotransposons.
+
+6. MICROBIOME AS EXTENDED PHENOTYPE
+--------------------------------------
+The microbiome influences host evolution:
+  Hologenome theory (Zilber-Rosenberg & Rosenberg): Host + microbiome = holobiont;
+  selection acts on holobiont as a unit. Heritable microbiome → part of extended phenotype.
+
+Host-Microbiome Coevolution Evidence:
+  Gut microbiome composition partially heritable (H² ~15–40%); host genetics influence
+  microbial composition (e.g., LCT gene → lactose → Bifidobacterium; FUT2 secretor status
+  → Bifidobacterium).
+  Bifidobacterium infantis + human milk oligosaccharides (HMOs): B. infantis has evolved
+  specific transporters to preferentially consume HMOs → advantage in breastfed infants.
+  Modern hygiene disrupts coevolution: Loss of ancestral microbiome members (Helicobacter pylori,
+  Faecalibacterium prausnitzii) linked to autoimmunity, allergy, IBD (disappearing microbiota hypothesis — Blaser).
+
+[EVOLUTIONARY PERSPECTIVE] The boundary between "organism" and "symbiont" is blurred.
+  Mitochondria were once free-living bacteria; chloroplasts were once cyanobacteria;
+  ERVs are ancient viruses now integral to genomes; Wolbachia can be essential for host
+  reproduction; the gut microbiome influences immunity, metabolism, behaviour, and cognition.
+  Life has always been a cooperative endeavour — evolution is not solely about competition
+  but equally about the formation of novel partnerships that open new ecological possibilities.
+  ~80% of the living world's complexity may be explained by symbiosis as much as by selection.
+
+================================================================================

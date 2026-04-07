@@ -1,0 +1,182 @@
+================================================================================
+                  COMPARATIVE ANATOMY & ZOOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BODY PLANS & SYMMETRY
+--------------------------
+Body Symmetry:
+  Asymmetry    : No plane of symmetry (most sponges).
+  Radial       : Multiple planes through central axis (jellyfish, sea anemones, sea stars).
+  Bilateral    : One plane divides into mirror halves; defines anterior/posterior,
+                 dorsal/ventral. All vertebrates; most invertebrates.
+  Biradial     : Combination (comb jellies — ctenophores).
+
+Body Cavity (Coelom):
+  Acoelomate   : No body cavity (flatworms — Platyhelminthes).
+  Pseudocoelomate: False coelom (not lined by mesoderm); roundworms (Nematoda).
+  Eucoelomate  : True coelom lined by mesoderm; annelids, molluscs, echinoderms, chordates.
+
+Protostome vs Deuterostome:
+  Protostomes: Mouth develops from blastopore first. Includes: Annelida, Mollusca,
+    Arthropoda, Nematoda. Spiral cleavage (mostly); determinate.
+  Deuterostomes: Anus develops from blastopore; mouth second. Includes: Echinodermata,
+    Chordata, Hemichordata. Radial cleavage; indeterminate.
+
+1.1 BODY ORGANISATION ACROSS ANIMAL GROUPS
+--------------------------------------------
+Invertebrate Body Plans:
+  Porifera (sponges): No true tissues. Filter feeders. Choanocytes (collar cells) create
+    water currents. Spicules (silica or CaCO3) for support. Totipotent archaeocytes.
+  Cnidaria: Two tissue layers (diploblastic). Polyp (sessile) ↔ medusa (free-swimming).
+    Nematocysts: Stinging cells for prey capture. Nerve net (no brain).
+  Annelida: Segmented (metamerism). Closed circulatory system. Nephridia (excretion).
+    Chaetae (bristles). Classes: Polychaeta (marine worms), Oligochaeta (earthworms),
+    Hirudinea (leeches).
+  Mollusca: Mantle, foot, visceral mass. Radula (rasping tongue, absent bivalves).
+    Classes: Gastropoda (snails/slugs), Bivalvia (clams/oysters), Cephalopoda (squid/octopus).
+    Cephalopods: Largest invertebrate brain; complex behaviour; chromatophores.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. VERTEBRATE COMPARATIVE ANATOMY
+------------------------------------
+Skeletal Systems:
+  Fish        : Cartilage (sharks) or bone (teleosts). Fins supported by fin rays.
+  Amphibia    : Lightweight; pectoral + pelvic girdles for limb support. Hyoid for tongue.
+  Reptilia    : Stronger skeleton; ribs for breathing (no diaphragm). Kinetic skull.
+  Aves        : Hollow (pneumatised) bones; fused clavicles (furcula/wishbone);
+                keeled sternum (flight muscle attachment); no teeth (beak).
+  Mammalia    : Secondary palate (eat and breathe simultaneously); dentary mandible;
+                3 middle ear ossicles (malleus, incus, stapes — evolved from reptile jaw bones).
+
+Cardiovascular Comparison:
+  Fish        : 2-chambered heart (1 atrium + 1 ventricle). Single circulation.
+                Gill circulation → body.
+  Amphibia    : 3-chambered heart (2 atria + 1 ventricle). Double but mixed.
+  Reptilia    : 3-chambered (crocodilians: 4). Partial double circulation.
+  Birds/Mammals: 4-chambered heart. Complete double circulation. Fully separated.
+
+Respiratory Systems:
+  Fish        : Gills; countercurrent exchange maximises O2 extraction.
+  Amphibia    : Lungs + cutaneous respiration (moist skin). Buccal pumping (positive pressure).
+  Reptilia    : Lungs only; aspiration breathing (negative pressure); no diaphragm.
+  Birds       : Most efficient tetrapod lung. Parabronchial flow-through lung + air sacs
+                (9 air sacs). Unidirectional airflow (crosscurrent gas exchange).
+  Mammals     : Tidal breathing; diaphragm; alveolar lung.
+
+Excretory Systems:
+  Fish (marine): Produce very little urine; salt excreted via gills.
+  Fish (freshwater): Dilute urine; ion absorption by gills.
+  Amphibia    : Urea (uricotelic if terrestrial). Kidney; reabsorption via bladder.
+  Reptilia/Birds: Uric acid (white paste — conserves water; does not require dilution).
+  Mammals     : Urea in urine; loop of Henle concentrates urine (up to ~28x in desert rodents).
+
+3. MAMMALIAN DIVERSITY
+------------------------
+Monotremata (egg-laying):
+  Platypus (Ornithorhynchus anatinus): Electroreception in bill; venomous spur (male);
+  echidnas: Spiny; no nipples (milk oozes through skin). Only ~5 living species.
+
+Marsupialia (pouched):
+  Embryo born at very early stage; completes development in pouch.
+  ~335 species; mostly Australian/Americas.
+  Examples: Kangaroo, wallaby, wombat, Tasmanian devil, koala, opossum.
+  Koala: Diet exclusively eucalyptus leaves (toxic); detoxifying liver enzymes.
+
+Placentalia — Major Orders:
+Order           | Examples                     | Key Features
+----------------|-------------------------------|--------------------------------
+Rodentia        | Mice, rats, squirrels, beavers| Largest order; evergrowing incisors
+Chiroptera      | Bats                          | Only flying mammals; echolocation
+Soricomorpha    | Shrews, moles                 | Smallest mammals; high metabolic rate
+Carnivora       | Dogs, cats, bears, seals      | Carnassial teeth; Canidae, Felidae
+Artiodactyla    | Cattle, deer, pigs, hippos    | Even-toed ungulates; ruminants
+Perissodactyla  | Horses, rhinos, tapirs        | Odd-toed ungulates
+Cetacea         | Whales, dolphins              | Fully aquatic; derived Artiodactyla
+Proboscidea     | Elephants                     | Prehensile trunk; largest land animal
+Primates        | Monkeys, apes, humans         | Grasping hands; forward eyes; complex brain
+Sirenia         | Manatees, dugongs             | Aquatic herbivores; no hindlimbs
+Xenarthra       | Sloths, armadillos, anteaters | South American; vertebral articulations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. EVO-DEVO (EVOLUTIONARY DEVELOPMENTAL BIOLOGY)
+--------------------------------------------------
+Evo-Devo studies how changes in developmental processes drive morphological evolution.
+
+Toolkit Genes:
+  The same genes control development in radically different organisms.
+  Hox genes: Determine A-P body axis segment identity. Conserved from flies to humans.
+    Fruit fly: 8 Hox genes. Mammals: 39 Hox genes in 4 clusters (A, B, C, D).
+    Homeotic mutations (e.g., Antennapedia — legs in place of antennae in fly) reveal
+    Hox gene function.
+  Pax6: Master regulator of eye development. Same gene in mice, flies, and humans.
+    Misexpression → ectopic eye formation in flies (legs, wings, antennae).
+  Tinman/Nkx2.5: Heart development across all bilaterians.
+  Dll/Distalless: Limb development from annelids to vertebrates.
+
+Developmental Constraints:
+  Phylotypic stage: Period of maximum similarity across vertebrate embryos (pharyngula stage).
+  Von Baer's Laws: Embryos of different species are more similar early in development.
+  Developmental constraint: Some mutations are never observed because they disrupt
+  essential developmental pathways.
+
+Modularity:
+  Body organised into semi-independent modules (segments, organs, limbs) that can
+  evolve independently. Limb module: Same genetic programme in all tetrapod limbs
+  but with different expression patterns → forelimb vs hindlimb differences.
+
+Heterochrony: Changes in timing of developmental events.
+  Neoteny: Retention of juvenile features in adult (paedomorphosis).
+    Axolotl: Neotenous salamander — retains larval features (external gills) as adult.
+    Humans: Compared to chimpanzees, humans show neoteny (large brain, flat face,
+    delayed maturation).
+  Peramorphosis: Extension of ancestral development (more development than ancestor).
+
+5. INSECT BIOLOGY — MOST DIVERSE ANIMALS
+------------------------------------------
+~1 million described insect species (~5–10 million estimated total).
+~75% of all animal species are insects.
+
+Key Insect Features:
+  3 body segments: Head, thorax, abdomen.
+  3 pairs of legs; 2 pairs of wings (most); compound eyes; antennae.
+  Exoskeleton (chitin + proteins): Growth by moulting (ecdysis) — controlled by ecdysone.
+  Open circulatory system: Haemolymph in haemocoel; dorsal vessel (heart).
+  Tracheal system: Spiracles → tracheoles → direct O2 delivery to cells (no RBCs).
+  Malpighian tubules: Nitrogenous waste excretion (uric acid).
+
+Metamorphosis:
+  Hemimetabolous (incomplete): Egg → nymph (resembles adult) → adult.
+    Examples: Grasshoppers, cockroaches, dragonflies.
+  Holometabolous (complete): Egg → larva → pupa → adult (imago).
+    Examples: Butterflies, beetles, flies, bees.
+    Larva: Specialised for feeding/growth. Pupa: Metamorphosis; histolysis + histogenesis.
+    Imaginal discs: Groups of cells in larva that give rise to adult structures.
+
+Insect Communication:
+  Chemical: Pheromones (trail, alarm, sex). Bombykol (silk moth sex pheromone) active at
+  femtomolar concentrations; detected by olfactory sensilla on antennae.
+  Acoustic: Crickets (stridulation — file + scraper); cicadas (tymbals — sound organs).
+  Visual: Firefly flash patterns (species-specific); butterfly wing patterns.
+  Tactile: Honeybee waggle dance; antennal contact.
+
+[ECOLOGICAL IMPORTANCE] Insects:
+  Pollination: Bees, butterflies, moths, flies → ~$235 billion/year economic value.
+  Decomposition: Dung beetles, carrion beetles, blow flies.
+  Biological control: Parasitoid wasps control pest populations.
+  Food source: For birds, bats, amphibians, fish. Entomophagy (humans eating insects).
+  Decline: ~40% insect species declining; biomass down ~75% in 27 years (Germany study).
+  Causes: Habitat loss, pesticides (neonicotinoids → bee colony collapse disorder),
+  light pollution, climate change.
+
+================================================================================

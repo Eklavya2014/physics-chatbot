@@ -1,0 +1,191 @@
+================================================================================
+            ENZYME KINETICS & METABOLIC REGULATION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ENZYMES AS BIOLOGICAL CATALYSTS
+-------------------------------------
+Enzymes: Biological catalysts; lower activation energy (Ea) without being consumed.
+~75,000 enzymes estimated in the human body. Named by substrate + "-ase."
+
+EC Classification (6 classes):
+  EC 1: Oxidoreductases — oxidation/reduction (dehydrogenases, reductases, oxidases, oxygenases).
+  EC 2: Transferases — transfer functional groups (kinases, methyltransferases, glycosyltransferases).
+  EC 3: Hydrolases — hydrolysis reactions (proteases, lipases, nucleases, phosphatases).
+  EC 4: Lyases — add/remove groups creating double bonds (decarboxylases, dehydratases, aldolases).
+  EC 5: Isomerases — structural rearrangements (racemases, mutases, isomerases).
+  EC 6: Ligases — join molecules using ATP energy (synthetases, carboxylases).
+  EC 7: Translocases (added 2018) — ion pumps and transporters.
+
+Active Site Properties:
+  Specific 3D pocket within enzyme; composed of catalytic residues + binding residues.
+  Lock-and-key model (Fischer, 1894): Rigid complementarity.
+  Induced fit model (Koshland, 1958): Enzyme changes shape upon substrate binding.
+  Transition state stabilisation: Enzyme binds transition state > substrate or product.
+  Transition state analogues: Extremely tight-binding inhibitors (e.g., phosphonate analogues,
+    proline analogues for prolyl hydroxylase).
+
+Cofactors and Coenzymes:
+  Cofactors     : Inorganic ions (Mg2+, Zn2+, Fe2+, Cu2+, Mn2+, Co2+).
+  Coenzymes     : Organic; loosely or tightly bound; often vitamins or vitamin derivatives.
+    NAD+/NADH   : Niacin (B3); electron carrier in redox reactions.
+    FAD/FADH2   : Riboflavin (B2); electron carrier; tightly bound (prosthetic group).
+    CoA         : Pantothenic acid (B5); acyl group carrier.
+    TPP         : Thiamine (B1); decarboxylation cofactor.
+    PLP         : Pyridoxal phosphate (B6); amino acid reactions.
+    Biotin      : B7; CO2 carrier in carboxylation reactions.
+    THF         : Folate (B9); one-carbon group carrier.
+    Cobalamin   : B12; methyl group transfer; rearrangements.
+    Heme        : Fe-porphyrin; O2 binding + electron transfer; cytochromes, Hb, Mb.
+    ATP         : Energy currency; phosphate group donor.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ENZYME KINETICS
+-------------------
+Michaelis-Menten Kinetics:
+  E + S ⇌ ES → E + P
+  Assumptions: [S] >> [E]; steady state (d[ES]/dt = 0); irreversible product release.
+  v = Vmax × [S] / (Km + [S])
+  Vmax : Maximum velocity when enzyme fully saturated with substrate.
+  Km   : Substrate concentration at half-maximum velocity = (k-1 + kcat) / k1.
+    Low Km → high affinity. High Km → low affinity.
+  kcat : Turnover number (reactions per enzyme per second). Carbonic anhydrase: 10^6/s. Lysozyme: 0.5/s.
+  kcat/Km: Catalytic efficiency (specificity constant). Upper limit ~10^8–10^9 M-1s-1 (diffusion limited).
+
+Lineweaver-Burk Plot:
+  Double reciprocal: 1/v = (Km/Vmax)(1/[S]) + 1/Vmax
+  Y-intercept: 1/Vmax. X-intercept: -1/Km. Slope: Km/Vmax.
+  Graphical way to determine kinetic constants + identify inhibition type.
+
+Inhibition Kinetics:
+  Competitive inhibition: Inhibitor (I) competes with substrate for active site.
+    v = Vmax[S] / (αKm + [S]) where α = 1 + [I]/Ki.
+    Apparent Km increases; Vmax unchanged. Overcome by ↑[S].
+    Lineweaver-Burk: Lines converge at y-axis.
+  Non-competitive: I binds E and ES at allosteric site.
+    v = (Vmax/α)[S] / (Km + [S]).
+    Apparent Vmax decreases; Km unchanged. Cannot be overcome by ↑[S].
+    Lineweaver-Burk: Lines converge at x-axis.
+  Uncompetitive: I binds only ES complex.
+    v = (Vmax/α)[S] / (Km/α + [S]).
+    Both Km and Vmax decrease by same factor. Parallel lines on Lineweaver-Burk.
+  Mixed: I binds E and ES with different affinities. Both Km and Vmax affected.
+
+Cooperativity (Hill equation):
+  v = Vmax[S]^n / (K0.5^n + [S]^n)
+  n = Hill coefficient. n>1: positive cooperativity (sigmoidal). n<1: negative. n=1: Michaelis-Menten.
+  Haemoglobin: n≈2.8 (cooperative O2 binding — not enzyme but same principle).
+  Allosteric enzymes: Sigmoidal kinetics; regulatory sites separate from active site.
+
+3. METABOLIC PATHWAY REGULATION
+----------------------------------
+Levels of Metabolic Regulation:
+  1. Enzyme amount   : Gene expression (transcription → translation → protein stability).
+  2. Enzyme activity : Post-translational modification + allosteric regulation.
+  3. Substrate availability: Compartmentalisation; transport; substrate channelling.
+  4. Cofactor availability: NAD+/NADH ratio; acetyl-CoA; ATP/ADP/AMP.
+
+Key Regulatory Concepts:
+  Rate-limiting (pacemaker) enzymes: Slowest step in pathway; most tightly regulated.
+  Committed step: First irreversible reaction after branch point → dedicated to that pathway.
+  Feedback inhibition: End product inhibits first enzyme of its own pathway.
+    Aspartate pathway (bacteria): Aspartate → threonine, isoleucine, methionine, lysine.
+    Threonine inhibits its own pathway (HK → aspartyl phosphate step).
+    Isoenzymes: Multiple enzyme forms with different regulatory properties allow separate control.
+  Feed-forward activation: Early metabolite activates downstream enzyme (pyruvate kinase by fructose-1,6-BP).
+
+Allosteric Regulation in Detail:
+  MWC (Monod-Wyman-Changeux concerted model): All subunits in T (tense, low activity) or
+    R (relaxed, high activity) state simultaneously. Ligand shifts equilibrium.
+  KNF (Koshland-Nemethy-Filmer sequential model): Ligand binding induces sequential conformational
+    changes in subunits.
+  ATCase (Aspartate transcarbamoylase): Model allosteric enzyme.
+    Catalytic subunits (c3)2; regulatory subunits (r2)3.
+    CTP (product inhibitor) binds r subunits → T state.
+    ATP (substrate signal) binds r subunits → R state (activator).
+    Feedback from downstream + energy sensing.
+
+Key Metabolic Control Points:
+  Glycolysis:
+    Hexokinase: Inhibited by glucose-6-phosphate (product).
+    PFK-1 (phosphofructokinase-1): Rate-limiting; inhibited by ATP, H+, citrate; activated by AMP, ADP, F-2,6-BP.
+    Pyruvate kinase: Inhibited by ATP, alanine; activated by F-1,6-BP (feedforward).
+    F-2,6-BP: Powerful PFK-1 activator; made by PFK-2/FBPase-2 (bifunctional enzyme);
+      regulated by glucagon (phosphorylates → ↓F-2,6-BP → ↓glycolysis) and insulin (opposes).
+
+  Citric Acid Cycle:
+    Pyruvate dehydrogenase complex (PDC): Inhibited by acetyl-CoA, NADH, ATP; activated by CoA, NAD+, ADP.
+      PDK phosphorylates and inactivates PDC; PDP dephosphorylates and activates.
+    Isocitrate dehydrogenase: Inhibited by NADH, ATP; activated by ADP, Ca2+.
+    Alpha-ketoglutarate dehydrogenase: Inhibited by NADH, succinyl-CoA; activated by Ca2+.
+
+  Fatty Acid Synthesis vs Oxidation:
+    Malonyl-CoA (product of ACC): Inhibits CPT1 → blocks FA entry into mitochondria → can't oxidise
+      what you're synthesising.
+    AMPK phosphorylates + inactivates ACC → malonyl-CoA falls → CPT1 active → FA oxidation.
+    Insulin activates PP2A → dephosphorylates ACC → malonyl-CoA ↑ → lipogenesis.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. ENZYME MECHANISMS
+----------------------
+Catalytic Strategies:
+  Acid-base catalysis: General acid (Glu, Asp, His) or base (Lys, Arg) donate/accept protons.
+    Ribonuclease A: His12 (base) + His119 (acid) cleave RNA 2',3'-cyclic phosphate → 3'-phosphate.
+  Covalent catalysis: Transient covalent intermediate between enzyme and substrate.
+    Serine proteases (trypsin, chymotrypsin, elastase): Catalytic triad (Ser195-His57-Asp102).
+      Acylation: Nucleophilic Ser attacks carbonyl → tetrahedral intermediate → acyl-enzyme.
+      Deacylation: Water attacks acyl-enzyme → product release. His57 acts as acid + base.
+    Cysteine proteases (papain, caspases): Cys in nucleophile role (similar mechanism).
+    Aspartyl proteases (pepsin, HIV protease): Two Asp residues activate water molecule.
+  Metal ion catalysis: Metal ion in active site stabilises negative charges; Lewis acid.
+    Carbonic anhydrase: Zn2+ coordinates OH- → nucleophile attacks CO2. Rate: 10^6/s.
+    Matrix metalloproteinases: Zn2+ in active site; targets inhibited by EDTA.
+  Proximity and orientation: Enzyme binds substrates in correct geometry → effective molarity.
+  Transition state stabilisation: Binding energy used primarily to stabilise transition state.
+
+5. ENZYME EVOLUTION & METABOLOMICS
+-------------------------------------
+Enzyme Evolution:
+  Most new enzymatic functions evolve from existing protein folds by:
+    Gene duplication → divergence of one copy (neofunctionalisation).
+    Promiscuity: Many enzymes have weak secondary activities → starting point for evolution.
+    Retroevolution: Evolution reversal of pathway steps.
+    Horizontal gene transfer: Exchange between organisms (especially in bacteria).
+  Convergent enzyme evolution: Same reaction evolved multiple times independently.
+    Example: Subtilisin (bacteria) + trypsin/chymotrypsin (mammals): Same Ser-His-Asp triad;
+    completely different protein folds → convergent evolution of same catalytic mechanism.
+
+Metabolomics:
+  Global profiling of all small molecules (metabolites) in a biological sample.
+  Techniques: NMR spectroscopy (quantitative, no separation); LC-MS/MS (high sensitivity, throughput);
+    GC-MS (volatile metabolites, sugars, fatty acids).
+  Databases: HMDB (Human Metabolome Database; 114,000+ metabolites); KEGG; MetaboLights.
+  Untargeted: Discover all metabolites → statistical analysis (PCA, PLS-DA).
+  Targeted: Quantify specific metabolites of interest.
+  Applications: Biomarker discovery (diagnostic); disease mechanism; drug mechanism; microbiome-host crosstalk.
+  Flux analysis (13C-tracing): Label glucose, glutamine with 13C → track through metabolic network →
+    measure actual flow rates through pathways (isotopologue distribution).
+
+[MEDICAL APPLICATION] Inborn Errors of Metabolism (IEMs) — enzyme deficiencies:
+  Enzyme defect          | Disease                    | Substrate accumulates
+  -----------------------|----------------------------|---------------------------
+  Phenylalanine OH (PAH) | PKU                        | Phenylalanine → brain damage
+  Hexosaminidase A       | Tay-Sachs                  | GM2 ganglioside → neurons
+  Glucocerebrosidase     | Gaucher disease             | Glucocerebroside → macrophages
+  Fumarylacetoacetase    | Hereditary tyrosinaemia I  | Fumarylacetoacetate → liver
+  MCAD deficiency        | MCADD                      | C8 acylcarnitine → hypoglycaemia
+  OTC (ornithine TC)     | OTC deficiency (X-linked)  | Ammonia → encephalopathy
+  NBS (newborn screening): Dried blood spot → LC-MS/MS → screens ~50+ IEMs.
+    Allows presymptomatic diagnosis + treatment before irreversible damage.
+
+================================================================================

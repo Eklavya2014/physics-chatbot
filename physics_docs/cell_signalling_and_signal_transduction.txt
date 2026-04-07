@@ -1,0 +1,186 @@
+================================================================================
+              CELL SIGNALLING & SIGNAL TRANSDUCTION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHY CELLS COMMUNICATE
+--------------------------
+Multicellular life depends on cells coordinating their activities. Signalling
+allows cells to respond to their environment, regulate growth, differentiate,
+and coordinate tissue-level responses. Disruption causes cancer, diabetes,
+immune disorders, and developmental defects.
+
+Three Stages of Cell Signalling:
+  1. Reception   : Signal molecule (ligand) binds a receptor.
+  2. Transduction : Signal converted and amplified through a cascade.
+  3. Response     : Target protein activated → cellular change.
+
+Signal Molecules (Ligands):
+  Hydrophilic (water-soluble): Cannot cross membrane → bind surface receptors.
+    Peptide hormones (insulin, glucagon), cytokines, neurotransmitters, growth factors.
+  Hydrophobic (lipid-soluble): Cross membrane → bind intracellular receptors.
+    Steroid hormones (cortisol, oestradiol, testosterone), thyroid hormones, vitamin D.
+  Gases: Nitric oxide (NO), carbon monoxide (CO) → directly activate enzymes.
+
+Distance of Signalling:
+  Endocrine    : Long range; hormones secreted into bloodstream → distant target cells.
+  Paracrine    : Short range; local signal diffuses to nearby cells.
+  Autocrine    : Cell signals to itself (common in cancer).
+  Synaptic     : Neurotransmitter across synaptic cleft (~20 nm).
+  Juxtacrine   : Direct cell-cell contact (Notch-Delta, ephrins).
+
+1.1 RECEPTOR TYPES
+-------------------
+Receptor          | Location       | Mechanism                    | Examples
+------------------|----------------|------------------------------|-------------------------
+GPCRs             | Cell surface   | G-protein → 2nd messenger    | Beta-adrenergic, rhodopsin
+RTKs              | Cell surface   | Autophosphorylation → cascade | EGFR, VEGFR, INSR
+Ion channel-linked| Cell surface   | Channel opens/closes         | nAChR, NMDAR, AMPAR
+Cytokine receptors| Cell surface   | JAK-STAT pathway             | IL receptors, IFN receptors
+Nuclear receptors | Intracellular  | Direct gene regulation       | GR, ER, AR, RAR, TR, VDR
+Enzyme-linked     | Cell surface   | Serine/threonine kinase      | TGF-beta receptors (SMAD)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. G-PROTEIN COUPLED RECEPTORS (GPCRs)
+----------------------------------------
+Largest receptor superfamily: ~800 human GPCRs. 7-transmembrane domain structure.
+Targeted by ~34% of all approved drugs.
+
+Mechanism (cAMP pathway — Gs-coupled):
+  Ligand binds → receptor conformational change → Galpha-GTP dissociates from Gbetagamma →
+  Galpha-s activates adenylyl cyclase → cAMP produced from ATP →
+  PKA (protein kinase A) activated → phosphorylates CREB (gene expression) +
+  metabolic enzymes (glycogen phosphorylase kinase → glycogenolysis) + ion channels.
+  Termination: PDE (phosphodiesterase) degrades cAMP → Galpha GTPase hydrolyses GTP → GDP →
+  reassembles with Gbetagamma → receptor reset.
+
+Gq pathway (phospholipase C):
+  Ligand → Gq-alpha activates PLC-beta → PIP2 cleaved → IP3 + DAG.
+  IP3: Opens IP3R on ER → Ca2+ release → calmodulin → CaM kinases, calcineurin.
+  DAG: Activates PKC → phosphorylates multiple substrates → proliferation, differentiation.
+
+Gi pathway:
+  Inhibits adenylyl cyclase → ↓ cAMP. Also activates Gbetagamma → GIRK channels (↓ HR).
+  Examples: Alpha-2 adrenergic, M2 muscarinic, mu-opioid, D2 dopamine.
+
+Second Messengers:
+  cAMP    : Gs activation → PKA → widespread effects.
+  cGMP    : NOS → NO → guanylyl cyclase → cGMP → PKG → smooth muscle relaxation.
+  IP3     : Ca2+ release from ER stores.
+  DAG     : Activates PKC; stays in membrane.
+  Ca2+    : Universal messenger; calmodulin (4 Ca2+ binding sites) → CaMKII, calcineurin.
+  Phosphoinositides: PIP2, PIP3 → recruit PH-domain proteins (PDK1, Akt, Btk).
+
+Receptor Desensitisation & Internalisation:
+  GPCR kinases (GRK2/3): Phosphorylate activated receptor → beta-arrestin recruitment →
+  receptor uncoupled from G-protein → receptor internalised (clathrin-mediated) →
+  degradation or recycling back to surface. Beta-arrestin also acts as scaffold for
+  ERK1/2 activation independent of G-protein (biased signalling).
+
+3. RECEPTOR TYROSINE KINASES (RTKs)
+-------------------------------------
+Single-pass transmembrane proteins. Extracellular ligand binding domain + intracellular kinase.
+Growth factors: EGF, PDGF, FGF, VEGF, NGF, Insulin/IGF-1.
+
+Activation Mechanism:
+  Ligand binds → receptor dimerisation (EGF, PDGF) or conformational change (insulin receptor
+  pre-forms dimer) → trans-autophosphorylation of tyrosine residues in activation loop →
+  kinase domain active → phosphorylation of additional tyrosines (docking sites) →
+  SH2-domain proteins recruit (Grb2, Shp2, PI3K, PLCgamma, Src).
+
+Key Downstream Pathways:
+  RAS-MAPK: Grb2 + SOS → Ras-GEF → Ras-GTP → Raf → MEK → ERK1/2 →
+    nuclear translocation → ELK1, c-Fos → proliferation, differentiation.
+  PI3K-AKT: PI3K (p85 SH2 binds pY; p110 catalytic) → PIP2 → PIP3 → PDK1 + mTORC2 →
+    AKT phosphorylation → survival, growth, glucose metabolism (covered in endocrinology doc).
+  PLCgamma: Cleaves PIP2 → IP3 + DAG → Ca2+ + PKC.
+  STAT activation: Some RTKs directly phosphorylate STATs.
+
+Signal Amplification:
+  One receptor → thousands of second messenger molecules.
+  Cascade amplification: Each step multiplies signal. Adrenaline binds ~few thousand
+  GPCR receptors → activates millions of PKA molecules → billions of glycogen phosphorylase
+  molecules → massive glucose release in seconds.
+
+4. JAK-STAT PATHWAY
+--------------------
+Used by cytokines, interferons, growth hormone, prolactin, erythropoietin.
+
+Mechanism:
+  Cytokine binds dimeric/oligomeric receptor → receptor-associated JAKs (JAK1/2/3, TYK2)
+  trans-phosphorylate each other → phosphorylate receptor tyrosines → STAT SH2 domains bind
+  pY → JAK phosphorylates STAT → STAT dimerises → nuclear translocation → gene expression.
+
+IFN Signalling:
+  Type I IFN (IFNa/b): IFNAR1/2 → JAK1/TYK2 → STAT1/2 heterodimer + IRF9 = ISGF3 →
+  ISRE elements → ISGs (interferon-stimulated genes): PKR, OAS, Mx, IFIT proteins.
+  IFN-gamma: IFNGR1/2 → JAK1/2 → STAT1 homodimer → GAS elements → MHC class II, iNOS.
+
+Regulation:
+  SOCS proteins (1–7): Feedback inhibitors; bind JAK or receptor → block signal.
+  PIAS proteins: Inhibit STAT DNA binding; promote SUMOylation.
+  Phosphatases (SHP1/2, PTP1B): Dephosphorylate JAKs and STATs.
+  JAK inhibitors (JAKinibs): Ruxolitinib (JAK1/2 — myelofibrosis, PV);
+  tofacitinib (JAK3 — rheumatoid arthritis); baricitinib (JAK1/2 — RA, COVID-19).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. CROSSTALK & SIGNALLING NETWORKS
+------------------------------------
+Crosstalk: Signals from one pathway influencing another.
+  RTK activation → RAS → RAF → MEK → ERK (proliferation)
+  ALSO: RAS activates PI3K → AKT → mTOR (survival, protein synthesis)
+  mTOR → S6K1 → IRS1 serine phosphorylation → negative feedback on insulin receptor.
+  This explains why PI3K inhibitors paradoxically activate RAS-MAPK → combination therapy needed.
+
+Phosphorylation networks:
+  Human proteome: ~500 kinases, ~150 phosphatases; ~250,000 phosphorylation sites.
+  Kinase cascades: MAPK modules (MAP3K → MAP2K → MAPK) are modular and reused:
+    ERK (proliferation), JNK (stress/apoptosis), p38 (inflammation/stress), ERK5 (shear stress).
+
+Signal Integration at Transcription Factors:
+  Transcription factors integrate multiple signals simultaneously.
+  c-Fos: Activated by ERK (growth signals) + Ca2+/CaM pathways.
+  CREB: Activated by PKA (cAMP), CaMKIV (Ca2+), RSK (MAPK cascade), PKB.
+  NF-kB: Activated by TNF, IL-1, LPS, ROS, DNA damage → IKK complex phosphorylates
+    IkB → ubiquitination + proteasomal degradation → NF-kB nuclear translocation →
+    pro-inflammatory genes (IL-6, IL-8, COX-2, iNOS, anti-apoptotic: Bcl-2, XIAP, cIAPs).
+
+6. PHOSPHOINOSITIDE SIGNALLING & LIPID SECOND MESSENGERS
+----------------------------------------------------------
+PI3K classes:
+  Class I (p85/p110): Activated by RTKs and GPCRs → PIP3 (primary lipid second messenger).
+  Class II: PIP and PIP2 production; clathrin-coated vesicles.
+  Class III (VPS34): PIP; autophagosome formation; lysosomal biogenesis.
+
+PTEN: Lipid phosphatase; converts PIP3 → PIP2. Most frequently mutated tumour suppressor.
+  PTEN loss → AKT hyperactivation → cell survival + proliferation → cancer.
+  PTEN null: Seen in prostate (~50%), endometrial (~60%), GBM (~36%), breast (~30%).
+
+Sphingolipid Signalling:
+  Ceramide: Generated by sphingomyelinase (SM hydrolysis) or de novo from serine + palmitoyl-CoA.
+    Activates PP2A (tumour suppressor phosphatase) + CISD2 → apoptosis, senescence.
+    Elevated by stress (radiation, chemotherapy, TNF) → pro-apoptotic.
+  Sphingosine-1-phosphate (S1P): Generated from ceramide → sphingosine → S1P (by SK1/2).
+    S1P receptors (S1PR1-5): Lymphocyte egress (S1PR1), cardiac rate, vascular tone.
+    Fingolimod (siponimod): S1P functional antagonist → lymphocyte retention in lymph nodes → MS.
+
+[DRUG TARGETS] Signalling pathway drugs:
+  MEK inhibitors      : Trametinib (BRAF V600E melanoma) — blocks ERK reactivation.
+  mTOR inhibitors     : Everolimus (renal cell carcinoma, PNET, breast cancer).
+  SHP2 inhibitors     : RMC-4630, TNO155 — block Ras pathway amplifier; first in class.
+  KRAS G12C inhibitors: Sotorasib, adagrasib — first KRAS targeted therapy (lung/CRC).
+  NF-kB inhibitors    : Bortezomib (proteasome → IkB not degraded → NF-kB inactive → myeloma).
+  PI3K inhibitors     : Idelalisib (PI3Kdelta → CLL/FL); alpelisib (PI3Ka → PIK3CA-mutant breast).
+  AKT inhibitors      : Capivasertib (AKT1/2/3 → ER+ breast cancer — Phase III positive 2022).
+
+================================================================================

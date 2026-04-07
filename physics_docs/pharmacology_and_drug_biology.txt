@@ -1,0 +1,209 @@
+================================================================================
+                    PHARMACOLOGY & DRUG BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS PHARMACOLOGY?
+--------------------------
+Pharmacology is the study of how drugs interact with biological systems to produce
+their effects. It encompasses drug mechanisms, effects, uses, and safety.
+
+Pharmacodynamics (PD): What the drug does to the body.
+Pharmacokinetics (PK): What the body does to the drug (ADME).
+
+Drug Targets:
+  Receptors       : Proteins that drugs bind to produce a response.
+  Enzymes         : Drugs inhibit or activate (e.g., aspirin inhibits COX).
+  Ion channels    : Drugs block or open channels (e.g., local anaesthetics block Na+ channels).
+  Transporters    : Drugs block uptake proteins (e.g., SSRIs block serotonin transporter).
+  Nucleic acids   : Some antibiotics/anticancer drugs bind DNA.
+
+Drug-Receptor Relationships:
+  Agonist      : Binds receptor and activates it (mimics endogenous ligand).
+  Antagonist   : Binds receptor but does NOT activate; blocks agonist binding.
+  Partial agonist: Activates receptor but max response lower than full agonist.
+  Inverse agonist: Binds constitutively active receptor → reduces baseline activity.
+  Allosteric modulator: Binds different site; changes receptor conformation.
+
+Affinity: How strongly drug binds receptor. Ki (inhibitor constant) or Kd.
+Efficacy: Maximum response drug can produce.
+Potency: Concentration to produce 50% max effect. ED50 (effective dose 50%).
+
+1.1 PHARMACOKINETICS — ADME
+-----------------------------
+Absorption:
+  Routes: Oral (PO), intravenous (IV), intramuscular (IM), subcutaneous (SC),
+  transdermal, inhaled, sublingual, rectal.
+  Bioavailability (F): Fraction of dose reaching systemic circulation.
+  IV: F = 100%. Oral: Usually <100% (first-pass effect, poor absorption).
+  First-pass effect: Drug absorbed from gut → portal vein → liver → metabolised
+  before reaching systemic circulation. High first-pass: Morphine (F~25%), propranolol.
+
+Distribution:
+  Volume of distribution (Vd): Apparent volume drug distributes into.
+  High Vd: Drug penetrates tissues/fat (e.g., chloroquine Vd = 600 L/kg).
+  Low Vd: Drug stays in plasma (e.g., warfarin Vd = 0.14 L/kg).
+  Blood-brain barrier (BBB): Tight junctions + P-glycoprotein efflux → limits CNS entry.
+  Protein binding: Drugs bind albumin/AAG → only free drug is active.
+
+Metabolism:
+  Mainly liver. Phase I: CYP450 enzymes (oxidation, reduction, hydrolysis) → often
+  more polar metabolites.
+  Phase II: Conjugation (glucuronidation, sulphation, acetylation, methylation) → water-
+  soluble; ready for excretion.
+  CYP450 enzymes: CYP3A4 metabolises ~50% of drugs. CYP2D6, CYP2C9, CYP2C19.
+  Genetic polymorphisms: Poor, intermediate, extensive, ultrarapid metabolisers.
+
+Excretion:
+  Kidneys: Glomerular filtration + tubular secretion - tubular reabsorption.
+  Bile/faeces: Enterohepatic circulation (some drugs recycled).
+  Half-life (t½): Time for plasma concentration to halve. t½ = 0.693 × Vd/CL.
+  Steady state: Achieved after ~5 half-lives of regular dosing.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. AUTONOMIC PHARMACOLOGY
+---------------------------
+Sympathetic NS (adrenergic):
+  Neurotransmitter: Norepinephrine (NE) at target organ; epinephrine from adrenal medulla.
+  Receptors:
+    Alpha-1 (Gq): Vascular smooth muscle contraction → vasoconstriction; pupil dilation.
+    Alpha-2 (Gi): Presynaptic autoreceptor → inhibit NE release; central BP regulation.
+    Beta-1 (Gs): Heart → ↑ HR (chronotropy), ↑ contractility (inotropy), ↑ conduction.
+    Beta-2 (Gs): Bronchodilation; vasodilation; glycogenolysis; uterine relaxation.
+    Beta-3 (Gs): Lipolysis in adipose; thermogenesis.
+
+  Key drugs:
+    Beta-blockers (propranolol, metoprolol): Block beta receptors → ↓ HR, ↓ BP, anti-arrhythmic.
+    Alpha-1 blockers (prazosin, doxazosin): Vasodilation → ↓ BP; BPH relief.
+    Alpha-2 agonists (clonidine): ↓ central sympathetic outflow → ↓ BP.
+    Adrenaline (epinephrine): Alpha + beta agonist; anaphylaxis, cardiac arrest, local anaesthesia.
+
+Parasympathetic NS (cholinergic):
+  Neurotransmitter: Acetylcholine (ACh).
+  Receptors:
+    Muscarinic (G-protein coupled): M1 (CNS; gastric acid), M2 (heart — ↓HR), M3 (smooth muscle/glands).
+    Nicotinic (ionotropic): Skeletal NMJ (NM); autonomic ganglia (NN).
+
+  Key drugs:
+    Atropine (muscarinic antagonist): ↑ HR, mydriasis, dry mouth, bronchodilation; antidote to
+      organophosphate poisoning.
+    Neostigmine (AChE inhibitor): ↑ ACh at NMJ → reverses neuromuscular blockade; myasthenia gravis.
+    Pilocarpine (M3 agonist): Glaucoma (reduces IOP via ciliary muscle contraction).
+    Botulinum toxin: Blocks ACh vesicle fusion at NMJ → flaccid paralysis. Cosmetic (Botox),
+      hyperhidrosis, cervical dystonia, migraine prevention.
+
+3. CARDIOVASCULAR PHARMACOLOGY
+--------------------------------
+Antihypertensives:
+  ACE inhibitors (ramipril, lisinopril): Block conversion Ang I → Ang II → vasodilation +
+    ↓ aldosterone → ↓ BP. Cardioprotective post-MI. SE: Dry cough (bradykinin accumulation).
+  ARBs (losartan, valsartan): Block AT1 receptor → vasodilation. No cough. Renoprotective.
+  CCBs — dihydropyridines (amlodipine): Block L-type Ca2+ channels in vascular smooth muscle
+    → vasodilation → ↓ BP. Also non-DHP (verapamil, diltiazem) → cardiac effects.
+  Thiazide diuretics (bendroflumethiazide): Block NCC in DCT → ↓ Na+/water retention → ↓ BP.
+  Spironolactone: Aldosterone antagonist → ↑ Na+ excretion + ↑ K+ retention. Heart failure.
+  Beta-blockers: ↓ HR + contractility → ↓ cardiac output → ↓ BP.
+
+Antiarrhythmics (Vaughan Williams):
+  Class I: Na+ channel blockers (flecainide → AF; lidocaine → ventricular arrhythmia).
+  Class II: Beta-blockers (metoprolol → rate control in AF, SVT).
+  Class III: K+ channel blockers → prolong action potential (amiodarone, sotalol → AF).
+  Class IV: CCBs (verapamil, diltiazem → rate control in AF).
+
+Statins (HMG-CoA reductase inhibitors):
+  Atorvastatin, rosuvastatin, simvastatin. Block cholesterol synthesis → upregulate LDL
+  receptors → ↓ LDL. 30–50% LDL reduction. ~25% ↓ CV events per 1 mmol/L LDL reduction.
+  SE: Myopathy (↑ CK); rhabdomyolysis (rare); hepatotoxicity.
+
+4. CNS PHARMACOLOGY
+--------------------
+Antidepressants:
+  SSRIs (fluoxetine, sertraline, citalopram): Block SERT → ↑ synaptic serotonin.
+    First-line; 4–6 weeks onset. SE: GI, sexual dysfunction, initial anxiety.
+  SNRIs (venlafaxine, duloxetine): Block SERT + NET → ↑ 5-HT + NE.
+  TCAs (amitriptyline): Block multiple transporters; more SE; used in neuropathic pain/migraine.
+  MAOIs (phenelzine): Block MAO → ↑ monoamines; tyramine cheese reaction (hypertensive crisis).
+  Ketamine (esketamine): NMDA antagonist; rapid antidepressant (hours); treatment-resistant depression.
+
+Antipsychotics:
+  Typical (haloperidol, chlorpromazine): D2 receptor antagonist. Positive symptoms.
+    SE: EPS (extrapyramidal symptoms — Parkinsonism, tardive dyskinesia, akathisia), hyperprolactinaemia.
+  Atypical (clozapine, olanzapine, risperidone, quetiapine): D2 + 5-HT2A antagonism.
+    Fewer EPS; more metabolic SE (weight gain, diabetes). Clozapine: Most effective; agranulocytosis.
+  Dopamine hypothesis: Excess D2 activity → positive symptoms of schizophrenia.
+
+Analgesics:
+  NSAIDs (ibuprofen, naproxen, diclofenac): COX-1/2 inhibition → ↓ PGE2 → analgesia, antipyretic.
+    SE: Peptic ulcer (↓ protective PGI2/mucus), renal impairment, platelet dysfunction.
+  Opioids (morphine, codeine, oxycodone, fentanyl): Mu-opioid receptor agonists.
+    Analgesia + euphoria + respiratory depression + constipation. Tolerance; dependence.
+    Naloxone: Mu-antagonist; reverses opioid overdose.
+  Paracetamol/Acetaminophen: Mechanism unclear; central COX-3? Cannabinoid pathway?
+    Overdose → NAPQI accumulates → hepatotoxicity → liver failure; antidote = N-acetylcysteine.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PHARMACOGENOMICS
+--------------------
+Pharmacogenomics studies how genetic variants affect drug response.
+
+Key Examples:
+  CYP2D6: Codeine → morphine (by CYP2D6). Poor metabolisers → no analgesia.
+    Ultrarapid metabolisers → toxic morphine levels. Used to guide opioid prescribing.
+  CYP2C19: Clopidogrel → active metabolite. Poor metabolisers (20% Asians) → inadequate
+    antiplatelet effect → increased stent thrombosis risk. Test before PCI.
+  HLA-B*57:01: Predicts abacavir (HIV drug) hypersensitivity. Test mandatory before prescribing.
+  HLA-B*15:02: Carbamazepine → Stevens-Johnson syndrome in Asians. Screen before use.
+  TPMT (thiopurine methyltransferase): Metabolises azathioprine/6-MP. Low activity
+    → drug accumulation → severe myelosuppression. Test before starting.
+  VKORC1 + CYP2C9: Warfarin dose calculation algorithms use both variants.
+    VKORC1 (warfarin target) variant → lower dose needed.
+  DPYD: Dihydropyrimidine dehydrogenase; metabolises 5-FU and capecitabine.
+    Deficiency → severe neutropenia/mucositis. Screen before fluoropyrimidine therapy.
+
+6. BIOLOGICS & ADVANCED THERAPEUTICS
+---------------------------------------
+Monoclonal Antibodies (mAbs):
+  Murine (-omab) → Chimeric (-ximab) → Humanised (-zumab) → Fully human (-umab).
+  IgG1 backbone: Fc-mediated ADCC + CDC. IgG4: No ADCC (for receptor blocking only).
+  Bispecific antibodies: Two antigen-binding sites (blinatumomab: CD19×CD3).
+  ADCs (Antibody-Drug Conjugates): mAb + cytotoxic payload. Trastuzumab emtansine (T-DM1);
+    sacituzumab govitecan.
+
+Therapeutic Proteins:
+  Insulin, EPO, G-CSF, Factor VIII, GLP-1 agonists, anti-VEGF (bevacizumab).
+  Made in CHO cells (most), E. coli (insulin), yeast (EPO, Hep B vaccine antigen).
+
+Gene Therapy:
+  In vivo: AAV vectors delivering functional gene (Zolgensma for SMA; Luxturna for RPE65).
+  Ex vivo: Cells removed, modified, reinfused (CAR-T, HSCT with gene correction).
+  Sickle cell disease: Casgevy (exagamglogene autotemcel) — first CRISPR therapy; BCL11A
+    erythroid enhancer editing → fetal haemoglobin reactivation. FDA approved December 2023.
+
+mRNA Therapeutics:
+  Modified mRNA + lipid nanoparticle (LNP) delivery → intracellular protein expression.
+  COVID-19 vaccines demonstrated platform safety/efficacy. Expanding to: cancer vaccines
+  (personalised neoantigen), infectious disease (flu, RSV, HIV), rare diseases,
+  protein replacement therapies.
+  Pseudouridine modification (Karikó & Weissman, Nobel 2023): Prevents mRNA from
+  triggering innate immune response → enables therapeutic use.
+
+[DRUG DISCOVERY] Modern pipeline:
+  Target identification → Target validation → Hit finding (HTS, fragment screening,
+  AI-based design) → Lead optimisation → Candidate selection → Preclinical
+  (in vitro, in vivo safety/efficacy) → Phase I (safety, dose-finding in healthy
+  volunteers ~20–100) → Phase II (efficacy/safety in patients ~100–500) →
+  Phase III (large RCT ~1,000–10,000) → Regulatory submission (FDA/EMA) → Approval.
+  Average time: ~12–15 years. Average cost: ~$2–3 billion per approved drug.
+  Success rate: ~1 in 5,000–10,000 compounds screened reach approval.
+
+================================================================================

@@ -1,0 +1,192 @@
+================================================================================
+                     TAXONOMY & SYSTEMATICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS TAXONOMY?
+---------------------
+Taxonomy is the science of naming, describing, and classifying organisms.
+Systematics is the broader discipline studying evolutionary relationships among
+organisms. Founded by Carl Linnaeus (1707–1778), who formalised binomial nomenclature.
+
+Binomial Nomenclature:
+  Every species has a two-part Latin name: Genus + species epithet.
+  Written in italics; genus capitalised; species lowercase.
+  Examples: Homo sapiens, Panthera leo, Escherichia coli, Quercus robur.
+  Author citation: Homo sapiens Linnaeus, 1758.
+
+Taxonomic Hierarchy (from broadest to most specific):
+  Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species
+  Mnemonic: "Dear King Philip Came Over For Good Soup"
+  Additional ranks: Subphylum, Superclass, Suborder, Subfamily, Subspecies.
+
+Example — Human Classification:
+  Domain    : Eukarya
+  Kingdom   : Animalia
+  Phylum    : Chordata
+  Subphylum : Vertebrata
+  Class     : Mammalia
+  Order     : Primates
+  Family    : Hominidae
+  Genus     : Homo
+  Species   : Homo sapiens
+
+The Three Domains of Life (Carl Woese, 1977 — based on 16S rRNA):
+  Bacteria  : Prokaryotes; diverse metabolism; cell wall (peptidoglycan); ester-linked lipids.
+  Archaea   : Prokaryotes; extremophiles and ubiquitous; ether-linked lipids; no peptidoglycan.
+  Eukarya   : Eukaryotes; membrane-bound nucleus; 80S ribosomes.
+  Archaea and Eukarya are sister groups — more closely related to each other than either is to Bacteria.
+
+1.1 THE SIX KINGDOMS (TRADITIONAL)
+------------------------------------
+Kingdom      | Cell Type   | Nutrition          | Examples
+-------------|-------------|--------------------|---------------------------------
+Bacteria     | Prokaryote  | Autotroph/Heterotroph | E. coli, Cyanobacteria
+Archaea      | Prokaryote  | Chemolithotroph    | Methanobacterium, Halobacterium
+Protista     | Eukaryote   | Diverse            | Amoeba, Paramecium, algae
+Fungi        | Eukaryote   | Absorptive hetero. | Mushrooms, yeast, moulds
+Plantae      | Eukaryote   | Photosynthetic     | Mosses, ferns, flowering plants
+Animalia     | Eukaryote   | Ingestive hetero.  | Insects, fish, mammals
+
+Note: Protista is now considered paraphyletic (not a natural group) — divided into
+many separate lineages. Modern classification uses phylogenetic methods.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CLADISTICS & PHYLOGENETIC CLASSIFICATION
+---------------------------------------------
+Cladistics (phylogenetic systematics — Hennig, 1950):
+  Classification should reflect evolutionary history (monophyletic groups only).
+
+Key Terms:
+  Clade (monophyletic group): Common ancestor + ALL its descendants.
+  Paraphyletic group        : Common ancestor + SOME descendants (not natural).
+  Polyphyletic group        : No common ancestor — artificial grouping.
+  Plesiomorphy              : Ancestral (primitive) character state.
+  Apomorphy                 : Derived character state.
+  Synapomorphy              : Shared derived character → defines a clade.
+  Homoplasy                 : Similar characters evolved independently (convergence).
+
+Homology vs Analogy:
+  Homologous structures: Same evolutionary origin; may have different functions.
+    Example: Human arm, bat wing, whale flipper, bird wing — all modified tetrapod limbs.
+  Analogous structures (homoplasy): Similar function, different origin.
+    Example: Bird wing and insect wing — convergent evolution of flight.
+  Molecular homology: Shared gene sequences (e.g., Hox genes across all bilaterians).
+
+Building Phylogenetic Trees:
+  Parsimony: Tree requiring fewest evolutionary changes (most parsimonious).
+  Maximum Likelihood: Tree most likely given a model of molecular evolution.
+  Bayesian inference: Uses prior probabilities + likelihood → posterior probability.
+  Bootstrap support: Resampling to assess node confidence (>70% = acceptable).
+  Molecular clock: Neutral mutations accumulate at roughly constant rate → estimate divergence times.
+
+3. MAJOR ANIMAL PHYLA
+-----------------------
+Phylum          | Key Features                    | Examples
+----------------|----------------------------------|-----------------------------
+Porifera        | Sponges; no true tissues         | Bath sponge, glass sponge
+Cnidaria        | Radial symmetry; nematocysts     | Jellyfish, coral, anemones
+Platyhelminthes | Flatworms; acoelomate; bilat.   | Tapeworm, planaria, flukes
+Nematoda        | Roundworms; pseudocoelomate     | C. elegans, Ascaris, hookworm
+Annelida        | Segmented worms; coelomate      | Earthworm, leeches, polychaetes
+Mollusca        | Soft body; mantle; radula       | Snail, squid, octopus, clam
+Arthropoda      | Exoskeleton; jointed appendages | Insects, crabs, spiders
+Echinodermata   | Radial symmetry; water vascular | Sea star, urchin, sea cucumber
+Chordata        | Notochord; pharyngeal slits     | Fish, amphibians, reptiles, birds, mammals
+
+Arthropoda — Largest animal phylum (~85% of all animal species):
+  Chelicerata (Arachnida): Spiders, scorpions, mites, ticks. Chelicerae (fangs/pincers).
+  Myriapoda: Centipedes, millipedes. Many leg pairs.
+  Crustacea: Crabs, shrimps, lobsters, barnacles, copepods. Mostly aquatic.
+  Insecta: ~1 million described species. Wings; 3 body segments; 6 legs.
+    Orders: Coleoptera (beetles ~25% of all animal species); Lepidoptera (butterflies/moths);
+    Diptera (flies); Hymenoptera (ants/bees/wasps); Orthoptera (grasshoppers).
+
+4. VERTEBRATE CLASSIFICATION
+------------------------------
+Subphylum Vertebrata:
+  Agnatha (jawless fish)    : Lamprey, hagfish. Oldest vertebrate lineage.
+  Chondrichthyes           : Cartilaginous fish. Sharks, rays, chimaeras.
+  Actinopterygii           : Ray-finned fish. ~30,000 species; most diverse vertebrates.
+  Sarcopterygii            : Lobe-finned fish + tetrapods. Coelacanth, lungfish (closest fish relatives of tetrapods).
+  Amphibia                 : Frogs, salamanders, caecilians. Dual life (water + land).
+  Reptilia (paraphyletic!) : Lizards, snakes, turtles, crocodilians. Ectothermic.
+  Aves (birds)             : Derived theropod dinosaurs. Feathers; endothermic; hollow bones.
+  Mammalia                 : Hair; mammary glands; endothermic.
+    Monotremata: Egg-laying (platypus, echidna).
+    Marsupialia: Pouched (kangaroo, koala, opossum).
+    Placentalia: Internal gestation; most mammals.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MOLECULAR SYSTEMATICS & THE TREE OF LIFE
+---------------------------------------------
+Universal Phylogenetic Marker — 16S/18S rRNA:
+  Ribosomal RNA genes are present in all life, evolve slowly enough to compare
+  across deep branches. Carl Woese used 16S rRNA sequences to discover Archaea (1977)
+  and establish the three-domain tree of life. 16S = prokaryotes; 18S = eukaryotes.
+
+Multi-gene & Whole-genome Phylogenetics:
+  Concatenated gene trees; coalescent methods; horizontal gene transfer complicates
+  deep phylogenetics (especially among prokaryotes). ~15–30% of bacterial genes
+  involved in HGT. Network vs tree representation for prokaryote evolution.
+
+Current Consensus — Eukaryote Supergroups:
+  Opisthokonta : Animals + Fungi + choanoflagellates (closest relatives of animals).
+  Amoebozoa    : Amoebae, slime moulds.
+  Archaeplastida: Plants, green algae, red algae, glaucophytes.
+  SAR           : Stramenopiles (diatoms, kelp) + Alveolates (ciliates, dinoflagellates,
+                  Plasmodium) + Rhizaria (foraminifera, radiolaria).
+  Excavata      : Flagellates; Giardia, Trichomonas, trypanosomes, Euglena.
+  TSAR/CRuMs    : Several emerging groups still being resolved.
+
+Species Concepts:
+  Biological Species Concept (Mayr): Groups that actually or potentially interbreed
+  and are reproductively isolated from others. Problem: Asexuals; ring species.
+  Phylogenetic Species Concept: Smallest monophyletic group with unique shared
+  derived characters. Problem: Over-splitting; depends on data.
+  Ecological Species Concept: Lineage occupying distinct adaptive zone.
+  Cohesion Species Concept: Most inclusive group with genetic/demographic cohesion.
+  Morphological Species Concept: Defined by morphological characters. Oldest; still practical.
+
+6. BARCODING & METAGENOMICS
+-----------------------------
+DNA Barcoding:
+  Short standardised DNA region used to identify species.
+  Animals: COI (cytochrome c oxidase I — mitochondrial).
+  Plants: rbcL + matK (chloroplast genes).
+  Fungi: ITS (Internal Transcribed Spacer — nuclear ribosomal).
+  BOLD (Barcode of Life Data System): >8 million barcodes; 250,000+ species.
+  Applications: Identifying cryptic species, detecting mislabelled food, customs
+  enforcement (CITES), invasive species detection, diet analysis.
+
+Environmental DNA (eDNA):
+  Collect water/soil sample → extract DNA → sequence → identify organisms present.
+  Does not require direct observation. Detects rare/cryptic species (great crested newt,
+  whale shark, giant panda). Used for biodiversity surveys, invasive species monitoring.
+
+Metagenomics:
+  Sequence ALL DNA in an environmental sample → profile entire community.
+  Revealed: ~99% of microbes cannot be cultured (Great Plate Count Anomaly).
+  Earth Microbiome Project: Cataloguing microbial diversity globally.
+  Discovered: Giant viruses (Mimivirus, Pandoravirus) larger than some bacteria.
+  Revealed vast diversity in ocean (Tara Oceans), soil, deep subsurface biosphere.
+
+[NOMENCLATURE RULES] International Codes govern naming:
+  ICZoN: International Code of Zoological Nomenclature (animals).
+  ICN: International Code of Nomenclature for algae, fungi, plants.
+  ICNB: International Code of Nomenclature of Bacteria.
+  Priority principle: First valid description takes precedence.
+  Type specimen: Physical specimen defining the species (holotype).
+  Synonyms: Multiple names for the same species — valid name = oldest valid publication.
+
+================================================================================

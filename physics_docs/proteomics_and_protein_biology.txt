@@ -1,0 +1,177 @@
+================================================================================
+                  PROTEOMICS & PROTEIN BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PROTEINS — THE WORKHORSES OF THE CELL
+------------------------------------------
+Proteins are large, complex macromolecules made from chains of amino acids.
+~20,000 protein-coding genes in humans produce ~100,000+ distinct proteins
+(through alternative splicing, PTMs). The proteome is the complete set of
+proteins expressed by a cell at a given time and condition.
+
+The 20 Standard Amino Acids (classified by R-group):
+  Nonpolar/Hydrophobic: Glycine (G), Alanine (A), Valine (V), Leucine (L),
+    Isoleucine (I), Proline (P), Phenylalanine (F), Methionine (M), Tryptophan (W).
+  Polar/Uncharged: Serine (S), Threonine (T), Cysteine (C), Asparagine (N),
+    Glutamine (Q), Tyrosine (Y).
+  Positively charged (basic): Lysine (K), Arginine (R), Histidine (H).
+  Negatively charged (acidic): Aspartate (D), Glutamate (E).
+  Special: Proline (constrains backbone — rigid); Glycine (smallest — most flexible);
+    Cysteine (disulphide bonds); Histidine (pKa ~6.0 — pH sensor in enzymes).
+
+Peptide Bond:
+  Forms between carboxyl group of one amino acid + amino group of next → dehydration.
+  Peptide bond: Partial double bond character → rigid and planar; does not freely rotate.
+  Phi (φ) and psi (ψ) angles: Describe rotation around Cα. Ramachandran plot: Allowed
+  regions define secondary structure (alpha-helix: φ≈-57°, ψ≈-47°; beta-sheet: φ≈-120°, ψ≈+120°).
+
+1.1 PROTEIN FUNCTIONS
+----------------------
+  Enzymes          : Catalyse biochemical reactions (RuBisCO, amylase, pepsin).
+  Structural        : Collagen (tendon/skin), keratin (hair/nails), elastin (arteries).
+  Transport         : Haemoglobin (O2), albumin (fatty acids/drugs), transferrin (iron).
+  Motor             : Myosin (muscle), kinesin/dynein (intracellular transport).
+  Signalling        : Hormones (insulin, GH), receptors, G-proteins, kinases.
+  Immune            : Antibodies (IgG, IgM), complement proteins, cytokines.
+  Gene regulation   : Transcription factors (p53, c-Myc, STAT3), histones.
+  Channel/transporter: Na+/K+ ATPase, aquaporins, GLUT transporters.
+  Storage           : Ferritin (iron), casein (milk calcium/amino acids).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. POST-TRANSLATIONAL MODIFICATIONS (PTMs)
+--------------------------------------------
+PTMs dramatically expand the proteome's functional diversity. ~400 types of PTM.
+
+Phosphorylation:
+  Most widespread regulatory PTM. Serine (most common), Threonine, Tyrosine, Histidine.
+  Writers: ~500 protein kinases. Erasers: ~150 protein phosphatases.
+  Creates/destroys protein-protein interaction sites; alters enzyme activity; drives signalling.
+  Phosphoproteomics: Enrich phosphopeptides (IMAC, TiO2) → LC-MS/MS → identify sites.
+
+Ubiquitination:
+  Small protein (76 aa) covalently attached to target Lys via isopeptide bond.
+  E1 (ubiquitin-activating) → E2 (conjugating) → E3 (ligase, provides substrate specificity).
+  Polyubiquitin chains: K48-linked → proteasomal degradation (26S proteasome: 20S core + 19S cap).
+    K63-linked → DNA damage response, NF-kB signalling, endosomal sorting.
+    M1-linked (linear) → NF-kB activation; LUBAC complex.
+  Monoubiquitination: Histone H2B (transcription); H2A (Polycomb repression); PCNA (TLS).
+  SUMO (Small Ubiquitin-like Modifier): Nuclear, transcription factor regulation, DNA repair.
+
+Glycosylation:
+  N-linked: Attached to Asn in Asn-X-Ser/Thr motif in ER → complex processing in Golgi.
+    Quality control: Calnexin/calreticulin cycle; ERAD.
+    Functions: Protein folding, stability, receptor binding, immune recognition.
+  O-linked: GlcNAc or GalNAc to Ser/Thr in Golgi. Mucins (gel-forming glycoproteins).
+  O-GlcNAc: Cytoplasmic/nuclear; regulated by OGT (writer) + OGA (eraser);
+    competes with phosphorylation on same residues → integrates nutrient/stress signals.
+
+Acetylation:
+  N-terminal: Very common; removes positive charge; affects stability (N-end rule).
+  Lysine: Histones (HATs/HDACs) → gene regulation. Also metabolic enzymes (acetyl-CoA-dependent).
+  SIRT (sirtuins): NAD+-dependent deacylases → link metabolism to protein regulation.
+
+Methylation:
+  Primarily Lys and Arg. Histones (covered in Chromosome Biology doc). Also p53, PCNA.
+  PRMT enzymes methylate Arg (mono, asymmetric di, symmetric di) → splicing, signalling.
+
+Acetylation by CoA: Succinylation, Malonylation, Glutarylation, Crotonylation — emerging PTMs
+  on histones and metabolic enzymes; regulated by sirtuins.
+
+3. PROTEIN DEGRADATION
+------------------------
+Ubiquitin-Proteasome System (UPS):
+  26S Proteasome: 20S catalytic core + 19S regulatory cap (recognises ubiquitin chains).
+  Three proteolytic activities in 20S: Chymotrypsin-like (beta5), trypsin-like (beta2), caspase-like (beta1).
+  Substrate must be unfolded → threaded through 20S barrel → cleaved into 7–25 aa peptides.
+  Important substrates: Cyclins (cell cycle), IkB (NF-kB), HIF-1alpha (oxygen sensing), p53.
+  Proteasome inhibitors: Bortezomib (PS-341) → myeloma (accumulates misfolded proteins → ER stress → UPR → apoptosis).
+
+Autophagy-Lysosome Pathway:
+  Macroautophagy: Double-membrane autophagosome engulfs cytoplasmic contents → fuses with lysosome.
+    Initiation: ULK1/2 complex (activated by AMPK, inhibited by mTORC1).
+    Nucleation: PI3P production by VPS34 complex → phagophore.
+    Elongation: ATG5-ATG12-ATG16L1 complex; LC3-PE (LC3-II) → autophagosome membrane.
+    Maturation: VAMP8/STX17 → lysosome fusion → cargo degraded.
+  Selective autophagy receptors: p62/SQSTM1, NBR1, NDP52, optineurin → recognise ubiquitinated cargo.
+  Mitophagy: PINK1-Parkin pathway; FUNDC1, BNIP3L (receptor-mediated).
+  Chaperone-mediated autophagy (CMA): KFERQ motif → LAMP-2A receptor → direct translocation.
+
+4. PROTEIN STRUCTURE DETERMINATION
+-------------------------------------
+X-ray Crystallography (see biophysics doc).
+Cryo-EM (see biophysics doc).
+NMR (see biophysics doc).
+
+Protein-Protein Interactions:
+  Co-immunoprecipitation (Co-IP): Antibody pulls down protein → detect partners by WB or MS.
+  Yeast two-hybrid (Y2H): BD-X + AD-Y → reconstitutes TF → reporter gene if X-Y interact.
+  FRET: Distance-sensitive energy transfer → detect interaction in living cells.
+  BioID/TurboID: Biotinylates proximal proteins in live cells → streptavidin pull-down.
+  AlphaFold-Multimer: Predict protein complexes from sequences.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. INTRINSICALLY DISORDERED PROTEINS (IDPs)
+---------------------------------------------
+~30–40% of human proteome is intrinsically disordered (IDRs).
+IDPs lack stable 3D structure under physiological conditions; highly dynamic.
+Functions: Molecular recognition (coupled folding and binding → adaptive binding);
+  scaffold/hub proteins (multiple partners through same region); post-translational
+  modification sites (accessible); entropic chains (linkers, spacers).
+
+Coupled Folding and Binding:
+  IDP binds partner → folds into defined structure (folding upon binding).
+  Kinetic advantages: Fast on-rate; specificity without tight binding (easy to regulate).
+  p27(KIP1): IDP; binds CDK2-CyclinA → structured → cell cycle inhibitor.
+  c-Myc transactivation domain: IDP; binds ~400 partners; transcriptional hub.
+
+Phase Separation Relevance (see chromosome biology doc):
+  Many IDPs drive LLPS via low-complexity regions (LCRs); aromatic/charged residue patterns.
+  FUS, TDP-43, hnRNPA1, G3BP1: LLPS-driven condensates; mutated in ALS/FTD.
+
+6. PROTEOSTASIS NETWORK
+-------------------------
+Proteostasis (protein homeostasis): Balance of protein synthesis, folding, and degradation.
+Three key nodes:
+  Ribosome + co-translational chaperones: Nascent chain binding (Hsp70/DnaK binds within tunnel exit).
+  Chaperone network: HSP70, HSP90, chaperonin (GroEL/GroES); prevent/reverse aggregation.
+  Degradation: UPS + autophagy (see above).
+
+Proteostasis Decline in Ageing:
+  HSP70 induction capacity declines. UPS substrate load increases but capacity decreases.
+  Aggregation: Amyloid beta, tau (Alzheimer's); alpha-synuclein (Parkinson's); TDP-43 (ALS);
+  polyglutamine (Huntington's); IAPP (Type 2 diabetes islets); transthyretin (cardiac amyloid).
+
+Proteostasis Modulation:
+  Proteostasis regulators: Enhance folding capacity → prevent aggregation disease.
+  CFTR folding correction: VX-809 (lumacaftor) corrects misfolded CFTR-F508del → reaches
+    cell surface → combined with ivacaftor (potentiator) → Orkambi → cystic fibrosis.
+  Pharmacological chaperones: Small molecules that stabilise misfolded proteins in place.
+  ATF6 activators: AA147; promote UPR adaptive arm; reduce misfolded protein burden.
+  Proteolysis targeting chimeras (PROTACs):
+    Bifunctional molecules: Ligand for target protein + ligand for E3 ligase → proximity →
+    target ubiquitinated → proteasomal degradation.
+    First approved PROTAC: ARV-110 (androgen receptor degrader — prostate cancer).
+    Advantage: Catalytic (one molecule degrades many targets); can target "undruggable" proteins;
+    degrades entire protein (vs inhibiting active site only).
+
+[EMERGING] Targeted protein degradation (TPD) revolution:
+  PROTACs, molecular glues (thalidomide derivatives — degron-based; CC-885, CELMoDs),
+  LYTACs (lysosome-targeting chimeras), AUTACs (autophagy-targeting).
+  Molecular glues: Small molecules that induce novel protein-protein contacts →
+    neosubstrate recruited to E3 → degradation. IMiDs (thalidomide, lenalidomide) →
+    CRBN E3 ligase recruits Ikaros/Aiolos, CK1alpha, ZFP91 → degradation → anti-myeloma.
+  Expanding target universe: Include transcription factors, RNA-binding proteins,
+    nuclear receptors, scaffold proteins — previously "undruggable" by conventional inhibition.
+
+================================================================================

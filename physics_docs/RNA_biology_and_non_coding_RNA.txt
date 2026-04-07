@@ -1,0 +1,186 @@
+================================================================================
+                   RNA BIOLOGY & NON-CODING RNA
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. RNA TYPES & OVERVIEW
+------------------------
+RNA (ribonucleic acid): Single-stranded; ribose sugar; uracil instead of thymine.
+Only ~1.5–2% of the genome encodes protein. ~80% of genome is transcribed at some level.
+Most transcripts are non-coding RNAs (ncRNAs) — vast and largely uncharacterised functional world.
+
+RNA Classes — Overview:
+  Coding RNA (mRNA)       : Templates for protein synthesis.
+  Ribosomal RNA (rRNA)   : ~80% of total cellular RNA. Structural + catalytic (ribozyme) in ribosomes.
+  Transfer RNA (tRNA)    : Carry amino acids to ribosome; anticodon-codon matching.
+  Small nuclear RNA (snRNA): Spliceosome components (U1, U2, U4, U5, U6).
+  Small nucleolar RNA (snoRNA): Guide rRNA modification (methylation/pseudouridylation).
+  MicroRNA (miRNA)       : ~22 nt; gene silencing; post-transcriptional regulation.
+  Small interfering RNA (siRNA): ~21 nt; RNAi pathway; exogenous dsRNA-derived.
+  Piwi-interacting RNA (piRNA): ~26–31 nt; suppress transposons in germline.
+  Long non-coding RNA (lncRNA): >200 nt; diverse functions; most poorly characterised.
+  Circular RNA (circRNA) : Covalently closed loops; stable; resist degradation.
+  Enhancer RNA (eRNA)    : Transcribed from active enhancers; short; function unclear.
+  Transfer-messenger RNA (tmRNA): In bacteria; rescues stalled ribosomes.
+
+1.1 mRNA STRUCTURE
+-------------------
+Pre-mRNA processing (eukaryotes):
+  5' cap: 7-methylguanosine; added co-transcriptionally; required for export, translation initiation, mRNA stability.
+  3' poly-A tail: ~200 adenines added by poly-A polymerase; stability + translation.
+  Splicing: Introns removed; exons joined by spliceosome.
+
+Mature mRNA structure (5' to 3'):
+  5' cap — 5'UTR — AUG (start codon) — Coding Sequence — Stop codon — 3'UTR — Poly-A tail
+
+UTRs (Untranslated Regions):
+  5'UTR: Controls translation efficiency; IRES elements; upstream ORFs; G-quadruplexes.
+  3'UTR: miRNA binding sites; AU-rich elements (ARE) → mRNA instability/decay;
+    poly-A signal (AAUAAA); RNA localisation signals.
+
+Genetic Code:
+  64 codons (4³): 61 sense codons + 3 stop codons (UAA, UAG, UGA).
+  Degeneracy (redundancy): Multiple codons for same amino acid. Third position wobble.
+  Start codon: AUG (Met) in eukaryotes; fMet in prokaryotes.
+  Codon usage bias: Organisms preferentially use particular synonymous codons.
+  Suppressor tRNAs: Decode stop codons with amino acids → read-through.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. SPLICING MECHANISMS
+------------------------
+Pre-mRNA Splicing:
+  Spliceosome: ~5 snRNPs (U1, U2, U4, U5, U6) + ~100 accessory proteins (~2 MDa complex).
+  Consensus sequences: 5' splice site (GU), branch point (A adenosine, ~20–50 nt upstream of 3' SS),
+    polypyrimidine tract, 3' splice site (AG).
+
+Two Transesterification Reactions:
+  1. 2'-OH of branch point A attacks 5' splice site → free 5' exon + intron lariat.
+  2. 3'-OH of free exon attacks 3' splice site → exons joined + intron lariat released.
+  Intron lariat → debranched → degraded (linear RNA).
+
+Alternative Splicing:
+  ~95% of human multi-exon genes alternatively spliced → proteome diversity.
+  Types: Exon skipping (most common), alternative 5'/3' splice sites, intron retention, mutually exclusive exons.
+  Regulation: SR proteins (exonic splicing enhancers, ESE) + hnRNPs (exonic splicing silencers, ESS).
+  Cell-type specific: Neurexin → >1,000 isoforms → synaptic specificity.
+  Disease: ~15% of genetic disease mutations affect splice sites.
+    Spinal muscular atrophy (SMA): SMN1 deletion; SMN2 exon 7 skipped.
+      Nusinersen: Antisense oligonucleotide (ASO) blocks ESS → forces SMN2 exon 7 inclusion → more full-length SMN protein.
+      Risdiplam: Small molecule splicing modifier; same mechanism; oral.
+
+3. microRNA BIOLOGY
+--------------------
+miRNA Biogenesis:
+  MIR gene transcribed by RNAPII → pri-miRNA (hairpin + flanking RNA) →
+  DROSHA/DGCR8 complex (microprocessor) cleaves in nucleus → ~70 nt pre-miRNA hairpin →
+  exported by Exportin-5/Ran-GTP → Dicer cleaves → ~22 nt miRNA:miRNA* duplex →
+  strand selection (mature strand, lower 5' stability) → loaded into AGO2 protein → RISC complex.
+
+Mechanism of Silencing:
+  RISC-miRNA scans mRNA 3'UTRs → seed sequence (nt 2–8 of miRNA) → complementary to target.
+  Near-perfect complementarity → AGO2 cleaves mRNA (endonuclease, "slicer" activity — mainly siRNA mechanism).
+  Imperfect complementarity (most miRNAs) → translational repression + mRNA deadenylation + decay.
+    Recruitment of CCR4-NOT deadenylase complex → poly-A tail removed → XRN1 degradation.
+    GW182/TNRC6 proteins: Recruit deadenylation + decapping machinery.
+
+One miRNA → hundreds of targets. One mRNA → regulated by multiple miRNAs.
+~2,600 mature human miRNAs; regulate ~60% of protein-coding genes.
+Oncogenic miRNAs (OncomiRs): miR-21 (targets PTEN, PDCD4); miR-155 (immune + oncology).
+Tumour suppressor miRNAs: let-7 (targets KRAS, MYC, HMGA2); miR-34a (p53 transcriptional target).
+miR-122: Liver-specific; required for HCV replication → miravirsen (anti-HCV ASO targeting miR-122).
+
+4. LONG NON-CODING RNAs (lncRNAs)
+------------------------------------
+>50,000 lncRNA genes in human genome (more than protein-coding). Expression often tissue/context-specific.
+
+Function Categories:
+  Epigenetic regulation: Recruit chromatin-modifying complexes.
+    XIST: X-chromosome inactivation. 17 kb; transcribed from inactive X.
+      XIST coats the X chromosome → recruits PRC2 (EZH2) → H3K27me3 → gene silencing.
+      REPEAT A domain → recruits HDAC → deacetylation. SPEN/SHARP → transcriptional repression.
+    HOTAIR: Antisense to HOXC; recruits PRC2 to HOXD locus → transcriptional silencing.
+      Also recruits LSD1/CoREST → H3K4 demethylation. Overexpressed in many cancers.
+    NEAT1: Required for paraspeckle formation; regulates mRNA nuclear retention.
+  Transcription regulation:
+    Enhancer RNAs (eRNAs): Bidirectionally transcribed at active enhancers.
+    Promoter-antisense lncRNAs: Often negatively regulate sense gene.
+  Post-transcriptional:
+    ceRNAs (competing endogenous RNAs): Sponge miRNAs via miRNA response elements (MREs).
+    NORAD: 2 million copies per cell; sequesters PUMILIO proteins → controls genomic stability.
+  Structural:
+    MALAT1: Required for nuclear speckle integrity; regulates alternative splicing.
+    NEAT1: Paraspeckle component.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. RIBOZYMES & THE RNA WORLD
+------------------------------
+Ribozymes: RNA molecules with catalytic activity.
+  Group I introns: Self-splicing; transesterification using external G as nucleophile.
+  Group II introns: Self-splicing via lariat intermediate (mechanistically related to spliceosome).
+    Mobile elements — encode RT; can retrotranspose.
+  Hammerhead ribozyme: Cleaves phosphodiester bond; ~40 nt.
+  HDV (hepatitis delta virus) ribozyme: Self-cleaving; required for viral genome processing.
+  VS ribozyme: Cleavage; similar mechanism.
+  Ribosome (peptidyl transferase centre): Largest natural ribozyme. rRNA 23S/28S catalyses peptide bond.
+  RNase P: RNA + protein; cleaves 5' of tRNA precursors; RNA subunit is the catalyst.
+  Glmsa ribozyme: In bacteria; glucosamine-6-phosphate-sensing self-cleaving ribozyme.
+
+In Vitro Selection (SELEX):
+  Synthesise random RNA library → select for binding/catalysis → amplify → repeat.
+  Creates aptamers (RNA binding molecules) and new ribozymes.
+  Aptamers: Synthetic; high affinity; rival antibodies. Pegaptanib (anti-VEGF aptamer) — AMD.
+  Ribozyme medicine: Angiozyme (anti-VEGFR) — clinical trials.
+
+6. RNA THERAPEUTICS
+--------------------
+Antisense Oligonucleotides (ASOs):
+  Short (15–25 nt) modified DNA/RNA → bind target RNA by Watson-Crick pairing.
+  Mechanisms: RNase H-mediated degradation (DNA-like ASO); steric blocking (no degradation);
+    splice switching (block exon/intron regulatory elements).
+  Chemical modifications: Phosphorothioate backbone (PS; nuclease-resistant);
+    2'-MOE, 2'-OMe, 2'-F, LNA (locked nucleic acid) — ↑ affinity, ↑ nuclease resistance.
+  Approved: Nusinersen (SMA), inotersen (hATTR), volanesorsen (hypertriglyceridaemia),
+    golodirsen/viltolarsen (DMD exon skipping), mipomersen (hypercholesterolaemia).
+
+siRNA Therapeutics:
+  dsRNA → Dicer → siRNA → RISC → mRNA cleavage → potent gene silencing.
+  Delivery challenges: Naked siRNA rapidly degraded; poor cell entry; immunogenic.
+  GalNAc conjugation: N-acetylgalactosamine targets ASGR1 on hepatocytes → subcutaneous delivery.
+    Approved: Inclisiran (PCSK9 siRNA — hypercholesterolaemia; twice-yearly dosing);
+    givosiran (ALAS1 — acute hepatic porphyria); lumasiran (HAO1 — primary hyperoxaluria I);
+    patisiran (LNP-delivered; hATTR amyloidosis — first siRNA approved, 2018).
+  LNP (Lipid Nanoparticle) delivery: Ionisable lipid + DSPC + cholesterol + PEG-lipid.
+    Endosome escape: Ionisable lipid protonated in endosome → disrupts endosomal membrane.
+    Basis of COVID-19 mRNA vaccines and patisiran.
+
+Circular RNA (circRNA) Biology:
+  Back-splicing: Downstream splice donor attacks upstream splice acceptor → covalently closed loop.
+  Properties: No 5' cap or poly-A tail → resist exonucleases; very stable (hours to days half-life).
+    vs linear mRNA half-life: ~10 minutes average.
+  Functions: miRNA sponges (CDR1as/ciRS-7 has 73 miR-7 binding sites); protein decoys;
+    protein scaffolds; some translated (IRES-dependent, m6A-dependent).
+  Tissue-specific; enriched in brain (CDR1as, circRNA-284); many from neural genes.
+  circRNA vaccines: Greater stability + immunogenicity vs linear mRNA → being developed for COVID-19.
+
+[EMERGING] Epitranscriptomics (RNA modifications):
+  >170 RNA chemical modifications. Most studied: m6A (N6-methyladenosine).
+  m6A writers: METTL3/METTL14 complex. Erasers: FTO, ALKBH5. Readers: YTHDF1-3, YTHDC1-2.
+  m6A: Most abundant internal modification in mRNA. Regulates mRNA stability, translation, splicing,
+    export, localisation. Dynamic: Changes with stress, differentiation, circadian rhythm.
+  m6A in cancer: METTL3 oncogenic in AML; FTO oncogenic in leukaemia, melanoma.
+  Other modifications: m5C (5-methylcytosine), pseudouridine (Ψ), A-to-I editing (ADAR),
+    m1A, m7G, Nm (2'-O-methylation).
+  Pseudouridine: Most abundant RNA modification. Karikó & Weissman: Replacing U with Ψ in
+    mRNA → avoids innate immune activation → enables therapeutic mRNA. Nobel Prize 2023.
+
+================================================================================

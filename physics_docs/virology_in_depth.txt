@@ -1,0 +1,180 @@
+================================================================================
+                        VIROLOGY IN DEPTH
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. VIRUS DIVERSITY & CLASSIFICATION
+-------------------------------------
+Viruses infect all cellular life. ~6,800 formally classified species but estimated
+millions exist. Smallest: ~17 nm (circovirus); largest: ~1,500 nm (pandoravirus).
+
+Baltimore Classification (7 classes based on genome type and replication strategy):
+  Class I  : dsDNA → mRNA. (Herpesviridae, Adenoviridae, Poxviridae, Papillomaviridae)
+  Class II : ssDNA → dsDNA → mRNA. (Parvoviridae, Anelloviridae)
+  Class III: dsRNA → mRNA. (Reoviridae — Rotavirus, Reovirus)
+  Class IV : +ssRNA = mRNA → directly translated. (Picornaviridae, Flaviviridae, Coronaviridae)
+  Class V  : -ssRNA → mRNA (via RdRp). (Orthomyxoviridae, Paramyxoviridae, Filoviridae, Rhabdoviridae)
+  Class VI : +ssRNA → DNA (via reverse transcriptase) → mRNA. (Retroviridae — HIV, HTLV)
+  Class VII: dsDNA with ssDNA intermediate. (Hepadnaviridae — Hepatitis B)
+
+Important Virus Families:
+Family           | Genome   | Envelope | Key Members
+-----------------|----------|----------|--------------------------------
+Herpesviridae    | dsDNA    | Yes      | HSV-1/2, VZV, EBV, CMV, HHV-6/7/8
+Adenoviridae     | dsDNA    | No       | Adenovirus 1–50+; respiratory, GI
+Poxviridae       | dsDNA    | Yes      | Smallpox, Mpox, Vaccinia
+Papillomaviridae | dsDNA    | No       | HPV (100+ types); HPV16/18 → cervical cancer
+Polyomaviridae   | dsDNA    | No       | JC virus (PML), BK virus, Merkel cell
+Retroviridae     | +ssRNA   | Yes      | HIV-1/2, HTLV-1, XMRV
+Coronaviridae    | +ssRNA   | Yes      | SARS-CoV-2, MERS-CoV, HCoV-229E
+Flaviviridae     | +ssRNA   | Yes      | Dengue, Zika, Yellow fever, Hep C, WNV
+Picornaviridae   | +ssRNA   | No       | Poliovirus, Rhinovirus, HAV, Enterovirus
+Orthomyxoviridae | -ssRNA   | Yes      | Influenza A/B/C
+Paramyxoviridae  | -ssRNA   | Yes      | Measles, Mumps, RSV, Nipah, Hendra, Parainfluenza
+Filoviridae      | -ssRNA   | Yes      | Ebola, Marburg (highest CFR up to 90%)
+Rhabdoviridae    | -ssRNA   | Yes      | Rabies, VSV
+Reoviridae       | dsRNA    | No       | Rotavirus (childhood diarrhoea), Reovirus
+Hepadnaviridae   | Partial dsDNA | Yes | Hepatitis B
+Parvoviridae     | ssDNA    | No       | Parvovirus B19 (Fifth disease); AAV (gene therapy)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. VIRAL ENTRY & HOST CELL INTERACTIONS
+-----------------------------------------
+Receptor-Mediated Entry:
+  Virus → binds specific cell surface receptor (tropism determinant) → entry:
+  Endocytosis: Clathrin-mediated or macropinocytosis → endosome → low pH → conformational
+    change → membrane fusion or capsid escape.
+  Direct membrane fusion (enveloped viruses): Fusion protein activated at surface or in endosome.
+  Non-enveloped virus entry: Capsid disrupts membrane; pore formation; genome injection.
+
+Key Receptor Examples:
+  SARS-CoV-2  : ACE2 (Spike RBD); co-factor: TMPRSS2 (priming). Lung type II cells, gut epithelium.
+  HIV-1       : CD4 + CCR5/CXCR4 (co-receptors). CD4+ T cells, macrophages, DCs.
+  Influenza   : Sialic acid (alpha-2,3 linked: birds; alpha-2,6: humans). Respiratory epithelium.
+  Rhinovirus  : ICAM-1 (major group) or LDL-R. Upper respiratory epithelium.
+  EBV         : CD21 (CR2) on B cells; HLA class II. Also epithelial cells (gH/gL/gp42).
+  Rabies      : nAChR, NCAM, p75NTR. Neuromuscular junction → retrograde axonal transport → brain.
+  Poliovirus  : CD155 (PVR). Motor neuron tropism explains paralysis.
+  Measles     : CD46 (most cell types); SLAMF1 (immune cells). Airborne; highly infectious.
+
+Viral Replication Compartments:
+  DNA viruses: Replicate in nucleus (exception: Poxviruses replicate in cytoplasm).
+  RNA viruses: Replicate in cytoplasm (exception: Influenza, Bornavirus — replicate in nucleus).
+  Positive-sense RNA viruses: Replication on membrane-associated organelles (DMVs — double-membrane vesicles)
+    formed by hijacking ER/Golgi. NSP3/4/6 in SARS-CoV-2 remodel membranes.
+
+3. SPECIFIC VIRUS BIOLOGY
+---------------------------
+Influenza Virology:
+  Genome: 8 segments of -ssRNA → allows reassortment.
+  HA (Haemagglutinin): Binds sialic acid. 18 subtypes (H1–H18).
+  NA (Neuraminidase): Cleaves sialic acid → virus release + spread. 11 subtypes (N1–N11).
+  H1N1, H3N2: Currently circulating in humans.
+  H5N1 (avian): Binds alpha-2,3 sialic acid → lower respiratory tract; high CFR (~60%).
+  M2 ion channel: Allows H+ into virion → HA conformational change. Target of amantadine.
+  NA inhibitors: Oseltamivir (Tamiflu), zanamivir (Relenza). Prevent virion release.
+  Baloxavir: PA endonuclease inhibitor → cap-snatching inhibition → all influenza segments affected.
+
+Herpesvirus Latency:
+  All 8 human herpesviruses establish lifelong latency.
+  HSV-1/2: Latency in sensory ganglia neurons. LAT (Latency-Associated Transcript) non-coding
+    RNA maintains latency; suppresses lytic gene expression.
+    Reactivation: Stress, UV, immunosuppression → viral IE genes expressed → lytic cycle.
+  EBV: Latency in memory B cells. 3 latency programs:
+    Latency 0: Silent; memory B cells; no viral protein.
+    Latency I: EBNA1 only; Burkitt lymphoma.
+    Latency II: EBNA1 + LMP1 + LMP2; NPC, Hodgkin lymphoma.
+    Latency III: All EBNAs + LMPs; immunoblastic lymphoma (immunocompromised).
+  HCMV: Latency in CD34+ myeloid progenitors; reactivation on differentiation to macrophages/DCs.
+    Major cause of morbidity in transplant patients.
+  VZV: Primary infection = chickenpox. Latency in dorsal root ganglia. Reactivation = shingles (zoster).
+    Shingrix vaccine (recombinant gE antigen + AS01B adjuvant): >90% protective against zoster.
+
+4. ANTIVIRAL DRUGS
+--------------------
+Target           | Drug               | Virus           | Mechanism
+-----------------|-------------------|-----------------|-------------------------------
+Viral polymerase | Sofosbuvir         | HCV             | NS5B (RdRp) chain terminator
+                 | Remdesivir         | SARS-CoV-2, RSV | Broad RdRp inhibitor; NTP analogue
+                 | Molnupiravir       | SARS-CoV-2      | Error catastrophe via mutagenesis
+Protease         | Nirmatrelvir       | SARS-CoV-2      | Main protease (Mpro) covalent inhibitor
+                 | Ritonavir          | HIV, SARS-CoV-2 | Pharmacokinetic booster (CYP3A4 inhibitor)
+RT               | Tenofovir (TDF/TAF)| HIV, HBV        | NRTI; chain terminator
+                 | Efavirenz          | HIV             | NNRTI; allosteric RT inhibitor
+Integrase        | Dolutegravir       | HIV             | INSTI; blocks strand transfer
+Entry            | Maraviroc          | HIV             | CCR5 antagonist
+                 | Enfuvirtide        | HIV             | gp41 fusion inhibitor (peptide)
+                 | Nirsevimab         | RSV             | Monoclonal Ab vs prefusion F protein
+NA               | Oseltamivir        | Influenza       | NA inhibitor; prevents release
+Capsid           | Lenacapavir        | HIV             | Capsid inhibitor; long-acting (6 monthly)
+NS5A             | Ledipasvir         | HCV             | NS5A complex inhibitor; pan-genotypic
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. INNATE IMMUNE EVASION BY VIRUSES
+-------------------------------------
+Pattern Recognition of Viral PAMPs:
+  dsRNA (replication intermediate) → TLR3 (endosome), MDA5/RIG-I (cytoplasm).
+  ssRNA → TLR7/8 (endosome).
+  DNA (cytoplasmic) → cGAS → 2'3'-cGAMP → STING → TBK1 → IRF3 → IFN-beta.
+
+Viral IFN Antagonism:
+  SARS-CoV-2: NSP1 (blocks mRNA translation); NSP3 (deISGylase; removes ISG15); NSP12
+    (RdRp — rapid replication outpaces IFN response); ORF6 (blocks nuclear import of STAT1).
+  Influenza NS1: Binds dsRNA (hides from MDA5/RIG-I); binds TRIM25 (prevents RIG-I ubiquitination);
+    binds p85beta (PI3K → cell survival); binds PABPII (nuclear export block).
+  HIV Vif: Degrades APOBEC3G (restriction factor that mutates viral DNA).
+  HIV Vpx (HIV-2, SIV): Degrades SAMHD1 (dNTPase depletes dNTP pool → restricts reverse transcription in macrophages).
+  EBV EBNA1: GAr repeat domain prevents proteasomal degradation + MHC class I presentation.
+  HSV ICP34.5: Dephosphorylates eIF2alpha (reverses PKR-mediated translational shutdown).
+
+6. EMERGING VIRUSES & PANDEMIC BIOLOGY
+-----------------------------------------
+Spillover and Emergence:
+  Ecological drivers: Deforestation, live animal markets, bushmeat hunting, climate change,
+  urbanisation, globalisation → increased human-wildlife contact → spillover events.
+  Most EIDs are zoonotic. Reservoir hosts often show no disease (co-evolved tolerance).
+  Bat reservoirs: SARS-CoV-2 (closest relative in Rhinolophus bats), MERS-CoV (camels/bats),
+    Ebola (Rousettus bats), Nipah (Pteropus bats), Rabies, Hendra.
+
+Pandemic Preparedness:
+  WHO PHEIC (Public Health Emergency of International Concern): Highest alert level.
+    COVID-19 (2020–2023), Mpox (2022, 2024), SARS (2003), H1N1 (2009), polio, Ebola.
+  100 Days Mission: WHO/CEPI goal to have vaccines for novel pathogen within 100 days.
+  mRNA platform technology: Enabled rapid COVID-19 vaccine design (Moderna: ~2 days to design;
+    Pfizer-BioNTech: vaccine candidate selected from design in 4 hours).
+  Broad-spectrum antivirals: Remdesivir (RdRp), molnupiravir (mutagenesis), favipiravir.
+  Universal influenza vaccine: Targeting conserved HA stalk region (vs variable head).
+    BioNTech mRNA-1010 (Moderna): Targeting 4 influenza strains; clinical trials.
+
+Giant Viruses:
+  Mimivirus (discovered 2003): 750 nm; 1.2 Mb genome; larger than many bacteria.
+  Pandoravirus: 1.5 µm; 2.7 Mb genome.
+  Pithovirus: 1.5 µm long; found in 30,000-year-old Siberian permafrost; still infectious.
+  Megavirus, Tupanvirus: Other giant virus groups.
+  Encode aminoacyl-tRNA synthetases, DNA repair genes — blur boundary between virus and cell.
+  Virophages: Sputnik virophage parasitises Mimivirus — "virus of a virus."
+
+[HISTORICAL MILESTONES] Major virus discoveries:
+  1892: Tobacco Mosaic Virus (Ivanovsky) — first virus.
+  1898: Foot-and-mouth disease virus (Loeffler & Frosch) — first animal virus.
+  1901: Yellow fever virus (Reed) — first human virus.
+  1908: Poliomyelitis virus (Landsteiner & Popper).
+  1911: Rous sarcoma virus (Rous, Nobel 1966) — first tumour virus.
+  1935: TMV crystallised (Stanley, Nobel 1946) — viruses as chemicals.
+  1953: Phage DNA injection confirmed (Hershey-Chase).
+  1970: Reverse transcriptase discovered (Baltimore, Temin, Nobel 1975).
+  1983: HIV discovered (Barré-Sinoussi, Montagnier, Nobel 2008).
+  2003: SARS-CoV identified in 4 months — unprecedented speed.
+  2020: SARS-CoV-2 genome sequenced within 2 weeks; vaccines approved within 11 months.
+
+================================================================================

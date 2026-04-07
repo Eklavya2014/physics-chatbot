@@ -1,0 +1,189 @@
+================================================================================
+                   SOIL BIOLOGY & AGRICULTURAL SCIENCE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. SOIL — THE LIVING EARTH
+---------------------------
+Soil is a complex mixture of minerals, organic matter, water, air, and living organisms.
+~1 teaspoon of healthy soil contains: >1 billion bacteria, several metres of fungal hyphae,
+~10,000 protozoa, ~100 nematodes. Soil is Earth's most biodiverse habitat by mass.
+
+Soil Formation (Pedogenesis):
+  Parent material (rock/sediment) + climate + organisms + topography + time → soil.
+  ~1cm of topsoil takes 500–1,000 years to form.
+
+Soil Horizons (Soil Profile — O to R):
+  O horizon: Organic matter (litter, compost). Uppermost; humus-rich.
+  A horizon: Topsoil; mineral + organic; most biological activity; dark colour.
+  B horizon: Subsoil; mineral accumulation (clay, iron oxides, calcium carbonate).
+  C horizon: Weathered parent material; little organic matter.
+  R horizon: Bedrock.
+
+Soil Texture:
+  Sand (>0.05mm): Large particles; fast drainage; poor water retention.
+  Silt (0.002–0.05mm): Smooth; medium drainage.
+  Clay (<0.002mm): Tiny particles; high surface area; holds water + nutrients well;
+                   can become waterlogged; expanding clays (shrink/swell).
+  Loam: Optimal mix (~40% sand, 40% silt, 20% clay) → ideal for agriculture.
+  Soil structure: Particles aggregated into crumbs (peds) — maintained by fungal
+  hyphae, earthworm casts, root exudates, bacterial biofilms.
+
+Soil Chemistry:
+  pH: Most crops prefer 6.0–7.0. Too acidic → Al3+ and Mn2+ toxicity; too alkaline →
+  micronutrient deficiency (Fe, Zn, Mn). Lime (CaCO3) raises pH; sulphur lowers pH.
+  CEC (Cation Exchange Capacity): Soil's ability to hold positively charged nutrients
+  (Ca2+, Mg2+, K+, NH4+) → prevents leaching. Clay and humus have high CEC.
+  Organic matter: Key for CEC, structure, water retention, microbial habitat.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. SOIL MICROBIOLOGY & NUTRIENT CYCLING
+-----------------------------------------
+Nitrogen Cycle in Soil:
+  N2 fixation: Rhizobium (legume root nodules) + free-living (Azotobacter, Anabaena).
+    Nitrogenase enzyme: Very O2-sensitive (anaerobic conditions inside nodules maintained
+    by leghaemoglobin — pink/red colour in healthy nodules).
+  Nitrification: NH4+ → NO2- (Nitrosomonas) → NO3- (Nitrobacter). Aerobic process.
+  Denitrification: NO3- → NO2- → N2O → N2. Anaerobic; waterlogged soils.
+  Ammonification: Organic N (dead organisms) → NH4+ by decomposers.
+  DNRA (Dissimilatory Nitrate Reduction to Ammonium): Conserves N in ecosystem.
+  Anammox (anaerobic ammonia oxidation): NH4+ + NO2- → N2. Important in marine/wetland N loss.
+
+The Rhizosphere:
+  Zone of soil immediately surrounding roots (1–2mm). Highly active; 10–100x more
+  microbes than bulk soil. Root exudates (sugars, amino acids, organic acids) feed
+  bacteria and fungi → microbiome shaped by plant species.
+  Root-associated bacteria promote growth: N-fixing, P-solubilising, ACC deaminase
+  (reduces ethylene → reduces stress response → promotes root growth).
+
+Mycorrhizal Networks (detailed):
+  AM fungi (Glomeromycota): Arbuscular mycorrhizae in ~80% crops (wheat, maize, rice).
+  Cannot be cultured alone. Trade: Plant gives 4–20% photosynthate; fungus delivers
+  P (via PolyphosphateP granules), water, micronutrients.
+  ECM networks: Up to 100 trees interconnected. Up to 60% of C fixed by trees transferred
+  to fungal mycelium. N and P transferred between trees via ECM.
+
+Decomposition & Humus Formation:
+  Fresh organic matter → fragmentation (earthworms, beetles, millipedes) →
+  chemical breakdown (bacteria, fungi) → humic substances (humic acid, fulvic acid,
+  humin) → stable soil organic carbon.
+  Lignin degradation: Only white rot fungi (basidiomycetes) fully break down lignin.
+  Priming effect: Addition of fresh organic matter accelerates decomposition of old SOM.
+
+3. AGRICULTURAL BIOLOGY
+------------------------
+Crop Domestication:
+  Domestication syndrome: Changes from wild ancestor → increased yield, reduced
+  seed dispersal, loss of dormancy, reduced bitterness/toxins, altered architecture.
+  Centres of origin (Vavilov): 8 primary centres where most crops were domesticated.
+  Fertile Crescent: Wheat (Triticum — from einkorn + emmer), barley, lentil, pea, flax.
+  Mesoamerica: Maize (from teosinte — ~9,000 ya; dramatic morphological change), beans, squash, tomato.
+  Andes: Potato, quinoa, guinea pig.
+  China: Rice (Oryza sativa), soybean, millet.
+  Africa: Sorghum, millet, yam, coffee.
+
+Green Revolution (1960s–70s):
+  Norman Borlaug (Nobel Peace Prize 1970): Semi-dwarf wheat + rice varieties.
+  Rht (reduced height) in wheat: Mutation in DELLA protein → reduced gibberellin response
+  → shorter straw (less lodging) + more energy into grain.
+  sd1 in rice: Mutation in GA20ox → same effect. IR8 rice ("miracle rice").
+  Result: Wheat/rice yields tripled 1961–1985. Estimated ~1 billion lives saved.
+  Criticisms: Dependent on fertilisers/pesticides; reduced diversity; water intensive.
+
+Plant Nutrition:
+  Macronutrients (N, P, K, Ca, Mg, S): Required in large amounts.
+  Micronutrients (Fe, Mn, Zn, Cu, B, Mo, Cl, Ni): Trace amounts essential.
+  Liebig's Law of the Minimum: Growth limited by scarcest essential resource.
+  NPK fertilisers: N → amino acids, chlorophyll; P → ATP, membranes; K → stomata,
+  enzyme activation, osmotic regulation.
+  Fertiliser use: ~200 million tonnes/year globally. Runoff → eutrophication.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. SOIL ECOLOGY & FOOD WEBS
+-----------------------------
+Soil Food Web:
+  Primary producers (plant roots + algae) → Primary consumers:
+    Bacterial feeders: Protozoa (amoebae, flagellates, ciliates), nematodes.
+    Fungal feeders: Collembola (springtails), mites (Acari), nematodes.
+    Primary predators: Nematode-feeding mites, centipedes.
+    Secondary/tertiary predators: Predatory mites, beetles, spiders, birds, moles.
+  Decomposers: Bacteria and fungi at every level.
+
+Earthworms:
+  Charles Darwin: "The plow was invented long before man" — earthworms plough soil.
+  Types: Epigeic (surface, compost); endogeic (topsoil burrows); anecic (deep vertical burrows).
+  Lumbricus terrestris (nightcrawler): Pulls leaf litter into burrows; deep channels.
+  Functions: Soil structure (casts, channels); nutrient cycling; microbial inoculation.
+  Worm casts: 5–10x more micronutrients than surrounding soil; improved structure.
+  Invasive earthworms: European species invading North American forests → disrupting
+  carbon storage; devastating native understorey communities.
+
+Soil Carbon:
+  Soil organic carbon (SOC): ~2,500 GtC in soil (more than atmosphere + vegetation combined).
+  Stabilisation: Organo-mineral associations (SOC adsorbed to clay/Fe minerals);
+  physical protection in aggregates; biochemical recalcitrance (suberin, lignin).
+  Climate feedback: Warming → increased microbial respiration → CO2 release (positive feedback).
+  1°C global warming → ~55 GtC released from permafrost by 2100 (Schuur et al.).
+  Carbon farming: Regenerative agriculture, biochar, cover crops → sequester C.
+
+5. PLANT PATHOLOGY
+-------------------
+Major Plant Pathogens:
+  Fungi (65% of plant diseases): Powdery mildew, rusts, blights.
+    Puccinia graminis: Wheat stem rust. Feared pathogen; Ug99 strain → global threat.
+    Phytophthora infestans (oomycete — not true fungus): Irish Potato Famine (1845–49).
+    Fusarium oxysporum: Panama disease — wiped out Gros Michel banana; now threatens Cavendish.
+  Bacteria: Xanthomonas, Pseudomonas, Erwinia. Fire blight (Erwinia amylovora) in apple/pear.
+  Viruses: Tobacco Mosaic Virus (first virus discovered, 1898 — Ivanovsky); Tomato yellow leaf
+    curl virus (TYLCV); Barley yellow dwarf virus.
+  Nematodes: Root-knot nematodes (Meloidogyne) — form galls; plant withdraws resources.
+  Oomycetes: Water moulds (Pythium, Phytophthora) — not true fungi; cellulose cell walls.
+
+Plant Immune System:
+  PTI (Pattern-Triggered Immunity): PRRs (FLS2, EFR) detect PAMPs (flagellin, EF-Tu)
+  → MAPK cascade → defence gene expression; callose deposition; ROS burst.
+  ETI (Effector-Triggered Immunity): R proteins (NBS-LRR) detect pathogen effectors
+  (Avr proteins) → hypersensitive response (HR) — localised cell death to contain pathogen.
+  Systemic Acquired Resistance (SAR): SA signalling → PR proteins → broad resistance.
+  Induced Systemic Resistance (ISR): Rhizobacteria induce jasmonate/ethylene resistance.
+
+6. BIOTECHNOLOGY IN AGRICULTURE
+---------------------------------
+GM Crops:
+  Bt crops: Bacillus thuringiensis Cry proteins → insect toxin. Approved: Bt cotton,
+    Bt maize, Bt brinjal (eggplant). Global adoption saves billions in pesticide costs.
+  Herbicide-tolerant: RoundupReady soybean/cotton/maize (EPSPS overexpression) —
+    allows glyphosate application; controversial; resistance spreading in weeds.
+  Virus resistance: Papaya Ringspot Virus-resistant papaya → saved Hawaiian papaya industry.
+  Golden Rice: Beta-carotene in endosperm via PSY + CrtI genes → addresses Vit A deficiency.
+
+CRISPR in Agriculture:
+  No transgene — often exempt from GMO regulations in USA/UK.
+  Examples: Disease-resistant wheat (mlo editing — powdery mildew); hornless cattle;
+  high-oleic soybean; drought-tolerant maize; late-blight-resistant potato.
+  Waxy maize (wx1 knockout): Higher amylopectin content → improved food processing.
+
+RNA Interference (RNAi) Pesticides:
+  Spray/seed dsRNA that silences essential genes in specific pest → kills pest without
+  affecting other insects. BioDirect technology (Corteva): RNAi spray for Colorado
+  potato beetle — highly specific; no residue issues. EPA-approved 2023.
+
+[ONE PLANET PERSPECTIVE] Agriculture uses:
+  ~50% of habitable land surface; ~70% of freshwater withdrawals.
+  Causes ~24% of global GHG emissions; ~80% of biodiversity loss.
+  Feeds 8 billion people but ~800 million still undernourished.
+  Sustainable intensification — producing more from same land — is critical global challenge.
+  Regenerative agriculture (cover crops, no-till, crop rotation, integrated pest management)
+  can maintain yields while restoring soil health, biodiversity, and C sequestration.
+
+================================================================================

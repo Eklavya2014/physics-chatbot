@@ -1,0 +1,187 @@
+================================================================================
+                   HAEMATOLOGY & BLOOD BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BLOOD COMPOSITION & FUNCTION
+---------------------------------
+Blood is a specialised connective tissue. Volume: ~5 litres in adult.
+Composition: ~55% plasma + ~45% formed elements (RBCs, WBCs, platelets).
+
+Plasma (55%): Water (~90%) + proteins (albumin, globulins, fibrinogen, clotting factors)
++ nutrients + hormones + waste products + electrolytes.
+  Serum = plasma without clotting factors (after blood clots).
+  Albumin: Most abundant plasma protein. Oncotic pressure; drug transport; pH buffer.
+
+Blood Functions:
+  Transport: O2 (Hb), CO2, nutrients, hormones, waste, heat.
+  Regulation: pH (bicarbonate buffer), temperature, osmotic pressure, fluid balance.
+  Protection: WBCs (immunity), platelets/clotting factors (haemostasis).
+
+1.1 RED BLOOD CELLS (ERYTHROCYTES)
+------------------------------------
+  Count: 4.5–5.5 million/µL (males); 4.0–5.0 million/µL (females).
+  Lifespan: ~120 days. Removed by spleen/liver macrophages.
+  Structure: Biconcave disc; ~8µm diameter; no nucleus, no mitochondria.
+    → Biconcave shape: Maximum surface area for gas exchange; flexible (squeezes through capillaries).
+    → No mitochondria: Use anaerobic glycolysis only (prevent O2 consumption).
+
+Haemoglobin (Hb):
+  Structure: 4 subunits (2 alpha + 2 beta in HbA); each with haem group (Fe2+).
+  O2 binding: Cooperative (sigmoidal curve) — O2 binding increases affinity for next O2.
+  Bohr effect: ↑ CO2, ↑ H+, ↑ 2,3-BPG, ↑ temperature → right shift → Hb releases O2.
+  CO2 transport: 70% as bicarbonate; 23% as carbaminohaemoglobin; 7% dissolved.
+  Normal Hb: Males 130–175 g/L; females 115–160 g/L.
+  HbA2: 2 alpha + 2 delta; ~2–3.5%. HbF: 2 alpha + 2 gamma; fetal; higher O2 affinity.
+
+Blood Groups:
+  ABO system: Based on surface antigens on RBCs.
+    Type A: A antigen + anti-B antibodies.
+    Type B: B antigen + anti-A antibodies.
+    Type AB: A+B antigens + no antibodies (universal recipient).
+    Type O: No antigens + anti-A and anti-B (universal donor).
+  Rh system: D antigen. Rh+ (D antigen present) or Rh- (absent).
+    Haemolytic disease of newborn (HDN): Rh- mother + Rh+ fetus → anti-D antibodies.
+    Prevent: Anti-D immunoglobulin (RhoGAM) given to Rh- mothers.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. HAEMOSTASIS & COAGULATION
+------------------------------
+Haemostasis: Stopping bleeding. Three overlapping stages:
+
+Primary Haemostasis (platelet plug):
+  Vessel injury → collagen exposed → vWF (von Willebrand factor) bridges collagen
+  to platelet GPIb receptor → platelet adhesion → platelet activation (shape change;
+  granule release: ADP, TXA2, serotonin) → GPIIb/IIIa activation → fibrinogen bridges
+  platelets → platelet aggregation → platelet plug (soft, temporary).
+
+Secondary Haemostasis (coagulation cascade):
+  Intrinsic pathway: Contact activation (HMWK, prekallikrein, XII → XI → IX → X).
+  Extrinsic pathway: Tissue factor (TF) exposed at injury → TF + VIIa → Xa.
+  Common pathway: Xa + Va → prothrombinase → Prothrombin → Thrombin (IIa) →
+    Fibrinogen → Fibrin + XIII → cross-linked fibrin clot (stable).
+  Thrombin: Key amplifying enzyme; activates V, VIII, XI, XIII, platelets.
+  In vivo: Cell-based model. Initiation: TF + VIIa → small thrombin. Amplification:
+    Thrombin activates platelets + V + VIII. Propagation: IXa + VIIIa → Xase complex
+    → massive thrombin generation.
+
+Anticoagulants:
+  Natural: Antithrombin (inhibits thrombin + Xa); Protein C/S system (inactivates Va + VIIIa);
+    TFPI (tissue factor pathway inhibitor).
+  Drug:
+    Heparin (UFH/LMWH): Enhances antithrombin; inhibits Xa (LMWH) + thrombin.
+    Warfarin: Inhibits Vit K-dependent factors (II, VII, IX, X, Protein C/S). Monitor INR.
+    DOACs: Direct oral anticoagulants. Apixaban/rivaroxaban (Xa inhibitors); dabigatran (IIa).
+    No monitoring needed; reversible (andexanet alfa reverses Xa; idarucizumab reverses dabigatran).
+
+Fibrinolysis: Clot dissolution.
+  Plasminogen → Plasmin (by tPA, uPA) → cleaves fibrin → clot dissolved.
+  Inhibitors: PAI-1 (inhibits tPA); alpha-2-antiplasmin.
+  tPA (alteplase): Therapeutic fibrinolytic for stroke/MI/PE (within time window).
+
+3. ANAEMIAS
+------------
+Anaemia: Hb below normal → reduced O2 carrying capacity.
+WHO thresholds: Hb <120 g/L women, <130 g/L men.
+
+Classification by MCV (Mean Corpuscular Volume):
+  Microcytic (MCV <80 fL): Small RBCs.
+    Iron deficiency anaemia (IDA): Most common worldwide; low ferritin; high TIBC.
+    Thalassaemia: Reduced globin chain synthesis (alpha or beta).
+    Anaemia of chronic disease: Hepcidin ↑ → iron sequestration.
+    Sideroblastic anaemia: Ring sideroblasts in marrow; iron in mitochondria.
+
+  Normocytic (MCV 80–100 fL):
+    Haemolytic anaemia: Premature RBC destruction.
+    Aplastic anaemia: Bone marrow failure.
+    Anaemia of chronic disease (early).
+    Acute blood loss.
+
+  Macrocytic (MCV >100 fL): Large RBCs.
+    Megaloblastic: B12 or folate deficiency → impaired DNA synthesis → large immature cells.
+    Non-megaloblastic: Liver disease; hypothyroidism; alcohol.
+
+4. HAEMOGLOBINOPATHIES
+------------------------
+Sickle Cell Disease (HbSS):
+  Cause: Beta-globin Glu6Val point mutation → HbS.
+  Mechanism: Deoxygenated HbS polymerises → rigid fibres → RBC sickling → vaso-occlusion
+    + haemolysis.
+  Crises: Vaso-occlusive (pain, acute chest, stroke); aplastic (parvovirus B19);
+    splenic sequestration; haemolytic.
+  Malaria protection: Heterozygotes (HbAS) have survival advantage in malaria-endemic regions
+    → explains high frequency of sickle allele in Sub-Saharan Africa (balanced polymorphism).
+  Treatment: Hydroxyurea (↑ HbF); voxelotor (Hb polymerisation inhibitor); L-glutamine;
+    crizanlizumab (anti-P-selectin); curative: HSCT or gene therapy (Casgevy).
+
+Thalassaemias:
+  Alpha-thalassaemia: Deletion of alpha-globin genes on chromosome 16.
+    1 gene deleted: Silent. 2: Trait (mild). 3: HbH disease (moderate haemolysis).
+    4: Hydrops fetalis (lethal in utero — HbBart).
+  Beta-thalassaemia: Mutations in beta-globin gene on chromosome 11.
+    Beta-thalassaemia minor (trait): Mild microcytic anaemia; often asymptomatic.
+    Beta-thalassaemia major (Cooley's anaemia): Severe; transfusion-dependent.
+    Treatment: Regular transfusions + desferrioxamine (iron chelation); HSCT curative;
+    Luspatercept (erythroid maturation); betibeglogene (gene therapy — approved 2022).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. HAEMATOLOGICAL MALIGNANCIES
+--------------------------------
+Leukaemias:
+  AML (Acute Myeloid Leukaemia): Clonal expansion of myeloid blasts (>20% in marrow).
+    Driver mutations: FLT3-ITD (~30%), NPM1 (~30%), IDH1/2 (~20%), DNMT3A, CEBPA, TP53.
+    Classified by WHO 2022 classification. Specific subtypes: APL (PML-RARalpha t(15;17)
+    → treated with ATRA + arsenic trioxide — cure rate >90%).
+    Standard treatment: 7+3 (cytarabine 7 days + daunorubicin 3 days) → CR → consolidation
+    → allogeneic HSCT for high-risk. Targeted: FLT3 inhibitors (midostaurin, quizartinib);
+    IDH inhibitors (enasidenib, ivosidenib); BCL-2 inhibitor (venetoclax + azacitidine).
+
+  ALL (Acute Lymphoblastic Leukaemia): Most common childhood cancer.
+    B-ALL (85%): BCR-ABL1+ (Philadelphia chromosome → tyrosine kinase inhibitor);
+    ETV6-RUNX1; hyperdiploidy; hypodiploidy; Ph-like ALL.
+    T-ALL: NOTCH1 mutations (~60%); HOX gene overexpression.
+    Treatment: Multiagent chemotherapy (ALL-BFM protocol); CNS prophylaxis;
+    blinatumomab (BiTE); inotuzumab ozogamicin; CAR-T (tisagenlecleucel → up to 80% remission in r/r B-ALL).
+
+Myeloma (Multiple Myeloma):
+  Clonal plasma cell malignancy → monoclonal protein (M-protein) → organ damage (CRAB).
+  CRAB criteria: HyperCalcaemia, Renal failure, Anaemia, Bone lesions (lytic).
+  Pathogenesis: Translocation (11;14), del(17p), del(13), t(4;14) → genetic heterogeneity.
+  Treatment: Bortezomib (proteasome inhibitor) + lenalidomide (IMiD) + dexamethasone (VRd).
+    Daratumumab (anti-CD38 mAb): Added to triplet → quadruplet therapy → improved PFS.
+    BCMA-targeting: Teclistamab (bispecific); ciltacabtagene autoleucel (BCMA CAR-T).
+    Still incurable but median survival improving significantly (>5 years for standard risk).
+
+6. HAEMATOPOIETIC STEM CELL TRANSPLANTATION (HSCT)
+-----------------------------------------------------
+Autologous HSCT: Patient's own stem cells harvested → high-dose chemotherapy →
+  cells reinfused. No GvH disease. Used for: Myeloma, lymphoma, POEMS.
+
+Allogeneic HSCT: Donor stem cells (matched sibling, unrelated donor, haplo-identical).
+  Conditioning: Myeloablative or reduced-intensity (for older/frailer patients).
+  GvHD (Graft-versus-Host Disease):
+    Acute GvHD (<100 days): Donor T cells attack host tissue (skin, liver, gut).
+    Chronic GvHD: Autoimmune-like; resembles scleroderma, sicca syndrome.
+    GvL (Graft-vs-Leukaemia effect): Therapeutic — donor T cells kill residual leukaemia.
+    DLI (Donor Lymphocyte Infusion): Boost GvL effect at relapse.
+  HLA matching: HLA-A, B, C, DRB1, DQB1 — 10/10 match ideal. Haploidentical (5/10)
+  with post-cyclophosphamide now widely used.
+
+[EMERGING] CAR-T in Haematology:
+  CD19 CAR-T: Axicabtagene ciloleucel, tisagenlecleucel → DLBCL, ALL, FL.
+  BCMA CAR-T: Idecabtagene vicleucel, ciltacabtagene → myeloma.
+  CD22, CD20, CD38 — next generation targets. Allogeneic (off-the-shelf) CAR-T in trials.
+  Bispecific CAR-T targeting dual antigens → reduce antigen escape.
+  Solid tumour CAR-T: Still challenging (immunosuppressive TME; trafficking; antigen heterogeneity).
+
+================================================================================

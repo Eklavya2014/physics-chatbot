@@ -1,0 +1,174 @@
+================================================================================
+                  FRESHWATER BIOLOGY & LIMNOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. FRESHWATER ECOSYSTEMS
+--------------------------
+Limnology: Scientific study of freshwater bodies (lakes, rivers, ponds, wetlands).
+Freshwater covers <1% of Earth's surface but is home to ~10% of all species,
+including ~33% of all vertebrate species.
+
+Types of Freshwater Habitats:
+  Lentic systems (standing water): Lakes, ponds, reservoirs, swamps, bogs, marshes.
+  Lotic systems (flowing water): Rivers, streams, springs, brooks.
+  Wetlands: Transitional; seasonally or permanently flooded; extremely productive.
+    Types: Marshes (emergent plants); swamps (woody plants); bogs (peat, Sphagnum moss,
+    acidic, low nutrients); fens (calcareous, higher pH, fed by groundwater).
+
+1.1 LAKE ZONATION
+------------------
+Littoral zone:  Near shore; shallow; sunlit to bottom; most diverse; rooted plants.
+Limnetic zone:  Open water; photosynthesis by phytoplankton; fish, zooplankton.
+Profundal zone: Deep, dark, cold; detritivores; bacteria; decomposition.
+Benthic zone:   Lake bottom; detritus; invertebrates (chironomids, oligochaetes).
+
+Thermal Stratification (temperate lakes):
+  Summer: Warm epilimnion (surface) / thermocline (rapid temp change) / cold hypolimnion.
+  Autumn turnover: Surface cools → density equalises → wind mixes entire lake → nutrients
+  from bottom brought to surface → phytoplankton bloom.
+  Winter: Ice layer; inverse stratification; hypolimnion warmer (4°C).
+  Spring turnover: Ice melts; surface warms to 4°C → density maximum → mixing again.
+  Dimictic lakes: Mix twice yearly. Meromictic: Never fully mix (saline bottom layer).
+
+Water Quality Parameters:
+  Dissolved oxygen (DO): Critical for aquatic life. Cold water holds more O2. Depleted by
+  decomposition. Stratified lakes → anoxic hypolimnion in summer.
+  pH: Most freshwater organisms thrive pH 6.5–8.5. Acid rain → pH decline → Al3+ toxicity.
+  Turbidity: Suspended particles reduce light penetration (Secchi depth measurement).
+  Conductivity: Indicator of dissolved ion concentration.
+  Nutrients (N, P): Primary productivity limited by P in freshwater; N in marine.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. FRESHWATER ECOLOGY
+----------------------
+Trophic Status of Lakes:
+  Oligotrophic: Low nutrients; clear, high DO, deep; few algae; diverse fish.
+    Example: Lake Tahoe, Lake Baikal.
+  Mesotrophic: Moderate nutrients; intermediate clarity; mixed fish community.
+  Eutrophic: High nutrients; algal blooms; low DO; cyanobacteria; bottom anoxia.
+  Hypereutrophic: Extreme; algal scum; fish kills; strong odour.
+  Cultural eutrophication: Human-accelerated nutrient loading (agriculture runoff,
+  sewage, urban stormwater) → massive water quality degradation globally.
+
+Eutrophication Cascade:
+  Excess N + P → phytoplankton bloom → light blocked to submerged plants →
+  plants die → decomposition → O2 depletion → fish kills → anoxia →
+  release of P from sediments (internal loading) → positive feedback loop.
+  Harmful algal blooms (HABs): Cyanobacteria (Microcystis, Anabaena) → microcystin
+  toxin → liver damage; dog deaths; human recreational illness.
+
+River Ecology — Longitudinal Zonation:
+  Headwaters (rhithral): Cold, fast, high O2, shaded; insects (stoneflies, mayflies,
+  caddisflies — EPT index for water quality); stream metabolism dominated by allochthonous
+  (terrestrial) organic matter input.
+  Mid-reaches (potamal): Warmer, slower, more sunlight; algae; more phytoplankton.
+  Lower reaches: Turbid; nutrient-rich; detritus; invertebrate shredder → collector → 
+  scraper community shifts.
+  River Continuum Concept (Vannote 1980): Describes gradient of community structure from
+  headwaters to mouth; P:R ratio shifts from heterotrophic (shaded) to autotrophic (mid) back.
+
+3. FRESHWATER ORGANISMS
+------------------------
+Phytoplankton:
+  Diatoms (Bacillariophyceae): Silica frustules; dominant in spring/autumn (cold, mixed).
+  Green algae (Chlorophyta): Summer; nutrient-rich; diverse forms.
+  Cyanobacteria (blue-green algae): Summer; warm; N-fixing; forms surface scums in eutrophic.
+  Chrysophytes (golden algae): Cold, oligotrophic; Dinobryon.
+  Dinoflagellates: Some freshwater species; Peridinium common in stratified lakes.
+
+Zooplankton:
+  Cladocera (water fleas): Daphnia — keystone grazer; filter phytoplankton; indicator species.
+  Copepoda: Cyclops — predatory/herbivorous; important secondary producers.
+  Rotifera: Microscopic; diverse; important in oligotrophic systems.
+  Daphnia magna: Model organism in ecotoxicology; sensitive to pollutants.
+
+Macroinvertebrates (Benthic):
+  Insect larvae: Chironomids (midges — most abundant), EPT insects (Ephemeroptera, Plecoptera,
+  Trichoptera), Odonata (dragonfly/damselfly) larvae.
+  Non-insect: Oligochaetes (worms — tolerate low O2); molluscs (freshwater mussels, snails);
+  crustaceans (crayfish, freshwater shrimp, amphipods).
+  Biotic index: Community composition used to assess water quality.
+    BMWP: British Macroinvertebrate Wealth Prediction score — tolerant vs sensitive taxa.
+
+Fish — Major Freshwater Groups:
+  Salmon (Salmonidae): Anadromous; cold, oxygenated water; high ecological/economic value.
+  Cyprinidae (carp family): Most diverse freshwater family; carp, minnows, roach, tench.
+  Cichlidae: Tropical; Lake Victoria (>500 species — rapid adaptive radiation); Lake Malawi, Tanganyika.
+  Percidae: Perch, pike-perch; important predators in European/North American lakes.
+
+4. WETLAND ECOLOGY
+-------------------
+Wetlands: Among most productive ecosystems on Earth. 40% of all species use wetlands.
+  Carbon sinks: Peatlands store ~30% of all terrestrial carbon despite covering only 3% of land.
+    Sphagnum moss: Creates acid conditions; inhibits decomposition; builds peat over millennia.
+  Water purification: Sediment trapping; nutrient uptake by plants; denitrification by bacteria.
+  Flood regulation: Absorb excess water; slow release (green infrastructure).
+  Biodiversity hotspots: Breeding grounds for waterfowl; nursery for fish; amphibian habitat.
+
+Loss of Wetlands:
+  ~35% of wetlands lost since 1970. Faster than forests.
+  Causes: Drainage for agriculture, urban development, peat extraction, pollution.
+  Ramsar Convention (1971): First international environmental treaty; protects wetlands of
+  international importance. ~170 countries; 2,400+ sites.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ADAPTIVE RADIATION IN FRESHWATER
+-------------------------------------
+Cichlid Adaptive Radiation (Great Lakes of Africa):
+  Lake Victoria: ~500+ cichlid species evolved in <15,000 years (post-desiccation refilling).
+  Fastest adaptive radiation in vertebrates. Driven by: Sexual selection (male colour);
+  ecological opportunity; stable lake conditions.
+  Trophic diversity: Piscivores, zooplanktivores, insectivores, molluscivores, algae scrapers,
+  scale eaters (lepidophages), paedophages, detritivores — all from common ancestor.
+  Pharyngeal jaw innovation: Decoupled from oral jaws → allows specialised prey processing.
+  Nile perch introduction (1950s): Eliminated >200 endemic cichlid species in Lake Victoria
+  → one of largest recorded vertebrate extinctions caused by a single species.
+
+Daphnia as Model System:
+  Cyclical parthenogenesis: Asexual (clonal) reproduction normally; sexual when conditions
+  deteriorate → produce dormant eggs (ephippia) → genetic diversity + dispersal.
+  Ecological stoichiometry: Daphnia body C:N:P ratio relatively fixed → track algal stoichiometry.
+  Eutrophication: Daphnia bloom on algae → clear-water phase; then algae recover when Daphnia
+  food quality drops (cyanobacteria inedible) → trophic cascade dynamics.
+  Paleolimnology (Cladocera): Daphnia ephippia preserved in lake sediments → reconstruct past
+  zooplankton communities and lake history.
+
+6. FRESHWATER CONSERVATION
+----------------------------
+Threats to Freshwater Biodiversity:
+  Overextraction: Water diversion (Colorado River no longer reaches sea seasonally).
+  Dams: Fragment rivers; alter thermal/flow regimes; block fish migration.
+    ~800,000 dams globally; 60% of major river systems fragmented.
+  Invasive species: Signal crayfish (destroying native crayfish + vegetation); Asian carp
+    (outcompeting native fish in Mississippi); water hyacinth (blocks light/O2).
+  Pollution: Agricultural runoff (nutrients, pesticides), industrial effluent, pharmaceuticals,
+    microplastics, heavy metals, endocrine disruptors (e17-alpha ethinylestradiol feminising fish).
+  Climate change: Altered precipitation; increased drought; warming (cold-water fish retreat);
+    glacier loss; intensified eutrophication.
+
+Freshwater Protected Areas:
+  Only ~0.4% of freshwater area is strictly protected (vs ~14% terrestrial).
+  EU Water Framework Directive: Achieve "good ecological status" across all water bodies.
+  Salmon river restoration: Dam removal (e.g., Elwha River dams removed 2011–2014 →
+  salmon recolonised within months; ecosystem recovery progressing rapidly).
+  Beaver reintroduction: Keystone species; builds dams → creates wetlands, pools → increases
+  biodiversity. Reintroduced in UK, Germany, Netherlands → transformative landscape effects.
+
+[EMERGING ISSUE] Freshwater microplastics:
+  All major rivers studied contain microplastics. Rhine carries >190 million particles/day.
+  Effects on aquatic organisms: Reduced feeding, reproduction, survival; carry persistent
+  organic pollutants and pathogens. Nanoplastics (<1 µm): Cross cell membranes; accumulate
+  in tissues. No effective river-scale remediation exists. Prevention essential.
+
+================================================================================

@@ -1,0 +1,190 @@
+================================================================================
+               HUMAN GENETICS & INHERITED DISEASE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PATTERNS OF INHERITANCE
+---------------------------
+Autosomal Dominant (AD):
+  One mutant allele sufficient for disease. Both sexes affected equally.
+  Father-to-son transmission possible (distinguishes from X-linked).
+  Penetrance: Proportion of people with genotype who show phenotype (may be <100%).
+  Expressivity: Range of phenotypic expression among affected individuals.
+  Examples: Huntington's disease, Marfan syndrome, Neurofibromatosis 1/2,
+    Achondroplasia (FGFR3 Gly380Arg), Familial hypercholesterolaemia (LDLR),
+    BRCA1/2 (hereditary breast/ovarian — dominant susceptibility).
+  De novo mutations: New mutation not inherited from parent → negative family history.
+    Achondroplasia: ~80% de novo. Associated with advanced paternal age.
+
+Autosomal Recessive (AR):
+  Two mutant alleles needed. Parents usually carriers (heterozygous, unaffected).
+  Increased risk with consanguinity. 1 in 4 chance of affected child from carrier × carrier.
+  Examples: Cystic fibrosis (CFTR, most common in N Europeans ~1 in 2,500),
+    Sickle cell disease (HBB Glu6Val), Phenylketonuria (PAH),
+    Tay-Sachs (HEXA), Spinal muscular atrophy (SMN1), Friedreich's ataxia (FXN-GAA repeat).
+
+X-linked Recessive:
+  Gene on X chromosome. Males (XY) have one X → hemizygous → always affected if mutation.
+  Females (XX): Usually carriers (one normal X); rarely affected.
+  No father-to-son transmission (father gives Y to sons). All daughters of affected male are carriers.
+  Examples: Duchenne muscular dystrophy (DMD/dystrophin), Haemophilia A (F8), Haemophilia B (F9),
+    Fragile X syndrome (FMR1-CGG repeat), Red-green colour blindness (OPNLW/OPNMW).
+
+X-linked Dominant:
+  One mutant allele on X sufficient.
+  Affected males often more severely affected than females (or lethal in males).
+  Examples: Rett syndrome (MECP2 — usually lethal in males), Incontinentia pigmenti (IKBKG).
+
+Mitochondrial Inheritance:
+  mtDNA: 16,569 bp; 37 genes (13 OXPHOS subunits, 22 tRNAs, 2 rRNAs).
+  Maternally inherited (all mitochondria from oocyte cytoplasm).
+  Heteroplasmy: Mix of normal and mutant mtDNA → variable expression.
+  Examples: MELAS (mitochondrial encephalomyopathy, lactic acidosis, stroke-like episodes) — MT-TL1 m.3243A>G.
+    Leber hereditary optic neuropathy (LHON) — MT-ND4 m.11778G>A. Kearns-Sayre syndrome.
+
+1.1 PEDIGREE ANALYSIS
+-----------------------
+Key patterns:
+  AD: Every generation affected (vertical); affected × unaffected → 50% affected offspring.
+  AR: Often skipped generations; siblings affected; parents normal (horizontal).
+  XLR: More males affected; carrier mothers; no male-to-male transmission.
+  Mitochondrial: All children of affected mother affected; no paternal transmission.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. IMPORTANT GENETIC DISEASES IN DEPTH
+----------------------------------------
+Cystic Fibrosis (CF):
+  Gene: CFTR (chromosome 7q31); encodes a chloride channel + regulator.
+  Most common mutation: F508del (~70% of CF alleles in N Europeans) → misfolded CFTR → ERAD.
+  Pathophysiology: Absent CFTR → thick mucus in airways + GI + pancreas + reproductive.
+    Lungs: Chronic Pseudomonas colonisation → inflammation → bronchiectasis → respiratory failure.
+    Pancreas: Exocrine insufficiency → malabsorption. Liver: Biliary cirrhosis.
+  Sweat test: Cl- >60 mmol/L. Neonatal screening: IRT (immunoreactive trypsinogen) + CFTR genotyping.
+  CFTR modulators:
+    Ivacaftor (VX-770): Potentiator — opens CFTR gate; G551D and other gating mutations.
+    Lumacaftor (VX-809): Corrector — improves folding of F508del CFTR.
+    Elexacaftor/Tezacaftor/Ivacaftor (Trikafta): Triple combination → F508del → >90% of CF patients.
+    Dramatically improves FEV1, reduces exacerbations, near-normal life expectancy projected.
+
+Duchenne Muscular Dystrophy (DMD):
+  Gene: DMD (largest human gene, Xp21); encodes dystrophin.
+  Pathophysiology: Absent dystrophin → DGC (dystrophin-glycoprotein complex) unstable →
+    membrane fragility → myofibre necrosis → inflammation → fibrosis → muscle replacement by fat.
+    Cardiomyopathy: Ventricular dysfunction; DCM. Intellect: ~30% have intellectual disability.
+  Becker MD: In-frame mutations → truncated but partly functional dystrophin → milder.
+  Exon skipping: Antisense oligonucleotide skips out-of-frame exon → converts DMD → Becker frameshift.
+    Eteplirsen (exon 51), golodirsen (exon 53), viltolarsen (53), casimersen (45): Approved in USA.
+  Nonsense read-through: Ataluren → allows ribosomes to read through premature stop codon.
+  Gene therapy: Micro-dystrophin AAV9 (Sarepta Therapeutics): Truncated but functional; FDA approved 2023.
+
+Fragile X Syndrome:
+  Gene: FMR1 (Xq27.3); premutation 55–200 CGG repeats; full mutation >200 CGG repeats.
+  Full mutation: Methylation of repeat + promoter → FMRP (RNA-binding protein) absent.
+  FMRP: Regulates translation of synaptic proteins (Arc, PSD-95, CaMKII, AMPAR);
+    normally suppresses translation at synapses; absent → excess mGluR5 signalling →
+    synaptic plasticity impaired.
+  Features: Most common inherited intellectual disability. Macroorchidism; long face; large ears;
+    autism features; anxiety. Premutation: Fragile X tremor/ataxia syndrome (FXTAS) in males >50.
+  Trials: mGluR5 antagonists (AFQ056, arbaclofen) — not successful in phase III.
+
+Huntington's Disease (HD):
+  Gene: HTT (chromosome 4p16.3); CAG repeat >36 → polyglutamine expansion in huntingtin.
+  Normal: 6–35 repeats. Pathogenic: >36. Full penetrance: >40. Anticipation (expansion in transmission).
+  Pathophysiology: Mutant HTT forms aggregates → transcriptional dysregulation + mitochondrial
+    dysfunction + synaptic impairment → selective striatal MSN (medium spiny neuron) death.
+  Features: Chorea, psychiatric (depression, psychosis), cognitive decline. Mean onset ~40 years.
+    Duration 15–20 years. Fatal (aspiration, infection).
+  Treatment: Symptomatic (tetrabenazine/deutetrabenazine for chorea). No disease-modifying therapy approved.
+    Trials: HTT-lowering ASOs (branaplam, tominersen — paused after futility); RNAi (AMT-130, gene therapy).
+
+3. GENETIC TESTING
+-------------------
+Types:
+  Karyotype: Chromosome analysis; detects aneuploidy, large structural variants.
+  FISH (Fluorescence In Situ Hybridisation): Detect specific chromosomal regions.
+  Chromosomal Microarray (CMA): SNP array or aCGH → CNVs + LOH; replaces karyotype for many indications.
+  PCR + fragment analysis: Triplet repeats (HD, FXS, myotonic dystrophy).
+  Sanger sequencing: Single gene; confirm variants.
+  Gene panel: Targeted NGS of specific disease genes.
+  WES (Whole Exome Sequencing): All ~20,000 protein-coding genes → diagnostic yield ~25–30%.
+  WGS (Whole Genome Sequencing): Entire genome; highest yield; detects intronic, structural, mtDNA variants.
+  RNA sequencing: Detect splice variants and expression changes.
+
+Prenatal Testing:
+  NIPT (Non-Invasive Prenatal Testing): Cell-free fetal DNA from maternal blood →
+    detect trisomy 21, 18, 13; sex chromosome aneuploidies; sensitivity >99% for T21.
+  CVS (Chorionic Villus Sampling): 10–13 weeks; placental tissue; full karyotype.
+  Amniocentesis: 15–20 weeks; amniotic fluid; fetal cells; karyotype + FISH + PCR + array.
+  Pre-implantation Genetic Testing (PGT): IVF embryo biopsy → genetic testing before transfer.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. VARIANT CLASSIFICATION & PATHOGENICITY
+-------------------------------------------
+ACMG/AMP Classification (5 categories):
+  Pathogenic (P): Variant causing disease. Reported as causative.
+  Likely Pathogenic (LP): >90% probability of being pathogenic.
+  Variant of Uncertain Significance (VUS): Insufficient evidence either way.
+  Likely Benign (LB): Low probability of pathogenicity.
+  Benign (B): Established as non-pathogenic.
+
+Evidence criteria (selected PVS1, PS1-4, PM1-6, PP1-5; BS1-4, BA1):
+  PVS1: Null variant in gene where LOF is known disease mechanism.
+  PS3: Functional assay confirms damaging effect.
+  PM2: Absent from controls in gnomAD (population database).
+  BA1: Allele frequency >5% in a major population → benign.
+  PP3: Computational evidence of deleteriousness (CADD, SIFT, PolyPhen).
+
+gnomAD (Genome Aggregation Database): >730,000 exomes + genomes; maps allele frequencies.
+  Essential for classifying rare variants. Shows constraint (pLI for LOF intolerance; Z-score for missense).
+  pLI > 0.9: Gene does not tolerate heterozygous loss-of-function → haploinsufficiency likely pathogenic.
+
+5. COMPLEX & MULTIFACTORIAL GENETICS
+---------------------------------------
+Multifactorial Diseases:
+  Result from many genetic + environmental factors. No single causative mutation.
+  Examples: Type 2 diabetes, hypertension, coronary artery disease, schizophrenia, autism.
+  Heritability: T2DM ~40–70%; CAD ~50%; schizophrenia ~80%; autism ~80%.
+
+GWAS Insights:
+  T2DM: >400 GWAS loci. Strongest: TCF7L2, KCNJ11, SLC30A8, PPARG, CDKAL1.
+    Most loci are non-coding (regulatory, enhancers) → regulatory variation drives complex disease.
+  Schizophrenia: 270+ loci; enriched in synaptic, neurodevelopmental genes.
+    CNV (22q11.2 deletion): 30× increased risk.
+  Autism: Highly heterogeneous; >100 de novo CNVs/mutations; convergent on synaptic/chromatin genes.
+    SHANK3, NRXN1, CNTNAP2, CHD8, DYRK1A — recurrently mutated.
+
+Pharmacogenomics (see pharmacology document for full coverage):
+  HLA-B*57:01 + abacavir; HLA-B*15:02 + carbamazepine; CYP2D6 + codeine; DPYD + fluoropyrimidines.
+
+6. GENETIC COUNSELLING PRINCIPLES
+------------------------------------
+Genetic counselling: Non-directive education and support for individuals/families with
+or at risk of genetic conditions.
+  Assess: Obtain 3-generation pedigree; calculate risk; explain inheritance.
+  Inform: Explain condition, prognosis, natural history, management options.
+  Support: Psychological impact; reproductive options; insurance implications.
+  Reproductive options: Natural conception with prenatal testing; IVF + PGT; donor gametes; adoption.
+  Ethical principles: Autonomy (patient decides); Beneficence (promote wellbeing);
+    Non-maleficence (do no harm); Justice (equitable access); Confidentiality.
+  Duty to warn: Tension between patient confidentiality and warning at-risk relatives.
+    (e.g., BRCA1 mutation — relative at 50% risk → preventable cancer; most guidelines encourage but don't mandate disclosure).
+
+[EMERGING] Polygenic risk scores in clinical care:
+  Clinical utility for CAD (LDL-independent risk; REVEAL study showed ~3× higher event rate in top vs bottom decile),
+  breast cancer (combined with BRCA+CHEK2+ATM+PALB2), schizophrenia prediction.
+  Pharmacogenomics panels: Pre-emptive testing of multiple pharmacogenes before prescribing
+  (Vanderbilt PREDICT; Dutch Pharmacogenetics Working Group recommendations).
+  Direct-to-consumer (DTC) genetics: 23andMe, AncestryDNA — consumer concerns around privacy,
+  data misuse, unintended disclosures (non-paternity, unexpected conditions), lack of counselling.
+
+================================================================================

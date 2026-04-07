@@ -1,0 +1,204 @@
+================================================================================
+           CHROMOSOME BIOLOGY & NUCLEAR ORGANISATION
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CHROMOSOMES
+---------------
+Chromosomes are organised structures of DNA and protein (chromatin) that carry
+an organism's genetic information. Humans have 46 chromosomes (23 pairs) in
+somatic cells; 23 chromosomes (haploid) in gametes.
+
+Chromosome Numbers:
+  Diploid (2n): Two copies of each chromosome (one paternal, one maternal).
+  Haploid (n): One copy of each chromosome (gametes).
+  Human: 2n = 46 (22 pairs autosomes + 1 pair sex chromosomes: XX female, XY male).
+  Interesting extremes: Myrmecia pilosula ant: 2n=2 (fewest). Ophioglossum fern: 2n=1,260 (most).
+
+Chromosome Structure:
+  Centromere: Constriction point; spindle fibre attachment (kinetochore); essential for segregation.
+    Metacentric: Centromere at middle. Submetacentric: Off-centre. Acrocentric: Near end.
+    Telocentric: At end. Acrocentric in humans: chromosomes 13, 14, 15, 21, 22 → NOR regions.
+  Telomeres: (TTAGGG)n repeats at chromosome ends; protect from degradation and fusion.
+  Short arm = p (petit). Long arm = q.
+
+Chromatin Levels of Compaction:
+  Level 1: Naked DNA (2 nm).
+  Level 2: Nucleosome (DNA wrapped 1.65x around histone octamer; 11 nm "beads on a string").
+    Histone octamer: 2x(H2A, H2B, H3, H4). H1 linker histone seals DNA entry/exit.
+  Level 3: 30 nm fibre (solenoid or zigzag arrangement of nucleosomes) — existence debated in vivo.
+  Level 4: Loop domains (~300 nm) anchored to nuclear matrix/scaffold.
+  Level 5: Rosette structures (~700 nm).
+  Level 6: Fully condensed metaphase chromosome (1400 nm).
+
+1.1 KARYOTYPE & CHROMOSOME ABNORMALITIES
+------------------------------------------
+Karyotype: Complete set of an organism's chromosomes visualised at metaphase.
+  G-banding: Giemsa stain → light (AT-rich) and dark (GC-rich) bands; each chromosome has
+  unique pattern → identify by band number (e.g., 17q21 = chromosome 17, long arm, band 21).
+
+Numerical abnormalities (aneuploidy):
+  Trisomy 21 (Down syndrome): Extra chr 21; intellectual disability; distinct facial features;
+    CHD (40%); AML risk; Alzheimer's by 40s (extra APP gene copy).
+  Trisomy 18 (Edwards): Severe; usually fatal in first year.
+  Trisomy 13 (Patau): Severe; usually fatal in first year.
+  Monosomy X (Turner: 45,X): Short stature; gonadal dysgenesis; coarctation of aorta; webbed neck.
+  XXY (Klinefelter): Tall; hypogonadism; infertility; gynaecomastia; learning difficulties.
+  XYY: Tall; usually normal phenotype; slight increased risk behavioural issues.
+  XXX (Triple X): Usually asymptomatic.
+
+Structural abnormalities:
+  Deletion: Loss of chromosomal segment (5p- = cri-du-chat; 22q11.2 = DiGeorge).
+  Duplication: Extra copy of segment.
+  Inversion: Segment reversed within chromosome (paracentric or pericentric).
+  Translocation: Segment moved to different chromosome.
+    Robertsonian: Fusion of two acrocentric chromosomes (13;14, 14;21). Carrier has 45 chroms.
+    Philadelphia chromosome t(9;22): BCR-ABL1 → CML.
+    t(15;17): PML-RARalpha → APL.
+    t(8;14): MYC-IgH → Burkitt lymphoma.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CHROMATIN STRUCTURE & REGULATION
+--------------------------------------
+Euchromatin vs Heterochromatin:
+  Euchromatin: Loosely packed; transcriptionally active; early-replicating;
+    enriched H3K4me3 (active promoters), H3K27ac (active enhancers), H3K36me3 (gene bodies).
+  Constitutive heterochromatin: Permanently condensed; gene-poor; repetitive DNA
+    (satellite sequences, centromeres, pericentromeric regions); H3K9me3 + HP1 (heterochromatin protein 1).
+  Facultative heterochromatin: Silenced in specific cell types; H3K27me3 + Polycomb complexes.
+    X-chromosome inactivation: One X silenced → Barr body → facultative heterochromatin.
+
+Histone Code Hypothesis:
+  Combinations of histone modifications create a "code" read by effector proteins.
+  Writers: HATs (acetylation), HMTs (methylation), kinases (phosphorylation), PARPs.
+  Erasers: HDACs, KDMs (demethylases), phosphatases.
+  Readers: Bromodomains (read Kac), chromodomains (read Kme), PHD fingers, PWWP domains.
+
+Key Modifications:
+  H3K4me3 : Active promoters. Written by SETD1A/B, MLL complex. Read by TAF3 (TFIID), BPTF (NURF).
+  H3K27me3: Polycomb-silenced genes. Written by PRC2 (EZH2). Read by PRC1 (Cbx proteins).
+  H3K9me3 : Constitutive heterochromatin. Written by SETDB1/SUV39H. Read by HP1 (chromodomain).
+  H3K27ac : Active enhancers. Written by CBP/p300. Distinguishes active vs poised enhancers.
+  H3K36me3: Active gene bodies. Written by SETD2 (coupled to elongating RNAPII CTD).
+  H4K20me3: Constitutive heterochromatin. Pericentromeric/telomeric regions.
+  H3S10ph : Mitosis marker (written by Aurora B). Also activated gene bodies (MSK1).
+  H2AK119ub: Polycomb-silenced (written by PRC1; RNF2/BMI1 subunits).
+  H2B K120ub: Active transcription; required for H3K4 and H3K79 methylation (trans-histone crosstalk).
+
+3. NUCLEAR ORGANISATION
+-------------------------
+The nucleus is not a homogeneous compartment — it has distinct functional zones.
+
+Chromatin Territories:
+  Each chromosome occupies a distinct territory in the interphase nucleus.
+  Gene-rich chromosomes tend toward nuclear centre; gene-poor toward periphery.
+  Active genes loop out from territories toward transcription factories.
+
+Nuclear Lamina & Lamins:
+  A-type lamins (Lamin A/C): Inner nuclear membrane; structural support; chromatin attachment.
+    Mutations → Laminopathies: Emery-Dreifuss muscular dystrophy, dilated cardiomyopathy,
+    Hutchinson-Gilford Progeria Syndrome (HGPS): LMNA G608G mutation → progerin protein →
+    nuclear shape abnormalities → accelerated ageing → death ~14 years from CVD.
+  B-type lamins (Lamin B1/B2): Required for cell viability; nuclear envelope reformation.
+  LADs (Lamina-Associated Domains): Chromatin tethered to lamina; generally repressed.
+
+Nucleolus:
+  Site of rRNA transcription (RNA Pol I) and ribosome assembly.
+  Located at NOR (Nucleolus Organiser Regions) — rDNA repeats on acrocentric chromosomes 13, 14, 15, 21, 22.
+  Three regions: Fibrillar centres (FCs), dense fibrillar component (DFC — rRNA processing), granular component (GC — ribosome assembly).
+  Ribosome biogenesis: rDNA → 47S pre-rRNA → processed to 18S + 5.8S + 28S rRNA +
+  assembled with ~80 ribosomal proteins → 40S (small) + 60S (large) subunits → exported.
+
+Nuclear Pore Complexes (NPCs):
+  ~120 MDa protein complexes; ~1,000 per nucleus; 8-fold symmetry.
+  30 different nucleoporins (Nups) arranged in rings and spokes.
+  Selective transport: Small molecules (<40 kDa) diffuse freely; larger molecules require
+  nuclear localisation signal (NLS) → importins → Ran-GTP cycle.
+  Export: Nuclear export signal (NES) → exportins (CRM1/XPO1) → Ran-GTP gradient drives directionality.
+  CRM1 inhibitor (selinexor): Approved for r/r myeloma (STORM trial) → blocks nuclear export
+  of tumour suppressors → keeps p53, Rb, etc. nuclear.
+
+4. 3D GENOME ORGANISATION
+---------------------------
+Hi-C Technology: Maps genome-wide chromatin contacts by proximity ligation + sequencing.
+Revealed hierarchical organisation:
+
+Compartments (A/B):
+  A compartments: Active, gene-rich, early-replicating, accessible chromatin.
+  B compartments: Inactive, gene-poor, late-replicating, condensed chromatin.
+  Compartments are largely cell-type invariant at large scale but switch locally during differentiation.
+
+TADs (Topologically Associating Domains):
+  ~0.1–3 Mb domains of self-interacting chromatin (~2,000 in human genome).
+  Boundaries enriched in CTCF binding sites + cohesin; convergent CTCF motifs.
+  Within TADs: Enhancer-promoter interactions occur preferentially.
+  TAD disruption (boundary deletion or structural variant) → ectopic enhancer-gene contacts → disease.
+  CTCF + cohesin: Loop extrusion model → cohesin extrudes chromatin loop until stalled by CTCF.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PHASE SEPARATION & CONDENSATES
+------------------------------------
+Biomolecular Condensates:
+  Membraneless organelles formed by liquid-liquid phase separation (LLPS).
+  Driven by weak multivalent interactions (IDRs — intrinsically disordered regions,
+  pi-pi interactions, cation-pi interactions, hydrogen bonds).
+  Properties: Liquid-like; dynamic; rapidly exchange components; concentrate specific molecules.
+
+Examples of Condensates:
+  Nucleolus: Largest nuclear condensate; phase-separated from nucleoplasm.
+  Transcriptional condensates: Active enhancers + Mediator + RNAPII CTD → concentrate
+    TFs and coactivators at super-enhancers → burst transcription.
+    BRD4 and Mediator MED1 form condensates at SEs → disrupted by JQ1 (BET bromodomain inhibitor).
+  Stress granules: mRNA + RBPs (G3BP1, TIA1) → form under stress → sequester mRNAs from translation.
+  Processing bodies (P-bodies): mRNA degradation condensates.
+  Heterochromatin: HP1alpha undergoes LLPS → compacts heterochromatin.
+
+Phase Separation in Disease:
+  FUS, TDP-43, hnRNPA2 mutations → ALS/FTD: Aggregation-prone; pathological solid condensates.
+  GGGGCC repeat expansion in C9orf72: RNA forms G-quadruplexes → sequesters RBPs.
+  Cancer: Oncogenic fusion proteins (EWS-FLI1 in Ewing sarcoma) form aberrant condensates
+    that dysregulate transcription.
+
+6. TELOMERE BIOLOGY
+--------------------
+Telomere Structure:
+  (TTAGGG)n repeats (varies from ~10 kb in newborns to ~5 kb in elderly).
+  Shelterin complex: TRF1, TRF2, POT1, TPP1, TIN2, RAP1 → protect from DNA damage recognition,
+  end-joining, and ATM/ATR signalling. T-loop: Telomere folds back → 3' overhang invades duplex DNA.
+  TRF2: Maintains t-loop; prevents ATM activation. POT1: Binds single-stranded overhang.
+
+Telomerase:
+  Reverse transcriptase (TERT + TERC) → extends telomeres.
+  Active in: Stem cells, germline, immune cells, most cancers (~85%).
+  Absent in: Most somatic cells → progressive telomere shortening → replicative senescence.
+
+ALT (Alternative Lengthening of Telomeres):
+  ~15% of cancers. HDR-based telomere extension. APBs (ALT-associated PML bodies).
+  Key features: Heterogeneous telomere lengths; C-circles; increased telomere recombination.
+  ATRX/DAXX mutations → loss of histone H3.3 chaperone at telomeres → ALT activation.
+  Common in: Glioblastoma, osteosarcoma, liposarcoma.
+
+Telomere Diseases:
+  Dyskeratosis congenita: Telomerase component mutations (DKC1, TERT, TERC, NOP10) →
+    bone marrow failure, oral leukoplakia, nail dystrophy, pulmonary fibrosis.
+  Idiopathic pulmonary fibrosis: Telomere attrition in alveolar epithelial cells.
+  Aplastic anaemia: Haematopoietic stem cell exhaustion due to telomere shortening.
+
+[CLINICAL LINK] Chromosome instability (CIN):
+  ~85% of solid tumours have CIN (whole-chromosome gains/losses per cell division).
+  Causes: Aurora B, MPS1, BUB1 mutations (SAC defects); centrosome amplification;
+  cohesion defects; replication stress. CIN drives intratumour heterogeneity and drug resistance.
+  PARP inhibitors: Synthetic lethality in BRCA1/2-mutant cancers (DNA repair defect +
+  PARP inhibition → replication fork collapse → chromosome breakage → cell death).
+
+================================================================================
