@@ -1,0 +1,177 @@
+================================================================================
+                  PLANT PHYSIOLOGY & RESPONSES
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PLANT GROWTH & DEVELOPMENT
+-------------------------------
+Plants grow throughout their lives (indeterminate growth) from meristems — zones of actively dividing, undifferentiated cells.
+
+Meristem Types:
+  Apical meristems: At root tips + shoot tips → primary growth (length).
+    SAM (Shoot Apical Meristem): Produces leaves, stems, floral organs. WUS (WUSCHEL) + CLV3 feedback loop maintains stem cell pool.
+    RAM (Root Apical Meristem): Produces root body. QC (quiescent centre) + surrounding initials.
+  Lateral meristems: Vascular cambium + cork cambium → secondary growth (girth; wood production). Only in dicots + gymnosperms.
+  Intercalary meristems: Between nodes in monocots (grass elongation after grazing/mowing).
+
+Leaf Development:
+  Leaf primordia → leaf outgrowth. Adaxial (upper) and abaxial (lower) identities.
+  Adaxial: HD-ZIP III TFs (PHB, PHV, REV). Abaxial: KANADI TFs + ARF3/4 + ta-siRNA pathway.
+  Polarity gradient → flat lamina. Disruption → radialised leaves (all adaxial or all abaxial).
+
+Root Architecture:
+  Primary root → lateral root initiation from pericycle cells adjacent to xylem poles.
+  LBD (Lateral Organ Boundaries Domain) TFs. ARF7, ARF19 → lateral root organogenesis.
+  Root hair cells: Trichoblasts (hairy) vs atrichoblasts (non-hairy) determined by cell position.
+    GL2 (GLABRA2) in atrichoblasts prevents root hair. RHD6 → root hair formation.
+
+Seed Germination:
+  Water imbibition → seed swells → metabolic activation. GA stimulates; ABA inhibits.
+  Amylase induction in cereal aleurone: GA → DELLA degradation → MYB TF → alpha-amylase gene expression → starch breakdown → glucose for embryo.
+  Light: Phytochrome PhyB detects red light → Pr → Pfr (active) → promotes germination.
+
+1.1 PLANT RESPONSES TO LIGHT
+------------------------------
+Photoreceptors:
+  Phytochromes (PhyA-E): Detect red (660 nm) and far-red (730 nm) light.
+    Pr (red-absorbing): Inactive form. Pfr (far-red-absorbing): Active form.
+    R:FR ratio in shade → low Pfr → shade avoidance response (elongation, reduced branching).
+    PhyB: Shade avoidance. PhyA: Very low fluence + far-red responses.
+  Cryptochromes (CRY1/2): Detect blue + UVA light. Regulate circadian clock + photomorphogenesis.
+  Phototropins (PHOT1/2): Blue light → phototropism (bending toward light) + stomatal opening.
+    PHOT1: Low intensity. PHOT2: High intensity. Both via LOV domain (flavin FMN chromophore).
+  ZTL/FKF1/LKP2: Blue light + F-box proteins → degrade COP1/SPA1 → stabilise HY5 → light responses.
+
+Shade Avoidance Syndrome (SAS):
+  High-density planting → low R:FR ratio → low Pfr → de-repression of shade avoidance genes.
+  Responses: Stem elongation, leaf elevation, reduced branching, accelerated flowering, reduced hypocotyl diameter.
+  PIF (Phytochrome Interacting Factor) TFs: Activated when Pfr low → elongation genes (including auxin biosynthesis and signalling genes → IAA).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. FLOWERING & PHOTOPERIODISM
+--------------------------------
+Photoperiodism: Ability to sense day length to time flowering, dormancy, and other seasonal events.
+
+Plant Types by Day Length:
+  Short-day plants (SDP): Flower when night exceeds critical length. (Chrysanthemum, strawberry, soybean).
+  Long-day plants (LDP): Flower when night is shorter than critical length. (Wheat, spinach, carnation).
+  Day-neutral plants: Flower regardless of day length. (Tomato, rose, cucumber).
+  Note: Plants actually measure NIGHT length; brief night interruption with red light prevents SDP flowering and promotes LDP flowering.
+
+Molecular Mechanism (Arabidopsis — LDP):
+  Long days → CRY2 + GI (GIGANTEA) → COL1/FT pathway.
+  GI: Stabilised in long days → activates CO (CONSTANS, zinc finger TF) protein.
+  CO: Unstable in darkness (COP1 targets it); stable in light (specifically late afternoon in long days) → activates FT (FLOWERING LOCUS T).
+  FT: "Florigen" — produced in leaves → transported to SAM via phloem → FT + FD (bZIP TF) → activates floral organ identity genes (AP1, LFY).
+
+Vernalisation:
+  Exposure to prolonged cold → competence to flower (prevents premature flowering in annual weeds/crops).
+  Key gene: FLC (FLOWERING LOCUS C) — MADS box TF; represses flowering.
+    Vernalisation → FLC locus acquires H3K27me3 (Polycomb; VRN2/PRC2 complex) → stable FLC silencing → flowering in spring.
+  FRI (FRIGIDA): Activates FLC in winter annuals → high FLC → non-flowering without cold.
+  VIN3 (VERNALIZATION INSENSITIVE 3): Induced by cold → initiates FLC silencing.
+
+3. PLANT HORMONES IN DEPTH
+----------------------------
+Gibberellin (GA) Signalling:
+  GA biosynthesis: Plastid → cytoplasm → terpene pathway. Ent-kaurene → bioactive GAs (GA1, GA3, GA4).
+  DELLA proteins: Transcriptional repressors (N-terminal DELLA domain + GRAS domain). Repress GA-responsive genes.
+  Signalling: GA + GID1 receptor (GRAS family) → GA-GID1-DELLA complex → DELLA ubiquitinated (SCF E3 + GID2/SLY1 F-box) → degraded → de-repression of GA-responsive genes.
+  Responses: Stem elongation, seed germination, fruit development, flowering, transition from juvenile to adult phase.
+  Agricultural: GA3 spray → seedless grapes; table grape size ↑. GA in barley → uniform germination for brewing.
+
+Strigolactones (SL):
+  Relatively newly discovered hormone class (2008: canonical hormone status).
+  Carotenoid-derived; synthesised in roots; exuded into soil.
+  Functions: Inhibit shoot branching (suppress axillary buds — work with auxin); stimulate mycorrhizal hyphal branching; induce parasitic plant germination (Striga — major crop pest in Africa).
+  Signalling: D14 receptor (alpha/beta fold) + SL → D14 acts as enzyme → hydrolyses SL → cleaved product activates D14 → D14 + D3 (F-box) E3 ligase → SMXL/D53 proteins ubiquitinated → degraded → BRC1 repressor removed → axillary bud growth.
+  Striga control: Bioprotectant strategies; SMAX1 mutants in Arabidopsis constitutively lack repression.
+
+Salicylic Acid (SA) Immunity:
+  SA produced via ICS1 (isochorismate synthase) in chloroplasts after pathogen attack.
+  SA → NPR1 (master regulator) oligomer → monomer → nuclear import → interact with TGA TFs → PR gene expression (PR1, PR2/beta-1,3-glucanase, PR5/thaumatin-like).
+  SAR (Systemic Acquired Resistance): SA signal travels through phloem (as methyl-SA and/or GSNO or azelaic acid) → systemic immunity.
+  Priming: SAR primes plants → faster + stronger response to future attack.
+
+Ethylene Signalling:
+  Receptor family: ETR1, ETR2, EIN4, ERS1, ERS2 (ER-localised, copper-binding receptor).
+  No ethylene: Receptors active → CTR1 kinase active → EIN2 C-terminus phosphorylated → not cleaved → EIN3 degraded → no response.
+  Ethylene present: Receptors inactive → CTR1 inactive → EIN2 not phosphorylated → EIN2 C-terminus cleaved by unknown mechanism → enters nucleus → stabilises EIN3/EIL1 TFs → ethylene-responsive genes.
+  Applications: Banana ripening (inhibit by controlled atmosphere + 1-MCP blocker); tomato ripening (delay); carnation vase life (anti-ethylene treatments).
+
+4. SECONDARY METABOLITES
+--------------------------
+Plants produce ~200,000 known secondary metabolites — defensive and ecological roles.
+
+Terpenoids (largest class):
+  Monoterpenes (C10): Menthol (mint), limonene, linalool, geraniol. Volatile; repel insects, attract pollinators.
+  Sesquiterpenes (C15): Artemisinin (anti-malarial, from Artemisia annua); bisabolene; farnesyl pyrophosphate.
+  Diterpenes (C20): Taxol/paclitaxel (Taxus brevifolia → anti-cancer); gibberellins; phytol (chlorophyll tail).
+  Triterpenes (C30): Sterols, saponins, licorice (glycyrrhizin), betulinic acid.
+  Tetraterpenes (C40): Carotenoids (lycopene, beta-carotene, xanthophylls) — pigments + antioxidants.
+
+Phenylpropanoids:
+  Phenolics, flavonoids, anthocyanins, tannins, lignin. All via phenylalanine → PAL (phenylalanine ammonia lyase).
+  Flavonoids: Naringenin → chalcone → flavanones → flavones, flavonols (quercetin, kaempferol), anthocyanins (flower + fruit colour), isoflavones (soy phytoestrogens — daidzein, genistein).
+  Anthocyanins: Blue-red pigments; attract pollinators and seed dispersers; antioxidant; pH-dependent colour change.
+  Lignin: Cross-linked phenylpropanoid polymer. Second most abundant biopolymer (after cellulose). Structural support; water impermeability of xylem; recalcitrant to degradation.
+
+Alkaloids:
+  N-containing heterocyclic compounds. ~12,000 known. Diverse biosynthesis.
+  Nicotine: From tobacco (Nicotiana tabacum); from ornithine → putrescine → nicotine; anti-herbivore; insecticide historically.
+  Morphine/Codeine: Opium poppy (Papaver somniferum); benzylisoquinoline alkaloid pathway; >25 biosynthetic steps.
+  Caffeine: From xanthosine (via purine pathway); Coffea arabica, Camellia sinensis, cacao. Prevents herbivory; inhibits seed germination of competitors; adenosine receptor antagonist in humans.
+  Quinine: Cinchona bark; anti-malarial; bitter taste; tonic water.
+  Vincristine/Vinblastine: Catharanthus roseus (Madagascar periwinkle); monoterpene indole alkaloid; anti-cancer (MT depolymerisation).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PLANT EPIGENOMICS
+----------------------
+Transposon Silencing:
+  ~80% of maize genome; ~40% of Arabidopsis; ~85% of wheat genome consists of transposable elements (TEs).
+  RNA-directed DNA Methylation (RdDM): sRNA pathway specifically silences TEs.
+    DCL3 (Dicer) → 24 nt small interfering RNAs (siRNAs) → AGO4 → DNA methylation via DRM2 (de novo methyltransferase) at CHH context (plant-specific) + CHG and CG.
+    RNA Pol IV: Produces RPMP (Pol IV/RDR2-derived) ssRNA precursors (exclusively at silenced loci).
+    RNA Pol V: Produces non-coding scaffolding transcripts → AGO4 binds → recruits DRM2.
+  Paramutation: Heritable epigenetic silencing one allele can induce on homologous allele (maize B' vs B-I; Mediator of Paramutation1 — MOP1, Pol IV component).
+  Transgenerational epigenetic inheritance in plants: Much more robust than mammals (less global reprogramming). TE silencing transmitted through meiosis via sRNAs.
+
+6. PLANT INNATE IMMUNITY (DETAILED PTI/ETI)
+---------------------------------------------
+Two-tiered plant immunity (Jones & Dangl, 2006):
+PTI (PAMP-Triggered Immunity):
+  Pattern recognition receptors (PRRs) at cell surface: RLKs (receptor-like kinases).
+  FLS2: Detects bacterial flagellin peptide flg22. FLS2 + BAK1 co-receptor → LRR-kinase complex.
+  EFR: Detects EF-Tu (bacterial elongation factor) peptide elf18.
+  CERK1: Chitin receptor (fungal/insect). Lysin motif domain binds GlcNAc oligomers.
+  Signal: MEKK1/MKK4-5/MPK3-6 MAP kinase cascade + WRKY TFs → defence genes.
+  PTI responses: Rapid Ca2+ influx, ROS burst (RBOH → superoxide), stomatal closure, callose deposition.
+  Effector-triggered susceptibility (ETS): Pathogen injects effector proteins to suppress PTI.
+    HopAI1 (Pseudomonas): Inactivates MPK3/6 by phosphothreonine lyase activity.
+    AvrPto: Blocks FLS2/CERK1/EFR → no PTI.
+
+ETI (Effector-Triggered Immunity):
+  R proteins (NBS-LRR) detect pathogen effectors directly or guard host targets.
+  Guard hypothesis: R protein guards a virulence target. RIN4 (NPR pathway component) guarded by RPM1 + RPS2.
+  AvrB/AvrRpm1 from Pseudomonas → phosphorylate RIN4 → RPM1 (CC-NBS-LRR) activated.
+  AvrRpt2 → cleaves RIN4 → RPS2 (CC-NBS-LRR) activated.
+  ETI vs PTI: ETI stronger + faster than PTI. Involves: HR (hypersensitive response = localised cell death to limit pathogen spread), SA/SAR, massive transcriptional reprogramming.
+  ZAR1 resistosome (2019): First structural solution of an NBS-LRR in activated state. ZAR1-RKS1-PBL2-UMP complex → pentameric wheel → inserts into membrane → Ca2+ influx → cell death.
+
+[AGRICULTURAL APPLICATION] CRISPR for disease-resistant crops:
+  Wheat mlo knockout (PM41): Broad powdery mildew resistance without yield penalty.
+  Cassava CBSV resistance: Knockout of eIF4E (translation initiation factor) → virus cannot translate.
+  Citrus HLB (huanglongbing/greening): No effective cure; devastating; CRISPR targeting CsSWEET genes (sugar transporters hijacked by bacteria) — early trials.
+  Banana Fusarium wilt (TR4): Classic Cavendish has no resistance gene; genome editing + synthetic biology approaches in development.
+
+================================================================================

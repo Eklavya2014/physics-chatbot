@@ -1,0 +1,157 @@
+================================================================================
+                    EVOLUTIONARY BIOLOGY — ADVANCED
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE MODERN SYNTHESIS
+------------------------
+The Modern Synthesis (1930s–1950s) united Darwin's natural selection with Mendelian genetics.
+Key architects: R.A. Fisher, J.B.S. Haldane, Sewall Wright, Theodosius Dobzhansky, Ernst Mayr, Julian Huxley.
+Core components:
+  - Natural selection acts on heritable variation in populations.
+  - Mutations are the ultimate source of genetic variation.
+  - Gene frequencies change through: selection, genetic drift, mutation, gene flow.
+  - Speciation: Gradual accumulation of differences + reproductive isolation.
+  - Macroevolution = extrapolated microevolution (gradualism).
+
+Extended Evolutionary Synthesis (2015 onwards):
+  Challenges some assumptions of Modern Synthesis:
+  - Epigenetic inheritance: Some acquired traits heritable without DNA sequence change.
+  - Developmental bias (developmental constraints): Not all mutations equally likely; some phenotypes more accessible.
+  - Niche construction: Organisms modify environment → alter selection pressures on themselves + others.
+  - Phenotypic plasticity: Single genotype can produce multiple phenotypes → facilitates rapid adaptation.
+  - Cultural transmission: Non-genetic inheritance (especially relevant in humans + some animals).
+
+1.1 TYPES OF SELECTION
+------------------------
+  Directional  : One extreme phenotype favoured → population shifts. Example: antibiotic resistance.
+  Stabilising  : Intermediate phenotype favoured → reduces variation. Example: human birth weight.
+  Disruptive   : Both extremes favoured → bimodal distribution → potential speciation.
+  Balancing    : Multiple alleles maintained at significant frequencies.
+    Overdominance (heterozygote advantage): Sickle cell heterozygotes resist malaria > either homozygote.
+    Frequency-dependent selection: Rare allele favoured (negative freq-dep: MHC diversity maintained).
+    Seasonal/temporal variation: Different alleles favoured in different environments over time.
+  Sexual selection: Mate choice + male-male competition → often in conflict with natural selection (peacock tail). Fisherian runaway, good genes (handicap), sensory bias hypotheses.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MECHANISMS OF SPECIATION
+-----------------------------
+Biological Species Concept (Mayr): Species = groups that actually or potentially interbreed and are reproductively isolated from other such groups.
+
+Speciation Modes:
+  Allopatric: Geographic separation → independent evolution → reproductive isolation.
+    Vicariance: Pre-existing population split by barrier (mountain rise, sea level change).
+    Peripheral isolation: Small founder population → rapid drift + selection → rapid divergence.
+  Sympatric: New species forms within same geographic range.
+    Polyploidy: Most common in plants. Autopolyploidy (same species): tetraploid from diploid.
+      Allopolyploidy: Hybrid between species + chromosome doubling → new fertile species.
+      Wheat: T. urartu (AA) × Aegilops speltoides (BB) → tetraploid (AABB = emmer) × Aegilops tauschii (DD) → hexaploid modern bread wheat (AABBDD, 2n=42).
+    Ecological divergence in sympatry: Apple maggot fly (Rhagoletis pomonella): Host race divergence on apple vs hawthorn without geographic isolation.
+    Sexual selection: Cichlids in same lake — visual mate choice by colour → rapid speciation.
+  Parapatric: Continuous population with gene flow; divergence across environmental gradient.
+    Clinal variation → strong selection at ecotone can lead to speciation.
+  Peripatric: Founder events at periphery + drift + selection.
+
+3. EVOLUTION OF COOPERATION
+-----------------------------
+Why would altruistic behaviour evolve if natural selection favours self-interest?
+
+Kin Selection (Hamilton, 1964): Already covered in Animal Behaviour doc. r×B > C.
+Reciprocal Altruism (Trivers, 1971): Repeated interactions + recognition + memory → cooperation stabilises.
+Group Selection: Controversial. Multilevel selection theory — selection acts simultaneously at individual + group levels. Eusociality debated: Nowak, Tarnita & Wilson (2010) challenged kin selection as explanation.
+Punishment: Altruistic punishment (punishing defectors at personal cost) stabilises cooperation in large groups. Strong reciprocity: Humans willing to punish even in one-shot interactions (contrary to standard evolutionary game theory).
+Green beard effect: Allele that (1) produces recognisable signal AND (2) favours carriers of same signal. Found in Pseudomonas (pyoverdine) + fire ants (Gp-9 gene).
+
+Evolutionary Game Theory:
+  Prisoner's Dilemma: Classic cooperation problem.
+  ESS (Evolutionarily Stable Strategy): Strategy that, if adopted by most of the population, cannot be invaded by rare mutant.
+  Tit-for-Tat: Cooperate first; then copy opponent's last move. Winner of Axelrod's iterated PD tournaments.
+  Generous Tit-for-Tat: Sometimes cooperate even when defected against → more robust to errors.
+  Win-Stay, Lose-Shift (Pavlov): Repeat action if won; switch if lost. Outperforms TfT in some environments.
+
+4. COEVOLUTION & ARMS RACES
+-----------------------------
+Red Queen Hypothesis (Van Valen, 1973):
+  Organisms must continuously evolve just to maintain fitness relative to co-evolving species.
+  Named after Lewis Carroll: "It takes all the running you can do, to keep in the same place."
+  Evidence: Freshwater snail Potamopyrgus antipodarum + trematode parasite → sexual reproduction maintained in parasitised populations; clonal in unparasitised.
+  Predicts: Sexual reproduction advantageous because rare genotypes resist current parasite strains (frequency-dependent selection).
+
+Antagonistic Coevolution:
+  Host-parasite: Arms race at molecular level (see Symbiosis doc and Immunogenetics doc).
+  Toxin-resistance: Garter snakes (Thamnophis sirtalis) evolved resistance to tetrodotoxin in newts → newts evolved higher TTX levels → repeated cycles. Chemical arms race over thousands of generations.
+  Müllerian mimicry: Unpalatable species evolve to resemble each other → shared warning signal.
+  Batesian mimicry: Palatable species mimics unpalatable → arms race as predators learn and mimics evolve to perfect the match.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MACROEVOLUTION & EVOLUTIONARY TEMPO
+----------------------------------------
+Gradualism vs Punctuated Equilibrium:
+  Gradualism (Darwin): Evolution is slow, steady, continuous.
+  Punctuated Equilibrium (Gould & Eldredge, 1972): Fossil record shows long stasis punctuated by rapid change.
+    Rapid change: Founder populations; strong selection; developmental constraint release.
+    Not necessarily contradictory — different timescales reveal different patterns.
+
+Mass Extinction & Recovery:
+  Recovery after mass extinctions: "Dead clades walking" — survivors that appear to recover but eventually go extinct.
+  Adaptive radiation: Released ecological opportunity → rapid diversification into vacated niches.
+    Mammals post-K-Pg: Radiated into 20+ orders in ~10 million years.
+    Darwin's finches: 14+ species from one ancestor in ~2 million years.
+    Hawaiian honeycreepers: 50+ species from one finch ancestor.
+  Key Innovation Hypothesis: A new trait opens new ecological opportunities → radiation.
+    Flowers in angiosperms; feathers in birds; mammalian jaw ossicles.
+
+Convergent Evolution:
+  Repeated evolution of similar traits in unrelated lineages exposed to similar selective pressures.
+  Examples:
+    Echolocation: Bats + toothed whales + some shrews + some birds (oilbird, cave swiftlet). Convergent at molecular level: Same amino acid changes in Prestin (cochlear motor protein) in echolocating bats and dolphins.
+    Eye evolution: Vertebrate camera eye + cephalopod camera eye + insect compound eye + scallop mirror eye. ~40–60 independent origins of image-forming eyes.
+    C4 photosynthesis: Evolved 60+ independent times in different plant families.
+    Venoms: Evolved >100 times independently in animals.
+    Powered flight: 4 independent origins (insects, pterosaurs, birds, bats).
+
+Molecular Convergence:
+  Same amino acid substitutions in unrelated lineages → same selective pressure.
+  Horseshoe crabs + octopus: Independently evolved copper-based haemocyanin (blue blood).
+  Echolocating mammals: ~200 identical amino acid changes in >14 proteins (Shen et al., 2012). Debated — some may be alignment artefact.
+  EPAS1/HIF-2alpha: Different adaptive variants in Tibetans (from Denisovans) vs Ethiopian highlanders vs Andeans.
+
+6. EXTENDED PHENOTYPE & SELFISH GENES
+----------------------------------------
+Selfish Gene Perspective (Dawkins, 1976):
+  Gene's-eye view: Genes are the true units of selection; organisms are "survival machines" for genes.
+  Selfish genetic elements: Transposons, B chromosomes, meiotic drive elements (segregation distorter in Drosophila) — spread despite being neutral or harmful to organism.
+  Intragenomic conflict: Different genomic regions can have conflicting evolutionary interests.
+    Imprinted genes: Paternally expressed genes often drive growth (→ larger offspring); maternally expressed often restrain growth (Haig hypothesis — parental conflict).
+    X vs Y chromosomes: Y-linked genes may evolve to favour sons; X-linked may favour daughters.
+
+Extended Phenotype (Dawkins, 1982):
+  Gene effects extend beyond organism's body into environment.
+  Beaver dams, spider webs, caddisfly cases, parasite-induced host behaviour changes — all part of the extended phenotype.
+  Parasites manipulating host behaviour: Toxoplasma (cat attraction), Ophiocordyceps (zombie ants), Leucochloridium (zombie snails), rabies (aggression/biting to spread).
+
+Niche Construction:
+  Organisms modify their selective environment → alter evolution of themselves and others.
+  Earthworms create soil → affect plant evolution + their own evolution.
+  Humans: Agriculture, cities, medicine → profoundly altered selective landscape.
+  Cultural niche construction: Human language, institutions, technology → modified selection on cognitive traits.
+  Lactase persistence: Cattle domestication → milk availability → lactase persistence genes selected → coevolution of genes and culture.
+
+[DEEP INTEGRATION] The integration of evolutionary thinking into medicine (Darwinian medicine):
+  Cancer as somatic evolution: Tumour cells evolve by natural selection within body.
+  Antibiotic/antiviral resistance: Predictable evolutionary process → selection for resistance alleles.
+  Evolutionary mismatch hypothesis: Diseases of modern lifestyle (obesity, T2DM, CVD, allergies, depression) partly explained by mismatch between modern environment and ancestral evolutionary adaptations.
+  Evolution of senescence: Selected late-acting genes may cause ageing diseases → antagonistic pleiotropy.
+  Menopause: Adaptive? Grandmother hypothesis — post-reproductive women enhance inclusive fitness by helping grandchildren → selection for menopause. Supported by killer whale data.
+
+================================================================================

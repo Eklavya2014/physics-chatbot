@@ -1,0 +1,172 @@
+================================================================================
+                  CYTOSKELETON & CELL MOTILITY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE CYTOSKELETON OVERVIEW
+------------------------------
+The cytoskeleton is a dynamic network of protein filaments that gives cells their
+shape, organises internal compartments, enables movement, and divides cells.
+Three major components in eukaryotes: actin filaments, microtubules, intermediate filaments.
+
+Component         | Diameter | Monomer          | Motor Proteins      | Key Functions
+------------------|----------|------------------|---------------------|---------------------------
+Actin filaments   | ~7 nm    | Actin (G-actin)  | Myosins             | Shape, motility, division
+Microtubules      | ~25 nm   | Tubulin (α/β het)| Kinesins, Dyneins   | Transport, mitosis, cilia
+Intermediate fils | ~10 nm   | Many (keratins…) | None (structural)   | Mechanical strength
+
+1.1 ACTIN FILAMENTS (MICROFILAMENTS)
+--------------------------------------
+G-actin (globular) polymerises → F-actin (filamentous) double helix.
+  ATP-actin: Fast-polymerising; added at barbed (+) end.
+  ADP-actin: Slower depolymerisation at pointed (-) end → treadmilling.
+  Critical concentration: [ATP-actin] at which polymerisation = depolymerisation.
+  Barbed end: Fast growing (+); ATP-actin added; at cell periphery (lamellipodia).
+  Pointed end: Slow shrinking (-); ADP-actin released; at centre.
+
+Actin-Binding Proteins:
+  Nucleators: ARP2/3 complex (branches off existing filament; driven by WASP/WAVE/N-WASP);
+    Formins (mDia1, DAAM1 — linear filament nucleation and elongation; processive).
+  Cappings: CapZ, Tropomodulin → prevent barbed end growth; stabilise filament length.
+  Severing: Cofilin/ADF → severs and promotes depolymerisation; creates new barbed ends.
+    Cofilin regulation: Phospho-cofilin (by LIMK) = inactive; dephospho = active.
+  Bundling: Alpha-actinin, fimbrin, fascin → parallel bundles (stress fibres, filopodia).
+  Cross-linking: Filamin → perpendicular networks (cortical actin).
+  Capping (barbed): Gelsolin (Ca2+-activated severer/capper); tropomodulin (pointed end).
+
+1.2 MICROTUBULES
+-----------------
+Tubulin heterodimer (alpha + beta) polymerises → hollow tube of 13 protofilaments.
+  GTP-tubulin: Stable; added at plus (+) end.
+  GDP-tubulin: Unstable; catastrophe risk at minus (-) end.
+  Dynamic instability: Stochastic switching between growth and rapid shrinkage (catastrophe).
+    GTP cap: Prevents catastrophe; if lost → rapid depolymerisation.
+    Rescue: Transition from shrinkage back to growth.
+  MTOC (Microtubule Organising Centre): Nucleates MTs. Centrosome in animal cells (2 centrioles + pericentriolar material). γ-tubulin ring complex (γ-TuRC) nucleates.
+
+Microtubule-associated proteins (MAPs):
+  Stabilisers: MAP2 (dendrites), Tau (axons), MAP4 (non-neuronal).
+    Tau hyperphosphorylation → detaches from MTs → aggregates → neurofibrillary tangles → Alzheimer's.
+  Destabilisers: Stathmin/Op18 → sequesters tubulin; MCAK (kinesin-13) → catastrophe-promoting.
+  Plus-end tracking proteins (+TIPs): EB1, CLIP-170, APC → track growing plus ends → guide MTs to cortex.
+  Paclitaxel (Taxol): Stabilises MTs (prevents depolymerisation) → arrests mitosis → cancer treatment.
+  Vinca alkaloids (vincristine, vinblastine): Depolymerise MTs → metaphase arrest → cancer treatment.
+  Colchicine: Binds tubulin dimer → prevents polymerisation → gout treatment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. INTERMEDIATE FILAMENTS
+--------------------------
+~10 nm diameter; no polarity; most stable cytoskeletal element; resist mechanical stress.
+Unlike actin and MTs, IF proteins vary greatly between cell types.
+
+Type I/II: Keratins (epithelial cells). Acidic (I) + basic (II) pair to form obligate heteropolymers.
+  K5/K14: Basal layer epidermis. Mutations → epidermolysis bullosa simplex (skin blistering).
+  K8/K18: Simple epithelia (liver, intestine). K19: simple epithelia, cancer marker.
+Type III: Vimentin (mesenchymal, fibroblasts, endothelium); Desmin (muscle — connects sarcomeres to membrane);
+  GFAP (astrocytes); Peripherin (PNS neurons).
+Type IV: Neurofilaments (NF-L, NF-M, NF-H) — major component of large-calibre axons.
+  Calibre regulation: NF-H phosphorylation → expanded axonal diameter → faster conduction.
+Type V: Lamins (A, B1, B2) — nuclear lamina (see chromosome biology doc).
+Type VI: Nestin — neural stem cells; vimentin/destin-related.
+
+3. CELL MOTILITY MECHANISMS
+-----------------------------
+Amoeboid Motility (lamellipodia/pseudopodia):
+  Protrusion: Rac1 → WAVE/ARP2/3 → branched actin network → lamellipodia push membrane forward.
+  Adhesion: Integrins engage ECM → focal adhesions form → link actin to ECM.
+  Retraction: RhoA → ROCK → myosin II phosphorylation → actomyosin contraction → pull rear forward.
+  Rho GTPases as master regulators:
+    Rac1: Lamellipodia (broad, flat protrusions). Activated at leading edge.
+    Cdc42: Filopodia (thin, finger-like protrusions). Activated at tips of lamellipodia.
+    RhoA: Stress fibres + focal adhesions. Contraction. Activated at rear.
+    Mutual inhibition: Rac and Rho inhibit each other → front/back polarity.
+  Chemotaxis: Directional migration in chemical gradient (cAMP in Dictyostelium; fMLP in neutrophils).
+    PI3K amplification at leading edge (local PIP3 production) → AKT → Rac activation.
+    PTEN enriched at rear → degrades PIP3 → ensures directionality.
+
+Mesenchymal Motility (cancer invasion, fibroblasts):
+  EMT-like movement through matrix. Requires: Matrix metalloproteinases (MMPs) to degrade ECM.
+  MMPs: ~23 in humans. Secreted as zymogens; activated extracellularly; cleave collagens, fibronectin, laminins.
+  Invadopodia: Actin-rich protrusions in cancer cells → concentrate MMPs → ECM degradation → invasion.
+  Lamellipodium → pseudopodium → retraction cycle (slower than amoeboid).
+
+Ciliary & Flagellar Motility:
+  Axoneme: "9+2" arrangement (9 doublet microtubules + 2 central singlets).
+    Dynein arms (inner + outer): Walk along adjacent doublet → sliding force.
+    Nexin-DRC linkers: Convert sliding into bending → ciliary beat.
+  Primary cilia: "9+0" — no central pair; non-motile; sensory antenna.
+    Hedgehog signalling receptor; mTOR sensing; mechanosensation (kidney tubules — polycystin 1/2).
+    Defects → ciliopathies: Polycystic kidney disease (PKD1/2), Bardet-Biedl, Joubert, nephronophthisis.
+  IFT (Intraflagellar Transport): Bidirectional cargo transport along axonemal MTs.
+    Anterograde: IFT-B + Kinesin-2 (KIF3A/B/KAP). Retrograde: IFT-A + Dynein-2.
+
+4. THE CELL CORTEX & MECHANOBIOLOGY
+--------------------------------------
+Cell Cortex: Dense actin network just beneath plasma membrane; 100–200 nm thick.
+  Generates cortical tension; resists deformation; drives cell division (cleavage furrow).
+  ERM proteins (Ezrin, Radixin, Moesin): Cross-link cortical actin to membrane proteins.
+  Activated (phosphorylated) ERM → bridges between PM and F-actin.
+
+Mechanotransduction:
+  Cells sense and respond to mechanical forces: Stiffness, stretch, shear, compression.
+  Mechanosensors: Integrins, ion channels (PIEZO1/2, TRPV4), primary cilia, cadherin junctions.
+  Focal adhesions: Integrin clusters + talin + vinculin + paxillin + FAK + Src → outside-in signalling.
+    Force applied to ECM → talin stretches → cryptic binding sites exposed → vinculin recruitment → signal amplification.
+  YAP/TAZ pathway: Mechano-transducers; nuclear on stiff substrate (proliferation); cytoplasmic on soft.
+    LATS1/2 kinases phosphorylate YAP → cytoplasmic sequestration + degradation on soft/unloaded.
+    Hard matrix (liver fibrosis, tumour stroma) → nuclear YAP → oncogenic transcription (CTGF, CYR61).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MITOSIS & THE MITOTIC SPINDLE
+----------------------------------
+Mitotic Spindle Assembly:
+  Centrosome duplication (S phase): SAS-6 → cartwheel; PLK4 (polo-like kinase 4) = master trigger.
+  Spindle assembly: Astral MTs (anchor spindle); kinetochore MTs (capture chromosomes); interpolar MTs (antiparallel overlap; push poles apart via Eg5/kinesin-5).
+  Chromosome capture: Dynamic instability → MTs search for kinetochores (search and capture model).
+    CENP-A: Centromeric histone H3 variant → nucleosome at centromere → KMN network recruitment.
+    KMN (KNL1-MIS12-NDC80 complexes): Direct MT attachment at kinetochore; NDC80 binds tubulin.
+    Amphitelic attachment (biorientation): Both kinetochores of a bivalent face opposite poles.
+    Syntelic: Both face same pole → corrected by Aurora B-mediated destabilisation of improper attachments.
+    Merotelic: One kinetochore attached to both poles → lagging chromosomes → aneuploidy.
+
+Kinetochore-MT Error Correction:
+  Aurora B kinase (chromosomal passenger complex, CPC): Corrects improper attachments.
+    Tension-dependent: Correct (amphitelic) → kinetochores pulled apart → Aurora B removed from kinetochore → stable.
+    Incorrect → no tension → Aurora B phosphorylates Ndc80/Dam1 → MT detachment → resampling.
+
+Spindle Assembly Checkpoint (SAC):
+  MCC (Mitotic Checkpoint Complex): Mad2 + BubR1 + Bub3 → inhibits APC/C (anaphase-promoting complex/cyclosome).
+  Unattached kinetochore → catalytic amplification (Mad2 template model) → MCC generation.
+  APC/C-Cdc20 (when activated): Ubiquitinates Securin + Cyclin B → proteasomal degradation →
+    Separase activated → cleaves cohesin → sister chromatid separation → anaphase.
+  Drugs disrupting SAC: Spindle poisons (taxol, vincristine) → SAC activation → mitotic arrest → apoptosis.
+
+6. CYTOKINESIS
+---------------
+Division of cytoplasm after nuclear division.
+  Contractile ring: RhoA activation at cell equator → ROCK + mDia → myosin II + actin ring assembly.
+    Signal: Centralspindlin (MKLP1 + RacGAP1) + Ect2 (RhoGEF) at central spindle → RhoA-GTP locally.
+  Ingression: Ring constricts → furrow deepens → midbody forms (electron-dense structure).
+  Abscission: ESCRT-III → constricts membrane at midbody → final scission.
+    CEP55 recruits ALIX + TSG101 → ESCRT-III → spastin (AAA-ATPase severs MTs at midbody).
+  Failed cytokinesis → binucleate cell → tetraploidy → potential aneuploidy → cancer.
+
+[DRUG TARGETS IN MITOSIS]
+  Aurora A inhibitors (alisertib): Misaligned chromosomes → SAC → apoptosis.
+  Aurora B inhibitors (barasertib): Chromosome segregation errors.
+  PLK1 inhibitors (volasertib): Impaired spindle assembly.
+  CENP-E inhibitors: Chromosome congression failure.
+  Kinesin Eg5/KIF11 inhibitors (ispinesib): Monopolar spindle → mitotic arrest.
+  All being trialled in combination with immunotherapy or targeted agents in solid tumours.
+
+================================================================================

@@ -1,0 +1,167 @@
+================================================================================
+                  DNA REPAIR & GENOME STABILITY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. DNA DAMAGE — SOURCES & TYPES
+---------------------------------
+DNA suffers ~10,000–100,000 lesions per cell per day. Without repair → mutation → cancer, ageing.
+
+Endogenous Sources:
+  Replication errors: ~1 error per 10^9 bases after proofreading. Mismatch repair further corrects.
+  Reactive oxygen species (ROS): 8-oxoguanine (most common oxidative lesion) → G:C → T:A transversion.
+  Hydrolysis: Depurination (~10,000/cell/day) → abasic (AP) sites. Deamination (C→U, ~100–500/day).
+  Spontaneous: S-adenosylmethionine → O6-methylguanine (promutagenic).
+
+Exogenous Sources:
+  UV radiation: Cyclobutane pyrimidine dimers (CPDs — most common) + 6-4 photoproducts → T:T or C:T.
+  Ionising radiation: X-rays, gamma rays → single and double-strand breaks (DSBs). Also oxidative damage.
+  Chemical carcinogens: Benzo[a]pyrene (cigarettes) → bulky adducts; aflatoxin B1 → G:C → T:A.
+  Alkylating agents: BCNU, temozolomide, CCNU (also chemotherapy drugs) → O6-methylguanine + DNA crosslinks.
+  Crosslinking agents: Mitomycin C, cisplatin → intrastrand (same strand) or interstrand crosslinks (ICL).
+
+1.1 OVERVIEW OF DNA REPAIR PATHWAYS
+--------------------------------------
+Pathway              | Lesion Repaired                        | Key Proteins
+---------------------|----------------------------------------|--------------------------------
+Base Excision Repair | Small base lesions (oxidation, deam.)  | Glycosylases, APE1, POLB, XRCC1
+Nucleotide Exc. Rep. | Bulky adducts, CPDs, 6-4PPs            | XPC, TFIIH, XPA, XPG, XPF-ERCC1
+Mismatch Repair      | Replication errors, mismatches, loops  | MutS (MSH2/6), MutL (MLH1/PMS2)
+Homologous Recomb.   | DSBs (S/G2 phase), ICLs               | MRN, BRCA1/2, RAD51, RAD52
+NHEJ                 | DSBs (all phases)                      | Ku70/80, DNA-PKcs, XRCC4, LIG4
+Alt-NHEJ             | DSBs (backup, error-prone)             | PARP1, MRE11, POLQ
+Fanconi Anaemia      | Interstrand crosslinks                 | FANC proteins (FANCA-W)
+Direct Reversal      | O6-methylG, UV dimers                  | MGMT, photolyase (bacteria/plants)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. DNA REPAIR PATHWAYS IN DETAIL
+-----------------------------------
+Base Excision Repair (BER):
+  Short-patch (1 nt) and long-patch (2–10 nt) BER.
+  Steps: Glycosylase removes damaged base (creates AP site) → APE1 endonuclease → POLB fills gap → XRCC1/LIG3 seals.
+  Key glycosylases: UNG (uracil); OGG1 (8-oxoguanine); NEIL1/2 (oxidised bases); SMUG1 (U in dsDNA); MPG (alkylated).
+  PARP1: Binds at SSBs → poly-ADP-ribosylation (PAR) → recruits XRCC1 → PARP1 released.
+  PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib): Trap PARP on DNA → SSB persists → replication fork collapse → DSB → HRD cancer cells (BRCA1/2 mutant) cannot repair DSBs → cell death (synthetic lethality).
+
+Nucleotide Excision Repair (NER):
+  Removes bulky lesions that distort the DNA helix. Two sub-pathways:
+  Global Genome NER (GG-NER): Scans entire genome. XPC-RAD23B-CETN2 detects helix distortion.
+  Transcription-Coupled NER (TC-NER): Repairs lesions in actively transcribed strands. RNAP stalling → CSB (ERCC6) + CSA → recruit NER machinery.
+  Core NER steps: Lesion recognition → TFIIH (XPB + XPD helicases) unwinds DNA ~30 nt → XPA verifies lesion → RPA binds ssDNA → XPG (3') + XPF-ERCC1 (5') endonucleases cut ~25–30 nt oligonucleotide → DNA Pol delta/epsilon fills gap → LIG1 seals.
+  Disease: XP (xeroderma pigmentosum): XP-A through XP-G gene mutations → inability to repair UV damage → 1000× increased skin cancer risk.
+    Cockayne Syndrome: TC-NER defect (CSA, CSB) → neurological degeneration, premature ageing, dwarfism.
+    Trichothiodystrophy: XPB, XPD, TTDA mutations → brittle hair, ichthyosis, impaired NER.
+
+Mismatch Repair (MMR):
+  Corrects: Replication mismatches, small insertions/deletions in microsatellite repeats.
+  Key proteins: MutSalpha (MSH2-MSH6): Detects single base mismatches + small loops.
+    MutSbeta (MSH2-MSH3): Detects larger insertion/deletion loops.
+    MutLalpha (MLH1-PMS2): Endonuclease; coordinates excision.
+  Strand discrimination: Nick in newly synthesised strand provides entry point for excision.
+  Disease: Lynch syndrome (HNPCC): Germline mutations in MLH1, MSH2, MSH6, PMS2, EPCAM.
+    50–80% lifetime risk of colorectal cancer; also endometrial, ovarian, gastric, urinary.
+    Tumours show MSI (microsatellite instability) — frameshift mutations at microsatellite loci.
+    dMMR/MSI-H tumours: Highly immunogenic (many neoantigens) → respond to PD-1 blockade (pembrolizumab — pan-tumour approval 2017).
+
+3. DOUBLE-STRAND BREAK REPAIR
+--------------------------------
+DSBs are the most dangerous lesions — unrepaired → chromosomal rearrangement → cell death.
+
+Homologous Recombination (HR):
+  Accurate; uses sister chromatid as template; active in S/G2 when sister available.
+  Steps:
+    MRN complex (MRE11-RAD50-NBS1): Senses DSB → recruits ATM → signal amplification.
+    Resection: MRE11 + Exo1 + DNA2/BLM helicase → 3' single-stranded overhang.
+    RPA coats ssDNA → BRCA2 loads RAD51 onto ssDNA → replaces RPA.
+    Strand invasion: RAD51 filament invades homologous sequence → D-loop.
+    Extension: DNA synthesis using homologous template.
+    Resolution: Holliday junction resolution → repaired DNA.
+  BRCA1: Promotes resection and HR. BRCA2: RAD51 loader (8 BRC repeats bind RAD51).
+  HRD (Homologous Recombination Deficiency): BRCA1/2 mutations + RAD51 paralogs + PALB2 → "BRCAness."
+    HRD score: Genomic scars (HRD-LOH, TAI, LST) → indicates lifetime HR deficiency.
+    Clinical: olaparib + bevacizumab maintenance → PAOLA-1 trial (HRD+ ovarian cancer → 37 vs 17 months PFS).
+
+Non-Homologous End Joining (NHEJ):
+  Fast; available all cell cycle phases; error-prone (can cause deletions/insertions).
+  Steps: Ku70/Ku80 heterodimer binds DNA ends → recruits DNA-PKcs → autophosphorylation → tethers ends → Artemis processes ends → XRCC4-LIG4-XLF complex ligates ends.
+  V(D)J recombination: Uses NHEJ to join coding ends after RAG-mediated DSBs → antibody diversity.
+  Class switch recombination: AID → cytosine deamination in switch regions → UNG/APE creates DSBs → NHEJ joins → new constant region.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. DNA DAMAGE RESPONSE (DDR) SIGNALLING
+-----------------------------------------
+Central Kinases: ATM, ATR, DNA-PK (PI3K-like kinases).
+
+ATM (Ataxia-Telangiectasia Mutated):
+  Activated by DSBs via MRN complex. Dimer → monomer (active) upon activation.
+  Autophosphorylates S1981. Key substrates:
+    H2AX → gammaH2AX (S139): Marks DSB flanking chromatin → recruits repair factors (MDC1, 53BP1, BRCA1). Spreads megabases from DSB.
+    CHK2 (T68): Checkpoint kinase → phosphorylates CDC25A (→ 14-3-3 → degradation → CDK2 inhibition → S phase arrest) and CDC25C (→ CDK1 inhibition → G2/M arrest).
+    p53 (S15): Stabilises p53 → p21 → CDK2/4 inhibition → G1 arrest.
+    BRCA1 (S1387, S1524).
+  Ataxia-Telangiectasia: Biallelic ATM mutation → cerebellar ataxia, telangiectasia, radiation sensitivity, immunodeficiency, lymphoma/leukaemia risk.
+
+ATR (ATM- and Rad3-related):
+  Activated by RPA-coated ssDNA (stalled replication forks, resected DSBs). ATRIP sensor.
+  CHK1 (S317/345) → phosphorylates CDC25A (S phase checkpoint) + CDC25C (G2/M).
+  Replication fork stabilisation; prevents origin firing (suppress late origins when damage present).
+  ATR essential for replication — lethal if deleted in proliferating cells.
+  ATR inhibitors (berzosertib/M6620, ceralasertib): Synthetic lethality with ATM-deficient tumours; potentiate chemotherapy + immunotherapy.
+
+p53 — Guardian of the Genome:
+  Tumour suppressor; most mutated gene in cancer (>50%).
+  Activated by: DNA damage (ATM/ATR), oncogene activation (ARF pathway), hypoxia, nucleotide depletion.
+  Normally: MDM2 (E3 ligase) ubiquitinates p53 → proteasomal degradation (rapid turnover, t½~20 min).
+  Activation: ATM phosphorylates p53 (S15, S20) + MDM2 (S395) → MDM2-p53 interaction disrupted → p53 stabilised.
+  p53 functions:
+    G1 arrest: Transcribes CDKN1A (p21) → CDK2/4 inhibition → Rb dephosphorylation → E2F sequestration.
+    Apoptosis: Transcribes BAX, PUMA, NOXA, FAS → intrinsic + extrinsic apoptosis.
+    Senescence: p21 + PAI-1 + prevents SIRT1-mediated p53 deacetylation.
+    DNA repair: Transcribes GADD45, XPC, DDB2, FANCC.
+    Metabolism: Blocks glycolysis (TIGAR) + promotes OXPHOS.
+  MDM2 inhibitors (idasanutlin, navtemadlin): Displace MDM2 → p53 reactivation → apoptosis in tumours with wild-type p53.
+  APR-246 (eprenetapopt): Restores wild-type conformation to mutant p53 → clinical trials (AML, MDS).
+
+5. FANCONI ANAEMIA PATHWAY (ICL REPAIR)
+-----------------------------------------
+Interstrand crosslinks (ICLs): Most cytotoxic lesion; blocks both replication and transcription.
+FA pathway: Named after Fanconi Anaemia — rare AR disorder. 22 FANC proteins (A-W identified).
+
+ICL Repair Mechanism:
+  Replication fork stalling at ICL → FANCM + FAAP24/FAAP16 recruit FA core complex (FANCA-G, FANCL E3 ubiquitin ligase, FANCM, FAAP) →
+  Monoubiquitination of FANCD2-FANCI (ID2) complex → ID2 becomes key signalling hub →
+  Dual incision around ICL by XPF-ERCC1 (and FAN1, SLX1-SLX4) → translesion synthesis (TLS Pol eta, kappa) → HR using RAD51 to repair DSB generated.
+  BRCA1, BRCA2 (= FANCD1), PALB2 (= FANCN): Connect ICL repair to HR.
+
+Fanconi Anaemia Disease:
+  Bone marrow failure (aplastic anaemia), MDS, AML. Developmental abnormalities (radial ray, renal, cardiac). Squamous cell carcinoma (head/neck, gynaecological). Hypersensitivity to cisplatin/MMC.
+  Treatment: Allogeneic HSCT (curative for bone marrow failure, not solid tumours).
+  Clinical relevance: BRCA1/2 = FANCD1/B → ovarian/breast/pancreatic cancer susceptibility; cisplatin sensitivity (basis of chemotherapy).
+
+6. TRANSLESION SYNTHESIS (TLS) & ERROR-PRONE REPAIR
+------------------------------------------------------
+When replicative polymerases (PCNA-bound Pol delta/epsilon) stall at a lesion → TLS polymerases bypass.
+TLS Polymerases (Y-family): Pol eta (POLH), Pol iota (POLI), Pol kappa (POLK), Rev1.
+  Pol eta: Bypasses CPD (cyclobutane pyrimidine dimer) accurately by inserting AA opposite TT. POLH mutations → XP variant — normal NER but highly UV-sensitive + cancer-prone because TLS at CPDs is error-prone without Pol eta.
+  Pol iota: Bypasses oxidative lesions; inserts C opposite 8-oxoG (correct) but G opposite T (incorrect).
+  Pol kappa: Bypasses PAH-guanine adducts; accurate extension.
+  Rev1: Inserts C opposite abasic sites; scaffold for other TLS polymerases.
+  PCNA monoubiquitination (RAD6-RAD18): Switch from replicative → TLS polymerase.
+  PCNA polyubiquitination (K63-linked, SHPRH/HLTF): Template switching — use sister chromatid as template (error-free).
+
+[CLINICAL APPLICATIONS]
+  Chemotherapy DNA damage: Cisplatin (ICLs, intrastrand crosslinks), carboplatin, oxaliplatin, temozolomide (alkylation), doxorubicin (Topo II inhibitor + DSBs), bleomycin (DSBs), camptothecin/topotecan (Topo I — SSBs), etoposide (Topo II).
+  Predictive biomarkers of chemotherapy response: BRCA1/2 mutations → platinum sensitivity + PARP inhibitor sensitivity. ERCC1 (NER) — high expression → cisplatin resistance (not yet clinically validated for treatment selection). MSI-H (MMR deficiency) → immunotherapy response.
+  PARP inhibitor synthetic lethality: "BRCAness" identified by HRD score → extends benefit beyond BRCA-mutant patients. Velipanib, talazoparib, niraparib, rucaparib, olaparib — all approved in various settings.
+
+================================================================================

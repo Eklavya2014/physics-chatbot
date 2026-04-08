@@ -1,0 +1,182 @@
+================================================================================
+             CLINICAL LABORATORY & DIAGNOSTIC BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE CLINICAL LABORATORY
+---------------------------
+Clinical laboratories analyse patient samples to diagnose, monitor, and guide treatment of disease.
+Subdivisions: Clinical chemistry, haematology, microbiology, immunology, histopathology/cytology,
+genetics, blood transfusion (transfusion medicine), point-of-care testing.
+
+Pre-analytical, Analytical, Post-analytical phases:
+  Pre-analytical: Patient preparation, sample collection, transport, storage → major source of error.
+    Haemolysis: RBC lysis → raised K+, LDH, AST → misleading results.
+    Lipemia: High triglycerides → interfere with photometric assays.
+    EDTA contamination: Chelates Ca2+ and Mg2+ → spuriously low levels.
+  Analytical: Measurement. Internal QC (Levey-Jennings charts, Westgard rules). External QA (proficiency testing).
+  Post-analytical: Result interpretation, reference ranges, critical value notification.
+
+1.1 KEY CLINICAL CHEMISTRY TESTS
+----------------------------------
+Electrolytes (normal ranges):
+  Sodium (Na+)   : 135–145 mmol/L. Hypo/hypernatraemia → neurological symptoms.
+  Potassium (K+) : 3.5–5.0 mmol/L. Hypokalaemia → arrhythmias; hyperkalaemia → cardiac arrest.
+  Chloride (Cl-) : 95–105 mmol/L. Used in anion gap = Na+ - (Cl- + HCO3-). Normal ~8–12.
+  Bicarbonate    : 22–29 mmol/L. Acid-base status.
+  Calcium (Ca2+) : 2.2–2.6 mmol/L (total). Albumin-adjusted. Ionised = 1.15–1.30 mmol/L.
+  Phosphate      : 0.8–1.5 mmol/L.
+  Magnesium      : 0.7–1.0 mmol/L.
+
+Renal Function:
+  Creatinine     : Muscle metabolism product; freely filtered; not reabsorbed; used to estimate GFR.
+    eGFR (CKD-EPI or MDRD equations): Estimates GFR from creatinine + age + sex + ethnicity.
+    Cystatin C: Less affected by muscle mass; more accurate eGFR in extremes.
+  Urea (BUN)     : Liver urea cycle product; influenced by protein intake + hydration.
+    Urea:creatinine ratio: Elevated in pre-renal AKI (dehydration, cardiac failure) vs intrinsic renal.
+  Urine: Microscopy (casts, cells, crystals); dipstick (protein, glucose, blood, leucocytes, nitrite).
+
+Liver Function Tests (LFTs):
+  Bilirubin (total/conjugated/unconjugated): Haem breakdown product. Jaundice >34 µmol/L.
+    Pre-hepatic (haemolysis): Unconjugated ↑. Hepatic: Both ↑. Post-hepatic (obstruction): Conjugated ↑.
+  ALT (alanine aminotransferase): Hepatocyte-specific. Best marker of hepatocellular injury.
+  AST (aspartate aminotransferase): Liver + heart + muscle. Less specific than ALT.
+    AST:ALT ratio >2: Suggests alcoholic liver disease (alcohol increases AST via mitochondrial damage).
+  ALP (alkaline phosphatase): Bile duct epithelium + bone + intestine. ↑ in cholestasis + bone disease.
+  GGT (gamma-glutamyl transferase): Most sensitive for alcohol; also elevated in cholestasis.
+  Albumin: Synthetic function marker. Half-life 21 days → chronic disease indicator.
+  PT/INR: Clotting factors synthesised in liver (II, V, VII, X) → INR = synthetic function.
+
+Cardiac Markers:
+  Troponin I/T (high-sensitivity): Most sensitive and specific for myocardial injury.
+    Rises within 2–4 hours of MI; peaks 12–24h; returns to normal ~14 days.
+    hs-cTnI/T: Can detect very small myocardial injury; raises specificity issues (many causes).
+  CK-MB: Cardiac isoenzyme of creatine kinase; historical use; less specific than troponin.
+  BNP/NT-proBNP: Released by cardiomyocytes under wall stress. Heart failure biomarker.
+    NT-proBNP >125 pg/mL (age/renal-adjusted): Supports HF diagnosis. Guides management.
+  Myoglobin: Early marker (rises 1–3h); not cardiac-specific.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. ACID-BASE PHYSIOLOGY & INTERPRETATION
+------------------------------------------
+pH = 7.35–7.45 (arterial blood).
+Henderson-Hasselbalch: pH = 6.1 + log([HCO3-] / (0.03 × pCO2))
+pCO2 = 4.7–6.0 kPa (35–45 mmHg). HCO3- = 22–26 mmol/L.
+
+Primary Disturbances:
+  Respiratory acidosis: ↑pCO2 → ↓pH. Cause: Hypoventilation (COPD, sedation, obesity).
+    Compensation: Renal HCO3- retention (hours to days).
+  Respiratory alkalosis: ↓pCO2 → ↑pH. Cause: Hyperventilation (anxiety, PE, altitude, pregnancy).
+    Compensation: Renal HCO3- excretion.
+  Metabolic acidosis: ↓HCO3- → ↓pH. Causes: Lactic acidosis, DKA, AKI, diarrhoea.
+    Compensation: Hyperventilation (Kussmaul breathing) → ↓pCO2 (minutes to hours).
+  Metabolic alkalosis: ↑HCO3- → ↑pH. Causes: Vomiting (HCl loss), diuretics (K+ loss → H+ shift).
+    Compensation: Hypoventilation → ↑pCO2 (limited; hypoxia prevents significant compensation).
+
+Anion Gap Metabolic Acidosis (HAGMA — High Anion Gap):
+  AG = Na+ - (Cl- + HCO3-). Normal 8–12 mmol/L. Elevated: Unmeasured anions accumulate.
+  Mnemonic MUDPILES: Methanol, Uraemia, DKA, Propylene glycol, Isoniazid/Infection, Lactic acidosis, Ethylene glycol, Salicylates.
+
+Normal Anion Gap Metabolic Acidosis (NAGMA):
+  Loss of HCO3- with chloride retention. Causes: Diarrhoea, RTA (renal tubular acidosis), Addison's.
+
+Delta Ratio / Delta-Delta: Assess mixed disorders.
+  If HAGMA present: (AG - 12) / (24 - HCO3-). Ratio >2 = metabolic alkalosis also present. <1 = NAGMA also.
+
+3. MICROBIOLOGY LABORATORY METHODS
+-------------------------------------
+Culture & Sensitivity:
+  Blood culture: 2 sets (aerobic + anaerobic bottles); ~10 mL blood each; incubated 5 days.
+    Positive → Gram stain → preliminary identification → antibiotic sensitivity testing.
+    MALDI-TOF MS: Identifies organism in ~10 minutes from colony → replaced biochemical tests.
+  Antibiotic susceptibility testing (AST):
+    Disc diffusion (Kirby-Bauer): Antibiotic discs on agar + inoculated plate → inhibition zones.
+    MIC (Minimum Inhibitory Concentration): E-test or broth microdilution → quantitative.
+    EUCAST/CLSI breakpoints: Define susceptible (S), intermediate/susceptible, increased exposure (I), resistant (R).
+    Automated systems: VITEK 2, BD Phoenix, Becton Dickinson → rapid MIC + ID in 4–8h.
+  PCR-based diagnostics: Targets specific pathogen genes → extremely rapid + sensitive.
+    Multiplex panels: BioFire FilmArray → 25+ respiratory pathogens in 1 hour from nasopharyngeal swab.
+    GI panel, blood culture ID panel, meningitis/encephalitis panel — all multiplex PCR.
+  Point-of-care: Lateral flow (antigen tests for COVID-19, flu, strep, malaria); rapid PCR (Cepheid GeneXpert — TB + RIF resistance in 2 hours; gonorrhoea/chlamydia).
+
+4. IMMUNOASSAY METHODS
+------------------------
+ELISA (Enzyme-Linked Immunosorbent Assay):
+  Sandwich ELISA: Capture antibody → sample → detection antibody → enzyme substrate → colour.
+  Indirect ELISA: Antigen coated → patient antibody → anti-human IgG-enzyme → colour.
+  Competitive ELISA: Competition between sample antigen and labelled antigen.
+  Applications: HIV antibody test, hepatitis serology, hormone levels, drug levels, autoantibodies.
+
+Chemiluminescence Immunoassay (CLIA):
+  Higher sensitivity than ELISA. Used in automated analysers (Abbott ARCHITECT, Roche COBAS).
+  Troponin, BNP, hormones (TSH, T3, T4, LH, FSH, hCG), tumour markers (PSA, CA125, CEA, AFP).
+
+Western Blot:
+  Confirm HIV (now replaced by 4th-generation Ag/Ab combo tests in most settings).
+  Still used: Lyme disease confirmation, autoantibody identification.
+
+Flow Cytometry:
+  Cells pass through laser beam → scatter (size, granularity) + fluorescence from antibody panels.
+  CD4 count: HIV monitoring. Immunophenotyping: Leukaemia/lymphoma classification.
+  Applications: Cell counting (CD4+, NK, B cells), cell sorting, apoptosis (Annexin V), cell cycle, intracellular cytokines, phagocytosis.
+  Clinical panels: HIV (CD4/CD8), B cell malignancies (CD19, CD20, CD5, CD23, FMC7, CD10), T cell malignancies, PNH (CD55, CD59 on RBCs/granulocytes).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MOLECULAR DIAGNOSTICS IN CLINICAL PRACTICE
+-----------------------------------------------
+Liquid Biopsy in Oncology:
+  ctDNA (circulating tumour DNA): Shed from tumour + apoptotic cells into blood.
+    Approaches: ddPCR (droplet digital PCR) for known mutations (highly sensitive, quantitative).
+    NGS panel (Guardant360, Foundation One Liquid CDx, MSK-ACCESS): 70–500+ gene panels.
+    Sensitivity: Depends on variant allele frequency (VAF) — 0.01–5% in typical solid tumours.
+  Applications: Diagnosis (early detection trials: MCED — multicancer early detection); treatment selection (detect targetable mutations — EGFR, ALK, KRAS G12C, BRCA1/2); resistance monitoring (T790M in EGFR; PIK3CA, ESR1 in breast cancer); MRD (minimal residual disease) after curative treatment.
+  ctDNA MRD: Post-surgery ctDNA positivity predicts relapse months before imaging.
+    Landmark trials: DYNAMIC trial (colon cancer — ctDNA-guided adjuvant chemo); IMvigor010 trial.
+
+Next-Generation Sequencing Panels:
+  Somatic tumour testing: Foundation One CDx (324 genes); Tempus xT; Caris MI Profile; Oncomine.
+    Detects: SNVs, indels, CNV, fusions (RNA-based), MSI, TMB, HRD (homologous recombination deficiency score).
+  Germline testing: 84-gene hereditary cancer panel; specific panels (BRCA only; Lynch syndrome).
+    Hereditary conditions: BRCA1/2 (breast/ovarian/prostate/pancreatic), Lynch syndrome (MLH1/MSH2/MSH6/PMS2 — CRC/endometrial), CDH1 (gastric), PALB2, ATM, CHEK2, TP53 (Li-Fraumeni).
+  NIPT: Non-invasive prenatal testing from cell-free fetal DNA (cfDNA) in maternal plasma.
+
+6. POINT-OF-CARE TESTING & FUTURE DIAGNOSTICS
+------------------------------------------------
+POCT (Point-of-Care Testing):
+  Testing performed near patient; rapid turnaround.
+  Current: Blood gas + electrolytes (iSTAT); glucose (glucometer); INR (CoaguChek); cardiac troponin (PATHFAST, i-STAT); influenza/COVID-19 antigen; HbA1c; strep A; urinalysis.
+  Advances: Microfluidics ("lab on a chip"); smartphone-integrated; ambient intelligence systems.
+
+Biosensors:
+  Glucose biosensor (most widely used medical device): Glucose oxidase → electrons → amperometric signal.
+  Continuous glucose monitoring (CGM): Subcutaneous sensor → Abbott FreeStyle Libre, Dexterity G7.
+  Implantable multi-analyte sensors: Research phase; targeting glucose, lactate, ketones, urea simultaneously.
+  Electrochemical CRISPR diagnostics: SHERLOCK, DETECTR — CRISPR-based lateral flow for pathogen detection. Cas13a (RNA target) or Cas12a (DNA target) + collateral cleavage → reporter → signal.
+    SHERLOCK: 100× sensitivity of PCR; multiplexable; quantitative.
+
+AI in Diagnostics:
+  Radiology: FDA-approved AI for: Diabetic retinopathy (IDx-DR), chest X-ray interpretation (many), ECG interpretation (Apple Watch AFib detection), mammography screening.
+  Pathology: Paige AI (prostate cancer detection on H&E), Tempus/PathAI, Ibex.
+  Clinical chemistry: AI anomaly detection flags unusual patterns → flags for review.
+  Multiomics + clinical data: Sepsis prediction algorithms (Epic Sepsis Model — controversial); AKI prediction; deterioration risk scores.
+
+[DIAGNOSTIC ACCURACY METRICS]
+  Sensitivity = TP / (TP + FN) — how good at detecting true disease.
+  Specificity = TN / (TN + FP) — how good at ruling out disease.
+  PPV (Positive Predictive Value) = TP / (TP + FP) — probability disease present given positive test. Depends heavily on prevalence.
+  NPV (Negative Predictive Value) = TN / (TN + FN) — probability disease absent given negative test.
+  LR+ = Sensitivity / (1 - Specificity) — how much positive test increases disease probability.
+  LR- = (1 - Sensitivity) / Specificity — how much negative test decreases disease probability.
+  ROC curve: Plots sensitivity vs 1-specificity; AUC = overall test accuracy (0.5 = useless; 1.0 = perfect).
+
+================================================================================

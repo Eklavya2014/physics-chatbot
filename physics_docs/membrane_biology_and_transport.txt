@@ -1,0 +1,186 @@
+================================================================================
+                  MEMBRANE BIOLOGY & TRANSPORT
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BIOLOGICAL MEMBRANES
+------------------------
+Membranes are selectively permeable barriers that define cells and organelles.
+Average thickness: ~7–10 nm. They are not static barriers but dynamic, fluid structures.
+
+Membrane Lipids:
+  Phospholipids (~50% of lipid): Glycerol backbone + 2 fatty acid tails + phosphate head.
+    Most abundant: Phosphatidylcholine (PC), phosphatidylethanolamine (PE), phosphatidylserine (PS),
+    sphingomyelin (SM), phosphatidylinositol (PI).
+  Cholesterol (~25% of animal membranes): Rigid sterol ring intercalated between tails.
+    Reduces membrane fluidity at high temperature; prevents crystallisation at low temp.
+    Buffers fluidity across a range of temperatures.
+  Glycolipids: Carbohydrate head groups facing extracellular; cell recognition; ABO antigens.
+  Sphingolipids: Sphingosine backbone; ceramide core; signalling roles.
+
+Lipid Bilayer Asymmetry:
+  Outer leaflet: PC, SM, glycolipids (sugar groups face outward).
+  Inner leaflet: PE, PS, PI and its phosphorylated derivatives (PIPs).
+  PS exposure on outer leaflet: Signals apoptosis; phagocyte recognition; platelet activation.
+  Flippases (P4-ATPases): Actively flip PS from outer → inner leaflet (ATP-dependent).
+  Scramblases: Randomise leaflet distribution (Ca2+-activated); during apoptosis.
+
+Membrane Fluidity Determinants:
+  Temperature: Higher temp → more fluid (gel → liquid crystalline transition above Tm).
+  Fatty acid saturation: Unsaturated (kinked tails) → more fluid; saturated → rigid packing.
+  Cholesterol: At body temp → reduces fluidity; near Tm → prevents crystallisation.
+  Fatty acid chain length: Longer → higher Tm → less fluid.
+
+Fluid Mosaic Model (Singer & Nicolson, 1972):
+  Lipid bilayer is a 2D fluid in which proteins float. Proteins can diffuse laterally.
+  Updated view: Membrane is not uniform — proteins cluster; lipid rafts; cytoskeletal corrals.
+
+1.1 MEMBRANE PROTEINS
+----------------------
+Integral (transmembrane) proteins: Span the bilayer. Anchored by hydrophobic TM domain(s).
+  Alpha-helical TM: Most common (GPCRs, ion channels, transporters). GPCR: 7 TM helices.
+  Beta-barrel: Outer membrane of gram-negative bacteria + mitochondria/chloroplasts.
+Peripheral proteins: Associate with membrane surface via electrostatic or hydrophobic interactions.
+  Examples: Cytochrome c (outer IM), spectrin (RBC inner face), G-protein beta-gamma.
+Lipid-anchored: Covalently attached to lipid.
+  GPI-anchored (outer leaflet): CD55, CD59, Thy-1, prion protein (PrP).
+  Myristoylated (inner leaflet): Src kinases, G-protein alpha subunits.
+  Palmitoylated: Dynamic; removed and added by acyltransferases; regulates membrane association.
+  Prenylated: Farnesyl or geranylgeranyl on Cys at C-terminus; RAS proteins, Rab GTPases.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MEMBRANE TRANSPORT IN DEPTH
+--------------------------------
+Passive Transport (no energy):
+  Simple diffusion: Small nonpolar molecules (O2, CO2, N2, ethanol, steroid hormones).
+    Rate ∝ concentration gradient × membrane permeability × surface area.
+  Osmosis: Water moves via aquaporins or directly through bilayer (very slowly).
+    Aquaporins (AQPs): ~13 in humans. AQP1 (RBCs, kidney), AQP2 (collecting duct, ADH-regulated),
+    AQP4 (astrocytes, brain oedema). Channel: Single-file water transport; ~3×10^9 water/s.
+    Selectivity filter: ar/R region (aromatic/arginine) blocks proton transport (Grotthuss mechanism).
+  Facilitated diffusion: Down concentration gradient via protein channel or carrier.
+    Channels: Ion channels (VGSC, Kir, CNG), aquaporins, gaseous channels (AQP8 = ammonia/H2O2).
+    Carriers (uniporters): Conformational change; slower than channels. GLUT1–14 (glucose).
+
+Active Transport (requires energy):
+  Primary: Directly coupled to ATP hydrolysis.
+    P-type ATPases: Form phosphorylated intermediate. Na+/K+-ATPase (3Na+ out, 2K+ in);
+      SERCA (Ca2+ into SR); H+/K+-ATPase (stomach acid); Cu2+-ATPase (Menkes/Wilson disease).
+    V-type ATPases: Proton pumps. Lysosome/endosome acidification; kidney collecting duct.
+    F-type ATPases: ATP synthase (runs in reverse as proton pump in some bacteria).
+    ABC transporters: ATP-Binding Cassette. Import (bacteria) or export (eukaryotes).
+      MDR1/P-glycoprotein (ABCB1): Pumps diverse hydrophobic drugs out → multidrug resistance in cancer.
+      CFTR (ABCC7): Chloride channel; mutation → cystic fibrosis. Unusual: Channel not transporter.
+      ABCG2 (breast cancer resistance protein, BCRP): Drug efflux in cancer + gut + BBB.
+  Secondary: Ion gradient (usually Na+ or H+) drives transport. Gradient made by primary active transport.
+    Symporter: Substrate and ion move together (SGLT1/2 — Na+ and glucose into intestine/kidney).
+      SGLT2 inhibitors (flozins): Block glucose reabsorption → glucosuria → lower blood glucose.
+    Antiporter: Substrate and ion move oppositely (NCX — Na+/Ca2+ exchanger; 3Na+ in, 1Ca2+ out).
+    Exchanger: NHE (Na+/H+ exchanger — regulates intracellular pH).
+
+3. ION CHANNELS
+----------------
+Fundamental electrical elements of excitable cells. Gated: Can be open or closed.
+
+Gating Mechanisms:
+  Voltage-gated: Respond to membrane potential changes. S4 helix (positive charges) → voltage sensor.
+    Voltage-gated Na+ channels (VGSC/Nav): 9 isoforms (Nav1.1–1.9). Activation + fast inactivation (N-type: ball-and-chain). Selective for Na+ via selectivity filter (DEKA motif).
+    Voltage-gated K+ channels (Kv): 12 subfamilies. Homotetramers or heterotetramers.
+      Tetramer pore: Selectivity filter (GYGV) — coordinates K+ without water → excludes Na+.
+    Voltage-gated Ca2+ channels (VGCC): L, N, P/Q, R, T types. L-type (Cav1): Heart + smooth muscle + neurons. DHP receptor (dihydropyridine — nifedipine target). N-type (Cav2.2): Presynaptic neurotransmitter release.
+  Ligand-gated: Bind neurotransmitter → conformational change → open.
+    nAChR: Pentameric ligand-gated ion channel (pLGIC); ACh + nicotine → Na+/Ca2+ in.
+    NMDA receptor: Glutamate + glycine needed; blocked by Mg2+ at rest; Ca2+ permeable → LTP.
+    AMPA receptor: Glutamate; fast EPSPs; Na+/K+; some Ca2+-permeable (GluA2-lacking).
+    GABA-A: Cl- channel; GABA → inhibition; benzodiazepines + barbiturates → potentiate.
+  Mechanosensitive: Respond to membrane stretch/tension.
+    PIEZO1/2: Large (~38 subunit) trimers; responds to touch, pressure, blood flow, proprioception.
+    PIEZO1: RBCs (volume regulation), endothelium (flow sensing), bladder. Mutations → hereditary xerocytosis.
+    PIEZO2: Proprioception; light touch. Mutations → loss of proprioception + absence of light touch.
+  Temperature-sensitive: TRP channels (TRPV1, TRPM8, TRPA1 — covered in sensory biology doc).
+  Store-operated Ca2+ entry (SOCE): ER Ca2+ depletion → STIM1 senses → oligomerises → activates ORAI1 channels → Ca2+ entry → refill ER.
+
+4. VESICLE TRAFFICKING
+------------------------
+Cells constantly shuttle cargo between membrane compartments via vesicles.
+
+Secretory Pathway (anterograde):
+  ER → ERGIC (ER-Golgi Intermediate Compartment) → Golgi (cis → medial → trans) → TGN →
+  Secretory vesicles → Plasma membrane (constitutive or regulated).
+  COPII vesicles: ER → Golgi. Coat proteins: Sec23/24 (cargo selection) + Sec13/31 (cage).
+  COPI vesicles: Retrograde. Golgi → ER (retrieve ER-resident proteins with KDEL signal).
+    Also: Intra-Golgi transport (retrograde).
+
+Endocytic Pathway (retrograde from PM):
+  Clathrin-mediated endocytosis (CME): AP2 adaptor + clathrin triskelion coat → pit formation →
+    Dynamin GTPase pinches vesicle → early endosome → late endosome → lysosome.
+    Cargo selected by tyrosine motifs (YXXΦ) or dileucine motifs → AP2 binding.
+  Caveolae: Flask-shaped invaginations; caveolin-1 coat; lipid rafts; signalling; pinocytosis.
+  Macropinocytosis: Large irregular endosomes; non-selective; antigen sampling.
+  ESCRT pathway: Multivesicular bodies (MVBs); ESCRT-0 → I → II → III → sorts ubiquitinated cargo
+    into intraluminal vesicles → delivered to lysosome or secreted as exosomes.
+
+SNARE Proteins (fusion machinery):
+  v-SNAREs (vesicle): Synaptobrevin/VAMP.
+  t-SNAREs (target membrane): Syntaxin + SNAP-25.
+  SNARE zippering → four-helix bundle → pulls membranes together → fusion.
+  NSF + SNAPs: ATPases that disassemble cis-SNARE complexes → recycle SNAREs.
+  Botulinum toxin: Cleaves VAMP, SNAP-25, or Syntaxin → blocks neurotransmitter release → flaccid paralysis.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. LIPID RAFTS & MEMBRANE DOMAINS
+------------------------------------
+Lipid rafts: Liquid-ordered (Lo) microdomains enriched in cholesterol + sphingomyelin.
+Proposed 1988 (Simons & van Meer); direct evidence from STED microscopy + FRET studies.
+Raft residents: GPI-anchored proteins (outer leaflet); src-family kinases (inner leaflet);
+  doubly acylated proteins; some GPCRs; hedgehog signalling components.
+Non-raft residents: TfR (transferrin receptor); CD45; GPCR for most ligands outside raft.
+Function: Concentrate signalling machinery; platform for immune synapse; viral entry (HIV, influenza).
+HIV: Hijacks lipid rafts → buds from raft domains → incorporates GM3 ganglioside + cholesterol.
+Flu: HA and NA cluster in rafts → efficient assembly; M2 channel excluded → defines budding boundary.
+
+6. EXOSOMES & EXTRACELLULAR VESICLES
+---------------------------------------
+Extracellular vesicles (EVs): Membrane-enclosed particles released by all cells.
+  Exosomes (30–150 nm): From MVBs; contain miRNA, mRNA, proteins, lipids. Released when MVB fuses with PM.
+  Microvesicles (100 nm–1 µm): Bud directly from plasma membrane; larger; less defined.
+  Apoptotic bodies (1–5 µm): Released during apoptosis; contain fragmented DNA, organelles.
+
+EV Cargo:
+  miRNAs: Can be transferred to recipient cells → alter gene expression (intercellular communication).
+  mRNAs: Some translatable in recipient cells.
+  Proteins: Tetraspanins (CD9, CD63, CD81 — EV markers); heat shock proteins; signalling molecules.
+  Lipids: Enriched in cholesterol, sphingomyelin, ceramide.
+
+EV Functions:
+  Cancer: Tumour exosomes carry oncoproteins + miRNAs → pre-metastatic niche formation.
+    Suppress immune cells; transfer drug resistance (MDR1).
+  Immune modulation: DC exosomes activate NK cells; transfer MHC-peptide complexes.
+  Tissue repair: Mesenchymal stem cell exosomes → cardioprotection, neuroprotection.
+  Coagulation: Platelet-derived microvesicles carry PS + TF → procoagulant.
+  Biomarker potential: Liquid biopsy; tumour EV miRNA profiles in blood → cancer detection.
+    FDA-approved EV diagnostic: ExoDx Prostate IntelliScore (urine exosomes → prostate cancer).
+  Therapeutic EVs: Drug delivery platform; loaded with siRNA, chemotherapy, proteins.
+
+[CHANNEL DISEASE — CHANNELOPATHIES]
+  Long QT syndrome (LQTS): Delayed cardiac repolarisation → arrhythmia → sudden death.
+    LQT1: KCNQ1 (Kv7.1 — cardiac IKs). LQT2: KCNH2/HERG (IKr). LQT3: SCN5A (Nav1.5 — gain of function).
+  Brugada syndrome: SCN5A loss-of-function → ST elevation + VF risk.
+  Cystic fibrosis: CFTR Cl- channel (see genetics doc).
+  Myotonia congenita: CLCN1 (Cl- channel) → hyperexcitability → sustained muscle contraction.
+  Episodic ataxia type 1: KCNA1 (Kv1.1) → cerebellar ataxia + myokymia.
+  Hypokalaemic periodic paralysis: CACNA1S (Cav1.1) or SCN4A → episodic muscle weakness.
+  Dravet syndrome: SCN1A (Nav1.1) loss → GABAergic interneuron failure → seizures.
+  Malignant hyperthermia: RYR1 (ryanodine receptor) gain → uncontrolled Ca2+ release → hyperthermia.
+
+================================================================================

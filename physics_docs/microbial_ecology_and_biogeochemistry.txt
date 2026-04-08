@@ -1,0 +1,163 @@
+================================================================================
+              MICROBIAL ECOLOGY & BIOGEOCHEMISTRY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MICROBIAL DIVERSITY & METABOLISM
+-------------------------------------
+Microorganisms drive virtually all biogeochemical cycles on Earth. Without microbes,
+all higher life would cease within years — no decomposition, no N2 fixation, no O2 production.
+
+Metabolic Diversity — Energy Sources:
+  Phototrophs    : Use light as energy source.
+    Photoautotrophs: Light + CO2 → organic matter (cyanobacteria, algae, plants).
+    Photoheterotrophs: Light + organic carbon (purple non-sulphur bacteria, halobacteria).
+  Chemotrophs    : Use chemical reactions for energy.
+    Chemoautotrophs (chemolithotrophs): Inorganic compounds as electron donor.
+      Examples: H2 oxidisers (Knallgas bacteria), sulphur oxidisers (Thiobacillus), ammonia oxidisers (Nitrosomonas), iron oxidisers (Acidithiobacillus ferrooxidans), methanogens.
+    Chemoheterotrophs: Organic compounds (most animals, fungi, most bacteria).
+
+Electron Donors and Acceptors:
+  Aerobic: O2 as terminal electron acceptor (most efficient; ~686 kcal/mol glucose).
+  Anaerobic: Alternative acceptors in decreasing energy yield:
+    NO3- (denitrification) → NO2- → N2O → N2.
+    Mn4+ → Mn2+ (manganese reduction).
+    Fe3+ → Fe2+ (iron reduction — Geobacter, Shewanella).
+    SO42- → H2S (sulphate reduction — Desulfovibrio).
+    CO2 → CH4 (methanogenesis — Archaea only).
+    Fumarate → Succinate (fermentation-type).
+  Fermentation: No external electron acceptor; organic molecule is both donor and acceptor.
+    Yields only 2 ATP (vs 36-38 aerobically). Products: Lactate, ethanol, acetate, butyrate, H2.
+
+1.1 THE GREAT PLATE COUNT ANOMALY
+-----------------------------------
+Only ~0.1–1% of microbes in natural environments can be cultured using standard lab media.
+Discovered ~1985 by comparing direct counts (microscopy/DNA staining) vs colony-forming units.
+Explains: 99%+ of microbial diversity was unknown before molecular methods.
+Metagenomics (sequencing DNA directly from environment) revealed:
+  Huge uncultured diversity: CPR (Candidate Phyla Radiation) bacteria — 26+ phyla previously unknown.
+  Deep subsurface biosphere: 70% of Earth's bacteria live underground (>2 km depth).
+  Ocean: Prochlorococcus (most abundant photosynthetic organism on Earth; cyanobacterium; ~10^27 cells).
+  Pelagibacter ubique (SAR11): Most abundant marine bacterium; streamlined genome; ~25% marine bacteria.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. BIOGEOCHEMICAL CYCLES IN DEPTH
+-----------------------------------
+Carbon Cycle:
+  Global carbon stocks: Atmosphere (~860 GtC as CO2); Ocean (~38,000 GtC); Soil (~2,500 GtC);
+    Vegetation (~550 GtC); Sedimentary rock (~70,000,000 GtC).
+  Key microbial processes:
+    Primary production: Cyanobacteria (ocean) + algae → ~50% of global O2 + fix CO2 into organic matter.
+    Decomposition: Aerobic → CO2. Anaerobic → CH4 + CO2 (peat, permafrost, wetlands, rice paddies).
+    Methanogenesis: Strictly anaerobic Archaea (methanogens). 3 pathways: Acetoclastic (Methanosaeta),
+      hydrogenotrophic (CO2 + H2 → CH4; most in ocean), methylotrophic (methanol, methylamines).
+    Methane oxidation (methanotrophy): Methylococcus — aerobic; ANME archaea + SRB consortia — anaerobic (AOM).
+    AOM (Anaerobic Oxidation of Methane): CH4 + SO42- → HCO3- + H2S. Major methane sink in ocean sediments.
+
+Nitrogen Cycle:
+  N2 fixation: nitrogenase enzyme (Fe-Mo cofactor); strictly anaerobic active site; 16 ATP per N2.
+    Free-living fixers: Azotobacter (aerobic), Clostridium (anaerobic), cyanobacteria.
+    Symbiotic: Rhizobium-legume; Frankia-alder; cyanobacteria in lichens/Azolla (water fern).
+    Global: ~175 Tg N fixed/year biologically; ~120 Tg/year industrially (Haber-Bosch, 450°C, 200 atm).
+  Nitrification: Two-step oxidation.
+    Ammonia oxidation: NH3 → NO2-. Bacteria: Nitrosomonas, Nitrosospira; Archaea: Thaumarchaeota (dominant in ocean).
+    Nitrite oxidation: NO2- → NO3-. Nitrobacter, Nitrospira (comammox — complete ammonia oxidation in one organism, 2015).
+    Comammox (Daims et al. 2015): Nitrospira can perform both steps → single organism completes nitrification.
+  Denitrification: NO3- → NO2- → NO → N2O → N2 (nitrous oxide = potent greenhouse gas, 300× CO2 GWP).
+    Many bacteria: Pseudomonas, Paracoccus, Thiobacillus denitrificans.
+    DNRA (Dissimilatory Nitrate Reduction to Ammonium): Conserves N in system; NO3- → NH4+.
+    Anammox (Anaerobic Ammonia Oxidation): NH4+ + NO2- → N2 + H2O. Planctomycetes (Brocadia).
+      Responsible for 30–70% of N loss from ocean (discovered 1995; process unknown before).
+      Unique biology: ladderane lipids in membrane; hydrazine as intermediate; internal compartment (anammoxosome).
+
+Sulphur Cycle:
+  Sulphate reduction: SRB (sulphate-reducing bacteria/archaea). Desulfovibrio, Archaeoglobus.
+    SO42- → H2S. Major process in marine sediments; produces H2S (toxic, corrosive).
+  Sulphur oxidation: H2S → S0 → SO42-. Thiobacillus, Beggiatoa.
+    Acid mine drainage: Acidithiobacillus ferrooxidans oxidises iron pyrite → sulphuric acid → pH 2 → metal dissolution.
+  Dimethylsulphide (DMS): Produced by marine algae (from DMSP — dimethylsulphoniopropanoate); volatile;
+    oxidises to sulphate aerosols in atmosphere → cloud condensation nuclei → climate regulation (CLAW hypothesis).
+
+3. MICROBIAL COMMUNITIES & BIOFILMS
+--------------------------------------
+Biofilms:
+  >99% of environmental bacteria live in biofilms — structured communities embedded in self-produced EPS matrix.
+  EPS (Extracellular Polymeric Substances): Polysaccharides, proteins, eDNA, lipids.
+  Formation: Attachment (reversible) → irreversible attachment + EPS production → maturation → dispersal.
+  Quorum sensing (QS): Chemical communication using autoinducers (AHLs in gram-neg; AIP in gram-pos).
+    Population density threshold → gene expression change → virulence, biofilm, bioluminescence.
+    Vibrio fischeri: Luxl/LuxR system; bioluminescence at high density.
+    P. aeruginosa: LasI/LasR + RhlI/RhlR systems; coordinates virulence in CF lung.
+  Antibiotic resistance in biofilms: 100–1,000× more resistant than planktonic cells.
+    Mechanisms: Reduced penetration; slow growth (reduced metabolic activity); persister cells;
+    eDNA chelates antibiotics; EPS matrix barrier.
+
+Microbial Ecology Methods:
+  16S rRNA amplicon sequencing: ~350 bp V3-V4 region → OTU/ASV-based community profiling.
+    V1-V2 better for some bacteria; ITS for fungi; 18S for protists.
+    Databases: SILVA, Greengenes2, RDP, UNITE (fungi).
+  Shotgun metagenomics: All DNA → gene catalogue + taxonomic profiling + functional potential.
+  Metatranscriptomics: Active gene expression in community. mRNA extraction (deplete rRNA) → RNA-seq.
+  Metaproteomics: Proteins expressed in community. Complex MS analysis.
+  Metabolomics/Metafluxomics: Metabolites produced by community.
+  Single-cell genomics: SAG (single amplified genome); sort individual cells → MDA amplification → sequencing. Access uncultured organisms.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. ARCHAEA — THE THIRD DOMAIN
+-------------------------------
+Archaea: Discovered 1977 (Woese) as separate domain from Bacteria. Prokaryotic morphology but closer to Eukarya molecularly.
+
+Archaeal Unique Features:
+  Lipids: Ether-linked isoprenoid chains (vs ester-linked in bacteria/eukaryotes). Monolayer membranes in thermophiles (bolarchaeol). Archaeol (diether) most common.
+  Cell wall: No peptidoglycan. S-layer (surface layer) of glycoproteins; pseudomurein in some methanogens.
+  DNA replication: Uses eukaryote-like MCM helicase, PCNA, RFC.
+  Transcription: TATA-box and TBP (eukaryote-like); but RNA pol more like bacteria in some ways.
+  Translation: Eukaryote-like ribosome proteins; initiator Met-tRNA (not fMet).
+
+Major Archaeal Groups (TACK + DPANN + Euryarchaeota + Asgard):
+  Euryarchaeota: Methanogens (all known methanogenic archaea), Halobacteria (extreme halophiles), Thermococcales, Archaeoglobus.
+  Crenarchaeota: Extreme thermophiles/hyperthermophiles (Sulfolobus, Ignicoccus); also ocean Thaumarchaeota.
+  Thaumarchaeota (now Thermoproteota): Marine ammonia oxidisers; abundant in ocean water column; likely major global N cycle players.
+  Asgard archaea (2015): Closest known relatives to eukaryotes. Lokiarchaeota, Thorarchaeota, Odinarchaeota, Heimdallarchaeota. Found in deep-sea sediments. Encode eukaryote-like proteins (actin, ESCRT, Ras GTPases).
+    Two-domain tree of life: Asgard archaea + eukaryotes as sister group → Eukaryotes evolved from within Archaea (not sister to).
+
+5. ORIGIN OF EUKARYOTES (ENDOSYMBIOTIC THEORY — ADVANCED)
+-----------------------------------------------------------
+Modern synthesis:
+  Eukaryote ancestor was an Asgard archaeon that engulfed (or was parasitised by) an alpha-proteobacterium → mitochondria.
+  Primary endosymbiosis → protomitochondrion → reductive evolution → modern mitochondria (1,500 genes lost to nucleus or lost entirely).
+  Subsequent primary endosymbiosis of cyanobacterium → plastid in plant/algal ancestor.
+  Key evidence: Mitochondrial genome is proteobacterial; ribosomal proteins most similar to Rickettsiales; membrane composition.
+  Hydrogen hypothesis (Martin & Müller): Syntrophic model — archaeal host depended on H2 from proteobacterial partner → drove physical merger.
+  Serial endosymbiosis theory (Margulis): Extended to include flagella from spirochaetes (controversial; not widely accepted).
+
+6. MICROBIAL EVOLUTION & HORIZONTAL GENE TRANSFER
+---------------------------------------------------
+HGT (Horizontal Gene Transfer): Genes transferred between organisms without parent-offspring relationship.
+  Mechanisms: Transformation (DNA uptake), Transduction (phage-mediated), Conjugation (plasmid transfer).
+  Integrons: Gene capture systems; cassette arrays; major disseminator of antibiotic resistance.
+  ISCR elements, transposons, ICEs (Integrative Conjugative Elements): Mobile genetic elements.
+  Extent: ~15–30% of genes in many bacterial genomes acquired by HGT.
+  Pan-genome: All genes ever found in a species. Core genome (all strains) + accessory genome (subset of strains) + unique genes.
+    E. coli pan-genome: ~18,000 genes total; core ~3,000 genes; accessory genome continuously growing.
+    Open pan-genomes (many bacteria): Adding new strains always reveals new genes.
+    Closed pan-genomes (some obligate intracellular parasites): Limited HGT; small genomes.
+
+[CLIMATE RELEVANCE] Permafrost thaw and the microbial carbon bomb:
+  Arctic permafrost stores ~1,700 GtC (2× atmospheric CO2). As permafrost thaws:
+    Aerobic soil → CO2 production; Anaerobic (waterlogged) → CH4 (25× more potent GHG over 20 years; 87× over 20 years for methane vs CO2).
+  Estimated 5–15% permafrost C released by 2100 at current trajectories → significant positive feedback.
+  Microbial communities shift: Psychrotolerant methanotrophs may partially offset; but net positive feedback likely.
+  Zombie viruses: Giant viruses found in 48,500-year-old Siberian permafrost (Pithovirus, Pandoravirus) — still infectious when thawed → unknown risks from ancient pathogens released by permafrost thaw.
+
+================================================================================
