@@ -37,7 +37,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "show_video_creator": False, "video_script": None, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "active_connector": None, "show_plugin_store_page": False, "_temp_app_html": None, "_temp_app_title": "", "show_video_creator": False, "video_script": None, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
     "custom_plugins": {}, "tool_creator_html": None, "tool_creator_mode": None, "tool_creator_name": "",
     "visit_count": 0, "session_restored": False,
 }
@@ -69,7 +69,7 @@ def inject_theme():
         color: {text} !important;
     }}
     #MainMenu, footer, header {{ visibility: hidden; }}
-    .block-container {{ padding-top: 1.5rem; max-width: 800px; }}
+    .block-container {{ padding-top: 0.5rem; max-width: 800px; }}
 
     /* ── Hero section ── */
     .hero {{
@@ -506,6 +506,257 @@ def call_hf(system_msg, user_msg, max_tokens=2000):
     st.error("All AI models failed:\n" + "\n".join(errors))
     return None
 
+
+# ══════════════════════════════════════════════════════════════
+#  MATH / LATEX RENDERER + TOPIC CONTINUITY + AI APP CREATOR
+# ══════════════════════════════════════════════════════════════
+
+def render_math_answer(text):
+    """Render answer with KaTeX for LaTeX expressions."""
+    if not text:
+        return
+    # Check if contains math
+    has_latex = any(x in text for x in ['\\', '$$', '$', '\\text', '\\frac',
+                                          '\\mid', '\\alpha', '\\beta', '\\Delta',
+                                          '\\sum', '\\int', '\\sqrt', '\\times'])
+    if not has_latex:
+        st.markdown(text)
+        return
+
+    # Use KaTeX to render
+    safe = text.replace('`','\`').replace('\\','\\\\')
+    katex_html = f"""
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.getElementById('math-content'),{{
+    delimiters:[
+      {{left:'$$',right:'$$',display:true}},
+      {{left:'$',right:'$',display:false}},
+      {{left:'\\[',right:'\\]',display:true}},
+      {{left:'\\(',right:'\\)',display:false}},
+      {{left:'\\\\[',right:'\\\\]',display:true}}
+    ],
+    throwOnError:false
+  }})"></script>
+<style>
+  #math-content {{
+    font-family:'Inter',sans-serif; color:#e6edf3;
+    font-size:14px; line-height:1.8; padding:4px 0;
+  }}
+  #math-content strong {{ color:#58a6ff; }}
+  #math-content .katex {{ color:#ffd166; font-size:1.1em; }}
+  #math-content code {{ background:#161b22; padding:2px 6px; border-radius:4px; font-size:12px; }}
+</style>
+<div id="math-content">{text.replace(chr(10), '<br>')}</div>
+"""
+    st.components.v1.html(katex_html, height=max(200, text.count("\n")*30 + 200), scrolling=True)
+
+
+def detect_topic_continuity(question, messages):
+    """Detect if user is continuing a previous topic."""
+    if not messages or len(messages) < 2:
+        return None, None
+
+    # Extract recent topics from history
+    recent_q = [m["content"] for m in messages if m["role"]=="user"][-5:]
+    if not recent_q:
+        return None, None
+
+    # Keywords that signal continuation
+    continuation_signals = [
+        "and", "also", "what about", "how about", "tell me more",
+        "explain more", "more about", "continue", "go on", "elaborate",
+        "what else", "anything else", "related to", "similarly", "likewise",
+        "in that case", "then what", "so then", "but why", "but how",
+        "furthermore", "additionally", "moreover", "besides this",
+        "it", "this", "that", "these", "those"  # pronouns referring back
+    ]
+    q_lower = question.lower()
+    is_continuation = any(q_lower.startswith(sig) or f" {sig} " in f" {q_lower} "
+                          for sig in continuation_signals)
+
+    # Also check if question is very short (likely a follow-up)
+    is_short = len(question.split()) <= 6
+
+    if is_continuation or is_short:
+        # Get the last topic
+        last_topic = recent_q[-1] if recent_q else None
+        return True, last_topic
+    return False, None
+
+
+def should_offer_interactive_app(question, answer):
+    """Decide if AI should offer to build a temporary interactive app."""
+    triggers = [
+        "debate", "practice", "quiz me", "challenge", "exercise",
+        "interactive", "simulation", "experiment", "practice problem",
+        "solve", "step by step", "show me", "demonstrate", "visualise",
+        "game", "activity", "worksheet", "test me", "how do i",
+        "pendulum", "circuit", "wave", "orbit", "projectile", "reaction",
+        "photosynthesis", "digestive", "heart", "dna", "periodic table",
+        "balance", "titration", "resistor", "capacitor",
+    ]
+    q_lower = question.lower()
+    return any(t in q_lower for t in triggers)
+
+
+def generate_interactive_app(question, answer):
+    """AI generates a world-class temporary interactive app."""
+    system = """You are an elite educational web developer and UX designer.
+Create a BEAUTIFUL, INTERACTIVE, self-contained HTML app to help a student understand a concept.
+
+Requirements:
+- Single HTML file (CSS + JS embedded)
+- Dark theme: #0d1117 background, #161b22 cards, #58a6ff accent
+- Glassmorphism effects: backdrop-filter: blur(), subtle borders
+- Smooth animations (CSS transitions, canvas or SVG if needed)
+- FULLY INTERACTIVE: sliders, inputs, buttons that DO things
+- Educational: labels, formulas shown, real-time updates
+- World-class design quality — gradients, shadows, clean typography
+- Inter or Segoe UI font
+- Must work standalone (no external API calls)
+- Add particle effects or animated backgrounds where appropriate
+
+Return ONLY complete HTML starting with <!DOCTYPE html>"""
+
+    user = f"""Create an interactive educational app about: {question}
+
+Key concepts from the answer:
+{answer[:600]}
+
+Make it STUNNING and FULLY INTERACTIVE. Include:
+- Real-time calculations/animations
+- Student can change parameters and see results instantly
+- Clear labels and formula display
+- Smooth, professional design"""
+
+    return call_hf(system, user, max_tokens=4000)
+
+
+def display_temp_app(html_content, title="Interactive App"):
+    """Display a temporary AI-generated app beautifully."""
+    st.markdown(f"""
+    <div class="temp-app-container">
+      <div style="background:linear-gradient(90deg,#1f6feb22,#388bfd11);
+        padding:10px 16px;border-bottom:1px solid rgba(88,166,255,0.2);
+        display:flex;align-items:center;gap:10px">
+        <span style="font-size:1.1rem">🤖</span>
+        <span style="color:#58a6ff;font-weight:700;font-size:13px">{title}</span>
+        <span style="color:#8b949e;font-size:11px;margin-left:auto">AI-Generated · Temporary</span>
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
+    st.components.v1.html(html_content, height=550, scrolling=True)
+
+
+def show_plugin_store_page():
+    """Full-page plugin store with 3 tabs."""
+    dark = st.session_state.dark_mode
+    bg2 = "#161b22" if dark else "#fff"
+    acc = "#58a6ff"
+
+    st.markdown("""
+    <div style="background:linear-gradient(135deg,#1f6feb15,#388bfd08);
+      border:1px solid rgba(88,166,255,0.2);border-radius:16px;padding:20px 24px;margin-bottom:20px">
+      <div style="font-size:1.6rem;font-weight:800;color:#58a6ff;margin-bottom:4px">🔌 Plugin Store</div>
+      <div style="color:#8b949e;font-size:13px">Launch built-in tools, browse community plugins, or build your own</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    if st.button("← Back to Chat", key="plugin_store_back"):
+        st.session_state.show_plugin_store_page = False
+        st.rerun()
+
+    tab1, tab2, tab3 = st.tabs(["🔌 Built-in Plugins", "🌐 Community Store", "📤 My Plugins"])
+
+    with tab1:
+        st.caption("Click any plugin to open it. Plugins also auto-activate based on your question.")
+        cols = st.columns(3)
+        for i, (key, plugin) in enumerate(PLUGINS.items()):
+            with cols[i % 3]:
+                color = plugin.get("color","#58a6ff")
+                is_open = st.session_state.get(f"plugin_open_{key}", False)
+                st.markdown(f"""
+                <div style="background:{bg2};border:1px solid {color}30;border-top:3px solid {color};
+                border-radius:12px;padding:14px;margin-bottom:8px;min-height:110px">
+                <div style="font-size:1.4rem;margin-bottom:4px">{plugin['icon']}</div>
+                <div style="color:{color};font-weight:700;font-size:13px">{plugin['name']}</div>
+                <div style="color:#8b949e;font-size:11px;margin:4px 0">{plugin['description']}</div>
+                </div>""", unsafe_allow_html=True)
+                btn_label = "✕ Close" if is_open else "▶ Launch"
+                if st.button(btn_label, key=f"store_launch_{key}", use_container_width=True):
+                    st.session_state[f"plugin_open_{key}"] = not is_open
+                    st.session_state.show_plugin_store_page = False
+                    st.rerun()
+
+    with tab2:
+        st.markdown("### 🌐 Community Plugins")
+        st.caption("Plugins built and shared by PhysIQ users")
+        community_plugins = []
+        try:
+            res = get_authed_client().table("community_plugins").select("*").order("downloads", desc=True).limit(30).execute()
+            community_plugins = res.data or []
+        except:
+            pass
+        search = st.text_input("🔍 Search", placeholder="e.g. chemistry, physics...", key="comm_search")
+        if community_plugins:
+            filtered = [p for p in community_plugins if not search or
+                       search.lower() in p.get("name","").lower() or
+                       search.lower() in p.get("description","").lower()]
+            if filtered:
+                for i in range(0, len(filtered), 3):
+                    row = filtered[i:i+3]
+                    rcols = st.columns(len(row))
+                    for j, cp in enumerate(row):
+                        with rcols[j]:
+                            st.markdown(f"""
+                            <div style="background:{bg2};border:1px solid #30363d;
+                            border-radius:10px;padding:12px;margin-bottom:6px">
+                            <div style="font-size:1.2rem">{cp.get('icon','🔧')}</div>
+                            <div style="color:{acc};font-weight:700;font-size:12px">{cp.get('name','')}</div>
+                            <div style="color:#8b949e;font-size:11px">{cp.get('description','')[:70]}</div>
+                            <div style="color:#484f58;font-size:10px;margin-top:4px">
+                            by {cp.get('author','?')} · {cp.get('downloads',0)} downloads</div>
+                            </div>""", unsafe_allow_html=True)
+                            if st.button("⬇️ Install", key=f"install_{i}_{j}", use_container_width=True):
+                                custom = st.session_state.get("custom_plugins",{})
+                                pk = f"community_{cp.get('id','x')}"
+                                custom[pk] = {"name":cp.get("name","Plugin"),"icon":cp.get("icon","🔧"),
+                                    "description":cp.get("description",""),"triggers":[],"color":"#58a6ff",
+                                    "_html":cp.get("html","")}
+                                st.session_state.custom_plugins = custom
+                                st.success(f"✅ {cp.get('name')} installed!")
+                                st.rerun()
+            else:
+                st.info("No plugins match your search.")
+        else:
+            st.info("🌐 No community plugins yet. Be the first to publish using Tool Creator!")
+
+    with tab3:
+        st.markdown("### 📤 Your Published Plugins")
+        my_plugins = []
+        try:
+            res = get_authed_client().table("community_plugins").select("*").eq("user_id", get_user_id()).execute()
+            my_plugins = res.data or []
+        except:
+            pass
+        if my_plugins:
+            for cp in my_plugins:
+                c1,c2 = st.columns([4,1])
+                with c1:
+                    st.markdown(f"**{cp.get('icon','🔧')} {cp.get('name','')}** — {cp.get('downloads',0)} downloads")
+                with c2:
+                    if st.button("🗑️", key=f"del_pub_{cp.get('id')}"):
+                        try:
+                            get_authed_client().table("community_plugins").delete().eq("id",cp["id"]).execute()
+                            st.rerun()
+                        except: pass
+        else:
+            st.info("Build plugins with the Tool Creator and publish them here!")
+
+
+
 def get_confidence(results):
     if not results: return "🔴 Very Low", "conf-low"
     score = results[0][1]
@@ -564,112 +815,53 @@ When asked to write essays, debates, letters, stories, poems, diary entries, spe
 - Always explain the rules/structure you used after your writing
 If asked about grammar, literature, or comprehension — explain clearly with examples.""") + profile_ctx
     else:
-        system = """You are PhysIQ — a brilliant, deeply knowledgeable AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science.
+        system = """You are PhysIQ — an expert AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science from Class 10 to College level.
 
-═══════════════════════════════════════════════════════════
-CORE INTELLIGENCE RULES — READ EVERY ONE CAREFULLY
-═══════════════════════════════════════════════════════════
+CRITICAL RULE — UNDERSTAND INTENT FIRST:
+Before answering, decide what the user ACTUALLY wants:
+1. EXPLANATION: "What is Newton's law?" / "Explain photosynthesis" / "How does DNA work?" → Give a clear educational explanation with examples and formulas.
+2. CALCULATION: "Calculate the force when..." / "Find the pH of..." → Solve step-by-step with working shown.
+3. DEFINITION: "What is entropy?" / "Define oxidation" → Give a precise definition with context.
+4. COMPARISON: "Difference between..." / "Compare X and Y" → Structured comparison.
+5. CONCEPT QUESTION: "Why does ice float?" / "How do planes fly?" → Intuitive explanation first, then technical detail.
+6. CONVERSATIONAL: "Hello", "Thanks", "That was helpful" → Respond naturally and warmly.
 
-RULE 1 — UNDERSTAND THE TRUE QUESTION:
-Users often ask questions indirectly. You MUST figure out what they actually mean:
-• "Why are cars dipped in iron?" → They mean zinc, not iron. This is GALVANISATION.
-• "Why does ice feel cold?" → They mean: what causes the sensation of cold?
-• "Why does bread rise?" → FERMENTATION and CO₂ from yeast.
-• "How does salt melt ice?" → FREEZING POINT DEPRESSION (colligative property).
-• "Why is sky blue?" → RAYLEIGH SCATTERING of sunlight.
-• "Why do we feel heavier in a lift going up?" → PSEUDO FORCE / apparent weight.
-• "How do planes stay up?" → BERNOULLI'S PRINCIPLE + lift force.
-• "Why do stars twinkle?" → ATMOSPHERIC REFRACTION / scintillation.
-• "Why do we get tan in sunlight?" → MELANIN production triggered by UV radiation.
-• "Why does soap clean?" → MICELLES formation, hydrophilic/hydrophobic ends.
-• "What makes soda fizzy?" → CO₂ dissolved under pressure — HENRY'S LAW.
-• "Why is blood red?" → HAEMOGLOBIN and its iron-containing haem group.
-• If a user says something wrong (like "iron" when they mean "zinc"), gently CORRECT them while answering.
+NEVER write computer code unless the user EXPLICITLY asks for code (e.g. "write a Python program", "code for me").
+If someone asks "how does Python handle memory?" — explain the concept, do NOT write Python code.
+If someone asks "what is a for loop?" — explain with a simple example, do NOT write a full program.
 
-RULE 2 — CONCEPTUAL REASONING:
-For "WHY" questions, ALWAYS explain the underlying scientific principle:
-1. State the phenomenon plainly in 1 sentence
-2. Name the scientific concept/law it involves
-3. Explain the mechanism (what actually happens at atomic/molecular level)
-4. Give a real-world example or analogy
-5. If relevant, mention the formula
+FORMAT YOUR ANSWERS WELL:
+- Use clear headings for complex topics
+- Use bullet points for lists
+- Show formulas clearly: F = ma, E = mc²
+- Give real-world examples
+- Keep answers focused and not too long unless detail is needed
+- Be encouraging and friendly
 
-RULE 3 — NEVER WRITE CODE UNLESS EXPLICITLY ASKED:
-"Write a Python program" → write code.
-"What is Python used for?" → explain, NO code.
-"How does a computer process data?" → explain the concept, NO code.
-"What is a function in programming?" → explain with a simple English example, not a full code file.
+If you don't know something or are unsure, say so honestly."""
 
-RULE 4 — MATCH ANSWER DEPTH TO QUESTION:
-• Simple factual question → Short, direct answer (2-4 sentences)
-• "Explain..." or "How does..." → Medium answer with structure
-• "Give me a detailed analysis..." → Long, thorough explanation
-• Conversational messages ("thanks", "ok", "hello") → Brief, warm reply
+    # Topic continuity check
+    is_continuation, prev_topic = detect_topic_continuity(question, st.session_state.get("messages",[]))
+    continuation_note = f"\n[This appears to be a follow-up to the previous topic: {prev_topic[:80] if prev_topic else ''}. Maintain context.]" if is_continuation else ""
 
-RULE 5 — FORMAT FOR CLARITY:
-• Use **bold** for key terms and scientific names
-• Use formulas: F = ma, λ = h/mv, ΔG = ΔH - TΔS
-• Use bullet points ONLY for lists, not for everything
-• Give analogies — compare to everyday things students know
-• Be warm, encouraging, never condescending
+    user = f"""Conversation so far:
+{history_text if history_text else "(First question)"}
 
-RULE 6 — CORRECT MISCONCEPTIONS:
-If the user's question contains a factual error, always say so kindly:
-"Actually, a small correction — it's zinc, not iron that's used in galvanisation! 
-Here's why: [explanation]"
-
-RULE 7 — CONTEXTUAL AWARENESS:
-Use the conversation history to understand follow-up questions:
-• "And why does that happen?" → refers to the last topic discussed
-• "What about at higher temperatures?" → continuation of previous question
-• "Explain that more simply" → re-explain the last answer more simply
-
-═══════════════════════════════════════════════════════════
-SUBJECT EXPERTISE
-═══════════════════════════════════════════════════════════
-PHYSICS: Mechanics, Thermodynamics, Waves, Optics, Electromagnetism, 
-         Modern Physics, Quantum Mechanics, Relativity, Nuclear Physics,
-         Astrophysics, Fluid Mechanics, SHM, Magnetism
-CHEMISTRY: Periodic Table, Chemical Bonding, Organic Chemistry (all reactions),
-           Electrochemistry, Thermodynamics, Equilibrium, Kinetics, 
-           Coordination Compounds, Polymers, Biomolecules, Environmental Chemistry,
-           Galvanisation, Corrosion, Acids/Bases, Redox reactions
-MATHEMATICS: Algebra, Calculus, Statistics, Trigonometry, Geometry,
-             Differential Equations, Linear Algebra, Probability
-BIOLOGY: Cell Biology, Genetics, Evolution, Human Physiology, Ecology,
-         Photosynthesis, Respiration, Nervous System, Endocrinology
-GENERAL SCIENCE: Everyday phenomena explained scientifically
-
-If the answer is not in your knowledge base context, use your own deep knowledge.
-If truly uncertain, say so clearly."""
-
-    # Build smarter user message with intent hints
-    q_lower = question.lower()
-    intent_hint = ""
-    if any(w in q_lower for w in ["why","how come","what makes","reason for","cause of"]):
-        intent_hint = "\n[Intent: Conceptual explanation needed — explain the scientific principle behind this]"
-    elif any(w in q_lower for w in ["what is","define","meaning of","full form"]):
-        intent_hint = "\n[Intent: Definition/explanation needed]"
-    elif any(w in q_lower for w in ["calculate","find","solve","compute","what is the value"]):
-        intent_hint = "\n[Intent: Numerical calculation needed — show step-by-step working]"
-    elif any(w in q_lower for w in ["difference","compare","contrast","vs","versus","better"]):
-        intent_hint = "\n[Intent: Comparison needed — structured side-by-side comparison]"
-    elif any(w in q_lower for w in ["list","name","give examples","types of"]):
-        intent_hint = "\n[Intent: List/enumeration needed]"
-
-    user = f"""Previous conversation:
-{history_text if history_text else "(This is the student's first question)"}
-
-Knowledge base context:
-{context if context else "(No specific context found — use your expert knowledge)"}
-{intent_hint}
+Relevant Knowledge:
+{context}
+{continuation_note}
 
 Student's question: {question}
 
-Think carefully about what the student is actually asking — they may have used imprecise language. 
-Understand the true concept, correct any misconceptions gently, and give the best possible answer:"""
+IMPORTANT: If the answer contains mathematical formulas, use LaTeX notation:
+- Inline math: $formula$  e.g. $F = ma$, $E = mc^2$
+- Display math: $$formula$$  e.g. $$\frac{{v^2}}{{r}} = \omega^2 r$$
+- Use proper LaTeX: \frac, \sqrt, \mid, \text, \alpha, \beta, \Delta, \sum, \int, \times, \cdot
+- The user wrote: [{question}] — understand any LaTeX/symbols in their question too
 
-    answer = call_hf(system, user)
+Answer clearly and helpfully:"""
+
+    answer = call_hf(system, user, max_tokens=2000)
     return answer or "Could not generate a response.", conf_label, conf_class
 
 # ── Feature 2: Step-by-Step Numerical Solver ─────────────────
@@ -872,16 +1064,14 @@ def show_animator_panel(animation_data):
 window.addEventListener('load', function() {{
   try {{
     const data = {json.dumps(animation_data)};
-    scene = data;
-    if(scene._particles) delete scene._particles;
-    document.getElementById('loading').style.display='none';
-    const subtitleEl = document.getElementById('subtitle');
-    const infoEl = document.getElementById('info-text');
-    if (subtitleEl) subtitleEl.textContent = scene.subtitle || scene.type || 'Animation';
-    if (infoEl) infoEl.textContent = scene.info_text || '';
-    if(scene.legend) updateLegend(scene.legend);
+    if (typeof load === 'function') {{
+      load(data);
+    }} else {{
+      scene = data;
+      document.getElementById('loading').style.display = 'none';
+    }}
   }} catch(e) {{ console.error(e); }}
-}}, 500);
+}});
 </script>"""
     html_content = html_content.replace('</body>', inject_script + '</body>')
     st.components.v1.html(html_content, height=520, scrolling=False)
@@ -2895,24 +3085,32 @@ def render_plugin(plugin_key: str, context: str = "") -> None:
     }
 
     if plugin_key in html_generators:
-        # AI message bridge — allows plugins to call AI
-        bridge = f"""
+        # AI bridge — relays plugin AI calls to Streamlit via URL params
+        bridge = """
 <script>
-// Bridge: relay AI calls from plugin iframes to Streamlit
-window.addEventListener('message', function(e) {{
-    if(e.data && e.data.type === 'plugin_ai_call') {{
-        // Forward to Streamlit via query params
-        const p = new URL(window.location.href);
-        p.searchParams.set('plugin_call', encodeURIComponent(JSON.stringify(e.data)));
-        // Notify all child iframes of the response when it comes
-        window.__pendingCalls = window.__pendingCalls || {{}};
-        window.__pendingCalls[e.data.id] = e.source;
-    }}
-    if(e.data && e.data.type === 'plugin_result') {{
-        // Bubble result up to Streamlit
-        window.parent && window.parent.postMessage(e.data, '*');
-    }}
-}});
+(function(){
+window.addEventListener('message', function(e) {
+  if(!e.data) return;
+  var d=e.data;
+  if(d.type==='plugin_ai_call') {
+    var u=new URL(window.parent.location.href);
+    u.searchParams.set('plugin_call', encodeURIComponent(JSON.stringify(d)));
+    window.parent.history.replaceState({},'',u.toString());
+    // Trigger re-evaluation
+    setTimeout(function(){ window.parent.location.href=u.toString(); }, 100);
+  }
+  if(d.type==='publish_plugin') {
+    var u2=new URL(window.parent.location.href);
+    u2.searchParams.set('publish_plugin', encodeURIComponent(JSON.stringify(d.data||{})));
+    window.parent.location.href=u2.toString();
+  }
+  if(d.type==='install_custom_plugin') {
+    var u3=new URL(window.parent.location.href);
+    u3.searchParams.set('install_plugin', encodeURIComponent(JSON.stringify(d.data||{})));
+    window.parent.location.href=u3.toString();
+  }
+});
+})();
 </script>"""
 
         html_content = html_generators[plugin_key]()
@@ -3051,549 +3249,750 @@ def show_plugin_store():
 
 
 
-
 # ══════════════════════════════════════════════════════════════
-#  VIDEO CREATOR CONNECTOR
-#  Creates educational/presentation videos using HTML5 Canvas
-#  + MediaRecorder API. No external services needed.
-#  Supports: Text slides, diagrams, animations, voiceover
+#  SKILL CONNECTORS
+# ══════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════
+#  SKILL CONNECTORS — Interactive Challenge Modes
+#  Each connector is an AI-powered interactive skill battle
 # ══════════════════════════════════════════════════════════════
 
-VIDEO_TRIGGERS = [
-    "create a video","make a video","generate a video","video about",
-    "video on","make me a video","record a video","educational video",
-    "presentation video","explainer video","animation video",
-    "video creator","video maker","make a clip","video for",
-]
-
-def is_video_request(message):
-    msg = message.lower()
-    return any(t in msg for t in VIDEO_TRIGGERS)
-
-def generate_video_script(topic, style="educational"):
-    """AI generates a structured video script with scenes."""
-    system = """You are an expert video scriptwriter and educator.
-Generate a structured video script for the given topic.
-Return ONLY a valid JSON object with this structure:
-{
-  "title": "Video title",
-  "duration": 45,
-  "theme_color": "#4da6ff",
-  "bg_color": "#0d1117",
-  "text_color": "#e6edf3",
-  "accent_color": "#06d6a0",
-  "scenes": [
-    {
-      "type": "title_card",
-      "duration": 4,
-      "title": "Main title here",
-      "subtitle": "Subtitle or context",
-      "bg_gradient": ["#0d1117","#1a1a2e"]
+SKILL_CONNECTORS = {
+    "debate": {
+        "name": "Debate Battle",
+        "icon": "⚔️",
+        "color": "#f85149",
+        "desc": "Battle the AI in a live debate — argue your side!",
+        "gradient": "linear-gradient(135deg,#7f1d1d,#991b1b)",
     },
-    {
-      "type": "text_slide", 
-      "duration": 6,
-      "heading": "Section heading",
-      "points": ["Point 1 text", "Point 2 text", "Point 3 text"],
-      "icon": "⚛️"
+    "story": {
+        "name": "Story Duel",
+        "icon": "📖",
+        "color": "#a78bfa",
+        "desc": "Build a story together — you write, AI continues!",
+        "gradient": "linear-gradient(135deg,#4c1d95,#6d28d9)",
     },
-    {
-      "type": "formula_slide",
-      "duration": 5,
-      "heading": "Key Formula",
-      "formula": "F = ma",
-      "explanation": "Force equals mass times acceleration",
-      "units": "Newtons (N)"
+    "letter": {
+        "name": "Letter Writing",
+        "icon": "✉️",
+        "color": "#06d6a0",
+        "desc": "Master formal & informal letters with AI feedback",
+        "gradient": "linear-gradient(135deg,#064e3b,#065f46)",
     },
-    {
-      "type": "diagram_slide",
-      "duration": 7,
-      "heading": "Diagram title",
-      "elements": [
-        {"shape":"circle","x":0.3,"y":0.5,"r":0.08,"color":"#ff5555","label":"Nucleus"},
-        {"shape":"circle","x":0.7,"y":0.5,"r":0.04,"color":"#4da6ff","label":"Electron"},
-        {"shape":"arrow","x1":0.38,"y1":0.5,"x2":0.62,"y2":0.5,"color":"#06d6a0","label":"Force"}
-      ]
+    "essay": {
+        "name": "Essay Arena",
+        "icon": "🖊️",
+        "color": "#ffd166",
+        "desc": "Write essays paragraph-by-paragraph with AI coaching",
+        "gradient": "linear-gradient(135deg,#78350f,#92400e)",
     },
-    {
-      "type": "summary_slide",
-      "duration": 5,
-      "heading": "Key Takeaways",
-      "points": ["Key point 1","Key point 2","Key point 3"],
-      "call_to_action": "Practice problems in PhysIQ!"
-    }
-  ]
+    "poem": {
+        "name": "Poetry Slam",
+        "icon": "🎭",
+        "color": "#f471b5",
+        "desc": "Compose poems — AI teaches devices and responds in verse!",
+        "gradient": "linear-gradient(135deg,#831843,#9d174d)",
+    },
+    "speech": {
+        "name": "Speech Coach",
+        "icon": "🎤",
+        "color": "#58a6ff",
+        "desc": "Practice speeches — AI scores delivery and content",
+        "gradient": "linear-gradient(135deg,#1e3a5f,#1d4ed8)",
+    },
+    "roleplay": {
+        "name": "Roleplay Scene",
+        "icon": "🎬",
+        "color": "#ff8c42",
+        "desc": "Act out historical events, literature scenes, science scenarios!",
+        "gradient": "linear-gradient(135deg,#7c2d12,#9a3412)",
+    },
+    "interview": {
+        "name": "Interview Prep",
+        "icon": "🤝",
+        "color": "#3fb950",
+        "desc": "Practice real interview questions — AI is the interviewer!",
+        "gradient": "linear-gradient(135deg,#14532d,#166534)",
+    },
 }
 
-Scene types available: title_card, text_slide, formula_slide, diagram_slide, 
-                       comparison_slide, summary_slide, quote_slide
-Make 5-8 scenes. Total duration 40-90 seconds.
-Return ONLY the JSON, no explanation."""
 
-    user = f"Create an educational video script about: {topic}"
-    import json
-    raw = call_hf(system, user, max_tokens=2000)
-    if not raw: return None
-    raw = raw.strip()
-    start = raw.find("{"); end = raw.rfind("}") + 1
-    if start < 0: return None
+def render_navbar():
+    options = ["chat"] + list(SKILL_CONNECTORS.keys())
+    active = st.session_state.get("active_connector")
+    current = active if active in SKILL_CONNECTORS else "chat"
+    dark = st.session_state.dark_mode
+    active_info = {
+        "name": "Chat Hub",
+        "icon": "🏠",
+        "desc": "General PhysIQ chat, solver, voice, plugins, and tutoring.",
+        "color": "#58a6ff",
+    } if current == "chat" else SKILL_CONNECTORS[current]
+
+    panel_bg = "linear-gradient(135deg, rgba(10,16,28,0.98), rgba(15,23,42,0.98) 58%, rgba(8,15,29,0.98))" if dark \
+        else "linear-gradient(135deg, rgba(239,246,255,0.98), rgba(224,242,254,0.98) 58%, rgba(255,247,237,0.98))"
+    panel_border = "#22324f" if dark else "#c7d7ec"
+    title_color = "#e6edf3" if dark else "#10233f"
+    sub_color = "#8b949e" if dark else "#52627a"
+    chip_bg = "rgba(255,255,255,0.05)" if dark else "rgba(255,255,255,0.72)"
+    radio_bg = "#121a29" if dark else "#f6faff"
+    radio_text = "#dce7f8" if dark else "#18314d"
+    active_glow = active_info.get("color", "#58a6ff")
+
+    st.markdown(f"""
+    <style>
+    .activity-shell {{
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        border: 1px solid {panel_border};
+        background: {panel_bg};
+        padding: 1rem 1.05rem 0.95rem 1.05rem;
+        margin: 0.15rem 0 0.45rem 0;
+        box-shadow: 0 24px 60px rgba(2, 6, 23, 0.22);
+    }}
+    .activity-shell::before {{
+        content: "";
+        position: absolute;
+        inset: -35% auto auto -10%;
+        width: 320px;
+        height: 220px;
+        background: radial-gradient(circle, {active_glow}44 0%, transparent 68%);
+        pointer-events: none;
+    }}
+    .activity-shell::after {{
+        content: "";
+        position: absolute;
+        right: -40px;
+        top: -40px;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+        pointer-events: none;
+    }}
+    .activity-head {{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        z-index: 1;
+    }}
+    .activity-kicker {{
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: {active_glow};
+        margin-bottom: 0.35rem;
+    }}
+    .activity-title {{
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: {title_color};
+        letter-spacing: -0.02em;
+        margin-bottom: 0.2rem;
+    }}
+    .activity-sub {{
+        color: {sub_color};
+        font-size: 0.92rem;
+        line-height: 1.6;
+        max-width: 700px;
+    }}
+    .activity-side {{
+        min-width: 230px;
+        text-align: right;
+        padding: 0.9rem 1rem;
+        border-radius: 18px;
+        background: {chip_bg};
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        backdrop-filter: blur(12px);
+    }}
+    .activity-side-top {{
+        color: {sub_color};
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        margin-bottom: 0.35rem;
+    }}
+    .activity-side-main {{
+        color: {title_color};
+        font-weight: 800;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }}
+    .activity-side-sub {{
+        color: {sub_color};
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }}
+    .activity-badges {{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.9rem;
+    }}
+    .activity-badge {{
+        border-radius: 999px;
+        padding: 0.42rem 0.7rem;
+        font-size: 0.74rem;
+        font-weight: 700;
+        color: {title_color};
+        background: {chip_bg};
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        backdrop-filter: blur(10px);
+    }}
+    .activity-shell + div[data-testid="stRadio"] > label {{
+        display: none;
+    }}
+    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] {{
+        gap: 0.55rem;
+        flex-wrap: wrap;
+        padding: 0.15rem 0 1rem 0;
+    }}
+    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label {{
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        border-radius: 999px;
+        padding: 0.42rem 0.92rem;
+        background: {radio_bg};
+        min-height: auto;
+        transition: all 0.18s ease;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    }}
+    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label:hover {{
+        transform: translateY(-1px);
+        border-color: {active_glow};
+    }}
+    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label p {{
+        color: {radio_text};
+        font-weight: 700;
+        font-size: 0.82rem;
+    }}
+    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {{
+        border-color: {active_glow};
+        background: linear-gradient(90deg, {active_glow}22, {active_glow}11);
+        box-shadow: 0 0 0 1px {active_glow}22, 0 14px 30px rgba(2, 6, 23, 0.16);
+    }}
+    @media (max-width: 900px) {{
+        .activity-head {{
+            flex-direction: column;
+        }}
+        .activity-side {{
+            width: 100%;
+            text-align: left;
+            min-width: 0;
+        }}
+    }}
+    </style>
+    <div class="activity-shell">
+      <div class="activity-head">
+        <div>
+          <div class="activity-kicker">Activity Studio</div>
+          <div class="activity-title">⚛️ PhysIQ Command Deck</div>
+          <div class="activity-sub">Switch instantly between guided debate, storytelling, essay coaching, roleplay, interviews, and the main tutoring chat without leaving the app.</div>
+        </div>
+        <div class="activity-side">
+          <div class="activity-side-top">Live Mode</div>
+          <div class="activity-side-main">{active_info['icon']} {active_info['name']}</div>
+          <div class="activity-side-sub">{active_info['desc']}</div>
+        </div>
+      </div>
+      <div class="activity-badges">
+        <span class="activity-badge">{len(options)} live modes</span>
+        <span class="activity-badge">Voice-ready activities</span>
+        <span class="activity-badge">Debate judge enabled</span>
+        <span class="activity-badge">PhysIQ-powered responses</span>
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    selection = st.radio(
+        "Activity Bar",
+        options=options,
+        index=options.index(current),
+        horizontal=True,
+        label_visibility="collapsed",
+        format_func=lambda key: "🏠 Chat" if key == "chat" else f"{SKILL_CONNECTORS[key]['icon']} {SKILL_CONNECTORS[key]['name']}",
+    )
+
+    selected_connector = None if selection == "chat" else selection
+    st.session_state.active_connector = selected_connector
     try:
-        return json.loads(raw[start:end])
+        if selected_connector:
+            st.query_params["connector"] = selected_connector
+        elif "connector" in st.query_params:
+            del st.query_params["connector"]
     except:
-        return None
+        pass
+    return selected_connector
 
-def show_video_creator(topic="", script=None):
-    """Render the video creator canvas app."""
-    import json
-    script_json = json.dumps(script) if script else "null"
 
-    video_html = f"""<!DOCTYPE html>
-<html><head>
-<meta charset="UTF-8">
+def get_connector_ai_system(connector_key, extra=""):
+    """Get the AI system prompt for each connector."""
+    systems = {
+        "debate": f"""You are PhysIQ in Debate Battle mode: a sharp, relentless academic debate opponent.
+The student has taken a side on a topic. Your job is to:
+1. Identify the student's position fast and take the STRONGEST reasonable opposing side
+2. Push back hard with logic, evidence, examples, and sharp rebuttals
+3. Use debate tactics: refutation, cross-examination, exposing assumptions, analogies, comparisons, statistics when useful
+4. Do not become neutral or balanced unless the student explicitly asks for a balanced view
+5. Be tough but fair: challenge weak points directly and reward genuinely strong arguments
+6. Keep responses punchy and high-pressure, like a real live debate round
+7. End with a pointed question or challenge that forces the student to defend their side
+Topic context: {extra}
+Format: Give a clear opposing claim, 2-4 direct rebuttal points, then a closing challenge.""",
+
+        "story": f"""You are a creative co-author in an interactive story-writing session.
+Rules:
+1. The student writes a sentence or paragraph. You continue the story naturally.
+2. Add vivid descriptions, interesting characters, unexpected plot twists
+3. Occasionally TEACH a literary device you used: "I just used foreshadowing here — it hints at..."
+4. Ask the student to write the NEXT part with a prompt
+5. Keep the story engaging, age-appropriate, and educational
+6. After every 5 exchanges, give a quick writing tip based on what you've seen
+Story context so far: {extra}""",
+
+        "letter": f"""You are an expert English teacher running a letter-writing coaching session.
+1. Give the student a letter-writing task (formal/informal/complaint/application)
+2. The student writes their letter attempt
+3. You analyse it:
+   - Format check (is it correctly structured?)
+   - Tone check (appropriate formality?)
+   - Language check (vocabulary, grammar)
+   - Content check (does it achieve its purpose?)
+4. Give a score out of 20 with specific improvements
+5. Then show an improved version of their letter
+6. Challenge them with a harder letter task next
+Current task: {extra or "Start by giving the student their first letter-writing task."}""",
+
+        "essay": f"""You are an expert essay coach running a live paragraph-by-paragraph essay workshop.
+1. Give the student an essay topic and type (argumentative/descriptive/narrative)
+2. Coach them through each paragraph one at a time
+3. After each paragraph: give feedback on thesis, evidence, language, flow
+4. Teach essay techniques as you go: topic sentences, transitions, hooks, conclusions
+5. Score each paragraph out of 10 with specific comments
+6. Build up to the complete essay over the session
+Current assignment: {extra or "Start with an essay topic appropriate for Class 10-12."}""",
+
+        "poem": f"""You are a poetry master running an interactive poetry slam session.
+Rules:
+1. Give the student a poetry challenge (haiku, sonnet, free verse, limerick)
+2. The student writes their poem
+3. You analyse: rhythm, imagery, emotion, literary devices used
+4. You then RESPOND with your own poem on the same theme (show them how it's done!)
+5. Teach one literary device per exchange: personification, alliteration, enjambment, etc.
+6. Challenge them progressively — start easy, get harder
+7. Be enthusiastic and encouraging!
+Theme: {extra or "Start with a haiku challenge about nature."}""",
+
+        "speech": f"""You are a professional speech coach and public speaking trainer.
+1. Give the student a speech topic and occasion (school assembly, debate, TEDx, interview)
+2. The student writes or speaks their speech
+3. You score on: Opening Hook /10, Structure /10, Persuasion /10, Language /10, Conclusion /10
+4. Give specific feedback on rhetorical devices (tricolon, anaphora, ethos/pathos/logos)
+5. Provide a model opening or section to demonstrate
+6. Coach them on delivery tips even in text: pauses, emphasis, eye contact principles
+Topic: {extra or "Start by giving the student their first speech assignment."}""",
+
+        "roleplay": f"""You are a roleplay facilitator for educational immersive scenarios.
+Scenarios include: historical events, science experiments, literature characters, debates.
+1. Set the scene vividly — describe the time, place, situation
+2. Assign the student a role with clear objectives
+3. Play the opposing/supporting characters yourself
+4. After each exchange, occasionally break character to TEACH: "In real history, what actually happened was..."
+5. Make it dramatic and engaging — like being in the scene
+6. End with a debrief: what they learned, what they did well
+Current scenario: {extra or "Set up an exciting historical or scientific roleplay scenario."}""",
+
+        "interview": f"""You are a professional interviewer conducting a mock interview.
+Types: job interview, university admission, scholarship, debate judge.
+1. Greet professionally and introduce the interview context
+2. Ask realistic questions one at a time
+3. After each answer: give instant feedback — what was strong, what was weak
+4. Teach interview techniques: STAR method, body language (described), power words
+5. Score each answer: Content /5, Confidence /5, Communication /5
+6. After 5 questions: give an overall interview performance report
+7. Suggest 3 specific improvements
+Context: {extra or "Conduct a university admission interview. Ask about goals, achievements, and motivations."}""",
+    }
+    return systems.get(connector_key, "You are a helpful tutor.")
+
+
+def get_connector_knowledge_context(query, vs, k=4):
+    """Fetch relevant knowledge so activity modes still use the PhysIQ brain."""
+    if not vs or not query:
+        return ""
+    try:
+        results = vs.similarity_search_with_score(query, k=k)
+    except Exception:
+        return ""
+    snippets = []
+    for item in results or []:
+        try:
+            doc = item[0]
+            text = (doc.page_content or "").strip()
+        except Exception:
+            text = ""
+        if text:
+            snippets.append(text[:1200])
+    return "\n\n".join(snippets[:k])
+
+
+def build_connector_system(connector_key, topic="", knowledge_context=""):
+    """Combine PhysIQ tutoring behavior with the selected activity mode."""
+    base = """You are PhysIQ, an adaptive AI tutor and activity partner.
+
+Before responding, work out what the user is actually asking for.
+- If they want an explanation, example, fact check, or correction, answer that directly.
+- Then continue the current activity mode naturally instead of ignoring the request.
+- Use any provided study context when it is relevant and reliable.
+- Be precise, helpful, and interactive.
+- Do not lose the activity mode, but do not ignore the user's real intent either."""
+
+    if knowledge_context:
+        base += f"\n\nRelevant study context you may use:\n{knowledge_context}"
+
+    return base + "\n\n" + get_connector_ai_system(connector_key, topic)
+
+
+def generate_connector_reply(connector_key, topic, messages, latest_input, vs, opening=False):
+    """Generate a connector response using the same PhysIQ core plus retrieved context."""
+    search_query = " ".join([part for part in [topic, latest_input] if part]).strip()
+    knowledge_context = get_connector_knowledge_context(search_query, vs)
+    history = "\n\n".join([
+        f"{'Student' if m['role'] == 'user' else ('Judge' if m['role'] == 'judge' else 'AI')}: {m['content']}"
+        for m in messages[-8:]
+    ])
+    system = build_connector_system(connector_key, topic, knowledge_context)
+    session_name = SKILL_CONNECTORS.get(connector_key, {}).get("name", "activity")
+
+    if opening:
+        prompt = f"""Start the {session_name} session.
+
+Topic or context:
+{topic or "Choose an appropriate topic based on the mode."}
+
+Recent conversation:
+{history or "(No conversation yet)"}
+
+Open the session in a strong, engaging way and immediately make the activity feel live."""
+    else:
+        prompt = f"""Conversation history:
+{history or "(Session just started)"}
+
+Latest student message:
+{latest_input}
+
+Continue the {session_name} session.
+First respond to what the student is actually asking, then keep the activity moving."""
+
+    return call_hf(system, prompt, max_tokens=700)
+
+
+def judge_debate_session(topic, messages):
+    """Create an impartial final-style verdict for Debate Battle."""
+    transcript = "\n\n".join([
+        f"{'Student' if m['role'] == 'user' else ('Judge' if m['role'] == 'judge' else 'AI Opponent')}: {m['content']}"
+        for m in messages
+        if m["role"] in ("user", "ai")
+    ])
+
+    system = """You are an impartial debate judge.
+Decide which side argued better overall. Do not be vague and do not default to a tie.
+
+Use these criteria:
+1. Clarity
+2. Evidence or support
+3. Rebuttal quality
+4. Logic and consistency
+5. Persuasiveness
+
+Return this format:
+Winner: Student or AI Opponent
+Student Score: x/10
+AI Opponent Score: x/10
+Why Student did well:
+Why AI Opponent did well:
+Final Reason for Winner:
+Next move for the Student:"""
+
+    user_msg = f"""Debate topic:
+{topic or "No explicit topic given"}
+
+Transcript:
+{transcript}
+
+Give the final judging decision now."""
+
+    return call_hf(system, user_msg, max_tokens=700)
+
+
+def render_skill_connector(connector_key, vs):
+    """Render the full interactive skill connector UI."""
+    info = SKILL_CONNECTORS.get(connector_key, {})
+    if not info:
+        return
+
+    dark = st.session_state.dark_mode
+    color = info.get("color", "#58a6ff")
+    gradient = info.get("gradient", "linear-gradient(135deg,#0d1117,#161b22)")
+    icon = info.get("icon", "🎯")
+    name = info.get("name", "Skill")
+
+    # Session keys for this connector
+    msgs_key = f"conn_{connector_key}_messages"
+    topic_key = f"conn_{connector_key}_topic"
+    if msgs_key not in st.session_state:
+        st.session_state[msgs_key] = []
+    if topic_key not in st.session_state:
+        st.session_state[topic_key] = ""
+
+    # ── Header card ───────────────────────────────────────────
+    st.markdown(f"""
+<div style="background:{gradient};border:1px solid {color}40;border-radius:16px;
+padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px">
+  <div style="font-size:3rem;line-height:1">{icon}</div>
+  <div>
+    <div style="color:{color};font-weight:800;font-size:1.3rem">{name}</div>
+    <div style="color:#c9d1d9;font-size:13px;margin-top:4px">{info.get('desc','')}</div>
+  </div>
+</div>""", unsafe_allow_html=True)
+
+    # ── Topic / Setup ─────────────────────────────────────────
+    topic_labels = {
+        "debate": "Enter the debate topic (e.g. 'Social media does more harm than good')",
+        "story": "Enter the story opening line or genre",
+        "letter": "Enter the letter scenario (or leave blank for AI to assign)",
+        "essay": "Enter essay topic (or leave blank for AI to assign)",
+        "poem": "Enter poem theme (or leave blank for AI to assign)",
+        "speech": "Enter speech topic/occasion (or leave blank)",
+        "roleplay": "Choose a scenario (e.g. 'French Revolution', 'Moon landing')",
+        "interview": "Choose interview type (e.g. 'University admission', 'Job interview')",
+    }
+    col_t, col_start = st.columns([4, 1])
+    with col_t:
+        topic = st.text_input(
+            topic_labels.get(connector_key, "Topic"),
+            value=st.session_state[topic_key],
+            key=f"topic_input_{connector_key}",
+            placeholder="Leave blank for AI to choose...",
+            label_visibility="collapsed"
+        )
+    with col_start:
+        if st.button(f"🚀 Start {name}", key=f"start_{connector_key}", use_container_width=True):
+            st.session_state[topic_key] = topic
+            st.session_state[msgs_key] = []
+            with st.spinner(f"{icon} Starting session..."):
+                opening = generate_connector_reply(
+                    connector_key,
+                    topic,
+                    [],
+                    topic or f"Begin the {name} session.",
+                    vs,
+                    opening=True,
+                )
+            if opening:
+                st.session_state[msgs_key].append({"role": "ai", "content": opening})
+            if connector_key == "debate":
+                st.session_state[f"{msgs_key}_last_judged_turns"] = 0
+            st.rerun()
+
+    if st.button("🗑️ Reset Session", key=f"reset_{connector_key}"):
+        st.session_state[msgs_key] = []
+        st.session_state[topic_key] = ""
+        st.session_state[f"{msgs_key}_last_judged_turns"] = 0
+        st.rerun()
+
+    # ── Voice mic for connector ───────────────────────────────
+    MIC_HTML = f"""<!DOCTYPE html><html><head>
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
-body{{background:#060b18;font-family:'Segoe UI',sans-serif;color:#e6edf3;overflow:hidden}}
-#app{{display:flex;flex-direction:column;height:100vh}}
-.toolbar{{background:#0d1117;border-bottom:1px solid #30363d;padding:10px 16px;
-  display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
-.tit{{color:#58a6ff;font-weight:700;font-size:14px;flex:1}}
-.tbtn{{background:#21262d;border:1px solid #30363d;color:#e6edf3;border-radius:8px;
-  padding:6px 14px;cursor:pointer;font-size:12px;transition:all .15s}}
-.tbtn:hover{{background:#30363d}}
-.tbtn.rec{{background:#b91c1c;border-color:#ef4444;color:#fff;animation:pulse 1s infinite}}
-.tbtn.primary{{background:#238636;border-color:#2ea043;color:#fff}}
-.tbtn.primary:hover{{background:#2ea043}}
-@keyframes pulse{{0%{{box-shadow:0 0 0 0 rgba(239,68,68,.5)}}70%{{box-shadow:0 0 0 8px rgba(239,68,68,0)}}100%{{box-shadow:0 0 0 0 rgba(239,68,68,0)}}}}
-.main-area{{display:flex;flex:1;overflow:hidden}}
-.canvas-wrap{{flex:1;display:flex;align-items:center;justify-content:center;background:#000;position:relative}}
-#vc{{border:2px solid #30363d;max-width:100%;max-height:100%}}
-.sidebar{{width:220px;background:#0d1117;border-left:1px solid #30363d;overflow-y:auto;padding:12px}}
-.sth{{color:#58a6ff;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px}}
-.scene-card{{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px 10px;
-  margin-bottom:6px;cursor:pointer;font-size:11px;color:#8b949e;transition:all .15s}}
-.scene-card:hover,.scene-card.active{{border-color:#58a6ff;color:#e6edf3}}
-.scene-card.active{{background:#1f2937}}
-.scene-num{{color:#58a6ff;font-weight:700;font-size:10px}}
-.timeline{{background:#0d1117;border-top:1px solid #30363d;padding:10px 16px;height:80px}}
-.tl-inner{{display:flex;gap:4px;height:100%;align-items:center}}
-.tl-scene{{border-radius:4px;height:44px;cursor:pointer;display:flex;align-items:center;
-  justify-content:center;font-size:10px;color:#fff;font-weight:600;
-  border:1px solid transparent;transition:all .15s;min-width:40px;flex-shrink:0}}
-.tl-scene:hover{{border-color:#58a6ff}}
-.tl-scene.active{{border-color:#58a6ff;border-width:2px}}
-.status{{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
-  background:rgba(0,0,0,.7);padding:5px 14px;border-radius:20px;font-size:11px;color:#8b949e}}
-.controls{{display:flex;gap:6px;align-items:center}}
-.pbar-wrap{{flex:1;height:4px;background:#21262d;border-radius:2px;cursor:pointer}}
-.pbar-fill{{height:100%;background:#58a6ff;border-radius:2px;transition:width .1s}}
-.time-lbl{{font-size:11px;color:#8b949e;min-width:70px}}
-</style>
-</head>
-<body>
-<div id="app">
-  <div class="toolbar">
-    <span class="tit">🎬 PhysIQ Video Creator</span>
-    <div class="controls">
-      <button class="tbtn" id="prevBtn" onclick="prevScene()">⏮ Prev</button>
-      <button class="tbtn" id="playBtn" onclick="togglePlay()">▶ Play</button>
-      <button class="tbtn" id="nextBtn" onclick="nextScene()">Next ⏭</button>
-      <div class="pbar-wrap" onclick="seekBar(event)"><div class="pbar-fill" id="pbarFill" style="width:0%"></div></div>
-      <span class="time-lbl" id="timeLbl">0:00 / 0:00</span>
-    </div>
-    <button class="tbtn primary" id="recBtn" onclick="startRecord()">⏺ Export Video</button>
-    <button class="tbtn" onclick="downloadScript()">📄 Script JSON</button>
+body{{background:transparent;padding:4px 0;font-family:'Segoe UI',sans-serif}}
+.mic-row{{display:flex;align-items:center;gap:10px}}
+.mb{{width:38px;height:38px;border-radius:50%;border:2px solid {color}60;cursor:pointer;
+  background:linear-gradient(135deg,{color}40,{color}20);color:#fff;
+  font-size:16px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 8px {color}30;transition:all .2s;flex-shrink:0}}
+.mb:hover{{border-color:{color};transform:scale(1.1)}}
+.mb.L{{background:linear-gradient(135deg,#b91c1c,#ef4444);border-color:#ef4444;animation:pu 1s infinite}}
+.mb.D{{background:linear-gradient(135deg,#15803d,#22c55e);border-color:#22c55e}}
+@keyframes pu{{0%{{box-shadow:0 0 0 0 rgba(239,68,68,.5)}}70%{{box-shadow:0 0 0 10px rgba(239,68,68,0)}}100%{{box-shadow:0 0 0 0 rgba(239,68,68,0)}}}}
+.pill{{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:5px 12px;
+  color:#e6edf3;font-size:11px;max-width:260px;display:none;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}}
+.pill.v{{display:block}}
+.sb{{background:{color};color:#000;border:none;border-radius:8px;
+  padding:5px 14px;cursor:pointer;font-size:12px;font-weight:700;display:none}}
+.sb.v{{display:block}}
+.tb{{position:absolute;bottom:-2px;left:0;right:0;height:2px;
+  background:rgba(255,255,255,.1);border-radius:1px;overflow:hidden;display:none}}
+.tf{{height:100%;background:{color};border-radius:1px;transition:width .08s}}
+.mw{{position:relative}}
+.hint{{color:#484f58;font-size:10px}}
+</style></head><body>
+<div class="mic-row">
+  <div class="mw">
+    <button class="mb" id="mb" title="Click to speak — auto-sends after 2.5s silence">🎙️</button>
+    <div class="tb" id="tb"><div class="tf" id="tf" style="width:100%"></div></div>
   </div>
-  <div class="main-area">
-    <div class="canvas-wrap">
-      <canvas id="vc" width="960" height="540"></canvas>
-      <div class="status" id="status">Loading video...</div>
-    </div>
-    <div class="sidebar">
-      <div class="sth">SCENES</div>
-      <div id="sceneList"></div>
-    </div>
-  </div>
-  <div class="timeline">
-    <div class="tl-inner" id="tlInner"></div>
-  </div>
+  <div class="pill" id="pi">Listening...</div>
+  <button class="sb" id="sb">➤ Send</button>
+  <span class="hint">Speak your response · auto-sends after silence</span>
 </div>
-
 <script>
-var script = {script_json};
-var SCENE_COLORS = ['#1f6feb','#238636','#9333ea','#b91c1c','#0891b2','#c2410c','#166534','#1e3a5f'];
-var canvas = document.getElementById('vc');
-var ctx = canvas.getContext('2d');
-var W = canvas.width, H = canvas.height;
-var currentScene = 0, playing = false, animT = 0;
-var recordingChunks = [], recorder = null, isRecording = false;
-var totalTime = 0, elapsed = 0, raf = null, lastTs = null;
-
-function initScript() {{
-  if(!script) {{ renderNoScript(); return; }}
-  totalTime = 0;
-  (script.scenes||[]).forEach(function(s){{ totalTime += (s.duration||5); }});
-  buildSidebar();
-  buildTimeline();
-  renderScene(0);
-  document.getElementById('status').textContent = 'Ready — ' + (script.scenes||[]).length + ' scenes, ' + totalTime + 's total';
-  document.getElementById('timeLbl').textContent = '0:00 / ' + fmt(totalTime);
-}}
-
-function fmt(s) {{
-  return Math.floor(s/60)+':'+(s%60<10?'0':'')+Math.floor(s%60);
-}}
-
-function buildSidebar() {{
-  var sl = document.getElementById('sceneList');
-  sl.innerHTML = '';
-  (script.scenes||[]).forEach(function(s,i) {{
-    var d = document.createElement('div');
-    d.className = 'scene-card' + (i===0?' active':'');
-    d.id = 'sc'+i;
-    d.onclick = (function(idx){{ return function(){{ jumpToScene(idx); }}; }})(i);
-    d.innerHTML = '<div class="scene-num">Scene ' + (i+1) + ' · ' + (s.duration||5) + 's</div>' +
-      '<div>' + (s.title||s.heading||s.type) + '</div>';
-    sl.appendChild(d);
-  }});
-}}
-
-function buildTimeline() {{
-  var tl = document.getElementById('tlInner');
-  tl.innerHTML = '';
-  (script.scenes||[]).forEach(function(s,i) {{
-    var d = document.createElement('div');
-    d.className = 'tl-scene' + (i===0?' active':'');
-    d.id = 'tl'+i;
-    d.style.background = SCENE_COLORS[i%SCENE_COLORS.length];
-    d.style.width = Math.max(40, (s.duration||5)/totalTime*100) + 'px';
-    d.textContent = (i+1);
-    d.onclick = (function(idx){{ return function(){{ jumpToScene(idx); }}; }})(i);
-    tl.appendChild(d);
-  }});
-}}
-
-function jumpToScene(idx) {{
-  currentScene = idx;
-  animT = 0;
-  var prev = 0;
-  for(var i=0;i<idx;i++) prev += ((script.scenes||[])[i]||{{duration:5}}).duration||5;
-  elapsed = prev;
-  updateActive();
-  renderScene(idx);
-}}
-
-function updateActive() {{
-  document.querySelectorAll('.scene-card').forEach(function(el,i){{
-    el.classList.toggle('active', i===currentScene);
-  }});
-  document.querySelectorAll('.tl-scene').forEach(function(el,i){{
-    el.classList.toggle('active', i===currentScene);
-  }});
-  var pct = totalTime>0 ? elapsed/totalTime*100 : 0;
-  document.getElementById('pbarFill').style.width = pct + '%';
-  document.getElementById('timeLbl').textContent = fmt(elapsed) + ' / ' + fmt(totalTime);
-}}
-
-function togglePlay() {{
-  playing = !playing;
-  document.getElementById('playBtn').textContent = playing ? '⏸ Pause' : '▶ Play';
-  if(playing) {{ lastTs = null; raf = requestAnimationFrame(animate); }}
-  else if(raf) cancelAnimationFrame(raf);
-}}
-
-function animate(ts) {{
-  if(!lastTs) lastTs = ts;
-  var dt = (ts - lastTs)/1000;
-  lastTs = ts;
-  if(!playing) return;
-  animT += dt;
-  elapsed = Math.min(elapsed + dt, totalTime);
-  var scenes = script.scenes||[];
-  var sc = scenes[currentScene]||{{}};
-  if(animT >= (sc.duration||5)) {{
-    animT = 0;
-    if(currentScene < scenes.length-1) {{
-      currentScene++;
-    }} else {{
-      playing = false;
-      document.getElementById('playBtn').textContent = '▶ Play';
-      elapsed = totalTime;
-      updateActive();
-      return;
-    }}
-  }}
-  renderScene(currentScene, animT);
-  updateActive();
-  if(playing) raf = requestAnimationFrame(animate);
-}}
-
-function prevScene() {{ if(currentScene>0){{ jumpToScene(currentScene-1); }} }}
-function nextScene() {{ if(script && currentScene<(script.scenes||[]).length-1) jumpToScene(currentScene+1); }}
-
-function seekBar(e) {{
-  var r = e.currentTarget.getBoundingClientRect();
-  var pct = (e.clientX - r.left)/r.width;
-  elapsed = pct * totalTime;
-  var acc = 0;
-  var scenes = (script&&script.scenes)||[];
-  for(var i=0;i<scenes.length;i++) {{
-    acc += (scenes[i].duration||5);
-    if(elapsed <= acc) {{ currentScene = i; animT = elapsed-(acc-(scenes[i].duration||5)); break; }}
-  }}
-  renderScene(currentScene, animT);
-  updateActive();
-}}
-
-// ── RENDER FUNCTIONS ────────────────────────────────────────
-function clearCanvas(bg) {{
-  ctx.fillStyle = bg||script.bg_color||'#0d1117';
-  ctx.fillRect(0,0,W,H);
-}}
-
-function drawGrad(c1,c2) {{
-  var g=ctx.createLinearGradient(0,0,W,H);
-  g.addColorStop(0,c1);g.addColorStop(1,c2);
-  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
-}}
-
-function wrapText(txt, x, y, maxW, lineH, color, size, bold) {{
-  ctx.font=(bold?'bold ':'')+size+'px Segoe UI';
-  ctx.fillStyle=color;
-  var words=txt.split(' '),line='';
-  for(var n=0;n<words.length;n++){{
-    var test=line+words[n]+' ';
-    if(ctx.measureText(test).width>maxW&&n>0){{
-      ctx.fillText(line,x,y);line=words[n]+' ';y+=lineH;
-    }}else line=test;
-  }}
-  ctx.fillText(line,x,y);return y+lineH;
-}}
-
-function drawSlideIn(progress, sceneFunc) {{
-  ctx.save();
-  var offset = (1-Math.min(1,progress*3)) * 60;
-  ctx.translate(0, -offset);
-  ctx.globalAlpha = Math.min(1, progress*3);
-  sceneFunc();
-  ctx.restore();
-}}
-
-function renderScene(idx, t) {{
-  t = t||0;
-  var scenes = (script&&script.scenes)||[];
-  var s = scenes[idx]||{{}};
-  var progress = Math.min(1, t/Math.max(0.001,(s.duration||5)));
-  var tc = script&&script.text_color||'#e6edf3';
-  var ac = script&&script.accent_color||'#06d6a0';
-  var thc = script&&script.theme_color||'#58a6ff';
-
-  if(s.type==='title_card') {{
-    var bg = (s.bg_gradient&&s.bg_gradient.length>=2)?s.bg_gradient:['#0d1117','#1a1a2e'];
-    drawGrad(bg[0],bg[1]);
-    // Animated particles
-    for(var i=0;i<20;i++) {{
-      var px=(Math.sin(t*0.5+i*0.8)*0.4+0.5)*W;
-      var py=(Math.cos(t*0.3+i*1.2)*0.4+0.5)*H;
-      ctx.fillStyle='rgba(88,166,255,0.1)';
-      ctx.beginPath();ctx.arc(px,py,3+Math.sin(t+i)*2,0,Math.PI*2);ctx.fill();
-    }}
-    // Title
-    ctx.textAlign='center';
-    var alpha=Math.min(1,progress*4);
-    ctx.globalAlpha=alpha;
-    ctx.font='bold 56px Segoe UI';ctx.fillStyle=thc;
-    ctx.fillText(s.title||'PhysIQ',W/2,H*0.42);
-    ctx.font='22px Segoe UI';ctx.fillStyle=tc;ctx.globalAlpha=Math.min(1,progress*3-0.5);
-    ctx.fillText(s.subtitle||'',W/2,H*0.55);
-    ctx.globalAlpha=1;
-    // Bottom accent line
-    var lw=W*0.3*Math.min(1,progress*4);
-    ctx.fillStyle=ac;ctx.fillRect(W/2-lw/2,H*0.65,lw,3);
-    ctx.textAlign='left';
-
-  }} else if(s.type==='text_slide'||s.type==='bullet_slide') {{
-    clearCanvas();
-    // Header bar
-    ctx.fillStyle=thc;ctx.fillRect(0,0,W*Math.min(1,progress*3),8);
-    // Icon + heading
-    ctx.font='bold 36px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='left';
-    ctx.fillText((s.icon||'📌')+' '+(s.heading||s.title||''),50,80);
-    // Divider
-    ctx.fillStyle=thc;ctx.globalAlpha=0.3;ctx.fillRect(50,95,W-100,2);ctx.globalAlpha=1;
-    // Points
-    var pts=s.points||[];
-    pts.forEach(function(pt,i){{
-      var reveal=Math.min(1,progress*(pts.length+1)-(i+0.5));
-      if(reveal<=0)return;
-      ctx.globalAlpha=reveal;
-      var y=150+i*72;
-      // Bullet dot
-      ctx.fillStyle=ac;ctx.beginPath();ctx.arc(60,y+2,7,0,Math.PI*2);ctx.fill();
-      ctx.font='20px Segoe UI';ctx.fillStyle=tc;
-      wrapText(pt,82,y,W-130,28,tc,20,false);
-      ctx.globalAlpha=1;
-    }});
-    ctx.textAlign='left';
-
-  }} else if(s.type==='formula_slide') {{
-    clearCanvas();
-    ctx.fillStyle=thc;ctx.fillRect(0,0,W,8);
-    ctx.font='bold 28px Segoe UI';ctx.fillStyle=tc;
-    ctx.textAlign='center';ctx.fillText(s.heading||'Formula',W/2,70);
-    // Formula box
-    var alpha2=Math.min(1,progress*3);ctx.globalAlpha=alpha2;
-    ctx.fillStyle='rgba(31,111,235,0.15)';ctx.strokeStyle=thc;ctx.lineWidth=2;
-    ctx.beginPath();ctx.roundRect(W*0.15,H*0.3,W*0.7,H*0.22,16);ctx.fill();ctx.stroke();
-    ctx.font='bold 64px Courier New';ctx.fillStyle=ac;
-    ctx.fillText(s.formula||'F = ma',W/2,H*0.45);
-    ctx.globalAlpha=1;
-    ctx.font='20px Segoe UI';ctx.fillStyle=tc;
-    ctx.fillText(s.explanation||'',W/2,H*0.63);
-    ctx.font='16px Segoe UI';ctx.fillStyle='#8b949e';
-    ctx.fillText('Units: '+(s.units||''),W/2,H*0.72);
-    ctx.textAlign='left';
-
-  }} else if(s.type==='diagram_slide') {{
-    clearCanvas();
-    ctx.fillStyle=thc;ctx.fillRect(0,0,W,8);
-    ctx.font='bold 28px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='center';
-    ctx.fillText(s.heading||'Diagram',W/2,60);
-    ctx.textAlign='left';
-    var els=s.elements||[];
-    els.forEach(function(el,i){{
-      var reveal=Math.min(1,progress*(els.length+1)-(i*0.8));
-      if(reveal<=0)return;
-      ctx.globalAlpha=reveal;
-      var ex=el.x*W,ey=el.y*H;
-      if(el.shape==='circle'){{
-        var er=(el.r||0.05)*Math.min(W,H);
-        ctx.fillStyle=el.color||ac;
-        ctx.beginPath();ctx.arc(ex,ey,er,0,Math.PI*2);ctx.fill();
-        if(el.label){{
-          ctx.font='bold 14px Segoe UI';ctx.fillStyle='#fff';ctx.textAlign='center';
-          ctx.fillText(el.label,ex,ey+er+20);ctx.textAlign='left';
-        }}
-      }} else if(el.shape==='rect'){{
-        var rw=(el.w||0.15)*W,rh=(el.h||0.08)*H;
-        ctx.fillStyle=el.color||thc;
-        ctx.beginPath();ctx.roundRect(ex-rw/2,ey-rh/2,rw,rh,8);ctx.fill();
-        if(el.label){{
-          ctx.font='14px Segoe UI';ctx.fillStyle='#fff';ctx.textAlign='center';
-          ctx.fillText(el.label,ex,ey+5);ctx.textAlign='left';
-        }}
-      }} else if(el.shape==='arrow'){{
-        var ax1=el.x1*W,ay1=el.y1*H,ax2=el.x2*W,ay2=el.y2*H;
-        var ang=Math.atan2(ay2-ay1,ax2-ax1);
-        ctx.strokeStyle=el.color||ac;ctx.lineWidth=3;
-        ctx.beginPath();ctx.moveTo(ax1,ay1);ctx.lineTo(ax2,ay2);ctx.stroke();
-        ctx.fillStyle=el.color||ac;
-        ctx.beginPath();ctx.moveTo(ax2,ay2);
-        ctx.lineTo(ax2-14*Math.cos(ang-0.4),ay2-14*Math.sin(ang-0.4));
-        ctx.lineTo(ax2-14*Math.cos(ang+0.4),ay2-14*Math.sin(ang+0.4));
-        ctx.closePath();ctx.fill();
-        if(el.label){{
-          ctx.font='13px Segoe UI';ctx.fillStyle=el.color||ac;ctx.textAlign='center';
-          ctx.fillText(el.label,(ax1+ax2)/2,(ay1+ay2)/2-14);ctx.textAlign='left';
-        }}
-      }}
-      ctx.globalAlpha=1;
-    }});
-
-  }} else if(s.type==='summary_slide'||s.type==='conclusion_slide') {{
-    drawGrad('#0d1117','#1a1a2e');
-    ctx.fillStyle=ac;ctx.fillRect(0,0,W,8);
-    ctx.font='bold 34px Segoe UI';ctx.fillStyle=ac;ctx.textAlign='center';
-    ctx.fillText(s.heading||'Key Takeaways',W/2,70);
-    ctx.globalAlpha=0.3;ctx.fillStyle=ac;ctx.fillRect(W/2-120,85,240,3);ctx.globalAlpha=1;
-    var pts2=s.points||[];
-    pts2.forEach(function(pt,i){{
-      var reveal=Math.min(1,progress*(pts2.length+1)-(i+0.5));
-      if(reveal<=0)return;
-      ctx.globalAlpha=reveal;
-      ctx.font='bold 18px Segoe UI';ctx.fillStyle=ac;ctx.textAlign='center';
-      ctx.fillText('✓',W*0.2,135+i*60);
-      ctx.font='18px Segoe UI';ctx.fillStyle=tc;
-      ctx.fillText(pt,W/2,135+i*60);
-      ctx.globalAlpha=1;
-    }});
-    if(s.call_to_action&&progress>0.7){{
-      ctx.globalAlpha=Math.min(1,(progress-0.7)*4);
-      ctx.font='bold 18px Segoe UI';ctx.fillStyle='#ffd166';ctx.textAlign='center';
-      ctx.fillText('→ '+(s.call_to_action||''),W/2,H-60);
-      ctx.globalAlpha=1;
-    }}
-    ctx.textAlign='left';
-
-  }} else if(s.type==='quote_slide') {{
-    drawGrad('#1a1a2e','#0d1117');
-    ctx.font='italic bold 22px Georgia';ctx.fillStyle=ac;ctx.textAlign='center';
-    ctx.globalAlpha=Math.min(1,progress*2);
-    ctx.fillText('"'+(s.quote||s.text||'')+'"',W/2,H*0.42);
-    ctx.font='18px Segoe UI';ctx.fillStyle='#8b949e';ctx.globalAlpha=Math.min(1,progress*1.5-0.3);
-    ctx.fillText('— '+(s.author||''),W/2,H*0.56);
-    ctx.globalAlpha=1;ctx.textAlign='left';
-
-  }} else {{
-    // Fallback
-    clearCanvas();
-    ctx.font='bold 24px Segoe UI';ctx.fillStyle=tc;ctx.textAlign='center';
-    ctx.fillText(s.title||s.heading||s.type||'Scene '+(idx+1),W/2,H/2);
-    ctx.textAlign='left';
-  }}
-
-  // Scene number watermark
-  ctx.font='11px Segoe UI';ctx.fillStyle='rgba(255,255,255,0.2)';ctx.textAlign='right';
-  ctx.fillText((idx+1)+'/'+(script.scenes||[]).length,W-16,H-14);
-  ctx.textAlign='left';
-}}
-
-function renderNoScript() {{
-  clearCanvas('#060b18');
-  ctx.font='bold 28px Segoe UI';ctx.fillStyle='#58a6ff';ctx.textAlign='center';
-  ctx.fillText('🎬 No video script loaded',W/2,H/2-20);
-  ctx.font='16px Segoe UI';ctx.fillStyle='#8b949e';
-  ctx.fillText('Ask PhysIQ to create a video about any topic',W/2,H/2+20);
-  ctx.textAlign='left';
-  document.getElementById('status').textContent='No script loaded';
-}}
-
-// ── EXPORT VIDEO ─────────────────────────────────────────────
-async function startRecord() {{
-  if(isRecording){{
-    recorder&&recorder.stop();return;
-  }}
-  var stream=canvas.captureStream(30);
-  recorder=new MediaRecorder(stream,{{mimeType:'video/webm;codecs=vp9'}});
-  recordingChunks=[];
-  recorder.ondataavailable=function(e){{if(e.data.size>0)recordingChunks.push(e.data);}};
-  recorder.onstop=function(){{
-    var blob=new Blob(recordingChunks,{{type:'video/webm'}});
-    var url=URL.createObjectURL(blob);
-    var a=document.createElement('a');a.href=url;a.download='physiq_video.webm';a.click();
-    isRecording=false;
-    document.getElementById('recBtn').textContent='⏺ Export Video';
-    document.getElementById('recBtn').classList.remove('rec');
-    document.getElementById('status').textContent='Video saved!';
+var lang='python',txt='',on=false,R=null,sT=null,iT=null;
+var SILS=2500;
+function go(){{
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){{document.getElementById('pi').textContent='Use Chrome/Edge for voice';document.getElementById('pi').classList.add('v');return;}}
+  R=new SR();R.continuous=true;R.interimResults=true;R.lang='en-US';
+  R.onstart=function(){{on=true;txt='';document.getElementById('mb').className='mb L';document.getElementById('mb').textContent='🔴';document.getElementById('pi').textContent='Listening…';document.getElementById('pi').classList.add('v');document.getElementById('sb').classList.remove('v');document.getElementById('tb').style.display='none';}};
+  R.onresult=function(e){{
+    var f='',i2='';
+    for(var k=e.resultIndex;k<e.results.length;k++){{if(e.results[k].isFinal)f+=e.results[k][0].transcript;else i2+=e.results[k][0].transcript;}}
+    if(f)txt+=f;
+    document.getElementById('pi').textContent='"'+(txt||i2)+'"';
+    clearTimeout(sT);clearInterval(iT);
+    var p=100;document.getElementById('tf').style.width='100%';document.getElementById('tb').style.display='block';
+    iT=setInterval(function(){{p-=(100/SILS)*80;document.getElementById('tf').style.width=Math.max(0,p)+'%';if(p<=0)clearInterval(iT);}},80);
+    sT=setTimeout(function(){{clearInterval(iT);if(txt.trim())send();else R.stop();}},SILS);
   }};
-  recorder.start();isRecording=true;
-  document.getElementById('recBtn').textContent='⏹ Stop & Save';
-  document.getElementById('recBtn').classList.add('rec');
-  document.getElementById('status').textContent='🔴 Recording...';
-  // Auto-play through all scenes
-  currentScene=0;elapsed=0;
-  if(!playing)togglePlay();
+  R.onend=function(){{on=false;document.getElementById('tb').style.display='none';if(txt.trim()){{document.getElementById('mb').className='mb D';document.getElementById('mb').textContent='✅';document.getElementById('sb').classList.add('v');}}else{{document.getElementById('mb').className='mb';document.getElementById('mb').textContent='🎙️';document.getElementById('pi').classList.remove('v');}}}};
+  R.onerror=function(e){{on=false;document.getElementById('mb').className='mb';document.getElementById('mb').textContent='🎙️';var m={{'not-allowed':'🔒 Allow mic','no-speech':'No speech detected'}};document.getElementById('pi').textContent=m[e.error]||'Error';document.getElementById('pi').classList.add('v');setTimeout(function(){{document.getElementById('pi').classList.remove('v');}},2500);}};
+  R.start();
 }}
-
-function downloadScript() {{
-  if(!script)return;
-  var b=new Blob([JSON.stringify(script,null,2)],{{type:'application/json'}});
-  var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='video_script.json';a.click();
+function send(){{
+  clearTimeout(sT);clearInterval(iT);if(R&&on){{try{{R.stop();}}catch(e){{}}}}
+  var q=txt.trim();if(!q)return;
+  var u=new URL(window.parent.location.href);
+  u.searchParams.set('conn_voice',encodeURIComponent(q));
+  u.searchParams.set('conn_key','{connector_key}');
+  window.parent.history.replaceState({{}},'',u.toString());
+  document.getElementById('pi').textContent='⏳ Sending…';
+  document.getElementById('sb').classList.remove('v');
+  document.getElementById('mb').className='mb';document.getElementById('mb').textContent='🎙️';
+  txt='';
+  setTimeout(function(){{window.parent.location.href=u.toString();}},150);
 }}
+document.getElementById('mb').onclick=function(){{if(on){{clearTimeout(sT);send();}}else go();}};
+document.getElementById('sb').onclick=function(){{send();}};
+</script></body></html>"""
 
-initScript();
-</script>
-</body></html>"""
-    return video_html
+    # ── Messages area ─────────────────────────────────────────
+    messages = st.session_state.get(msgs_key, [])
+
+    if not messages:
+        st.markdown(f"""
+        <div style="text-align:center;padding:40px;color:#8b949e">
+            <div style="font-size:3rem;margin-bottom:12px">{icon}</div>
+            <div style="font-size:15px;font-weight:600;color:{color}">Ready to start!</div>
+            <div style="font-size:13px;margin-top:8px">Enter a topic above and click 🚀 Start, or leave blank for AI to choose</div>
+        </div>""", unsafe_allow_html=True)
+    else:
+        for msg in messages:
+            role = msg["role"]
+            is_user = role == "user"
+            is_judge = role == "judge"
+            bg = "#0d1117" if is_user else "#7c5c0015" if is_judge else f"{color}15"
+            border_col = "#30363d" if is_user else "#f59e0b" if is_judge else color
+            label = "You" if is_user else "⚖️ Judge" if is_judge else icon + " " + name
+            text_col = "#e6edf3" if is_user else "#e6edf3"
+
+            st.markdown(f"""
+            <div style="background:{bg};border:1px solid {border_col}40;border-left:3px solid {border_col};
+            border-radius:12px;padding:14px 18px;margin:8px 0">
+              <div style="color:{border_col};font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:8px">
+                {label.upper()}
+              </div>
+              <div style="color:{text_col};font-size:13.5px;line-height:1.7;white-space:pre-wrap">
+                {msg['content']}
+              </div>
+            </div>""", unsafe_allow_html=True)
+
+    # ── Voice mic component ───────────────────────────────────
+    if messages:
+        st.components.v1.html(MIC_HTML, height=50, scrolling=False)
+        st.caption("🎙️ Speak your response above, or type below")
+
+    # ── Handle voice input from query params ─────────────────
+    try:
+        params = st.query_params
+        cv = params.get("conn_voice", "")
+        ck = params.get("conn_key", "")
+        last_cv = st.session_state.get(f"_last_conn_voice_{connector_key}", "")
+        if cv and ck == connector_key and cv != last_cv:
+            import urllib.parse
+            voice_text = urllib.parse.unquote(cv)
+            st.session_state[f"_last_conn_voice_{connector_key}"] = cv
+            try:
+                del st.query_params["conn_voice"]
+                del st.query_params["conn_key"]
+            except:
+                pass
+            # Process voice input as user message
+            _process_connector_input(connector_key, voice_text, vs, msgs_key, topic_key)
+            st.rerun()
+    except:
+        pass
+
+    # ── Text input ────────────────────────────────────────────
+    if messages:
+        col_inp, col_sub = st.columns([5, 1])
+        with col_inp:
+            user_response = st.text_area(
+                "Your response",
+                key=f"conn_input_{connector_key}",
+                placeholder="Type your response here...",
+                height=100,
+                label_visibility="collapsed"
+            )
+        with col_sub:
+            st.markdown("<br><br>", unsafe_allow_html=True)
+            if st.button("Send →", key=f"conn_send_{connector_key}", use_container_width=True):
+                if user_response.strip():
+                    _process_connector_input(connector_key, user_response.strip(), vs, msgs_key, topic_key)
+                    st.rerun()
+
+        # Score/progress display
+        if len(messages) >= 4:
+            exchanges = len([m for m in messages if m["role"] == "user"])
+            st.progress(min(exchanges / 10, 1.0), text=f"Session progress: {exchanges} exchanges")
+
+
+def _process_connector_input(connector_key, user_text, vs, msgs_key, topic_key):
+    """Process user input in a skill connector."""
+    messages = st.session_state.get(msgs_key, [])
+    messages.append({"role": "user", "content": user_text})
+
+    response = generate_connector_reply(
+        connector_key,
+        st.session_state.get(topic_key, ""),
+        messages,
+        user_text,
+        vs,
+    )
+    if response:
+        messages.append({"role": "ai", "content": response})
+
+    if connector_key == "debate":
+        user_turns = len([m for m in messages if m["role"] == "user"])
+        last_judged_turns = st.session_state.get(f"{msgs_key}_last_judged_turns", 0)
+        wants_verdict = any(
+            phrase in user_text.lower()
+            for phrase in ["who won", "winner", "judge", "final verdict", "end debate", "verdict"]
+        )
+        should_judge = wants_verdict or (user_turns >= 3 and user_turns % 3 == 0 and user_turns > last_judged_turns)
+        if should_judge:
+            verdict = judge_debate_session(st.session_state.get(topic_key, ""), messages)
+            if verdict:
+                messages.append({"role": "judge", "content": verdict})
+                st.session_state[f"{msgs_key}_last_judged_turns"] = user_turns
+
+    st.session_state[msgs_key] = messages
 
 
 # ══════════════════════════════════════════════════════════════
@@ -3601,6 +4000,18 @@ initScript();
 # ══════════════════════════════════════════════════════════════
 def show_app():
     user_name = st.session_state.user.user_metadata.get("full_name", st.session_state.user.email)
+
+    # ── Read active connector from URL ────────────────────────
+    try:
+        conn_param = st.query_params.get("connector", "")
+        if conn_param and conn_param in SKILL_CONNECTORS:
+            st.session_state.active_connector = conn_param
+        elif conn_param == "" and "connector" not in str(st.query_params):
+            pass  # keep existing
+        elif conn_param == "":
+            st.session_state.active_connector = None
+    except:
+        pass
 
     # ── Load backend ───────────────────────────────────────────
     if not st.session_state.backend_ready:
@@ -3635,6 +4046,63 @@ def show_app():
 
     vs       = st.session_state.vs
     Document = st.session_state.Document
+
+    # ── Read active connector from URL ────────────────────────
+    try:
+        conn_param = st.query_params.get("connector", "")
+        if conn_param in SKILL_CONNECTORS:
+            st.session_state.active_connector = conn_param
+        elif conn_param == "":
+            st.session_state.active_connector = None
+    except:
+        pass
+
+    # ── Render top activity bar (always) ───────────────────────
+    active_conn = render_navbar()
+
+    # ── Route to active skill connector ───────────────────────
+    if active_conn and active_conn in SKILL_CONNECTORS:
+        with st.sidebar:
+            st.markdown(f"### {SKILL_CONNECTORS[active_conn]['icon']} {SKILL_CONNECTORS[active_conn]['name']}")
+            st.caption("Use the top bar to switch modes")
+            if st.button("🏠 Back to Chat", use_container_width=True):
+                st.session_state.active_connector = None
+                try: del st.query_params["connector"]
+                except: pass
+                st.rerun()
+            dark_toggle = st.toggle("🌙 Dark Mode", value=st.session_state.dark_mode)
+            if dark_toggle != st.session_state.dark_mode:
+                st.session_state.dark_mode = dark_toggle
+                st.rerun()
+        render_skill_connector(active_conn, vs)
+        return
+
+    if st.session_state.get("show_plugin_store_page"):
+        show_plugin_store_page()
+        return
+
+    if st.session_state.get("show_video_creator"):
+        st.markdown("## 🎬 Video Creator")
+        c1, c2 = st.columns([4,1])
+        with c1:
+            vtopic = st.text_input("📝 Video topic:", placeholder="e.g. Newton's Laws, Photosynthesis...", key="vtopic_inp")
+        with c2:
+            st.markdown("<br>",unsafe_allow_html=True)
+            if st.button("🎬 Generate", use_container_width=True):
+                if vtopic:
+                    with st.spinner("🎬 AI writing video script..."):
+                        vscript = generate_video_script(vtopic)
+                    if vscript:
+                        st.session_state.video_script = vscript
+                        st.success(f"✅ {len(vscript.get('scenes',[]))} scenes ready!")
+        vscript2 = st.session_state.get("video_script")
+        vtopic2 = st.session_state.get("vtopic_inp","")
+        st.components.v1.html(show_video_creator(vtopic2, vscript2), height=680, scrolling=False)
+        st.caption("▶ Play to preview · ⏺ Export saves as .webm · Works in Chrome/Edge")
+        if st.button("← Back to Chat"):
+            st.session_state.show_video_creator = False
+            st.rerun()
+        return
 
     if st.session_state.get("show_profile"):
         show_profile_page()
@@ -3693,9 +4161,6 @@ def show_app():
 
         coding_on = st.toggle("💻 Coding Mode", value=st.session_state.coding_mode,
             help="Python, Java, C++, C#, Roblox Lua, JS and more")
-        if st.button("🎬 Video Creator", use_container_width=True, key="open_video"):
-            st.session_state.show_video_creator = not st.session_state.get("show_video_creator", False)
-            st.rerun()
         if coding_on != st.session_state.coding_mode:
             st.session_state.coding_mode = coding_on
             if coding_on: st.session_state.creative_mode = False
@@ -3766,16 +4231,15 @@ def show_app():
         # ── Plugin Store ─────────────────────────────────────
         st.divider()
         st.markdown('<div class="section-label">🔌 Plugins</div>', unsafe_allow_html=True)
-        if st.button("🔌 Plugin Store", use_container_width=True, key="open_plugin_store"):
-            st.session_state.plugin_store_open = not st.session_state.get("plugin_store_open", False)
-            st.rerun()
-        if st.session_state.get("plugin_store_open"):
-            plugin_catalog = dict(PLUGINS)
-            plugin_catalog.update(st.session_state.get("custom_plugins", {}))
-            for key, p in plugin_catalog.items():
-                if st.button(f"{p['icon']} {p['name']}", key=f"sidebar_plug_{key}", use_container_width=True):
-                    st.session_state[f"plugin_open_{key}"] = not st.session_state.get(f"plugin_open_{key}", False)
-                    st.rerun()
+        col_ps, col_tc = st.columns(2)
+        with col_ps:
+            if st.button("🔌 Plugins", use_container_width=True, key="open_plugin_store_btn"):
+                st.session_state.show_plugin_store_page = True
+                st.rerun()
+        with col_tc:
+            if st.button("🔧 Tool Creator", use_container_width=True, key="open_tool_creator_btn"):
+                st.session_state[f"plugin_open_tool_creator"] = not st.session_state.get("plugin_open_tool_creator", False)
+                st.rerun()
 
         # ── PDF Reader ──────────────────────────────────────
         st.divider()
@@ -3901,6 +4365,40 @@ def show_app():
                             st.session_state.simplify_target = None
                             st.rerun()
 
+    # ── AI App Offer (shown after relevant answers) ────────────
+    offer_key = f"_offer_app_{len(st.session_state.messages)}"
+    offer_data = st.session_state.get(offer_key)
+    if offer_data:
+        colA, colB = st.columns([3,1])
+        with colA:
+            st.info("🤖 **Want me to build an interactive app to practise this?** I can create a custom tool just for you!")
+        with colB:
+            if st.button("✨ Yes, build it!", key="build_temp_app", use_container_width=True):
+                st.session_state[offer_key] = None
+                with st.spinner("🤖 Building your interactive app... (15-30 seconds)"):
+                    app_html = generate_interactive_app(offer_data["question"], offer_data["answer"])
+                if app_html and "<!DOCTYPE" in app_html:
+                    st.session_state["_temp_app_html"] = app_html
+                    st.session_state["_temp_app_title"] = f"Interactive: {offer_data['question'][:40]}"
+                else:
+                    st.warning("Could not generate app. Try asking more specifically.")
+                st.rerun()
+            if st.button("No thanks", key="skip_app", use_container_width=True):
+                st.session_state[offer_key] = None
+                st.rerun()
+
+    # Show temp app if generated
+    temp_html = st.session_state.get("_temp_app_html")
+    if temp_html:
+        colT, colX = st.columns([5,1])
+        with colT:
+            st.markdown(f"### 🤖 {st.session_state.get('_temp_app_title','Interactive App')}")
+        with colX:
+            if st.button("✕ Close App", key="close_temp_app"):
+                st.session_state["_temp_app_html"] = None
+                st.rerun()
+        display_temp_app(temp_html, st.session_state.get("_temp_app_title","Interactive App"))
+
     # ── Plugin Panels ──────────────────────────────────────────
     plugin_catalog = dict(PLUGINS)
     plugin_catalog.update(st.session_state.get("custom_plugins", {}))
@@ -3992,6 +4490,45 @@ def show_app():
                     st.session_state.pending_feedback = None
                     st.toast("🧠 Correction saved!")
                     st.rerun()
+
+    # ── Floating Plugin Store button ─────────────────────────────
+    st.components.v1.html("""
+<style>
+.fab-plugin{position:fixed;bottom:90px;right:24px;z-index:9998;
+  width:50px;height:50px;border-radius:50%;
+  background:linear-gradient(135deg,#1f6feb,#388bfd);
+  border:none;cursor:pointer;font-size:20px;
+  box-shadow:0 4px 20px rgba(88,166,255,0.45);
+  display:flex;align-items:center;justify-content:center;
+  color:white;transition:all .2s;text-decoration:none}
+.fab-plugin:hover{transform:scale(1.12);box-shadow:0 6px 28px rgba(88,166,255,0.65)}
+.fab-tooltip{position:absolute;right:58px;background:rgba(13,17,23,0.95);
+  color:#e6edf3;padding:5px 12px;border-radius:8px;font-size:11px;
+  font-family:'Segoe UI',sans-serif;white-space:nowrap;
+  border:1px solid rgba(88,166,255,0.3);opacity:0;transition:opacity .2s;pointer-events:none}
+.fab-plugin:hover .fab-tooltip{opacity:1}
+</style>
+<div style="position:relative;width:fit-content;margin-left:auto">
+  <button class="fab-plugin" onclick="openStore()" title="Plugin Store">
+    🔌
+    <span class="fab-tooltip">Plugin Store</span>
+  </button>
+</div>
+<script>
+function openStore(){
+  var u=new URL(window.parent.location.href);
+  u.searchParams.set('open_plugins','1');
+  window.parent.location.href=u.toString();
+}
+</script>
+""", height=60, scrolling=False)
+
+    # Handle FAB plugin store open
+    if st.query_params.get("open_plugins","") == "1":
+        try: del st.query_params["open_plugins"]
+        except: pass
+        st.session_state.show_plugin_store_page = True
+        st.rerun()
 
     # ── Voice button (above chat bar) ──────────────────────────
     st.components.v1.html("""
@@ -4211,28 +4748,6 @@ window.addEventListener('message',e=>{
                         save_message("assistant", pdf_ans, "pdf")
                 st.rerun()
 
-        # ── Video creation request ───────────────────────────
-        if is_video_request(question):
-            st.session_state.messages.append({"role":"user","content":question})
-            save_message("user", question)
-            with st.chat_message("user"): st.write(question)
-            topic = question.lower()
-            for t in VIDEO_TRIGGERS: topic = topic.replace(t,"").strip()
-            topic = topic.strip(" onaboutfor:,") or "General Science"
-            with st.chat_message("assistant"):
-                with st.spinner(f"🎬 Writing video script on '{topic}'..."):
-                    vscript = generate_video_script(topic)
-                if vscript:
-                    reply = f"🎬 Video script created for **{topic}**! Opening the Video Creator now..."
-                    st.write(reply)
-                    st.session_state.messages.append({"role":"assistant","content":reply})
-                    save_message("assistant", reply)
-                    st.session_state.video_script = vscript
-                    st.session_state.show_video_creator = True
-                else:
-                    st.error("Could not generate video script. Try again.")
-            st.rerun()
-
         # ── Image generation request ─────────────────────────
         if is_image_request(question) or st.session_state.get("_regen_prompt"):
             regen = st.session_state.get("_regen_prompt")
@@ -4342,55 +4857,52 @@ window.addEventListener('message',e=>{
         ])
 
         with st.chat_message("assistant"):
-            use_web = st.session_state.get("web_search_mode", False)
-            with st.spinner("🔁 Thinking..." + (" + 🌐 searching web..." if use_web else "")):
-                if use_web:
-                    answer, sources = answer_with_web_search(question, vs, history_text)
-                    conf_label = "🌐 Web + AI"
-                    conf_class = "conf-high"
-                    if not answer:
+                use_web = st.session_state.get("web_search_mode", False)
+                with st.spinner("🔁 Thinking..." + (" + 🌐 searching web..." if use_web else "")):
+                    if use_web:
+                        answer, sources = answer_with_web_search(question, vs, history_text)
+                        conf_label = "🌐 Web + AI"
+                        conf_class = "conf-high"
+                        if not answer:
+                            answer, conf_label, conf_class = ask_question(question, vs, history_text)
+                            sources = []
+                    else:
                         answer, conf_label, conf_class = ask_question(question, vs, history_text)
                         sources = []
-                else:
-                    answer, conf_label, conf_class = ask_question(question, vs, history_text)
-                    sources = []
-                    # Auto web search on low confidence
-                    if conf_class == "conf-low" and needs_web_search(question, conf_class):
-                        with st.spinner("🌐 Confidence low — checking web..."):
+                        if conf_class == "conf-low" and needs_web_search(question, conf_class):
                             web_r = web_search_all(question)
                             if web_r:
                                 web_ctx = format_web_results(web_r)
                                 sources = list(web_r.keys())
-                                # Re-ask with web context
                                 sys2 = "You are an expert tutor. Use the web results to improve your answer."
-                                usr2 = f"Web results:{web_ctx}\nQuestion:{question}\nImprove this answer:{answer}"
+                                usr2 = f"Web results:{web_ctx}\nQuestion:{question}\nAnswer:{answer}"
                                 better = call_hf(sys2, usr2, max_tokens=1200)
                                 if better: answer = better; conf_label = "🌐 Web-enhanced"
-                st.write(answer)
+                render_math_answer(answer)
                 if sources:
                     st.caption(f"📡 Sources: {', '.join(sources)}")
                 st.markdown(f'<span class="{conf_class}">📊 {conf_label}</span>', unsafe_allow_html=True)
-
                 st.session_state.messages.append({
                     "role": "assistant", "content": answer,
                     "confidence": conf_label, "conf_class": conf_class
                 })
                 save_message("assistant", answer, conf_label)
                 st.session_state.pending_feedback = {"question": question, "answer": answer}
-
-                # TTS voice reply if voice mode on
+                if should_offer_interactive_app(question, answer):
+                    st.session_state[f"_offer_app_{len(st.session_state.messages)}"] = {
+                        "question": question, "answer": answer
+                    }
                 if st.session_state.get("voice_mode"):
                     with st.spinner("🔊 Preparing voice..."):
                         short = call_hf(
-                            "Convert this answer to a friendly spoken response under 50 words. No symbols, no markdown, natural speech only.",
-                            f"Q:{question}\nA:{answer[:600]}\nSpoken version:",
+                            "Convert this to a friendly spoken response under 50 words. Natural speech, no symbols.",
+                            f"Q:{question}\nA:{answer[:600]}\nSpoken:",
                             max_tokens=120
                         )
                     if short:
                         st.components.v1.html(f"""<script>
-setTimeout(()=>{{window.parent.postMessage({{type:'physiq_tts',text:{repr(short)}}}, '*');}},400);
+setTimeout(function(){{window.parent.postMessage({{type:'physiq_tts',text:{repr(short)}}}, '*');}},400);
 </script>""", height=0)
-
         st.rerun()
 
 # ══════════════════════════════════════════════════════════════
