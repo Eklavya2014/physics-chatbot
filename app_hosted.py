@@ -7,7 +7,7 @@ import streamlit.components.v1
 st.set_page_config(
     page_title="PhysIQ — Science & English Tutor",
     page_icon="⚛️",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="expanded"
 )
 
@@ -37,8 +37,9 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "active_connector": None, "show_plugin_store_page": False, "_temp_app_html": None, "_temp_app_title": "", "show_video_creator": False, "video_script": None, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "active_connector": None, "show_plugin_store_page": False, "_temp_app_html": None, "_temp_app_title": "", "show_video_creator": False, "video_script": None, "_open_full_html": None, "_open_full_title": "", "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
     "custom_plugins": {}, "tool_creator_html": None, "tool_creator_mode": None, "tool_creator_name": "",
+    "_plugin_ai_results": {}, "_plugin_batch_results": {}, "_last_plugin_call": "", "_last_plugin_batch_call": "",
     "visit_count": 0, "session_restored": False,
 }
 for k, v in defaults.items():
@@ -48,139 +49,427 @@ for k, v in defaults.items():
 # ── Theme CSS ──────────────────────────────────────────────────
 def inject_theme():
     dark = st.session_state.dark_mode
-    bg        = "#0d1117" if dark else "#f8f9fa"
-    card_bg   = "#161b22" if dark else "#ffffff"
-    text      = "#e6edf3" if dark else "#1a1a2e"
-    subtext   = "#8b949e" if dark else "#6c757d"
-    accent    = "#58a6ff" if dark else "#0066cc"
-    border    = "#30363d" if dark else "#dee2e6"
-    hero_grad = "linear-gradient(135deg,#0d1117 0%,#161b22 50%,#0d1117 100%)" if dark \
-                else "linear-gradient(135deg,#e8f4f8 0%,#dbeafe 50%,#e8f4f8 100%)"
-    btn_bg    = "#21262d" if dark else "#e9ecef"
-    inp_bg    = "#0d1117" if dark else "#ffffff"
+    bg       = "#060d1a" if dark else "#f0f4fa"
+    card_bg  = "#0d1627" if dark else "#ffffff"
+    card2    = "#111d2e" if dark else "#f8faff"
+    text     = "#e8f0fe" if dark else "#0f1923"
+    subtext  = "#7b92b2" if dark else "#5a7090"
+    accent   = "#4f9eff" if dark else "#1a6ef7"
+    border   = "#1c2d45" if dark else "#dce6f0"
+    glow     = "rgba(79,158,255,0.18)" if dark else "rgba(26,110,247,0.10)"
 
     st.markdown(f"""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
 
     html, body, [class*="css"] {{
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, sans-serif !important;
         background-color: {bg} !important;
         color: {text} !important;
     }}
     #MainMenu, footer, header {{ visibility: hidden; }}
-    .block-container {{ padding-top: 0.5rem; max-width: 800px; }}
+    .block-container {{ padding-top: 0.3rem !important; max-width: 1280px !important; }}
 
-    /* ── Hero section ── */
-    .hero {{
-        background: {hero_grad};
-        border: 1px solid {border};
-        border-radius: 16px;
-        padding: 48px 32px;
-        text-align: center;
-        margin-bottom: 28px;
-    }}
-    .hero-title {{
-        font-size: 3rem;
-        font-weight: 700;
-        background: linear-gradient(90deg, #58a6ff, #79c0ff, #a5d6ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0 0 8px 0;
-        line-height: 1.1;
-    }}
-    .hero-sub {{
-        font-size: 1.15rem;
-        color: {subtext};
-        margin-bottom: 28px;
-    }}
-    .feature-grid {{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
-        margin: 24px 0;
-    }}
-    .feature-card {{
-        background: {card_bg};
-        border: 1px solid {border};
-        border-radius: 12px;
-        padding: 18px;
-        text-align: left;
-    }}
-    .feature-icon {{ font-size: 1.6rem; margin-bottom: 8px; }}
-    .feature-title {{ font-weight: 600; color: {text}; margin-bottom: 4px; }}
-    .feature-desc {{ font-size: 0.85rem; color: {subtext}; }}
-
-    /* ── Chat ── */
-    .stChatMessage {{ background: {card_bg} !important; border: 1px solid {border} !important; border-radius: 12px !important; }}
-
-    /* ── Solver box ── */
-    .solver-box {{
-        background: {card_bg};
-        border: 1px solid {accent};
-        border-radius: 12px;
-        padding: 20px;
-        margin: 12px 0;
-    }}
-    .solver-title {{ color: {accent}; font-weight: 600; font-size: 1rem; margin-bottom: 8px; }}
-
-    /* ── Buttons ── */
-    .stButton > button {{
-        border-radius: 8px;
-        border: 1px solid {border};
-        background: {btn_bg};
-        color: {text};
-        font-family: 'Inter', sans-serif;
-        transition: all 0.2s;
-    }}
-    .stButton > button:hover {{
-        border-color: {accent};
-        color: {accent};
+    /* ══ BACKGROUND MESH ══ */
+    .stApp {{
+        background:
+          radial-gradient(ellipse 80% 50% at 20% 10%, {'rgba(79,158,255,0.09)' if dark else 'rgba(26,110,247,0.06)'} 0%, transparent 60%),
+          radial-gradient(ellipse 60% 40% at 80% 90%, {'rgba(168,85,247,0.08)' if dark else 'rgba(168,85,247,0.05)'} 0%, transparent 50%),
+          radial-gradient(circle at 50% 0%, {'rgba(56,189,248,0.08)' if dark else 'rgba(59,130,246,0.05)'} 0%, transparent 28%),
+          linear-gradient(180deg, transparent 0%, {'rgba(255,255,255,0.01)' if dark else 'rgba(255,255,255,0.3)'} 100%),
+          {bg} !important;
     }}
 
-    /* ── Inputs ── */
-    .stTextInput > div > div > input,
-    .stTextArea > div > div > textarea {{
-        background: {inp_bg} !important;
+    /* ══ NAVBAR ══ */
+    .physiq-navbar {{
+        background: {'rgba(6,13,26,0.96)' if dark else 'rgba(240,244,250,0.96)'} !important;
+        backdrop-filter: blur(20px) saturate(200%) !important;
+        border-bottom: 1px solid {'rgba(79,158,255,0.12)' if dark else 'rgba(26,110,247,0.10)'} !important;
+        box-shadow: 0 2px 30px {'rgba(0,0,0,0.4)' if dark else 'rgba(0,0,0,0.08)'} !important;
+    }}
+
+    /* ══ CHAT MESSAGES ══ */
+    [data-testid="stChatMessage"] {{
+        border-radius: 18px !important;
+        padding: 6px 10px !important;
+        margin: 4px 0 !important;
+        transition: transform 0.15s !important;
+    }}
+    [data-testid="stChatMessage"]:hover {{ transform: translateY(-1px); }}
+    [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {{
+        background: {'linear-gradient(135deg,rgba(79,158,255,0.10),rgba(79,158,255,0.05))' if dark else 'linear-gradient(135deg,rgba(26,110,247,0.07),rgba(26,110,247,0.03))'} !important;
+        border: 1px solid {'rgba(79,158,255,0.18)' if dark else 'rgba(26,110,247,0.14)'} !important;
+    }}
+    [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {{
+        background: {'linear-gradient(135deg,rgba(17,29,46,0.95),rgba(13,22,39,0.90))' if dark else 'rgba(255,255,255,0.95)'} !important;
         border: 1px solid {border} !important;
+        backdrop-filter: blur(12px) !important;
+    }}
+
+    /* ══ CHAT INPUT ══ */
+    [data-testid="stChatInput"] {{
+        background: {'rgba(13,22,39,0.8)' if dark else 'rgba(255,255,255,0.9)'} !important;
+        border: 1px solid {border} !important;
+        border-radius: 16px !important;
+        backdrop-filter: blur(10px) !important;
+    }}
+    [data-testid="stChatInput"]:focus-within {{
+        border-color: {accent} !important;
+        box-shadow: 0 0 0 3px {glow} !important;
+    }}
+    [data-testid="stChatInput"] textarea {{
+        background: transparent !important;
         color: {text} !important;
-        border-radius: 8px !important;
+        font-size: 14px !important;
     }}
 
-    /* ── Tabs ── */
-    .stTabs [data-baseweb="tab"] {{
-        color: {subtext} !important;
-    }}
-    .stTabs [aria-selected="true"] {{
-        color: {accent} !important;
-    }}
-
-    /* ── Sidebar ── */
-    section[data-testid="stSidebar"] {{
-        background: {card_bg} !important;
+    /* ══ SIDEBAR ══ */
+    [data-testid="stSidebar"] {{
+        background: {'linear-gradient(180deg,#08101f 0%,#060d1a 100%)' if dark else 'linear-gradient(180deg,#eef3fa 0%,#f0f4fa 100%)'} !important;
         border-right: 1px solid {border} !important;
     }}
+    [data-testid="stSidebarContent"] {{ padding: 0.8rem 0.9rem !important; }}
 
-    /* ── Confidence badge ── */
-    .conf-high   {{ color: #3fb950; font-weight: 600; }}
-    .conf-med    {{ color: #d29922; font-weight: 600; }}
-    .conf-low    {{ color: #f85149; font-weight: 600; }}
+    /* ══ BUTTONS ══ */
+    .stButton > button {{
+        border-radius: 12px !important;
+        border: 1px solid {border} !important;
+        background: {'rgba(17,29,46,0.8)' if dark else 'rgba(240,244,250,0.9)'} !important;
+        color: {text} !important;
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 13px !important;
+        padding: 6px 14px !important;
+        transition: all 0.18s cubic-bezier(.4,0,.2,1) !important;
+        backdrop-filter: blur(8px) !important;
+    }}
+    .stButton > button:hover {{
+        border-color: {accent} !important;
+        background: {'rgba(79,158,255,0.12)' if dark else 'rgba(26,110,247,0.08)'} !important;
+        color: {accent} !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 16px {glow} !important;
+    }}
+    .stButton > button:active {{ transform: translateY(0) scale(0.98) !important; }}
 
-    /* ── Divider ── */
-    hr {{ border-color: {border} !important; }}
+    /* ══ INPUTS ══ */
+    .stTextInput > div > div > input,
+    .stTextArea > div > div > textarea {{
+        background: {'rgba(13,22,39,0.8)' if dark else 'rgba(255,255,255,0.9)'} !important;
+        border: 1px solid {border} !important;
+        color: {text} !important;
+        border-radius: 12px !important;
+        font-family: 'Inter', sans-serif !important;
+        transition: border-color 0.2s, box-shadow 0.2s !important;
+    }}
+    .stTextInput > div > div > input:focus,
+    .stTextArea > div > div > textarea:focus {{
+        border-color: {accent} !important;
+        box-shadow: 0 0 0 3px {glow} !important;
+        outline: none !important;
+    }}
 
-    /* ── Section headers ── */
+    /* ══ SELECT BOX ══ */
+    .stSelectbox > div > div {{
+        background: {'rgba(13,22,39,0.8)' if dark else '#fff'} !important;
+        border-color: {border} !important;
+        border-radius: 12px !important;
+    }}
+
+    /* ══ TOGGLES ══ */
+    [data-testid="stToggle"] > label {{ border-radius: 20px !important; }}
+
+    /* ══ EXPANDERS ══ */
+    [data-testid="stExpander"] {{
+        border: 1px solid {border} !important;
+        border-radius: 14px !important;
+        background: {'rgba(13,22,39,0.6)' if dark else 'rgba(248,250,255,0.9)'} !important;
+        backdrop-filter: blur(8px) !important;
+    }}
+    [data-testid="stExpander"] summary {{
+        border-radius: 14px !important;
+        font-weight: 500 !important;
+    }}
+
+    /* ══ PROGRESS BAR ══ */
+    [data-testid="stProgressBar"] > div > div {{
+        background: linear-gradient(90deg, {accent}, #7c3aed) !important;
+        border-radius: 99px !important;
+    }}
+
+    /* ══ ALERTS ══ */
+    .stAlert {{ border-radius: 14px !important; border-width: 1px !important; }}
+    [data-testid="stAlertSuccess"] {{ background: {'rgba(34,197,94,0.08)' if dark else 'rgba(34,197,94,0.06)'} !important; border-color: rgba(34,197,94,0.25) !important; }}
+    [data-testid="stAlertInfo"]    {{ background: {'rgba(79,158,255,0.08)' if dark else 'rgba(26,110,247,0.06)'} !important; border-color: {glow} !important; }}
+    [data-testid="stAlertWarning"] {{ background: {'rgba(245,158,11,0.08)' if dark else 'rgba(245,158,11,0.05)'} !important; border-color: rgba(245,158,11,0.25) !important; }}
+
+    /* ══ TABS ══ */
+    .stTabs [data-baseweb="tab-list"] {{
+        background: {'rgba(13,22,39,0.6)' if dark else 'rgba(240,244,250,0.8)'} !important;
+        border-radius: 12px !important;
+        padding: 4px !important;
+        gap: 2px !important;
+    }}
+    .stTabs [data-baseweb="tab"] {{
+        border-radius: 10px !important;
+        color: {subtext} !important;
+        font-weight: 500 !important;
+        transition: all 0.18s !important;
+    }}
+    .stTabs [aria-selected="true"] {{
+        background: {'rgba(79,158,255,0.15)' if dark else 'rgba(26,110,247,0.10)'} !important;
+        color: {accent} !important;
+        font-weight: 700 !important;
+    }}
+
+    /* ══ SCROLLBAR ══ */
+    ::-webkit-scrollbar {{ width: 5px; height: 5px; }}
+    ::-webkit-scrollbar-track {{ background: transparent; }}
+    ::-webkit-scrollbar-thumb {{ background: {'#1c2d45' if dark else '#c8d8e8'}; border-radius: 99px; }}
+    ::-webkit-scrollbar-thumb:hover {{ background: {accent}; }}
+
+    /* ══ SECTION LABELS ══ */
     .section-label {{
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 1.5px;
+        font-size: 10px; font-weight: 700; letter-spacing: 1.8px;
+        color: {subtext}; text-transform: uppercase;
+        margin: 14px 0 6px 0; opacity: 0.8;
+    }}
+
+    /* ══ CONFIDENCE BADGES ══ */
+    .conf-high {{ background: rgba(34,197,94,0.12); color:#22c55e;
+        padding: 3px 12px; border-radius: 99px; font-size: 11px; font-weight: 700;
+        border: 1px solid rgba(34,197,94,0.25); }}
+    .conf-med  {{ background: rgba(245,158,11,0.12); color:#f59e0b;
+        padding: 3px 12px; border-radius: 99px; font-size: 11px; font-weight: 700;
+        border: 1px solid rgba(245,158,11,0.25); }}
+    .conf-low  {{ background: rgba(248,113,113,0.12); color:#f87171;
+        padding: 3px 12px; border-radius: 99px; font-size: 11px; font-weight: 700;
+        border: 1px solid rgba(248,113,113,0.25); }}
+
+    /* ══ HERO ══ */
+    .hero {{
+        background: {'linear-gradient(135deg,#080f1e 0%,#0d1627 40%,#0a1220 100%)' if dark else 'linear-gradient(135deg,#eef3fa 0%,#dce8ff 100%)'};
+        border: 1px solid {border};
+        border-radius: 24px;
+        padding: 52px 36px;
+        text-align: center;
+        margin-bottom: 28px;
+        position: relative;
+        overflow: hidden;
+    }}
+    .hero::before {{
+        content: '';
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% 0%, {glow}, transparent);
+        pointer-events: none;
+    }}
+    .hero-title {{
+        font-size: 3.2rem; font-weight: 900;
+        background: linear-gradient(135deg, #4f9eff 0%, #a78bfa 50%, #4f9eff 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        animation: shimmer 4s linear infinite;
+        margin: 0 0 8px 0; line-height: 1.1;
+    }}
+    @keyframes shimmer {{ to {{ background-position: 200% center; }} }}
+    .hero-sub {{ font-size: 1.1rem; color: {subtext}; margin-bottom: 28px; }}
+    .hero-mini {{
+        display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+        margin-top: 8px;
+    }}
+    .hero-pill {{
+        padding: 8px 14px; border-radius: 999px;
+        background: {'rgba(255,255,255,0.06)' if dark else 'rgba(255,255,255,0.7)'};
+        border: 1px solid {'rgba(79,158,255,0.16)' if dark else 'rgba(26,110,247,0.10)'};
+        font-size: 12px; font-weight: 700; color: {text};
+        box-shadow: 0 8px 24px {'rgba(0,0,0,0.2)' if dark else 'rgba(26,110,247,0.08)'};
+    }}
+
+    /* ══ COMMAND DECK ══ */
+    .command-deck {{
+        position: relative;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at top right, {'rgba(96,165,250,0.28)' if dark else 'rgba(59,130,246,0.15)'}, transparent 28%),
+          radial-gradient(circle at bottom left, {'rgba(192,132,252,0.16)' if dark else 'rgba(168,85,247,0.10)'}, transparent 36%),
+          {'linear-gradient(145deg,rgba(8,15,30,0.96),rgba(12,22,39,0.94))' if dark else 'linear-gradient(145deg,rgba(255,255,255,0.96),rgba(240,246,255,0.98))'};
+        border: 1px solid {'rgba(79,158,255,0.20)' if dark else 'rgba(26,110,247,0.12)'};
+        border-radius: 26px;
+        padding: 24px;
+        margin: 10px 0 18px 0;
+        box-shadow: 0 20px 60px {'rgba(0,0,0,0.28)' if dark else 'rgba(26,110,247,0.12)'};
+    }}
+    .command-deck::before {{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(120deg, transparent 0%, {'rgba(255,255,255,0.04)' if dark else 'rgba(255,255,255,0.55)'} 45%, transparent 70%);
+        pointer-events: none;
+    }}
+    .command-grid {{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 16px;
+        position: relative;
+        z-index: 1;
+    }}
+    .command-kicker {{
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: {accent};
+        font-weight: 800;
+        margin-bottom: 8px;
+    }}
+    .command-title {{
+        font-size: 2rem;
+        line-height: 1.04;
+        font-weight: 900;
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        margin: 0 0 10px 0;
+        color: {text};
+    }}
+    .command-copy {{
+        font-size: 14px;
+        line-height: 1.65;
+        color: {subtext};
+        max-width: 560px;
+    }}
+    .command-chip-row {{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+    }}
+    .command-chip {{
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: {'rgba(13,22,39,0.62)' if dark else 'rgba(255,255,255,0.78)'};
+        border: 1px solid {'rgba(79,158,255,0.18)' if dark else 'rgba(26,110,247,0.12)'};
+        color: {text};
+        font-size: 12px;
+        font-weight: 700;
+    }}
+    .command-card-grid {{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }}
+    .command-card {{
+        padding: 14px 14px 16px 14px;
+        border-radius: 18px;
+        background: {'rgba(9,16,30,0.72)' if dark else 'rgba(255,255,255,0.82)'};
+        border: 1px solid {'rgba(79,158,255,0.12)' if dark else 'rgba(26,110,247,0.10)'};
+        min-height: 102px;
+        backdrop-filter: blur(12px);
+    }}
+    .command-card-label {{
+        font-size: 11px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         color: {subtext};
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        font-weight: 700;
     }}
+    .command-card-value {{
+        font-size: 1.15rem;
+        color: {text};
+        font-weight: 800;
+        margin-bottom: 6px;
+    }}
+    .command-card-note {{
+        color: {subtext};
+        font-size: 12px;
+        line-height: 1.45;
+    }}
+    @media (max-width: 850px) {{
+        .command-grid,
+        .feature-grid {{
+            grid-template-columns: 1fr;
+        }}
+        .command-card-grid {{
+            grid-template-columns: 1fr 1fr;
+        }}
+    }}
+
+    /* ══ FEATURE CARDS ══ */
+    .feature-grid {{
+        display: grid; grid-template-columns: repeat(2, 1fr);
+        gap: 14px; margin: 24px 0;
+    }}
+    .feature-card {{
+        background: {card2};
+        border: 1px solid {border};
+        border-radius: 16px; padding: 20px;
+        text-align: left;
+        transition: all 0.2s cubic-bezier(.4,0,.2,1);
+        position: relative; overflow: hidden;
+    }}
+    .feature-card::before {{
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(135deg, {glow}, transparent);
+        opacity: 0; transition: opacity 0.2s;
+    }}
+    .feature-card:hover {{ transform: translateY(-2px); border-color: {accent};
+        box-shadow: 0 8px 32px {glow}; }}
+    .feature-card:hover::before {{ opacity: 1; }}
+    .feature-icon {{ font-size: 1.8rem; margin-bottom: 10px; }}
+    .feature-title {{ font-weight: 700; color: {text}; margin-bottom: 4px; font-size: 0.95rem; }}
+    .feature-desc {{ font-size: 0.82rem; color: {subtext}; line-height: 1.5; }}
+
+    /* ══ SOLVER BOX ══ */
+    .solver-box {{
+        background: {card_bg}; border: 1px solid {accent}40;
+        border-radius: 16px; padding: 20px; margin: 12px 0;
+    }}
+    .solver-title {{ color: {accent}; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }}
+
+    /* ══ CHAT CONTAINER ══ */
+    .stChatMessage {{ background: {card_bg} !important; border: 1px solid {border} !important; border-radius: 14px !important; }}
+
+    /* ══ DIVIDER ══ */
+    hr {{ border-color: {border} !important; opacity: 0.5 !important; }}
+
+    /* ══ TEMP APP CONTAINER ══ */
+    .temp-app-container {{
+        border: 1px solid {'rgba(79,158,255,0.3)' if dark else 'rgba(26,110,247,0.2)'};
+        border-radius: 18px; overflow: hidden;
+        box-shadow: 0 8px 40px {glow};
+    }}
+
+    /* ══ SPINNER ══ */
+    [data-testid="stSpinner"] {{
+        border-color: {accent} !important;
+    }}
+
+    /* ══ MATH BLOCK ══ */
+    .math-block {{
+        background: {'rgba(79,158,255,0.06)' if dark else 'rgba(26,110,247,0.04)'};
+        border: 1px solid {'rgba(79,158,255,0.2)' if dark else 'rgba(26,110,247,0.15)'};
+        border-radius: 12px; padding: 12px 18px; margin: 10px 0;
+        overflow-x: auto; font-family: 'KaTeX_Math', serif;
+    }}
+
+    /* ══ FLOATING PLUGIN BUTTON ══ */
+    .fab-plugin {{
+        position: fixed; bottom: 85px; right: 22px; z-index: 9998;
+        width: 52px; height: 52px; border-radius: 50%;
+        background: linear-gradient(135deg, #1a5ef7, #4f9eff);
+        border: 1px solid rgba(79,158,255,0.4);
+        cursor: pointer; font-size: 22px;
+        box-shadow: 0 4px 24px rgba(79,158,255,0.45), inset 0 1px 0 rgba(255,255,255,0.15);
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s cubic-bezier(.4,0,.2,1); color: white;
+        animation: fab-pulse 3s ease-in-out infinite;
+    }}
+    @keyframes fab-pulse {{
+        0%, 100% {{ box-shadow: 0 4px 24px rgba(79,158,255,0.45); }}
+        50% {{ box-shadow: 0 4px 32px rgba(79,158,255,0.7); }}
+    }}
+    .fab-plugin:hover {{ transform: scale(1.12) rotate(8deg); }}
     </style>
     """, unsafe_allow_html=True)
-
 inject_theme()
 
 # ══════════════════════════════════════════════════════════════
@@ -221,6 +510,11 @@ def show_landing():
         <div class="hero-title">⚛️ PhysIQ</div>
         <div class="hero-sub">Your AI Science Tutor — Physics & Chemistry<br>
         Class 10 · Class 11 · Class 12 · College Level</div>
+        <div class="hero-mini">
+            <span class="hero-pill">Knowledge Base + Live Search</span>
+            <span class="hero-pill">Voice, Visuals, and Plugins</span>
+            <span class="hero-pill">Numericals to Research Workflows</span>
+        </div>
         <div class="feature-grid">
             <div class="feature-card">
                 <div class="feature-icon">🧠</div>
@@ -524,31 +818,27 @@ def render_math_answer(text):
         return
 
     # Use KaTeX to render
-    safe = text.replace('`','\`').replace('\\','\\\\')
-    katex_html = f"""
+    safe = text.replace('`',"'").replace("\n","<br>")
+    safe_text = text.replace("<","&lt;").replace(">","&gt;").replace(chr(10),"<br>")
+    # Re-allow math tags
+    safe_text = safe_text.replace("&lt;br&gt;","<br>")
+    katex_html = """
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.getElementById('math-content'),{{
-    delimiters:[
-      {{left:'$$',right:'$$',display:true}},
-      {{left:'$',right:'$',display:false}},
-      {{left:'\\[',right:'\\]',display:true}},
-      {{left:'\\(',right:'\\)',display:false}},
-      {{left:'\\\\[',right:'\\\\]',display:true}}
-    ],
-    throwOnError:false
-  }})"></script>
+  onload="renderMathInElement(document.getElementById('mc'),{delimiters:[
+    {left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},
+    {left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}
+  ],throwOnError:false})"></script>
 <style>
-  #math-content {{
-    font-family:'Inter',sans-serif; color:#e6edf3;
-    font-size:14px; line-height:1.8; padding:4px 0;
-  }}
-  #math-content strong {{ color:#58a6ff; }}
-  #math-content .katex {{ color:#ffd166; font-size:1.1em; }}
-  #math-content code {{ background:#161b22; padding:2px 6px; border-radius:4px; font-size:12px; }}
+#mc{font-family:Inter,sans-serif;color:#e8f0fe;font-size:14px;line-height:1.85;padding:6px 0}
+#mc strong{color:#4f9eff}
+#mc .katex{color:#fbbf24;font-size:1.12em}
+#mc code{background:#0d1627;padding:2px 8px;border-radius:6px;font-size:12px;
+  font-family:'JetBrains Mono',monospace;color:#34d399}
+#mc p{margin:6px 0}
 </style>
-<div id="math-content">{text.replace(chr(10), '<br>')}</div>
+<div id="mc">""" + safe_text + """</div>
 """
     st.components.v1.html(katex_html, height=max(200, text.count("\n")*30 + 200), scrolling=True)
 
@@ -651,16 +941,25 @@ def display_temp_app(html_content, title="Interactive App"):
 
 
 def show_plugin_store_page():
-    """Full-page plugin store with 3 tabs."""
+    """Full-page plugin store with 4 tabs."""
     dark = st.session_state.dark_mode
     bg2 = "#161b22" if dark else "#fff"
     acc = "#58a6ff"
 
-    st.markdown("""
-    <div style="background:linear-gradient(135deg,#1f6feb15,#388bfd08);
-      border:1px solid rgba(88,166,255,0.2);border-radius:16px;padding:20px 24px;margin-bottom:20px">
-      <div style="font-size:1.6rem;font-weight:800;color:#58a6ff;margin-bottom:4px">🔌 Plugin Store</div>
-      <div style="color:#8b949e;font-size:13px">Launch built-in tools, browse community plugins, or build your own</div>
+    dark = st.session_state.dark_mode
+    acc2 = "#4f9eff" if dark else "#1a6ef7"
+    st.markdown(f"""
+    <div style="background:linear-gradient(135deg,{'rgba(79,158,255,0.10),rgba(167,139,250,0.07)' if dark else 'rgba(26,110,247,0.07),rgba(124,58,237,0.05)'});
+      border:1px solid {'rgba(79,158,255,0.25)' if dark else 'rgba(26,110,247,0.18)'};
+      border-radius:20px;padding:24px 28px;margin-bottom:20px;
+      background-image:linear-gradient(135deg,{'rgba(79,158,255,0.10),rgba(167,139,250,0.07)' if dark else 'rgba(26,110,247,0.07),rgba(124,58,237,0.05)'})">
+      <div style="font-size:1.8rem;font-weight:900;background:linear-gradient(135deg,{acc2},#a78bfa);
+        -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px">
+        🔌 Plugin Store
+      </div>
+      <div style="color:{'#7b92b2' if dark else '#5a7090'};font-size:13px">
+        Launch built-in tools · Browse community plugins · Build your own with Tool Creator
+      </div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -668,7 +967,7 @@ def show_plugin_store_page():
         st.session_state.show_plugin_store_page = False
         st.rerun()
 
-    tab1, tab2, tab3 = st.tabs(["🔌 Built-in Plugins", "🌐 Community Store", "📤 My Plugins"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🔌 Built-in Plugins", "🧰 Your Plugins", "🌐 Community Store", "📤 My Plugins"])
 
     with tab1:
         st.caption("Click any plugin to open it. Plugins also auto-activate based on your question.")
@@ -691,6 +990,46 @@ def show_plugin_store_page():
                     st.rerun()
 
     with tab2:
+        st.markdown("### 🧰 Your Plugins")
+        custom_plugins = st.session_state.get("custom_plugins", {})
+        plugin_catalog = dict(PLUGINS)
+        plugin_catalog.update(custom_plugins)
+        st.caption(f"Everything currently available in your PhysIQ workspace: {len(plugin_catalog)} plugins")
+
+        if plugin_catalog:
+            ordered_plugins = list(PLUGINS.items()) + [
+                (key, plugin) for key, plugin in custom_plugins.items()
+            ]
+            cols = st.columns(3)
+            for i, (key, plugin) in enumerate(ordered_plugins):
+                with cols[i % 3]:
+                    is_custom = key in custom_plugins
+                    is_open = st.session_state.get(f"plugin_open_{key}", False)
+                    color = plugin.get("color", "#ff8c42" if is_custom else "#58a6ff")
+                    source = "Custom / Installed" if is_custom else "Built-in"
+                    st.markdown(f"""
+                    <div style="background:{bg2};border:1px solid {color}30;border-top:3px solid {color};
+                    border-radius:12px;padding:14px;margin-bottom:8px;min-height:128px">
+                    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+                      <div style="font-size:1.4rem">{plugin.get('icon','🔧')}</div>
+                      <div style="font-size:10px;color:#8b949e;background:{color}12;border:1px solid {color}22;
+                      padding:4px 8px;border-radius:999px">{source}</div>
+                    </div>
+                    <div style="color:{color};font-weight:700;font-size:13px;margin-top:6px">{plugin.get('name','Plugin')}</div>
+                    <div style="color:#8b949e;font-size:11px;margin:4px 0 6px">{plugin.get('description','')}</div>
+                    <div style="font-size:10px;color:{'#22c55e' if is_open else '#6b7280'}">
+                    {'Open now' if is_open else 'Ready to launch'}
+                    </div>
+                    </div>""", unsafe_allow_html=True)
+                    launch_label = "✕ Close" if is_open else "▶ Open"
+                    if st.button(launch_label, key=f"your_plugins_launch_{key}", use_container_width=True):
+                        st.session_state[f"plugin_open_{key}"] = not is_open
+                        st.session_state.show_plugin_store_page = False
+                        st.rerun()
+        else:
+            st.info("You do not have any plugins available yet.")
+
+    with tab3:
         st.markdown("### 🌐 Community Plugins")
         st.caption("Plugins built and shared by PhysIQ users")
         community_plugins = []
@@ -733,7 +1072,7 @@ def show_plugin_store_page():
         else:
             st.info("🌐 No community plugins yet. Be the first to publish using Tool Creator!")
 
-    with tab3:
+    with tab4:
         st.markdown("### 📤 Your Published Plugins")
         my_plugins = []
         try:
@@ -855,8 +1194,8 @@ Student's question: {question}
 
 IMPORTANT: If the answer contains mathematical formulas, use LaTeX notation:
 - Inline math: $formula$  e.g. $F = ma$, $E = mc^2$
-- Display math: $$formula$$  e.g. $$\frac{{v^2}}{{r}} = \omega^2 r$$
-- Use proper LaTeX: \frac, \sqrt, \mid, \text, \alpha, \beta, \Delta, \sum, \int, \times, \cdot
+- Display math: $$formula$$  e.g. $$\\frac{{v^2}}{{r}} = \\omega^2 r$$
+- Use proper LaTeX: \\frac, \\sqrt, \\mid, \\text, \\alpha, \\beta, \\Delta, \\sum, \\int, \\times, \\cdot
 - The user wrote: [{question}] — understand any LaTeX/symbols in their question too
 
 Answer clearly and helpfully:"""
@@ -3013,27 +3352,580 @@ window.addEventListener('message',e=>{{
 </script></body></html>"""
 
 
+def _listify_profile_value(value):
+    """Normalise profile values into compact string lists."""
+    if value is None:
+        return []
+    if isinstance(value, list):
+        items = value
+    else:
+        items = [value]
+    out = []
+    for item in items:
+        text = str(item).strip()
+        if text and text not in out:
+            out.append(text)
+    return out
+
+
+def normalize_plugin_profile(profile):
+    """Merge alias fields so plugins can rely on one clean profile shape."""
+    profile = dict(profile or {})
+    favorite_subjects = _listify_profile_value(profile.get("favorite_subjects")) + [
+        item for item in _listify_profile_value(profile.get("favourite_topics"))
+        if item not in _listify_profile_value(profile.get("favorite_subjects"))
+    ]
+    weak_topics = _listify_profile_value(profile.get("weak_topics")) + [
+        item for item in _listify_profile_value(profile.get("weak_concepts"))
+        if item not in _listify_profile_value(profile.get("weak_topics"))
+    ]
+    strong_topics = _listify_profile_value(profile.get("strong_topics")) + [
+        item for item in _listify_profile_value(profile.get("strong_concepts"))
+        if item not in _listify_profile_value(profile.get("strong_topics"))
+    ]
+    goals = _listify_profile_value(profile.get("goals"))
+    recommended_next = _listify_profile_value(profile.get("recommended_next"))
+    improvement_plan = _listify_profile_value(profile.get("improvement_plan"))
+
+    profile["favorite_subjects"] = favorite_subjects
+    profile["favourite_topics"] = favorite_subjects
+    profile["weak_topics"] = weak_topics
+    profile["weak_concepts"] = weak_topics
+    profile["strong_topics"] = strong_topics
+    profile["strong_concepts"] = strong_topics
+    profile["goals"] = goals
+    profile["recommended_next"] = recommended_next
+    profile["improvement_plan"] = improvement_plan
+    return profile
+
+
+def build_plugin_profile_context(profile):
+    """Create a compact learner context string for plugin-side AI calls."""
+    profile = normalize_plugin_profile(profile)
+    lines = []
+
+    def add(label, value):
+        text = ""
+        if isinstance(value, list):
+            text = ", ".join([str(v).strip() for v in value if str(v).strip()])
+        else:
+            text = str(value or "").strip()
+        if text:
+            lines.append(f"{label}: {text}")
+
+    add("Learner name", profile.get("name"))
+    add("Learning style", profile.get("learning_style"))
+    add("Preferred detail level", profile.get("preferred_detail_level"))
+    add("Asking pattern", profile.get("asking_pattern"))
+    add("Personality", profile.get("personality"))
+    add("How to reply", profile.get("how_to_reply"))
+    add("Favorite subjects and topics", profile.get("favorite_subjects"))
+    add("Strong topics and concepts", profile.get("strong_topics"))
+    add("Weak topics and concepts", profile.get("weak_topics"))
+    add("Goals", profile.get("goals"))
+    add("Strengths summary", profile.get("strengths_summary"))
+    add("Weakness summary", profile.get("weakness_summary"))
+    add("Recommended next", profile.get("recommended_next"))
+    add("Improvement plan", profile.get("improvement_plan"))
+    add("Topics explored", profile.get("topics_explored"))
+    add("Engagement level", profile.get("engagement_level"))
+    add("Overall summary", profile.get("summary"))
+    return "\n".join(lines)
+
+
+def build_plugin_runtime_profile():
+    """Small profile payload available to custom plugins."""
+    profile = normalize_plugin_profile(st.session_state.get("user_profile") or {})
+    user = st.session_state.get("user")
+    payload = {
+        "name": "",
+        "email": "",
+        "favorite_subjects": profile.get("favorite_subjects", []),
+        "weak_topics": profile.get("weak_topics", []),
+        "strong_topics": profile.get("strong_topics", []),
+        "learning_style": profile.get("learning_style", ""),
+        "goals": profile.get("goals", []),
+        "summary": profile.get("summary", ""),
+    }
+    if user:
+        try:
+            payload["name"] = user.user_metadata.get("full_name", "") or ""
+        except Exception:
+            payload["name"] = ""
+        try:
+            payload["email"] = user.email or ""
+        except Exception:
+            payload["email"] = ""
+    for key, value in profile.items():
+        if key not in payload:
+            payload[key] = value
+    return normalize_plugin_profile(payload)
+
+
+def inject_plugin_runtime(html_content: str, plugin_key: str = "") -> str:
+    """Inject PhysIQ helper APIs into custom/runtime plugin HTML."""
+    import json
+
+    runtime_profile = build_plugin_runtime_profile()
+    last_ai = st.session_state.get("_plugin_ai_results", {}).get(plugin_key, {})
+    last_batch = st.session_state.get("_plugin_batch_results", {}).get(plugin_key, {})
+    profile_context = build_plugin_profile_context(runtime_profile)
+    def _js(value):
+        return json.dumps(value).replace("<", "\\u003C").replace(">", "\\u003E").replace("&", "\\u0026")
+    bridge = f"""
+<script>
+(function(){{
+  const PHYSIQ_PLUGIN_KEY = {_js(plugin_key)};
+  const PHYSIQ_PROFILE = {_js(runtime_profile)};
+  const PHYSIQ_LAST_AI = {_js(last_ai)};
+  const PHYSIQ_LAST_BATCH = {_js(last_batch)};
+  const PHYSIQ_PROFILE_CONTEXT = {_js(profile_context)};
+
+  function safeText(value) {{
+    if (value == null) return '';
+    if (Array.isArray(value)) return value.join(', ');
+    if (typeof value === 'object') return JSON.stringify(value, null, 2);
+    return String(value);
+  }}
+
+  function uniqueList(items) {{
+    const seen = new Set();
+    const out = [];
+    (items || []).forEach(function(item) {{
+      const text = String(item || '').trim();
+      if (text && !seen.has(text)) {{
+        seen.add(text);
+        out.push(text);
+      }}
+    }});
+    return out;
+  }}
+
+  function profileList() {{
+    const items = [];
+    for (let i = 0; i < arguments.length; i += 1) {{
+      const value = PHYSIQ_PROFILE[arguments[i]];
+      if (Array.isArray(value)) items.push.apply(items, value);
+      else if (value != null && value !== '') items.push(value);
+    }}
+    return uniqueList(items);
+  }}
+
+  function readLocationHref(target) {{
+    try {{
+      return target && target.location && target.location.href ? target.location.href : '';
+    }} catch (err) {{
+      return '';
+    }}
+  }}
+
+  function resolveHostUrl() {{
+    return readLocationHref(window.parent) ||
+      readLocationHref(window.top) ||
+      document.referrer ||
+      readLocationHref(window) ||
+      '';
+  }}
+
+  function navigateHost(url) {{
+    try {{
+      if (window.parent && window.parent !== window && window.parent.location) {{
+        window.parent.location.href = url;
+        return true;
+      }}
+    }} catch (err) {{}}
+    try {{
+      if (window.top && window.top.location) {{
+        window.top.location.href = url;
+        return true;
+      }}
+    }} catch (err) {{}}
+    try {{
+      window.location.href = url;
+      return true;
+    }} catch (err) {{
+      return false;
+    }}
+  }}
+
+  function setSlotText(slot, text) {{
+    if (!slot) return;
+    const el = document.getElementById(slot);
+    if (el) el.textContent = text;
+  }}
+
+  function renderProfileSummary() {{
+    const target = document.getElementById('physiq-profile-summary');
+    const jsonTarget = document.getElementById('physiq-profile-json');
+    const favorite = profileList('favorite_subjects', 'favourite_topics');
+    const weak = profileList('weak_topics', 'weak_concepts');
+    const strong = profileList('strong_topics', 'strong_concepts');
+    const next = profileList('recommended_next');
+    const improvement = profileList('improvement_plan');
+    const detail = safeText(PHYSIQ_PROFILE.preferred_detail_level || PHYSIQ_PROFILE.learning_style || '');
+    const persona = safeText(PHYSIQ_PROFILE.personality || PHYSIQ_PROFILE.asking_pattern || '');
+    const reply = safeText(PHYSIQ_PROFILE.how_to_reply || '');
+    const summaryHtml = `
+      <div style="margin-top:12px;border:1px solid rgba(16,35,63,.10);border-radius:16px;padding:14px;background:#f7fbff">
+        <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#53708f;margin-bottom:10px">Learner Signal</div>
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+          <div><strong style="display:block;margin-bottom:4px">Current focus</strong><div class="muted">${{favorite.length ? favorite.join(', ') : 'Building subject preferences'}}</div></div>
+          <div><strong style="display:block;margin-bottom:4px">Needs support</strong><div class="muted">${{weak.length ? weak.join(', ') : 'No weak topics recorded yet'}}</div></div>
+          <div><strong style="display:block;margin-bottom:4px">Strong areas</strong><div class="muted">${{strong.length ? strong.join(', ') : 'Strengths will appear as the learner uses PhysIQ'}}</div></div>
+          <div><strong style="display:block;margin-bottom:4px">Best response style</strong><div class="muted">${{reply || detail || 'Adapt explanations to the learner'}}</div></div>
+          <div><strong style="display:block;margin-bottom:4px">Personality and pattern</strong><div class="muted">${{persona || 'Learner style not set yet'}}</div></div>
+          <div><strong style="display:block;margin-bottom:4px">Recommended next</strong><div class="muted">${{next.length ? next.join(', ') : improvement.join(', ') || 'Next-step coaching appears here'}}</div></div>
+        </div>
+      </div>`;
+    if (target) target.innerHTML = summaryHtml;
+    else if (jsonTarget) {{
+      const summaryId = 'physiq-profile-summary-inline';
+      let existing = document.getElementById(summaryId);
+      if (!existing) {{
+        existing = document.createElement('div');
+        existing.id = summaryId;
+        jsonTarget.parentNode.insertBefore(existing, jsonTarget);
+      }}
+      existing.innerHTML = summaryHtml;
+    }}
+  }}
+
+  window.__PHYSIQ_PLUGIN_KEY = PHYSIQ_PLUGIN_KEY;
+  window.__PHYSIQ_PROFILE = PHYSIQ_PROFILE;
+  window.__PHYSIQ_LAST_AI = PHYSIQ_LAST_AI;
+  window.__PHYSIQ_LAST_BATCH = PHYSIQ_LAST_BATCH;
+  window.__PHYSIQ_PROFILE_CONTEXT = PHYSIQ_PROFILE_CONTEXT;
+
+  window.UserProfile = function() {{
+    return PHYSIQ_PROFILE;
+  }};
+
+  window.GetAiAnswer = function(prompt, options) {{
+    options = options || {{}};
+    const cleanPrompt = String(prompt || '').trim();
+    if (!cleanPrompt) return null;
+    const payload = {{
+      id: options.id || ('physiq_ai_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8)),
+      plugin_key: options.plugin_key || PHYSIQ_PLUGIN_KEY,
+      slot: options.slot || 'physiq-ai-answer',
+      system: options.system || 'You are PhysIQ helping inside a custom plugin. Give a clear, direct, useful answer.',
+      user: cleanPrompt,
+      max_tokens: options.max_tokens || 500,
+      profile: options.profile || PHYSIQ_PROFILE,
+      profile_context: options.profile_context || PHYSIQ_PROFILE_CONTEXT
+    }};
+    setSlotText(payload.slot, 'PhysIQ is thinking...');
+    try {{
+      const hostUrl = resolveHostUrl();
+      if (!hostUrl) throw new Error('No accessible host URL');
+      const target = new URL(hostUrl);
+      target.searchParams.set('plugin_call', encodeURIComponent(JSON.stringify(payload)));
+      if (!navigateHost(target.toString())) throw new Error('Could not navigate host');
+    }} catch (err) {{
+      setSlotText(payload.slot, 'Could not reach PhysIQ right now.');
+      console.error('PhysIQ plugin bridge failed', err);
+    }}
+    return payload.id;
+  }};
+
+  window.GetAiAnswers = function(items, options) {{
+    options = options || {{}};
+    const requests = (items || []).map(function(item, index) {{
+      const prompt = String((item && item.prompt) || '').trim();
+      if (!prompt) return null;
+      return {{
+        id: (item && item.id) || ('physiq_batch_' + index + '_' + Date.now()),
+        slot: (item && item.slot) || ('physiq-batch-slot-' + index),
+        prompt: prompt,
+        system: (item && item.system) || options.system || 'You are PhysIQ helping across several side-by-side plugin lanes. Keep each lane focused and distinct.',
+        label: (item && item.label) || ('Lane ' + (index + 1)),
+        max_tokens: (item && item.max_tokens) || options.max_tokens || 500
+      }};
+    }}).filter(Boolean);
+    if (!requests.length) return null;
+
+    requests.forEach(function(item) {{
+      setSlotText(item.slot, 'PhysIQ is thinking...');
+    }});
+
+    const payload = {{
+      id: options.id || ('physiq_batch_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8)),
+      plugin_key: options.plugin_key || PHYSIQ_PLUGIN_KEY,
+      requests: requests,
+      profile: options.profile || PHYSIQ_PROFILE,
+      profile_context: options.profile_context || PHYSIQ_PROFILE_CONTEXT,
+      max_tokens: options.max_tokens || 500
+    }};
+
+    try {{
+      const hostUrl = resolveHostUrl();
+      if (!hostUrl) throw new Error('No accessible host URL');
+      const target = new URL(hostUrl);
+      target.searchParams.set('plugin_batch_call', encodeURIComponent(JSON.stringify(payload)));
+      if (!navigateHost(target.toString())) throw new Error('Could not navigate host');
+    }} catch (err) {{
+      requests.forEach(function(item) {{
+        setSlotText(item.slot, 'Could not reach PhysIQ right now.');
+      }});
+      console.error('PhysIQ plugin batch bridge failed', err);
+    }}
+    return payload.id;
+  }};
+
+  function applyProfileBindings() {{
+    document.querySelectorAll('[data-physiq-profile]').forEach(function(el) {{
+      const field = el.getAttribute('data-physiq-profile');
+      if (!field) return;
+      const value = PHYSIQ_PROFILE[field];
+      if (value == null) return;
+      el.textContent = safeText(value);
+    }});
+    const jsonTarget = document.getElementById('physiq-profile-json');
+    if (jsonTarget) jsonTarget.textContent = JSON.stringify(PHYSIQ_PROFILE, null, 2);
+    renderProfileSummary();
+  }}
+
+  function applyAiResult(result) {{
+    if (!result || !result.answer) return;
+    const slot = result.slot || 'physiq-ai-answer';
+    const el = document.getElementById(slot);
+    if (el) el.textContent = result.answer;
+    window.dispatchEvent(new CustomEvent('physiq-ai-response', {{ detail: result }}));
+  }}
+
+  function applyBatchResults(result) {{
+    if (!result || !Array.isArray(result.items)) return;
+    result.items.forEach(function(item) {{
+      if (!item) return;
+      setSlotText(item.slot || 'physiq-ai-answer', item.answer || '');
+    }});
+    window.dispatchEvent(new CustomEvent('physiq-ai-batch-response', {{ detail: result }}));
+  }}
+
+  applyProfileBindings();
+  if (PHYSIQ_LAST_AI && PHYSIQ_LAST_AI.answer) {{
+    setTimeout(function() {{ applyAiResult(PHYSIQ_LAST_AI); }}, 20);
+  }}
+  if (PHYSIQ_LAST_BATCH && PHYSIQ_LAST_BATCH.items) {{
+    setTimeout(function() {{ applyBatchResults(PHYSIQ_LAST_BATCH); }}, 30);
+  }}
+}})();
+</script>"""
+
+    if "</body>" in html_content:
+        return html_content.replace("</body>", bridge + "</body>")
+    return html_content + bridge
+
+
+def build_plugin_ai_system(system_prompt, profile):
+    """Append learner context to plugin AI calls when profile data exists."""
+    base = str(system_prompt or "You are PhysIQ helping inside a custom plugin. Give a clear, helpful answer.").strip()
+    context = build_plugin_profile_context(profile)
+    if not context:
+        return base
+    return base + "\n\nLearner profile context:\n" + context + "\n\nAdapt tone, depth, examples, and next-step guidance to this learner."
+
+
 def plugin_tool_creator(request=""):
-    """Load tool creator from external HTML file."""
+    """Load Tool Creator from tool_creator_plugin.html file."""
     try:
         with open("tool_creator_plugin.html", "r", encoding="utf-8") as _f:
             html = _f.read()
             try:
                 import json
                 initial_request = json.dumps(request or "")
+                initial_request = initial_request.replace("<", "\\u003C").replace(">", "\\u003E")
             except Exception:
                 initial_request = '""'
             return html.replace("__INITIAL_TOOL_REQUEST__", initial_request)
     except FileNotFoundError:
-        return """<!DOCTYPE html><html><body style="background:#0d1117;color:#e6edf3;padding:20px;font-family:sans-serif">
-<h3 style="color:#ff8c42">🔧 Tool Creator</h3>
-<p>File <code>tool_creator_plugin.html</code> not found. Make sure it's in your project folder.</p>
+        # Fallback inline tool creator
+        return """<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#060d1a;font-family:'Segoe UI',sans-serif;padding:16px;color:#e8f0fe}
+.wrap{background:linear-gradient(135deg,#0d1627,#111d2e);border:1px solid #1c2d45;border-radius:18px;padding:20px;max-width:700px}
+.title{color:#4f9eff;font-weight:800;font-size:15px;margin-bottom:6px}
+.sub{color:#7b92b2;font-size:12px;margin-bottom:16px;line-height:1.5}
+.ltabs{display:flex;gap:6px;margin-bottom:12px}
+.ltab{padding:6px 16px;border-radius:8px;border:1px solid #1c2d45;background:#111d2e;
+  color:#7b92b2;cursor:pointer;font-size:12px;font-weight:600;transition:all .15s}
+.ltab.on{background:#4f9eff22;color:#4f9eff;border-color:#4f9eff44}
+.ed{width:100%;height:260px;background:#080f1e;border:1px solid #1c2d45;border-radius:12px;
+  padding:14px;color:#e8f0fe;font-family:'JetBrains Mono','Courier New',monospace;
+  font-size:12.5px;line-height:1.7;resize:vertical;outline:none;tab-size:4}
+.ed:focus{border-color:#4f9eff;box-shadow:0 0 0 3px rgba(79,158,255,0.12)}
+.mgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:12px 0}
+.ml{color:#7b92b2;font-size:10px;font-weight:700;letter-spacing:.8px;margin-bottom:4px}
+.mi{background:#080f1e;border:1px solid #1c2d45;border-radius:10px;
+  padding:8px 11px;color:#e8f0fe;font-size:12px;width:100%;outline:none}
+.mi:focus{border-color:#4f9eff}
+.brow{display:flex;gap:10px;margin-bottom:12px}
+.bgo{flex:1;background:linear-gradient(135deg,#1a5ef7,#4f9eff);color:#fff;border:none;
+  border-radius:12px;padding:10px;cursor:pointer;font-weight:800;font-size:13px;
+  transition:all .2s;box-shadow:0 4px 16px rgba(79,158,255,0.3)}
+.bgo:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(79,158,255,0.45)}
+.bgo:disabled{background:#1c2d45;color:#7b92b2;cursor:not-allowed;transform:none;box-shadow:none}
+.bcl{background:#111d2e;color:#7b92b2;border:1px solid #1c2d45;border-radius:12px;
+  padding:10px 16px;cursor:pointer;font-size:12px}
+.bcl:hover{border-color:#f87171;color:#f87171}
+.pbar{height:3px;background:#1c2d45;border-radius:99px;margin:8px 0;overflow:hidden;display:none}
+.pfill{height:100%;background:linear-gradient(90deg,#4f9eff,#a78bfa);border-radius:99px;
+  transition:width .4s ease}
+.sbox{font-size:11px;color:#7b92b2;margin-bottom:10px;display:none}
+.sl{margin:4px 0;display:flex;gap:6px;align-items:center}
+.pvw{border:1px solid #22c55e44;border-radius:14px;overflow:hidden;display:none;margin-top:12px}
+.pvh{background:#080f1e;padding:10px 16px;display:flex;align-items:center;
+  justify-content:space-between;border-bottom:1px solid #1c2d45}
+.pvt{color:#22c55e;font-weight:700;font-size:12px}
+.pvbs{display:flex;gap:6px}
+.pvb{border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:11px;font-weight:700}
+.pvif{width:100%;height:340px;border:none;background:#fff}
+.sams{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.sam{background:#111d2e;border:1px solid #1c2d45;border-radius:10px;
+  padding:4px 11px;font-size:11px;color:#7b92b2;cursor:pointer;transition:all .15s}
+.sam:hover{border-color:#4f9eff;color:#4f9eff}
+.tip{background:#080f1e;border:1px solid #1c2d45;border-radius:10px;
+  padding:10px 14px;font-size:11px;color:#7b92b2;line-height:1.7;margin-top:12px}
+.lncnt{text-align:right;color:#7b92b250;font-size:10px;margin-top:3px}
+</style></head><body>
+<div class="wrap">
+  <div class="title">🔧 Tool Creator — Code Editor</div>
+  <div class="sub">Write normal Python or Java code. PhysIQ AI reads your logic and builds a beautiful interactive plugin. <b style="color:#4f9eff">No HTML or JS needed.</b></div>
+
+  <div class="sams">
+    <div class="sam" onclick="ls('bmi')">📊 BMI Calc</div>
+    <div class="sam" onclick="ls('fib')">🔢 Fibonacci</div>
+    <div class="sam" onclick="ls('temp')">🌡️ Temp Converter</div>
+    <div class="sam" onclick="ls('prime')">🔍 Prime Checker</div>
+    <div class="sam" onclick="ls('grade')">📝 Grade Calc</div>
+    <div class="sam" onclick="ls('interest')">💰 Compound Interest</div>
+  </div>
+
+  <div class="ltabs">
+    <div class="ltab on" id="tpy" onclick="sl('python')">🐍 Python</div>
+    <div class="ltab" id="tjv" onclick="sl('java')">☕ Java</div>
+  </div>
+
+  <textarea class="ed" id="ed" placeholder="Write your Python or Java code here..." onkeydown="tk(event)" oninput="upd()" spellcheck="false"></textarea>
+  <div class="lncnt" id="lncnt">0 lines</div>
+
+  <div class="mgrid">
+    <div><div class="ml">PLUGIN NAME</div><input class="mi" id="pn" placeholder="e.g. BMI Calculator"></div>
+    <div><div class="ml">ICON (emoji)</div><input class="mi" id="pi" value="🔧" maxlength="4"></div>
+    <div><div class="ml">DESCRIPTION</div><input class="mi" id="pd" placeholder="What does it do?"></div>
+  </div>
+
+  <div class="brow">
+    <button class="bgo" id="gbtn" onclick="go()">🤖 Analyse &amp; Build Plugin</button>
+    <button class="bcl" onclick="clr()">🗑️ Clear</button>
+  </div>
+
+  <div class="pbar" id="pb"><div class="pfill" id="pf" style="width:0%"></div></div>
+  <div class="sbox" id="sb"></div>
+
+  <div class="pvw" id="pw">
+    <div class="pvh">
+      <span class="pvt" id="pt">✅ Plugin Ready!</span>
+      <div class="pvbs">
+        <button class="pvb" style="background:#1a5ef7;color:#fff" onclick="inst()">⬇️ Install in PhysIQ</button>
+        <button class="pvb" style="background:#7c3aed;color:#fff" onclick="pub()">🌐 Publish to Store</button>
+        <button class="pvb" style="background:#059669;color:#fff" onclick="opn()">🔗 Open Full Screen</button>
+        <button class="pvb" style="background:#111d2e;color:#e8f0fe;border:1px solid #1c2d45" onclick="sv()">💾 Save HTML</button>
+      </div>
+    </div>
+    <iframe class="pvif" id="pf2"></iframe>
+  </div>
+
+  <div class="tip">💡 <b style="color:#4f9eff">How it works:</b> Write any calculation, conversion, or logic in Python/Java. The AI converts your code's functions into an interactive browser tool complete with styled inputs, live calculation, and results — all matching PhysIQ's design language.</div>
+</div>
+
+<script>
+var lang='python',gh='',pd2=null;
+var S={
+  bmi:"def calculate_bmi(weight_kg, height_m):\n    bmi = weight_kg / (height_m ** 2)\n    if bmi < 18.5: cat = 'Underweight'\n    elif bmi < 25: cat = 'Normal weight'\n    elif bmi < 30: cat = 'Overweight'\n    else: cat = 'Obese'\n    return round(bmi, 2), cat\n\nbmi, cat = calculate_bmi(70, 1.75)\nprint('BMI:', bmi, '|', cat)",
+  fib:"def fibonacci(n):\n    seq = [0, 1]\n    for i in range(2, n):\n        seq.append(seq[-1] + seq[-2])\n    return seq[:n]\n\nresult = fibonacci(12)\nprint('Fibonacci(12):', result)",
+  temp:"def c_to_f(c): return (c * 9/5) + 32\ndef f_to_c(f): return (f - 32) * 5/9\ndef c_to_k(c): return c + 273.15\n\nprint('100C =', c_to_f(100), 'F')\nprint('100C =', c_to_k(100), 'K')",
+  prime:"def is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0: return False\n    return True\n\ndef primes_up_to(limit):\n    return [n for n in range(2, limit+1) if is_prime(n)]\n\nprint('Primes up to 30:', primes_up_to(30))",
+  grade:"def get_grade(marks):\n    avg = sum(marks) / len(marks)\n    if avg >= 90: g = 'A+'\n    elif avg >= 80: g = 'A'\n    elif avg >= 70: g = 'B'\n    elif avg >= 60: g = 'C'\n    elif avg >= 50: g = 'D'\n    else: g = 'F'\n    return round(avg, 1), g\n\navg, grade = get_grade([85, 90, 78, 92, 88])\nprint('Average:', avg, '| Grade:', grade)",
+  interest:"def compound_interest(principal, rate, time, n=12):\n    amount = principal * (1 + rate/(n*100)) ** (n*time)\n    interest = amount - principal\n    return round(amount, 2), round(interest, 2)\n\namount, interest = compound_interest(10000, 8, 5)\nprint('Final amount:', amount)\nprint('Interest earned:', interest)"
+};
+
+function sl(l){lang=l;document.getElementById('tpy').classList.toggle('on',l==='python');document.getElementById('tjv').classList.toggle('on',l==='java');}
+function ls(k){
+  var ed=document.getElementById('ed');
+  ed.value=S[k].replace(/\\n/g,'\n');
+  upd();
+  var nm={bmi:'BMI Calculator',fib:'Fibonacci Generator',temp:'Temperature Converter',prime:'Prime Checker',grade:'Grade Calculator',interest:'Compound Interest'};
+  var ic={bmi:'📊',fib:'🔢',temp:'🌡️',prime:'🔍',grade:'📝',interest:'💰'};
+  var ds={bmi:'Calculate Body Mass Index from weight and height',fib:'Generate Fibonacci number sequences',temp:'Convert between temperature units',prime:'Check primes and list them',grade:'Calculate average grade',interest:'Calculate compound interest returns'};
+  document.getElementById('pn').value=nm[k];document.getElementById('pi').value=ic[k];document.getElementById('pd').value=ds[k];
+}
+function upd(){var n=document.getElementById('ed').value.split('\n').length;document.getElementById('lncnt').textContent=n+' line'+(n!==1?'s':'');}
+function tk(e){if(e.key==='Tab'){e.preventDefault();var t=e.target,s=t.selectionStart;t.value=t.value.substring(0,s)+'    '+t.value.substring(t.selectionEnd);t.selectionStart=t.selectionEnd=s+4;upd();}}
+function step(txt,col){var b=document.getElementById('sb');b.style.display='block';var d=document.createElement('div');d.className='sl';d.innerHTML='<span style="color:'+(col||'#4f9eff')+'">▶</span><span>'+txt+'</span>';b.appendChild(d);}
+function setp(p){document.getElementById('pf').style.width=p+'%';}
+function clr(){document.getElementById('ed').value='';['pn','pd'].forEach(function(i){document.getElementById(i).value='';});document.getElementById('pi').value='🔧';document.getElementById('sb').innerHTML='';document.getElementById('sb').style.display='none';document.getElementById('pw').style.display='none';document.getElementById('pb').style.display='none';document.getElementById('lncnt').textContent='0 lines';gh='';pd2=null;}
+
+function go(){
+  var code=document.getElementById('ed').value.trim();
+  if(!code){alert('Please write some code first!');return;}
+  var name=document.getElementById('pn').value||'My Plugin';
+  var icon=document.getElementById('pi').value||'🔧';
+  var desc=document.getElementById('pd').value||'Custom plugin';
+  document.getElementById('gbtn').disabled=true;
+  document.getElementById('gbtn').textContent='⏳ Analysing code...';
+  document.getElementById('pb').style.display='block';
+  document.getElementById('sb').innerHTML='';
+  document.getElementById('pw').style.display='none';
+  setp(10);step('📖 Reading your '+lang+' code...');
+  setTimeout(function(){setp(35);step('🧠 Understanding functions and logic...');},500);
+  setTimeout(function(){setp(60);step('🤖 AI converting to browser plugin...');},1000);
+  var sys='You are an expert full-stack developer. Convert the given '+lang+' code into a BEAUTIFUL, FULLY INTERACTIVE self-contained HTML plugin.\n\nDESIGN REQUIREMENTS:\n- Dark theme: body bg #060d1a, cards #0d1627/#111d2e, accent #4f9eff\n- Glassmorphism: backdrop-filter blur, subtle gradient borders\n- Inter font, border-radius 12-18px, smooth transitions\n- Input fields for EVERY function parameter (labeled clearly)\n- Run/Calculate button with hover glow effect\n- Results shown in styled cards with animations\n- Show the formula/equation used\n- Step-by-step working where applicable\n- Fully responsive\n- Return ONLY complete HTML starting with <!DOCTYPE html>';
+  var usr='Convert this '+lang+' code into an interactive plugin named "'+name+'" ('+icon+'):\n\n```'+lang+'\n'+code+'\n```\n\nDescription: '+desc+'\n\nCreate a stunning, fully functional HTML plugin.';
+  window.parent.postMessage({type:'plugin_ai_call',id:'toolcreate',system:sys,user:usr,max_tokens:4000},'*');
+}
+
+window.addEventListener('message',function(e){
+  if(e.data&&e.data.type==='plugin_ai_response'&&e.data.id==='toolcreate'){
+    setp(90);step('🎨 Rendering preview...','#22c55e');
+    var raw=e.data.result||'';
+    var s=raw.indexOf('<!DOCTYPE');if(s<0)s=raw.indexOf('<html');
+    var en=raw.lastIndexOf('</html>')+7;
+    gh=s>=0&&en>s?raw.slice(s,en):raw;
+    document.getElementById('pf2').srcdoc=gh;
+    document.getElementById('pt').textContent='✅ '+document.getElementById('pn').value+' — Ready!';
+    document.getElementById('pw').style.display='block';
+    setp(100);step('🚀 Plugin ready! Install or publish to the community store.','#22c55e');
+    pd2={name:document.getElementById('pn').value,icon:document.getElementById('pi').value,desc:document.getElementById('pd').value,html:gh,lang:lang,code:document.getElementById('ed').value};
+    document.getElementById('gbtn').disabled=false;
+    document.getElementById('gbtn').textContent='🤖 Analyse & Build Plugin';
+    window.parent.postMessage({type:'plugin_result',plugin:'tool_creator',result:JSON.stringify(pd2)},'*');
+  }
+});
+
+function inst(){if(!pd2)return;window.parent.postMessage({type:'install_custom_plugin',data:pd2},'*');step('✅ Plugin installed! Check the Plugin Store.','#22c55e');}
+function pub(){if(!pd2)return;window.parent.postMessage({type:'publish_plugin',data:pd2},'*');step('🌐 Publishing to community store...','#a78bfa');}
+function sv(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=(document.getElementById('pn').value||'plugin').replace(/[^a-z0-9]/gi,'_')+'.html';a.click();}
+function opn(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var u=URL.createObjectURL(b);window.open(u,'_blank');}
+</script>
 </body></html>"""
 
+
 def render_tool_creator_plugin(context: str = "") -> None:
-    """Render the external Tool Creator plugin safely inside Streamlit."""
-    html_content = plugin_tool_creator(context)
-    st.components.v1.html(html_content, height=720, scrolling=True)
+    """Render the Tool Creator without custom-plugin runtime injection."""
+    st.components.v1.html(plugin_tool_creator(context), height=720, scrolling=True)
+
+
+def render_custom_tool_plugin(plugin_key: str) -> None:
+    """Render an installed custom plugin with PhysIQ runtime helpers."""
+    plugin = st.session_state.get("custom_plugins", {}).get(plugin_key, {})
+    html_content = plugin.get("_html", "")
+    if html_content:
+        st.components.v1.html(inject_plugin_runtime(html_content, plugin_key), height=400, scrolling=True)
+    else:
+        st.info("Plugin HTML not available.")
 
 
 def render_plugin(plugin_key: str, context: str = "") -> None:
@@ -3085,37 +3977,43 @@ def render_plugin(plugin_key: str, context: str = "") -> None:
     }
 
     if plugin_key in html_generators:
-        # AI bridge — relays plugin AI calls to Streamlit via URL params
+        # AI bridge — relays plugin calls via URL params
         bridge = """
 <script>
 (function(){
-window.addEventListener('message', function(e) {
-  if(!e.data) return;
-  var d=e.data;
-  if(d.type==='plugin_ai_call') {
-    var u=new URL(window.parent.location.href);
-    u.searchParams.set('plugin_call', encodeURIComponent(JSON.stringify(d)));
-    window.parent.history.replaceState({},'',u.toString());
-    // Trigger re-evaluation
-    setTimeout(function(){ window.parent.location.href=u.toString(); }, 100);
-  }
-  if(d.type==='publish_plugin') {
-    var u2=new URL(window.parent.location.href);
-    u2.searchParams.set('publish_plugin', encodeURIComponent(JSON.stringify(d.data||{})));
-    window.parent.location.href=u2.toString();
-  }
-  if(d.type==='install_custom_plugin') {
-    var u3=new URL(window.parent.location.href);
-    u3.searchParams.set('install_plugin', encodeURIComponent(JSON.stringify(d.data||{})));
-    window.parent.location.href=u3.toString();
-  }
-});
+  window.addEventListener('message', function(e) {
+    if(!e.data||!e.data.type) return;
+    var d=e.data, u=new URL(window.parent.location.href);
+    if(d.type==='plugin_ai_call'){
+      u.searchParams.set('plugin_call',encodeURIComponent(JSON.stringify(d)));
+      window.parent.location.href=u.toString();
+    }
+    else if(d.type==='publish_plugin'){
+      u.searchParams.set('publish_plugin',encodeURIComponent(JSON.stringify(d.data||{})));
+      window.parent.location.href=u.toString();
+    }
+    else if(d.type==='install_custom_plugin'){
+      u.searchParams.set('install_plugin',encodeURIComponent(JSON.stringify(d.data||{})));
+      window.parent.location.href=u.toString();
+    }
+    else if(d.type==='plugin_result'){
+      try{window.parent.postMessage(d,'*');}catch(err){}
+    }
+  });
+  // Also listen for AI responses from parent and forward to iframes
+  window.parent.addEventListener('message',function(e){
+    if(e.data&&e.data.type==='plugin_ai_response'){
+      document.querySelectorAll('iframe').forEach(function(f){
+        try{f.contentWindow.postMessage(e.data,'*');}catch(err){}
+      });
+    }
+  });
 })();
 </script>"""
 
         html_content = html_generators[plugin_key]()
         # Replace </body> to inject bridge
-        html_content = html_content.replace("</body>", bridge + "</body>")
+        html_content = inject_plugin_runtime(html_content.replace("</body>", bridge + "</body>"), plugin_key)
         st.components.v1.html(html_content, height=heights.get(plugin_key, 400), scrolling=True)
     else:
         st.info(f"Plugin **{p['name']}** is available through the native renderer.")
@@ -3318,217 +4216,130 @@ SKILL_CONNECTORS = {
 
 
 def render_navbar():
-    options = ["chat"] + list(SKILL_CONNECTORS.keys())
-    active = st.session_state.get("active_connector")
-    current = active if active in SKILL_CONNECTORS else "chat"
+    """Render a reliable native Streamlit top activity bar."""
     dark = st.session_state.dark_mode
-    active_info = {
-        "name": "Chat Hub",
-        "icon": "🏠",
-        "desc": "General PhysIQ chat, solver, voice, plugins, and tutoring.",
-        "color": "#58a6ff",
-    } if current == "chat" else SKILL_CONNECTORS[current]
-
-    panel_bg = "linear-gradient(135deg, rgba(10,16,28,0.98), rgba(15,23,42,0.98) 58%, rgba(8,15,29,0.98))" if dark \
-        else "linear-gradient(135deg, rgba(239,246,255,0.98), rgba(224,242,254,0.98) 58%, rgba(255,247,237,0.98))"
-    panel_border = "#22324f" if dark else "#c7d7ec"
-    title_color = "#e6edf3" if dark else "#10233f"
-    sub_color = "#8b949e" if dark else "#52627a"
-    chip_bg = "rgba(255,255,255,0.05)" if dark else "rgba(255,255,255,0.72)"
-    radio_bg = "#121a29" if dark else "#f6faff"
-    radio_text = "#dce7f8" if dark else "#18314d"
-    active_glow = active_info.get("color", "#58a6ff")
+    active = st.session_state.get("active_connector")
+    acc = "#4f9eff" if dark else "#1a6ef7"
+    border = "#1c2d45" if dark else "#dce6f0"
+    bg = "rgba(13,22,39,0.9)" if dark else "rgba(255,255,255,0.92)"
+    card_bg = "rgba(7,15,28,0.72)" if dark else "rgba(255,255,255,0.72)"
 
     st.markdown(f"""
     <style>
-    .activity-shell {{
-        position: relative;
-        overflow: hidden;
-        border-radius: 24px;
-        border: 1px solid {panel_border};
-        background: {panel_bg};
-        padding: 1rem 1.05rem 0.95rem 1.05rem;
-        margin: 0.15rem 0 0.45rem 0;
-        box-shadow: 0 24px 60px rgba(2, 6, 23, 0.22);
+    .connector-shell {{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background:
+          radial-gradient(circle at top right, {'rgba(79,158,255,0.18)' if dark else 'rgba(26,110,247,0.10)'} 0%, transparent 26%),
+          radial-gradient(circle at bottom left, {'rgba(167,139,250,0.12)' if dark else 'rgba(124,58,237,0.08)'} 0%, transparent 35%),
+          {bg};
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid {border};
+        border-radius: 20px;
+        padding: 14px 14px 16px 14px;
+        margin-bottom: 16px;
+        box-shadow: 0 16px 40px {'rgba(0,0,0,0.28)' if dark else 'rgba(26,110,247,0.12)'};
     }}
-    .activity-shell::before {{
-        content: "";
-        position: absolute;
-        inset: -35% auto auto -10%;
-        width: 320px;
-        height: 220px;
-        background: radial-gradient(circle, {active_glow}44 0%, transparent 68%);
-        pointer-events: none;
+    .connector-head {{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:12px;
+        margin-bottom:12px;
     }}
-    .activity-shell::after {{
-        content: "";
-        position: absolute;
-        right: -40px;
-        top: -40px;
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
-        pointer-events: none;
-    }}
-    .activity-head {{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 1rem;
-        z-index: 1;
-    }}
-    .activity-kicker {{
-        font-size: 0.7rem;
+    .connector-title {{
+        font-size: 11px;
         font-weight: 800;
-        letter-spacing: 0.18em;
+        letter-spacing: 2px;
         text-transform: uppercase;
-        color: {active_glow};
-        margin-bottom: 0.35rem;
+        color: {acc};
+        margin-bottom: 6px;
     }}
-    .activity-title {{
-        font-size: 1.3rem;
-        font-weight: 800;
-        color: {title_color};
-        letter-spacing: -0.02em;
-        margin-bottom: 0.2rem;
-    }}
-    .activity-sub {{
-        color: {sub_color};
-        font-size: 0.92rem;
-        line-height: 1.6;
-        max-width: 700px;
-    }}
-    .activity-side {{
-        min-width: 230px;
-        text-align: right;
-        padding: 0.9rem 1rem;
-        border-radius: 18px;
-        background: {chip_bg};
-        border: 1px solid rgba(148, 163, 184, 0.18);
-        backdrop-filter: blur(12px);
-    }}
-    .activity-side-top {{
-        color: {sub_color};
-        font-size: 0.68rem;
-        font-weight: 800;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        margin-bottom: 0.35rem;
-    }}
-    .activity-side-main {{
-        color: {title_color};
-        font-weight: 800;
-        font-size: 1rem;
-        margin-bottom: 0.25rem;
-    }}
-    .activity-side-sub {{
-        color: {sub_color};
-        font-size: 0.78rem;
+    .connector-sub {{
+        color: {'#dbeafe' if dark else '#26415f'};
+        font-size: 14px;
+        font-weight: 700;
         line-height: 1.45;
     }}
-    .activity-badges {{
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 0.9rem;
+    .connector-badges {{
+        display:flex;
+        gap:8px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
     }}
-    .activity-badge {{
-        border-radius: 999px;
-        padding: 0.42rem 0.7rem;
-        font-size: 0.74rem;
-        font-weight: 700;
-        color: {title_color};
-        background: {chip_bg};
-        border: 1px solid rgba(148, 163, 184, 0.18);
-        backdrop-filter: blur(10px);
+    .connector-badge {{
+        padding:7px 11px;
+        border-radius:999px;
+        background:{card_bg};
+        border:1px solid {border};
+        color:{'#dbeafe' if dark else '#26415f'};
+        font-size:11px;
+        font-weight:700;
+        white-space:nowrap;
     }}
-    .activity-shell + div[data-testid="stRadio"] > label {{
-        display: none;
-    }}
-    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] {{
-        gap: 0.55rem;
-        flex-wrap: wrap;
-        padding: 0.15rem 0 1rem 0;
-    }}
-    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label {{
-        border: 1px solid rgba(148, 163, 184, 0.16);
-        border-radius: 999px;
-        padding: 0.42rem 0.92rem;
-        background: {radio_bg};
-        min-height: auto;
-        transition: all 0.18s ease;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
-    }}
-    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label:hover {{
-        transform: translateY(-1px);
-        border-color: {active_glow};
-    }}
-    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label p {{
-        color: {radio_text};
-        font-weight: 700;
-        font-size: 0.82rem;
-    }}
-    .activity-shell + div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {{
-        border-color: {active_glow};
-        background: linear-gradient(90deg, {active_glow}22, {active_glow}11);
-        box-shadow: 0 0 0 1px {active_glow}22, 0 14px 30px rgba(2, 6, 23, 0.16);
-    }}
-    @media (max-width: 900px) {{
-        .activity-head {{
-            flex-direction: column;
-        }}
-        .activity-side {{
-            width: 100%;
-            text-align: left;
-            min-width: 0;
-        }}
+    div[data-testid="stHorizontalBlock"] .stButton > button {{
+        width: 100%;
+        min-height: 54px;
+        font-size: 12px !important;
+        font-weight: 700 !important;
     }}
     </style>
-    <div class="activity-shell">
-      <div class="activity-head">
+    <div class="connector-shell">
+      <div class="connector-head">
         <div>
-          <div class="activity-kicker">Activity Studio</div>
-          <div class="activity-title">⚛️ PhysIQ Command Deck</div>
-          <div class="activity-sub">Switch instantly between guided debate, storytelling, essay coaching, roleplay, interviews, and the main tutoring chat without leaving the app.</div>
+          <div class="connector-title">⚛ PhysIQ Activity Modes</div>
+          <div class="connector-sub">Switch between debate, writing, roleplay, interview, and classic tutoring without leaving the main app.</div>
         </div>
-        <div class="activity-side">
-          <div class="activity-side-top">Live Mode</div>
-          <div class="activity-side-main">{active_info['icon']} {active_info['name']}</div>
-          <div class="activity-side-sub">{active_info['desc']}</div>
+        <div class="connector-badges">
+          <div class="connector-badge">9 live modes</div>
+          <div class="connector-badge">{'Mode active' if active else 'Ready for chat'}</div>
         </div>
-      </div>
-      <div class="activity-badges">
-        <span class="activity-badge">{len(options)} live modes</span>
-        <span class="activity-badge">Voice-ready activities</span>
-        <span class="activity-badge">Debate judge enabled</span>
-        <span class="activity-badge">PhysIQ-powered responses</span>
       </div>
     </div>
     """, unsafe_allow_html=True)
 
-    selection = st.radio(
-        "Activity Bar",
-        options=options,
-        index=options.index(current),
-        horizontal=True,
-        label_visibility="collapsed",
-        format_func=lambda key: "🏠 Chat" if key == "chat" else f"{SKILL_CONNECTORS[key]['icon']} {SKILL_CONNECTORS[key]['name']}",
-    )
+    row1 = st.columns(5)
+    row2 = st.columns(4)
 
-    selected_connector = None if selection == "chat" else selection
-    st.session_state.active_connector = selected_connector
+    buttons = [
+        ("chat", "🏠 Chat", None),
+        ("debate", "⚔️ Debate", "debate"),
+        ("story", "📖 Story", "story"),
+        ("letter", "✉️ Letters", "letter"),
+        ("essay", "🖊️ Essays", "essay"),
+        ("poem", "🎭 Poetry", "poem"),
+        ("speech", "🎤 Speech", "speech"),
+        ("roleplay", "🎬 Roleplay", "roleplay"),
+        ("interview", "🤝 Interview", "interview"),
+    ]
+
+    for col, (key, label, target) in zip(row1 + row2, buttons):
+        with col:
+            is_active = (target is None and not active) or (target == active)
+            button_label = f"✅ {label}" if is_active else label
+            if st.button(button_label, key=f"topnav_{key}", use_container_width=True):
+                st.session_state.active_connector = target
+                if target:
+                    st.query_params["connector"] = target
+                else:
+                    try:
+                        del st.query_params["connector"]
+                    except:
+                        pass
+                st.rerun()
+
     try:
-        if selected_connector:
-            st.query_params["connector"] = selected_connector
-        elif "connector" in st.query_params:
-            del st.query_params["connector"]
+        cp = st.query_params.get("connector", "")
+        if cp in SKILL_CONNECTORS:
+            st.session_state.active_connector = cp
+        elif cp == "":
+            st.session_state.active_connector = None
     except:
         pass
-    return selected_connector
+
+    return st.session_state.get("active_connector")
+
 
 
 def get_connector_ai_system(connector_key, extra=""):
@@ -3763,6 +4574,16 @@ padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px">
 </div>""", unsafe_allow_html=True)
 
     # ── Topic / Setup ─────────────────────────────────────────
+    challenge_placeholders = {
+        "debate": "e.g. Mobile phones should be banned in schools",
+        "story": "e.g. A lost map appears in your school bag",
+        "letter": "e.g. Write to your principal requesting a science club",
+        "essay": "e.g. Should AI be used in education?",
+        "poem": "e.g. Rainy evening / courage / space / friendship",
+        "speech": "e.g. Speech on climate action for school assembly",
+        "roleplay": "e.g. You are a scientist presenting a new discovery",
+        "interview": "e.g. University admission interview for engineering",
+    }
     topic_labels = {
         "debate": "Enter the debate topic (e.g. 'Social media does more harm than good')",
         "story": "Enter the story opening line or genre",
@@ -3779,7 +4600,7 @@ padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px">
             topic_labels.get(connector_key, "Topic"),
             value=st.session_state[topic_key],
             key=f"topic_input_{connector_key}",
-            placeholder="Leave blank for AI to choose...",
+            placeholder=challenge_placeholders.get(connector_key, "Leave blank for AI to choose..."),
             label_visibility="collapsed"
         )
     with col_start:
@@ -3886,12 +4707,36 @@ document.getElementById('sb').onclick=function(){{send();}};
     messages = st.session_state.get(msgs_key, [])
 
     if not messages:
-        st.markdown(f"""
-        <div style="text-align:center;padding:40px;color:#8b949e">
-            <div style="font-size:3rem;margin-bottom:12px">{icon}</div>
-            <div style="font-size:15px;font-weight:600;color:{color}">Ready to start!</div>
-            <div style="font-size:13px;margin-top:8px">Enter a topic above and click 🚀 Start, or leave blank for AI to choose</div>
-        </div>""", unsafe_allow_html=True)
+        if connector_key == "debate":
+            st.markdown(f"""
+            <div style="background:{color}12;border:1px solid {color}40;border-radius:16px;padding:22px;margin:10px 0 18px 0">
+              <div style="color:{color};font-size:1.05rem;font-weight:800;margin-bottom:8px">⚔️ Debate Challenge Screen</div>
+              <div style="color:#c9d1d9;font-size:13px;line-height:1.7">
+                Pick a topic and press <b>Start</b>. The AI will immediately take the opposite side,
+                challenge your logic, push back on weak points, and keep the debate live.
+              </div>
+              <div style="margin-top:12px;color:#8b949e;font-size:12px">
+                Example topics: <b>Homework should be banned</b> · <b>AI helps students more than it harms them</b> · <b>Uniforms should be compulsory</b>
+              </div>
+            </div>
+            """, unsafe_allow_html=True)
+        elif connector_key == "essay":
+            st.markdown(f"""
+            <div style="background:{color}12;border:1px solid {color}40;border-radius:16px;padding:22px;margin:10px 0 18px 0">
+              <div style="color:{color};font-size:1.05rem;font-weight:800;margin-bottom:8px">🖊️ Essay Challenge Screen</div>
+              <div style="color:#c9d1d9;font-size:13px;line-height:1.7">
+                Start an essay topic and the AI will act like a strict writing coach:
+                it gives you the prompt, judges each paragraph, and pushes you to improve.
+              </div>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown(f"""
+            <div style="text-align:center;padding:40px;color:#8b949e">
+                <div style="font-size:3rem;margin-bottom:12px">{icon}</div>
+                <div style="font-size:15px;font-weight:600;color:{color}">Ready to start!</div>
+                <div style="font-size:13px;margin-top:8px">Enter a topic above and click 🚀 Start, or leave blank for AI to choose</div>
+            </div>""", unsafe_allow_html=True)
     else:
         for msg in messages:
             role = msg["role"]
@@ -4075,6 +4920,21 @@ def show_app():
                 st.session_state.dark_mode = dark_toggle
                 st.rerun()
         render_skill_connector(active_conn, vs)
+        return
+
+    # ── Full-screen open for any generated HTML app ────────────
+    if st.session_state.get("_open_full_html"):
+        title = st.session_state.get("_open_full_title","App")
+        col_back_f, col_dl_f = st.columns([1,1])
+        with col_back_f:
+            if st.button("← Close Full Screen", use_container_width=True):
+                st.session_state["_open_full_html"] = None
+                st.rerun()
+        with col_dl_f:
+            st.download_button("⬇️ Download HTML", st.session_state["_open_full_html"].encode(),
+                file_name=title.replace(" ","_")[:30]+".html", mime="text/html", use_container_width=True)
+        st.markdown(f"#### {title}")
+        st.components.v1.html(st.session_state["_open_full_html"], height=700, scrolling=True)
         return
 
     if st.session_state.get("show_plugin_store_page"):
@@ -4291,12 +5151,49 @@ def show_app():
                 st.rerun()
 
     # ── MAIN AREA ──────────────────────────────────────────────
-    col_title, col_tog = st.columns([5,1])
-    with col_title:
-        st.markdown("## ⚛️ PhysIQ")
-        st.caption("Physics · Chemistry · English Writing · Class 10 to College")
-    with col_tog:
-        st.write("")  # spacer
+    available_plugins = len(PLUGINS) + len(st.session_state.get("custom_plugins", {}))
+    live_modes = 1 + len(SKILL_CONNECTORS)
+    st.markdown(f"""
+    <div class="command-deck">
+      <div class="command-grid">
+        <div>
+          <div class="command-kicker">Adaptive Learning Command Deck</div>
+          <div class="command-title">⚛️ PhysIQ</div>
+          <div class="command-copy">
+            Physics, chemistry, biology, writing, plugins, voice, and guided activity modes inside one study cockpit.
+            Ask normally, switch modes instantly, or launch custom tools when you need deeper workflows.
+          </div>
+          <div class="command-chip-row">
+            <span class="command-chip">{'Voice Mode On' if st.session_state.get('voice_mode') else 'Voice Mode Ready'}</span>
+            <span class="command-chip">{available_plugins} plugins available</span>
+            <span class="command-chip">{live_modes} learning modes</span>
+          </div>
+        </div>
+        <div class="command-card-grid">
+          <div class="command-card">
+            <div class="command-card-label">Study Scope</div>
+            <div class="command-card-value">Class 10 to College</div>
+            <div class="command-card-note">From fundamentals and numericals to essays, debates, and research workflows.</div>
+          </div>
+          <div class="command-card">
+            <div class="command-card-label">Knowledge Engine</div>
+            <div class="command-card-value">{'RAG Ready' if vs else 'Chat Only'}</div>
+            <div class="command-card-note">Uses your science library, saved answers, and plugin tools to ground responses.</div>
+          </div>
+          <div class="command-card">
+            <div class="command-card-label">Current Style</div>
+            <div class="command-card-value">{'Creative / English' if st.session_state.get('creative_mode') else 'Coding' if st.session_state.get('coding_mode') else 'Science Tutor'}</div>
+            <div class="command-card-note">Mode changes shape explanations, examples, and the kinds of tools PhysIQ brings in.</div>
+          </div>
+          <div class="command-card">
+            <div class="command-card-label">Quick Route</div>
+            <div class="command-card-value">Ask, Solve, Build</div>
+            <div class="command-card-note">Use chat for direct help, the solver for working, or Tool Creator for new custom interfaces.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
 
     if st.session_state.get("voice_mode"):
         st.markdown("**🎙️ Voice Panel**")
@@ -4416,11 +5313,7 @@ def show_app():
                         st.rerun()
                 # Check if it's a custom/community plugin
                 if pk in st.session_state.get("custom_plugins",{}):
-                    cp_html = st.session_state.custom_plugins[pk].get("_html","")
-                    if cp_html:
-                        st.components.v1.html(cp_html, height=400, scrolling=True)
-                    else:
-                        st.info("Plugin HTML not available.")
+                    render_custom_tool_plugin(pk)
                 else:
                     render_plugin(pk)
 
@@ -4446,6 +5339,11 @@ def show_app():
         with col_cl:
             if st.button("✕ Close", key="close_anim"):
                 st.session_state.show_animator = False
+                st.rerun()
+        col_ao, _ = st.columns([1,4])
+        with col_ao:
+            if st.button("🔗 Open Full", key="open_anim_full", use_container_width=True):
+                st.session_state._open_animator_full = True
                 st.rerun()
         if not os.path.exists("animator.html"):
             st.error("❌ animator.html not found! Make sure it is in your physics-chatbot folder.")
@@ -4491,44 +5389,35 @@ def show_app():
                     st.toast("🧠 Correction saved!")
                     st.rerun()
 
-    # ── Floating Plugin Store button ─────────────────────────────
-    st.components.v1.html("""
-<style>
-.fab-plugin{position:fixed;bottom:90px;right:24px;z-index:9998;
-  width:50px;height:50px;border-radius:50%;
-  background:linear-gradient(135deg,#1f6feb,#388bfd);
-  border:none;cursor:pointer;font-size:20px;
-  box-shadow:0 4px 20px rgba(88,166,255,0.45);
-  display:flex;align-items:center;justify-content:center;
-  color:white;transition:all .2s;text-decoration:none}
-.fab-plugin:hover{transform:scale(1.12);box-shadow:0 6px 28px rgba(88,166,255,0.65)}
-.fab-tooltip{position:absolute;right:58px;background:rgba(13,17,23,0.95);
-  color:#e6edf3;padding:5px 12px;border-radius:8px;font-size:11px;
-  font-family:'Segoe UI',sans-serif;white-space:nowrap;
-  border:1px solid rgba(88,166,255,0.3);opacity:0;transition:opacity .2s;pointer-events:none}
-.fab-plugin:hover .fab-tooltip{opacity:1}
-</style>
-<div style="position:relative;width:fit-content;margin-left:auto">
-  <button class="fab-plugin" onclick="openStore()" title="Plugin Store">
-    🔌
-    <span class="fab-tooltip">Plugin Store</span>
-  </button>
-</div>
-<script>
-function openStore(){
-  var u=new URL(window.parent.location.href);
-  u.searchParams.set('open_plugins','1');
-  window.parent.location.href=u.toString();
-}
-</script>
-""", height=60, scrolling=False)
-
-    # Handle FAB plugin store open
+    # ── Handle open_plugins URL param ───────────────────────────
     if st.query_params.get("open_plugins","") == "1":
         try: del st.query_params["open_plugins"]
         except: pass
         st.session_state.show_plugin_store_page = True
         st.rerun()
+
+    # ── Floating 🔌 button (injected as CSS fixed element) ───────
+    st.components.v1.html("""
+<style>
+.pfab{position:fixed;bottom:88px;right:20px;z-index:9999;
+  width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#1a5ef7,#4f9eff);color:#fff;
+  font-size:20px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(79,158,255,0.45),inset 0 1px 0 rgba(255,255,255,0.2);
+  transition:all .2s cubic-bezier(.4,0,.2,1);
+  animation:fp 3s ease-in-out infinite}
+@keyframes fp{0%,100%{box-shadow:0 4px 20px rgba(79,158,255,0.45)}50%{box-shadow:0 4px 28px rgba(79,158,255,0.7)}}
+.pfab:hover{transform:scale(1.13) rotate(10deg)}
+.pfab-tip{position:absolute;right:56px;background:rgba(6,13,26,0.96);color:#e8f0fe;
+  padding:5px 12px;border-radius:10px;font-size:11px;font-family:'Segoe UI',sans-serif;
+  border:1px solid rgba(79,158,255,0.3);white-space:nowrap;opacity:0;
+  transition:opacity .2s;pointer-events:none}
+.pfab:hover .pfab-tip{opacity:1}
+</style>
+<button class="pfab" onclick="var u=new URL(window.parent.location.href);u.searchParams.set('open_plugins','1');window.parent.location.href=u.toString()">
+  🔌<div class="pfab-tip">Plugin Store</div>
+</button>
+""", height=60, scrolling=False)
 
     # ── Voice button (above chat bar) ──────────────────────────
     st.components.v1.html("""
@@ -4643,6 +5532,92 @@ window.addEventListener('message',e=>{
         st.session_state._last_vq = _vq
         try: del st.query_params["vq"]
         except: pass
+
+    # ── Handle plugin AI calls from custom tools ────────────────
+    plugin_call_raw = st.query_params.get("plugin_call", "")
+    if plugin_call_raw and plugin_call_raw != st.session_state.get("_last_plugin_call", ""):
+        try:
+            import json, urllib.parse
+            call_data = json.loads(urllib.parse.unquote(plugin_call_raw))
+            prompt = str(call_data.get("user", "")).strip()
+            if prompt:
+                profile = normalize_plugin_profile(call_data.get("profile") or build_plugin_runtime_profile())
+                system_prompt = build_plugin_ai_system(
+                    call_data.get("system", "You are PhysIQ helping inside a custom plugin. Give a clear, helpful answer."),
+                    profile,
+                )
+                with st.spinner("🧠 PhysIQ is thinking for your plugin..."):
+                    ai_answer = call_hf(
+                        system_prompt,
+                        prompt,
+                        max_tokens=int(call_data.get("max_tokens", 500) or 500),
+                    )
+                results = st.session_state.get("_plugin_ai_results", {})
+                results[call_data.get("plugin_key", "")] = {
+                    "id": call_data.get("id", ""),
+                    "slot": call_data.get("slot", "physiq-ai-answer"),
+                    "prompt": prompt,
+                    "answer": ai_answer or "PhysIQ could not generate an answer this time.",
+                    "plugin_key": call_data.get("plugin_key", ""),
+                    "profile_context": build_plugin_profile_context(profile),
+                    "created_at": datetime.datetime.utcnow().isoformat(),
+                }
+                st.session_state._plugin_ai_results = results
+            st.session_state._last_plugin_call = plugin_call_raw
+            try: del st.query_params["plugin_call"]
+            except: pass
+            st.rerun()
+        except Exception as _e:
+            st.warning(f"Could not process plugin AI request: {str(_e)[:120]}")
+
+    plugin_batch_raw = st.query_params.get("plugin_batch_call", "")
+    if plugin_batch_raw and plugin_batch_raw != st.session_state.get("_last_plugin_batch_call", ""):
+        try:
+            import json, urllib.parse
+            batch_data = json.loads(urllib.parse.unquote(plugin_batch_raw))
+            profile = normalize_plugin_profile(batch_data.get("profile") or build_plugin_runtime_profile())
+            requests = batch_data.get("requests", []) or []
+            batch_items = []
+            if requests:
+                with st.spinner("🧠 PhysIQ is running your plugin lanes..."):
+                    for request in requests[:6]:
+                        prompt = str(request.get("prompt", "")).strip()
+                        if not prompt:
+                            continue
+                        system_prompt = build_plugin_ai_system(
+                            request.get(
+                                "system",
+                                "You are PhysIQ helping across several side-by-side plugin lanes. Keep each lane focused and distinct.",
+                            ),
+                            profile,
+                        )
+                        answer = call_hf(
+                            system_prompt,
+                            prompt,
+                            max_tokens=int(request.get("max_tokens", batch_data.get("max_tokens", 500)) or 500),
+                        )
+                        batch_items.append({
+                            "id": request.get("id", ""),
+                            "slot": request.get("slot", "physiq-ai-answer"),
+                            "label": request.get("label", ""),
+                            "prompt": prompt,
+                            "answer": answer or "PhysIQ could not generate an answer this time.",
+                        })
+            results = st.session_state.get("_plugin_batch_results", {})
+            results[batch_data.get("plugin_key", "")] = {
+                "id": batch_data.get("id", ""),
+                "plugin_key": batch_data.get("plugin_key", ""),
+                "items": batch_items,
+                "profile_context": build_plugin_profile_context(profile),
+                "created_at": datetime.datetime.utcnow().isoformat(),
+            }
+            st.session_state._plugin_batch_results = results
+            st.session_state._last_plugin_batch_call = plugin_batch_raw
+            try: del st.query_params["plugin_batch_call"]
+            except: pass
+            st.rerun()
+        except Exception as _e:
+            st.warning(f"Could not process plugin batch request: {str(_e)[:120]}")
 
     # ── Handle publish_plugin postMessage ────────────────────────
     pub_raw = st.query_params.get("publish_plugin","")
