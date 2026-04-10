@@ -1,0 +1,142 @@
+CHEMISTRY: EVERYDAY REACTIONS & PHENOMENA EXPLAINED
+=====================================================
+
+WHY CARS ARE DIPPED IN ZINC (GALVANISATION):
+  This is called GALVANISATION (NOT dipping in iron).
+  Process: Steel/iron is coated with a layer of zinc (Zn).
+  Why zinc works:
+    1. Physical barrier — zinc layer prevents moisture and oxygen from reaching iron
+    2. Sacrificial protection — zinc is MORE reactive than iron (higher in reactivity series)
+       So zinc oxidises preferentially: Zn → Zn²⁺ + 2e⁻
+       Iron is protected as the cathode in this electrochemical cell
+    3. Even if coating is scratched, zinc continues to protect iron nearby (cathodic protection)
+  Methods: Hot-dip galvanising (most common), electroplating, sherardising, cold galvanising
+  Galvanised iron formula: ZnO + Zn(OH)₂ patina forms on surface (protects further)
+  Reactivity series (most reactive first): K, Ca, Na, Mg, Al, Zn, Fe, Ni, Sn, Pb, H, Cu, Hg, Ag, Au
+
+CORROSION OF IRON (RUSTING):
+  Rust = hydrated iron oxide: Fe₂O₃·xH₂O (red-brown flaky solid)
+  Conditions: Both water AND oxygen required
+  Electrochemical process:
+    Anode (oxidation): Fe → Fe²⁺ + 2e⁻  (at grain boundaries, impurities)
+    Cathode (reduction): O₂ + 2H₂O + 4e⁻ → 4OH⁻
+    Then: Fe²⁺ + 2OH⁻ → Fe(OH)₂ → oxidation → Fe(OH)₃ → Fe₂O₃·H₂O
+  Salt water accelerates rusting (better electrolyte)
+  Prevention: painting, oiling, galvanising, tinning, alloying (stainless steel), cathodic protection
+
+WHY COOKING POTS ARE MADE OF STEEL/ALUMINIUM:
+  Aluminium: lightweight, good conductor, Al₂O₃ layer prevents further corrosion
+  Stainless steel: Fe + Cr (>10.5%) + Ni. Cr₂O₃ protective layer
+
+BLEACHING:
+  Chlorine bleach (sodium hypochlorite, NaOCl): Cl₂ + H₂O → HCl + HOCl
+    HOCl is the active bleaching agent: oxidises chromophore molecules
+    HOCl → HCl + [O] (nascent oxygen)
+  Hydrogen peroxide (H₂O₂): oxidising bleach for hair, paper
+  Caution: bleach + ammonia → chloramines (toxic); bleach + acids → Cl₂ gas (toxic)
+
+WHY SOAP CLEANS:
+  Soap: sodium/potassium salt of long-chain fatty acid (R-COO⁻Na⁺)
+  Structure: long hydrophobic (water-hating) tail + hydrophilic (water-loving) head
+  Mechanism: soap molecules form MICELLES
+    Hydrophobic tails surround grease/oil droplet
+    Hydrophilic heads point outward into water
+    Grease is emulsified and lifted away
+  Soap doesn't work in hard water: Ca²⁺/Mg²⁺ + soap → insoluble scum
+  Detergents: synthetic, work in hard water (sulfonate head group)
+
+WHY BREAD RISES:
+  Yeast + glucose → CO₂ + ethanol (fermentation)
+  C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂
+  CO₂ bubbles get trapped in gluten network → dough rises
+  Baking soda (NaHCO₃) + acid → CO₂ (chemical leavening)
+  NaHCO₃ + heat → Na₂CO₃ + H₂O + CO₂↑ (also occurs on heating)
+
+WHY SKY IS BLUE:
+  RAYLEIGH SCATTERING: sunlight (white) scatters off atmospheric molecules
+  Scattering intensity ∝ 1/λ⁴ (strongly dependent on wavelength)
+  Blue light (short λ ≈ 450nm) scatters ~5.5× more than red (λ ≈ 700nm)
+  Blue scattered in all directions → sky looks blue
+  At sunrise/sunset: light travels longer path → more scattering → blue removed → red/orange
+
+WHY WATER EXPANDS ON FREEZING:
+  Hydrogen bonding: in ice, each water molecule forms 4 H-bonds (tetrahedral arrangement)
+  Ice structure has hexagonal pattern with empty spaces
+  Liquid water: H-bonds continually breaking/forming, more compact
+  Density of ice = 0.917 g/cm³ < water (1.0 g/cm³)
+  This is why water pipes burst in winter, icebergs float, fish survive in frozen ponds
+
+WHY SALT MELTS ICE:
+  FREEZING POINT DEPRESSION (Colligative property)
+  ΔTf = Kf × m × i (i=van't Hoff factor)
+  NaCl: i=2, Kf(water)=1.86 K·kg/mol
+  1 mol NaCl in 1 kg water lowers freezing point by 3.72°C
+  Used on roads (up to about -10°C effective)
+
+WHY SODA IS FIZZY:
+  HENRY'S LAW: C = kH × P (dissolved gas ∝ pressure)
+  CO₂ dissolved under high pressure during bottling
+  Opening bottle: pressure drops → CO₂ less soluble → bubbles form
+  Carbonated water: H₂O + CO₂ ⇌ H₂CO₃ (carbonic acid, makes it slightly acidic, pH~3-4)
+
+WHY ONIONS MAKE YOU CRY:
+  Cutting releases enzyme alliinase → converts sulfenic acid → propanethial S-oxide
+  Propanethial S-oxide (syn-Propanethial-S-oxide) is the lachrymatory factor
+  Gas reaches eyes, reacts with water → sulfuric acid → irritation → tears
+  Cooling onion or cutting underwater reduces evaporation
+
+WHY LEAVES CHANGE COLOUR IN AUTUMN:
+  Green: chlorophyll (absorbs red + blue, reflects green)
+  As days shorten/temperatures drop, chlorophyll breaks down
+  Yellow/orange revealed: carotenoids and xanthophylls (always present but masked)
+  Red/purple: anthocyanins (newly produced from sugars trapped as chlorophyll breaks down)
+
+BIOLUMINESCENCE:
+  Chemical reaction: Luciferin + O₂ → oxidised luciferin + light (enzyme luciferase)
+  No heat produced (cold light, nearly 100% efficient)
+  Examples: fireflies, deep-sea fish, certain bacteria, jellyfish (GFP)
+
+PHOTOGRAPHY AND SILVER HALIDES:
+  AgBr (silver bromide) on film: photosensitive
+  Light exposure: Ag⁺ + e⁻ → Ag (latent image)
+  Development: reducing agent develops latent image → metallic Ag (black)
+  Fixing: Na₂S₂O₃ (hypo) removes unexposed AgBr: AgBr + 2S₂O₃²⁻ → [Ag(S₂O₃)₂]³⁻
+
+pH INDICATORS:
+  Litmus: red in acid, blue in base (extracted from lichens)
+  Phenolphthalein: colourless in acid, pink in base (pH 8.2-10)
+  Methyl orange: red in acid, yellow in base (pH 3.1-4.4)
+  Universal indicator: mixture, shows full pH range by colour
+
+FOOD CHEMISTRY:
+  Caramelisation: sucrose → furfural + ketones at 160-180°C (Maillard if amino acids present)
+  Maillard reaction: amino acids + reducing sugars → brown products + flavour compounds
+  Fermentation: yeast → ethanol; bacteria → lactic acid (yogurt), acetic acid (vinegar)
+  Preservatives: NaCl (osmosis dehydrates bacteria), acids lower pH, antioxidants prevent oxidation
+  Baking soda: NaHCO₃ (base); baking powder: NaHCO₃ + tartaric acid
+  Vitamin C (ascorbic acid): antioxidant, prevents oxidation of other food components
+
+COMMON INDUSTRIAL PROCESSES:
+  Haber process: N₂ + 3H₂ ⇌ 2NH₃  (Fe catalyst, 450°C, 200 atm)
+  Ostwald process: 4NH₃ + 5O₂ → 4NO + 6H₂O → NO₂ → HNO₃
+  Contact process: 2SO₂ + O₂ ⇌ 2SO₃ (V₂O₅ catalyst, 450°C) → H₂SO₄
+  Solvay process: NaCl + NH₃ + CO₂ + H₂O → NaHCO₃ → Na₂CO₃
+  Chlor-alkali: electrolysis of NaCl solution → NaOH + Cl₂ + H₂
+  Hall-Heroult: electrolysis of Al₂O₃/cryolite → Al
+  Thermite reaction: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe (+ enormous heat, 2500°C)
+    Used for welding railway tracks
+
+FORENSIC CHEMISTRY:
+  Fingerprints: amino acids react with ninhydrin → purple (Ruhemann's purple)
+  Blood tests: luminol + H₂O₂ + Fe(haemoglobin) → blue luminescence
+  Drug testing: Breathalyser: K₂Cr₂O₇ (orange) + ethanol → Cr³⁺ (green)
+  Poison detection: Reinsch test (Cu foil) for As, Sb, Bi; Marsh test for arsenic
+  Arson: GC-MS analysis of accelerant residues (petrol, kerosene)
+
+MEDICINE:
+  Aspirin (acetylsalicylic acid): synthesised from salicylic acid + acetic anhydride
+    Inhibits COX enzyme → reduces prostaglandins → anti-inflammatory, analgesic
+  Paracetamol: mild analgesic, works on CNS
+  Penicillin: β-lactam ring inhibits bacterial cell wall synthesis
+  Antacids: CaCO₃, Mg(OH)₂, Al(OH)₃ — neutralise excess stomach acid (HCl)
+  Antiseptics vs Disinfectants: antiseptics for living tissue; disinfectants for surfaces

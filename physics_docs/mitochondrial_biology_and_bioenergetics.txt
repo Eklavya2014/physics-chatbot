@@ -1,0 +1,173 @@
+================================================================================
+               MITOCHONDRIAL BIOLOGY & BIOENERGETICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MITOCHONDRIA — STRUCTURE & ORIGIN
+--------------------------------------
+Mitochondria: Double-membrane organelles; the primary site of ATP production in aerobic
+eukaryotes. A typical cell contains 500–2,000 mitochondria. They are dynamic — constantly
+undergoing fission, fusion, and motility.
+
+Endosymbiotic origin: Descended from ancient alpha-proteobacteria (~1.5 billion years ago).
+Evidence: Own circular DNA (mtDNA); 70S ribosomes; binary fission; double membrane;
+inner membrane composition similar to bacteria; gene sequence homology to Rickettsiales.
+
+Structure:
+  Outer mitochondrial membrane (OMM): Permeable to small molecules (<5 kDa) via VDAC (voltage-dependent anion channel, porin). Contains: Tom20/40 (protein import), Drp1 receptors (fission), BAX/BAK (apoptosis pores).
+  Intermembrane space (IMS): Cytochrome c, SMAC/DIABLO, apoptosis induction factors; H+ accumulates here (proton gradient).
+  Inner mitochondrial membrane (IMM): Impermeable to ions/protons; highly folded into cristae. Contains: ETC complexes (I–IV) + ATP synthase (Complex V) + specific carriers (ANT, UCP1, MCU).
+  Matrix: Mitochondrial DNA, ribosomes, TCA enzymes, fatty acid oxidation enzymes, pyruvate dehydrogenase complex.
+
+Human Mitochondrial Genome (mtDNA):
+  16,569 bp circular dsDNA; 37 genes: 13 OXPHOS subunits, 22 tRNAs, 2 rRNAs.
+  Maternal inheritance; no recombination.
+  High copy number: ~1,000 mtDNA per cell (varies by cell type; oocyte ~100,000+).
+  Mutation rate: ~10–17× higher than nuclear DNA (limited repair; proximity to ROS).
+  Heteroplasmy: Mix of wild-type + mutant mtDNA. Clinical manifestation depends on proportion.
+  Threshold effect: Usually >60–80% mutant mtDNA needed for mitochondrial disease manifestation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. OXIDATIVE PHOSPHORYLATION (OXPHOS)
+---------------------------------------
+The electron transport chain (ETC) + ATP synthase = OXPHOS machinery.
+Provides ~32–34 ATP per glucose (vs 2 ATP from glycolysis).
+
+ETC Complexes (in IMM):
+  Complex I (NADH:ubiquinone oxidoreductase): Largest complex (~45 subunits; 7 encoded by mtDNA).
+    NADH → NAD+ + 2e- → transferred via FMN + Fe-S clusters → ubiquinone (CoQ10) → UQH2.
+    Pumps 4 H+ into IMS per NADH. Entry point for electrons from NADH.
+    Inhibitors: Rotenone (pesticide/insecticide); IACS-010759 (cancer drug).
+  Complex II (Succinate dehydrogenase): Connects TCA to ETC.
+    Succinate → fumarate; 2e- → FADH2 → CoQ → UQH2. Does NOT pump protons.
+    Mutations → paraganglioma/phaeochromocytoma (SDHA, SDHB, SDHC, SDHD); also hereditary GIST.
+    2-HG from IDH1/2 mutations inhibits SDH (and other alpha-KG-dependent dioxygenases).
+  Complex III (Cytochrome bc1 complex): UQH2 → Cyt c.
+    Q cycle: 2e- from UQH2 → 2 Cyt c (one at a time) + 4 H+ pumped per 2e-.
+    Inhibitors: Antimycin A; atovaquone (anti-malarial).
+  Complex IV (Cytochrome c oxidase): Cyt c → O2 → H2O.
+    4 Cyt c donate 4e- → O2 + 4H+ → 2H2O. Pumps 4H+ per 4e-.
+    Contains haem a, haem a3, CuA, CuB centres.
+    Inhibitors: Cyanide (CN-), CO, H2S, azide → compete with O2.
+    All block Complex IV → cannot use electrons → NADH/FADH2 accumulates → TCA/glycolysis blocked.
+  Complex V (ATP Synthase / F0F1-ATPase): Converts proton gradient → ATP.
+    F0 (membrane): c-ring (~8–15 subunits depending on species) + a subunit → proton channel.
+    F1 (matrix): α3β3γδε hexamer → rotary mechanism. γ-subunit rotation drives conformational changes in β-subunits → Boyer's binding change mechanism.
+    Each 360° rotation of c-ring → 3 ATP synthesised. Needs ~3H+/ATP (net ~3.7H+ in mitochondria).
+    Inhibitor: Oligomycin → blocks H+ channel in F0 → stops rotation → stops ATP synthesis.
+
+Proton Motive Force (PMF):
+  ΔμH+ = -FΔΨ + RT × ln([H+]matrix/[H+]IMS)
+  ΔΨ (membrane potential): ~-180 mV across IMM (matrix negative).
+  ΔpH: ~0.5 pH units (matrix alkaline). Contributes ~30 mV equivalent.
+  Total PMF ≈ ~210 mV. PMF drives: ATP synthesis, mitochondrial protein import, metabolite transport.
+
+Coupling Efficiency:
+  Coupled (tight): Proton gradient only dissipated through ATP synthase → maximum ATP.
+  Proton leak: Some protons re-enter without making ATP → heat.
+  UCP1 (Uncoupling Protein 1): In brown adipose tissue IMM → proton leak → heat generation (thermogenesis).
+    Activated by FA; inhibited by GDP. Critical for neonatal heat production + cold-acclimatised adults.
+    UCP1 KO mice: Obese at room temperature.
+
+3. MITOCHONDRIAL DYNAMICS
+--------------------------
+Mitochondria constantly fuse and divide — essential for quality control and function.
+
+Fusion:
+  OMM fusion: MFN1 + MFN2 (Mitofusins) — GTPases; tether adjacent OMMs + catalyse fusion.
+  IMM fusion: OPA1 — GTPase; anchored in IMM by IMM anchoring + soluble form; requires OMM fusion first.
+  Benefits: Exchange contents between mitochondria; dilute damaged mtDNA; maintain membrane potential in stressed mitochondria.
+  MFN2 deficiency: Charcot-Marie-Tooth type 2A. OPA1 deficiency: Autosomal dominant optic atrophy.
+
+Fission:
+  DRP1 (Dynamin-Related Protein 1): Cytosolic GTPase recruited to OMM via FIS1, MFF, MIDD + MIEF receptors.
+    Forms oligomeric ring around mitochondria → GTP hydrolysis → constriction → division.
+    DRP1 phosphorylation: S616 (CDK1) → promotes fission; S637 (PKA) → inhibits fission.
+  Fission benefits: Mitophagy (segregate damaged mitochondria); cell division; apoptosis.
+  DRP1 dominant-negative mutation: Neonatal lethal encephalopathy.
+
+Mitophagy (selective autophagy of mitochondria):
+  PINK1-Parkin pathway: Gold standard.
+    Healthy Δψ → PINK1 imported + cleaved by PARL in IMM → degraded.
+    Damaged Δψ (low) → PINK1 accumulates on OMM → activates Parkin (E3 ubiquitin ligase).
+    Parkin ubiquitinates OMM proteins (VDAC1, MFN1/2) → K63-linked chains → p62/OPTN/NDP52 → autophagosome recruitment.
+  Receptor-mediated mitophagy: BNIP3L/NIX (hypoxia, red blood cell maturation), FUNDC1 (hypoxia), FKBP8 (basal).
+  Parkinson's disease: PINK1 and PARKIN mutations → impaired mitophagy → damaged mitochondria accumulate → neuronal death. Most compelling link between mitophagy and human disease.
+
+4. MITOCHONDRIA & CELL DEATH
+------------------------------
+Mitochondrial Apoptosis (Intrinsic Pathway):
+  Cytochrome c release from IMS → key event.
+  MOMP (Mitochondrial Outer Membrane Permeabilisation): BAX/BAK oligomerise in OMM → large pores.
+  Anti-apoptotic BCL-2 family (BCL-2, BCL-xL, MCL-1): Prevent BAX/BAK oligomerisation.
+  Pro-apoptotic BH3-only proteins (BIM, PUMA, NOXA, BAD, BID, HRK): Activate BAX/BAK or inhibit anti-apoptotic.
+  tBID: Cleaved from BID by caspase-8 → directly activates BAX at OMM → MOMP.
+  Cytochrome c → apoptosome (APAF-1 + caspase-9 + cytochrome c) → caspase-9 → caspase-3/7 → execution.
+  SMAC/DIABLO: Released from IMS → antagonise IAPs (XIAP) → allows caspase activity.
+  AIF, EndoG: Released → DNA fragmentation independently of caspases (parthanatos).
+
+mPTP (Mitochondrial Permeability Transition Pore):
+  High Ca2+ + oxidative stress → mPTP opens in IMM → collapse of Δψ → swelling → OMM rupture.
+  Composition: ANT + CypD + VDAC2 (debated; may involve ATP synthase c-ring).
+  Consequence: Complete loss of OXPHOS → necrosis (if massive) or apoptosis (if partial).
+  Reperfusion injury (ischaemia-reperfusion): Ca2+ overload + ROS on reperfusion → mPTP → cardiomyocyte death.
+  CypD inhibitor (cyclosporin A): Prevents mPTP → cardioprotection in animal models; limited clinical success so far.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MITOCHONDRIAL SIGNALLING
+-----------------------------
+Mitochondria are signalling hubs — bidirectional communication with nucleus, cytosol, and other organelles.
+
+Retrograde Signalling (mitochondria → nucleus):
+  Mitochondrial stress → retrograde response → adapt nuclear gene expression.
+  UPRmt (Mitochondrial Unfolded Protein Response): Unfolded proteins in matrix → ATF5 (mammals), ATFS-1 (C. elegans) → nuclear import → upregulate mitochondrial chaperones (HSP60, HSP10, mtHSP70) + protease (LONP1, ClpP).
+  ROS signalling: Mild ROS → NRF2/ARE pathway → antioxidant gene expression.
+  NAD+/NADH ratio → SIRT1 → PGC-1alpha → mitochondrial biogenesis genes.
+  AMP/ATP ratio → AMPK → PGC-1alpha → mitochondrial biogenesis; also → mTOR inhibition → autophagy.
+  mtDNA release: Damaged mitochondria release mtDNA → cGAS-STING → IFN type I (resembles bacterial DNA) → sterile inflammation → ageing.
+  Mitokines: Small peptides encoded by mtDNA small ORFs. Humanin, MOTS-c → systemic effects on metabolism, longevity, stress resistance.
+
+Mitochondria-ER contacts (MAMs — Mitochondria-Associated Membranes):
+  10–25 nm gaps; 5–20% OMM in contact with ER. Rich in: IP3R (ER Ca2+ channel) + VDAC (OMM) + GRP75 (chaperone bridge) → Ca2+ transfer ER → mitochondria (activates TCA enzymes).
+  Also: Lipid transfer (PS → PE conversion); mitochondrial fission (ER wraps around mitochondria before Drp1 fission); UPR signalling; autophagosome biogenesis.
+  Disrupted in Parkinson's (PINK1, Parkin, DJ-1 at MAMs), Alzheimer's (PS1/2 mutations affect Ca2+ transfer), ALS.
+
+6. MITOCHONDRIAL DISEASE & THERAPEUTICS
+-----------------------------------------
+Mitochondrial Diseases:
+  Heterogeneous; affect tissues with highest energy demands: brain, muscle, heart, liver, kidney, retina.
+  Presentation: Combinations of myopathy, encephalopathy, lactic acidosis, stroke-like episodes, deafness, diabetes, retinopathy.
+  Classification: mtDNA mutations vs nuclear-encoded gene mutations.
+
+Key Mitochondrial Diseases:
+  MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, Stroke-like episodes): MT-TL1 m.3243A>G (tRNA-Leu). Complex I impairment. Stroke-like episodes from energy failure, not vascular occlusion.
+  MERRF (Myoclonic Epilepsy with Ragged Red Fibres): MT-TK m.8344A>G. Ragged red fibres = subsarcolemmal mitochondrial accumulation on Gomori trichrome stain.
+  LHON (Leber Hereditary Optic Neuropathy): MT-ND4 m.11778G>A (most common) + others. Subacute bilateral visual loss in young men. 50% spontaneous partial recovery. Idebenone (ubiquinone analogue) may help. Gene therapy (AAV-ND4) in trials.
+  NARP/Leigh Syndrome: MT-ATP6 m.8993T>G/C. Severe; Leigh (infantile) → subacute necrotising encephalopathy.
+  Alpers syndrome: POLG mutations → mitochondrial DNA depletion → progressive hepatic failure + encephalopathy. Valproate contraindicated (worsens liver failure).
+  CPEO (Chronic Progressive External Ophthalmoplegia): Large-scale mtDNA deletions or POLG mutations. Ptosis + ophthalmoplegia.
+
+Emerging Therapeutics:
+  MitoTALEN/mtZFN: Targeted nucleases to selectively cleave mutant mtDNA → shift heteroplasmy toward wild-type.
+  mtCRISPR: Challenging due to impermeable IMM; ongoing engineering.
+  Mitochondrial replacement therapy (MRT): Spindle transfer or pronuclear transfer → prevent maternally inherited mtDNA disease transmission. Approved UK 2015 → 2017 first MRT baby born. Controversial (3-parent baby).
+  NAD+ precursors (NR, NMN): Address declining NAD+ in mitochondrial disease and ageing.
+  EPI-743 (Paediatric mitochondrial disease): Targeted antioxidant, para-benzoquinone.
+  KL1333 (NQO1 activator): Increases NADH oxidation → restore NAD+/NADH ratio.
+  Vatiquinone (EPI-743 successor): Phase III LHON trials.
+  Omaveloxolone (Nrf2 activator): Friedreich's ataxia (frataxin deficiency → Fe-S cluster defects → Complex I/II/III impairment) → FDA approved February 2023 — first approved treatment.
+
+[KEY INSIGHT] The mitochondrial theory of ageing (Harman, 1956) proposed that ROS produced by ETC damage mtDNA + proteins + lipids → cumulative damage → ageing.
+Modern view is more nuanced: Mild mitochondrial stress can extend lifespan (mitohormesis — C. elegans isp-1 mutants with impaired ETC live longer via UPRmt and ROS signalling). Complete mitochondrial failure accelerates ageing. The key is mitochondrial quality control (fusion, fission, mitophagy, biogenesis) — maintaining a healthy mitochondrial population across a lifetime.
+
+================================================================================

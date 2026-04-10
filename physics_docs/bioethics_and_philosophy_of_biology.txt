@@ -1,0 +1,166 @@
+================================================================================
+                BIOETHICS & PHILOSOPHY OF BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WHAT IS BIOETHICS?
+-----------------------
+Bioethics is the application of ethical reasoning to questions arising from biology,
+medicine, and biotechnology. It bridges science, philosophy, law, and social policy.
+
+Four Principles of Medical/Bioethics (Beauchamp & Childress, "Principles of Biomedical Ethics"):
+  1. Autonomy     : Respect individuals' right to make informed decisions about their own care and bodies.
+  2. Beneficence  : Act in the best interest of the patient/subject; promote wellbeing.
+  3. Non-maleficence: "First, do no harm" — avoid causing unnecessary injury or suffering.
+  4. Justice      : Distribute benefits and burdens fairly; equitable access to healthcare.
+
+Historical Context:
+  Nuremberg Code (1947): First international document on research ethics. Response to Nazi medical experiments. Core: Voluntary informed consent is "absolutely essential."
+  Declaration of Helsinki (1964, World Medical Association): Research ethics standards. Distinguishes therapeutic vs non-therapeutic research.
+  Belmont Report (1979, US): Respect for persons, Beneficence, Justice — guides all US federally funded research.
+  Tuskegee Syphilis Study (1932–1972): African American men with syphilis denied treatment even after penicillin available → never informed of their diagnosis → trust destroyed → Belmont Report + increased research oversight followed.
+  HeLa Cells (Henrietta Lacks, 1951): Cervical cancer cells taken without consent → most important cell line in history → raised issues of informed consent, tissue ownership, benefit-sharing.
+
+1.1 INFORMED CONSENT
+---------------------
+Legally and ethically required for medical treatment and research.
+Elements: Disclosure (adequate information), Comprehension (patient understands), Voluntariness (free from coercion), Competence (capacity to decide), Consent (express agreement).
+Challenges: Cultural differences; language barriers; power dynamics (doctor-patient); capacity assessment (dementia, mental illness); children (assent vs consent).
+Research consent: Additional requirements — right to withdraw; minimal risk; IRB/ethics committee review.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. GENETICS & GENOMICS ETHICS
+-------------------------------
+Genetic Testing:
+  Predictive testing: Know your risk before symptoms (BRCA1/2, Huntington's, APOE4).
+    Benefits: Inform surveillance, preventive measures, family planning decisions.
+    Harms: Psychological distress; discrimination (insurance, employment); stigma; duty to warn relatives.
+  Genetic Privacy: Genetic information reveals information about biological relatives — "familial nature."
+    GINA (Genetic Information Nondiscrimination Act, USA 2008): Prohibits health insurance + employment discrimination based on genetic information. Does NOT cover life, disability, or long-term care insurance.
+    UK Genetics Code of Practice: Encourages voluntary disclosure to relatives; no mandatory disclosure.
+  Direct-to-Consumer (DTC) Genetics: 23andMe, AncestryDNA — sale of genetic data; privacy risks; unintended disclosures (misattributed paternity, unexpected disease risk, ethnic identity surprises).
+  Genetic Exceptionalism: Debate — should genetic information be treated differently from other medical information?
+
+Germline Editing:
+  Somatic gene therapy: Modifies non-reproductive cells → not inherited. Ethical consensus: generally acceptable for serious disease.
+  Germline editing: Modifies embryos/gametes → heritable changes in all future generations.
+    He Jiankui (2018): CRISPR editing of human embryos → twin girls (Lulu and Nana) → CCR5 deletion to confer HIV resistance. Global scientific condemnation — premature, unsafe, without proper oversight, failed informed consent process. He sentenced to 3 years prison in China.
+    Current consensus: Heritable germline editing should not proceed until safety/efficacy established AND broad social consensus reached AND robust regulatory oversight exists.
+    Therapeutic potential: Sickle cell disease, muscular dystrophy, Huntington's — compelling reasons but risks of mosaicism, off-target effects, unknowns in multi-generational consequences.
+
+3. STEM CELL & REPRODUCTIVE ETHICS
+-------------------------------------
+Embryo Research:
+  14-day rule: Most jurisdictions prohibit culturing human embryos beyond 14 days (before primitive streak/individuation). Based on concept that embryo cannot feel pain before this.
+  2021 ISSCR revised guidelines: Permits extending beyond 14 days under specific oversight. Controversial.
+  Blastoids / Synthetic embryo models: Assembled from stem cells → mimic blastocyst/gastrula. Regulatory grey area; raises questions about moral status and oversight.
+
+iPSC Ethics:
+  Avoids embryo destruction (major ethical advantage over ESC).
+  Gamete generation: Can iPSCs be differentiated into eggs and sperm? Mouse IVG (in vitro gametogenesis) demonstrated. Human IVG in development. Ethical: Same-sex biological children; single-person reproduction; large-scale gamete production for research.
+  Autism/disease modelling: Patient-derived iPSC organoids used to model psychiatric disease → raises issues about modelling consciousness/personhood in a dish.
+
+Reproductive Ethics:
+  PGT (Preimplantation Genetic Testing): Select unaffected embryos. Widely accepted for serious disease.
+    Sex selection for social reasons: Controversial; banned in many countries.
+    "Saviour siblings": PGT to select HLA-matched sibling as bone marrow donor for affected child. Permitted with oversight in some countries (UK: HFEA case-by-case approval).
+    Enhancement: PGT to select for intelligence, height, athletic ability — generally condemned as "designer babies."
+  Surrogacy and Reproductive Technology: Access inequalities; commercialisation; legal status of children; rights of gamete donors.
+
+4. ANIMAL RESEARCH ETHICS
+---------------------------
+3Rs Framework (Russell & Burch, 1959):
+  Replace: Use alternatives (cell cultures, organoids, in silico models, human tissue) wherever possible.
+  Reduce: Use fewest animals necessary to obtain statistically valid results.
+  Refine: Minimise suffering; improve welfare; better housing/handling; pain management.
+
+Moral Status of Animals:
+  Peter Singer (Animal Liberation, 1975): Sentience = capacity to suffer → grounds for moral consideration regardless of species. Speciesism is analogous to racism.
+  Tom Regan: Animals are "subjects of a life" with inherent rights; should not be used merely as means.
+  Contractarian view: Moral status derived from ability to enter social contract → excludes non-human animals (rejected by most bioethicists).
+  Scale of sentience: Invertebrates < fish < reptiles < birds/mammals < primates + cetaceans.
+
+Animal Research in Practice:
+  UK Animals (Scientific Procedures) Act 1986 + 2012 amendment: All vertebrates + cephalopods covered. Proportionality: severity of harm vs scientific benefit. Project licences, personal licences.
+  US Animal Welfare Act: Excludes rats, mice, birds (main research species) from federal oversight (a significant gap).
+  EU Directive 2010/63: Harmonises protection across EU; includes invertebrates at sensitive developmental stages.
+  Three category severity: Mild, moderate, severe — prospective harm assessment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PHILOSOPHY OF BIOLOGY
+--------------------------
+What is a gene?
+  Classical (Mendelian): Unit of inheritance.
+  Molecular: Stretch of DNA encoding a functional product (protein or RNA).
+  Problems: Alternative splicing, overlapping genes, cis-regulatory regions, regulatory RNAs, epigenetic marks — all complicate a simple definition.
+  Philosophers: Moss (2003) — two gene concepts: "Gene-P" (instrumental, predictive of phenotype) and "Gene-D" (molecular, developmental resource). Neither fully captures all usages.
+
+What is a species?
+  Biological species concept (Mayr): Reproductive isolation. Problems: Asexual, fossils, hybridising species.
+  Evolutionary species concept: Lineage with its own evolutionary fate.
+  Ecological species concept: Distinct adaptive zone.
+  ~30+ species concepts in literature. Pluralists argue multiple concepts serve different purposes.
+
+Reductionism vs Emergentism:
+  Reductionism: Complex biological phenomena fully explained by lower-level (e.g., molecular) processes. Supported by molecular biology successes.
+  Emergentism: Some biological properties genuinely new at higher levels; cannot be predicted from lower levels. Consciousness, ecosystems, developmental patterns?
+  Systems biology perspective: Emphasises networks + feedback loops → properties emerging from interactions.
+
+Teleology in Biology:
+  Teleological language: "The heart pumps blood IN ORDER TO supply oxygen." Is this legitimate in science?
+  Teleofunctionalism (Wright, Millikan): Functions defined by selection history — a trait's function is what it was selected for.
+  Pittendrigh (1958): Distinguished "teleonomy" (apparent purposiveness from natural selection) vs true teleology.
+  Modern view: Teleological language acceptable as shorthand for adaptive explanations — no literal purposiveness implied.
+
+Units of Selection Debate:
+  Gene's-eye view (Dawkins, Hamilton, Williams): Genes are the ultimate unit of selection; organisms and groups are vehicles.
+  Individual selection: Most evolutionary biologists' working level.
+  Group selection: Highly controversial. Multilevel selection theory (Wilson, Sober) — selection acts simultaneously at multiple levels. Eusociality debate: kin selection vs group selection.
+  Species selection: Species-level traits can be selected? Debated in macroevolution.
+
+6. BIOSECURITY & DUAL-USE RESEARCH
+--------------------------------------
+Dual-Use Research of Concern (DURC):
+  Research with legitimate scientific purpose that could be misused for bioterrorism or bioweapons.
+  2011–2012: H5N1 gain-of-function studies (Fouchier + Kawaoka): Made H5N1 airborne-transmissible in ferrets. Published in Nature + Science after prolonged US NSABB debate. Still contested.
+  Gain-of-function research: Enhancing pathogen transmissibility, virulence, or host range. Regulatory frameworks: US HHS P3CO framework; NIH oversight.
+  COVID-19 origin debate: Lab leak vs natural spillover — illustrates scientific + political dimensions of DURC oversight. Underscores need for: international biosafety standards, transparency, governance.
+
+Biosafety Levels (BSL):
+  BSL-1: Non-hazardous, non-pathogenic organisms (E. coli K-12, S. cerevisiae). Basic lab practices.
+  BSL-2: Moderate risk pathogens (MRSA, Salmonella, HSV). Protective clothing; biohazard cabinets.
+  BSL-3: Serious disease potential; respiratory transmission risk (MTB, SARS-CoV-2, West Nile, anthrax). Directional airflow; PPE; controlled access.
+  BSL-4: Life-threatening; no treatment or vaccine (Ebola, Marburg, Nipah, Lassa). Positive-pressure suits; completely isolated; few global facilities.
+
+Gene Drive Ethics:
+  CRISPR gene drives: Could suppress or eliminate wild populations (malaria mosquitoes, invasive species).
+  Ethical issues: Ecological consequences of extinction; transboundary spread (no respect for borders); reversibility (self-limiting drives being developed); consent of affected communities; environmental justice (who decides?).
+  Recommended: Staged releases; confinement; community engagement; international governance.
+  WHO guidance: Strong monitoring; phased approach; engagement with affected populations.
+
+Synthetic Life & Creating New Organisms:
+  Synthesis of JCVI Syn1.0 (2010): First synthetic bacterial genome.
+  Minimal genome (JCVI Syn3.0): 473 essential genes; 1/3 unknown function.
+  Designer organisms: Engineering microbes with expanded genetic code (unnatural amino acids, XNA — xeno nucleic acids).
+  De-extinction: Colossal Biosciences targeting woolly mammoth, Tasmanian tiger, dodo. Ethical concerns: Welfare of hybrid animals; ecological risk of reintroduction; conservation resource diversion.
+  Creating sentient beings de novo: Where does moral responsibility lie? What rights do engineered organisms deserve?
+
+[FINAL REFLECTION] Responsible science requires:
+  1. Rigour: Reproducibility, transparency, open data.
+  2. Responsibility: Anticipate harms; engage public; maintain humility about limits.
+  3. Respect: For human subjects, animals, communities, future generations.
+  4. Reflexivity: Continuously examine assumptions, biases, power structures in science.
+  As biological capabilities accelerate (CRISPR, AI-driven biology, synthetic life), the ethical frameworks
+  must evolve with equal speed — and broader public engagement becomes not optional but essential.
+
+================================================================================

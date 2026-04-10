@@ -1,0 +1,221 @@
+================================================================================
+      CHEMISTRY: COMPLETE 118 ELEMENTS — QUICK REFERENCE TABLE
+        Symbol · Atomic Number · Atomic Mass · Config · Valency · Key Facts
+================================================================================
+
+This document provides a concise reference for ALL 118 elements with their
+essential data. Full detail for each group is in the dedicated group documents.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Z  | Symbol | Name       | Mass    | Config    | Valency | Common OS  | Key Fact
+---|--------|-----------|---------|-----------|---------|------------|-----------------------------
+1  | H      | Hydrogen  | 1.008   | 1s¹       | 1       | +1, -1     | Most abundant; H-bonds; fuel cells
+2  | He     | Helium    | 4.003   | 1s²       | 0       | 0          | Noble gas; MRI coolant; Tc=-269°C
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Z  | Symbol | Name       | Mass    | Config      | Valency | Common OS  | Key Fact
+---|--------|-----------|---------|-------------|---------|------------|-----------------------------
+3  | Li     | Lithium   | 6.941   | [He]2s¹     | 1       | +1         | Li-ion batteries; lightest metal
+4  | Be     | Beryllium | 9.012   | [He]2s²     | 2       | +2         | Amphoteric; toxic; aerospace alloys
+5  | B      | Boron     | 10.811  | [He]2s²2p¹  | 3       | +3         | Lewis acid; NdFeB magnets; borax
+6  | C      | Carbon    | 12.011  | [He]2s²2p²  | 4       | +4, -4     | Basis of organic chemistry; diamond; graphene
+7  | N      | Nitrogen  | 14.007  | [He]2s²2p³  | 3       | -3,+5      | 78% atmosphere; Haber-Bosch; triple bond
+8  | O      | Oxygen    | 15.999  | [He]2s²2p⁴  | 2       | -2         | Most abundant crust; H₂O; aerobic life
+9  | F      | Fluorine  | 18.998  | [He]2s²2p⁵  | 1       | -1         | Most electronegative; strongest oxidant; Teflon
+10 | Ne     | Neon      | 20.180  | [He]2s²2p⁶  | 0       | 0          | Noble gas; orange-red discharge (neon signs)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 3
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Z  | Symbol | Name       | Mass    | Config      | Valency | Common OS  | Key Fact
+---|--------|-----------|---------|-------------|---------|------------|-----------------------------
+11 | Na     | Sodium    | 22.990  | [Ne]3s¹     | 1       | +1         | Nerve impulses; NaCl; NaOH
+12 | Mg     | Magnesium | 24.305  | [Ne]3s²     | 2       | +2         | Chlorophyll; burns white; Mg alloys
+13 | Al     | Aluminium | 26.982  | [Ne]3s²3p¹  | 3       | +3         | Most abundant metal; amphoteric; aerospace
+14 | Si     | Silicon   | 28.086  | [Ne]3s²3p²  | 4       | +4         | Semiconductor; chips; SiO₂ glass; 2nd crust
+15 | P      | Phosphorus| 30.974  | [Ne]3s²3p³  | 3,5     | -3,+3,+5   | DNA backbone; ATP; fertilisers; red matches
+16 | S      | Sulphur   | 32.06   | [Ne]3s²3p⁴  | 2,4,6   | -2,+4,+6   | H₂SO₄ (Contact process); proteins; S₈ ring
+17 | Cl     | Chlorine  | 35.45   | [Ne]3s²3p⁵  | 1,3,5,7 | -1,+5,+7   | Yellow-green gas; bleach; PVC; water treatment
+18 | Ar     | Argon     | 39.948  | [Ne]3s²3p⁶  | 0       | 0          | 0.93% atmosphere; welding shield gas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 4 (Selected key data; full detail in transition metals document)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+19 | K      | Potassium | 39.098  | [Ar]4s¹     | 1       | +1         | Intracellular ion; KNO₃ fertiliser; KMnO₄
+20 | Ca     | Calcium   | 40.078  | [Ar]4s²     | 2       | +2         | Bones; teeth; limestone CaCO₃; cement
+21 | Sc     | Scandium  | 44.956  | [Ar]3d¹4s²  | 3       | +3         | Lightest TM; Al-Sc aerospace alloys
+22 | Ti     | Titanium  | 47.867  | [Ar]3d²4s²  | 4       | +4,+3      | Strong, light, corrosion-resistant; TiO₂ white pigment
+23 | V      | Vanadium  | 50.942  | [Ar]3d³4s²  | 5       | +2,+3,+4,+5| V₂O₅ catalyst; vanadium steel; flow batteries
+24 | Cr     | Chromium  | 51.996  | [Ar]3d⁵4s¹* | 3,6     | +3,+6      | Stainless steel; chrome plating; ruby colour
+25 | Mn     | Manganese | 54.938  | [Ar]3d⁵4s²  | 2,4,7   | +2 to +7   | KMnO₄ oxidant; Mn steel; batteries (MnO₂)
+26 | Fe     | Iron      | 55.845  | [Ar]3d⁶4s²  | 2,3     | +2,+3      | Most used metal; haemoglobin; steel; rust
+27 | Co     | Cobalt    | 58.933  | [Ar]3d⁷4s²  | 2,3     | +2,+3      | Vitamin B₁₂; Co-magnets; LiCoO₂ batteries
+28 | Ni     | Nickel    | 58.693  | [Ar]3d⁸4s²  | 2       | +2         | Stainless steel; Ni(CO)₄; NiMH batteries
+29 | Cu     | Copper    | 63.546  | [Ar]3d¹⁰4s¹*| 1,2     | +1,+2      | Best practical conductor; plumbing; enzymes
+30 | Zn     | Zinc      | 65.38   | [Ar]3d¹⁰4s² | 2       | +2         | Galvanising; enzymes (carbonic anhydrase); ZnO
+31 | Ga     | Gallium   | 69.723  | [Ar]3d¹⁰4s²4p¹| 3    | +3         | GaAs, GaN semiconductors; melts in hand
+32 | Ge     | Germanium | 72.630  | [Ar]3d¹⁰4s²4p²| 4    | +4,+2      | Eka-silicon predicted by Mendeleev; IR optics
+33 | As     | Arsenic   | 74.922  | [Ar]3d¹⁰4s²4p³| 3,5  | -3,+3,+5   | Metalloid; toxic; As₂O₃ for APL leukaemia
+34 | Se     | Selenium  | 78.971  | [Ar]3d¹⁰4s²4p⁴| 2,4,6| -2,+4,+6   | Selenocysteine; GPx antioxidant; photoconductor
+35 | Br     | Bromine   | 79.904  | [Ar]3d¹⁰4s²4p⁵| 1,3,5|-1,+1,+3,+5| Only liquid non-metal; AgBr photography
+36 | Kr     | Krypton   | 83.798  | [Ar]3d¹⁰4s²4p⁶| 0(2) | 0, +2      | Noble gas; KrF excimer laser; KrF₂ compound
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+37 | Rb     | Rubidium  | 85.468  | [Kr]5s¹     | 1       | +1         | BEC; atomic clock; ⁸²Rb PET
+38 | Sr     | Strontium | 87.62   | [Kr]5s²     | 2       | +2         | Crimson fireworks; ⁸⁹Sr bone mets treatment
+39 | Y      | Yttrium   | 88.906  | [Kr]4d¹5s²  | 3       | +3         | YAG lasers; Y₂O₃ phosphors; Y-Ba-Cu-O supercond.
+40 | Zr     | Zirconium | 91.224  | [Kr]4d²5s²  | 4       | +4         | Nuclear cladding (Zircaloy); ZrO₂ ceramics; dental
+41 | Nb     | Niobium   | 92.906  | [Kr]4d⁴5s¹* | 5       | +5,+3      | Nb₃Sn superconductor; Nb-steel alloys; MRI magnets
+42 | Mo     | Molybdenum| 95.95   | [Kr]4d⁵5s¹* | 6       | +6,+4,+2   | Nitrogenase; xanthine oxidase; MoS₂ lubricant; V₂O₅ partner
+43 | Tc     | Technetium| (98)    | [Kr]4d⁵5s²  | 7       | +7,+4      | No stable isotopes; ⁹⁹ᵐTc = most used medical isotope
+44 | Ru     | Ruthenium | 101.07  | [Kr]4d⁷5s¹  | 0,2,3,4 | +2,+3      | Grubbs catalyst; DSSC solar cells; PGM
+45 | Rh     | Rhodium   | 102.906 | [Kr]4d⁸5s¹  | 1,3     | +1,+3      | Autocatalytic converter; Wilkinson's catalyst; most expensive metal
+46 | Pd     | Palladium | 106.42  | [Kr]4d¹⁰*   | 0,2     | +2,0       | Suzuki/Heck cross-coupling; H₂ absorption; dental
+47 | Ag     | Silver    | 107.868 | [Kr]4d¹⁰5s¹*| 1       | +1         | Best electrical/thermal conductor; antibacterial; AgBr photography
+48 | Cd     | Cadmium   | 112.414 | [Kr]4d¹⁰5s² | 2       | +2         | CdTe solar cells; Cd-S pigments; toxic (Itai-itai)
+49 | In     | Indium    | 114.818 | [Kr]4d¹⁰5s²5p¹| 3    | +3,+1      | ITO touchscreens; InP telecoms
+50 | Sn     | Tin       | 118.710 | [Kr]4d¹⁰5s²5p²| 2,4  | +2,+4      | Bronze (Sn-Cu); solder; tin cans; tin pest
+51 | Sb     | Antimony  | 121.760 | [Kr]4d¹⁰5s²5p³| 3,5  | -3,+3,+5   | Flame retardant; Sb alloys; ancient antimony
+52 | Te     | Tellurium | 127.60  | [Kr]4d¹⁰5s²5p⁴| 2,4,6|-2,+4,+6   | CdTe solar cells; Bi₂Te₃ thermoelectric; phase-change memory
+53 | I      | Iodine    | 126.904 | [Kr]4d¹⁰5s²5p⁵| 1,5,7| -1,+5,+7   | Thyroid hormones; ¹³¹I therapy; starch test
+54 | Xe     | Xenon     | 131.293 | [Kr]4d¹⁰5s²5p⁶| 0,2,4,6| 0        | Noble gas; XeF₂; ion propulsion; anaesthetic
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 6
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+55 | Cs     | Caesium   | 132.905 | [Xe]6s¹     | 1       | +1         | Most electropositive; atomic clock; gold-yellow colour
+56 | Ba     | Barium    | 137.327 | [Xe]6s²     | 2       | +2         | BaSO₄ X-ray contrast; BaTiO₃ piezoelectric; apple-green flame
+57 | La     | Lanthanum | 138.905 | [Xe]5d¹6s²  | 3       | +3         | Lanthanide start; LaNi₅ H₂ storage; LaB₆ electron emitter
+58 | Ce     | Cerium    | 140.116 | [Xe]4f¹5d¹6s²| 3,4   | +3,+4      | Most abundant REE; CeO₂ catalyst; Ce:YAG yellow LED phosphor
+59 | Pr     | Praesodymium|140.908| [Xe]4f³6s²  | 3       | +3         | Nd-Pr-Fe-B magnets; green/yellow glass
+60 | Nd     | Neodymium | 144.242 | [Xe]4f⁴6s²  | 3       | +3         | NdFeB strongest magnets; Nd:YAG laser; EV motors
+61 | Pm     | Promethium| (145)   | [Xe]4f⁵6s²  | 3       | +3         | Only radioactive lanthanide; all isotopes unstable
+62 | Sm     | Samarium  | 150.36  | [Xe]4f⁶6s²  | 2,3     | +2,+3      | SmCo magnets; SmI₂ reducing agent; ¹⁵³Sm bone therapy
+63 | Eu     | Europium  | 151.964 | [Xe]4f⁷6s²  | 2,3     | +2,+3      | Red/blue TV phosphors; banknote security UV fluorescence
+64 | Gd     | Gadolinium| 157.25  | [Xe]4f⁷5d¹6s²| 3     | +3         | MRI contrast agent (Gd-DTPA); highest neutron capture; Gd³⁺ 7 unpaired e⁻
+65 | Tb     | Terbium   | 158.925 | [Xe]4f⁹6s²  | 3,4     | +3         | Green phosphor (YAG:Tb); Terfenol-D magnetostrictive
+66 | Dy     | Dysprosium| 162.500 | [Xe]4f¹⁰6s² | 3       | +3         | NdFeB magnet additive (high-temp coercivity); EV motors
+67 | Ho     | Holmium   | 164.930 | [Xe]4f¹¹6s² | 3       | +3         | Ho:YAG laser 2100nm surgery; highest magnetic moment element
+68 | Er     | Erbium    | 167.259 | [Xe]4f¹²6s² | 3       | +3         | EDFA optical amplifier (1550nm); Er:YAG 2940nm skin laser
+69 | Tm     | Thulium   | 168.934 | [Xe]4f¹³6s² | 2,3     | +2,+3      | Rarest stable lanthanide; ¹⁷⁰Tm X-ray source; Tm:YAG laser
+70 | Yb     | Ytterbium | 173.054 | [Xe]4f¹⁴6s² | 2,3     | +2,+3      | Yb:YAG laser; optical atomic clock; Yb Lewis acid
+71 | Lu     | Lutetium  | 174.967 | [Xe]4f¹⁴5d¹6s²| 3    | +3         | ¹⁷⁷Lu targeted radiotherapy; PET LYSO scintillator; end of lanthanides
+72 | Hf     | Hafnium   | 178.49  | [Xe]4f¹⁴5d²6s²| 4    | +4         | Nuclear reactor control rods; HfO₂ gate dielectrics in chips
+73 | Ta     | Tantalum  | 180.948 | [Xe]4f¹⁴5d³6s²| 5    | +5         | Capacitors (electronics); corrosion resistant; surgical implants
+74 | W      | Tungsten  | 183.84  | [Xe]4f¹⁴5d⁴6s²| 6    | +6,+4      | Highest mp (3422°C); WC cutting tools; light filaments; X-ray tubes
+75 | Re     | Rhenium   | 186.207 | [Xe]4f¹⁴5d⁵6s²| 7    | +7,+4      | Ni superalloy turbine blades; PlatRe catalyst; rarest stable element
+76 | Os     | Osmium    | 190.23  | [Xe]4f¹⁴5d⁶6s²| 8    | +8,+4      | Densest element (22.59 g/cm³); OsO₄ stain (EM); hardest PGM
+77 | Ir     | Iridium   | 192.217 | [Xe]4f¹⁴5d⁷6s²| 3,4  | +3,+4      | Most corrosion resistant; K-Pg boundary iridium anomaly; spark plugs
+78 | Pt     | Platinum  | 195.084 | [Xe]4f¹⁴5d⁹6s¹*| 2,4| +2,+4      | Catalytic converter; cisplatin cancer drug; SHE reference
+79 | Au     | Gold      | 196.967 | [Xe]4f¹⁴5d¹⁰6s¹*| 1,3|-1,+1,+3  | Noble; yellow (relativistic); aqua regia; electronics; nanoparticles
+80 | Hg     | Mercury   | 200.592 | [Xe]4f¹⁴5d¹⁰6s²| 1,2| +1,+2      | Only liquid metal RT; very toxic; HgS cinnabar ore; Hg₂Cl₂/HgCl₂
+81 | Tl     | Thallium  | 204.38  | [Xe]4f¹⁴5d¹⁰6s²6p¹| 1,3|+1,+3   | Highly toxic; ²⁰¹Tl cardiac imaging; inert pair effect
+82 | Pb     | Lead      | 207.2   | [Xe]4f¹⁴5d¹⁰6s²6p²| 2,4|+2,+4   | Very toxic; Pb-acid batteries; radiation shielding; historical uses
+83 | Bi     | Bismuth   | 208.980 | [Xe]4f¹⁴5d¹⁰6s²6p³| 3|+3,+5     | Least toxic heavy metal; Pepto-Bismol; ²⁰⁹Bi longest-lived radioisotope
+84 | Po     | Polonium  | (209)   | [Xe]4f¹⁴5d¹⁰6s²6p⁴| 2,4|+2,+4  | Radioactive; ²¹⁰Po used in Litvinenko assassination; RTG
+85 | At     | Astatine  | (210)   | [Xe]4f¹⁴5d¹⁰6s²6p⁵| 1,3|−1,+1  | Rarest natural element; ²¹¹At targeted alpha therapy for cancer
+86 | Rn     | Radon     | (222)   | [Xe]4f¹⁴5d¹⁰6s²6p⁶| 0| 0        | Radioactive noble gas; ²²²Rn from Ra-226; indoor lung cancer risk
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PERIOD 7 — All elements are radioactive (no stable isotopes beyond Bi, Z=83)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+87 | Fr     | Francium  | (223)   | [Rn]7s¹     | 1       | +1         | Rarest natural; t½(²²³Fr)=22min; most electropositive
+88 | Ra     | Radium    | (226)   | [Rn]7s²     | 2       | +2         | ²²³Ra bone cancer treatment; glows blue; discovered by Curie
+89 | Ac     | Actinium  | (227)   | [Rn]6d¹7s²  | 3       | +3         | Actinide leader; ²²⁵Ac targeted alpha therapy
+90 | Th     | Thorium   | 232.038 | [Rn]6d²7s²  | 4       | +4         | Thorium fuel cycle; ThO₂ high mp; gas mantles
+91 | Pa     | Protactinium|231.036| [Rn]5f²6d¹7s²| 4,5   | +4,+5      | Very rare; ocean circulation tracer
+92 | U      | Uranium   | 238.029 | [Rn]5f³6d¹7s²| 4,6   | +4,+6(UO₂²⁺)| Nuclear fuel/weapons; ²³⁵U fissile; UO₂²⁺ uranyl
+93 | Np     | Neptunium | (237)   | [Rn]5f⁴6d¹7s²| 4,5   | +5         | First transuranium; made in reactors from U-238
+94 | Pu     | Plutonium | (244)   | [Rn]5f⁶7s²  | 3,4,6   | +4,+6      | Fissile; Fat Man bomb; ²³⁸Pu RTG (Voyager, Curiosity)
+95 | Am     | Americium | (243)   | [Rn]5f⁷7s²  | 3       | +3         | ²⁴¹Am in smoke detectors; ²⁴²Am → Cm in reactors
+96 | Cm     | Curium    | (247)   | [Rn]5f⁷6d¹7s²| 3     | +3         | Named after Curies; APXS on Mars rovers (Curiosity, Perseverance)
+97 | Bk     | Berkelium | (247)   | [Rn]5f⁹7s²  | 3,4     | +3,+4      | Berkelium-249 target to make heaviest elements
+98 | Cf     | Californium|(251)   | [Rn]5f¹⁰7s² | 3       | +3         | ²⁵²Cf neutron source; cancer therapy; oil well logging
+99 | Es     | Einsteinium|(252)   | [Rn]5f¹¹7s² | 3       | +3         | Named after Einstein; only µg ever made
+100| Fm     | Fermium   | (257)   | [Rn]5f¹²7s² | 3       | +3         | Named after Fermi; discovered in H-bomb debris (1952)
+101| Md     | Mendelevium|(258)   | [Rn]5f¹³7s² | 3       | +2,+3      | Named after Mendeleev; first one-atom-at-a-time synthesis
+102| No     | Nobelium  | (259)   | [Rn]5f¹⁴7s² | 2,3     | +2(stable) | Named after Nobel; No²⁺ stable (full f)
+103| Lr     | Lawrencium| (262)   | [Rn]5f¹⁴7p¹ | 3       | +3         | Last actinide; named after E.O. Lawrence
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TRANSACTINIDES (Superheavy Elements, Z=104–118)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+104| Rf  | Rutherfordium| (267) | [Rn]5f¹⁴6d²7s² | 4     | +4  | Group 4; RfCl₄; t½ ~1.3h; named after E. Rutherford
+105| Db  | Dubnium    | (268)   | [Rn]5f¹⁴6d³7s² | 5     | +5  | Group 5; Dubna (Russia); ~1 day t½
+106| Sg  | Seaborgium | (271)   | [Rn]5f¹⁴6d⁴7s² | 6     | +6  | Group 6; SgO₄²⁻ like CrO₄²⁻; named after Glenn Seaborg
+107| Bh  | Bohrium    | (270)   | [Rn]5f¹⁴6d⁵7s² | 7     | +7  | Group 7; named after Niels Bohr; ~61 second t½
+108| Hs  | Hassium    | (277)   | [Rn]5f¹⁴6d⁶7s² | 8     | +8  | Group 8; HsO₄ volatile (like OsO₄) confirmed; ~10s t½
+109| Mt  | Meitnerium | (276)   | [Rn]5f¹⁴6d⁷7s² | 3,4   | +3  | Group 9; named after Lise Meitner; ~8s t½
+110| Ds  | Darmstadtium|(281)   | [Rn]5f¹⁴6d⁸7s² | 0,2,4,6|+2  | Group 10; named after Darmstadt; µs t½
+111| Rg  | Roentgenium| (282)   | [Rn]5f¹⁴6d¹⁰7s¹| 1,3  | +1  | Group 11; named after W.C. Röntgen; ~30s t½
+112| Cn  | Copernicium| (285)   | [Rn]5f¹⁴6d¹⁰7s²| 2     | +2  | Group 12; named after Copernicus; may be gaseous at RT
+113| Nh  | Nihonium   | (286)   | [...7s²7p¹]     | 1,3   | +1  | Group 13; first Asian element (Japan/RIKEN); ~20s t½
+114| Fl  | Flerovium  | (289)   | [...7s²7p²]     | 2     | +2  | Group 14; Flerov Laboratory; volatile; ~2s t½
+115| Mc  | Moscovium  | (290)   | [...7s²7p³]     | 1,3   | +1  | Group 15; Moscow; ~220ms t½
+116| Lv  | Livermorium| (293)   | [...7s²7p⁴]     | 2     | +2  | Group 16; Livermore NL; ~61ms t½
+117| Ts  | Tennessine | (294)   | [...7s²7p⁵]     | 1,3   | -1? | Group 17; Tennessee; ~51ms t½; may not behave like halogen
+118| Og  | Oganesson  | (294)   | [...7s²7p⁶]     | 0,2?  | 0?  | Group 18; named after Yuri Oganessian; heaviest; ~0.89ms t½
+
+* = Electronic configuration exceptions (anomalous due to extra stability of half-filled or full d subshell)
+   Cr: [Ar]3d⁵4s¹ (not 3d⁴4s²)   Cu: [Ar]3d¹⁰4s¹ (not 3d⁹4s²)
+   Mo: [Kr]4d⁵5s¹                  Pd: [Kr]4d¹⁰ (no 5s electrons!)
+   Ag: [Kr]4d¹⁰5s¹                 Au: [Xe]4f¹⁴5d¹⁰6s¹
+   Nb: [Kr]4d⁴5s¹                  Pt: [Xe]4f¹⁴5d⁹6s¹
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMPORTANT CONSTANTS & CONVERSION FACTORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Avogadro's number (Nₐ):     6.02214076 × 10²³ mol⁻¹
+Faraday constant (F):        96,485.3 C mol⁻¹
+Universal gas constant (R):  8.31446 J mol⁻¹ K⁻¹
+Boltzmann constant (kB):     1.38065 × 10⁻²³ J K⁻¹
+Planck's constant (h):       6.62607 × 10⁻³⁴ J s
+Speed of light (c):          2.99792 × 10⁸ m s⁻¹
+Electron mass (mₑ):          9.10938 × 10⁻³¹ kg
+Proton mass (mₚ):            1.67262 × 10⁻²⁷ kg
+Neutron mass (mₙ):           1.67493 × 10⁻²⁷ kg
+1 amu (unified atomic mass): 1.66054 × 10⁻²⁷ kg = 931.494 MeV/c²
+1 eV:                        1.60218 × 10⁻¹⁹ J
+1 atm:                       101,325 Pa = 760 mmHg
+1 cal:                       4.184 J
+STP (IUPAC 2010):            0°C and 100 kPa; molar volume = 22.711 L/mol
+Old STP:                     0°C and 101.325 kPa; molar volume = 22.414 L/mol
+Kw (water, 25°C):            1.0 × 10⁻¹⁴ mol² dm⁻⁶
+RT/F (25°C):                 0.02569 V = 25.69 mV
+(RT/F)ln10 (25°C):           0.05916 V = 59.16 mV (for log₁₀ form of Nernst)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMPORTANT FORMULAE SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Ideal gas law:          PV = nRT
+van der Waals:          (P + an²/V²)(V - nb) = nRT
+pH:                     pH = -log[H⁺];  pOH = -log[OH⁻];  pH + pOH = 14 (25°C)
+Henderson-Hasselbalch:  pH = pKa + log([A⁻]/[HA])
+Nernst equation:        E = E° - (RT/nF)ln(Q) = E° - (0.0592/n)log(Q) at 25°C
+Gibbs free energy:      ΔG = ΔH - TΔS;  ΔG° = -RT ln(K) = -nFE°
+Arrhenius:              k = Ae^(-Ea/RT);  ln(k₂/k₁) = -(Ea/R)(1/T₂ - 1/T₁)
+Beer-Lambert:           A = εcl;  A = log(I₀/I)
+Bragg's law:            nλ = 2d sinθ
+de Broglie:             λ = h/mv = h/p
+Heisenberg uncertainty: Δx · Δp ≥ ħ/2  (ħ = h/2π)
+Radioactive decay:      N(t) = N₀e^(-λt);  t½ = ln2/λ
+Mass-energy:            E = mc²
+Faraday:                m = (Q × M)/(n × F)
+Osmotic pressure:       Π = iMRT
+Boiling pt elevation:   ΔTb = Kb × m × i
+Freezing pt depression: ΔTf = Kf × m × i
+Clausius-Clapeyron:     ln(P₂/P₁) = -(ΔH_vap/R)(1/T₂ - 1/T₁)
+Boltzmann entropy:      S = kB × ln(W)
+CFSE (octahedral):      E = (-4Dq × n_t2g) + (+6Dq × n_eg) + P × n_paired_extra
+Bond order (MO):        BO = (bonding e⁻ - antibonding e⁻)/2
+Formal charge:          FC = V - N - B/2  (V=valence e⁻; N=non-bonding; B=bonding)
+Atom economy:           AE% = (MW product / ΣMW reactants) × 100
+Rf (TLC):               Rf = distance spot / distance solvent front
+
+================================================================================

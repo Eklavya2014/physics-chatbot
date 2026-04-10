@@ -1,0 +1,254 @@
+================================================================================
+                       ORGANIC CHEMISTRY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ORGANIC CHEMISTRY FUNDAMENTALS
+-----------------------------------
+Organic chemistry: Study of carbon-containing compounds (with exceptions: CO, CO₂, carbonates, carbides treated as inorganic).
+~10 million known organic compounds. Carbon's unique properties:
+  - Tetravalent (4 bonds); sp³, sp², sp hybridisation.
+  - C-C bonds strong (347 kJ/mol) and numerous (chains/rings possible).
+  - Can form single, double, triple bonds.
+  - Similar EN to H, N, O → forms strong covalent bonds with all.
+  - Small size → close approach → effective orbital overlap.
+
+Homologous Series: Compounds with same general formula and functional group, differing by CH₂.
+  Alkanes: CₙH₂ₙ₊₂. Alkenes: CₙH₂ₙ. Alkynes: CₙH₂ₙ₋₂. Alcohols: CₙH₂ₙ₊₁OH.
+  Each successive member in a series has similar chemical properties but slightly different physical.
+
+1.1 FUNCTIONAL GROUPS & CLASSES
+---------------------------------
+Class          | Functional Group    | Suffix     | Example
+---------------|---------------------|------------|------------------
+Alkane         | C-C, C-H only       | -ane       | Ethane CH₃CH₃
+Alkene         | C=C                 | -ene       | Ethene CH₂=CH₂
+Alkyne         | C≡C                 | -yne       | Ethyne HC≡CH
+Arene          | Benzene ring        | -benzene   | Methylbenzene (toluene)
+Haloalkane     | C-X (X=F,Cl,Br,I)  | halo-      | Chloroethane CH₃CH₂Cl
+Alcohol        | -OH                 | -ol        | Ethanol CH₃CH₂OH
+Ether          | R-O-R'              | -ether     | Diethyl ether
+Aldehyde       | -CHO                | -al        | Ethanal CH₃CHO
+Ketone         | R-CO-R'             | -one       | Propanone (CH₃)₂CO
+Carboxylic acid| -COOH               | -oic acid  | Ethanoic acid CH₃COOH
+Ester          | -COO-               | -oate      | Ethyl ethanoate
+Amide          | -CONH₂              | -amide     | Ethanamide CH₃CONH₂
+Amine          | -NH₂, NHR, NR₂     | -amine     | Ethylamine CH₃CH₂NH₂
+Nitrile        | -C≡N                | -nitrile   | Ethanenitrile CH₃CN
+Nitro          | -NO₂                | nitro-     | Nitrobenzene C₆H₅NO₂
+Thiol          | -SH                 | -thiol     | Ethanethiol CH₃CH₂SH
+Acid chloride  | -COCl               | -oyl chloride| Ethanoyl chloride
+
+IUPAC Nomenclature:
+  1. Find longest carbon chain containing principal functional group → root name.
+  2. Number chain from end giving principal group LOWEST number.
+  3. Add prefixes (substituents): methyl-, ethyl-, bromo-, chloro-, hydroxy-, etc.
+  4. Add suffix for principal functional group.
+  5. Alphabetical order for multiple substituents; di-, tri-, etc. for identical groups (ignored in alphabetical order).
+
+1.2 ISOMERISM — BASIC
+-----------------------
+Isomers: Same molecular formula; different structural arrangement.
+Constitutional (structural) isomers: Different connectivity.
+  Chain isomers: Different carbon skeleton (butane vs isobutane = methylpropane).
+  Position isomers: Same functional group at different positions (butan-1-ol vs butan-2-ol).
+  Functional group isomers: Different functional groups (ethanol C₂H₅OH vs methoxyethane CH₃OCH₃).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. STEREOISOMERISM
+-------------------
+Stereoisomers: Same connectivity; different spatial arrangement.
+Geometric (cis-trans) isomerism:
+  Requires: Double bond (C=C) OR ring (no free rotation). Two different groups on each carbon.
+  cis: Same groups on same side. trans: Same groups on opposite sides.
+  E/Z nomenclature (more systematic): Priority rules (CIP) determine E (entgegen = opposite) or Z (zusammen = together) based on atomic number priority.
+  Affects physical properties (dipole moments, melting points, boiling points).
+
+Optical Isomerism (Chirality):
+  Chiral centre (stereocentre): Carbon bonded to 4 different groups → non-superimposable mirror image.
+  Enantiomers: Mirror image isomers. Same physical properties except rotation of plane-polarised light.
+  Dextrorotatory (+): Rotates plane right. Levorotatory (-): Rotates plane left.
+  Racemic mixture: Equal amounts of both enantiomers → zero net rotation.
+  R/S configuration (CIP): Priority order of 4 groups; R = clockwise, S = anticlockwise (lowest priority pointing away).
+  Diastereomers: Non-mirror-image stereoisomers (≥2 stereocentres).
+  Meso compound: Has stereocentre(s) but is achiral (internal plane of symmetry).
+
+Importance in biology and medicine:
+  Thalidomide: R-enantiomer = sedative; S-enantiomer = teratogenic. Racemic mixture → harm.
+  Drug chirality: >50% top pharmaceuticals chiral. Single enantiomer often preferred.
+  Enzymes are stereospecific: Only D-sugars and L-amino acids found in living organisms.
+
+3. KEY REACTIONS BY FUNCTIONAL GROUP
+--------------------------------------
+ALKANES (CₙH₂ₙ₊₂):
+  Free radical substitution: CH₄ + Cl₂ → CH₃Cl + HCl (UV light initiation).
+    Mechanism: Initiation (Cl₂ → 2Cl•); Propagation (Cl• + CH₄ → HCl + CH₃•; CH₃• + Cl₂ → CH₃Cl + Cl•); Termination (radical + radical → product).
+  Combustion: CH₄ + 2O₂ → CO₂ + 2H₂O (complete). Incomplete → CO + H₂O.
+  Cracking: Long-chain alkanes → shorter alkanes + alkenes (thermal or catalytic; ZSM-5 zeolite at 500°C).
+
+ALKENES (CₙH₂ₙ):
+  Electrophilic addition: C=C acts as nucleophile (high electron density) → attacked by electrophiles.
+  + HX (Markovnikov's Rule): H adds to C with more H's; X to C with fewer H's (carbocation intermediate; more substituted = more stable = major product).
+    Mechanism: H⁺ (electrophile) attacks → carbocation intermediate → X⁻ attacks → product.
+    Regiospecific, not stereospecific.
+  + Br₂ (halogenation): Both carbons get Br. In CCl₄ — orange bromine decolorises (test for C=C).
+    Mechanism: Bromonium ion intermediate → anti addition (trans product).
+  + H₂O (acid-catalysed) → alcohol: H₂SO₄/H₃PO₄ + heat → hydration → alcohol.
+  + H₂ (hydrogenation): Ni/Pd/Pt catalyst → alkane. Reduces degree of unsaturation.
+  Polymerisation: nCH₂=CH₂ → (-CH₂-CH₂-)ₙ (polyethylene/HDPE/LDPE). Addition polymerisation.
+
+ALKYNES (CₙH₂ₙ₋₂):
+  Similar to alkenes but 2 additions possible.
+  Terminal alkynes: RC≡CH — acidic H (pKa ~25); react with strong bases; form metal acetylides.
+  Reduction → alkene (Lindlar's catalyst → cis-alkene) or alkane.
+
+HALOALKANES (R-X):
+  Nucleophilic Substitution:
+    SN2: Single step; bimolecular; nucleophile attacks from back → Walden inversion; primary R-X preferred.
+      Rate = k[R-X][Nu]. Favoured by: Primary substrate; strong nucleophile; polar aprotic solvent (DMSO, DMF, acetone).
+    SN1: Two steps; unimolecular; carbocation intermediate; tertiary R-X preferred.
+      Rate = k[R-X] only. Favoured by: Tertiary substrate; weak nucleophile; polar protic solvent (water, ethanol). Racemisation (flat carbocation attacked from both sides).
+  Elimination:
+    E2: Bimolecular; base removes H from β-carbon while X leaves → alkene. Anti-periplanar geometry required (H and X anti). Favoured by: Strong bulky base (KOH in ethanol); tertiary substrate; high temp.
+    E1: Carbocation intermediate → H⁺ loss → alkene. Slower than E2; same conditions as SN1 competitive.
+    Zaitsev's rule: More substituted alkene = major product (thermodynamic control).
+
+ALCOHOLS (R-OH):
+  Oxidation: Primary → aldehyde (with K₂Cr₂O₇/H₂SO₄ limited, or PCC) or carboxylic acid (excess oxidant).
+    Secondary → ketone (don't oxidise further easily). Tertiary → no oxidation.
+    Test: Dichromate orange → green (Cr³⁺) if primary or secondary alcohol.
+  Esterification: Carboxylic acid + alcohol → ester + H₂O (H₂SO₄ catalyst; reversible).
+    Fischer esterification: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O.
+  Dehydration: R-OH + H₂SO₄/H₃PO₄, heat → alkene (E2; Zaitsev's rule for regiochemistry).
+  Reaction with Na: 2ROH + 2Na → 2RONa + H₂ (gentler than water + Na; alkoxides formed).
+
+CARBONYL COMPOUNDS (RCHO and RCOR'):
+  Nucleophilic addition: Nu⁻ attacks electrophilic C of C=O.
+  + NaBH₄/LiAlH₄ → alcohol (reduction: aldehyde → 1° alcohol; ketone → 2° alcohol).
+  + HCN → cyanohydrin (then → amino acids; hydroxy acids).
+  + Grignard (RMgX) → alcohol (1° from HCHO; 2° from RCHO; 3° from ketone).
+  Aldehyde-specific:
+    Tollens' test (silver mirror): RCHO + [Ag(NH₃)₂]⁺ → Ag↓ + RCOO⁻ (oxidation; silver mirror forms → positive for aldehydes; ketones negative).
+    Fehling's test: RCHO + Cu²⁺ (blue) → Cu₂O (red precipitate) → positive for aldehydes.
+    Iodoform (triiodomethane) test: Methyl ketones (CH₃CO-) + I₂/NaOH → CHI₃ (yellow) → positive for CH₃CO- group.
+
+CARBOXYLIC ACIDS (RCOOH):
+  Weak acid: RCOOH ⇌ RCOO⁻ + H⁺. Ka varies; pKa typically 4-5.
+  Esterification (see above). Acid chloride formation: + SOCl₂ or PCl₅ → RCOCl.
+  Amide formation: + NH₃ → ammonium salt; then heat → amide -CONH₂.
+  Reduction: + LiAlH₄ → 1° alcohol (directly reduces COOH to CH₂OH).
+  Decarboxylation: β-keto acids → CO₂ + ketone (biochemistry: metabolic intermediates).
+
+4. POLYMERS
+------------
+Addition Polymers (free radical or ionic):
+  Monomer = alkene. Polymer = long-chain saturated compound.
+  Polythene (HDPE/LDPE): Ziegler-Natta catalysts (TiCl₄/AlR₃) → stereoregular polymers.
+  Polypropylene (PP): Isotactic (all CH₃ same side) → strong, stiff.
+  PVC: Polyvinyl chloride; rigid or plasticised (phthalate plasticisers).
+  Polystyrene: C₈H₈ monomer; clear, rigid; expandable (EPS, Styrofoam).
+  PTFE: Polytetrafluoroethylene (Teflon); non-stick; inert.
+  PMMA: Polymethylmethacrylate (Perspex, Plexiglas); clear; shatter-resistant.
+
+Condensation Polymers:
+  Monomer molecules condense → small molecule lost (usually H₂O).
+  Nylon-6,6: Diamine + dicarboxylic acid → amide bonds (-CONH-). Nylon rope trick.
+  Polyester (Dacron/Terylene, PET): Diol + dicarboxylic acid → ester bonds. Also PET bottles.
+  Polylactic acid (PLA): Biodegradable polyester from lactic acid; bioplastic.
+  Polyamides, polyurethanes, polycarbonates: All condensation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. AROMATIC CHEMISTRY
+-----------------------
+Electrophilic Aromatic Substitution (EAS): Main reaction of benzene ring.
+  Benzene defends aromaticity → prefers substitution (keep ring) over addition (lose ring).
+  General mechanism: Electrophile E⁺ attacks ring → sigma complex (arenium ion, Wheland intermediate → cyclohexadienyl cation) → H⁺ lost → re-aromatisation.
+
+EAS Reactions of Benzene:
+  Nitration: C₆H₆ + HNO₃/H₂SO₄ → C₆H₅NO₂ + H₂O. (Electrophile = NO₂⁺ nitronium ion; H₂SO₄ protonates HNO₃).
+  Sulfonation: C₆H₆ + SO₃/H₂SO₄ → C₆H₅SO₃H (benzenesulphonic acid). Reversible (reflux with steam → desulfonation).
+  Halogenation: C₆H₆ + Cl₂/AlCl₃ → C₆H₅Cl + HCl. (AlCl₃ Lewis acid catalyst generates Cl⁺ from Cl₂).
+  Friedel-Crafts Alkylation: C₆H₆ + RCl/AlCl₃ → C₆H₅R + HCl. Problem: polyalkylation; carbocation rearrangements.
+  Friedel-Crafts Acylation: C₆H₆ + RCOCl/AlCl₃ → C₆H₅COR + HCl. No rearrangement (acylium ion R-C≡O⁺ stable); product deactivated → no polyacylation.
+
+Directing Effects on Substituted Benzene:
+  Activating, ortho/para directors: electron-donating groups (OH, NH₂, OR, NR₂, alkyl).
+    Donate electrons to ring → ring enriched → faster EAS → prefer ortho and para.
+  Deactivating, meta directors: electron-withdrawing groups (NO₂, CN, COOH, CHO, COR, SO₃H).
+    Withdraw electrons from ring → ring depleted → slower EAS → prefer meta.
+  Deactivating, ortho/para directors: Halogens (F, Cl, Br, I) — withdraw by induction, donate by resonance → net deactivation but ortho/para substitution.
+
+Nucleophilic Aromatic Substitution (NAS):
+  Requires: Electron-withdrawing groups on ring (especially at ortho/para to leaving group).
+  Meisenheimer complex: Anionic intermediate; rate-determining step = addition (not departure).
+  Example: 2,4-dinitrochlorobenzene + OH⁻ → 2,4-dinitrophenol.
+
+6. NAMED REACTIONS IN ORGANIC CHEMISTRY
+-----------------------------------------
+Reaction            | Description                                              | Key Reagents
+--------------------|----------------------------------------------------------|---------------
+Grignard            | RMgX + carbonyl → alcohol (C-C bond forming)            | RMgX, THF
+Diels-Alder         | [4+2] cycloaddition; diene + dienophile → cyclohexene   | Heat (concerted)
+Wittig              | Phosphonium ylide + carbonyl → alkene                   | Ph₃P=CHR, base
+Heck                | Pd-catalysed arylation of alkenes                       | Pd(PPh₃)₄, base
+Suzuki              | Pd-catalysed cross-coupling of boronic acid + aryl halide| Pd, base, RB(OH)₂
+Negishi             | Pd-catalysed cross-coupling with organozinc             | Pd, RZnX
+Buchwald-Hartwig    | Pd-catalysed C-N bond formation                        | Pd, base, ligand
+Sharpless epoxidation| Asymmetric epoxidation of allylic alcohols             | Ti(OiPr)₄, tartrate, TBHP
+Aldol condensation  | Enolate + carbonyl → β-hydroxy carbonyl               | Base/acid
+Claisen condensation| Ester + ester → β-ketoester                           | NaOEt, heat
+Michael addition    | Conjugate addition of nucleophile to α,β-unsaturated   | Nu, base
+Robinson annulation | Aldol + Michael → 6-membered ring                     | Michael + Aldol
+Hofmann rearrangement| Primary amide → amine (C-N bond; loss of CO)          | Br₂, NaOH
+Baeyer-Villiger     | Ketone → ester/lactone (migration with peracid)        | mCPBA, H₂O₂
+Beckmann rearrangement| Oxime → amide under acid catalysis                   | H₂SO₄, H₃PO₄
+Favorskii           | α-haloketone → ester/acid rearrangement                | base
+Curtis              | Acyl azide → isocyanate (→ carbamate)                  | DPPA, Et₃N
+Curtius rearrangement| As above                                               |
+Olefin metathesis   | Exchange of alkene partners; Grubbs Ru catalyst         | Grubbs I/II
+Ring-opening metathesis (ROMP)| Polymerisation via Ru carbene complex        | Grubbs catalyst
+
+7. SPECTROSCOPY FOR STRUCTURE ELUCIDATION
+-------------------------------------------
+Mass Spectrometry (MS):
+  M⁺ (molecular ion): m/z = molecular mass. Fragmentation pattern → structure.
+  Base peak: Most abundant fragment ion. High-resolution MS → exact molecular formula.
+
+Infrared Spectroscopy (IR):
+  Functional group identification. Characteristic absorption frequencies:
+  O-H stretch (alcohol): 3200–3550 cm⁻¹ (broad). O-H stretch (carboxylic acid): 2500–3300 cm⁻¹ (very broad).
+  N-H stretch: 3300–3500 cm⁻¹. C-H stretch: 2850–3100 cm⁻¹. C=O stretch (carbonyl): 1680–1750 cm⁻¹.
+  C≡N: 2200–2260 cm⁻¹. C=C (alkene): 1620–1680 cm⁻¹. C-O stretch: 1000–1300 cm⁻¹.
+  Fingerprint region: 500–1500 cm⁻¹ — unique to each compound; difficult to interpret analytically.
+
+¹H NMR Spectroscopy:
+  Chemical shift (δ, ppm): Position of peak; related to electron density around H.
+    TMS = 0 ppm reference. High δ = deshielded (electronegative neighbours).
+    H environments: Alkyl H ~0–2 ppm; allylic/propargylic ~1.5–2.5; adjacent to O/N ~2–4;
+    vinyl H ~4–6; aromatic H ~6–9; aldehyde H ~9–11; carboxylic OH ~11–12.
+  Splitting (multiplicity): Due to coupling with adjacent non-equivalent H.
+    n+1 rule: n adjacent H atoms → n+1 peaks (for first-order spectra).
+    Singlet (s), doublet (d), triplet (t), quartet (q), multiplet (m).
+    Coupling constant J (Hz): Measure of coupling strength; vicinal (³J) ~3–12 Hz.
+  Integration: Area of peak proportional to number of equivalent H atoms.
+
+¹³C NMR: All C environments. Not routinely split (broadband decoupling). ~0–220 ppm.
+  DEPT: Distinguishes CH₃ (methyl), CH₂ (methylene), CH (methine), C (quaternary).
+  2D NMR: COSY (H-H connectivity), HSQC (H-C one bond), HMBC (H-C 2-3 bonds), NOESY (space proximity).
+
+UV-Visible Spectroscopy:
+  π → π* transitions (alkenes, aromatics): 200–250 nm. n → π* transitions (carbonyl): 270–280 nm.
+  Conjugated systems: Bathochromic shift (red shift) with increasing conjugation.
+  Beer-Lambert Law: A = εcl (absorbance = molar extinction coefficient × concentration × path length).
+
+================================================================================

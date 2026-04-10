@@ -1,0 +1,117 @@
+SCIENTIFIC COMPUTING, MODELING, AND SIMULATION
+==============================================
+
+OVERVIEW:
+Scientific computing uses mathematical models and algorithms to study physical, chemical, and biological systems.
+
+WHY MODEL?
+- predict behavior
+- test hypotheses
+- reduce cost of experiments
+- understand systems too complex for closed-form analysis
+
+MODEL TYPES:
+- Analytical models
+- Numerical models
+- Statistical models
+- Agent-based models
+- Machine-learning-assisted models
+
+COMMON WORKFLOW:
+1. Define the system
+2. Choose assumptions
+3. Build equations
+4. Select numerical method
+5. Compute solution
+6. Validate against theory or experiment
+
+DIFFERENTIAL EQUATIONS:
+Many scientific models use:
+- Ordinary differential equations
+- Partial differential equations
+
+EXAMPLES:
+- motion under force
+- heat diffusion
+- wave propagation
+- population growth
+- chemical kinetics
+
+NUMERICAL METHODS:
+- Euler method
+- Runge-Kutta methods
+- Finite difference method
+- Finite element method
+- Monte Carlo simulation
+
+DISCRETIZATION:
+Continuous variables are approximated on a grid or time step.
+
+IMPORTANT TRADE-OFF:
+Smaller step size often improves accuracy but increases computation time.
+
+ERROR TYPES:
+- Truncation error
+- Round-off error
+- Modeling error
+
+STABILITY IN NUMERICS:
+A method is numerically stable if errors do not grow uncontrollably.
+
+MONTE CARLO:
+Uses random sampling to estimate quantities.
+Useful for:
+- uncertainty
+- integration
+- transport problems
+- statistical physics
+
+OPTIMIZATION:
+Scientific computing often needs optimization:
+- parameter fitting
+- model calibration
+- design improvement
+
+LINEAR ALGEBRA:
+Many simulations reduce to solving:
+- linear systems
+- eigenvalue problems
+- matrix factorizations
+
+COMPUTATIONAL PHYSICS EXAMPLES:
+- N-body simulation
+- projectile motion with drag
+- orbital simulation
+- Ising model
+- finite-difference heat equation
+
+COMPUTATIONAL CHEMISTRY EXAMPLES:
+- molecular dynamics
+- reaction kinetics
+- quantum chemistry approximations
+
+COMPUTATIONAL BIOLOGY EXAMPLES:
+- epidemic spread models
+- gene-network models
+- population dynamics
+
+VALIDATION AND VERIFICATION:
+Verification asks:
+- did we solve the equations correctly?
+
+Validation asks:
+- are the equations a good model of reality?
+
+REPRODUCIBILITY:
+Good scientific code should be:
+- documented
+- testable
+- version controlled
+- reproducible
+
+EXAM FOCUS:
+- purpose of simulation
+- discretization
+- numerical error
+- stability
+- verification vs validation

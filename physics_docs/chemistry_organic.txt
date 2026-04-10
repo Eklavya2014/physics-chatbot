@@ -1,0 +1,167 @@
+CHEMISTRY: ORGANIC CHEMISTRY — COMPLETE GUIDE
+==============================================
+
+BASICS OF ORGANIC CHEMISTRY
+-----------------------------
+Carbon: 4 valence electrons, forms covalent bonds, sp³/sp²/sp hybridisation
+Functional groups determine chemical properties
+
+NOMENCLATURE (IUPAC):
+  Find longest carbon chain (parent chain → prefix: meth,eth,prop,but,pent,hex,hept,oct,non,dec)
+  Number from end giving substituents lowest numbers
+  Prefixes: di-, tri-, tetra- for multiple same substituents
+  Suffixes: -ane (alkane), -ene (alkene, double bond), -yne (alkyne, triple bond)
+    -ol (alcohol), -al (aldehyde), -one (ketone), -oic acid (carboxylic acid)
+    -amine, -amide, -ether, -ester (-oate)
+
+HYDROCARBONS
+-------------
+Alkanes: CₙH₂ₙ₊₂ (saturated, sp³, tetrahedral)
+  Reactions: Combustion, Halogenation (free radical mechanism)
+  Free radical substitution: Cl₂/UV light → chain reaction (initiation→propagation→termination)
+
+Alkenes: CₙH₂ₙ (one double bond, sp², planar around C=C)
+  Reactions: Addition (electrophilic)
+    + H₂ (hydrogenation, Pt/Ni catalyst): C=C → C-C
+    + Br₂: electrophilic addition, anti addition
+    + HX (Markovnikov's rule): H adds to less substituted C, X to more substituted C
+      (positive charge on more stable carbocation)
+    + H₂O (acid catalyst, Markovnikov)
+    Ozonolysis: cleaves double bond → aldehydes/ketones
+  Polymerisation: addition polymerisation (PE, PVC, polypropylene)
+  Allylic carbocation: most stable after tertiary
+
+Alkynes: CₙH₂ₙ₋₂ (triple bond, sp, linear)
+  Reactions: Same as alkenes (twice) + terminal alkynes are weakly acidic (pKa≈25)
+  + 2Br₂ → dibromo product (tetrabromo if excess)
+
+AROMATIC COMPOUNDS
+-------------------
+Benzene: C₆H₆, regular hexagon, all bond lengths equal (1.40 Å), 4n+2 π electrons (n=1)
+  Aromaticity: Hückel's rule: (4n+2)π electrons, planar, cyclic, conjugated
+  Reactions: Electrophilic aromatic substitution (EAS) — preserves aromaticity
+    Nitration: conc. HNO₃ + H₂SO₄ → C₆H₅NO₂ (nitrobenzene)
+    Sulfonation: fuming H₂SO₄ → C₆H₅SO₃H (reversible)
+    Halogenation: Br₂/FeBr₃ → C₆H₅Br + HBr
+    Friedel-Crafts alkylation: R-X + AlCl₃ → C₆H₅R (limited by multiple alkylations)
+    Friedel-Crafts acylation: RCOCl + AlCl₃ → C₆H₅COR (cleaner product)
+  
+  Directing effects (for disubstitution):
+    Ortho/para directors (activating): -OH, -OR, -NH₂, -NR₂, -R, -Ph
+    Meta directors (deactivating): -NO₂, -CN, -COOH, -CHO, -COR, -SO₃H, -CCl₃
+    Halogens: ortho/para directors but deactivating (inductive withdrawal > resonance donation)
+
+FUNCTIONAL GROUP REACTIONS
+----------------------------
+ALCOHOLS (R-OH):
+  Classification: 1° (CH₂OH), 2° (CHOH), 3° (COH)
+  Reactions:
+    Lucas test: ZnCl₂/conc. HCl: 3° immediate, 2° slow, 1° no reaction (at RT)
+    Esterification: R-OH + RCOOH ⇌ RCOOR' + H₂O (acid catalyst, reversible)
+    Oxidation: 1° alcohol → aldehyde → carboxylic acid (KMnO₄ or K₂Cr₂O₇)
+               2° alcohol → ketone (NOT oxidised further easily)
+               3° alcohol → NOT easily oxidised
+    Dehydration: H₂SO₄/170°C → alkene (Saytzeff's rule: more substituted alkene preferred)
+                 H₂SO₄/130°C → ether
+    Reaction with Na: 2ROH + 2Na → 2RONa + H₂ (weak acid)
+    Phenol is more acidic than alcohol
+
+ALDEHYDES AND KETONES (C=O):
+  Aldehyde: -CHO (at chain end, can be oxidised)
+  Ketone: C=O in middle (no α-hydrogen → can't be oxidised easily)
+  
+  Reactions:
+    Nucleophilic addition (to C=O):
+    + HCN → cyanohydrin
+    + NaHSO₃ → bisulphite adduct (aldehydes and methyl ketones only)
+    + Grignard: + RMgX → alcohol after hydrolysis
+    + ROH (acid cat.) → hemiacetal → acetal (2 moles ROH)
+    + H₂/Ni or NaBH₄ → alcohol (reduction)
+    + NH₂OH → oxime  (Schiff's base with amines)
+    Tollens' test (Ag⁺/NH₃): aldehydes give silver mirror, ketones NO reaction
+    Fehling's/Benedict's: Cu²⁺ solution: aldehydes give red Cu₂O precipitate
+    Aldol condensation (α-hydrogen needed): OH⁻ + 2RCHO → β-hydroxy aldehyde → enal
+    Cannizzaro reaction (no α-H, base): 2HCHO → HCOOH + CH₃OH (disproportionation)
+    Iodoform test: CH₃COR or CH₃CHO + I₂/NaOH → yellow CHI₃ precipitate
+
+CARBOXYLIC ACIDS (RCOOH):
+  Reactions:
+    Salt formation: RCOOH + NaOH → RCOONa + H₂O
+    Esterification: RCOOH + R'OH ⇌ RCOOR' + H₂O (acid cat., reversible)
+    Acyl chloride formation: RCOOH + SOCl₂ → RCOCl (reactive intermediate)
+    Decarboxylation: RCOOH + sodalime (NaOH/CaO) → RH + CO₂ (Kolbe's)
+    Hell-Volhard-Zelinsky (HVZ): α-halogenation with Br₂/red P
+    Acidity order: HCOOH > CH₃COOH > C₂H₅COOH
+      Electron withdrawing groups increase acidity (CCl₃COOH > HCOOH)
+      Resonance stabilisation of carboxylate ion
+
+AMINES (RNH₂, R₂NH, R₃N):
+  Basic (lone pair on N), tertiary more basic in gas phase, but 2°>1°>3° in water
+  Reactions:
+    Salt formation: RNH₂ + HCl → RNH₃⁺Cl⁻
+    Acylation: RNH₂ + RCOCl → RCONHR + HCl
+    Carbylamine test (primary amines only): R-NH₂ + CHCl₃/KOH → R-NC (isocyanide, foul smell)
+    Diazonium salt (aromatic 1° amine): ArNH₂ + NaNO₂/HCl/0-5°C → ArN₂⁺Cl⁻
+      Coupling reactions: ArN₂⁺ + ArOH/ArNH₂ → azo dye (orange/red colour)
+      Sandmeyer: ArN₂⁺ + CuCl/CuBr/CuCN → ArCl/ArBr/ArCN
+      Gattermann: ArN₂⁺ + Cu/HCl → ArCl (Cl, I, F can also be introduced)
+      + H₂O → phenol (warm water), + H₃PO₂ → ArH (deamination)
+
+IMPORTANT NAMED REACTIONS:
+  Aldol condensation: α-hydroxy carbonyl → α,β-unsaturated carbonyl (heat)
+  Cannizzaro: 2RCHO(no α-H) + OH⁻ → RCH₂OH + RCOO⁻
+  Grignard: RX + Mg/ether → RMgX (powerful nucleophile/base)
+  Reimer-Tiemann: phenol + CHCl₃/KOH → salicylaldehyde (o-hydroxy benzaldehyde)
+  Williamson synthesis: RONa + R'X → ROR' (ether, SN2)
+  Kolbe: PhONa + CO₂/140°C/4atm → salicylate
+  Sandmeyer: diazonium + CuX → aryl halide
+  Fehling's: Cu²⁺(alkali) + aldehyde → brick red Cu₂O precipitate
+  Tollens': [Ag(NH₃)₂]⁺ + aldehyde → silver mirror
+  Lucas test: ZnCl₂/conc.HCl + alcohol
+  Iodoform test: CHI₃ (yellow) with methyl carbinols
+
+POLYMERS
+---------
+Addition polymerisation: alkenes → chain polymer (no by-product)
+  Polyethylene: nCH₂=CH₂ → -(CH₂-CH₂)ₙ-  (LDPE, HDPE, LLDPE)
+  PVC: CH₂=CHCl → -(CH₂-CHCl)ₙ-
+  PTFE: CF₂=CF₂ → -(CF₂-CF₂)ₙ- (Teflon, non-stick)
+  Polystyrene: CH₂=CHC₆H₅ → -(CH₂-CHC₆H₅)ₙ-
+  Natural rubber: polyisoprene, vulcanisation with S improves properties
+
+Condensation polymerisation: two monomers, small molecule eliminated
+  Nylon-6,6: hexanedioic acid + hexane-1,6-diamine → polyamide + H₂O
+  Nylon-6: caprolactam + H₂O → polycaprolactam
+  Terylene (Dacron): ethylene glycol + terephthalic acid → polyester + H₂O
+  Bakelite: phenol + formaldehyde → thermosetting resin
+
+BIOMOLECULES
+-------------
+Carbohydrates (Cₙ(H₂O)ₘ):
+  Monosaccharides: glucose (C₆H₁₂O₆), fructose, galactose, ribose
+  Glucose: aldohexose, forms cyclic hemiacetal (pyranose form)
+    α-glucose: OH at C1 same side as CH₂OH → β-glucose: opposite
+  Disaccharides: sucrose (glucose+fructose, non-reducing), lactose, maltose (reducing)
+  Polysaccharides: starch (α-glycosidic links), cellulose (β-glycosidic links), glycogen
+  Reducing sugars: free aldehyde/ketone → Fehling's/Tollens' positive
+
+Amino acids: H₂N-CHR-COOH (20 natural, all L-form)
+  Zwitterion: +H₃N-CHR-COO⁻  (dipolar ion at isoelectric point)
+  Peptide bond: -CO-NH- (condensation, planar, partial double bond character)
+  Primary structure: sequence of amino acids
+  Secondary: α-helix (3.6 AA/turn, H-bonds) or β-sheet (H-bonds between chains)
+  Tertiary: overall 3D folding (disulphide bonds, H-bonds, hydrophobic)
+  Quaternary: multiple polypeptide chains
+
+Nucleic acids:
+  DNA: deoxyribose + phosphate + bases (A,T,G,C)
+    A-T: 2 hydrogen bonds, G-C: 3 hydrogen bonds
+    Double helix: antiparallel strands, right-handed
+    Base pairs: complementary
+  RNA: ribose + phosphate + bases (A,U,G,C) — single stranded
+    mRNA: carries genetic code from DNA to ribosome
+    tRNA: carries amino acids to ribosome
+    rRNA: structural component of ribosome
+  Replication: DNA → DNA (semiconservative)
+  Transcription: DNA → RNA
+  Translation: mRNA → Protein (at ribosome, using tRNA)

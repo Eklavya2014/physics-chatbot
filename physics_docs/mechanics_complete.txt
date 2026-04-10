@@ -1,0 +1,154 @@
+PHYSICS: MECHANICS — COMPLETE GUIDE (Class 10 to University)
+=============================================================
+
+KINEMATICS — MOTION IN A STRAIGHT LINE
+----------------------------------------
+Displacement (s): Vector quantity. Change in position. SI unit: metre (m)
+Distance: Scalar. Total path length.
+Speed = Distance/Time (scalar). Velocity = Displacement/Time (vector)
+Acceleration (a) = Change in velocity/Time = (v-u)/t. SI unit: m/s²
+
+EQUATIONS OF MOTION (uniform acceleration):
+  v = u + at
+  s = ut + ½at²
+  v² = u² + 2as
+  s = (u+v)/2 × t
+where u=initial velocity, v=final velocity, a=acceleration, t=time, s=displacement
+
+Free fall: a = g = 9.8 m/s² downward (ignore air resistance)
+  Time to fall height h: t = √(2h/g)
+  Velocity after falling h: v = √(2gh)
+
+PROJECTILE MOTION
+------------------
+Horizontal: vₓ = u·cos θ  (constant, no acceleration)
+Vertical:   vᵧ = u·sin θ - gt
+Horizontal range: R = u²·sin(2θ)/g  → Maximum at θ=45°: R_max = u²/g
+Maximum height: H = u²·sin²θ/(2g)
+Time of flight: T = 2u·sin θ/g
+
+NEWTON'S LAWS OF MOTION
+-------------------------
+First Law (Inertia): A body stays at rest or uniform motion unless acted on by net external force.
+Second Law: F = ma  (net force = mass × acceleration)
+  SI unit of force: Newton (N) = kg·m/s²
+Third Law: Every action has an equal and opposite reaction.
+  F₁₂ = -F₂₁ (forces on different bodies)
+
+MOMENTUM AND IMPULSE
+---------------------
+Linear momentum: p = mv  (vector, SI unit: kg·m/s)
+Impulse: J = F·Δt = Δp = m(v-u)
+Conservation of momentum: When no external force, total momentum is constant.
+  m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
+
+COLLISIONS
+-----------
+Elastic collision: KE conserved AND momentum conserved.
+  v₁ = (m₁-m₂)u₁/(m₁+m₂) + 2m₂u₂/(m₁+m₂)
+  v₂ = 2m₁u₁/(m₁+m₂) + (m₂-m₁)u₂/(m₁+m₂)
+Inelastic: momentum conserved, KE not conserved.
+Perfectly inelastic: bodies stick together. v = (m₁u₁+m₂u₂)/(m₁+m₂)
+Coefficient of restitution: e = relative speed of separation / relative speed of approach
+  e=1 elastic, e=0 perfectly inelastic, 0<e<1 partially inelastic
+
+FRICTION
+---------
+Static friction: fs ≤ μsN  (μs = coefficient of static friction)
+Kinetic friction: fk = μkN  (always μk < μs)
+N = Normal force (perpendicular to surface)
+Angle of friction: tan φ = μ
+On incline angle θ: Normal N = mg·cos θ, friction f = μmg·cos θ
+  Body slides when tan θ > μ
+
+WORK, ENERGY, POWER
+--------------------
+Work: W = F·s·cos θ  (θ = angle between F and displacement)
+SI unit: Joule (J) = N·m = kg·m²/s²
+Kinetic energy: KE = ½mv²
+Potential energy (gravitational): PE = mgh
+Elastic PE (spring): PE = ½kx²  (Hooke's law: F = kx)
+Work-energy theorem: W_net = ΔKE = ½mv² - ½mu²
+Conservation of mechanical energy: KE + PE = constant (no friction)
+Power: P = W/t = F·v  SI unit: Watt (W) = J/s
+1 horsepower = 746 W
+Efficiency: η = (useful output energy/total input energy) × 100%
+
+CIRCULAR MOTION
+---------------
+Angular velocity: ω = Δθ/Δt (rad/s)
+Linear velocity: v = rω
+Centripetal acceleration: a = v²/r = rω²  (directed toward centre)
+Centripetal force: F = mv²/r = mrω²
+Period: T = 2π/ω = 2πr/v
+Frequency: f = 1/T
+For car on level road: F_friction provides centripetal force → v_max = √(μrg)
+For banked road (angle θ): tan θ = v²/rg (ideal speed, no friction)
+Conical pendulum: T = 2π√(L·cos θ/g)
+
+GRAVITATION
+-----------
+Newton's law: F = Gm₁m₂/r²
+G = 6.674 × 10⁻¹¹ N·m²/kg² (Universal gravitational constant)
+g = GM_Earth/R² = 9.8 m/s² at surface
+Variation: g decreases with altitude h: g' = g(1 - 2h/R) for h << R
+  g decreases with depth d: g' = g(1 - d/R)
+  g is minimum at equator (rotation effect), maximum at poles
+
+Orbital velocity: v = √(GM/r) = √(gR²/(R+h))
+Escape velocity: v_e = √(2gR) = √(2GM/R) = 11.2 km/s (Earth)
+Geostationary orbit: T=24h, r=42,400 km, h≈36,000 km above equator
+Kepler's 3rd law: T² ∝ r³   (T²/r³ = 4π²/GM = constant)
+
+SIMPLE HARMONIC MOTION (SHM)
+-----------------------------
+F = -kx (restoring force proportional to displacement)
+x = A·sin(ωt + φ)  where A=amplitude, ω=angular frequency, φ=phase
+ω = 2πf = 2π/T
+v = Aω·cos(ωt) = ω√(A²-x²)
+a = -ω²x = -Aω²·sin(ωt)
+KE = ½mω²(A²-x²)  PE = ½mω²x²  Total E = ½mω²A² (constant)
+Simple pendulum: T = 2π√(L/g)  (valid for small angles <15°)
+Spring-mass: T = 2π√(m/k)
+Resonance: when driving frequency = natural frequency, amplitude is maximum
+
+ROTATIONAL MOTION
+-----------------
+Torque: τ = r × F = rF·sin θ  (unit: N·m)
+Moment of inertia: I = Σmr²  (resistance to rotation)
+  Solid cylinder: I = ½MR²
+  Solid sphere: I = 2/5 MR²
+  Thin rod (centre): I = ML²/12
+  Thin ring: I = MR²
+Newton's 2nd law rotation: τ = Iα  (α = angular acceleration)
+Angular momentum: L = Iω = r × p
+Conservation of L: When no external torque, L = constant
+  (diver tucks in → I decreases → ω increases)
+Rotational KE: ½Iω²
+Rolling without slipping: v = Rω,  Total KE = ½mv² + ½Iω²
+Parallel axis theorem: I = I_cm + Md²
+Perpendicular axis theorem (thin lamina): I_z = I_x + I_y
+
+FLUID MECHANICS
+---------------
+Pressure: P = F/A  SI unit: Pascal (Pa) = N/m²
+Pressure at depth h: P = P₀ + ρgh
+Archimedes' principle: Buoyant force = weight of fluid displaced = ρ_fluid·V·g
+Object floats if ρ_object < ρ_fluid
+Bernoulli's equation: P + ½ρv² + ρgh = constant
+  (Conservation of energy for ideal fluid flow)
+Continuity equation: A₁v₁ = A₂v₂ (conservation of mass)
+Torricelli's theorem: v = √(2gh) (speed of efflux)
+Viscosity: η (Pa·s), Stokes' law: F = 6πηrv
+Surface tension: γ = F/L (N/m), capillary rise: h = 2γ·cos θ/(ρgr)
+
+ELASTICITY
+----------
+Stress = Force/Area (Pa)
+Strain = Change in dimension/Original dimension (dimensionless)
+Young's modulus: Y = (F/A)/(ΔL/L) = Stress/Strain
+Bulk modulus: B = -V(ΔP/ΔV) (for volume changes under pressure)
+Rigidity modulus: G = Shear stress/Shear strain
+Poisson's ratio: σ = lateral strain/longitudinal strain
+Elastic limit: Maximum stress within which Hooke's law holds
+Beyond elastic limit → plastic deformation → fracture point

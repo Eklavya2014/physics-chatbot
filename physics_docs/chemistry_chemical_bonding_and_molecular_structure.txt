@@ -1,0 +1,223 @@
+================================================================================
+            CHEMISTRY: CHEMICAL BONDING & MOLECULAR STRUCTURE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CHEMICAL BONDING OVERVIEW
+------------------------------
+Chemical bonds form when atoms achieve lower potential energy together than apart.
+Driving force: Atoms strive for noble gas electronic configuration (Octet Rule — but has exceptions).
+Types: Ionic, covalent, metallic (primary); Hydrogen bonds, Van der Waals, dipole-dipole (secondary).
+
+1.1 IONIC BONDS
+----------------
+Form between metals and non-metals (large electronegativity difference, ΔEN > ~1.7).
+Metal loses electrons → cation (+). Non-metal gains electrons → anion (-).
+Electrostatic attraction between oppositely charged ions.
+Lattice energy: Energy released when gaseous ions come together to form ionic solid. Larger lattice energy → stronger ionic compound.
+  Born-Haber cycle: Hess's law applied to calculate lattice energy.
+  Kapustinskii equation: Estimates lattice energy from ion charges and radii.
+
+Properties of Ionic Compounds:
+  - High melting and boiling points (strong electrostatic forces).
+  - Brittle (like planes slip → same charges adjacent → repulsion → shatters).
+  - Conduct electricity when dissolved in water or melted (mobile ions).
+  - Do not conduct electricity when solid (ions fixed in lattice).
+  - Generally soluble in water (ionic/polar solvents) but not organic solvents.
+
+Examples: NaCl (table salt), MgO, CaCO₃, Fe₂O₃, NH₄Cl (ammonium — polyatomic ion).
+
+Common Ionic Charges:
+  +1: Li, Na, K, Rb, Cs, H, Ag, Cu(I), Hg(I)
+  +2: Be, Mg, Ca, Sr, Ba, Fe(II), Cu(II), Ni, Zn, Pb(II)
+  +3: Al, Fe(III), Cr(III), La, Au(III)
+  -1: F, Cl, Br, I, OH, NO₃, HCO₃, ClO₄
+  -2: O, S, SO₄, CO₃, CrO₄
+  -3: N, P, PO₄, AsO₄
+
+1.2 COVALENT BONDS
+-------------------
+Form between non-metals or between atoms of similar electronegativity (ΔEN < ~1.7).
+Sharing of electrons between atoms.
+Lewis structures: Dots represent electrons; shared pairs = bonds; non-shared = lone pairs.
+Octet rule exceptions:
+  - Expanded octets: P, S, Cl (and heavier elements) can have >8 electrons (d orbitals available — controversial; hypervalency better explained by ionic resonance).
+  - Incomplete octets: B (6e in BF₃), Al (6e in AlCl₃) → Lewis acids.
+  - Odd-electron molecules: NO, NO₂, ClO₂ (free radicals; one unpaired electron).
+
+Bond Properties:
+  Bond order: Number of shared electron pairs. Single=1, Double=2, Triple=3.
+  Bond length: Increases as bond order decreases; increases as atoms get bigger.
+    C-C: 154 pm; C=C: 134 pm; C≡C: 120 pm.
+  Bond energy: Energy to break 1 mole of bonds in gaseous phase. Higher bond order → stronger bond.
+    C-C: 347; C=C: 614; C≡C: 839 kJ/mol.
+  Polar covalent: Unequal sharing when ΔEN between 0.4-1.7. More electronegative atom has δ-.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. VSEPR THEORY & MOLECULAR GEOMETRY
+--------------------------------------
+Valence Shell Electron Pair Repulsion (VSEPR): Electron pairs around central atom arrange to minimize repulsion.
+Repulsion order: Lone pair-lone pair > lone pair-bonding pair > bonding pair-bonding pair.
+Multiple bonds: Treated as single "super pair" for geometry purposes.
+
+Geometry Determination:
+  Total electron pairs → electron geometry.
+  Lone pairs count for geometry but described by bonded atom positions only.
+
+Electron Pairs | Lone Pairs | Electron Geometry    | Molecular Geometry   | Bond Angle
+---------------|------------|---------------------|---------------------|----------
+2              | 0          | Linear               | Linear               | 180°
+3              | 0          | Trigonal planar      | Trigonal planar      | 120°
+3              | 1          | Trigonal planar      | Bent/V-shaped        | <120°
+4              | 0          | Tetrahedral          | Tetrahedral          | 109.5°
+4              | 1          | Tetrahedral          | Trigonal pyramidal   | <109.5°
+4              | 2          | Tetrahedral          | Bent                 | <104.5°
+5              | 0          | Trigonal bipyramidal | Trigonal bipyramidal | 90°,120°
+5              | 1          | Trig. bipyramidal    | Seesaw               | 90°,120°
+5              | 2          | Trig. bipyramidal    | T-shaped             | 90°
+5              | 3          | Trig. bipyramidal    | Linear               | 180°
+6              | 0          | Octahedral           | Octahedral           | 90°
+6              | 1          | Octahedral           | Square pyramidal     | <90°
+6              | 2          | Octahedral           | Square planar        | 90°
+
+Examples:
+  H₂O: 2 bonds + 2 lone pairs → tetrahedral e-geom → bent → 104.5° (lone pairs compress).
+  NH₃: 3 bonds + 1 lone pair → tetrahedral → trigonal pyramidal → 107°.
+  CH₄: 4 bonds + 0 → tetrahedral → tetrahedral → 109.5°.
+  PCl₅: 5 bonds + 0 → trigonal bipyramidal → trigonal bipyramidal → 90°/120°.
+  SF₆: 6 bonds + 0 → octahedral → octahedral → 90°.
+  XeF₄: 4 bonds + 2 LP → octahedral e-geom → square planar → 90°.
+
+3. HYBRIDISATION
+-----------------
+Quantum mechanical mixing of atomic orbitals to form hybrid orbitals for bonding.
+Hybrid orbitals explain observed geometry when pure s, p orbitals wouldn't.
+
+sp³ hybridisation: 1 s + 3 p → 4 equivalent sp³ hybrids → tetrahedral (109.5°).
+  Examples: CH₄, NH₃, H₂O, CCl₄, BF₄⁻.
+
+sp² hybridisation: 1 s + 2 p → 3 equivalent sp² hybrids (trigonal planar, 120°) + 1 unhybridised p perpendicular.
+  Unhybridised p → π bond (sideways overlap). Examples: Ethylene (H₂C=CH₂), BF₃, C₆H₆ (benzene).
+
+sp hybridisation: 1 s + 1 p → 2 equivalent sp hybrids (linear, 180°) + 2 unhybridised p.
+  Examples: CO₂, C₂H₂ (acetylene/ethyne), BeF₂, HCN.
+
+sp³d hybridisation: Trigonal bipyramidal. PCl₅, AsF₅.
+sp³d² hybridisation: Octahedral. SF₆, [Fe(CN)₆]³⁻.
+
+Sigma (σ) bonds: Head-on orbital overlap; first bond between atoms; exists along internuclear axis.
+Pi (π) bonds: Sideways overlap of unhybridised p orbitals; only in double/triple bonds; prevents rotation (restricted rotation in double bonds → cis/trans isomerism).
+
+4. INTERMOLECULAR FORCES (IMFs)
+---------------------------------
+Forces between molecules (not within). Determine physical properties (mp, bp, solubility, viscosity).
+Stronger IMF → higher bp, higher melting point, more viscous.
+
+Dispersion Forces (London, van der Waals):
+  Present in ALL molecules (and noble gas atoms).
+  Temporary dipoles → induced dipoles in neighbours → momentary attractions.
+  Strength: Increases with molecular size (more electrons → more polarisable) and surface area.
+  Examples: Noble gases (He bp=-269°C < Xe bp=-108°C due to more electrons/dispersion forces).
+
+Dipole-Dipole Forces:
+  Permanent dipoles in polar molecules → align partially → attractive force.
+  Present in all polar molecules (but NOT non-polar).
+  Stronger than dispersion for same-sized molecules.
+
+Hydrogen Bonds:
+  Special, stronger type of dipole-dipole.
+  Requires: H directly bonded to N, O, or F (very electronegative, small → large partial charge on H).
+  H...N, H...O, or H...F between adjacent molecules.
+  Strength: ~20-40 kJ/mol per H-bond (vs ~4-25 kJ/mol for regular dipole-dipole).
+  Responsible for:
+    Water's anomalously high bp (-should be -80°C based on trend, is +100°C).
+    Ice being less dense than water (open H-bond lattice; hexagonal structure).
+    DNA double helix stability (base pairing: A-T = 2 H-bonds, G-C = 3 H-bonds).
+    Protein secondary structure (alpha helix: C=O...H-N between amino acids; beta-sheet).
+    High surface tension and cohesion of water.
+    High specific heat capacity of water.
+
+Ion-Dipole Forces: Between ions and polar molecules. Important in solutions (hydration shell of ions).
+
+Relative Strength: Covalent > Ionic >> H-bond > Dipole-Dipole > Dispersion.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MOLECULAR ORBITAL (MO) THEORY
+-----------------------------------
+More rigorous than Lewis/VSEPR. Electrons in molecules occupy molecular orbitals formed by linear combination of atomic orbitals (LCAO).
+
+Bonding Molecular Orbitals: Lower energy than constituent AOs; constructive interference; electron density between nuclei → stabilises bond.
+Antibonding Molecular Orbitals: Higher energy (denoted *); destructive interference; electron density removed from between nuclei → destabilises; labelled σ*, π*.
+
+Bond Order (MO): (Bonding e- - Antibonding e-) / 2.
+  B.O. = 0: Molecule doesn't exist. B.O. = 1: Single bond. B.O. = 2: Double. B.O. = 3: Triple.
+
+MO Filling for Period 2 Diatomics (σ1s² σ*1s² σ2s² σ*2s² [σ2p or π2p first depends on Z]):
+  Li₂: σ1s² σ*1s² σ2s² → B.O. = 1. Exists.
+  Be₂: + σ*2s² → B.O. = 0. Does NOT exist.
+  B₂:  + σ2p(z)² ... → B.O. = 1. Paramagnetic (2 unpaired in degenerate π).
+  C₂:  B.O. = 2. Diamagnetic. (π bonds before σ for C-N period 2 Z≤7).
+  N₂:  B.O. = 3. Most stable diatomic (triple bond).
+  O₂:  σ2p²(z) π2p⁴ π*2p² → B.O. = 2. PARAMAGNETIC (2 unpaired in π* by Hund's rule) — MO correctly predicts O₂ paramagnetism; Lewis structure fails.
+  F₂:  B.O. = 1. Weakest of halogens (F-F bond weak due to lone pair repulsion).
+  Ne₂: B.O. = 0. Does not exist.
+
+Applications of MO Theory:
+  Explains paramagnetism of O₂ (Lewis structure fails — shows even electron number).
+  Explains stability trends: N₂ > O₂ > F₂ > Ne₂.
+  Delocalized MOs explain benzene aromaticity → resonance structures are approximations.
+  Frontier Molecular Orbital Theory (FMO, Fukui, Nobel 1981): HOMO (highest occupied MO) and LUMO (lowest unoccupied MO) interactions control chemical reactivity. Nucleophile's HOMO attacks electrophile's LUMO.
+
+6. METALLIC BONDING
+--------------------
+Metals: Positive ion cores (cations) in a sea of delocalised electrons.
+"Free electrons" contribute to: Electrical and thermal conductivity; ductility (layers slide, electrons adjust); metallic lustre (all wavelengths absorbed + re-emitted); opacity.
+
+Band Theory (solid-state):
+  Atomic orbitals → molecular orbitals → energy bands as more atoms join.
+  Valence band: Filled or partially filled; lower energy.
+  Conduction band: Empty or partially filled; higher energy.
+  Band gap (Eg): Energy between valence and conduction band top.
+    Metals: Partially filled conduction band (or overlap) → zero gap → excellent conductors.
+    Insulators: Large gap (>5 eV, e.g., diamond 5.5 eV) → no conduction at room temp.
+    Semiconductors: Small gap (Si 1.12 eV, Ge 0.67 eV, GaAs 1.42 eV) → conduction possible at RT with activation; thermal energy promotes electrons across gap.
+  Doping of semiconductors:
+    n-type: Add Group 15 atom (P, As) to Si → extra electron in conduction band → increases conductivity.
+    p-type: Add Group 13 atom (B, Al) → electron hole in valence band → hole moves as current.
+
+7. RESONANCE & DELOCALISATION
+--------------------------------
+Resonance: When one Lewis structure inadequately describes bonding, multiple resonance structures used.
+  Actual structure = resonance hybrid (superposition of all resonance structures).
+  Bond in resonance structures: Intermediate between structures; all equivalent bonds.
+  Examples: CO₃²⁻ (3 equivalent C-O bonds; bond order 1.33); NO₃⁻; SO₄²⁻; C₆H₆ (benzene).
+
+Benzene (C₆H₆):
+  6 equivalent C-C bonds (bond order 1.5 — between single and double).
+  6 carbon atoms each sp² hybridised → planar hexagonal ring; 120° angles.
+  6 unhybridised p orbitals perpendicular to ring → overlap → delocalised π system (6 π electrons).
+  Hückel's Rule: Aromatic compounds have (4n+2) π electrons in planar, cyclic, fully conjugated system.
+    Benzene: 6π (n=1) = aromatic. Cyclobutadiene: 4π = antiaromatic (destabilised). Cyclooctatetraene: 8π = non-aromatic (tub shape, non-planar).
+  Aromaticity confers extra stability (~150 kJ/mol for benzene vs hypothetical cyclohexatriene).
+
+Formal Charge: Formal charge = Valence electrons - Non-bonding electrons - ½ × Bonding electrons.
+  Sum of formal charges = 0 (neutral molecule) or ion charge.
+  Minimise formal charges → preferred resonance structure.
+  Formal charge ≠ oxidation state (different conventions).
+
+[APPLICATIONS] Bonding theory in materials science:
+  Graphene: sp² carbon; delocalised π electrons → exceptional electrical conductivity (mobility 200,000 cm²/Vs vs Si 1,400 cm²/Vs); zero bandgap (semi-metal); quantum Hall effect.
+  Perovskites (ABX₃): Mixed ionic-covalent; B-site TM with octahedral X coordination; ferroelectrics (BaTiO₃), superconductors (YBa₂Cu₃O₇), solar cells (CH₃NH₃PbI₃).
+  MOFs (Metal-Organic Frameworks): Coordination bonds between metal nodes + organic linkers → porous 3D structures; gas storage, separation, catalysis; record surface area (~7000 m²/g).
+
+================================================================================

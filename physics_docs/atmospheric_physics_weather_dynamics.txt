@@ -1,0 +1,120 @@
+ATMOSPHERIC PHYSICS AND WEATHER DYNAMICS
+=======================================
+
+ATMOSPHERE:
+Earth's atmosphere is a layered fluid envelope dominated by nitrogen and oxygen.
+
+LAYERS:
+- Troposphere
+- Stratosphere
+- Mesosphere
+- Thermosphere
+- Exosphere
+
+Most weather occurs in the troposphere.
+
+PRESSURE:
+Atmospheric pressure is due to the weight of air above a point.
+Pressure generally decreases with height.
+
+TEMPERATURE CHANGE WITH HEIGHT:
+The average lapse rate in the troposphere is about:
+6.5 degrees C per km
+
+WATER VAPOR:
+Water vapor strongly influences:
+- humidity
+- cloud formation
+- rainfall
+- latent heat transport
+
+HUMIDITY TERMS:
+- Absolute humidity
+- Relative humidity
+- Dew point
+
+If air cools to the dew point, condensation can begin.
+
+CLOUD FORMATION:
+Clouds form when moist air rises, expands, cools, and condenses on nuclei.
+
+WAYS AIR RISES:
+- Convection
+- Frontal lifting
+- Orographic lifting over mountains
+- Convergence
+
+LATENT HEAT:
+When water vapor condenses, latent heat is released.
+This powers storms and atmospheric circulation.
+
+WINDS:
+Air moves from high pressure toward low pressure, but Earth's rotation changes the path.
+
+CORIOLIS EFFECT:
+- deflects motion to the right in the Northern Hemisphere
+- deflects motion to the left in the Southern Hemisphere
+
+PRESSURE GRADIENT FORCE:
+Drives air from regions of higher pressure to lower pressure.
+
+GLOBAL CIRCULATION:
+Important circulation cells:
+- Hadley cell
+- Ferrel cell
+- Polar cell
+
+JET STREAMS:
+Fast winds high in the atmosphere.
+They influence storm tracks and large-scale weather.
+
+FRONTS:
+Boundary between air masses.
+Types:
+- Cold front
+- Warm front
+- Stationary front
+- Occluded front
+
+THUNDERSTORMS:
+Require:
+- moisture
+- instability
+- lifting
+
+SEVERE WEATHER:
+- thunderstorms
+- tornadoes
+- cyclones
+- heat waves
+- blizzards
+
+GREENHOUSE EFFECT:
+Certain gases absorb and re-radiate infrared energy.
+Major greenhouse gases:
+- water vapor
+- carbon dioxide
+- methane
+- nitrous oxide
+
+CLIMATE VS WEATHER:
+Weather:
+- short-term atmospheric conditions
+
+Climate:
+- long-term average patterns
+
+ENERGY BALANCE:
+Incoming solar radiation must be balanced by outgoing infrared radiation over long timescales.
+
+ALBEDO:
+Fraction of incoming radiation reflected by a surface.
+Ice and clouds usually have high albedo.
+
+EXAM FOCUS:
+- pressure and wind
+- humidity and dew point
+- cloud formation
+- fronts
+- Coriolis effect
+- greenhouse effect

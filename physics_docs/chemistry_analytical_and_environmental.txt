@@ -1,0 +1,222 @@
+================================================================================
+        CHEMISTRY: ANALYTICAL CHEMISTRY & ENVIRONMENTAL CHEMISTRY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ANALYTICAL CHEMISTRY FUNDAMENTALS
+--------------------------------------
+Analytical chemistry: Develops and applies methods to separate, identify, and quantify matter.
+Two branches: Qualitative analysis (what is present) and quantitative analysis (how much).
+
+Accuracy vs Precision:
+  Accuracy: How close a measurement is to the TRUE value.
+  Precision: How reproducible measurements are (close to each other).
+  Systematic error: Always in same direction; affects accuracy (calibration error, wrong reagent).
+  Random error: Statistical variation; affects precision (reading uncertainty, vibrations).
+
+Significant Figures:
+  In multiplication/division: Result has same sig figs as the least precise measurement.
+  In addition/subtraction: Result has same decimal places as least precise measurement.
+  Leading zeros: NOT significant (0.005 → 1 sig fig). Trailing zeros after decimal: Significant (2.50 → 3 sig figs). Trailing zeros before decimal: Ambiguous (2500 → 2 or 4 sig figs; use scientific notation: 2.500 × 10³).
+
+1.1 VOLUMETRIC ANALYSIS (TITRIMETRY)
+--------------------------------------
+Titration: Measure volume of standard solution (titrant) needed to react completely with analyte.
+Equivalence point: Stoichiometric amount of titrant = analyte. End point: Indicator changes colour (approximates equivalence point).
+Primary standard: Highly pure, stable, high molar mass → used to standardise solutions.
+  Examples: KHC₈H₄O₄ (potassium hydrogen phthalate, KHP); Na₂CO₃; K₂Cr₂O₇; KIO₃.
+
+Types of Titration:
+  Acid-Base: Neutralisation. Use pH indicator or pH meter.
+    HCl + NaOH → NaCl + H₂O. Phenolphthalein: colourless (acid) → pink (base, pH 8.2–10).
+    Methyl orange: Red (pH <3.1) → yellow (pH >4.4). Choose indicator with endpoint at equivalence pH.
+    Equivalence pH: Strong acid/strong base = 7; weak acid/strong base > 7; strong acid/weak base < 7.
+  Redox: Electron transfer. Use redox indicator or self-indicating titrant.
+    KMnO₄ (purple → colourless): Self-indicating; standardised with Na₂C₂O₄.
+    Na₂S₂O₃/I₂: Iodometric titrations; starch indicator (blue → colourless at endpoint).
+    K₂Cr₂O₇ vs Fe²⁺ (diphenylamine indicator).
+  Precipitation: Ag⁺ + Cl⁻ → AgCl↓ (Mohr's method with CrO₄²⁻ indicator — brick-red Ag₂CrO₄ forms at endpoint).
+  Complexometric (EDTA titrations): EDTA forms 1:1 complexes with most metal ions.
+    Used to determine water hardness (Ca²⁺ + Mg²⁺). Eriochrome Black T (EBT) indicator.
+
+Calculations:
+  Moles = Molarity × Volume (litres). n(acid) × V(acid) = n(base) × V(base) at equivalence.
+  Back titration: Excess known reagent + sample → titrate unreacted excess.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CHROMATOGRAPHY
+------------------
+Separation technique: Mixture components distribute between mobile phase and stationary phase.
+Principle: Different affinities for stationary phase → different migration rates → separation.
+
+Types of Chromatography:
+  TLC (Thin Layer Chromatography):
+    Stationary: Silica gel or alumina on glass/aluminium plate. Mobile: Organic solvent.
+    Rf = distance travelled by spot / distance travelled by solvent front. (0 to 1).
+    Higher Rf → less affinity for stationary phase (more non-polar → travels further on silica).
+    Visualise: UV lamp (fluorescent indicator); iodine vapour; ninhydrin (amino acids → purple).
+
+  Column Chromatography:
+    Silica column + organic solvent gradient.
+    Flash column chromatography: Pressurised (N₂) → faster separation; preparative scale.
+    Fractions collected → analyse by TLC.
+
+  HPLC (High Performance Liquid Chromatography):
+    High pressure pump forces solvent through packed column. Detector: UV-Vis, fluorescence, MS.
+    Reverse phase HPLC (most common): Non-polar stationary phase (C18 silica); polar mobile phase (water/acetonitrile/methanol); non-polar compounds elute last.
+    Normal phase: Polar stationary; non-polar mobile phase.
+    Ion exchange: Ionic stationary phase → separates ions; used in water treatment, amino acid analysis.
+    Applications: Pharmaceutical QC; food analysis; environmental testing; forensics.
+
+  GC (Gas Chromatography):
+    Volatile samples. Carrier gas (He, N₂, H₂) as mobile phase. Column: Capillary with liquid stationary phase coated inside walls. Oven programmed temperature gradient.
+    Detector: FID (flame ionisation, most common); TCD (thermal conductivity); ECD (electron capture, halogenated compounds); MS (GC-MS — identification by mass spectrum).
+    Applications: Forensics (drug testing); environmental (VOCs); petrochemical; food flavours.
+
+  GC-MS: Gold standard for volatile compound identification. NIST library matching.
+
+  Electrophoresis:
+    Charged molecules migrate in electric field. Size and charge determine migration rate.
+    Gel electrophoresis: DNA/RNA (agarose, ethidium bromide staining, UV visualisation); Proteins (SDS-PAGE — SDS denatures + gives uniform charge → separates by size only).
+    Capillary electrophoresis (CE): High resolution; DNA sequencing (Sanger method).
+
+3. SPECTROSCOPIC METHODS
+--------------------------
+Atomic Absorption Spectroscopy (AAS):
+  Sample atomised (flame or graphite furnace) → absorbs specific wavelengths of hollow cathode lamp.
+  Beer-Lambert law: A = εcl → concentration proportional to absorbance.
+  Each element has unique absorption wavelengths; elemental analysis of solutions.
+  Used for: Heavy metals in water/soil/food; clinical labs (Zn, Cu, Fe in blood); industrial QC.
+
+ICP-OES/ICP-MS (Inductively Coupled Plasma):
+  Sample as aerosol into Ar plasma (~6000-8000 K) → completely atomises and ionises.
+  OES: Emission spectrum → identify and quantify elements. MS: Ion detection → trace-level multi-element analysis (ppb to ppt sensitivity). Gold standard for trace elemental analysis.
+
+Flame Tests: Characteristic colours identify elements:
+  Li: Crimson red. Na: Yellow. K: Violet/lilac. Ca: Brick red. Sr: Crimson. Ba: Green. Cu: Blue-green. Fe: Gold/orange. Rb: Red-violet. Cs: Blue.
+
+UV-Visible Spectrophotometry:
+  Beer-Lambert Law: A = εcl. ε = molar absorptivity (M⁻¹cm⁻¹); c = concentration; l = path length (cm).
+  Cuvette path length: Usually 1 cm. Linear range: A = 0.1–1.0 (best accuracy).
+  Applications: Protein concentration (Bradford assay, 595 nm); enzyme kinetics; pollution monitoring; colorimetric assays.
+
+Fluorescence Spectroscopy:
+  Molecule absorbs photon → excited state → emits lower energy photon (Stokes shift).
+  Emission wavelength > excitation wavelength. Very sensitive (pM to fM detection).
+  Applications: Fluorescent labelling in biology (GFP, fluorescein, rhodamine); ELISA; flow cytometry; HPLC fluorescence detector.
+
+4. ENVIRONMENTAL CHEMISTRY
+----------------------------
+Atmosphere Composition (dry air):
+  N₂: 78.09%; O₂: 20.95%; Ar: 0.93%; CO₂: 0.042% (421 ppm in 2024, rising); trace gases.
+
+Greenhouse Effect:
+  Mechanism: Solar radiation passes through atmosphere → absorbed by Earth → re-emitted as IR → greenhouse gases (GHGs) absorb IR → warm atmosphere.
+  Key GHGs: CO₂ (dominant anthropogenic); CH₄ (25× CO₂ GWP over 100yr; 87× over 20yr); N₂O (298× CO₂); H₂O (most abundant natural); CFCs/HFCs (thousands× CO₂).
+  Global warming potential (GWP): Relative warming effect over 100 years vs CO₂ (=1).
+  Current CO₂: ~421 ppm (2024) vs pre-industrial ~280 ppm. +1.2°C warming since 1850-1900.
+  Carbon cycle disruption: Fossil fuel combustion → CO₂. Deforestation → less sink. Permafrost → CH₄.
+
+Ozone Chemistry:
+  Stratospheric ozone (15-35 km): "Good" ozone; protects from UV-B (280-315 nm).
+    Chapman cycle: O₂ + hν → 2O; O + O₂ → O₃; O₃ + hν → O₂ + O; O + O₃ → 2O₂.
+    Ozone hole (Antarctic): CFCs release Cl• → catalytic destruction: Cl• + O₃ → ClO + O₂; ClO + O → Cl• + O₂.
+    Montreal Protocol (1987): Phased out CFCs; ozone layer recovering (projected full recovery ~2060).
+  Tropospheric ozone: "Bad" ozone; pollutant; formed from NOₓ + VOCs + UV.
+    Photochemical smog: NOₓ (from combustion) + VOCs + sunlight → O₃ + PAN (peroxyacyl nitrate) → respiratory irritant.
+
+Acid Rain:
+  pH < 5.6 (vs normal rain pH 5.6 from CO₂/H₂CO₃).
+  Causes: SO₂ (coal/oil burning → SO₃ → H₂SO₄); NOₓ (combustion → HNO₃).
+  Effects: Acidifies lakes/soil; leaches Al³⁺ → toxic to fish; damages buildings (CaCO₃ + H₂SO₄ → CaSO₄ + CO₂ + H₂O); kills trees.
+  Control: Flue-gas desulphurisation (FGD) — Ca(OH)₂ scrubbers; low-sulphur fuel; catalytic converters (reduce NOₓ).
+
+Water Quality:
+  BOD (Biochemical Oxygen Demand): O₂ consumed by microbes in degrading organic matter. High BOD → low dissolved O₂ → fish kill.
+  COD (Chemical Oxygen Demand): O₂ equivalent to chemically oxidise all organic matter. Total organic load.
+  Hardness: Ca²⁺ + Mg²⁺ concentration. Temporary (HCO₃⁻ removed by boiling → CaCO₃ scale); Permanent (SO₄²⁻, Cl⁻ — removed by ion exchange or Na₂CO₃).
+  Water treatment: Coagulation (Al₂(SO₄)₃ + Al(OH)₃ floc); sedimentation; filtration; chlorination; fluoridation.
+  Eutrophication: Excess N + P → algal bloom → O₂ depletion → dead zones.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ADVANCED ANALYTICAL TECHNIQUES
+------------------------------------
+X-ray Fluorescence (XRF):
+  Sample irradiated by X-rays → ejects inner-shell electrons → outer electrons fill vacancies → emit X-rays with element-specific energies (Moseley's law).
+  Non-destructive; elemental analysis of solids; portable handheld devices.
+  Applications: Archaeology; lead paint testing; mining; quality control; environmental monitoring.
+
+Inductively Coupled Plasma Mass Spectrometry (ICP-MS):
+  Plasma ionises sample → quadrupole mass analyser → detection limits in ppt range.
+  Isotope ratio measurement: Geochronology; forensics (lead isotope fingerprinting); medical isotope tracing.
+  Clinical: Trace element analysis in blood/urine (As, Cd, Hg, Pb, Se, Cu, Zn).
+
+X-ray Diffraction (XRD):
+  Bragg's Law: nλ = 2d sinθ. Determines crystal structure from diffraction pattern.
+    d = lattice plane spacing; λ = X-ray wavelength; θ = diffraction angle.
+  Powder XRD: Phase identification (fingerprint diffraction pattern). ICDD database.
+  Single crystal XRD: Complete structure determination (bond lengths, angles, absolute configuration).
+
+Electron Microscopy:
+  SEM (Scanning Electron Microscopy): Surface morphology; sub-nanometre resolution.
+    EDX/EDS: Energy dispersive X-ray spectroscopy attached to SEM → elemental mapping.
+  TEM (Transmission Electron Microscopy): Internal structure; atomic resolution (~50 pm).
+    SAED (Selected Area Electron Diffraction): Crystal structure.
+    HAADF-STEM (High-Angle Annular Dark Field): Atomic resolution imaging (Z-contrast).
+  Cryo-TEM: Biological samples; frozen hydrated; avoids staining artefacts.
+
+6. GREEN CHEMISTRY — 12 PRINCIPLES
+--------------------------------------
+Paul Anastas & John Warner (1998) defined the 12 Principles of Green Chemistry:
+  1. Prevention: Better to prevent waste than to clean it up.
+  2. Atom Economy: Design syntheses so all starting materials appear in final product.
+     Atom economy = (MW desired product / MW all products) × 100%.
+  3. Less Hazardous Syntheses: Avoid/minimise toxicity.
+  4. Designing Safer Chemicals: Maintain function while reducing toxicity.
+  5. Safer Solvents and Auxiliaries: Minimise use; use safer alternatives (water, supercritical CO₂, ionic liquids, deep eutectic solvents).
+  6. Energy Efficiency: Minimise energy requirements; ambient temperature/pressure preferred.
+  7. Renewable Feedstocks: Use biological rather than depleting (petroleum-based) raw materials.
+  8. Reduce Derivatives: Avoid unnecessary derivatisation steps.
+  9. Catalysis: Use catalytic rather than stoichiometric reagents.
+  10. Design for Degradation: Products should degrade to innocuous products after use.
+  11. Real-Time Analysis for Pollution Prevention: Monitor in-process to minimise formation of hazardous substances.
+  12. Inherently Safer Chemistry: Minimise accident potential (explosion, fire, release).
+
+E-factor (Environmental Factor): kg waste per kg product. Lower is greener.
+  Pharmaceuticals: 25–100 (complex multi-step synthesis). Fine chemicals: 5–50. Bulk chemicals: <5. Refinery: <0.1.
+
+Supercritical CO₂ (scCO₂):
+  Above 31.1°C and 73.8 atm → supercritical fluid. Acts as non-toxic, non-flammable solvent.
+  Solvating power tunable by pressure. Used in: Decaffeination of coffee; dry cleaning (replacing perchloroethylene); extraction of natural products; chromatography (SFC).
+
+Ionic Liquids:
+  Salts that are liquid at or near RT (mp < 100°C). Large organic cation + non-coordinating anion.
+  Properties: Very low vapour pressure (no evaporation); wide electrochemical window; high thermal stability; tunable (ionic liquid design).
+  Applications: Green solvents; electrolytes for batteries/solar cells; catalysis; synthesis.
+
+Atom-Efficient Reactions:
+  Rearrangements (100% atom economy): No atoms lost.
+  Additions (100% atom economy): All atoms in product.
+  Condensations (~100% but water lost): Small molecule byproduct.
+  Substitutions (<100%): Byproduct leaving group.
+  Oxidations (<100%): Oxidant byproduct (variable).
+  Eliminations (<100%): Small molecule lost.
+  Catalytic reactions improve atom economy (catalyst regenerated, not consumed in stoichiometric amounts).
+
+[SOCIETAL RELEVANCE] Chemistry and sustainability:
+  Global plastic crisis: ~8 million tonnes plastic enter ocean annually. Microplastics in deepest trenches, human blood, placentas. Chemical solutions: Biodegradable polymers (PHA, PLA, PBS); chemical recycling (pyrolysis, solvolysis); extended producer responsibility.
+  Clean energy: Electrolysis (green H₂); Li-ion battery recycling (LiCoO₂, NMC — recovery of Co, Ni, Li, Mn); perovskite solar cells (Pb-free alternatives — Sn, Bi perovskites in development); fuel cells (Pt loading reduction — non-Pt catalysts Fe-N-C).
+  Carbon capture: Chemical looping combustion; amine scrubbing (MEA); solid adsorbents; direct air capture (DAC — Climeworks Orca, Stratos — currently $400-1000/tCO₂).
+  Circular economy chemistry: Designing products for disassembly and recycling; chemical upcycling.
+
+================================================================================

@@ -1,0 +1,208 @@
+CLASS 11 PHYSICS ESSENTIALS: ROTATION, PROPERTIES OF MATTER, FLUIDS
+=====================================================================
+
+CHAPTER: SYSTEM OF PARTICLES AND ROTATIONAL MOTION
+
+ANGULAR VARIABLES:
+- Angular displacement = theta
+- Angular velocity: omega = d(theta)/dt
+- Angular acceleration: alpha = d(omega)/dt
+
+For constant angular acceleration:
+- omega = omega0 + alpha t
+- theta = omega0 t + (1/2)alpha t^2
+- omega^2 = omega0^2 + 2alpha theta
+
+RELATION BETWEEN LINEAR AND ANGULAR QUANTITIES:
+- v = r omega
+- a_t = r alpha
+- a_c = v^2/r = r omega^2
+
+TORQUE:
+- tau = r x F
+- Magnitude: tau = rF sin(theta)
+- SI unit: N m
+
+ANGULAR MOMENTUM:
+- L = r x p
+- For rigid body about fixed axis: L = I omega
+
+ROTATIONAL DYNAMICS:
+- Net torque = I alpha
+- Rotational kinetic energy: K = (1/2)I omega^2
+
+MOMENT OF INERTIA:
+- Depends on mass and distribution about axis.
+- Radius of gyration: I = Mk^2
+
+Standard values:
+- Ring about central axis: I = MR^2
+- Disc/cylinder about central axis: I = (1/2)MR^2
+- Hollow cylinder: I = MR^2
+- Rod about center perpendicular to length: I = (1/12)ML^2
+- Rod about end perpendicular to length: I = (1/3)ML^2
+- Solid sphere about diameter: I = (2/5)MR^2
+- Hollow sphere about diameter: I = (2/3)MR^2
+
+THEOREMS:
+- Parallel axis theorem: I = Icm + Md^2
+- Perpendicular axis theorem: Iz = Ix + Iy
+
+ROLLING MOTION:
+- For pure rolling: v = R omega
+- Total kinetic energy = (1/2)Mv^2 + (1/2)Icm omega^2
+
+EQUILIBRIUM OF RIGID BODY:
+For equilibrium:
+- Net force = 0
+- Net torque = 0
+
+Types:
+- Stable equilibrium: PE minimum
+- Unstable equilibrium: PE maximum
+- Neutral equilibrium: PE constant
+
+CENTER OF MASS:
+- Motion of COM depends on external force.
+- If external torque = 0, angular momentum is conserved.
+
+COMMON MISTAKES IN ROTATION:
+- Do not confuse force with torque.
+- tau = I alpha is rotational analog of F = ma, but use about correct axis.
+- In rolling without slipping, friction is usually static.
+- Angular momentum is conserved only when external torque is zero.
+- Pure rolling means translational and rotational motions are linked by v = R omega.
+
+---
+
+CHAPTER: MECHANICAL PROPERTIES OF SOLIDS
+
+STRESS:
+- Normal stress = Force/Area
+- Shear stress = Tangential force/Area
+
+STRAIN:
+- Longitudinal strain = Delta L/L
+- Volumetric strain = Delta V/V
+- Shear strain = angular deformation
+
+HOOKE'S LAW:
+- Within elastic limit, stress is proportional to strain.
+
+ELASTIC MODULI:
+- Young's modulus: Y = (F L)/(A Delta L)
+- Bulk modulus: K = -p/(Delta V/V)
+- Shear modulus: eta = shear stress/shear strain
+
+ELASTIC ENERGY PER UNIT VOLUME:
+- u = (1/2) x stress x strain
+
+IMPORTANT POINTS:
+- Elastic limit: maximum stress up to which body regains original shape.
+- Plastic deformation: permanent deformation.
+- Steel is more elastic than rubber because Young's modulus of steel is larger.
+- Ductile materials can be drawn into wires.
+- Brittle materials fracture with small deformation.
+
+---
+
+CHAPTER: MECHANICAL PROPERTIES OF FLUIDS
+
+PRESSURE:
+- P = Force/Area
+- SI unit: pascal
+
+HYDROSTATIC PRESSURE:
+- P = P0 + rho g h
+
+PASCAL'S LAW:
+- Pressure applied to enclosed fluid is transmitted equally in all directions.
+
+HYDRAULIC LIFT:
+- F2/F1 = A2/A1
+
+ARCHIMEDES' PRINCIPLE:
+- Buoyant force = weight of displaced fluid
+
+LAW OF FLOATATION:
+- Weight of floating body = weight of displaced liquid
+
+STREAMLINE FLOW:
+- In steady streamline flow, velocity at a point remains constant with time.
+
+EQUATION OF CONTINUITY:
+- A v = constant
+
+BERNOULLI'S PRINCIPLE:
+- P + (1/2)rho v^2 + rho g h = constant
+
+Applications:
+- Venturimeter
+- Atomizer
+- Carburetor
+- Lift on airplane wing
+
+VISCOSITY:
+- Viscous force: F = eta A (dv/dx)
+
+STOKES' LAW:
+- Drag force on sphere: F = 6 pi eta r v
+
+TERMINAL VELOCITY:
+- v_t = 2r^2(rho - sigma)g / 9eta
+  rho = density of body, sigma = density of fluid
+
+POISEUILLE'S EQUATION:
+- Q = (pi P r^4)/(8 eta l)
+  Q = volume flow rate
+
+SURFACE TENSION:
+- Surface tension = force/length
+- Surface energy per unit area = surface tension
+
+EXCESS PRESSURE:
+- Liquid drop: Delta P = 2T/r
+- Soap bubble: Delta P = 4T/r
+
+CAPILLARY RISE:
+- h = 2T cos(theta)/(r rho g)
+
+IMPORTANT CONCEPTS:
+- Pressure in liquid depends on depth, density, g; not on container shape.
+- Buoyant force depends on volume of displaced fluid.
+- Bernoulli's theorem applies to ideal fluid in streamline flow.
+- Surface tension decreases with temperature.
+- Soap bubble has two liquid surfaces, hence excess pressure is double that of a drop.
+
+COMMON MISTAKES IN FLUIDS:
+- Do not apply Bernoulli's theorem to viscous/turbulent flow blindly.
+- Do not forget atmospheric pressure when absolute pressure is asked.
+- Terminal velocity occurs when net force becomes zero.
+- In floating body problems, equate weight of body with buoyant force.
+- Remember factor 2 and 4 in drop and soap bubble pressure formulas.
+
+---
+
+QUICK FORMULA REVISION
+
+- tau = rF sin(theta)
+- L = I omega
+- tau = I alpha
+- Krot = (1/2)I omega^2
+- v = r omega
+- a_c = v^2/r = r omega^2
+- I = Mk^2
+- Y = (F L)/(A Delta L)
+- K = -p/(Delta V/V)
+- P = P0 + rho g h
+- Buoyant force = rho V g
+- A v = constant
+- P + (1/2)rho v^2 + rho g h = constant
+- F = 6 pi eta r v
+- h = 2T cos(theta)/(r rho g)
+
+ONE-LINE REVISION:
+- Rotation is the extension of linear motion using torque, angular momentum, and moment of inertia.
+- Solids chapter is concept-heavy: stress, strain, and elastic moduli must be clearly separated.
+- Fluids is highly formula-based, but every formula has conditions; learn the assumptions.
+- Most exam mistakes come from wrong axis choice, sign confusion, or forgetting special factors in surface tension formulas.

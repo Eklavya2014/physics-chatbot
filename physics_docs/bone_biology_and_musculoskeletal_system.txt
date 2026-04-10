@@ -1,0 +1,171 @@
+================================================================================
+               BONE BIOLOGY & THE MUSCULOSKELETAL SYSTEM
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BONE BIOLOGY FUNDAMENTALS
+------------------------------
+Bone is living connective tissue — continuously renewed by a process called bone remodelling.
+Functions: Structural support, locomotion, protection (brain, heart, lungs, spinal cord), mineral homeostasis (99% body Ca2+, 85% P stored in bone), haematopoiesis, endocrine (osteocalcin → insulin sensitivity + testosterone), acid-base buffering.
+
+Bone Composition:
+  Organic matrix (~35%): Type I collagen (90%) + non-collagenous proteins (osteocalcin, osteopontin, osteonectin, bone sialoprotein).
+  Inorganic mineral (~65%): Hydroxyapatite [Ca10(PO4)6(OH)2] crystals. Also carbonate, fluoride, magnesium ions.
+  Water: ~10% of bone weight.
+
+Bone Types by Structure:
+  Cortical (compact) bone: Dense outer shell (~80% of skeletal mass). Osteons (Haversian systems): Concentric lamellae around central canal. Functions: Mechanical strength + rigidity.
+  Cancellous (trabecular/spongy) bone: Inner network of trabeculae. Highly vascular. Main site of bone turnover. Metabolically active.
+
+Bone Cells:
+  Osteoblasts: Synthesise and mineralise bone matrix. Derived from MSCs (mesenchymal stem cells). Markers: ALP (alkaline phosphatase), osteocalcin, runx2, osterix. After matrix secretion, either apoptose, become osteocytes, or become bone lining cells.
+  Osteoclasts: Resorb bone. Derived from monocyte/macrophage lineage (haematopoietic). Multi-nucleated giant cells. Form ruffled border + sealing zone → sealed lacuna (Howship's lacuna). Secrete HCl (dissolves mineral) + Cathepsin K (cleaves collagen). Marker: TRAP (tartrate-resistant acid phosphatase).
+  Osteocytes: Most abundant bone cell (>90%). Terminally differentiated osteoblasts embedded in mineralised matrix. Interconnected by canalicular network (gap junctions + cell processes). Mechanosensors → translate mechanical loading into biochemical signals. Secrete sclerostin (Sost) and FGF23.
+
+1.1 BONE REMODELLING CYCLE
+----------------------------
+Continuous process maintaining bone quality and mineral homeostasis.
+~10% skeleton replaced per year in adults. Complete cycle ~3–6 months.
+
+1. Activation: Osteocyte/osteoblast sensing of damage or unloading → RANK-L + M-CSF production.
+2. Resorption: Osteoclasts excavate bone pit over ~2–4 weeks.
+3. Reversal: Osteoclasts apoptose; mononuclear cells prepare surface.
+4. Formation: Osteoblasts fill pit with osteoid over ~3–4 months.
+5. Mineralisation: Hydroxyapatite crystallisation.
+6. Quiescence: Bone lining cells cover surface.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. MOLECULAR REGULATION OF BONE REMODELLING
+---------------------------------------------
+RANK/RANKL/OPG Axis (Master Regulator):
+  RANK-L (Receptor Activator of NF-kB Ligand, TNFSF11): Expressed on osteoblasts/osteocytes/stromal cells. Binds RANK on osteoclast precursors → osteoclast differentiation, activation, survival.
+  RANK: On osteoclast surface. RANK-L binding → TRAF6 → NF-kB + AP-1 + NFATc1 → osteoclastogenesis.
+  OPG (Osteoprotegerin): Decoy receptor. Secreted by osteoblasts/stromal cells. Binds RANK-L → prevents RANK-L/RANK interaction → inhibits osteoclastogenesis.
+  RANK-L:OPG ratio determines net bone resorption vs formation.
+  Therapeutic target: Denosumab (anti-RANKL mAb, Prolia/Xgeva) → blocks osteoclastogenesis → treats osteoporosis + cancer bone metastases (↓ skeletal events).
+
+Wnt Signalling in Bone:
+  Wnt → LRP5/LRP6 + Frizzled → beta-catenin stabilisation → osteoblast differentiation + proliferation.
+  Sclerostin (Sost): Secreted by osteocytes; binds LRP5/6 → blocks Wnt → inhibits osteoblast formation. Mechanical loading → suppresses sclerostin → more bone formation (Wolff's Law).
+  Romosozumab (anti-sclerostin mAb, Evenity): FDA approved 2019 for severe osteoporosis. Dual effect: stimulates bone formation + reduces resorption. 12 months only (rebound phenomenon).
+  Dickkopf-1 (DKK1): Another Wnt antagonist; elevated in myeloma → osteolytic lesions.
+    Anti-DKK1 (BHQ880): Trials in myeloma.
+
+Osteoblast Differentiation:
+  MSC → Osteoprogenitor → Preosteoblast → Osteoblast → Osteocyte or Bone lining cell.
+  Key TFs: RUNX2 (master osteoblast TF; mutations → cleidocranial dysplasia); Osterix/SP7 (downstream of RUNX2); beta-catenin (Wnt effector).
+  Hormones promoting osteoblasts: PTH (intermittent → anabolic paradox), oestrogen, androgens, IGF-1.
+  Adipogenic competition: MSC can differentiate into osteoblast OR adipocyte. Increased adipogenic differentiation in ageing/disuse → increased marrow fat.
+
+3. CALCIUM AND PHOSPHATE HOMEOSTASIS
+---------------------------------------
+Tight regulation: Blood Ca2+ 2.2–2.6 mmol/L; phosphate 0.8–1.5 mmol/L.
+
+PTH (Parathyroid Hormone):
+  Secreted by chief cells of parathyroid gland in response to low Ca2+.
+  CaSR (calcium-sensing receptor) on parathyroid cells — Gq-coupled; detects blood Ca2+. Low Ca2+ → less CaSR signalling → PTH secretion.
+  PTH effects:
+    Bone: Stimulates osteoclast activity (via RANKL on osteoblasts) → Ca2+ release. Paradox: Continuous PTH → bone resorption; intermittent PTH → bone formation (stimulates IGF-1 + Wnt → osteoblast proliferation).
+    Kidney: ↑ Ca2+ reabsorption (DCT); ↑ Phosphate excretion (PCT — activates FGF23 receptor); ↑ 1-alpha-hydroxylase → 1,25-OH2D3 (calcitriol).
+    Intestine (via calcitriol): ↑ Ca2+ and phosphate absorption.
+  Teriparatide (PTH 1-34, Forteo): Intermittent injection → anabolic bone effect → approved for osteoporosis.
+  Abaloparatide (PTHrP analogue): Similar anabolic effect; less hypercalciuria.
+
+Calcitriol (Active Vitamin D, 1,25-OH2D3):
+  Synthesis: 7-dehydrocholesterol + UVB → cholecalciferol (D3) in skin; or dietary → 25-hydroxylation in liver → 1-alpha-hydroxylation in kidney (PTH + FGF23-stimulated).
+  Actions: ↑ Intestinal Ca2+ absorption (TRPV6 + calbindin D9k); ↑ renal Ca2+ reabsorption; ↑ bone resorption (permissive); immunomodulatory (monocyte differentiation, Treg function).
+  VDR: Nuclear receptor; heterodimer with RXR → VDRE binding → target gene expression.
+  Deficiency: Rickets (children) — softening + deformity of growing bone; osteomalacia (adults) — impaired mineralisation.
+
+Calcitonin:
+  Secreted by C cells of thyroid. High Ca2+ → calcitonin release → inhibit osteoclasts (CTAR1 receptor, Gi).
+  Minor role in adult Ca2+ homeostasis; more important in rapid Ca2+ rises (after meals).
+  Salmon calcitonin: Potent osteoclast inhibitor → treats Paget's disease, acute hypercalcaemia, osteoporosis.
+
+FGF23 (Fibroblast Growth Factor 23):
+  Secreted by osteocytes in response to high phosphate + high calcitriol.
+  Actions: ↑ Renal phosphate excretion (blocks NaPi-IIa/c in PCT) + ↓ 1-alpha-hydroxylase → less calcitriol → less intestinal phosphate absorption.
+  Klotho: FGF23 co-receptor in kidney + parathyroid. Klotho also independently regulates ageing (klotho KO → premature ageing phenotype).
+  Tumour-induced osteomalacia: FGF23-secreting tumours → severe phosphate wasting.
+  X-linked hypophosphataemia (XLH): Loss-of-function PHEX → elevated FGF23 → rickets. Burosumab (anti-FGF23, Crysvita): Approved XLH treatment.
+
+4. OSTEOPOROSIS
+----------------
+Most common metabolic bone disease. Low bone mass + microarchitectural deterioration → fragility fractures.
+WHO definition: BMD T-score ≤ -2.5 (DEXA scan). Osteopenia: T-score -1.0 to -2.5.
+
+Epidemiology: 200 million women worldwide. Lifetime fracture risk: ~50% women, ~20% men. Hip fracture → 25% mortality within 1 year; 50% lose independence.
+
+Pathophysiology:
+  Imbalance between resorption > formation. Accelerated by:
+  Menopause: Oestrogen loss → ↑ RANK-L (oestrogen normally inhibits RANK-L + stimulates OPG) → ↑ osteoclast activity → rapid bone loss (up to 3% per year for 5–10 years post-menopause).
+  Ageing: ↑ marrow adipogenesis, ↓ osteoblast lifespan, ↑ ROS, ↓ IGF-1, ↓ calcium absorption.
+  Secondary causes: Glucocorticoids (most common iatrogenic → suppress osteoblast + ↑ osteoclast), hyperparathyroidism, hypogonadism, malabsorption, CKD, multiple myeloma.
+
+Treatment:
+  Bisphosphonates (alendronate, risedronate, zoledronate): Adsorb to HA → taken up by osteoclasts → inhibit farnesyl pyrophosphate synthase (mevalonate pathway) → loss of prenylation of Ras/Rho/Rac → osteoclast apoptosis. Most widely used. Reduce fracture risk by 30–70%.
+  Denosumab (anti-RANKL): SC 6-monthly injection. Effective. Must not abruptly stop (rebound fractures).
+  Romosozumab (anti-sclerostin): 12 months anabolic treatment → transition to antiresorptive.
+  Teriparatide / Abaloparatide: Anabolic; for severe osteoporosis; 2-year courses.
+  Sequential therapy: Anabolic first → antiresorptive consolidation (standard in severe disease).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MUSCLE-BONE CROSSTALK (MYOKINES & OSTEOKINES)
+--------------------------------------------------
+Muscle and bone communicate bidirectionally — the "bone-muscle unit."
+
+Osteocalcin (Bone-derived):
+  Osteoblast-secreted. Uncarboxylated osteocalcin (ucOC) is endocrine hormone.
+  Actions: ↑ Insulin secretion + ↑ insulin sensitivity; ↑ testosterone production (Leydig cells); ↑ muscle exercise capacity (enhances fatty acid uptake + AMPK activation in muscle); ↑ memory (hippocampal neurons).
+  FoxO1 in osteoblasts: Activated by ROS → stimulates ucOC production → systemic metabolic effects.
+  ucOC declines with age → contributes to age-related metabolic + cognitive decline.
+
+Myokines (Muscle-derived):
+  Irisin: Released as exercise-induced myokine (FNDC5 ectodomain cleavage). Promotes browning of white adipose tissue; stimulates osteoblast differentiation; neuroprotective; anti-inflammatory.
+  IL-6 (from contracting muscle): Acute: Glycogenolysis + lipolysis + glucose uptake. Different from chronic inflammatory IL-6 (from adipose/macrophages).
+  Myostatin (GDF-8): Negative regulator of muscle mass. Inhibits muscle satellite cell proliferation. Mutations → supraphysiological muscle mass (Belgian Blue cattle; myostatin-deficient children).
+    Myostatin inhibitors: Trials in muscular dystrophy, sarcopenia, osteoporosis.
+  IGF-1 (from contracting muscle): Autocrine/paracrine → muscle satellite cell activation → hypertrophy.
+  FGF21 (from muscle in stress): Fatty acid oxidation; systemic metabolic effects.
+
+Bone Metastasis Biology:
+  "Seed and soil" (Paget, 1889): Tumour cells (seed) preferentially metastasise to bone (soil).
+  Vicious cycle: Tumour cells secrete PTHrP → osteoblast RANKL ↑ → osteoclast activation → TGF-beta release from matrix → tumour cell proliferation → more PTHrP. Zoledronate (BP) + denosumab → break cycle → reduce skeletal-related events (SREs).
+  Prostate cancer: Osteoblastic metastases. DKK1 inhibition by BMP pathway + WNT activation.
+  Breast cancer: Predominantly osteolytic (PTHrP-driven); sometimes mixed.
+  RANK-L expression on breast cancer cells: Denosumab → reduces RANK-L-expressing BC bone metastasis.
+
+6. CARTILAGE & JOINT BIOLOGY
+-------------------------------
+Articular Cartilage: Hyaline cartilage covering articular surfaces. Avascular, aneural.
+  Extracellular matrix: Type II collagen (60–80% dry weight) + Aggrecan (large proteoglycan; CS + KS GAG chains → retain water → compressive resistance).
+  Chondrocytes: Only cell type; ~5% of cartilage volume; enclosed in lacunae; maintain matrix turnover.
+  Zones: Superficial (PRG4/lubricin → lubrication), middle, deep, calcified (anchored to bone).
+  Limited self-repair: Avascular → no stem cell recruitment from blood → fibrocartilage repair (inferior).
+
+Osteoarthritis (OA):
+  Most common joint disease. Loss of articular cartilage + subchondral bone remodelling + osteophyte formation + synovitis.
+  Pathogenesis: Mechanical stress → chondrocyte stress response → catabolic > anabolic shift. MMPs (MMP-1, -13) + ADAMTS (aggrecanases-4/5) → collagen + aggrecan degradation → cartilage breakdown.
+  IL-1beta + TNF-alpha from synoviocytes → NF-kB → MMP expression → amplification loop.
+  Treatment: Symptomatic (NSAIDs, paracetamol, intra-articular steroids/hyaluronate) → joint replacement. No disease-modifying OA drug (DMOAD) approved despite many trials.
+  Biologics: Anti-NGF (tanezumab) for pain — promising but bone side effects. Anti-IL-1 (anakinra) — modest. Lorecivivint (CLK2/DYRK1A inhibitor, Wnt pathway) — Phase III failed primary endpoint.
+
+Rheumatoid Arthritis (RA):
+  Autoimmune synovitis → progressive joint destruction. Pannus (hypertrophied synovial tissue) invades + destroys cartilage + bone.
+  ACPA (anti-citrullinated protein antibodies): Present in ~70% RA; highly specific; precede clinical onset by years. Citrullination: PAD (peptidylarginine deiminase) enzyme converts Arg→Citrulline → generates neo-antigens.
+  HLA-DRB1*04 shared epitope: Presents citrullinated peptides to CD4+ T cells.
+  Pathways: Th17 + Tfh in lymph nodes → ACPA + RF → IC formation → complement + FcR → synovitis.
+  TNF-alpha: Master cytokine in RA pannus. Anti-TNF biologics (etanercept, infliximab, adalimumab) → transformed RA outcomes.
+  Treat-to-target: Remission or low disease activity. DAS28 or SDAI/CDAI scores guide treatment escalation.
+
+================================================================================

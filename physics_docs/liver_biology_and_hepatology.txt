@@ -1,0 +1,155 @@
+================================================================================
+                  LIVER BIOLOGY & HEPATOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. LIVER ANATOMY & CELL TYPES
+-------------------------------
+The liver (~1.5 kg) is the largest internal organ and the metabolic hub of the body.
+Located in the right upper quadrant; receives dual blood supply:
+  Portal vein (~75%): Nutrient-rich blood from GI tract.
+  Hepatic artery (~25%): Oxygenated blood from aorta.
+Blood drains via hepatic veins → inferior vena cava.
+
+Functional Unit: The Liver Acinus (Rappaport zone model):
+  Zone 1 (periportal): First contact with portal blood; high O2 + nutrients; gluconeogenesis + beta-oxidation + urea cycle; most resistant to ischaemia; most susceptible to toxic injury.
+  Zone 2 (mid-zone): Intermediate.
+  Zone 3 (centrilobular): Lowest O2; glycolysis + lipogenesis + drug metabolism (CYP450 enzymes concentrated here); most susceptible to ischaemia; CCl4 + acetaminophen → zone 3 injury.
+
+Liver Cell Types:
+  Hepatocytes (80% of liver cells): Main parenchymal cell. Carry out most liver functions. Highly polarised: sinusoidal (blood-facing) + canalicular (bile-facing) domains.
+  Sinusoidal endothelial cells (LSECs): Fenestrated (no basement membrane); unique. Direct contact between portal blood and hepatocyte surface. Scavenger function; regulate portal hypertension.
+  Kupffer cells: Resident macrophages (stellate macrophages) lining sinusoids. Phagocytose bacteria, endotoxin, debris from portal blood. First line of immune defence. Source of TGF-beta + TNF-alpha in liver disease.
+  Hepatic stellate cells (HSCs, Ito cells): Pericytes in space of Disse. Store vitamin A (retinoids) as fat droplets. Key in liver FIBROSIS: injury → activation → lose fat → myofibroblast-like → alpha-SMA+ → secrete collagen-I, collagen-III, fibronectin → fibrosis.
+  Pit cells: Liver-associated NK cells. Immune surveillance.
+  Cholangiocytes: Bile duct epithelial cells. Line intrahepatic bile ducts.
+
+1.1 LIVER FUNCTIONS — OVERVIEW
+--------------------------------
+  Metabolism    : Glucose (glycogenesis/glycogenolysis/gluconeogenesis), lipid (VLDL synthesis, beta-oxidation, ketogenesis), protein (transamination, deamination), amino acid (urea cycle).
+  Synthesis     : Albumin (most plasma proteins), clotting factors (I, II, V, VII, IX, X, XI, XIII, protein C/S), complement, IGF-1, hepcidin, angiotensinogen, CRP.
+  Bile production: ~600–1,200 mL/day. Bile salts (cholesterol-derived), bilirubin (haem breakdown), phospholipids, cholesterol, electrolytes.
+  Detoxification: Phase I (CYP450 — oxidation/hydroxylation) → Phase II (conjugation — glucuronidation, sulphation, glutathione) → Phase III (ABC transporter export). Drugs, hormones, toxins, xenobiotics.
+  Storage       : Glycogen (~100g), TG, fat-soluble vitamins (A, D, E, K), B12, iron (ferritin), copper.
+  Immune function: Kupffer cells; IgA secretion; complement production; detoxify portal bacteria.
+  Haematopoiesis: During foetal development.
+  Hormone metabolism: Insulin, glucagon, thyroid hormones, steroids all metabolised.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. BILE ACID BIOLOGY
+----------------------
+Primary bile acids: Synthesised from cholesterol in hepatocytes via CYP7A1 (rate-limiting, cholesterol 7alpha-hydroxylase) → cholic acid + chenodeoxycholic acid.
+Secondary bile acids: Primary BAs modified by gut bacteria → deoxycholic acid, lithocholic acid, ursodeoxycholic acid (UDCA).
+Conjugation: Bile acids + taurine or glycine → taurocholate, glycocholate (increases solubility + prevents passive absorption in small bowel).
+Functions: Emulsify dietary fats; solubilise cholesterol in bile; regulate cholesterol/triglyceride metabolism; signalling molecules (FXR, TGR5 receptors).
+Enterohepatic circulation: ~95% of BAs reabsorbed in ileum (ASBT transporter) → portal blood → liver → re-secreted. Only ~5% lost in faeces (excreted bile acids are the main route of cholesterol elimination from body).
+
+FXR (Farnesoid X Receptor): Nuclear receptor activated by BAs.
+  Intestinal FXR: Activates FGF19 (human)/FGF15 (mouse) → portal blood → hepatic FGFR4 → suppresses CYP7A1 → reduces BA synthesis (negative feedback).
+  Hepatic FXR: Suppresses CYP7A1 directly. Also regulates lipid/glucose metabolism, inflammation.
+  FXR agonists: Obeticholic acid (OCA, INT-747) → approved for PBC (primary biliary cholangitis). Phase III in NASH (REGENERATE trial → improved fibrosis but not clinical outcomes).
+
+3. DRUG METABOLISM — CYP450 SYSTEM
+-------------------------------------
+Hepatic CYP450 enzymes:
+  CYP3A4: Metabolises ~50% of drugs. Warfarin, statins, calcium channel blockers, immunosuppressants (tacrolimus, ciclosporin), HIV drugs, benzodiazepines. Located mainly in zone 3 hepatocytes.
+  CYP2D6: ~25% drugs. Codeine, antidepressants, antipsychotics, beta-blockers, opioids. Polymorphic (poor/intermediate/extensive/ultrarapid metabolisers).
+  CYP2C9: Warfarin, phenytoin, NSAIDs, oral hypoglycaemics. VKORC1 + CYP2C9 → warfarin dosing algorithm.
+  CYP2C19: Clopidogrel (prodrug → active metabolite), PPIs, SSRIs, antiepileptics.
+  CYP1A2: Caffeine, theophylline, clozapine, haloperidol. Induced by cigarette smoke.
+  CYP2E1: Ethanol, paracetamol (→ NAPQI), volatile anaesthetics. Small molecule substrates. Induced by chronic alcohol → more NAPQI → hepatotoxicity even at therapeutic doses.
+
+Drug-Induced Liver Injury (DILI):
+  Most common reason drugs withdrawn from market post-approval. Leading cause of acute liver failure in West.
+  Predictable (intrinsic): Dose-dependent. Paracetamol (acetaminophen) → most common cause of ALF in USA/UK.
+    Mechanism: CYP2E1/CYP3A4 → NAPQI (N-acetyl-p-benzoquinone imine) → depletes GSH → protein adducts → mitochondrial dysfunction → hepatocyte necrosis (zone 3).
+    Antidote: N-acetylcysteine (restores GSH). Effective within 8–10 hours.
+  Idiosyncratic: Dose-independent; rare; unpredictable. Isoniazid, statins, NSAIDs, herbal remedies.
+  Pattern: Hepatocellular (ALT > ALP), cholestatic (ALP > ALT), or mixed.
+  RUCAM (Roussel Uclaf Causality Assessment Method): Scores probability of DILI.
+
+4. VIRAL HEPATITIS
+-------------------
+Hepatitis B Virus (HBV):
+  Partially dsDNA virus (Hepadnaviridae). Infects hepatocytes via NTCP (sodium-taurocholate cotransporting polypeptide) receptor.
+  cccDNA (covalently closed circular DNA): Nuclear episome; viral reservoir; persists for life; drives chronic infection; target for cure strategies.
+  pgRNA (pregenomic RNA): Reverse-transcribed by HBV polymerase → new viral DNA.
+  HBeAg: Indicator of high viral replication and infectivity.
+  HBsAg: Surface antigen; marker of infection. HBsAb: Marker of immunity.
+  Natural history: Acute (90% cleared in adults; 90% chronic in neonates) → immune-tolerant → immune-active → inactive carrier → reactivation.
+  Complications: Cirrhosis → HCC (~20–40× increased risk). HBsAg = strongest HCC risk factor.
+  Treatment: NUCs (nucleoside/nucleotide analogues): Entecavir, tenofovir (TDF/TAF). Suppress viral DNA but do not eliminate cccDNA → lifelong therapy usually required.
+  Cure strategies: cccDNA inactivation (CRISPR, ZFN, APOBEC), capsid assembly modulators, siRNA (AB-729).
+
+Hepatitis C Virus (HCV):
+  +ssRNA virus (Flaviviridae). GT1–GT6. GT1/3 most common worldwide.
+  Incubation: 2–26 weeks. 75–85% → chronic infection. 20–30% → cirrhosis over 20 years → HCC.
+  Mechanism: NS5B (RdRp), NS3/4A (serine protease), NS5A: key replication proteins → drug targets.
+  Direct-Acting Antivirals (DAAs): Cure rates >95% across all genotypes in 8–12 weeks.
+    Pan-genotypic regimens: Sofosbuvir (NS5B nucleotide inhibitor) + Velpatasvir (NS5A inhibitor) = Epclusa; Glecaprevir (NS3/4A) + Pibrentasvir (NS5A) = Mavyret.
+  HCV can be cured even in cirrhosis; HCC risk declines but doesn't return to baseline.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. MAFLD / NASH (METABOLIC-ASSOCIATED FATTY LIVER DISEASE)
+------------------------------------------------------------
+MAFLD (formerly NAFLD/NASH): Most common liver disease globally (~25% prevalence).
+
+Pathogenesis — "Multiple Parallel Hits" model:
+  First hit: Lipid accumulation (hepatic steatosis) — insulin resistance → ↑ lipolysis → FFA delivery to liver → ↑ de novo lipogenesis (SREBP-1c activation by insulin) → TG accumulation.
+  Second hits (parallel): Oxidative stress (mitochondrial beta-oxidation overwhelmed → ROS), ER stress (UPR), gut-derived signals (LPS from leaky gut → TLR4 → Kupffer cell activation → TNF-alpha → hepatocyte injury), lipotoxic FFA species (ceramides, lysophospholipids), gut microbiome dysbiosis.
+  Stellate cell activation: Inflammation + TGF-beta1 + PDGF → HSC activation → fibrosis (the key determinant of long-term outcomes; fibrosis stage F3-4 → ↑ liver-related mortality).
+
+NAS (NAFLD Activity Score): Steatosis (0–3) + Lobular inflammation (0–3) + Hepatocyte ballooning (0–2). ≥5 = diagnostic of NASH.
+ELF (Enhanced Liver Fibrosis) score: HA + PIIINP + TIMP-1 → non-invasive fibrosis assessment.
+
+NASH Treatment (long-awaited, now emerging):
+  Resmetirom (MGL-3196): THR-beta agonist → reduces hepatic lipid synthesis + oxidative stress → Phase III MAESTRO trial → significant improvement in steatohepatitis + fibrosis. FDA approved March 2024 — first approved NASH treatment.
+  Semaglutide (GLP-1 RA): Phase IIb → 59% NASH resolution vs 17% placebo. Phase III ESSENCE trial ongoing.
+  Lanifibranor (pan-PPAR agonist): NATIVE trial → significant improvement. Phase III ongoing.
+  FXR agonists (obeticholic acid): Phase III improvement in fibrosis but lipid concerns (↑ LDL-C).
+  Selonsertib (ASK1 inhibitor): Phase III failed.
+  Cenicriviroc (CCR2/5 antagonist): Phase III failed.
+  Combination approaches: Multiple targets simultaneously (lipid + inflammation + fibrosis) likely needed.
+
+6. LIVER REGENERATION
+-----------------------
+The liver's regenerative capacity is extraordinary and unique among solid organs.
+70% hepatectomy → full regeneration in ~7–10 days (rodents); ~3 months (humans).
+"Hepatic mass restoration" — body maintains set hepatic mass/body weight ratio.
+
+Regeneration Mechanisms:
+  Primary: Mature hepatocyte replication. Normally quiescent (G0); enter cell cycle after partial hepatectomy.
+    Triggers: HGF (hepatocyte growth factor) from Kupffer cells + stellate cells; EGF from Brunner's glands/platelets; TNF-alpha + IL-6 (priming → NF-kB + STAT3 activation → cyclin D1 → cell cycle entry).
+    Termination: TGF-beta + Activin + contact inhibition when mass restored.
+  Oval cells (hepatic progenitor cells, HPCs): Activated when hepatocyte proliferation insufficient (severe injury, repeated hepatectomy, toxin exposure). Originate from Canal of Hering (junction of canaliculi + bile ductules). CK19+, EpCAM+, Sox9+. Can differentiate into hepatocytes + cholangiocytes.
+  Transdifferentiation: Hepatocytes → cholangiocytes (or vice versa) under extreme conditions.
+  Wnt/beta-catenin: Zone 3 hepatocytes are Wnt-active (endothelium-derived Wnt2b/9b) → metabolic zonation. Critical for regeneration: beta-catenin KO → impaired hepatocyte proliferation.
+  mTORC1: Required for regeneration — hepatocyte size increase + proliferation.
+
+Liver Transplantation Biology:
+  Orthotopic LT: Most common. MELD score (bilirubin + INR + creatinine) allocates organs.
+  Primary non-function (PNF): Graft fails immediately. Ischaemia-reperfusion injury: Kupffer cells + neutrophils → ROS + cytokines → zone 3 damage.
+  IRI prevention: Machine perfusion (normothermic machine perfusion, NMP — OrganOx Metra): Keeps organ at 37°C with perfusate → extends preservation time + assesses viability → reduces DCD (donation after circulatory death) discard rate.
+  Acute rejection: T cell-mediated. Tacrolimus + MMF + steroids → standard immunosuppression.
+  Tolerance: Liver is uniquely tolerogenic (high expression of IDO, PD-L1, FasL on LSECs). ~20% of liver recipients achieve operational tolerance (immunosuppression withdrawn). Related to regulatory T cells + immature DCs + depletion of recipient lymphocytes.
+
+[CLINICAL LINK] Cirrhosis and portal hypertension:
+  Cirrhosis: End-stage fibrosis → nodule formation → distorted architecture → increased vascular resistance.
+  Portal hypertension (HVPG >5 mmHg; clinically significant >10 mmHg; varices >12 mmHg):
+    Variceal bleeding: Most life-threatening complication. Non-selective beta-blockers (propranolol, carvedilol) + EVL (endoscopic variceal ligation) + terlipressin (vasopressin analogue).
+    Ascites: Sodium retention (RAAS activation) → fluid in peritoneum. Spironolactone + furosemide + salt restriction. Refractory → TIPS (transjugular intrahepatic portosystemic shunt).
+    HE (Hepatic Encephalopathy): Ammonia + gut-derived toxins → brain dysfunction. Lactulose + rifaximin.
+    SBP (Spontaneous Bacterial Peritonitis): Cefotaxime; primary prophylaxis: norfloxacin.
+    HRS (Hepatorenal Syndrome): Vasoconstriction of renal vasculature. Terlipressin + albumin → most effective treatment (FDA approved 2022).
+
+================================================================================

@@ -1,0 +1,190 @@
+================================================================================
+                  INFLAMMATION & WOUND HEALING
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ACUTE INFLAMMATION
+----------------------
+Inflammation is the body's response to tissue damage or infection. It aims to:
+  1. Eliminate the cause of injury (pathogens, toxins, damaged cells).
+  2. Remove damaged tissue.
+  3. Initiate repair.
+
+Cardinal Signs (Celsus + Virchow):
+  Rubor   (redness)    : Vasodilation → increased blood flow.
+  Calor   (heat)       : Increased blood flow + metabolic activity.
+  Tumor   (swelling)   : Increased vascular permeability → oedema.
+  Dolor   (pain)       : Prostaglandins, bradykinin, H+ sensitise nociceptors.
+  Functio laesa (loss of function): Due to above effects.
+
+Vascular Changes:
+  Vasodilation: Histamine + PGE2 + NO + bradykinin → arterioles dilate → ↑ blood flow.
+  Increased permeability: Histamine (H1 receptor on endothelium) → contraction of endothelial cells → gaps → fluid/protein leak → oedema.
+  Stasis: Increased viscosity → slowing of blood flow → margination of WBCs.
+
+Cellular Events — Neutrophil Recruitment:
+  1. Margination: Slowed flow → neutrophils move to vessel periphery.
+  2. Rolling: Selectins (E-selectin + P-selectin on endothelium) → PSGL-1 on neutrophil → loose adhesion.
+     E-selectin: Induced by TNF/IL-1 within hours. P-selectin: Pre-formed in Weibel-Palade bodies → rapid release.
+  3. Firm adhesion: Chemokines (IL-8/CXCL8) activate integrin affinity → LFA-1 (CD11a/CD18) + ICAM-1 → tight binding.
+  4. Transmigration (diapedesis): PECAM-1 (CD31) + JAM → migrate through endothelial junctions.
+  5. Chemotaxis: C5a, fMLP, LTB4, IL-8 → directed migration to site.
+  6. Phagocytosis: Engulf opsonised particles (IgG Fc, C3b) → phagolysosome → ROS + enzymes kill bacteria.
+  7. NET formation: Neutrophil Extracellular Traps → DNA + granule proteins trap + kill bacteria extracellularly.
+
+Key Inflammatory Mediators:
+  Histamine: Mast cells; immediate vasodilation + permeability.
+  Prostaglandins (PGE2, PGI2): COX-1/2 from arachidonic acid → vasodilation + pain + fever.
+  Leukotrienes (LTB4, LTC4, LTD4): 5-LOX pathway → LTB4 = neutrophil chemotaxis; LTC4/D4 = bronchoconstriction (asthma).
+  PAF (Platelet Activating Factor): Bronchoconstriction + platelet aggregation + chemotaxis.
+  Bradykinin: Kinin system; pain + vasodilation + permeability.
+  Complement (C3a, C5a): Anaphylatoxins → mast cell degranulation + chemotaxis.
+  Cytokines: TNF-alpha + IL-1 (systemic: fever, acute phase response, leukocytosis, metabolic changes) + IL-6 (fever + APR) + IL-8 (neutrophil chemotaxis).
+  NO (nitric oxide): iNOS induced by LPS/cytokines → vasodilation + antimicrobial.
+
+Outcomes of Acute Inflammation:
+  Resolution: Complete restoration. Neutrophils replaced by macrophages → anti-inflammatory lipid mediators (lipoxins, resolvins, protectins) → efferocytosis → repair.
+  Chronic inflammation: Persistent stimulus → macrophage/lymphocyte-dominated response.
+  Abscess: Walled-off pus.
+  Fibrosis: Scarring if extensive tissue destruction or inability to resolve.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CHRONIC INFLAMMATION
+------------------------
+Chronic inflammation persists when acute response fails to eliminate cause.
+Macrophage + lymphocyte dominated (vs neutrophils in acute).
+Granulomatous: Activated macrophages (epithelioid) + Langhans giant cells + T cells wall off persistent irritant.
+  Causes: TB (Mycobacterium — caseating granuloma), sarcoidosis (non-caseating), Crohn's disease, foreign body, fungi (histoplasma, cryptococcus), parasites (schistosomiasis eggs).
+
+Systemic Effects (Acute Phase Response):
+  IL-1 + IL-6 + TNF-alpha → hypothalamus (COX-2 + PGE2) → fever.
+  IL-6 → liver → acute phase proteins (CRP, SAA, fibrinogen, complement proteins ↑; albumin, transferrin ↓).
+  CRP: Pentraxin; opsonin (binds phosphocholine on bacteria) + complement activator.
+    Clinical use: Marker of inflammation/infection. Measured as hs-CRP (high-sensitivity CRP) for CV risk.
+  ESR (Erythrocyte Sedimentation Rate): RBCs clump (rouleaux) due to fibrinogen/acute phase proteins → faster sedimentation. Non-specific; elevated in inflammation, infection, malignancy, pregnancy.
+  Leukocytosis: Bone marrow release of WBCs. Neutrophilia = bacterial infection. Lymphocytosis = viral. Eosinophilia = allergy/parasites. Monocytosis = chronic infection/granulomatous disease.
+  Anaemia of chronic disease: Hepcidin ↑ → ferroportin degradation → iron trapped in macrophages → low serum iron despite adequate stores.
+
+3. WOUND HEALING
+-----------------
+Normal wound healing proceeds through 4 overlapping phases:
+
+Phase 1 — Haemostasis (seconds to minutes):
+  Vessel injury → vasoconstriction → platelet adhesion (GP1b-vWF, GPIa-collagen) → platelet activation → shape change + granule release (ADP, TXA2, serotonin) → GPIIb/IIIa activation → fibrinogen bridges → platelet plug.
+  Coagulation cascade → fibrin mesh → stable clot.
+  Platelets release PDGF, TGF-beta, VEGF → recruit fibroblasts and stimulate angiogenesis.
+
+Phase 2 — Inflammation (hours to days):
+  PMNs first (1–2 days): Clean wound; kill bacteria; release proteases.
+  Macrophages (day 2–3 onwards): Phagocytose debris + bacteria; orchestrate repair by releasing growth factors (FGF, EGF, TGF-beta, PDGF, VEGF).
+  "Wound macrophages": Critical. Macrophage depletion → severely impaired healing.
+  M1 macrophages (early): Pro-inflammatory; kill bacteria.
+  M2 macrophages (later): Anti-inflammatory; promote tissue repair (TGF-beta, IL-10, arginase).
+
+Phase 3 — Proliferation (days 4–21):
+  Fibroblast migration + proliferation (PDGF + TGF-beta1 chemoattractant).
+  Granulation tissue formation: New blood vessels (angiogenesis, VEGF) + fibroblasts + loose collagen matrix.
+  Collagen synthesis: Fibroblasts → Type III collagen first → later replaced by type I.
+    Hydroxylation of Pro/Lys: Requires vitamin C → scurvy impairs wound healing.
+    Cross-linking: Lysyl oxidase (Cu-dependent) → collagen strength.
+  Myofibroblasts: Fibroblasts differentiate (TGF-beta1) → acquire alpha-SMA → wound contraction.
+  Re-epithelialisation: Keratinocytes at wound edge → migrate, proliferate, cover wound. EGF + KGF (FGF-7) + fibronectin guide migration.
+
+Phase 4 — Remodelling (weeks to 2 years):
+  Collagen type III → type I (stronger). MMPs (MMP-1, -3, -8, -13) remodel matrix. TIMPs regulate.
+  Vasculature regression (angiogenesis pruned back).
+  Scar maturation: Decreasing cellularity; increasing collagen organisation.
+  Maximum scar strength: ~80% of unwounded skin (never fully recovers).
+
+Abnormal Wound Healing:
+  Hypertrophic scars: Raised but stays within wound boundary. Excess collagen deposition. Usually improves over time.
+  Keloid scars: Grows beyond wound boundary. Excess fibroblast activity. Common in dark-skinned individuals. Ear, sternum, shoulder. Treatment: Intralesional steroids, silicone sheets, radiotherapy, excision (high recurrence).
+  Dehiscence: Wound reopens. Poor nutrition, infection, excessive tension.
+  Chronic wounds (diabetic, pressure, venous): Stuck in inflammatory phase. Poor O2, infection, biofilm, impaired growth factor signalling.
+  Fibrosis: Excessive scarring in organs (liver cirrhosis, pulmonary fibrosis, renal fibrosis). TGF-beta1 drives myofibroblast persistence → collagen accumulation → loss of organ function.
+
+4. RESOLUTION OF INFLAMMATION
+-------------------------------
+Active process — not just passive cessation. "Resolution mediators" promote return to homeostasis.
+
+Pro-resolving Lipid Mediators (specialised pro-resolving mediators, SPMs):
+  Lipoxins (LX): Arachidonic acid-derived. LXA4 inhibits neutrophil recruitment + promotes macrophage efferocytosis.
+  Resolvins: EPA/DHA-derived. E-series (RvE1/2), D-series (RvD1-6). Inhibit NF-kB; promote resolution.
+  Protectins/Neuroprotectins: DHA-derived. PD1 → neuroprotective; inhibit PMN migration.
+  Maresins: DHA-derived by macrophages. Mar1 → enhance efferocytosis; reduce PMN infiltration.
+  Aspirin-triggered SPMs (AT-LXA4, AT-RvD1-3): Aspirin-modified COX-2 produces enantiomeric SPMs with similar/enhanced potency.
+
+Efferocytosis:
+  Macrophage clearance of apoptotic neutrophils → anti-inflammatory signal.
+  "Eat-me signals": PS (phosphatidylserine) exposure on apoptotic cells → recognised by TIM4, MFG-E8, Gas6 (ligands for receptors).
+  Engulfment → macrophage reprogramming → IL-10, TGF-beta secretion → anti-inflammatory switch.
+  Failed efferocytosis → secondary necrosis → "danger" signals → perpetuate inflammation → chronic disease.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. INFLAMMASOME BIOLOGY
+------------------------
+Inflammasomes: Cytosolic multiprotein complexes that sense danger signals → activate caspase-1 → process IL-1beta and IL-18 + pyroptosis.
+
+NLRP3 Inflammasome (most studied):
+  Assembly: NLRP3 + ASC (adaptor) + pro-caspase-1 → oligomeric complex.
+  Signal 1 (priming): TLR/NF-kB → upregulate NLRP3 + pro-IL-1beta.
+  Signal 2 (activation): NLRP3-activating danger signals:
+    Crystalline matter: MSU (monosodium urate — gout), CPPD, cholesterol crystals, silica, asbestos → lysosomal rupture → cathepsins.
+    ATP: P2X7 receptor → K+ efflux → NLRP3 activation.
+    Pore-forming toxins; Ca2+ perturbation; mitochondrial ROS/mtDNA.
+    K+ efflux: Common proximal signal for many NLRP3 activators.
+  Outputs: Caspase-1 → cleaves pro-IL-1beta → IL-1beta; pro-IL-18 → IL-18; Gasdermin D (GSDMD) → N-terminal fragment inserts in membrane → pore → pyroptosis.
+
+Pyroptosis:
+  Inflammatory cell death. Distinct from apoptosis (which is immunologically silent).
+  GSDMD pores: Rapid ionic fluxes → cell swelling → membrane rupture → release of DAMPs + IL-1beta + IL-18.
+  Adaptive role: Eliminate intracellular pathogens; trigger strong immune response.
+  Pathological: Sepsis (cytokine storm), atherosclerosis, gout, NASH, Alzheimer's, COVID-19 (NLRP3 in alveolar macrophages).
+
+NLRP3 Inhibitors (exciting therapeutic area):
+  MCC950 (now CMPD-26, Inzomelid): Specific NLRP3 inhibitor; clinical trials in gout, NASH, CAD, neurodegeneration.
+  Colchicine: Mechanism partly via NLRP3 (pyrin inflammasome especially); established in pericarditis + gout; COLCOT trial: ↓ CV events post-MI.
+  Canakinumab (anti-IL-1beta, Novartis): CANTOS trial → 15% ↓ recurrent CV events (independent of LDL); FDA-approved for gout flares, CAPS (cryopyrin-associated periodic syndromes).
+  Anakinra (IL-1Ra): IL-1 receptor antagonist; gout, adult Still's, recurrent pericarditis.
+
+6. CHRONIC INFLAMMATION & DISEASE
+------------------------------------
+"Inflammageing" (Franceschi & Garagnani):
+  Low-grade chronic inflammation increases with age. Driven by:
+  - Accumulation of senescent cells (SASP: IL-6, IL-8, TNF)
+  - Gut dysbiosis → leaky gut → LPS → low-level endotoxaemia
+  - Adipose tissue inflammation (esp. visceral fat → adipokines)
+  - Mitochondrial dysfunction → mtDNA → cGAS-STING
+  - Microbiome changes; impaired autophagy; DNA damage.
+  Contributes to: CVD, T2DM, neurodegeneration, cancer, frailty, sarcopenia.
+
+Metaflammation:
+  Chronic metabolic inflammation linking obesity to disease.
+  Visceral fat: Crown-like structures of macrophages → TNF-alpha, IL-6 → systemic insulin resistance + hepatic inflammation.
+  JNK/IKK activation in adipocytes + macrophages: Serine phosphorylation of IRS-1 → impairs insulin signalling.
+  NLRP3 + IL-1beta in adipose tissue: Contribute to insulin resistance.
+  Therapeutic targets: IL-1beta (anakinra/canakinumab → ↓ HbA1c in T2DM trials); TNF-alpha; anti-inflammatory lifestyle (exercise, caloric restriction, Mediterranean diet).
+
+[CLINICAL SUMMARY] Key anti-inflammatory drugs and targets:
+  NSAIDs        : COX-1/2 → PG ↓ → analgesia, antipyretic, anti-inflammatory. Ibuprofen, naproxen, diclofenac.
+  Aspirin       : Irreversible COX → anti-platelet (TXA2 ↓) + anti-inflammatory.
+  Selective COX-2: Celecoxib → reduced GI SE but ↑ CV risk.
+  Steroids      : GR → NF-kB + AP-1 inhibition → broad anti-inflammatory. SE: Osteoporosis, diabetes, immunosuppression, Cushing's.
+  Anti-TNF      : Etanercept, infliximab, adalimumab → RA, Crohn's, PsA, AS.
+  Anti-IL-1     : Anakinra, canakinumab, rilonacept → gout, CAPS, pericarditis.
+  Anti-IL-6R    : Tocilizumab, sarilumab → RA, GCA, CRS.
+  Anti-IL-17A   : Secukinumab, ixekizumab → plaque psoriasis, PsA, AS.
+  Anti-IL-23    : Guselkumab, risankizumab, tildrakizumab → plaque psoriasis.
+  JAK inhibitors: Tofacitinib, baricitinib, upadacitinib → RA, PsA, UC, AD.
+
+================================================================================

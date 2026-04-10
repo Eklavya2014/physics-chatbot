@@ -1,0 +1,226 @@
+================================================================================
+           CHEMISTRY: ATOMIC THEORY & THE PERIODIC TABLE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. HISTORY OF ATOMIC THEORY
+-----------------------------
+Democritus (~400 BCE): Proposed matter consists of indivisible particles called "atomos."
+John Dalton (1803): Atomic theory — elements made of atoms; atoms of the same element are identical; compounds are combinations of atoms in fixed ratios.
+J.J. Thomson (1897): Discovered electrons; "plum pudding" model — positive sphere with embedded electrons.
+Ernest Rutherford (1911): Gold foil experiment → nuclear model — tiny dense positive nucleus surrounded by mostly empty space with orbiting electrons.
+Niels Bohr (1913): Electrons orbit nucleus in discrete energy levels (shells); electrons absorb/emit photons when changing orbits.
+Erwin Schrödinger (1926): Quantum mechanical model — electrons exist in probability clouds (orbitals), not fixed orbits.
+
+1.1 SUBATOMIC PARTICLES
+------------------------
+Particle   | Symbol | Charge  | Mass (amu) | Location
+-----------|--------|---------|------------|------------------
+Proton     | p+     | +1      | 1.0073     | Nucleus
+Neutron    | n0     | 0       | 1.0087     | Nucleus
+Electron   | e-     | -1      | 0.000549   | Orbitals around nucleus
+
+Atomic Number (Z): Number of protons in nucleus. Defines the element.
+Mass Number (A): Protons + Neutrons. A = Z + N.
+Atomic Mass: Weighted average of all isotopes by natural abundance.
+Isotopes: Same Z, different N (different mass numbers). Example: Carbon-12, Carbon-13, Carbon-14.
+Ions: Atoms that have gained (anion, negative) or lost (cation, positive) electrons.
+  Na → Na+ (lost 1 electron). Cl → Cl- (gained 1 electron).
+
+1.2 ELECTRONIC CONFIGURATION
+------------------------------
+Electrons occupy shells and subshells:
+  Shells: n = 1, 2, 3, 4 ... (K, L, M, N ...)
+  Subshells: s (2e max), p (6e max), d (10e max), f (14e max)
+  Orbitals: s=1, p=3, d=5, f=7 orbitals each hold 2e (opposite spins)
+
+Aufbau Principle: Fill lowest energy subshells first.
+  Fill order: 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p → 6s → 4f → 5d → 6p → 7s → 5f → 6d → 7p
+
+Pauli Exclusion Principle: No two electrons in an atom can have the same four quantum numbers. Each orbital holds max 2 electrons with opposite spins.
+Hund's Rule: Fill orbitals singly before pairing. Electrons in singly occupied orbitals have same spin.
+
+Example Configurations:
+  H  (Z=1):  1s¹
+  C  (Z=6):  1s² 2s² 2p²
+  Na (Z=11): 1s² 2s² 2p⁶ 3s¹  (or [Ne] 3s¹)
+  Fe (Z=26): [Ar] 3d⁶ 4s²
+  Cu (Z=29): [Ar] 3d¹⁰ 4s¹  (exception — full d is extra stable)
+  Cr (Z=24): [Ar] 3d⁵ 4s¹   (exception — half-filled d is extra stable)
+
+Valence Electrons: Electrons in the outermost shell. Determine chemical behaviour.
+  Group 1: 1 valence e-. Group 2: 2 valence e-. Group 17: 7 valence e-. Group 18: 8 valence e-.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. THE PERIODIC TABLE — ORGANISATION & TRENDS
+-----------------------------------------------
+The modern periodic table (Dmitri Mendeleev, 1869; modern form by Henry Moseley, 1913) organises 118 elements by increasing atomic number into 18 groups and 7 periods.
+
+Structure:
+  Periods (rows): 7 periods. Period number = number of electron shells.
+  Groups (columns): 18 groups. Group number often = valence electrons (for main groups).
+  s-block: Groups 1–2 + He (filling s orbitals).
+  p-block: Groups 13–18 (filling p orbitals).
+  d-block (transition metals): Groups 3–12 (filling d orbitals).
+  f-block (lanthanides + actinides): Elements 57–71 and 89–103 (filling f orbitals).
+
+2.1 PERIODIC TRENDS
+--------------------
+Atomic Radius:
+  Across period (L→R): Decreases. More protons → greater nuclear charge → electrons pulled closer.
+  Down group: Increases. More electron shells → outer electrons further from nucleus.
+  Largest: Cs (francium is unstable). Smallest (non-noble): F.
+
+Ionic Radius:
+  Cations (M+, M2+): Smaller than parent atom (fewer electrons, same protons).
+  Anions (X-, X2-): Larger than parent atom (more electrons, same protons).
+  Fe2+ > Fe3+ (more electrons, same protons).
+
+Ionisation Energy (IE):
+  Energy to remove one electron from gaseous atom. Always endothermic (+ve).
+  First IE: Highest → lowest: He > Ne > F > O (O exception: half-filled 2p in N is extra stable).
+  Trend: Increases across period; decreases down group.
+  Successive IEs: Large jump when removing electron from new inner shell.
+
+Electron Affinity (EA):
+  Energy change when gaseous atom gains one electron.
+  Most negative (highest affinity): Cl (-348 kJ/mol) > F (-328 kJ/mol).
+    F exception: smaller atom → inter-electron repulsion in small 2p orbital.
+
+Electronegativity (Pauling scale):
+  Ability of atom to attract bonding electrons.
+  Trend: Increases across period; decreases down group.
+  Most electronegative: F (4.0) > O (3.5) > N/Cl (3.0) > Br (2.8).
+  Least electronegative: Fr (0.7), Cs (0.79), Rb (0.82).
+  Difference >1.7: Ionic bond. 0.4–1.7: Polar covalent. <0.4: Non-polar covalent.
+
+Metallic Character:
+  Increases down group; decreases across period (left to right).
+  Metals: Good conductors, malleable, ductile, lustrous, lose electrons (reduce).
+  Non-metals: Poor conductors, brittle, dull, gain electrons (oxidise).
+  Metalloids (semi-metals): B, Si, Ge, As, Sb, Te, Po, At — intermediate properties.
+
+2.2 VALENCY & OXIDATION STATES
+--------------------------------
+Valency: Number of bonds an element can form. Related to valence electrons.
+  Common valencies: H=1; O=2; N=3; C=4; S=2,4,6; Cl=1 (common), 3,5,7.
+  Transition metals: Variable valency (e.g., Fe: 2,3; Cu: 1,2; Mn: 2,3,4,6,7).
+
+Oxidation State (Oxidation Number):
+  Hypothetical charge if all bonds were ionic.
+  Rules:
+    1. Element in free state = 0 (O2, Fe, Na).
+    2. Monatomic ion = charge (Na+ = +1, Cl- = -1).
+    3. O = -2 (except peroxides O22- = -1; OF2 where O = +2).
+    4. H = +1 (except metal hydrides where H = -1).
+    5. F = always -1.
+    6. Sum of oxidation states in neutral compound = 0.
+    7. Sum of oxidation states in polyatomic ion = ion charge.
+
+Common Oxidation States by Group:
+  Group 1 : +1 only (Li, Na, K, Rb, Cs, Fr)
+  Group 2 : +2 only (Be, Mg, Ca, Sr, Ba, Ra)
+  Group 13: +3 (Al, Ga, In); +1,+3 (Tl, B)
+  Group 14: +4,-4; also +2 for Pb, Sn, Ge
+  Group 15: -3, +3, +5 (N, P, As, Sb, Bi)
+  Group 16: -2, +4, +6 (S, Se, Te)
+  Group 17: -1, +1, +3, +5, +7 (Cl, Br, I)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. QUANTUM NUMBERS & ORBITAL THEORY
+--------------------------------------
+Four Quantum Numbers describe each electron completely:
+  n (Principal): Shell number; n = 1,2,3... Energy and size of orbital.
+  l (Angular Momentum): Subshell shape; l = 0 to n-1. (0=s, 1=p, 2=d, 3=f).
+  ml (Magnetic): Orbital orientation; ml = -l to +l. Number of orbitals in subshell.
+  ms (Spin): Electron spin; +½ or -½.
+
+Orbital Shapes:
+  s orbitals: Spherical. One orbital per subshell.
+  p orbitals: Dumbbell-shaped; three orbitals (px, py, pz); perpendicular to each other.
+  d orbitals: Complex shapes; five orbitals (dxy, dxz, dyz, dx²-y², dz²).
+  f orbitals: Very complex; seven orbitals.
+
+Nodal Planes/Surfaces:
+  s: 0 angular nodes, n-1 radial nodes.
+  p: 1 angular node (nodal plane through nucleus).
+  d: 2 angular nodes.
+
+Effective Nuclear Charge (Zeff):
+  Zeff = Z - S (shielding constant). Inner electrons shield outer electrons from full nuclear charge.
+  Slater's Rules: Define shielding contributions from different shell electrons.
+  Zeff increases across period → explains increase in IE, EA, electronegativity.
+
+Relativistic Effects:
+  For heavy elements (Z > 60): Electrons in 1s orbital approach speed of light → relativistic mass increase → orbital contraction → s and p orbitals contract + stabilise.
+  Consequences: Gold (Au) appears yellow (relativistic effect on d→s transitions absorbs blue light). Mercury (Hg) is liquid at room temp (contracted 6s² → weak bonding). Platinum group catalytic activity. Lead's +2 preference (inert pair effect — 6s² stabilised by relativistic contraction).
+
+4. PERIODIC TABLE — COMPLETE ELEMENT DATA OVERVIEW
+----------------------------------------------------
+The following sections of this chemistry series cover all 118 elements organised by group:
+
+FILE: chemistry_group1_alkali_metals.txt           — H, Li, Na, K, Rb, Cs, Fr
+FILE: chemistry_group2_alkaline_earth_metals.txt   — Be, Mg, Ca, Sr, Ba, Ra
+FILE: chemistry_transition_metals_period4.txt       — Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn
+FILE: chemistry_transition_metals_period5_6.txt     — Y-Cd (4d) and Hf-Hg (5d)
+FILE: chemistry_group13_boron_group.txt             — B, Al, Ga, In, Tl, Nh
+FILE: chemistry_group14_carbon_group.txt            — C, Si, Ge, Sn, Pb, Fl
+FILE: chemistry_group15_nitrogen_group.txt          — N, P, As, Sb, Bi, Mc
+FILE: chemistry_group16_chalcogens.txt              — O, S, Se, Te, Po, Lv
+FILE: chemistry_group17_halogens.txt                — F, Cl, Br, I, At, Ts
+FILE: chemistry_group18_noble_gases.txt             — He, Ne, Ar, Kr, Xe, Rn, Og
+FILE: chemistry_lanthanides.txt                     — La-Lu (Z=57-71)
+FILE: chemistry_actinides_and_superheavy.txt        — Ac-Lr (Z=89-103) + Rf-Og (Z=104-118)
+
+Periodic Table — Quick Reference:
+Period | Elements                                          | Key Feature
+-------|---------------------------------------------------|------------------
+1      | H, He                                             | 1s block; simplest
+2      | Li-Ne                                             | 2s + 2p; first row with p-block
+3      | Na-Ar                                             | 3s + 3p; first row with metalloids
+4      | K-Kr                                              | First d-block (transition metals)
+5      | Rb-Xe                                             | 4d transition metals
+6      | Cs-Rn                                             | 5d TMs + 4f (lanthanides)
+7      | Fr-Og                                             | 6d TMs + 5f (actinides); all radioactive beyond Bi
+
+5. NUCLEAR CHEMISTRY
+---------------------
+Radioactive Decay Types:
+  Alpha (α): Emission of ⁴₂He nucleus. Penetration: Low (stopped by paper). Range in air: ~5 cm.
+    Decay: ᴬZ X → ᴬ⁻⁴(Z-2) Y + ⁴₂He. A decreases by 4; Z decreases by 2.
+  Beta minus (β-): Neutron → proton + e- + antineutrino. Z increases by 1; A unchanged.
+    Penetration: Medium (stopped by 5 mm Al).
+  Beta plus (β+): Proton → neutron + positron + neutrino. Z decreases by 1; A unchanged.
+  Gamma (γ): High-energy electromagnetic radiation emitted with α or β decay. No mass/charge change. Most penetrating (requires thick lead/concrete).
+  Electron Capture: Inner electron captured by nucleus; proton → neutron; Z decreases by 1.
+  Neutron Emission: Rare; unstable nucleus emits neutron.
+
+Half-Life (t½): Time for half of radioactive nuclei to decay.
+  N(t) = N₀ × (½)^(t/t½) = N₀ × e^(-λt)   where λ = decay constant = ln2/t½.
+
+Nuclear Fission: Heavy nucleus splits into lighter nuclei + energy + neutrons.
+  ²³⁵U + n → ²³⁶U* → ⁹²Kr + ¹⁴¹Ba + 3n + energy (~200 MeV).
+  Chain reaction: Released neutrons trigger further fissions. Critical mass required.
+
+Nuclear Fusion: Light nuclei combine → heavier nucleus + energy.
+  ²H + ³H → ⁴He + n + 17.6 MeV. Powers the sun; hydrogen bombs; target of fusion reactors (ITER).
+
+Binding Energy: Energy needed to completely separate all nucleons in nucleus.
+  E = Δm × c² (Einstein). Peak binding energy per nucleon: ⁵⁶Fe (most stable nucleus).
+  Elements lighter than Fe: Fusion releases energy. Elements heavier than Fe: Fission releases energy.
+
+Mass Defect: Actual nuclear mass < sum of individual proton + neutron masses. Difference converted to binding energy (E = mc²).
+
+[APPLICATIONS] Radiocarbon dating (¹⁴C, t½ = 5,730 years); ²³⁸U/²⁰⁶Pb dating (t½ = 4.47 billion years); Medical imaging (PET uses β+ emitters: ¹⁸F-FDG); Radiotherapy (γ + β-); Nuclear power (²³⁵U fission).
+
+================================================================================

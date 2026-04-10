@@ -1,0 +1,175 @@
+PHYSICS: THERMODYNAMICS & WAVES — COMPLETE GUIDE
+==================================================
+
+THERMODYNAMICS
+--------------
+TEMPERATURE SCALES:
+  Celsius to Kelvin: T(K) = T(°C) + 273.15
+  Celsius to Fahrenheit: T(F) = (9/5)T(C) + 32
+  Absolute zero: 0 K = -273.15°C (molecules have minimum energy)
+
+HEAT AND THERMAL PROPERTIES:
+  Heat (Q) = mcΔT  (m=mass, c=specific heat capacity, ΔT=temp change)
+  Latent heat: Q = mL  (heat for phase change, no temp change)
+    L_fusion (ice→water) = 3.36×10⁵ J/kg
+    L_vaporisation (water→steam) = 2.26×10⁶ J/kg
+  Calorimetry: Heat lost = Heat gained  (m₁c₁ΔT₁ = m₂c₂ΔT₂)
+  Thermal expansion:
+    Linear: ΔL = LαΔT  (α = coefficient of linear expansion)
+    Area: ΔA = 2αAΔT
+    Volume: ΔV = βVΔT  (β = 3α for isotropic solid)
+    Water anomaly: water has maximum density at 4°C
+
+HEAT TRANSFER:
+  Conduction: Q/t = kA(T₁-T₂)/L  (k = thermal conductivity, W/mK)
+  Convection: Natural (density difference) or Forced
+  Radiation: Stefan-Boltzmann: P = σAεT⁴  (σ = 5.67×10⁻⁸ W/m²K⁴)
+  Newton's cooling: dT/dt = -k(T-T_ambient)
+  Wien's displacement law: λ_max·T = 2.898×10⁻³ m·K
+
+IDEAL GAS LAWS:
+  Boyle's: PV = constant (T constant): P₁V₁ = P₂V₂
+  Charles': V/T = constant (P constant): V₁/T₁ = V₂/T₂
+  Gay-Lussac's: P/T = constant (V constant)
+  Ideal gas equation: PV = nRT  (n=moles, R=8.314 J/mol·K)
+    Also: PV = NkT  (N=molecules, k=1.38×10⁻²³ J/K Boltzmann constant)
+  Avogadro's number: Nₐ = 6.022×10²³ mol⁻¹
+  van der Waals equation: (P + an²/V²)(V-nb) = nRT
+    a corrects for intermolecular attraction, b for molecular volume
+
+KINETIC THEORY OF GASES:
+  KE per molecule: ½m<v²> = 3/2 kT
+  RMS speed: v_rms = √(3RT/M) = √(3kT/m)
+  Average speed: v_avg = √(8RT/πM)
+  Most probable speed: v_mp = √(2RT/M)  (v_mp < v_avg < v_rms)
+  Pressure: P = ⅓ρ<v²> = ⅓(Nm/V)<v²>
+  Degrees of freedom: f = 3 (monatomic), 5 (diatomic), 6 (triatomic)
+  Equipartition: Average KE = f/2 kT per molecule
+  Cv = f/2 R,  Cp = (f/2 + 1)R,  γ = Cp/Cv
+    Monatomic: γ = 5/3,  Diatomic: γ = 7/5
+
+LAWS OF THERMODYNAMICS:
+  Zeroth Law: If A is in equilibrium with C and B is in equilibrium with C, then A and B are in equilibrium.
+  
+  First Law: ΔU = Q - W
+    Q = heat added to system, W = work done BY system
+    W = PΔV (for constant pressure)
+    For ideal gas: ΔU = nCvΔT
+  
+  Second Law: Heat flows naturally from hot to cold.
+    Entropy always increases in spontaneous process (ΔS ≥ 0)
+    Impossible to have 100% efficient heat engine.
+  
+  Third Law: Entropy of perfect crystal → 0 as T → 0 K.
+
+THERMODYNAMIC PROCESSES:
+  Isothermal (T=const): PV=const, ΔU=0, Q=W, W=nRT·ln(V₂/V₁)
+  Adiabatic (Q=0): PV^γ=const, TV^(γ-1)=const, W=-ΔU=nCv(T₁-T₂)
+  Isobaric (P=const): V∝T, W=PΔV=nRΔT, Q=nCpΔT
+  Isochoric (V=const): W=0, Q=ΔU=nCvΔT
+
+HEAT ENGINES AND REFRIGERATORS:
+  Efficiency: η = W/Q_H = 1 - Q_C/Q_H = 1 - T_C/T_H (Carnot)
+  Carnot efficiency: η_Carnot = 1 - T_C/T_H (maximum possible)
+  COP (refrigerator): COP = Q_C/W = T_C/(T_H-T_C)
+  COP (heat pump): COP_HP = Q_H/W = T_H/(T_H-T_C)
+
+WAVES
+-----
+BASIC WAVE PROPERTIES:
+  Wave equation: y = A·sin(kx - ωt + φ)
+    A = amplitude, k = 2π/λ (wave number), ω = 2πf
+  Wave speed: v = fλ = λ/T = ω/k
+  Intensity: I ∝ A² (proportional to square of amplitude)
+  Intensity decreases as 1/r² from point source
+
+TYPES OF WAVES:
+  Transverse: displacement ⊥ direction of propagation (light, string)
+  Longitudinal: displacement ∥ direction of propagation (sound, spring)
+  Mechanical waves need medium. Electromagnetic waves do not.
+
+SOUND WAVES:
+  Speed in air: v = √(γP/ρ) ≈ 332 + 0.6T m/s (T in °C)
+  Speed in solids > liquids > gases (generally)
+  Intensity level: β = 10·log(I/I₀) dB  (I₀ = 10⁻¹² W/m²)
+  Audible range: 20 Hz to 20,000 Hz
+  Ultrasound: >20 kHz, Infrasound: <20 Hz
+
+DOPPLER EFFECT:
+  f_observed = f_source × (v ± v_observer)/(v ∓ v_source)
+  Upper signs: approaching, Lower signs: receding
+  Special cases:
+    Observer moving toward stationary source: f' = f(v+v₀)/v
+    Source moving toward stationary observer: f' = f·v/(v-vs)
+  Red shift (astronomy): source receding → f decreases
+  Blue shift: source approaching → f increases
+
+SUPERPOSITION AND INTERFERENCE:
+  Constructive: path difference = nλ, phase diff = 2nπ, A_total = A₁+A₂
+  Destructive: path difference = (n+½)λ, phase diff = (2n+1)π, A_total = |A₁-A₂|
+  
+BEATS:
+  When two close frequencies f₁ and f₂ superpose:
+  Beat frequency: f_beat = |f₁ - f₂|
+  Heard as rhythmic variation in loudness at beat frequency
+
+STANDING WAVES:
+  y = 2A·cos(kx)·sin(ωt)  — nodes and antinodes
+  Nodes: kx = nπ → x = nλ/2
+  Antinodes: kx = (2n+1)π/2 → x = (2n+1)λ/4
+  
+  String fixed both ends:
+    Allowed frequencies: fₙ = n·v/(2L)  (n=1,2,3...)
+    Fundamental (n=1): f₁ = v/(2L) = (1/2L)√(T/μ)  (T=tension, μ=mass/length)
+  
+  Open pipe (both ends open):
+    fₙ = nv/(2L)  (all harmonics)
+  
+  Closed pipe (one end closed):
+    fₙ = (2n-1)v/(4L)  (odd harmonics only)
+    Fundamental: f₁ = v/(4L)
+
+LIGHT: REFLECTION AND REFRACTION
+----------------------------------
+Speed of light: c = 3×10⁸ m/s (vacuum)
+Refractive index: n = c/v = sin i/sin r (Snell's law: n₁sin θ₁ = n₂sin θ₂)
+Relative refractive index: ₁n₂ = n₂/n₁ = v₁/v₂ = λ₁/λ₂
+Critical angle: sin C = 1/n  (where n = n_denser/n_rarer)
+Total Internal Reflection: occurs when angle > critical angle, going from denser to rarer
+
+Mirror formula: 1/f = 1/v + 1/u  (f = R/2)
+Magnification: m = -v/u = h'/h
+Sign convention: distances measured from pole, +ve in direction of incident light
+
+Lens formula: 1/f = 1/v - 1/u
+Lens maker's formula: 1/f = (n-1)(1/R₁ - 1/R₂)
+Power of lens: P = 1/f  (unit: Dioptre D)
+  Convex lens: P > 0 (converging)  Concave lens: P < 0 (diverging)
+Combination of lenses: 1/f = 1/f₁ + 1/f₂, P = P₁ + P₂
+
+Human eye:
+  Near point: 25 cm (least distance of distinct vision)
+  Far point: infinity (normal eye)
+  Myopia (nearsighted): concave lens correction
+  Hypermetropia (farsighted): convex lens correction
+  Presbyopia: loss of accommodating power (bifocals)
+
+Magnifying glass: m = 1 + D/f  (D=25cm, object at focus: m=D/f)
+Microscope: m = m_obj × m_eye = (L/f_obj)(1 + D/f_eye)  [L=tube length]
+Telescope (astronomical): m = f_objective/f_eyepiece
+
+WAVE OPTICS:
+  Young's double slit:
+    Fringe width: β = λD/d  (D=screen distance, d=slit separation)
+    Bright fringe: d·sin θ = nλ
+    Dark fringe: d·sin θ = (n-½)λ
+  Single slit diffraction:
+    First minimum: a·sin θ = λ  (a=slit width)
+    Central maximum width: 2λ/a
+  Malus's law: I = I₀·cos²θ  (polarised light through analyser)
+  Brewster's law: tan θ_B = n  (θ_B = Brewster's angle for polarisation)
+
+ELECTROMAGNETIC SPECTRUM (increasing wavelength):
+  Gamma rays: 10⁻¹² m | X-rays: 10⁻¹⁰ m | UV: 10⁻⁸ m
+  Visible: 400-700 nm (violet to red)
+  Infrared: 10⁻⁵ m | Microwaves: 10⁻² m | Radio: >0.1 m

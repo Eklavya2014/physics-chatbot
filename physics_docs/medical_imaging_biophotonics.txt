@@ -1,0 +1,118 @@
+MEDICAL IMAGING AND BIOPHOTONICS
+================================
+
+OVERVIEW:
+Medical imaging uses physical principles to visualize structure and function inside the body.
+Biophotonics focuses on the interaction of light with biological systems.
+
+MAJOR IMAGING MODALITIES:
+- X-ray imaging
+- Computed tomography (CT)
+- Magnetic resonance imaging (MRI)
+- Ultrasound
+- Positron emission tomography (PET)
+- Optical imaging
+
+X-RAYS:
+X-rays are high-energy electromagnetic waves.
+They are absorbed differently by bone, soft tissue, and air.
+Dense materials appear brighter on radiographs.
+
+ATTENUATION:
+As X-rays pass through tissue, intensity decreases.
+A simple law is:
+I = I0 e^(-mu x)
+where mu is attenuation coefficient and x is thickness.
+
+CT SCAN:
+CT uses many X-ray projections from multiple angles.
+A computer reconstructs cross-sectional images.
+
+MRI:
+MRI is based on nuclear magnetic resonance of hydrogen nuclei.
+Important ideas:
+- strong magnetic field aligns spins
+- radiofrequency pulses disturb alignment
+- relaxation signals are measured
+
+MRI CONTRAST:
+Important time constants:
+- T1 relaxation
+- T2 relaxation
+
+ULTRASOUND:
+Uses high-frequency sound waves.
+Useful because it is:
+- non-ionizing
+- real time
+- relatively inexpensive
+
+ULTRASOUND IMAGING DEPENDS ON:
+- acoustic impedance differences
+- reflection
+- scattering
+- time of flight
+
+DOPPLER ULTRASOUND:
+Measures blood flow using Doppler shift.
+
+PET IMAGING:
+Uses positron-emitting tracers.
+Shows metabolic or biochemical activity.
+Often combined with CT or MRI.
+
+BIOPHOTONICS:
+Light can be used for:
+- microscopy
+- fluorescence imaging
+- spectroscopy
+- laser surgery
+- optical biosensing
+
+FLUORESCENCE:
+A molecule absorbs light at one wavelength and emits at a longer wavelength.
+Used in tagging cells and proteins.
+
+LASERS IN MEDICINE:
+Applications:
+- eye surgery
+- dermatology
+- cutting and coagulation
+- photodynamic therapy
+
+RESOLUTION:
+Imaging systems aim for:
+- high spatial resolution
+- good contrast
+- low noise
+- safe dose
+
+IONIZING VS NON-IONIZING:
+Ionizing methods:
+- X-ray
+- CT
+- PET
+
+Non-ionizing methods:
+- MRI
+- Ultrasound
+- many optical methods
+
+IMAGE QUALITY FACTORS:
+- signal-to-noise ratio
+- contrast-to-noise ratio
+- resolution
+- artifacts
+
+APPLICATIONS:
+- diagnosis
+- surgical guidance
+- tumour detection
+- monitoring treatment
+- biological research
+
+EXAM FOCUS:
+- X-ray attenuation
+- CT vs MRI vs ultrasound
+- fluorescence basics
+- ionizing vs non-ionizing methods

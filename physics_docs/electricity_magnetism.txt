@@ -1,0 +1,153 @@
+PHYSICS: ELECTRICITY & MAGNETISM — COMPLETE GUIDE
+===================================================
+
+ELECTROSTATICS
+--------------
+Coulomb's law: F = kq₁q₂/r²  (k = 1/4πε₀ = 9×10⁹ N·m²/C²)
+ε₀ = 8.85×10⁻¹² C²/N·m²  (permittivity of free space)
+Electric field: E = F/q₀ = kQ/r²  (N/C or V/m)
+  Direction: away from +charge, toward -charge
+Superposition: E_total = ΣE (vector sum)
+Electric field lines: Start on +, end on -, denser = stronger field
+
+Electric dipole: p = q·d  (from -ve to +ve, C·m)
+  Field at axial point: E = 2kp/r³
+  Field at equatorial point: E = kp/r³
+
+Gauss's law: ∮E·dA = Q_enclosed/ε₀
+  Useful for spherical, cylindrical, planar symmetry
+  Spherical shell: E = 0 inside, E = kQ/r² outside
+  Infinite plane: E = σ/2ε₀  (σ = surface charge density)
+  Capacitor plates: E = σ/ε₀
+
+Electric potential: V = kQ/r  (scalar, Joules/Coulomb = Volt)
+  V = -∫E·dr  (work done per unit charge against field)
+  E = -dV/dr = -∇V
+  Potential at infinity = 0
+  Inside conductor: E=0, V=constant
+  Potential of dipole: V = kp·cos θ/r²
+
+Potential energy: U = kq₁q₂/r = q·V
+Work done: W = q(V_A - V_B) = q·V_AB
+
+CAPACITANCE
+-----------
+Capacitance: C = Q/V  (Farads, F)
+Parallel plate: C = ε₀A/d  (with dielectric: C = κε₀A/d)
+Spherical: C = 4πε₀r
+Energy stored: U = Q²/2C = CV²/2 = QV/2
+Series: 1/C = 1/C₁ + 1/C₂ + 1/C₃
+Parallel: C = C₁ + C₂ + C₃
+Dielectric: κ (dielectric constant) > 1, reduces E field, increases C
+
+CURRENT ELECTRICITY
+--------------------
+Current: I = Q/t = nqv_d·A  (n=charge density, v_d=drift velocity)
+Ohm's law: V = IR  (R in Ohms Ω)
+Resistance: R = ρL/A  (ρ=resistivity)
+  Temperature: ρ = ρ₀(1 + αΔT)
+  Resistivity: conductor < semiconductor < insulator
+  Copper: ρ ≈ 1.7×10⁻⁸ Ω·m
+
+Series: R = R₁ + R₂ + R₃ (same current, voltages add)
+Parallel: 1/R = 1/R₁ + 1/R₂ + 1/R₃ (same voltage, currents add)
+
+Kirchhoff's laws:
+  KCL (Junction rule): ΣI_in = ΣI_out (charge conservation)
+  KVL (Loop rule): ΣV = 0 around closed loop (energy conservation)
+
+EMF and internal resistance: V = ε - Ir  (terminal voltage)
+  V = ε when I=0 (open circuit)
+  Short circuit: I_max = ε/r
+
+Power: P = IV = I²R = V²/R  (Watts)
+Electrical energy: E = Pt = VIt  (Joules; kWh = 3.6×10⁶ J)
+
+WHEATSTONE BRIDGE (balanced): P/Q = R/S  → R_unknown = S·P/Q
+
+ELECTROCHEMISTRY:
+  Electrolysis: Faraday's 1st law: m = ZIt = (M/nF)·It
+  Faraday constant: F = 96500 C/mol
+  Faraday's 2nd law: m₁/m₂ = E₁/E₂  (E=equivalent weight)
+
+MAGNETISM
+---------
+Magnetic force on charge: F = qv × B  (Lorentz force)
+  Magnitude: F = qvB·sin θ
+  Direction: Right-hand rule (v × B)
+Magnetic force on current: F = IL × B = BIL·sin θ
+Magnetic field of straight wire: B = μ₀I/(2πr)
+Magnetic field at centre of loop: B = μ₀I/(2R)
+Magnetic field in solenoid: B = μ₀nI  (n = turns/length)
+Magnetic field of toroid: B = μ₀nI
+
+μ₀ = 4π×10⁻⁷ T·m/A  (permeability of free space)
+
+Magnetic dipole moment: m = IA  (A = area of loop)
+Torque: τ = m × B = mB·sin θ
+Potential energy: U = -m·B = -mB·cos θ
+
+Biot-Savart law: dB = (μ₀/4π)·I(dl × r̂)/r²
+Ampere's law: ∮B·dl = μ₀I_enclosed
+
+MOTION IN MAGNETIC FIELD:
+  Circular motion: r = mv/(qB)  →  v = qBr/m
+  Cyclotron frequency: ω = qB/m  (independent of speed!)
+  Cyclotron: accelerates charged particles in spiral path
+
+ELECTROMAGNETIC INDUCTION
+--------------------------
+Faraday's law: ε = -dΦ/dt  (ε = EMF, Φ = magnetic flux = B·A·cos θ)
+Lenz's law: Induced current opposes the change in flux
+Motional EMF: ε = BLv  (conductor moving in field)
+
+Self-inductance: L = NΦ/I  (Henry, H)
+  Solenoid: L = μ₀N²A/l = μ₀n²Al
+  Energy stored: U = ½LI²
+  Back EMF: ε = -L·dI/dt
+
+Mutual inductance: M = N₂Φ₁₂/I₁
+  Transformer: V₂/V₁ = N₂/N₁ = I₁/I₂ (ideal)
+    Step-up: N₂>N₁, V₂>V₁; Step-down: N₂<N₁, V₂<V₁
+
+ALTERNATING CURRENT (AC)
+-------------------------
+v = V₀·sin(ωt),  i = I₀·sin(ωt + φ)
+RMS values: V_rms = V₀/√2,  I_rms = I₀/√2
+  Mains supply: 220V, 50Hz (India/UK); 120V, 60Hz (USA)
+
+Reactances:
+  Inductive: X_L = ωL = 2πfL  (increases with frequency)
+  Capacitive: X_C = 1/(ωC) = 1/(2πfC)  (decreases with frequency)
+Impedance: Z = √(R² + (X_L - X_C)²)
+Phase angle: tan φ = (X_L - X_C)/R
+Power factor: cos φ = R/Z
+Average power: P = I_rms·V_rms·cos φ = I_rms²·R
+
+Series LCR resonance:
+  X_L = X_C  →  ω₀ = 1/√(LC)  →  f₀ = 1/(2π√(LC))
+  At resonance: Z = R (minimum), I = maximum
+  Quality factor: Q = ω₀L/R = 1/(ω₀CR) = √(L/C)/R
+
+Parallel LCR: Resonance at same ω₀, high impedance at resonance
+
+ELECTROMAGNETIC WAVES
+---------------------
+Maxwell's equations predict electromagnetic waves
+  Wave speed: c = 1/√(μ₀ε₀) = 3×10⁸ m/s
+  E and B are perpendicular, in phase, perpendicular to propagation
+  E₀/B₀ = c
+Intensity: I = c·ε₀E₀²/2 = E₀B₀/(2μ₀)
+Radiation pressure: P = I/c (absorbed), P = 2I/c (reflected)
+Poynting vector: S = (1/μ₀)E × B  (energy flow per unit area)
+
+MAGNETIC PROPERTIES OF MATTER
+--------------------------------
+Diamagnetic: χ < 0, weakly repelled (bismuth, water, copper)
+Paramagnetic: χ > 0 (small), weakly attracted (aluminium, oxygen)
+Ferromagnetic: χ >> 0, strongly attracted (iron, nickel, cobalt)
+  Domains, hysteresis loop, Curie temperature
+Permeability: μ = μ₀μᵣ  (μᵣ = relative permeability)
+Hysteresis: Retentivity = B when H=0; Coercivity = H to demagnetise
+Hard magnetic: high coercivity (permanent magnets)
+Soft magnetic: low coercivity (transformer cores)

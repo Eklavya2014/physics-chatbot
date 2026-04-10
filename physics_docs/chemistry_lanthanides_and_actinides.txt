@@ -1,0 +1,243 @@
+================================================================================
+     CHEMISTRY: LANTHANIDES, ACTINIDES & SUPERHEAVY ELEMENTS (Z=57–118)
+              A Comprehensive Reference: Properties · Valency · Applications
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THE LANTHANIDES (4f block, Z = 57–71)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LANTHANIDE OVERVIEW
+--------------------
+Also called "Rare Earth Elements" (REEs) — though most are not actually rare in Earth's crust.
+The 4f orbitals fill across this series (La has 4f⁰ to Lu with 4f¹⁴).
+Lanthanide Contraction: Atomic and ionic radii decrease steadily across the series despite increasing Z.
+  Reason: 4f electrons shield nuclear charge poorly (diffuse orbitals; poor shielding of one another) → increasing Zeff → contraction of outer orbitals.
+  Consequence: 5d/6s orbitals contract → 3rd row TMs (Hf to Au) have very similar radii to 2nd row (Zr to Ag) → affects their chemistry (e.g. Zr and Hf nearly identical in chemistry, very hard to separate).
+
+General Properties:
+  Electron config: [Xe] 4fⁿ 5d⁰⁻¹ 6s². 4f electrons are CORE-LIKE (shielded by 5s² 5p⁶).
+  Dominant OS: +3 (Ln³⁺) for ALL lanthanides. Some show +2 (Eu²⁺, Sm²⁺, Yb²⁺) or +4 (Ce⁴⁺, Tb⁴⁺, Pr⁴⁺).
+  Valency: 3 (dominant).
+  Similar chemistry: All form Ln³⁺ ions; compounds very similar → difficult to separate (historically by fractional crystallisation; now by HPLC or solvent extraction).
+  Magnetic properties: Unpaired 4f electrons → paramagnetic (some very strongly so). Dy, Tb → single-molecule magnets.
+  Luminescence: Sharp f-f electronic transitions → characteristic emission colours. Used in phosphors (TV screens, LEDs, lighting).
+  Reactivity: All are reactive metals; react with water (slowly), air (burn when ignited), acids vigorously.
+
+ELEMENT 57: LANTHANUM (La) — [Xe] 5d¹ 6s²
+  Valency: 3. OS: +3. 4f⁰ — not technically a lanthanide (no 4f electrons) but group leader.
+  Most reactive lanthanide; soft, silvery-white metal.
+  La₂O₃: High refractive index glass additive; camera lenses.
+  LaNi₅: Hydrogen storage (metal hydride batteries — NiMH).
+  La in FCC (fluid catalytic cracking) catalysts: Stabilises zeolites at high temperature.
+  Lanthanum hexaboride (LaB₆): Electron emitter for electron guns (SEM, TEM).
+
+ELEMENT 58: CERIUM (Ce) — [Xe] 4f¹ 5d¹ 6s²
+  Valency: 3, 4. OS: +3 (Ce³⁺), +4 (Ce⁴⁺ — strong oxidant; EO° = +1.72V vs SHE).
+  Most abundant lanthanide. Only lanthanide with a stable +4 state in water.
+  CeO₂ (ceria): Catalytic converter washcoat (oxygen storage; Ce³⁺ ↔ Ce⁴⁺ redox); polishing powder (glass, semiconductors); fuel cell electrolyte additive; UV absorber (sunscreen).
+  Ce(SO₄)₂: Strong oxidising agent (analytical chemistry).
+  Ce mischmetal alloy: ~50% Ce + La + Nd → used in lighter flints; iron and steel additive.
+  Ce in phosphors: Yellow phosphor Ce:YAG in white LEDs (blue LED + yellow Ce phosphor → white light).
+
+ELEMENT 59: PRASEODYMIUM (Pr) — [Xe] 4f³ 6s²
+  Valency: 3, 4. OS: +3 (most stable), +4 (PrO₂ — less stable than CeO₂).
+  Used with Nd in magnets (Pr-Nd-Fe-B); green/yellow glass and enamels (Pr oxide); Pr:YAG laser.
+  Didymium glass (Pr + Nd): Glassblowers' protective goggles (absorbs yellow sodium emission).
+
+ELEMENT 60: NEODYMIUM (Nd) — [Xe] 4f⁴ 6s²
+  Valency: 3. OS: +3 only.
+  Nd₂Fe₁₄B (NdFeB magnets): Strongest permanent magnets known.
+    Applications: Electric motors (EVs, wind turbines, washing machines), hard drives, headphones, MRI machines, speakers, magnetic resonance imaging.
+    Coercivity: Extremely high → resists demagnetisation. Energy product up to 60 MGOe.
+  Nd:YAG laser: 1064 nm pulsed laser; cutting metals; surgical (ophthalmology, dentistry); rangefinding; welding.
+  Nd in glass: Makes glass appear different colours under fluorescent vs daylight (alexandrite effect).
+  Critical raw material: EV transition and wind power → massive demand for Nd.
+
+ELEMENT 61: PROMETHIUM (Pm) — [Xe] 4f⁵ 6s²
+  Valency: 3. All isotopes radioactive (only radioactive lanthanide with no stable isotopes).
+  Most stable: ¹⁴⁵Pm (t½ = 17.7 years). Occurs only in trace amounts in uranium ores (from spontaneous fission).
+  Atomic batteries (β-emitter): ¹⁴⁷Pm powered pacemakers (historically). Luminous paint (formerly). Thickness gauges. Rarely used due to radioactivity and short half-life.
+
+ELEMENT 62: SAMARIUM (Sm) — [Xe] 4f⁶ 6s²
+  Valency: 2, 3. OS: +2 (Sm²⁺ — reducing agent, less common), +3 (dominant).
+  SmCo₅ / Sm₂Co₁₇ magnets: Second strongest permanent magnets (after NdFeB); better high-temperature performance (to 350°C vs ~200°C for NdFeB) → aerospace, military.
+  ¹⁵³Sm-EDTMP: Radioactive; bone metastasis pain palliation.
+  SmI₂ (samarium diiodide): Powerful single-electron reducing agent; key reagent in organic synthesis (ketyl radicals; Barbier reactions).
+
+ELEMENT 63: EUROPIUM (Eu) — [Xe] 4f⁷ 6s²
+  Valency: 2, 3. OS: +2 (Eu²⁺ — half-filled 4f, extra stable; ionic radius ≈ Sr²⁺), +3 (most stable in oxidising conditions).
+  Eu³⁺ phosphors: Red phosphor in TV screens (Y₂O₃:Eu³⁺); fluorescent lamps.
+  Eu²⁺ phosphors: Blue-green emission (SrAl₂O₄:Eu²⁺ → glow-in-the-dark materials — strontium aluminate).
+  Banknote security: Eu luminescence in banknotes (UV fluorescence verification of authenticity — Euro notes).
+  MRI contrast agent research: Eu complexes (paramagnetic).
+
+ELEMENT 64: GADOLINIUM (Gd) — [Xe] 4f⁷ 5d¹ 6s²
+  Valency: 3. OS: +3 only (half-filled 4f = extra stability → no +2/+4).
+  Highest magnetic moment of any element (7 unpaired 4f electrons + 1 5d unpaired = 8 total for the [Xe] 4f⁷ 5d¹ configuration... actually Gd³⁺ has 7 unpaired → f⁷ half-filled).
+  Gd-DTPA (gadolinium DTPA, Magnevist): MRI contrast agent (most widely used). Paramagnetic Gd³⁺ shortens T1 relaxation → bright on T1-weighted images → blood vessels, tumours, inflammation.
+    NSF (Nephrogenic Systemic Fibrosis): Gd retention in severe renal failure — now using macrocyclic chelates (gadobutrol, gadoteridol) which are safer.
+  Gd in neutron absorption: Gd has highest thermal neutron capture cross-section of any stable nuclide (49,000 barns for ¹⁵⁷Gd) → used in nuclear reactor control; BNCT adjunct.
+  Gd₃Ga₅O₁₂ (GGG): Magnetic bubble memory; substrate for microwave devices.
+
+ELEMENT 65: TERBIUM (Tb) — [Xe] 4f⁹ 6s²
+  Valency: 3, 4. OS: +3 (dominant), +4 (less stable than Ce⁴⁺).
+  Tb³⁺ green phosphor: Y₃Al₅O₁₂:Tb³⁺ (YAG:Tb) → green emission in tri-phosphor lamps; trichromatic white LEDs.
+  Tb in NdFeB magnets: TbDyFe (terfenol-D) → giant magnetostrictive material (changes shape in magnetic field → precision actuators, sonar).
+  Terbium fluorescence: Long-lived green luminescence → FRET acceptor in time-resolved assays.
+
+ELEMENT 66: DYSPROSIUM (Dy) — [Xe] 4f¹⁰ 6s²
+  Valency: 3. OS: +3.
+  High magnetic moment. Dy³⁺ added to NdFeB magnets → maintains coercivity at high temperature (crucial for EV motors, wind turbines operating at elevated temperatures).
+  Terfenol-D (Tb-Dy-Fe): Magnetostrictive actuator.
+  Dy in single-molecule magnets (SMMs): Dy₂O₃ clusters → largest blocking temperature.
+  Critical raw material for EV motors.
+
+ELEMENT 67: HOLMIUM (Ho) — [Xe] 4f¹¹ 6s²
+  Valency: 3. OS: +3. Highest magnetic moment of any naturally occurring element.
+  Ho:YAG laser: 2100 nm pulsed laser; minimal water absorption → surgical applications (kidney stones, prostate, joints).
+  Holmium magnetic poles (for creating extremely strong magnetic fields).
+  ¹⁶⁶Ho radiotherapy: Bone metastases; liver cancer (SIR-Spheres Ho-166 microspheres).
+
+ELEMENT 68: ERBIUM (Er) — [Xe] 4f¹² 6s²
+  Valency: 3. OS: +3.
+  Er:YAG laser: 2940 nm (maximal water absorption) → ablation of hard/soft tissue; skin resurfacing; dentistry; no thermal damage.
+  Er-doped fibre amplifier (EDFA): 1550 nm emission → amplifies signals in optical fibre communications (key enabler of internet infrastructure). Er³⁺ excited by 980 nm pump laser → stimulated emission at 1550 nm.
+  Er³⁺ pink-green glass (Er₂O₃).
+
+ELEMENT 69: THULIUM (Tm) — [Xe] 4f¹³ 6s²
+  Valency: 3; rarely 2. OS: +3 (dominant), +2 (Tm²⁺ in reducing conditions).
+  Rarest stable lanthanide (after Pm which has no stable isotopes).
+  Tm:YAG laser: 2013 nm; ophthalmology (photocoagulation).
+  ¹⁷⁰Tm: Portable X-ray source (γ emitter, t½=128.6 days).
+
+ELEMENT 70: YTTERBIUM (Yb) — [Xe] 4f¹⁴ 6s²
+  Valency: 2, 3. OS: +2 (Yb²⁺ — 4f¹⁴ full = extra stable; strong reducing agent), +3 (most stable).
+  Yb:YAG laser: 1030 nm; kilowatt-class industrial cutting/welding.
+  Yb in stress gauges; catalysis (Lewis acid Yb triflate).
+  ¹⁷⁴Yb: Optical atomic clock (most accurate clock ever made; uncertainty ~1 second in 300 billion years).
+
+ELEMENT 71: LUTETIUM (Lu) — [Xe] 4f¹⁴ 5d¹ 6s²
+  Valency: 3. OS: +3. Heaviest lanthanide; 4f¹⁴ complete.
+  Densest lanthanide; hardest. Smallest ionic radius (Ln³⁺ contraction).
+  Lu₂O₃:Eu: PET detector scintillator (LYSO = Lu₂(1-x)Y₂xSiO₅:Ce — key material in modern PET scanners).
+  ¹⁷⁷Lu radiotherapy: ¹⁷⁷Lu-DOTATATE (Lutathera) → first-line for somatostatin receptor-positive NETs (FDA approved 2018). ¹⁷⁷Lu-PSMA-617 (Pluvicto) → metastatic prostate cancer (FDA 2022). Beta emitter; short tissue range.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THE ACTINIDES (5f block, Z = 89–103)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ACTINIDE OVERVIEW
+------------------
+All actinides are radioactive (all isotopes). Beyond Bi (Z=83), no stable isotopes exist.
+5f electrons fill across this series. Unlike lanthanides, 5f electrons ARE chemically accessible.
+Greater variety of oxidation states than lanthanides (5f, 6d, 7s all available for bonding).
+Early actinides (Th, Pa, U, Np, Pu): Variable OS from +2 to +6 (U → +6 dominant; UO₂²⁺ stable).
+Late actinides (Am-Lr): More lanthanide-like; +3 dominant.
+All are toxic (radiological + chemical toxicity).
+
+ELEMENT 89: ACTINIUM (Ac) — [Rn] 6d¹ 7s²
+  OS: +3. t½(²²⁷Ac) = 21.77 years (alpha + beta emitter).
+  Group leader; very rare natural element (from ²³⁵U decay chain); most from nuclear reactors.
+  ²²⁵Ac radiotherapy: Highly promising for targeted alpha therapy (TAT) in cancer (²²⁵Ac-PSMA → prostate cancer; 4 alpha particles released per decay chain → very cytotoxic). Being developed rapidly.
+
+ELEMENT 90: THORIUM (Th) — [Rn] 6d² 7s²
+  OS: +4 (only). t½(²³²Th) = 14.05 billion years.
+  Most stable thorium isotope; can be used as nuclear fuel.
+  Thorium fuel cycle: ²³²Th + n → ²³³Th → ²³³Pa → ²³³U (fissile → can sustain chain reaction).
+  Liquid Fluoride Thorium Reactor (LFTR): Proposed reactor type using molten ThF₄ + LiF. Advantages: abundant Th; less long-lived waste; harder to proliferate.
+  ThO₂: Very high mp (3300°C); used in gas mantles (Welsbach mantle for white light — Th₀.₉₉Ce₀.₀₁O₂).
+
+ELEMENT 91: PROTACTINIUM (Pa) — [Rn] 5f² 6d¹ 7s²
+  OS: +4, +5 (PaO₂⁺ stable). Rare; very radioactive. t½(²³¹Pa) = 32,760 years.
+  Only 1.3 mg total ever isolated. Used in ²³¹Pa/²³¹Pa geochemistry (ocean circulation tracers).
+
+ELEMENT 92: URANIUM (U) — [Rn] 5f³ 6d¹ 7s²
+  OS: +3, +4, +5, +6. Most stable/common: +6 (UO₂²⁺ = uranyl ion, linear, very stable).
+  t½(²³⁸U) = 4.47 billion years; t½(²³⁵U) = 703.8 million years.
+  Natural U: 99.27% ²³⁸U + 0.72% ²³⁵U + 0.0054% ²³⁴U. Only ²³⁵U fissile.
+  Enrichment: UF₆ gaseous centrifuge → increase ²³⁵U to 3-5% (reactor fuel) or 90%+ (weapons-grade).
+  Nuclear power: UO₂ pellets in Zircaloy cladding → fuel rods → nuclear reactor.
+  Uranium glass (vaseline glass): Contains UO₂ → yellow-green; fluoresces brilliant green under UV.
+  DU (Depleted Uranium): Waste from enrichment; mostly ²³⁸U; very dense (19.1 g/cm³) → armour-piercing ammunition; counterweights; radiation shielding. Toxic metal.
+  UO₂²⁺ (uranyl): Yellow fluorescent; water-soluble; environmental contaminant from mining.
+  U chemistry: Wide range of organometallic compounds; important in nuclear fuel cycle; PUREX process for reprocessing.
+
+ELEMENT 93: NEPTUNIUM (Np) — [Rn] 5f⁴ 6d¹ 7s²
+  OS: +3, +4, +5 (NpO₂⁺ most stable in solution), +6, +7. t½(²³⁷Np) = 2.14 million years.
+  First transuranium element made artificially (McMillan & Abelson, 1940; Berkeley Cyclotron).
+  Produced in nuclear reactors from ²³⁸U + n → ²³⁹U → ²³⁹Np → ²³⁹Pu.
+  ²³⁷Np decays to ²³³Pa → ²³³U. Np-Pu nuclear battery research.
+
+ELEMENT 94: PLUTONIUM (Pu) — [Rn] 5f⁶ 7s²
+  OS: +3, +4, +5, +6 (PuO₂²⁺), +7. Most stable in acidic solution: Pu⁴⁺.
+  t½(²³⁹Pu) = 24,110 years (most important isotope); t½(²⁴⁴Pu) = 80 million years.
+  ²³⁹Pu: Fissile; produced in nuclear reactors from ²³⁸U. Critical mass ~5 kg.
+  Nuclear weapons: Fat Man bomb (Nagasaki) used ²³⁹Pu implosion design.
+  Plutonium-238 (²³⁸Pu, t½=87.7 yr): Intense alpha emitter → heat → RTG (radioisotope thermoelectric generator → powers spacecraft (Voyager, Cassini, Curiosity, New Horizons, Perseverance).
+  Extremely toxic (alpha emitter if inhaled/ingested; bone seeker).
+  Complicated metallurgy: 6 allotropic phases between RT and mp; density ranges from 16.0–19.8 g/cm³ depending on phase.
+  PUREX process: Tributyl phosphate extraction → separates U + Pu from fission products in nuclear reprocessing.
+
+ELEMENT 95: AMERICIUM (Am) — [Rn] 5f⁷ 7s²
+  OS: +2, +3 (most stable), +4, +5, +6. t½(²⁴¹Am) = 432.2 years.
+  ²⁴¹Am: Alpha emitter → ionises air in ionisation-chamber smoke detectors (most common household application of radioactivity). 1 µg of Am in each detector.
+  ²⁴³Am: Longer-lived (t½=7370 yr); used as target to make heavier elements.
+  Am in radiography; Cm production.
+
+ELEMENT 96: CURIUM (Cm) — [Rn] 5f⁷ 6d¹ 7s²
+  OS: +3 (dominant), +4. t½(²⁴⁷Cm) = 15.6 million years; t½(²⁴²Cm) = 162.8 days.
+  Named after Pierre and Marie Curie.
+  ²⁴²Cm: Alpha emitter; very intense heat source → RTG; Mars Perseverance rover (Alpha Particle X-ray Spectrometer, APXS, uses ²⁴⁴Cm X-ray source for elemental analysis of rock/soil).
+
+ELEMENTS 97–103: BERKELIUM (Bk), CALIFORNIUM (Cf), EINSTEINIUM (Es), FERMIUM (Fm), MENDELEVIUM (Md), NOBELIUM (No), LAWRENCIUM (Lr)
+  All synthesised at Lawrence Berkeley National Laboratory (mostly) by bombardment of actinide targets.
+  All radioactive; trace amounts (except Cf).
+  ²⁵²Cf (Californium-252): t½=2.65 yr; spontaneous fission source → intense neutron source.
+    Uses: Neutron activation analysis; nuclear reactor startup; oil well logging; cancer therapy (intracavitary); portable neutron source.
+  All have +3 dominant OS (increasingly lanthanide-like).
+  Lr (Z=103): Last actinide; [Rn] 5f¹⁴ 7s² 7p¹.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUPERHEAVY ELEMENTS (Z = 104–118) — Transactinide/Transactinide Elements
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Z    | Name          | Symbol | Config (predicted)     | t½ (most stable)  | Expected Properties
+-----|---------------|--------|------------------------|-------------------|-----------------------
+104  | Rutherfordium | Rf     | [Rn] 5f¹⁴ 6d² 7s²     | ~1.3 hours        | Group 4; like Hf; RfCl₄
+105  | Dubnium       | Db     | [Rn] 5f¹⁴ 6d³ 7s²     | ~1 day (²⁶⁸Db)   | Group 5; like Ta/Nb
+106  | Seaborgium    | Sg     | [Rn] 5f¹⁴ 6d⁴ 7s²     | ~14 min           | Group 6; like W; SgO₃
+107  | Bohrium       | Bh     | [Rn] 5f¹⁴ 6d⁵ 7s²     | ~1 min            | Group 7; like Re
+108  | Hassium       | Hs     | [Rn] 5f¹⁴ 6d⁶ 7s²     | ~10 seconds       | Group 8; like Os; HsO₄ volatile
+109  | Meitnerium    | Mt     | [Rn] 5f¹⁴ 6d⁷ 7s²     | ~8 seconds        | Group 9; like Ir
+110  | Darmstadtium  | Ds     | [Rn] 5f¹⁴ 6d⁸ 7s²     | ~10 microseconds  | Group 10; like Pt
+111  | Roentgenium   | Rg     | [Rn] 5f¹⁴ 6d¹⁰ 7s¹   | ~30 seconds       | Group 11; like Au; relativistic effects
+112  | Copernicium   | Cn     | [Rn] 5f¹⁴ 6d¹⁰ 7s²   | ~30 seconds       | Group 12; like Hg; may be gas at RT
+113  | Nihonium      | Nh     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹| ~20 seconds      | Group 13; like Tl; +1, +3
+114  | Flerovium     | Fl     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²| ~2 seconds        | Group 14; like Pb; may be gas
+115  | Moscovium     | Mc     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³| ~220 ms          | Group 15; like Bi; +1, +3
+116  | Livermorium   | Lv     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴| ~61 ms           | Group 16; like Po
+117  | Tennessine    | Ts     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵| ~51 ms           | Group 17; may not behave like halogens due to relativistic effects
+118  | Oganesson     | Og     | [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶| ~0.89 ms         | Group 18; predicted solid; possibly reactive due to closed 7p shell raised in energy by relativistic effects
+
+Island of Stability:
+  Predicted region of superheavy nuclides with enhanced nuclear stability.
+  Centred around Z=114 (Fl), N=184 (closed shell).
+  ²⁹⁸Fl (Z=114, N=184): Most sought-after "island of stability" nuclide.
+  Current ²⁸⁹Fl (N=175) has t½=1.9 seconds — still far from N=184.
+  If reached: Might have t½ of minutes to years → allow chemical study.
+  Theoretical basis: Nuclear shell model; complete proton and neutron shells → extra binding energy (analogous to noble gas electronic stability).
+
+Naming Conventions for Superheavy Elements:
+  Named after: scientists (Curium, Einsteinium, Fermium, Meitnerium, Roentgenium, Seaborgium, Nobelium, Rutherfordium, Bohrium, Copernicium, Oganesson), places (Californium, Berkelium, Darmstadtium, Hassium, Dubnium, Moscovium, Livermorium, Tennessine), or properties.
+  Naming rights: Awarded by IUPAC to discoverers after verification. Discovery = synthesis of ≥1 atom confirmed by two independent groups.
+  Priority disputes: USA (LBNL) vs Soviet Union (JINR Dubna) in Cold War era; now resolved for most.
+
+Superheavy Chemistry:
+  Relativistic effects dominate: Electrons near heavy nuclei travel at significant fraction of speed of light → mass increases → orbitals contract/expand → changes chemistry from periodic table predictions.
+  Fl (114): Experiments show Fl adsorbs on gold surfaces (chemical properties measured) → behaves more like a noble gas than expected for Group 14 element. Volatile.
+  Cn (112): Experiments suggest may be a gas at RT (highly volatile) due to relativistic 7s orbital stabilisation.
+  Hassium (108): HsO₄ produced and shown to be volatile → like OsO₄ → confirms Group 8 behaviour.
+  Chemistry can only be done on single atoms — "one atom at a time" chemistry using automated rapid separation systems.
+
+================================================================================

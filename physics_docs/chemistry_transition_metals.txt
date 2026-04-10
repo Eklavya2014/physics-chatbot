@@ -1,0 +1,401 @@
+================================================================================
+          CHEMISTRY: TRANSITION METALS (Groups 3–12)
+           d-Block Elements · Properties · Valency · Reactions
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TRANSITION METALS — OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Definition: Elements with a partially filled d subshell in the atom OR in at least one stable ion.
+(Zn, Cd, Hg excluded by strict definition — all have full d¹⁰ in all compounds; included here for Group 12.)
+
+General Properties of Transition Metals:
+  Variable oxidation states: Can form multiple stable oxidation states (due to similar energies of (n-1)d and ns electrons).
+  Coloured compounds: d-d electronic transitions absorb visible light. Colour depends on ligand field splitting.
+  Catalytic activity: Ability to change oxidation state; partially filled d orbitals → adsorb reactants.
+  Magnetic properties: Unpaired d electrons → paramagnetism. Fe, Co, Ni → ferromagnetism.
+  Complex formation: Form coordination compounds with ligands (Lewis bases).
+  High melting/boiling points: Strong metallic bonding (d electrons contribute).
+  Generally hard, dense, strong metals.
+  Conductors of heat and electricity.
+
+Valence electrons: (n-1)d + ns electrons.
+When forming ions: ns electrons removed first (lower ionisation energy despite higher n being filled last — energy levels converge in ions).
+
+First-Row Transition Metals (Period 4, Z=21-30):
+  Sc(21), Ti(22), V(23), Cr(24), Mn(25), Fe(26), Co(27), Ni(28), Cu(29), Zn(30)
+
+Second-Row Transition Metals (Period 5, Z=39-48):
+  Y(39), Zr(40), Nb(41), Mo(42), Tc(43), Ru(44), Rh(45), Pd(46), Ag(47), Cd(48)
+
+Third-Row Transition Metals (Period 6, Z=72-80):
+  Hf(72), Ta(73), W(74), Re(75), Os(76), Ir(77), Pt(78), Au(79), Hg(80)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 21: SCANDIUM (Sc)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 21
+  Atomic Mass      : 44.956 amu
+  Electron Config  : [Ar] 3d¹ 4s²
+  Valency          : 3
+  Oxidation States : +3 (only stable state)
+  Melting Point    : 1541°C
+  Boiling Point    : 2836°C
+  Density          : 2.99 g/cm³
+  Key Properties   : Lightest transition metal; behaves somewhat like Al (diagonal); Sc³⁺ has d⁰ config → colourless compounds; not a "true" TM by strict definition. Strong, lightweight metal.
+  Uses: Sc-Al alloys (aerospace; MiG jet frames); metal halide lamps; scandium iodide in stadium lighting; solid oxide fuel cells (Sc-doped zirconia).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 22: TITANIUM (Ti)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 22
+  Atomic Mass      : 47.867 amu
+  Electron Config  : [Ar] 3d² 4s²
+  Valency          : 4 (main); 2, 3 also known
+  Oxidation States : +4 (most stable, colourless Ti⁴⁺, d⁰); +3 (violet, d¹); +2 (rare)
+  Melting Point    : 1668°C
+  Boiling Point    : 3287°C
+  Density          : 4.507 g/cm³
+  Electronegativity: 1.54
+
+  Key Properties:
+  - As strong as steel at almost half the weight.
+  - Excellent corrosion resistance (passive TiO₂ layer; resistant to seawater, chlorine, aqua regia).
+  - Biocompatible → used in surgical implants.
+  - Ti⁴⁺: Hard Lewis acid; hydrolyses in water → TiO₂ (white precipitate).
+  - TiCl₄: Fumes in moist air → TiO₂ + HCl (smoke screens historically).
+  - Titanium dioxide (TiO₂): Most widely used white pigment (paints, sunscreen, food colouring E171); photocatalyst (decomposes organics under UV); anatase/rutile/brookite polymorphs.
+  - Kroll Process: TiCl₄ + Mg → Ti + MgCl₂ (industrial Ti production; expensive, batch process).
+  - Grubbs catalyst: Ru or W-based, but Ti metallocene catalysts (Ziegler-Natta: TiCl₄ + AlR₃) → polymerisation of alkenes → HDPE, polypropylene.
+
+  Uses: Aerospace alloys (Ti-6Al-4V = most used alloy; aircraft, spacecraft); surgical implants (hip replacements, dental implants); TiO₂ pigment; sunscreen; nuclear waste containers; sports equipment (bicycles, golf clubs).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 23: VANADIUM (V)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 23
+  Atomic Mass      : 50.942 amu
+  Electron Config  : [Ar] 3d³ 4s²
+  Valency          : 5 (most common); 2, 3, 4 also stable
+  Oxidation States : +2 (violet, V²⁺), +3 (green, V³⁺), +4 (blue, VO²⁺), +5 (yellow, VO₄³⁻ or VO₃⁻)
+  Melting Point    : 1910°C
+  Boiling Point    : 3407°C
+  Density          : 6.11 g/cm³
+
+  Key Properties:
+  - Famous for its series of oxidation states visible as colours when reduced stepwise.
+  - V₂O₅ catalyst: Contact process (SO₂ → SO₃ → H₂SO₄) — most important industrial application.
+  - Vanadium steel: V added to steel → fine grain structure → stronger, tougher. (Ford Model T used vanadium steel).
+  - Vanadium redox flow battery: V²⁺/V³⁺ (negative electrolyte) + VO²⁺/VO₂⁺ (positive) → large-scale grid energy storage.
+  - Biologically: V is active site of vanadium nitrogenase (alternative to Mo-nitrogenase in N₂ fixation).
+  - Marine organisms (ascidians/sea squirts) concentrate V over 10⁶× seawater levels in blood cells.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 24: CHROMIUM (Cr)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 24
+  Atomic Mass      : 51.996 amu
+  Electron Config  : [Ar] 3d⁵ 4s¹ (EXCEPTION — half-filled d is extra stable)
+  Valency          : 3 (most stable); 6 (important); 2 also
+  Oxidation States : +2 (blue), +3 (green, most stable, Cr³⁺), +6 (Cr₂O₇²⁻ orange/CrO₄²⁻ yellow — strong oxidants, toxic)
+  Melting Point    : 1907°C
+  Boiling Point    : 2671°C
+  Density          : 7.19 g/cm³
+  Electronegativity: 1.66
+
+  Key Properties:
+  - High melting point; very hard (hardness 8.5 Mohs); corrosion resistant.
+  - Passive Cr₂O₃ layer → stainless steel (>10.5% Cr → steel becomes "stainless").
+  - Bright, mirror-like appearance when polished.
+  - Electronic configuration exception: 3d⁵4s¹ not 3d⁴4s² (half-filled d stability).
+  - Cr(VI) compounds: Very toxic, carcinogenic (lung cancer), strong oxidants. Cr₂O₇²⁻ (orange) ⇌ CrO₄²⁻ (yellow) equilibrium — pH dependent.
+  - Cr(III): Essential trace element; glucose tolerance factor.
+  - Ruby: Cr³⁺ in Al₂O₃ lattice → red colour (d-d transitions). Emerald: Cr³⁺ in Be₃Al₂Si₆O₁₈ → green.
+
+  Important Compounds:
+    Cr₂O₃    : Chromium(III) oxide; green pigment ("Viridian"); abrasive; catalyst.
+    CrO₃     : Chromium(VI) oxide; dark red solid; strong oxidant; used in organic synthesis.
+    K₂Cr₂O₇ : Potassium dichromate; orange; oxidant; tanning.
+    Na₂CrO₄  : Sodium chromate; yellow; corrosion inhibitor.
+    Chrome alum: KCr(SO₄)₂·12H₂O; purple; tanning.
+
+  Uses: Stainless steel (most important use — ~12% Cr); chrome plating (decorative + hard chrome); chrome tanning of leather; pigments (chrome yellow, chrome green); catalysts.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 25: MANGANESE (Mn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 25
+  Atomic Mass      : 54.938 amu
+  Electron Config  : [Ar] 3d⁵ 4s²
+  Valency          : 2, 4, 7 (most common); all from +2 to +7 known
+  Oxidation States : +2 (pale pink, Mn²⁺); +3 (red); +4 (MnO₂, black); +6 (manganate MnO₄²⁻, green); +7 (permanganate MnO₄⁻, deep purple, strongest common oxidant)
+  Melting Point    : 1246°C
+  Boiling Point    : 2061°C
+  Density          : 7.21 g/cm³
+
+  Key Properties:
+  - Widest range of stable oxidation states of any common transition metal (+2 to +7).
+  - KMnO₄ (potassium permanganate): Intense purple; powerful oxidant; colour changes indicate oxidation state (MnO₄⁻ purple → Mn²⁺ colourless in acid; MnO₂ brown in neutral; MnO₄²⁻ green in alkali).
+  - MnO₂: Cathode in dry cell (Leclanché cell) and alkaline batteries.
+  - Mn essential for: Photosystem II (Mn₄Ca cluster oxidises water → O₂); many enzymes (Mn-SOD).
+  - Steel additive (1–2% Mn): Removes S impurities (MnS > FeS; FeS causes brittleness); strengthens steel.
+  - Biologically essential trace element: Superoxide dismutase (Mn-SOD), pyruvate carboxylase, arginase.
+
+  Important Compounds:
+    MnO₄⁻   : Permanganate; purple; strong oxidant; disinfectant; volumetric analysis (titrations).
+    MnO₂    : Manganese dioxide; black solid; oxidant; battery cathode; catalyst.
+    MnSO₄   : Fertiliser; feed supplement.
+    Mn₂O₃   : Manganese(III) oxide; pigment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 26: IRON (Fe)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 26
+  Atomic Mass      : 55.845 amu
+  Electron Config  : [Ar] 3d⁶ 4s²
+  Valency          : 2, 3 (most common); 4, 6 (rare)
+  Oxidation States : +2 (Fe²⁺, ferrous, green); +3 (Fe³⁺, ferric, yellow/brown); +6 (ferrate FeO₄²⁻, rare)
+  Melting Point    : 1538°C
+  Boiling Point    : 2862°C
+  Density          : 7.87 g/cm³
+  Electronegativity: 1.83
+
+  Key Properties:
+  - 4th most abundant element in Earth's crust; most abundant by mass in Earth overall (Earth's core = Fe-Ni).
+  - Peak binding energy per nucleon → most stable nucleus (⁵⁶Fe).
+  - Ferromagnetic (along with Co, Ni) — permanent magnets possible. Curie temperature: 770°C.
+  - Rusts in moist air: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ → 2Fe₂O₃·3H₂O (rust).
+  - Passive stainless steel: Fe + Cr (>10.5%) → Cr₂O₃ protective layer.
+  - 3 allotropes: α-Fe (BCC, <912°C); γ-Fe (FCC austenite, 912-1394°C); δ-Fe (BCC, 1394-1538°C).
+
+  Iron in Biology:
+  - Essential for: Haemoglobin (O₂ transport); myoglobin; cytochromes (electron transport); iron-sulfur clusters (ferredoxin); ribonucleotide reductase (DNA synthesis); catalase; peroxidase.
+  - Fe²⁺ (ferrous): Absorbed in intestine (DMT1 transporter); in haemoglobin.
+  - Fe³⁺ (ferric): Transported by transferrin; stored in ferritin (up to 4,500 Fe atoms per ferritin).
+  - Fenton reaction: Fe²⁺ + H₂O₂ → Fe³⁺ + OH• + OH⁻ (generates highly reactive hydroxyl radical).
+
+  Metallurgy:
+  - Blast furnace: Fe₂O₃ + CO → Fe + CO₂ (coke provides CO; limestone removes silica as slag).
+  - Pig iron: Blast furnace product; ~4% C (brittle).
+  - Steel: Iron + <2% C; other alloying elements (Ni, Cr, Mn, V, W, Mo).
+  - Cast iron: 2–4% C; brittle but cheap; engine blocks.
+  - Wrought iron: <0.1% C; tough, workable; historical fencing/railings.
+
+  Important Compounds:
+    Fe₂O₃  : Haematite; iron ore; red rust pigment; magnetic (Fe₃O₄ = magnetite → lodestone).
+    FeSO₄  : Iron(II) sulphate; green vitriol; iron deficiency treatment; mordant.
+    FeCl₃  : Iron(III) chloride; etchant for copper PCBs; coagulant in water treatment.
+    K₃[Fe(CN)₆]: Potassium hexacyanoferrate(III)/ferricyanide; testing for Fe²⁺ (blue precipitate = Turnbull's blue).
+    K₄[Fe(CN)₆]: Potassium hexacyanoferrate(II)/ferrocyanide; food additive E536; testing for Fe³⁺ (Prussian blue).
+    Haemoglobin: Fe²⁺-porphyrin (haem) complex with globin; O₂ carrier.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 27: COBALT (Co)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 27
+  Atomic Mass      : 58.933 amu
+  Electron Config  : [Ar] 3d⁷ 4s²
+  Valency          : 2, 3 (most important)
+  Oxidation States : +2 (Co²⁺, pink/red); +3 (Co³⁺, forms stable complexes)
+  Melting Point    : 1495°C
+  Boiling Point    : 2927°C
+  Density          : 8.90 g/cm³
+
+  Key Properties:
+  - Ferromagnetic (Curie temp 1115°C — highest of any element).
+  - Hard, brittle, blue-grey metal.
+  - Co³⁺ forms kinetically inert octahedral complexes — important in coordination chemistry.
+  - Werner's coordination theory: Co³⁺ + NH₃ complexes central to understanding coordination numbers/isomerism.
+  - ⁶⁰Co: Radioactive (t½=5.27 yr); gamma emitter → radiotherapy (cancer treatment); industrial radiography; food irradiation.
+  - Vitamin B₁₂ (cobalamin): Co³⁺ central atom in corrin ring — essential vitamin; only vitamin with a metal atom.
+  - Cobalt blue: CoAl₂O₄; stable blue pigment; glass; ceramics; Delftware.
+  - Smalt: Historical blue pigment (Co-containing glass).
+  - Co-Cr-Mo alloys: Biomedical implants (hip/knee replacements — wear resistant).
+  - LiCoO₂: Cathode material in Li-ion batteries.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 28: NICKEL (Ni)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 28
+  Atomic Mass      : 58.693 amu
+  Electron Config  : [Ar] 3d⁸ 4s²
+  Valency          : 2 (most common); 3, 4 rare
+  Oxidation States : +2 (Ni²⁺, green); 0 in organometallics; +4 in some battery cathodes
+  Melting Point    : 1455°C
+  Boiling Point    : 2913°C
+  Density          : 8.908 g/cm³
+  Electronegativity: 1.91
+
+  Key Properties:
+  - Ferromagnetic (Curie temp 358°C).
+  - Corrosion resistant; good catalyst; silvery appearance.
+  - Raney nickel: Highly porous Ni-Al alloy; important hydrogenation catalyst.
+  - Ni(CO)₄ (nickel tetracarbonyl): Toxic gas; formed when CO reacts with Ni at 50-60°C; used in Mond process to purify Ni; tetrahedral; d¹⁰ Ni⁰.
+  - Mond process: Impure Ni + CO → Ni(CO)₄ (gas) → decompose at 230°C → pure Ni + CO.
+  - NiMH batteries: Nickel metal hydride; common rechargeable.
+  - Ni-Cd batteries: High power; cadmium toxic → being phased out.
+  - Ni(II): Common octahedral complexes; square planar in strong field (d⁸ configuration).
+  - Contact allergen: Most common cause of contact dermatitis (jewellery, metal fasteners).
+
+  Uses: Stainless steel (8-12% Ni → austenitic stainless); coins (US "nickel" = 25% Ni); Monel alloy (Ni-Cu); plating; catalysts (hydrogenation, methanation); NiMH batteries; Inconel (Ni-Cr-Fe → jet engine parts).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 29: COPPER (Cu)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 29
+  Atomic Mass      : 63.546 amu
+  Electron Config  : [Ar] 3d¹⁰ 4s¹ (EXCEPTION — full d is extra stable)
+  Valency          : 1, 2 (most common)
+  Oxidation States : +1 (Cu⁺, d¹⁰, colourless; stable only in insoluble compounds or complexes); +2 (Cu²⁺, d⁹, blue, most stable in solution)
+  Melting Point    : 1085°C
+  Boiling Point    : 2562°C
+  Density          : 8.96 g/cm³
+  Electronegativity: 1.90
+
+  Key Properties:
+  - Reddish-pink, distinctive colour. Only naturally coloured elemental metals: Cu (red), Au (yellow), Cs (gold-yellow).
+  - 3rd best electrical conductor after Ag and Au; best practical conductor.
+  - Excellent thermal conductor.
+  - d¹⁰ configuration exception: 3d¹⁰4s¹ not 3d⁹4s².
+  - Cu²⁺ in water: [Cu(H₂O)₆]²⁺ → sky blue (d-d transition). Concentrated H₂SO₄: CuSO₄·5H₂O (blue vitriol).
+  - Cu₂S + Cu₂O: Malachite Cu₂CO₃(OH)₂ (green patina on copper roofs/Statue of Liberty).
+  - Cu disproportionation: 2Cu⁺ → Cu + Cu²⁺ (Cu⁺ unstable in water; stabilised by precipitation or complexation).
+  - Biologically essential: Ceruloplasmin (Fe³⁺ oxidation); cytochrome c oxidase (Complex IV — O₂ reduction); SOD; laccase; haemocyanin (molluscs — blue blood, Cu²⁺ oxygenated).
+  - Wilson's disease: Autosomal recessive; ATP7B mutation → Cu accumulates in liver/brain → cirrhosis + neurological damage. Treated with D-penicillamine + zinc.
+  - Antimicrobial: Bacteria die on copper surfaces (oligodynamic effect); hospital touch surfaces.
+
+  Important Compounds:
+    CuSO₄·5H₂O : Blue vitriol; fungicide (Bordeaux mixture + Ca(OH)₂); electrolysis; analytical chemistry.
+    CuO       : Black copper(II) oxide; pH indicator for organic analysis; pigment.
+    Cu₂O      : Red copper(I) oxide; pigment; semiconductor; antifouling paint.
+    CuCl₂     : Catalyst in Deacon process (HCl + O₂ → Cl₂); wood treatment.
+    Cu(NO₃)₂  : Fertiliser; electroplating.
+    Bronze     : Cu + Sn (2-15% Sn); corrosion resistant; bells; sculptures.
+    Brass      : Cu + Zn (5-40% Zn); golden; plumbing fittings; musical instruments.
+    Cupronickel: Cu-Ni; corrosion resistant; coins (US coins outer layer); ships.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 30: ZINC (Zn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 30
+  Atomic Mass      : 65.38 amu
+  Electron Config  : [Ar] 3d¹⁰ 4s²
+  Valency          : 2 (always)
+  Oxidation States : +2 only (d¹⁰ → colourless compounds; diamagnetic)
+  Melting Point    : 419.5°C
+  Boiling Point    : 907°C
+  Density          : 7.133 g/cm³
+  Electronegativity: 1.65
+
+  Key Properties:
+  - Not a "true" transition metal (d¹⁰ in all compounds) but placed in Group 12.
+  - Colourless compounds (no d-d transitions); diamagnetic.
+  - Reacts with dilute acids: Zn + H₂SO₄ → ZnSO₄ + H₂.
+  - Amphoteric: Reacts with NaOH: Zn + 2NaOH → Na₂ZnO₂ + H₂.
+  - Galvanisation: Zn coating on steel → protects by sacrificial anode + physical barrier.
+  - Biological: Zn²⁺ essential for ~300 enzymes (carbonic anhydrase, carboxypeptidase, alcohol dehydrogenase); transcription factors (zinc finger domains); insulin storage (Zn-insulin hexamers); DNA repair.
+  - Tetrahedral geometry preferred (like Mg²⁺ and Ca²⁺ → Lewis acid in enzymes).
+
+  Important Compounds:
+    ZnO     : Zinc oxide; white; photocatalyst; UV absorber (sunscreen); semiconductor; pigment.
+    ZnS     : Zinc sulphide; phosphorescent (ZnS:Ag → blue emission); fluorescent screens.
+    ZnSO₄   : Fertiliser; eye drops (antiseptic); industrial electrolyte.
+    Zn(CH₃)₂: Dimethylzinc; toxic, pyrophoric; organometallic chemistry.
+    ZnCl₂   : Flux for soldering; wood preservative; electrolyte in dry cells.
+    ZnCO₃   : Smithsonite mineral; calamine lotion (ZnCO₃ + Fe₂O₃).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+KEY SECOND & THIRD ROW TRANSITION METALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ELEMENT 40: ZIRCONIUM (Zr) — [Kr] 4d² 5s²
+  Valency: 4. OS: +4 mainly.
+  Extremely corrosion resistant. Low neutron absorption → nuclear reactor cladding (Zircaloy).
+  ZrO₂ (zirconia): High mp (2715°C); tough ceramic; dental crowns; thermal barrier coatings.
+  Stabilised zirconia (Y-doped): Solid electrolyte in fuel cells; oxygen sensors.
+
+ELEMENT 42: MOLYBDENUM (Mo) — [Kr] 4d⁵ 5s¹
+  Valency: 6 (max); 4, 2 also. OS: +2 to +6.
+  High melting point (2623°C) — highest of any non-tungsten element in period 5.
+  MoS₂: Solid lubricant (layered structure like graphite); semiconductor.
+  Mo in enzymes: Nitrogenase (N₂ fixation); xanthine oxidase; sulphite oxidase; nitrate reductase.
+  Mo essential trace element — required by nearly all organisms.
+  Steel alloy (Mo → high-strength, high-temperature steel; stainless steel grade 316).
+
+ELEMENT 44: RUTHENIUM (Ru) — [Kr] 4d⁷ 5s¹
+  Valency: Highly variable; OS: 0 to +8.
+  Platinum group metal (PGM); rare; expensive.
+  Excellent catalyst (Haber process alternative).
+  Grubbs catalyst: Ru-carbene complexes → olefin metathesis (Nobel 2005).
+  Dye-sensitised solar cells (DSSC): Ru-bipyridyl complex (N719) as photosensitiser.
+  Hardening agent for Pt and Pd alloys; electrical contacts.
+
+ELEMENT 45: RHODIUM (Rh) — [Kr] 4d⁸ 5s¹
+  Valency: 1, 3 (most common). PGM; very rare; very expensive.
+  Wilkinson's catalyst: [RhCl(PPh₃)₃] → hydrogenation of alkenes (Nobel 1973).
+  Automotive catalytic converter (three-way catalyst): Rh oxidises CO + HC; reduces NOₓ → N₂.
+  Reflective coating for optical instruments (high reflectivity).
+
+ELEMENT 46: PALLADIUM (Pd) — [Kr] 4d¹⁰ (EXCEPTION — full d, no 5s)
+  Valency: 2 (square planar d⁸); 0 in catalysis.
+  Pd(0)/Pd(II) catalysis: Heck, Suzuki, Negishi, Buchwald-Hartwig cross-coupling reactions (Nobel 2010) — backbone of modern pharmaceutical synthesis.
+  H₂ absorption: Pd absorbs >900× its volume of H₂ → H₂ purification/storage.
+  Dental alloys; surgical instruments; electronics.
+
+ELEMENT 47: SILVER (Ag) — [Kr] 4d¹⁰ 5s¹ (EXCEPTION)
+  Valency: 1 (Ag⁺ almost always). OS: +1 mainly; +2, +3 rare.
+  Best electrical conductor of all elements.
+  Best thermal conductor of all elements.
+  AgNO₃: Test for halides (AgCl white, AgBr pale yellow, AgI yellow precipitates).
+  AgBr/AgCl/AgI: Photosensitive → traditional photography.
+  Ag⁺: Broad-spectrum antimicrobial (disrupts cell membranes, enzymes). AgNO₃ → wound care.
+  Ag₂S: Tarnishing of silver (H₂S in air → black Ag₂S).
+  AgCl: Electrode in reference electrodes; light-sensitive glass.
+  Sterling silver: 92.5% Ag + 7.5% Cu.
+
+ELEMENT 74: TUNGSTEN (W) — [Xe] 4f¹⁴ 5d⁴ 6s²
+  Valency: 6 (max); 4, 2 also.
+  Highest melting point of all elements: 3422°C. Highest boiling point: 5555°C.
+  Highest density of commonly used metals: 19.25 g/cm³.
+  WC (tungsten carbide): Extremely hard (9-9.5 Mohs); cutting tools, drill bits, jewellery.
+  W filament: Incandescent light bulbs (resists high temp); electron gun filaments.
+  W in alloy steel: High-speed steel (maintains hardness at high temp — machining tools).
+  W key in biology: Tungstoenzymes in archaea (replace Mo in some organisms).
+
+ELEMENT 78: PLATINUM (Pt) — [Xe] 4f¹⁴ 5d⁹ 6s¹
+  Valency: 2 (square planar), 4. PGM; very rare; very expensive.
+  Catalytic converter: Pt + Pd → oxidise CO + HC → CO₂ + H₂O.
+  Pt catalyst: H₂SO₄ production (SO₃ formation); HNO₃ (ammonia oxidation).
+  Cisplatin [cis-Pt(NH₃)₂Cl₂]: First metal-based cancer drug (Nobel-related chemistry).
+    Cross-links DNA → replication block → apoptosis. Ovarian, testicular, lung, bladder cancer.
+    Carboplatin: Less toxic analogue. Oxaliplatin: Colorectal cancer.
+  Standard hydrogen electrode (SHE): Pt electrode under H₂ → reference for reduction potentials.
+  Jewellery; pacemakers; dental restorations; precision instruments.
+
+ELEMENT 79: GOLD (Au) — [Xe] 4f¹⁴ 5d¹⁰ 6s¹ (EXCEPTION)
+  Valency: 1, 3 (most stable compounds); also 0 in nanoparticles.
+  OS: +1 (aurous, Au(I)); +3 (auric, Au(III)); -1 in caesium auride (CsAu).
+  Noble metal: Does not react with most acids; DOES dissolve in aqua regia (HCl + HNO₃, 3:1).
+    Au + HNO₃ + 4HCl → H[AuCl₄] + NO + 2H₂O.
+  Aurophilic interactions: Au-Au attractive van der Waals + relativistic effects → unique chemistry.
+  Yellow colour: Relativistic contraction of 6s → raised energy of 5d → 5d→6s transition absorbs blue light → reflects yellow.
+  Colloidal gold: Nanoparticles (10-100 nm); red/purple colour; diagnostic tests (lateral flow); photothermal therapy.
+  Au nanoparticles: Huge surface area; catalysis; drug delivery; biosensors.
+  Gold standard: Former monetary basis; still in central bank reserves.
+  Biomedical: Gold salts (auranofin) for rheumatoid arthritis.
+  Electronics: Au bond wires; contacts (corrosion-free).
+
+ELEMENT 80: MERCURY (Hg) — [Xe] 4f¹⁴ 5d¹⁰ 6s²
+  Valency: 1 (Hg₂²⁺ dimer, mercurous), 2 (Hg²⁺, mercuric).
+  Only liquid metal at room temperature (mp -38.83°C). High density: 13,534 kg/m³.
+  Liquid at RT due to relativistic contraction of 6s orbital → poor metallic bonding.
+  Highly toxic: Accumulates in brain/kidneys; Minamata disease (methylmercury poisoning from fish).
+  Hg₂Cl₂ (calomel): Mercurous chloride; formerly medicinal; reference electrodes.
+  HgCl₂ (corrosive sublimate): Mercuric chloride; very toxic; historical disinfectant.
+  Amalgams: Hg alloys with most metals (except Fe, Pt). Dental amalgam (Hg + Ag + Sn + Cu).
+  HgS (cinnabar): Red pigment; major ore of Hg.
+  Fluorescent lamps: Hg vapour discharge → UV → phosphor coating → white light.
+  Thermometers, barometers (being phased out due to toxicity).
+
+================================================================================

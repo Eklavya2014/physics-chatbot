@@ -1,0 +1,261 @@
+CHEMISTRY: PHYSICAL CHEMISTRY — COMPLETE GUIDE
+===============================================
+
+ATOMIC STRUCTURE
+-----------------
+Sub-atomic particles:
+  Proton: +1 charge, mass 1.673×10⁻²⁷ kg (1 amu), in nucleus
+  Neutron: 0 charge, mass 1.675×10⁻²⁷ kg (1 amu), in nucleus
+  Electron: -1 charge, mass 9.109×10⁻³¹ kg (1/1836 amu), in shells
+
+Thomson model: plum pudding (electrons embedded in +ve sphere) — WRONG
+Rutherford model: nucleus with electrons orbiting (α-scattering) — no electron stability
+Bohr model: quantised orbits for hydrogen — works for 1 electron atoms
+Quantum model: electrons in orbitals (probability clouds)
+
+PERIODIC TABLE AND PERIODIC PROPERTIES
+----------------------------------------
+Periods: 7 (horizontal rows) — same number of shells
+Groups: 18 (vertical columns) — same valence electrons
+  Group 1 (IA): Alkali metals (H, Li, Na, K, Rb, Cs, Fr)
+  Group 2 (IIA): Alkaline earth metals (Be, Mg, Ca, Sr, Ba, Ra)
+  Groups 3-12: Transition metals (d-block)
+  Group 17 (VIIA): Halogens (F, Cl, Br, I, At)
+  Group 18 (VIII/0): Noble gases (He, Ne, Ar, Kr, Xe, Rn)
+  Lanthanides & Actinides: f-block
+
+PERIODIC TRENDS (across period: left to right):
+  Atomic radius: DECREASES (more protons pull electrons closer)
+  Ionisation energy: INCREASES (harder to remove electron)
+  Electron affinity: generally INCREASES (more electronegative)
+  Electronegativity: INCREASES (F=4.0, highest)
+  Metallic character: DECREASES
+  
+PERIODIC TRENDS (down group):
+  Atomic radius: INCREASES (more shells)
+  Ionisation energy: DECREASES
+  Metallic character: INCREASES
+  Reactivity of metals: INCREASES
+
+Ionisation energy (IE): Energy needed to remove electron from gaseous atom
+  IE₁ < IE₂ < IE₃ < ... (each successive removal harder)
+  Big jump in IE when noble gas configuration reached
+
+CHEMICAL BONDING
+-----------------
+Ionic bond: Complete transfer of electrons (metal + non-metal)
+  NaCl: Na(1s²2s²2p⁶3s¹) → Na⁺(1s²2s²2p⁶) + Cl(3s²3p⁵) → Cl⁻(3s²3p⁶)
+  Properties: high mp/bp, soluble in water, conducts when molten/dissolved
+
+Covalent bond: Sharing of electrons (non-metal + non-metal)
+  Single bond: one shared pair (σ bond)
+  Double bond: one σ + one π bond
+  Triple bond: one σ + two π bonds
+  σ bond: head-on overlap, stronger, shorter
+  π bond: side-on overlap, weaker, longer
+
+Coordinate bond: Both electrons from one atom (donor-acceptor)
+  Example: NH₃ → BF₃ (N donates lone pair to B)
+
+Lewis structures: Count valence electrons, draw bonds, lone pairs
+  Octet rule: atoms tend to have 8 electrons (duet rule for H)
+  Exceptions: Be (4), B (6), P (10), S (12) can exceed octet
+
+VSEPR theory: Electron pairs repel → determines shape
+  2 pairs: linear (180°) — BeCl₂, CO₂
+  3 pairs: trigonal planar (120°) — BF₃, SO₃
+  4 pairs: tetrahedral (109.5°) — CH₄, CCl₄
+    3 bond + 1 lone: trigonal pyramidal (107°) — NH₃
+    2 bond + 2 lone: bent (104.5°) — H₂O
+  5 pairs: trigonal bipyramidal — PCl₅
+  6 pairs: octahedral — SF₆
+
+Hybridisation:
+  sp³: tetrahedral (CH₄, NH₃, H₂O) — 4 sigma bonds
+  sp²: trigonal planar (C₂H₄, BF₃) — 3 sigma + 1 pi
+  sp: linear (C₂H₂, BeCl₂, CO₂) — 2 sigma + 2 pi
+  sp³d: trigonal bipyramidal (PCl₅)
+  sp³d²: octahedral (SF₆)
+
+MOLECULAR ORBITAL THEORY:
+  Bonding MO: lower energy (electrons stabilise molecule)
+  Antibonding MO: higher energy (marked with *)
+  Bond order = (bonding electrons - antibonding electrons)/2
+  O₂: paramagnetic (2 unpaired electrons in π* orbitals)
+  N₂: triple bond, bond order = 3, very stable
+
+INTERMOLECULAR FORCES (weakest to strongest):
+  London dispersion (all molecules): temporary dipole-induced dipole
+  Dipole-dipole: polar molecules
+  Hydrogen bond: X-H...Y where X,Y = N, O, F  (strongest IMF)
+  Ion-dipole: ions in solution
+  Hydrogen bonding explains:
+    - High bp of H₂O, HF, NH₃ vs other group hydrides
+    - Water's anomalous density (ice less dense than water)
+    - High surface tension of water
+    - DNA double helix structure
+
+STATES OF MATTER AND GASES
+-----------------------------
+Ideal gas: PV = nRT, R = 8.314 J/mol·K = 0.0821 L·atm/mol·K
+Standard conditions: STP = 0°C, 1 atm (1 mol ideal gas = 22.4 L at STP)
+  NTP = 20°C, 1 atm (1 mol = 24.0 L)
+Dalton's law of partial pressures: P_total = P₁ + P₂ + P₃
+Graham's law of effusion: rate₁/rate₂ = √(M₂/M₁)
+van der Waals: (P + a/V²)(V - b) = RT  per mole
+
+Liquids: definite volume, no definite shape
+  Viscosity: resistance to flow (decreases with temperature)
+  Surface tension: energy to increase surface area (decreases with temperature)
+  Vapour pressure: increases with temperature
+  Boiling point: when VP = external pressure
+
+Phase diagrams:
+  Triple point: all three phases in equilibrium
+  Critical point: above this, no distinction between liquid and gas
+  Phase transitions: melting, freezing, evaporation, condensation, sublimation, deposition
+
+SOLUTIONS AND COLLIGATIVE PROPERTIES
+--------------------------------------
+Types: dilute, concentrated; unsaturated, saturated, supersaturated
+Solubility: mol of solute per litre of saturated solution
+  Henry's law: C = k_H·P  (gas solubility ∝ partial pressure)
+  Temperature effect: gases less soluble at higher T; most solids more soluble
+
+Concentration units:
+  Molarity (M) = mol solute/L solution
+  Molality (m) = mol solute/kg solvent
+  Mole fraction: χ_A = n_A/(n_A + n_B)
+  Parts per million: mg/kg or mg/L
+
+Colligative properties (depend only on amount of solute, not identity):
+  Vapour pressure lowering: ΔP = χ_solute·P°_solvent (Raoult's law)
+  Boiling point elevation: ΔTb = Kb·m  (Kb for water = 0.512 K·kg/mol)
+  Freezing point depression: ΔTf = Kf·m  (Kf for water = 1.86 K·kg/mol)
+  Osmotic pressure: π = MRT = CRT
+  For electrolytes: multiply by van't Hoff factor i = actual particles/formula units
+    NaCl: i≈2, CaCl₂: i≈3, glucose: i=1
+
+CHEMICAL EQUILIBRIUM
+---------------------
+At equilibrium: rate_forward = rate_reverse
+Equilibrium constant: Kc = [products]^stoich / [reactants]^stoich
+  Only includes aqueous and gaseous species (not pure solid/liquid)
+Kp = Kc(RT)^Δn  (Δn = moles gaseous products - moles gaseous reactants)
+  Kp = Kc when Δn = 0
+
+Le Chatelier's principle: Equilibrium shifts to oppose any imposed change
+  Add reactant → shifts right (more products)
+  Remove product → shifts right
+  Increase pressure → shifts toward fewer moles of gas
+  Increase temperature → shifts in endothermic direction (Kc changes)
+  Catalyst: has NO effect on equilibrium position, only on rate
+
+Reaction quotient Q:
+  Q < K: forward reaction favoured
+  Q = K: at equilibrium
+  Q > K: reverse reaction favoured
+
+For dissolution: Ksp = [cation]^a [anion]^b
+  Ion product > Ksp → precipitation occurs
+  Ion product < Ksp → solution unsaturated (more can dissolve)
+
+ACIDS, BASES AND pH
+--------------------
+Arrhenius: Acid gives H⁺; Base gives OH⁻ in water
+Brønsted-Lowry: Acid = proton donor; Base = proton acceptor
+  Conjugate acid-base pairs: HA/A⁻ and BH⁺/B
+Lewis: Acid = electron pair acceptor; Base = electron pair donor
+
+pH = -log[H⁺]  (pOH = -log[OH⁻])
+pH + pOH = 14 (at 25°C, Kw = 10⁻¹⁴)
+  pH < 7: acidic, pH = 7: neutral, pH > 7: basic (at 25°C)
+  Water: Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C
+
+Strong acids (complete dissociation): HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄
+Strong bases: NaOH, KOH, Ba(OH)₂, LiOH
+Weak acids: Ka = [H⁺][A⁻]/[HA]  (partial dissociation)
+  % dissociation = [H⁺]/C₀ × 100
+  For weak acid: [H⁺] ≈ √(Ka·C)  →  pH ≈ ½(pKa - log C)
+Buffer: weak acid + its conjugate base (or weak base + conjugate acid)
+  Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA])
+  Buffer range: pH = pKa ± 1
+
+CHEMICAL KINETICS
+------------------
+Rate = -d[A]/dt = k[A]^m[B]^n
+  m = order with respect to A, n with respect to B
+  Overall order = m + n
+  k = rate constant (units depend on order)
+
+Zero order: [A] = [A₀] - kt,  t₁/₂ = [A₀]/2k
+First order: ln[A] = ln[A₀] - kt,  t₁/₂ = 0.693/k (independent of concentration!)
+Second order: 1/[A] = 1/[A₀] + kt,  t₁/₂ = 1/(k[A₀])
+
+Arrhenius equation: k = Ae^(-Ea/RT)
+  ln k = ln A - Ea/RT,  log k = log A - Ea/(2.303RT)
+  ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂)
+  Ea = activation energy, A = frequency factor
+  Catalyst lowers Ea → increases rate
+
+Collision theory: Rate ∝ frequency of effective collisions
+  Effective collision: sufficient energy AND correct orientation
+Transition state theory: Reactants → Activated complex → Products
+  Reaction coordinate diagram shows energy profile
+
+ELECTROCHEMISTRY
+-----------------
+Electrolytic cell: electrical energy → chemical energy (electrolysis)
+Galvanic cell: chemical energy → electrical energy (battery)
+
+Standard electrode potentials (E°) vs Standard Hydrogen Electrode (SHE, E°=0)
+  More +ve E°: better oxidising agent (reduced at cathode)
+  More -ve E°: better reducing agent (oxidised at anode)
+  E°cell = E°cathode - E°anode (= E°reduction - E°oxidation)
+
+Nernst equation: E = E° - (RT/nF)ln Q = E° - (0.0592/n)log Q (at 25°C)
+  At equilibrium: E=0, so log K = nE°/0.0592
+
+Gibbs free energy: ΔG° = -nFE°cell = -RT ln K
+  ΔG < 0: spontaneous (galvanic cell)
+  ΔG > 0: non-spontaneous (electrolytic cell)
+
+Faraday's laws:
+  1st: m ∝ Q (charge passed)
+  2nd: m ∝ M/n (equivalent weight)
+  m = (M/nF)·Q = (M/nF)·It
+  F = 96485 C/mol ≈ 96500 C/mol
+
+Conductance = 1/Resistance (Siemens, S)
+Molar conductance Λm = κ/C  (κ = conductivity)
+Kohlrausch's law: Λ°m = λ°_cation + λ°_anion
+  At infinite dilution, ions act independently
+
+THERMODYNAMICS (CHEMICAL)
+--------------------------
+System: part being studied. Surroundings: rest of universe.
+State functions: U, H, G, S, T, P, V (path independent)
+Process functions: q (heat), w (work) (path dependent)
+
+First law: ΔU = q + w  (w = work done ON system = -P_ext·ΔV)
+Enthalpy: H = U + PV  →  ΔH = ΔU + ΔnRT (gases)
+  ΔH < 0: exothermic (heat released to surroundings)
+  ΔH > 0: endothermic (heat absorbed from surroundings)
+
+Hess's law: ΔH of reaction = sum of ΔH of individual steps
+Standard enthalpy: ΔH° at 25°C, 1 atm
+
+Entropy: S = k·ln W  (disorder)
+  ΔS > 0: disorder increases (spontaneous tendency)
+  ΔS_universe = ΔS_system + ΔS_surroundings ≥ 0 (2nd law)
+
+Gibbs free energy: ΔG = ΔH - TΔS
+  ΔG < 0: spontaneous,  ΔG = 0: equilibrium,  ΔG > 0: non-spontaneous
+  ΔG° = -RT ln K  →  K = e^(-ΔG°/RT)
+
+Temperature effects on spontaneity:
+  ΔH<0, ΔS>0: always spontaneous
+  ΔH>0, ΔS<0: never spontaneous
+  ΔH<0, ΔS<0: spontaneous at low T (TΔS < ΔH)
+  ΔH>0, ΔS>0: spontaneous at high T (TΔS > ΔH)
+  Crossover temperature: T = ΔH/ΔS (when ΔG=0)

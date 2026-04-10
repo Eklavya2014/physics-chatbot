@@ -1,0 +1,193 @@
+================================================================================
+                  GUT BIOLOGY & GASTROENTEROLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. THE GASTROINTESTINAL TRACT
+-------------------------------
+The GI tract is a ~9 metre tube from mouth to anus responsible for digestion,
+absorption, waste elimination, immune defence, and hormone production. It contains
+more neurons than the spinal cord (~500 million) — the "enteric nervous system."
+
+Regions and Key Functions:
+  Mouth        : Mechanical digestion (mastication); salivary amylase (starch); lysozyme + IgA (defence).
+  Oesophagus   : Peristalsis; no digestion. Lower oesophageal sphincter (LES) → prevents reflux.
+  Stomach      : Mechanical + chemical digestion. HCl (pH 1.5–2.0) + pepsinogen → pepsin.
+    Chief cells: Secrete pepsinogen (zymogen → activated by HCl).
+    Parietal cells: Secrete HCl (H+/K+-ATPase) + intrinsic factor (B12 absorption).
+    G cells: Secrete gastrin (stimulates HCl + pepsinogen).
+    D cells: Secrete somatostatin (inhibits gastrin + HCl + pancreatic secretion).
+    Mucus cells: Protective mucus + bicarbonate layer.
+  Small intestine: Main site of digestion and absorption. ~6–7 m.
+    Duodenum: Pancreatic enzymes + bile enter. Brunner's glands (bicarbonate).
+    Jejunum: Maximum absorption (villi + microvilli).
+    Ileum: B12 (with intrinsic factor) + bile salt reabsorption.
+  Large intestine: Water and electrolyte absorption; fermentation by microbiota. ~1.5 m.
+    Cecum → ascending → transverse → descending → sigmoid → rectum → anus.
+  Liver: Bile production; nutrient processing; detoxification; glycogen storage.
+  Gallbladder: Concentrates and stores bile. Releases in response to CCK.
+  Pancreas: Exocrine (digestive enzymes) + endocrine (insulin, glucagon).
+
+1.1 DIGESTION BIOCHEMISTRY
+----------------------------
+Carbohydrate Digestion:
+  Salivary amylase: Starch → maltose + dextrins (inactivated by stomach acid).
+  Pancreatic amylase: Continues in duodenum → maltose, maltotriose, limit dextrins.
+  Brush border enzymes: Lactase (lactose → glucose + galactose), maltase, sucrase-isomaltase.
+  Absorption: SGLT1 (Na+-glucose symporter) → enterocyte → GLUT2 → portal blood.
+
+Protein Digestion:
+  Pepsin (stomach, pH 1–2): Endopeptidase; breaks large proteins.
+  Pancreatic proteases: Trypsin (activates others), chymotrypsin, elastase, carboxypeptidases. All secreted as zymogens; enteropeptidase in duodenum activates trypsinogen → trypsin → cascade.
+  Brush border: Dipeptidases, aminopeptidases → amino acids, di/tripeptides.
+  Absorption: PepT1 (di/tripeptides) + specific amino acid transporters (PAAT, ASCT, CAT).
+
+Fat Digestion:
+  Gastric lipase: 10–30% of fat digestion; active in stomach (pH 3–6).
+  Bile salts (hepatic synthesis from cholesterol): Emulsify fats → smaller droplets.
+  Pancreatic lipase + colipase: Triglycerides → 2-monoglyceride + 2 fatty acids.
+  Absorption: Fatty acids + 2-MG → micelles → diffuse into enterocytes → re-esterified to TG → chylomicrons → lymph (lacteals) → thoracic duct → blood.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. GI HORMONES & REGULATION
+------------------------------
+Hormone     | Source         | Stimulus             | Key Actions
+------------|----------------|----------------------|----------------------------------
+Gastrin     | G cells (antrum)| Protein, distension  | ↑ HCl, pepsinogen, gastric motility
+Secretin    | S cells (duod.) | Acid in duodenum     | ↑ Pancreatic HCO3-, ↓ gastric motility
+CCK         | I cells (duod.) | Fat + protein        | ↑ Pancreatic enzymes, gallbladder contraction
+GIP (GIP)   | K cells        | Fat + glucose        | ↑ Insulin (incretin), ↓ gastric acid
+GLP-1       | L cells (ileum) | Fat + carbohydrates  | ↑ Insulin, ↓ glucagon, ↓ appetite, ↓ gastric emptying
+Motilin     | Mo cells       | Fasting              | MMC (migrating motor complex) — cleansing waves
+Ghrelin     | P/D1 cells (stomach)| Fasting         | ↑ Appetite (orexigenic), ↑ GH release
+Somatostatin| D cells        | Acid, fat, protein   | Inhibits gastrin, secretin, CCK, insulin
+VIP         | Enteric neurons| Distension, hypoxia  | Relaxes smooth muscle, ↑ intestinal secretion
+Substance P | Enteric neurons| Various stimuli      | ↑ Intestinal motility, pain transmission
+
+Phases of Gastric Secretion:
+  Cephalic phase (~30%): Anticipation/smell/taste → vagal stimulation → gastrin + HCl + pepsinogen.
+  Gastric phase (~60%): Food in stomach → distension + protein → gastrin → maximal HCl production.
+  Intestinal phase (~10%): Chyme in duodenum → initially stimulates, then inhibits gastric secretion.
+  Enterogastric reflex: Fat/acid/osmolarity in duodenum → inhibit gastric emptying (controls delivery rate).
+
+3. THE GUT BARRIER
+-------------------
+The gut epithelium separates luminal bacteria from systemic circulation. A single layer of cells (enterocytes) with multiple protective mechanisms:
+
+Physical Barriers:
+  Mucus layer: Two layers — inner (sterile, gel-forming MUC2 mucin); outer (loose, colonised by microbiota).
+    Goblet cells: Secrete MUC2. In colon, inner layer ~150 µm thick.
+  Glycocalyx: Sugar-protein coat on enterocyte surface; trap pathogens.
+  Tight junctions: Seal paracellular space. Claudins, occludins, JAM proteins → zonula occludens.
+
+Cellular Barriers:
+  Enterocytes: Primary absorptive cells; express pattern recognition receptors on basolateral side.
+  Goblet cells: Mucin secretion; also secrete RELM-beta (antimicrobial), TFF peptides.
+  Paneth cells: Deep in intestinal crypts; secrete lysozyme, alpha-defensins (cryptdins), RegIIIgamma.
+  Enteroendocrine cells: Secrete hormones (covered above) in response to luminal contents.
+  Tuft cells (chemosensory): Express taste receptors + DCLK1; sense parasites → IL-25 → ILC2 activation.
+  M cells (Microfold cells): Overlie Peyer's patches; sample luminal antigens by transcytosis → deliver to underlying macrophages and DCs → adaptive immune induction.
+
+Immune Barriers:
+  IgA: Dimeric secretory IgA (SIgA) secreted across epithelium by pIgR. ~3–5 g/day — most abundant Ig.
+    Functions: Neutralise pathogens + toxins; immune exclusion; regulate microbiome; no complement activation.
+  Lamina propria: Contains DCs (tolerogenic CX3CR1+ DCs sample bacteria), macrophages, IgA-producing plasma cells, Tregs, ILCs.
+  GALT (Gut-Associated Lymphoid Tissue): Peyer's patches, mesenteric lymph nodes, isolated lymphoid follicles.
+
+Leaky Gut / Increased Intestinal Permeability:
+  Tight junction disruption → bacterial products (LPS) enter portal blood → systemic inflammation.
+  Associated with: IBD, IBS, obesity, T2DM, NASH, sepsis, HIV, celiac disease, alcohol, NSAIDs.
+  Zonulin (HAPTOGLOBIN-2 related protein): Regulates TJ permeability; elevated in celiac disease + T1DM.
+
+4. INFLAMMATORY BOWEL DISEASE (IBD)
+--------------------------------------
+IBD = chronic inflammatory disorders of the GI tract. Two main types:
+
+Crohn's Disease (CD):
+  Can affect any segment of GI tract (mouth to anus); most common: terminal ileum + colon.
+  Transmural inflammation (full wall thickness). Skip lesions. Granulomas (non-caseating) in 30%.
+  Complications: Strictures, fistulae, abscesses, perianal disease, short bowel syndrome.
+  Pathogenesis: Genetic susceptibility (NOD2/CARD15 — most important; ~30% CD; senses bacterial MDP →
+    NF-kB → but mutant NOD2 → impaired Paneth cell defensin secretion → dysbiosis) + dysbiosis + immune dysregulation (Th17-dominant).
+
+Ulcerative Colitis (UC):
+  Continuous inflammation from rectum → colon (can extend to entire colon = pan-colitis).
+  Mucosal and submucosal only (not transmural). Crypt abscesses characteristic.
+  Complications: Toxic megacolon (surgical emergency), colorectal cancer (~5–10× risk), PSC.
+  Pathogenesis: Defective epithelial barrier + altered microbiome + Th2/Th17 dysregulation.
+
+IBD Genetics: >200 susceptibility loci. Core pathways: Mucosal barrier (MUC1, HNF4A, GNA12),
+  innate immunity (NOD2, CARD9, TLR), autophagy (ATG16L1, IRGM), IL-23/Th17 (IL23R, JAK2).
+
+IBD Treatment:
+  5-ASA (mesalazine): Luminal anti-inflammatory; mild-moderate UC.
+  Corticosteroids: Induce remission; not for maintenance (SE: osteoporosis, Cushing's, infection).
+  Immunomodulators: Azathioprine/6-MP (TPMT-guided dosing); methotrexate.
+  Biologics: Anti-TNF (infliximab, adalimumab, golimumab — UC; infliximab + adalimumab — CD).
+    Anti-integrin: Vedolizumab (anti-alpha4beta7) → gut-selective; no systemic immunosuppression.
+    Anti-IL-12/23: Ustekinumab (anti-p40 → blocks IL-12 + IL-23) → CD + UC.
+    Anti-IL-23 (p19 subunit only): Risankizumab, mirikizumab (more selective, better SE profile).
+    JAK inhibitors: Tofacitinib (JAK1/3 — UC); upadacitinib (JAK1 — UC + CD, highly effective).
+  Surgery: Colectomy for UC (curative); CD surgery not curative (resection of affected segment).
+  FMT (Faecal Microbiota Transplantation): Highly effective for recurrent C. diff (~90% cure);
+    trials in UC show moderate benefit; C. difficile FMT now FDA-regulated (SER-109 = capsule — approved 2023).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. INTESTINAL STEM CELLS & ORGANOIDS
+---------------------------------------
+LGR5+ Intestinal Stem Cells (Clevers lab, 2007):
+  LGR5: Wnt target gene; marks cycling CBC (crypt base columnar) stem cells.
+  Niche: Paneth cells provide Wnt3a + EGF + Notch ligands (DLL1/4) → maintain LGR5+ SC identity.
+  Hierarchy: LGR5+ → transit amplifying cells → terminally differentiated (enterocytes, goblet, EEC, Paneth, tuft).
+  Reserve stem cells: +4 cells (BMI1+, mTERT+) — quiescent backup activated after irradiation/damage.
+  Plasticity: Dedifferentiation → Dll1+ secretory precursors, Alpi+ enterocyte progenitors can revert to LGR5+ after crypt damage.
+
+Intestinal Organoids:
+  LGR5+ single cells or crypts + Matrigel + growth factors (EGF, Noggin, R-spondin1 = "ENR" media) → self-organising crypt-villus structures.
+  Contain all intestinal cell types. Recapitulate crypt-villus polarity and proliferative/differentiation gradients.
+  Applications: Drug testing; personalised medicine (patient-derived organoids + drug sensitivity testing in CF — Clinicf trial); gene editing; pathogen infection modelling (colonoids for C. diff, SARS-CoV-2 intestinal tropism); IBD mechanisms.
+  CFTR organoid assay (FIS = Forskolin-Induced Swelling): Functional readout of CFTR activity. Predicts individual response to CFTR modulators → precision medicine in CF.
+  Tumour organoids: Patient-derived CRC organoids → match drug response in vivo; biobank (Hubrecht Institute + Wellcome Sanger Institute).
+
+6. GUT MICROBIOME & HOST INTERACTION
+---------------------------------------
+Composition (covered in microbiome sections previously; focused expansion here):
+  Firmicutes: Lactobacillus, Ruminococcus, Faecalibacterium, Clostridiales. Butyrate producers.
+  Bacteroidetes: Bacteroides, Prevotella. Ferment complex polysaccharides. Propionate producers.
+  Actinobacteria: Bifidobacterium. Dominant in breastfed infants. HMOS utilisation.
+  Proteobacteria: E. coli (minor in healthy gut). Bloom in dysbiosis; includes pathogens.
+  Verrucomicrobia: Akkermansia muciniphila. Mucin-degrading; gut barrier health; inversely correlates with obesity, T2DM, IBD. Postbiotic: Pasteurised Am shown beneficial.
+
+Microbiome-Immune System Crosstalk:
+  SFB (Segmented Filamentous Bacteria): Murine gut commensal → drives Th17 cell differentiation in lamina propria → deficiency → impaired mucosal immunity.
+  Clostridia clusters (IV + XIVa): Promote Treg differentiation in colon via SCFAs + TGF-beta.
+  Bacteroides fragilis PSA: Polysaccharide A → TLR2 on DCs → IL-10 → Tregs → immune balance. Corrects T cell deficiency in germ-free mice.
+  SCFAs (butyrate, propionate, acetate):
+    Butyrate: Primary fuel for colonocytes; HDAC inhibitor → anti-inflammatory; activates GPR109A → tolerogenic DCs + Tregs; maintains tight junction integrity (claudin/occludin expression).
+    Propionate: GPR41/43 on immune cells; anti-inflammatory; liver glucose regulation.
+    Acetate: GPR43; anti-inflammatory; adipose tissue; brain function.
+
+Gut-Brain Axis:
+  Bidirectional communication: Brain ← gut via vagus nerve, HPA axis, immune signals, bacterial metabolites.
+  Enteric NS (ENS): 500M neurons; intrinsic control; functions without brain input (local reflexes).
+  Serotonin: ~95% in gut (enterochromaffin cells) → 5-HT3/4 receptors → peristalsis + vagal signalling. Tryptophan → microbiome → 5-HT. Microbiome depletion → reduced colonic 5-HT.
+  SCFA → gut-brain: Butyrate + propionate → satiety hormones (GLP-1, PYY) + direct brain effects.
+  Gut dysbiosis ↔ depression/anxiety: Germ-free rodents have exaggerated stress responses; colonising with depressed patient's microbiome → depressive behaviour in germ-free rats.
+  Microbiome-Parkinson's: Alpha-synuclein pathology may initiate in enteric neurons (Braak hypothesis); gut microbiome dysbiosis precedes motor symptoms; constipation is early PD symptom.
+
+[CLINICAL LINK] Clostridioides difficile infection (CDI):
+  Pseudomembranous colitis. Spore-forming; antibiotic-associated. Toxins A (enterotoxin) + B (cytotoxin) → disrupt actin cytoskeleton via TcdB Rho-glucosylation → tight junction disruption → profuse watery diarrhoea → toxic megacolon.
+  Treatment: Vancomycin or fidaxomicin (oral; narrower spectrum; less disruption of microbiome). Bezlotoxumab (anti-TcdB mAb) → prevent recurrence.
+  FMT: ~90% success rate for recurrent CDI. SER-109 (Vowst — purified Firmicutes spores) and RBX2660 (Rebyota — broad microbiome suspension): Both FDA-approved 2023 — first approved microbiome drugs.
+
+================================================================================

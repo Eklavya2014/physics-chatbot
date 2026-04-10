@@ -1,0 +1,171 @@
+================================================================================
+            STEM CELL BIOLOGY & REGENERATIVE MEDICINE
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. STEM CELL FUNDAMENTALS
+--------------------------
+Stem cells are undifferentiated cells with two defining properties:
+  1. Self-renewal: Ability to divide and produce more stem cells indefinitely.
+  2. Potency: Ability to give rise to specialised cell types.
+
+Potency Hierarchy (recap):
+  Totipotent  : Zygote + first 2–4 cells → can form entire organism including placenta.
+  Pluripotent : ESCs, iPSCs → can form all embryonic germ layers but not placenta.
+  Multipotent : HSCs, MSCs → limited lineage potential.
+  Bipotent    : Two cell types (e.g., common lymphoid progenitor → B or T cells).
+  Unipotent   : Single lineage only (spermatogonial stem cells → sperm).
+
+Types of Stem Cells:
+  Embryonic stem cells (ESCs): Derived from inner cell mass of blastocyst (day 5–6). Pluripotent. Ethical controversy → animal ESCs widely used; human ESC research regulated.
+  Induced pluripotent stem cells (iPSCs): Adult cells reprogrammed by Yamanaka factors (OCT4, SOX2, KLF4, c-MYC). Nobel Prize 2012. Same pluripotency as ESCs without embryo destruction.
+  Adult (somatic) stem cells: Tissue-resident; maintain homeostasis + repair. More restricted potency.
+    Haematopoietic stem cells (HSCs): Long-term (LT-HSC) → all blood lineages.
+    Mesenchymal stem/stromal cells (MSCs): Bone marrow, adipose, cord blood → bone, cartilage, fat, muscle.
+    Neural stem cells (NSCs): SVZ + SGZ → neurons + glia (limited in adult human).
+    Intestinal stem cells (ISC): LGR5+ CBC cells (covered in gut biology doc).
+    Skin epidermal stem cells: Bulge region of hair follicle + basal layer.
+    Cardiac progenitor cells: Very limited; negligible regenerative capacity in adult human.
+
+1.1 STEM CELL MARKERS
+-----------------------
+Key surface markers used for isolation:
+  ESC/iPSC: OCT4, SOX2, NANOG (pluripotency TFs); surface: SSEA-4 (human), TRA-1-60, TRA-1-81, CD9.
+  HSC (human): CD34+, CD38-, CD90+, CD45RA-, CD49f+. Lin- (negative for lineage markers).
+  MSC: CD73+, CD90+, CD105+, CD34-, CD45-, CD14-, CD19-. Negative for haematopoietic/endothelial markers.
+  Neural stem cell: Nestin+, Sox2+, GFAP+, CD133 (Prominin-1)+.
+  Cancer stem cells: Vary by tumour type. Breast: CD44+CD24-/low; CRC: CD133+; AML: CD34+CD38-.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. PLURIPOTENCY NETWORKS
+--------------------------
+Core pluripotency transcription factors form a self-reinforcing circuit:
+  OCT4 (POU5F1): Master regulator; activates pluripotency genes; represses differentiation.
+  SOX2: HMG-box TF; forms OCT4-SOX2 heterodimer on many pluripotency gene enhancers.
+  NANOG: Homeobox; maintains ground state pluripotency; fluctuates → primes differentiation.
+  KLF4: Activates OCT4; represses differentiation genes.
+
+Super-enhancers at pluripotency genes: Extremely large enhancer clusters drive high OCT4/SOX2/NANOG expression via transcriptional condensates (BRD4/Mediator).
+
+Epigenetic landscape:
+  Active: H3K4me3 + H3K27ac at pluripotency gene promoters/enhancers.
+  Bivalent domains: H3K4me3 + H3K27me3 co-occur at developmental regulator genes (Hox, Pax) → poised for activation on differentiation.
+  ESC has globally open, hyperactive chromatin → progressively restricted on differentiation.
+
+Naive vs Primed Pluripotency:
+  Naive (ground state, ESC from ICM): Two active X chromosomes; X-inactivation not yet occurred; clonogenic; independent of MEK/ERK and FGF signalling.
+    Maintained by: 2i media (MEK inhibitor PD0325901 + GSK3 inhibitor CHIR99021) + LIF.
+  Primed (EpiSC, epiblast): One active X; dependent on FGF/Activin; less clonogenic; more similar to human ESC.
+  Human ESC: More similar to primed state. Research ongoing to establish truly naïve human pluripotency.
+
+iPSC Reprogramming:
+  Original Yamanaka 2006 method: Retroviral vectors (MMLV) → murine fibroblasts → iPSC colonies after ~3 weeks.
+  Safer delivery methods: Non-integrating episomal vectors, mRNA transfection, Sendai virus (non-integrating RNA virus), small molecule cocktail (for partial reprogramming without transgenes).
+  Reprogramming barriers: DNA damage response (p53 activation → apoptosis), senescence, incomplete epigenetic reprogramming.
+  Transgene-free iPSCs: Achieved by multiple methods; required for clinical applications.
+  Disease modeling: ALS (SOD1, FUS), PD (SNCA, LRRK2), schizophrenia (DISC1), DMD, SMA, cystic fibrosis, retinal dystrophies — "disease in a dish."
+
+3. HAEMATOPOIETIC STEM CELL BIOLOGY
+--------------------------------------
+HSC Hierarchy:
+  LT-HSC (long-term) → ST-HSC (short-term, ~5–8 week repopulation) → MPP (multipotent progenitor) →
+  CMP (common myeloid) or CLP (common lymphoid) → further differentiation.
+  LT-HSC characteristics: Mostly quiescent (G0); low metabolic rate; ROS-low; glycolysis-dependent; high autophagy.
+
+HSC Niche (detailed):
+  Endosteal niche: CXCL12-abundant reticular (CAR) cells + osteoblasts + sympathetic nerves → maintain quiescence.
+  Perivascular niche: Sinusoidal endothelium + CXCL12 CAR cells + megakaryocytes → activate HSC.
+  CXCL12/CXCR4 axis: Essential for HSC retention in marrow. AMD3100 (plerixafor, CXCR4 antagonist) + G-CSF → mobilise HSCs for collection.
+  Thrombopoietin (TPO)/MPL: HSC self-renewal signal. Romiplostim (TPO receptor agonist) used in ITP.
+
+Clonal Haematopoiesis of Indeterminate Potential (CHIP):
+  Somatic mutations in HSCs (DNMT3A, TET2, ASXL1, JAK2 V617F) → clonal expansion.
+  Prevalence: ~10% at age 70; ~20% at age 80. Associated with: CV disease (2× risk MI, 4× risk stroke), haematological malignancy (10% 10-year risk), overall mortality.
+  TET2 CHIP → macrophage IL-6/IL-1beta → atherosclerosis (mouse model; IL-1beta blockade partially reverses).
+
+4. iPSC-DERIVED CELL THERAPIES
+---------------------------------
+Approved/Advanced iPSC Products:
+  OCU400 (Ocugen): Photoreceptor precursors from iPSCs for retinal dystrophies. Phase III.
+  RPE from iPSCs (Masayo Takahashi): AMD treatment. Japanese Phase I/II — transplanted autologous iPSC-derived RPE sheet. Safety demonstrated.
+  iPSC-NK cells (Fate Therapeutics, FT516/FT538/FT576): Off-the-shelf NK cells for cancer. Phase I/II.
+  iPSC-T cells: Engineered with TCR or CAR; allogeneic. Early phase.
+  iPSC-Cardiomyocytes: Remuscularisation post-MI (covered in CV biology doc).
+  iPSC-Islets (beta cells): Type 1 diabetes → subcapsular transplantation + device encapsulation to avoid immunosuppression. Vertex (VX-880/VX-264): ESC-derived islets → functional insulin response in T1DM.
+
+Challenges:
+  Tumorigenicity: Undifferentiated iPSC contamination → teratoma risk. Stringent safety testing required.
+  Immunogenicity: Allogeneic cells → HLA mismatch → rejection. Solutions: HLA homozygous "super-donors," HLA knockout + HLA-E expression, off-the-shelf approaches.
+  Functional maturity: iPSC-CMs and iPSC-hepatocytes show fetal-like characteristics → need maturation protocols.
+  Manufacturing scale: GMP-grade production of consistent cells at therapeutic scale is challenging and costly.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. ORGANOIDS — BIOLOGY & APPLICATIONS
+----------------------------------------
+3D self-organising structures derived from stem cells that recapitulate organ architecture.
+Pioneer work: Clevers (intestinal, 2009), Lancaster (cerebral, 2013), Huch (liver/pancreas, 2013), Karthaus (prostate, 2014).
+
+Types and Applications:
+  Brain (cerebral) organoids: From ESC/iPSC → neuroectoderm → 3D structures with cortical layers.
+    Contain: Neuroepithelial stem cells, IPC, cortical neurons (deep and superficial), astrocytes.
+    Uses: Model cortical development; microcephaly (ASPM, CDK5RAP2, MCPH1 mutations → reduced lobe formation); SARS-CoV-2 neurotropism; Zika virus (causes microcephaly — cortical organoids showed reduced progenitor proliferation → mechanism).
+  Liver organoids: Ductal (cholangiocyte-derived) or hepatocyte organoids. Drug toxicity screening; disease modelling (NASH, Wilson's, AAT deficiency).
+  Kidney organoids (Phipson, Little, Bhatt): Recapitulate nephron segments. Drug nephrotoxicity; PKD modelling; Wilms tumour.
+  Lung organoids: Model SARS-CoV-2 infection; CF; IPF. Airway vs alveolar subtypes.
+  Cardiac organoids: Chamber-like structures; cardiomyocytes + endothelium + cardiac fibroblasts. Drug cardiotoxicity (replace HERG assay).
+  Tumour organoids: Patient-derived (PDOs) → drug sensitivity testing; biobank correlations with clinical response.
+
+Assembloids:
+  Two or more organoids fused together to model tissue-tissue interactions.
+  Cortical-thalamic assembloids: Model thalamocortical projection development.
+  Forebrain-spinal cord assembloids: Study corticospinal tract formation.
+  Brain-gut assembloids: Model enteric nervous system.
+  Vascularised organoids: Co-culture with endothelial cells → partial vascularisation → improved survival and maturation.
+
+Organ-on-a-Chip:
+  Microfluidic devices housing living cells in 3D environments with fluid flow.
+  Gut-on-a-chip (Ingber lab): Caco-2 cells + peristaltic flow + gut microbiome → model intestinal physiology.
+  Lung-on-a-chip: Alveolar + endothelial cells + air-liquid interface + cyclic stretch → breathing motion.
+  Multi-organ: Body-on-a-chip → liver + gut + kidney + heart chips linked → systemic drug toxicity/ADME.
+  Advantages over organoids: Defined fluid flow, mechanical forces, compartmentalisation.
+
+6. CANCER STEM CELLS (CSCs)
+-----------------------------
+Hypothesis: Tumours contain a subpopulation of cells with stem cell properties → responsible for tumour initiation, maintenance, metastasis, and recurrence.
+
+Evidence:
+  Al-Hajj (2003): CD44+CD24- breast cancer cells → 100× more tumorigenic in xenograft than CD44-CD24+ cells.
+  Dick (1994–1997): AML xenograft transplantation → only CD34+CD38- cells initiated AML.
+  Hierarchical organisation in some tumours (CRC, AML, glioblastoma) → supports CSC model.
+  Lineage tracing in mouse models: LGR5+ CRC cells → drive metastasis; LGR5- cells can revert to LGR5+ state → plasticity.
+
+CSC Properties:
+  Self-renewal (Wnt, Notch, Hedgehog signalling).
+  Drug resistance: Slow cycling (evade S-phase targeting drugs); ABC transporters; efficient DNA repair; anti-apoptotic proteins (BCL-2 high); ROS-low (protect from oxidative damage of many drugs).
+  EMT (Epithelial-Mesenchymal Transition): CSC properties overlap with EMT state → invasive + stem-like simultaneously.
+  Symmetric vs asymmetric division: CSC can self-renew or produce more differentiated progeny.
+
+Targeting CSCs:
+  BMP pathway: BMP4 promotes CSC differentiation → clinical trials (AML, CRC, GBM).
+  LGR5 targeting: Antibody-drug conjugate (ADC) against LGR5+ CRC cells.
+  Hedgehog inhibitors: Vismodegib (Smo inhibitor) → basal cell carcinoma (skin CSC → approved); medulloblastoma (PTCH1-mutant).
+  Wnt inhibitors: Porcupine inhibitors (WNT-974, LGK-974) → multiple trials in KRAS-mutant cancers.
+  Notch inhibitors: Gamma-secretase inhibitors (GSIs) — trial toxicity (GI goblet cell metaplasia); selective NOTCH1/2 antibodies in trials.
+  Targeting CSC metabolism: CSCs often depend on OXPHOS (vs glycolysis in bulk tumour) — metformin, IACS-010759 (ETC complex I) in trials.
+
+[ETHICAL CONTEXT] Stem cell research ethics:
+  Human embryonic stem cells: Controversy over blastocyst destruction. 14-day rule: Most countries limit embryo research to 14 days (before primitive streak). 2021: International Society for Stem Cell Research relaxed 14-day rule → allows extending under strict oversight.
+  Gastruloids/synthetic embryos: Stem cells → self-organise into embryo-like structures (gastruloids, EPSC-derived blastoids). Regulatory grey area; profound ethical questions about moral status.
+  Germline editing (inherited): CRISPR editing of human embryos (He Jiankui, 2018 — twins Lulu/Nana, CCR5 deletion) → universal condemnation → scientific moratorium on heritable germline editing pending ethical framework.
+
+================================================================================

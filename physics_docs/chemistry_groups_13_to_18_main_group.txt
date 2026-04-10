@@ -1,0 +1,439 @@
+================================================================================
+    CHEMISTRY: MAIN GROUP ELEMENTS — Groups 13 to 18 (p-Block)
+           All Elements · Properties · Valency · Key Chemistry
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 13 — BORON GROUP (ns² np¹)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 3 (ns² np¹). Common valency = 3. Common OS = +3.
+Trend: B = metalloid (covalent); Al, Ga, In = metals; Tl = heavy metal (+1 dominant).
+Boron anomaly: B forms covalent, not ionic, compounds (high charge density of B³⁺ → polarises).
+Inert pair effect: Increases down group → Tl prefers +1 (6s² inert pair stabilised by relativistic effects).
+
+ELEMENT 5: BORON (B) — [He] 2s² 2p¹
+  Valency: 3. OS: +3 (covalent compounds); formally -3 rare.
+  Melting Point: 2075°C. Density: 2.37 g/cm³. Metalloid.
+  Electron-deficient: B forms only 3 bonds → 6-electron species (Lewis acid). Often forms 4-coordinate [BX₄]⁻ or adducts (B + NH₃ → H₃N→BH₃).
+  Allotropes: Amorphous boron; α-rhombohedral (12-atom icosahedra); β-rhombohedral.
+  BF₃: Lewis acid catalyst; trigonal planar; accepts F⁻ → [BF₄]⁻.
+  BCl₃: Lewis acid; used in organic synthesis; reacts with water → B(OH)₃ + HCl.
+  B₂H₆ (diborane): Unusual bonding (three-centre two-electron bonds, 3c-2e — "banana bonds"); strong reducing agent; hydroboration of alkenes (anti-Markovnikov addition, Nobel 1979 Brown).
+  H₃BO₃ (boric acid): Weak acid (Lewis acid acting as base collector, not proton donor); pH 9 → B(OH)₄⁻; antiseptic; flux.
+  Na₂B₄O₇·10H₂O (borax): Cleaning agent; insecticide; glass making; buffer.
+  B₄C: Boron carbide; 3rd hardest material known (after diamond, c-BN); abrasive; armour.
+  BN (boron nitride): Isoelectronic with C₂ (graphite-like hexagonal or diamond-like cubic c-BN); hardest ceramic; lubricant.
+  Borosilicate glass (Pyrex): ~13% B₂O₃ → low thermal expansion coefficient → lab glassware, cookware.
+  ¹⁰B: Captures neutrons (boron neutron capture therapy, BNCT → cancer treatment; nuclear reactor control rods).
+  Organoboron: Boronic acids (RB(OH)₂) → Suzuki cross-coupling; pharmaceutical synthesis; sensors.
+
+ELEMENT 13: ALUMINIUM (Al) — [Ne] 3s² 3p¹
+  Valency: 3. OS: +3 only.
+  Melting Point: 660°C. Density: 2.70 g/cm³. Most abundant metal in Earth's crust.
+  Amphoteric: Al + NaOH + H₂O → Na[Al(OH)₄] + H₂ (aluminate); Al + HCl → AlCl₃ + H₂.
+  Al₂O₃ (alumina): Very hard (corundum, Mohs 9); ruby = Al₂O₃ with Cr³⁺; sapphire = Al₂O₃ with Fe²⁺/³⁺/Ti⁴⁺.
+  Al(OH)₃: Amphoteric; gelatinous; used as antacid; purifies water (flocculation).
+  Thermite: Al + Fe₂O₃ → Al₂O₃ + Fe + heat (2500°C) — aluminothermic reaction; welding rails.
+  AlCl₃: Lewis acid catalyst (Friedel-Crafts reactions: alkylation and acylation of benzene ring).
+  Bauxite (Al₂O₃·2H₂O): Ore of Al. Bayer process (NaOH extraction) → Hall-Héroult process (electrolysis of Al₂O₃ in molten cryolite Na₃AlF₆ at 950°C) → pure Al.
+  Alloys: Al-Cu (Duralumin, aircraft), Al-Mg, Al-Si, Al-Zn (aerospace), Al-Li.
+  [Al(H₂O)₆]³⁺: Acidic solution (hydrolysis: pH ~5); "alum water" acidic.
+  Alums: MAl(SO₄)₂·12H₂O (M = K, NH₄); mordant in dyeing; paper making; water purification.
+  Uses: Packaging (cans, foil), construction (window frames), aerospace, power lines, automobiles.
+
+ELEMENT 31: GALLIUM (Ga) — [Ar] 3d¹⁰ 4s² 4p¹
+  Valency: 3. OS: +3 (stable); +1 (rare).
+  Melting Point: 29.76°C (near room temp). Boiling Point: 2204°C. Unique liquid range.
+  Liquid gallium wets glass → mirror-like (unlike mercury, Ga does not amalgamate Fe/Ni).
+  GaAs (gallium arsenide): III-V semiconductor; higher electron mobility than Si; LEDs, lasers, solar cells, mobile phones.
+  GaN (gallium nitride): Wide bandgap semiconductor; blue LEDs (Nakamura Nobel 2014); high-power electronics; 5G.
+  Ga₂O₃: Ultra-wide bandgap semiconductor; power electronics.
+  Ga used in thermometers (replacing Hg — non-toxic).
+  ⁶⁷Ga, ⁶⁸Ga: Medical imaging (⁶⁸Ga-DOTATATE PET for neuroendocrine tumours).
+
+ELEMENT 49: INDIUM (In) — [Kr] 4d¹⁰ 5s² 5p¹
+  Valency: 3. OS: +3 (most stable); +1 (minor).
+  Melting Point: 156.6°C. Very soft, silvery metal; makes a high-pitched "cry" when bent.
+  ITO (Indium Tin Oxide): Transparent conductor; touchscreens, LCD displays, OLEDs.
+  InP, InGaAs: Semiconductors for fibre-optic communications (near-IR lasers/detectors).
+  Low melting alloys; solders; bearings; transistors.
+
+ELEMENT 81: THALLIUM (Tl) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹
+  Valency: 1 (Tl⁺ dominant — inert pair effect), 3.
+  OS: +1 (Tl⁺ — similar to K⁺ in size; ionic compounds like KCl analogues); +3 (Tl³⁺, strong oxidant).
+  Highly toxic (inhibits K⁺ channels — similar size to K⁺; used as rat/insect poison historically).
+  ²⁰¹Tl: Cardiac imaging (thallium stress test, now replaced by ⁹⁹ᵐTc and PET).
+  Tl₂SO₄: Historical rodenticide (banned in most countries due to human toxicity).
+  High-Tc superconductors: Tl-Ba-Ca-Cu-O (TBCCO) → Tc up to 138 K.
+
+ELEMENT 113: NIHONIUM (Nh) — [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹
+  Valency: Predicted 3, 1. Atomic Number: 113. Discovered by RIKEN (Japan) 2004.
+  Radioactive; t½ of most stable isotope (²⁸⁶Nh) ≈ 20 seconds. Too unstable to study chemistry.
+  Named after Japan (Nihon = Japan). First element discovered in Asia.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 14 — CARBON GROUP (ns² np²)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 4 (ns² np²). Max valency = 4. OS = +4, -4, +2.
+Carbon: Forms ≥ 10 million compounds; basis of organic chemistry.
+Inert pair: Pb, Sn, Ge prefer +2 (bottom of group). Carbon: Mainly +4 or -4.
+
+ELEMENT 6: CARBON (C) — [He] 2s² 2p²
+  Valency: 4 (most important); 2 (carbenes, CO); also forms double/triple bonds.
+  OS: -4 (methane, CH₄) to +4 (CO₂). All intermediate values possible.
+  Allotropes:
+    Diamond      : sp³ hybridised; tetrahedral lattice; hardest natural material (10 Mohs); insulator; thermal conductor; ~3.52 g/cm³. Gem; cutting tools; optical windows.
+    Graphite     : sp² hybridised; hexagonal layers (graphene sheets); conductor (delocalised electrons); lubricant; electrodes; pencils. ~2.09 g/cm³.
+    Graphene     : Single graphene sheet; 2D material; strongest material known; excellent conductor; Nobel 2010 (Geim & Novoselov). Zero-gap semiconductor; transistors; composites.
+    Fullerene C₆₀: Buckminsterfullerene ("buckyball"); 60 C atoms; soccer-ball structure; Nobel 1996.
+    Carbon nanotubes: Rolled graphene; SWCNT/MWCNT; extraordinary strength + conductivity; electronics; composites.
+    Amorphous carbon: Coal, charcoal, soot, activated carbon; no long-range order.
+    Lonsdaleite: Hexagonal diamond; found in meteorites; theoretically harder than diamond.
+
+  Carbon Bonding:
+    Single bond: C-C 347 kJ/mol; 154 pm.
+    Double bond: C=C 614 kJ/mol; 134 pm.
+    Triple bond: C≡C 839 kJ/mol; 120 pm.
+    C-H bond: 413 kJ/mol; 109 pm.
+    Hybridisation: sp³ (tetrahedral, 109.5°), sp² (trigonal planar, 120°), sp (linear, 180°).
+
+  Carbon Chemistry:
+    CO₂: Linear, non-polar; acidic oxide; photosynthesis/respiration; greenhouse gas; supercritical CO₂ solvent.
+    CO : Linear; toxic (binds Hb with 240× affinity vs O₂); ligand in metal carbonyls; reducing agent.
+    CO₃²⁻: Planar, trigonal; carbonates; important minerals (limestone CaCO₃).
+    CH₄: Methane; natural gas; tetrahedral; greenhouse gas (86× CO₂ over 20 yr).
+    C₆H₆ (benzene): Aromatic; delocalized; resonance; planar; 120°.
+    Organic chemistry: Covered in dedicated document.
+
+  ¹⁴C: Radioactive (t½=5,730 yr); radiocarbon dating; cosmic ray-produced; equilibrium with atmosphere.
+  Carbon isotopes: ¹²C (98.89%), ¹³C (1.11% — NMR active), ¹⁴C (trace).
+  Diamond synthesis: HPHT (high pressure high temperature) or CVD (chemical vapour deposition) → lab-grown diamonds.
+
+ELEMENT 14: SILICON (Si) — [Ne] 3s² 3p²
+  Valency: 4. OS: +4, -4, +2 (rare).
+  2nd most abundant element in Earth's crust (27.7% by mass).
+  Metalloid: Semiconductor (bandgap 1.12 eV); basis of all modern electronics.
+  Silicon vs Carbon: Si does NOT readily form p-p π bonds (3p-3p overlap poor); Si=Si and Si=O double bonds rare → Si tends to form single bond networks (SiO₄ tetrahedra).
+  SiO₂ (silica): Quartz, sand, flint; giant covalent lattice; high mp (1710°C); acid-resistant; optical fibre (high-purity SiO₂).
+  Silicates: SiO₄ tetrahedra linked in chains, sheets, 3D networks → all rocks/minerals.
+  Si for microelectronics: Zone refining → ultrapure Si → doped with P (n-type) or B (p-type) → transistors.
+  Polysiloxanes (silicones): (Si-O)ₙ backbone + organic groups → flexible, inert, temperature-stable; implants, sealants, lubricants, cookware.
+  SiC (silicon carbide): Very hard; abrasive; semiconductor; high-temperature applications.
+  SiH₄ (silane): Pyrophoric; less stable than CH₄ (no Si analogue of organic chemistry due to Si-Si bond weakness).
+  Zeolites: Aluminosilicate framework; microporous; ion exchange; catalysis; molecular sieves.
+
+ELEMENT 32: GERMANIUM (Ge) — [Ar] 3d¹⁰ 4s² 4p²
+  Valency: 4. OS: +4 (mainly); +2.
+  Metalloid predicted by Mendeleev (eka-silicon, 1871) → discovered 1886 (Clemens Winkler) — great triumph for periodic table.
+  Semiconductor (bandgap 0.67 eV; used in early transistors before Si dominance).
+  Infrared optics (transparent to IR); fibre-optic cables (GeO₂ added to raise refractive index); solar cells.
+
+ELEMENT 50: TIN (Sn) — [Kr] 4d¹⁰ 5s² 5p²
+  Valency: 2, 4. OS: +2 (Sn²⁺, stannous), +4 (Sn⁴⁺, stannic).
+  Melting Point: 231.9°C. Density: 7.31 g/cm³.
+  Allotropes: White tin (β, normal metal, >13.2°C); grey tin (α, non-metallic, <13.2°C — "tin pest").
+    Tin pest: White → grey below 13.2°C (catastrophic disintegration); affected Napoleon's army's tin coat buttons in Russia.
+  Sn²⁺: Mild reducing agent. SnCl₂ → reduces Fe³⁺ → Fe²⁺; reduces HgCl₂ → Hg.
+  Tin plating: Thin Sn layer on steel (tin cans for food packaging) — non-toxic, corrosion resistant.
+  Bronze: Cu-Sn alloy; used since ~3300 BCE (Bronze Age).
+  Pewter: 85-99% Sn + Cu, Sb, Bi.
+  Solder: Sn-Pb (traditional, toxic) or Sn-Ag-Cu (lead-free RoHS compliant).
+  Organotin: Tributyltin (TBT) — marine antifouling paint (now banned — endocrine disruptor).
+
+ELEMENT 82: LEAD (Pb) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²
+  Valency: 2 (dominant — inert pair 6s²), 4.
+  OS: +2 (Pb²⁺, plumbous, most stable due to relativistic stabilisation of 6s²); +4 (Pb⁴⁺, strong oxidant, PbO₂).
+  Melting Point: 327.5°C. Density: 11.34 g/cm³ (very dense).
+  Soft, heavy, grey metal; easily workable.
+  Highly toxic: Cumulative poison; replaces Ca²⁺ in enzymes/bone; inhibits haem synthesis; neurotoxic (especially children — IQ reduction, behavioural effects).
+  Lead poisoning (plumbism): Historical — Roman aqueducts (Pb pipes), wine sweetened with Pb(OAc)₂; leaded petrol (TEL — tetraethyllead); lead paint. Now mostly phased out.
+  PbSO₄/PbO₂: Lead-acid battery (Pb anode, PbO₂ cathode, H₂SO₄ electrolyte) — still used in cars (12V batteries).
+  Pb shielding: Dense → blocks gamma radiation + X-rays.
+  PbS (galena): Main ore of Pb; semiconductor; crystal radio detectors.
+  PbO (litharge, red/yellow): Pigment; glassmaking (crystal glass with high refractive index).
+  Pb₃O₄ (red lead/minium): Anti-corrosion primer for steel.
+  Pb(C₂H₅)₄ (tetraethyllead, TEL): Anti-knock additive in petrol → now banned globally.
+  Radiogenic lead: Stable endpoint of U and Th radioactive decay series → used in radiometric dating.
+
+ELEMENT 114: FLEROVIUM (Fl) — Atomic Number 114. Superheavy, radioactive. Predicted to be a gas or volatile metal (relativistic effects make 7p electrons behave like noble gas). t½ < 2 seconds.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 15 — NITROGEN GROUP / PNICTOGENS (ns² np³)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 5 (ns² np³). Valency = 3, 5.
+Half-filled p subshell: np³ → extra stability → EA and IE anomalies (N has higher IE than O).
+OS: -3 (most reduced, e.g. NH₃, PH₃), +3, +5 (most oxidised, e.g. NO₃⁻, PO₄³⁻, P₂O₅).
+Trend: N = non-metal (gas); P, As, Sb = metalloids/metals; Bi = metal.
+
+ELEMENT 7: NITROGEN (N) — [He] 2s² 2p³
+  Valency: 3 (NH₃, NR₃); 4 (NH₄⁺); 5 is NOT common for N (no 2d orbitals available).
+  OS: -3 (NH₃) → -2 (N₂H₄) → -1 (NH₂OH) → 0 (N₂) → +1 (N₂O) → +2 (NO) → +3 (HNO₂) → +4 (NO₂) → +5 (HNO₃).
+  Melting Point: -210°C. Boiling Point: -196°C. Colourless gas; diatomic (N≡N, bond order 3, 945 kJ/mol — very strong).
+  78% of Earth's atmosphere (N₂). Very unreactive due to strong triple bond.
+
+  Nitrogen Compounds:
+    NH₃ (ammonia): Haber-Bosch process (N₂ + 3H₂ ⇌ 2NH₃ at 400-500°C, 150-300 atm, Fe catalyst). Fertiliser; refrigerant; cleaning.
+    HNO₃ (nitric acid): Ostwald process (4NH₃ + 5O₂ → 4NO + 6H₂O; 2NO + O₂ → 2NO₂; 3NO₂ + H₂O → 2HNO₃ + NO). Strong acid; oxidant; fertiliser (NH₄NO₃); explosives; nitration reactions.
+    NO : Nitric oxide; colourless gas; biochemical messenger (vasodilation, immune function); forms NO₂ in air.
+    NO₂: Brown gas; toxic; acid rain precursor; equilibrium with N₂O₄.
+    N₂O: Nitrous oxide ("laughing gas"); anaesthetic; propellant (whipped cream); greenhouse gas (298× CO₂).
+    N₂H₄: Hydrazine; rocket propellant; reducing agent; corrosion inhibitor.
+    NaN₃: Sodium azide; airbag inflation (2NaN₃ → 2Na + 3N₂ rapidly).
+    Urea (NH₂CONH₂): Largest volume organic chemical; fertiliser; plastic (urea-formaldehyde); formed in urea cycle.
+    TNT: 2,4,6-Trinitrotoluene; explosive; nitro groups (-NO₂) destabilise ring.
+
+ELEMENT 15: PHOSPHORUS (P) — [Ne] 3s² 3p³
+  Valency: 3 (PH₃, PCl₃); 5 (PCl₅, H₃PO₄); rarely 1, 2, 4.
+  OS: -3 (PH₃), +3 (PCl₃, H₃PO₃), +5 (PCl₅, H₃PO₄, PO₄³⁻).
+  Allotropes:
+    White P: P₄ tetrahedra; waxy solid; extremely toxic; glows in dark (phosphorescence — actually chemiluminescence); ignites in air (stored under water); matches (historically).
+    Red P: Amorphous polymer chains; less reactive; safer; used in modern matches (striking surface).
+    Black P: Most stable; layered structure like graphite; semiconductor.
+    Violet P: Monoclinic; crystalline.
+
+  Phosphorus Chemistry:
+    H₃PO₄: Orthophosphoric acid; triprotic weak acid; fertilisers (superphosphate); cola drinks (tooth erosion); Rust converter.
+    PCl₃: Trihalide; Lewis base (lone pair on P); hydrolyses → H₃PO₃ + HCl.
+    PCl₅: Pentahalide; can expand octet (d orbitals, 3d); trigonal bipyramidal; hydrolyses → H₃PO₄ + HCl.
+    PO₄³⁻ (phosphate): Essential biological molecule: DNA/RNA backbone; ATP; phospholipids; bone mineral.
+    ATP: Adenosine triphosphate; energy currency; hydrolysis of terminal phosphate releases ~30.5 kJ/mol.
+    Nerve agents: Sarin, VX, Novichok — organophosphates that irreversibly inhibit acetylcholinesterase.
+    Glyphosate (Roundup): Herbicide; EPSPS inhibitor; most widely used pesticide globally.
+    Organophosphate insecticides: Malathion, parathion (AChE inhibitors; toxic to insects + mammals).
+
+ELEMENT 33: ARSENIC (As) — [Ar] 3d¹⁰ 4s² 4p³
+  Valency: 3, 5. OS: -3 (AsH₃), +3 (As₂O₃), +5 (As₂O₅, AsO₄³⁻).
+  Metalloid; grey As = most stable form; brittle; toxic.
+  As₂O₃ (arsenic trioxide, arsenious oxide): Highly toxic ("poison of kings"; historically used for murder); treatment of APL leukaemia (ATO — approved for APL refractory disease).
+  AsH₃ (arsine): Extremely toxic gas; semiconductor dopant (n-type doping of Si, Ge).
+  GaAs: Important III-V semiconductor.
+  Historical: Copper arsenite (Paris green) — pigment and insecticide; Fowler's solution (KAsO₂) — historical tonic/cure.
+
+ELEMENT 51: ANTIMONY (Sb) — [Kr] 4d¹⁰ 5s² 5p³
+  Valency: 3, 5. OS: -3, +3, +5.
+  Metalloid; brittle, bluish-white solid.
+  Sb alloys (Sb + Pb): Type metal (printing alloys); bearing metals (Babbitt metal); flame retardants.
+  Sb₂O₃: Synergistic flame retardant with halogenated compounds.
+  SbCl₃: Lewis acid; catalyst.
+  Antimonial drugs (meglumine antimoniate): Treatment of leishmaniasis.
+
+ELEMENT 83: BISMUTH (Bi) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³
+  Valency: 3 (dominant — inert pair effect). OS: +3 (most stable), +5 (rare, strong oxidant).
+  Heavy, brittle, pinkish metal. Low mp (271.5°C) relative to heaviness.
+  Least toxic heavy metal; used as replacement for Pb in many applications.
+  Bi₂O₃ (Bismuth trioxide): Yellow; high refractive index in glass; ferroelectric ceramics.
+  Bi(NO₃)₃ → Bismuth subnitrate/subgallate: Gastric medication (Pepto-Bismol — bismuth subsalicylate).
+  Bi alloys: Low melting point (Wood's metal: 50% Bi + 26.7% Pb + 13.3% Sn + 10% Cd → mp 70°C; fire sprinklers historically).
+  Most diamagnetic element per unit mass.
+  ²⁰⁹Bi: Longest-lived radioactive nuclide (t½ = 1.9 × 10¹⁹ years) — effectively stable.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 16 — CHALCOGENS / OXYGEN GROUP (ns² np⁴)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 6 (ns² np⁴). Valency = 2 (common), 4, 6 (for heavier members).
+OS: -2 (most reduced), 0, +2, +4, +6 (S, Se, Te can expand octet; O cannot).
+O is the most electronegative non-F element; small size → restricted to OS 0 and -2 mainly.
+
+ELEMENT 8: OXYGEN (O) — [He] 2s² 2p⁴
+  Valency: 2 (almost always). OS: -2 (most compounds); -1 (peroxides H₂O₂, Na₂O₂); 0 (O₂, O₃); +2 (OF₂ only).
+  3rd most abundant element in universe (after H and He); most abundant in Earth's crust (46%).
+  Allotropes:
+    O₂: Dioxygen; diatomic; paramagnetic (2 unpaired electrons from MO theory); bp = -183°C; essential for aerobic life.
+    O₃: Ozone; bent molecule; powerful oxidant; stratospheric (UV shield) vs tropospheric (pollutant); decomposes O₂ + O•.
+    O₄: Tetraoxygen; metastable; found in liquid O₂ at high pressure.
+  Water (H₂O): Bent (104.5°); polar; extensive hydrogen bonding; anomalously high bp, specific heat, surface tension; density maximum at 4°C (ice floats → aquatic life survives winter).
+  H₂O₂: Hydrogen peroxide; bent O-O bond; mild to strong oxidant/bleach; 3% aqueous = antiseptic; decomposed by catalase.
+  Oxides: Every element except noble gases forms oxides.
+    Basic oxides (metal oxides): MgO + H₂O → Mg(OH)₂.
+    Acidic oxides (non-metal oxides): SO₃ + H₂O → H₂SO₄.
+    Amphoteric: Al₂O₃, ZnO, PbO.
+    Peroxides: O₂²⁻; Na₂O₂.
+    Superoxides: O₂⁻; KO₂.
+  Biological O₂ transport: Haemoglobin (Fe²⁺); haemocyanin (Cu); haemerythrin (Fe). Cytochrome c oxidase reduces O₂ → H₂O.
+
+ELEMENT 16: SULPHUR (S) — [Ne] 3s² 3p⁴
+  Valency: 2, 4, 6. OS: -2 (H₂S, metal sulphides), 0 (S), +4 (SO₂, SO₃²⁻), +6 (H₂SO₄, SO₄²⁻).
+  Yellow, brittle solid at RT. Multiple allotropes; rhombic S₈ most stable.
+  S₈: Ring of 8 sulphur atoms (crown shape); most stable allotrope; yellow.
+
+  Sulphur Chemistry:
+    H₂S: Toxic gas ("rotten egg"); slightly acidic; reducing agent; volcanic gases; industrial use.
+    SO₂: Colourless toxic gas; acidic oxide; SO₂ + H₂O ⇌ H₂SO₃; acid rain; bleaching agent.
+    SO₃: Reacts vigorously with water → H₂SO₄; made by V₂O₅ catalyst (Contact process).
+    H₂SO₄: "King of chemicals" — most produced industrial chemical. Strong acid; diprotic; oxidising (conc.); dehydrating agent. Dilute: reacts with metals → SO₄²⁻ + H₂. Conc: oxidises Cu, Pb.
+    Na₂SO₄: Glauber's salt; paper making (kraft process); detergents.
+    Na₂S₂O₃ (sodium thiosulphate): Anti-chlorine (photography fixer — dissolves AgBr). Volumetric analysis (iodometric).
+    SF₆: Sulphur hexafluoride; octahedral; chemically inert; electrical insulator (circuit breakers); tracer gas; extremely potent greenhouse gas (23,900× CO₂ over 100 years).
+    S = essential element: Disulphide bonds in proteins (Cys-Cys → structural); cysteine; methionine; thiamine; biotin; glutathione; coenzyme A; iron-sulphur clusters.
+
+ELEMENT 34: SELENIUM (Se) — [Ar] 3d¹⁰ 4s² 4p⁴
+  Valency: 2, 4, 6. OS: -2, +4, +6.
+  Metalloid/non-metal. Grey Se = semiconductor (photoconductor — conductivity increases with light → xerography/photocopiers).
+  Essential trace element: Selenocysteine (21st amino acid); glutathione peroxidase (antioxidant); thyroid deiodinase; selenoproteins.
+  Se deficiency → Keshan disease (cardiomyopathy).
+  Se toxicity (selenosis): Garlic breath (dimethyl selenide); nail/hair loss.
+  Na₂SeO₃: Supplement; treatment of Se deficiency.
+
+ELEMENT 52: TELLURIUM (Te) — [Kr] 4d¹⁰ 5s² 5p⁴
+  Valency: 2, 4, 6. Metalloid; brittle; silver-white.
+  CdTe: Thin-film solar cells (second most common solar cell material after Si).
+  Bi₂Te₃: Thermoelectric material (converts heat → electricity; Peltier coolers).
+  H₂Te: Very toxic; extremely foul smell.
+  Te compounds: Phase-change memory (Ge-Sb-Te for optical discs, DVD).
+
+ELEMENT 84: POLONIUM (Po) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴
+  Valency: 2, 4. All isotopes radioactive. Discovered by Marie Curie 1898 (named after Poland).
+  ²¹⁰Po: Alpha emitter (t½=138 days); intense radiation; highly toxic; natural decay product of ²²⁶Ra.
+  Used as: Neutron initiator in nuclear weapons (mixed with Be: Po + Be → Rn + n, via (α,n) reaction); anti-static devices; thermoelectric source (Lunar lander heaters — SNAP-27 early versions).
+  Used in assassination: Alexander Litvinenko poisoned 2006 with ²¹⁰Po in London.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 17 — HALOGENS (ns² np⁵)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 7 (ns² np⁵). Need 1 electron to achieve noble gas config.
+Valency: 1 (most common); F = 1 only; Cl, Br, I = 1, 3, 5, 7.
+OS: -1 (all); F = -1 only. Cl, Br, I can be +1, +3, +5, +7 (with more electronegative O and F).
+Most electronegative group (excluding noble gases). All diatomic (X₂) in elemental form.
+Reactivity DECREASES down group (F₂ most reactive, At₂ least).
+All powerful oxidising agents (F₂ > Cl₂ > Br₂ > I₂ > At₂).
+
+ELEMENT 9: FLUORINE (F) — [He] 2s² 2p⁵
+  Valency: 1 (ONLY). OS: -1 ONLY (most electronegative element — can't be positive).
+  Most electronegative element (4.0 Pauling). Highest electron affinity (-328 kJ/mol — per atom).
+  Most reactive non-metal; strongest oxidising agent: F₂ + 2KBr → 2KF + Br₂.
+  Pale yellow diatomic gas. Mp = -219.67°C. Bp = -188.1°C.
+  Reacts with nearly ALL substances: Glass, noble gases (XeF₂, XeF₄, XeF₆), asbestos, water.
+    2F₂ + 2H₂O → 4HF + O₂ (fluorinates water).
+    F₂ + Xe → XeF₂ (xenon compounds possible due to Xe's large size).
+  HF: Hydrofluoric acid; weak acid (pKa 3.17) but extremely corrosive/toxic.
+    Burns through glass (SiO₂ + 4HF → SiF₄ + 2H₂O); burns through skin to bone; extremely hazardous.
+    Used to etch glass and silicon wafers.
+  Fluorides:
+    NaF: Toothpaste (strengthens enamel → fluoroapatite); water fluoridation.
+    CaF₂: Fluorspar; electrolysis → F₂; optical windows (UV transparent).
+    AlF₃ + Na₃AlF₆ (cryolite): Solvent for Al₂O₃ in Hall-Héroult electrolysis.
+    SF₆: Inert insulating gas.
+    UF₆: Uranium hexafluoride; gaseous centrifuge process for uranium enrichment.
+    PTFE (polytetrafluoroethylene, Teflon): C-F bonds extremely strong (485 kJ/mol); chemically inert; non-stick; low friction; plumbing tape.
+    Freons/CFCs (CCl₂F₂, etc.): Refrigerants; ODS (ozone depleting substances) → Montreal Protocol (1987) phase-out.
+    HFCs: Replaced CFCs; greenhouse gases; now being replaced by HFOs.
+    Fluoropharmaceuticals: ¹⁸F-FDG (PET imaging); fluorine in drugs increases metabolic stability (C-F bonds resist oxidation).
+
+ELEMENT 17: CHLORINE (Cl) — [Ne] 3s² 3p⁵
+  Valency: 1, 3, 5, 7. OS: -1 (most stable), +1, +3, +5, +7.
+  Yellow-green diatomic gas; toxic. Mp = -101°C. Bp = -34°C.
+  Strong oxidising agent; less reactive than F₂.
+  Cl₂ + H₂O ⇌ HCl + HOCl (hypochlorous acid — bleaching/disinfecting agent).
+  Bleaching powder: Ca(OCl)Cl + CaCl₂ (chlorinated lime).
+  NaOCl: Sodium hypochlorite (household bleach); water disinfection.
+  HCl: Hydrochloric acid; strong acid; produced industrially (Mannheim process from NaCl + H₂SO₄); stomach acid.
+  PVC: Polyvinylchloride; most widely used plastic; construction (pipes, window frames); plumbing.
+  CCl₄: Carbon tetrachloride; dry cleaning (now restricted — liver toxicity, ozone depletion).
+  Organochlorines: DDT (banned), lindane, dioxins — persistent environmental pollutants.
+  Chlorination of water: Most important public health measure of 20th century (WHO).
+
+ELEMENT 35: BROMINE (Br) — [Ar] 3d¹⁰ 4s² 4p⁵
+  Valency: 1, 3, 5. OS: -1, +1, +3, +5.
+  Only liquid non-metal at room temperature. Deep red/reddish-brown liquid. Mp = -7.2°C. Bp = 58.8°C.
+  Corrosive vapour; toxic.
+  Br₂ + 2KI → 2KBr + I₂ (displaces I₂ from iodides — reactivity order).
+  HBr: Strong acid; reducing agent.
+  NaBr, KBr: Sedatives; anticonvulsants (historical); photography.
+  AgBr: Main light-sensitive material in photographic film/paper.
+  Flame retardants: Polybrominated diphenyl ethers (PBDEs) → toxic, persistent → being phased out.
+  Ethylene dibromide (1,2-dibromoethane): Formerly in leaded petrol (scavenges Pb).
+  Bromine derivatives in pharmaceuticals; organic synthesis (addition to alkenes, bromination of arenes).
+
+ELEMENT 53: IODINE (I) — [Kr] 4d¹⁰ 5s² 5p⁵
+  Valency: 1, 3, 5, 7. OS: -1, +1, +3, +5, +7.
+  Shiny, grey-black solid at RT; purple vapour; distinctive pungent smell. Mp = 113.7°C.
+  Sublimes at RT to purple-black vapour.
+  I₂ in CCl₄: Purple solution. I₂ in water: Brown. I₂ in KI solution: Brown (I₃⁻ triiodide complex).
+  Starch test: I₂ + starch → dark blue/black complex (amylose-iodine clathrate) → test for starch or iodine.
+  HI: Hydroiodic acid; strongest of HX acids; powerful reducing agent.
+  I₂ + Na₂S₂O₃: Iodometric titration (quantitative analysis); bleach/oxidant strength determination.
+  Iodine in biology: Essential element for thyroid hormone synthesis (T3/T4).
+    T4 (thyroxine): Contains 4 iodine atoms; T3: 3 iodine atoms.
+    Iodine deficiency: Goitre (enlarged thyroid); cretinism (congenital hypothyroidism) → iodised salt.
+  Lugol's iodine: I₂ + KI aqueous solution; antiseptic; starch test; thyroid protection (blocks ¹³¹I uptake).
+  ¹³¹I: Radioactive (t½ = 8.02 days); thyroid cancer treatment + hyperthyroidism; diagnostic imaging.
+  Povidone-iodine (Betadine): Antiseptic surgical scrub.
+  Silver iodide (AgI): Cloud seeding (induces rainfall by providing nucleation sites).
+
+ELEMENT 85: ASTATINE (At) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵
+  Valency: 1 (mainly), 3, 5. All isotopes radioactive. Rarest naturally occurring element.
+  Most stable: ²¹¹At (t½ = 7.21 hours; α emitter → used in targeted alpha therapy for cancer).
+  At-211 radiotherapy: Astatine attached to tumour-targeting molecules → alpha particles kill cancer cells; extremely promising for thyroid cancer, glioblastoma.
+  Properties extrapolated from periodic trends (only tiny amounts ever made — ~10⁻⁷ g total).
+  Likely exists as At₂ (diatomic) or monoatomic At at RT. More metallic character than I.
+
+ELEMENT 117: TENNESSINE (Ts) — Atomic Number 117. Superheavy. t½ ≈ 51 milliseconds (²⁹⁴Ts). Named after Tennessee (Oak Ridge National Laboratory). Predicted properties only.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 18 — NOBLE GASES (ns² np⁶)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+General: Valence electrons = 8 (complete octet; He = 2). Extremely unreactive.
+Monatomic gases at RT and STP. Colourless, odourless.
+Closed-shell configuration → very high ionisation energies; near-zero electron affinity.
+Valency: 0 (almost always); Kr and Xe can form compounds (2, 4, 6 with F and O).
+
+ELEMENT 2: HELIUM (He) — 1s²
+  Valency: 0. Atomic Mass: 4.003 amu. Bp: -268.93°C (4.22 K — lowest bp of any substance).
+  Second most abundant in universe (~24% by mass); traces in Earth's atmosphere.
+  Formed by α-decay trapped in natural gas wells; ²He is product of fusion in stars.
+  Does NOT solidify at atmospheric pressure (even at 0 K — quantum zero-point motion; only solidifies under >25 atm).
+  Liquid He: Coolant for MRI superconducting magnets; NMR instruments; quantum computing; CERN.
+  ³He: Rare isotope; neutron detection; quantum computing (dilution refrigerators reaching ~5 mK).
+  Superfluid He-4: Below 2.17 K (lambda point) → zero viscosity; flows up walls; Rollin film; quantum effects macroscopically visible.
+  Uses: Balloon/airship gas (non-flammable, unlike H₂); inert atmosphere (welding, semiconductor manufacturing); cryogenics; voice-raising (faster sound speed → higher pitch).
+
+ELEMENT 10: NEON (Ne) — [He] 2s² 2p⁶
+  Valency: 0. Atomic Mass: 20.180 amu.
+  Discharge tubes: Ne atoms excited by electrons → orange-red glow → "neon signs" (other colours use different gases/phosphors).
+  Neon lighting; laser gain medium; cryogenic refrigerant (bp -246.1°C); NMR standard.
+  Third most abundant gas in Earth's atmosphere (18 ppm).
+
+ELEMENT 18: ARGON (Ar) — [Ne] 3s² 3p⁶
+  Valency: 0. Atomic Mass: 39.948 amu.
+  Most abundant noble gas in Earth's atmosphere (0.93%).
+  Inert welding atmosphere (MIG/TIG welding — protects molten metal from O₂/N₂).
+  Semiconductor manufacturing (inert atmosphere); light bulbs; double-glazing (insulation); argon plasma.
+  ⁴⁰Ar: Radiogenic from ⁴⁰K decay → K-Ar dating.
+
+ELEMENT 36: KRYPTON (Kr) — [Ar] 3d¹⁰ 4s² 4p⁶
+  Valency: 0; can form KrF₂ (difluoride; 2; unstable). Atomic Mass: 83.798 amu.
+  KrF₂: One of few krypton compounds; decomposes above -10°C; very strong oxidant.
+  Excimer laser (KrF): 248 nm UV laser; semiconductor lithography (chip manufacturing).
+  ⁸⁵Kr: Radioactive nuclear fission product; environmental tracer.
+  Defined the metre: 1960 definition of metre based on ⁸⁶Kr light wavelength.
+
+ELEMENT 54: XENON (Xe) — [Kr] 4d¹⁰ 5s² 5p⁶
+  Valency: 0, 2, 4, 6, 8 (in fluorides and oxides).
+  Richest chemistry of noble gases. Xe reacts with F₂ directly.
+  XeF₂: Linear; colourless solid; mild fluorinating agent; oxidant (XeF₂ + 2HI → Xe + 2HF + I₂).
+  XeF₄: Square planar (2 lone pairs + 4 F → octahedral electron geometry).
+  XeF₆: Distorted octahedral; very reactive; hydrolyses → XeO₃ + HF.
+  XeO₃: Unstable; explosive; very strong oxidant.
+  XeO₄: Tetrahedral; very unstable; extremely strong oxidant.
+  [XeO₆]⁴⁻: Perxenate; xenon in +8 OS.
+  Ion propulsion: Xe ion thrusters (ionised Xe accelerated electromagnetically) → spacecraft propulsion (Dawn, Hayabusa2, Starlink satellites).
+  Anaesthesia: Xe is anaesthetic (binds NMDA receptors + TREK-1 channels); expensive; 80% Xe inhaled for general anaesthesia; cardioprotective.
+  Lighting: High-pressure Xe arc lamps (cinema projectors; searchlights; xenon headlights).
+  MRI: Hyperpolarised ¹²⁹Xe for lung MRI (spinaches dissolved in gas → inhaled → lung imaging).
+
+ELEMENT 86: RADON (Rn) — [Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶
+  Valency: 0; theoretical RnF₂ (not synthesised in bulk).
+  Radioactive. Most stable isotope ²²²Rn (t½ = 3.82 days; α emitter; from ²²⁶Ra decay).
+  Occurs naturally in rocks (granite especially → seeps into buildings through foundations).
+  Second leading cause of lung cancer (after smoking) — alpha radiation in lungs.
+  WHO recommends 100 Bq/m³ indoor action level. UK: 200 Bq/m³.
+  Detection: Charcoal canisters; electret detectors; continuous electronic monitors.
+  Radon mapping: Geological areas with high radon risk (granite-based regions — SW England, parts of Scotland, central Ireland).
+
+ELEMENT 118: OGANESSON (Og) — [Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶ (predicted)
+  Heaviest known element. Atomic Number 118. t½ ≈ 0.89 milliseconds (²⁹⁴Og).
+  Named after Yuri Oganessian (nuclear physicist; JINR, Dubna). Discovered 2002.
+  Predicted to be a solid at RT (contrary to lighter noble gases being gases) due to very high atomic mass + strong van der Waals forces. May show some chemical reactivity due to relativistic effects.
+  Completes Period 7 of the periodic table. Beyond Og: Predicted period 8 would start eka-francium (element 119).
+
+================================================================================

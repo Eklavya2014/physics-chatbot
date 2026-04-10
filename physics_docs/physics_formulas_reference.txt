@@ -1,0 +1,131 @@
+PHYSICS & CHEMISTRY: QUICK FORMULA REFERENCE
+============================================
+
+UNIVERSAL CONSTANTS:
+  c = 3×10⁸ m/s (speed of light)
+  h = 6.626×10⁻³⁴ J·s (Planck's constant)
+  ℏ = 1.055×10⁻³⁴ J·s (h-bar)
+  G = 6.674×10⁻¹¹ N·m²/kg²
+  g = 9.8 m/s² (standard gravity)
+  NA = 6.022×10²³ mol⁻¹ (Avogadro's number)
+  k_B = 1.38×10⁻²³ J/K (Boltzmann constant)
+  R = 8.314 J/mol·K (gas constant)
+  F = 96485 C/mol (Faraday's constant)
+  e = 1.6×10⁻¹⁹ C (elementary charge)
+  m_e = 9.11×10⁻³¹ kg (electron mass)
+  m_p = 1.673×10⁻²⁷ kg (proton mass)
+  ε₀ = 8.85×10⁻¹² C²/N·m² (permittivity of free space)
+  μ₀ = 4π×10⁻⁷ T·m/A (permeability of free space)
+  σ = 5.67×10⁻⁸ W/m²·K⁴ (Stefan-Boltzmann constant)
+  1 eV = 1.6×10⁻¹⁹ J
+  1 amu = 1.66×10⁻²⁷ kg = 931.5 MeV/c²
+  a₀ = 0.529 Å = 5.29×10⁻¹¹ m (Bohr radius)
+
+MECHANICS:
+  v = u + at                    Kinematics (uniform acceleration)
+  s = ut + ½at²                 
+  v² = u² + 2as                 
+  p = mv                        Momentum
+  F = ma = dp/dt                Newton's 2nd law
+  F = Gm₁m₂/r²                 Gravitation
+  W = F·d·cosθ                  Work
+  KE = ½mv²                     Kinetic energy
+  PE = mgh                      Gravitational PE
+  PE_spring = ½kx²              Spring PE
+  Power = Fv = W/t              Power
+  F_c = mv²/r = mrω²           Centripetal force
+  T = 2π√(L/g)                  Pendulum period
+  T = 2π√(m/k)                  Spring period
+  I = Σmr² / MR²,½MR²...       Moment of inertia
+  τ = Iα = r×F                  Torque
+  L = Iω = r×p                  Angular momentum
+
+WAVES AND OPTICS:
+  v = fλ = ω/k                  Wave speed
+  1/f = 1/v + 1/u               Mirror/lens formula
+  n₁sinθ₁ = n₂sinθ₂            Snell's law
+  sinC = 1/n                    Critical angle
+  β = λD/d                      Young's fringe width
+  P = 1/f (dioptre)             Lens power
+
+ELECTRICITY:
+  F = kq₁q₂/r²                 Coulomb's law
+  E = kQ/r² = F/q              Electric field
+  V = kQ/r = W/q               Electric potential
+  C = Q/V = ε₀A/d              Capacitance
+  U_C = ½CV² = Q²/2C          Energy in capacitor
+  I = Q/t = nqAv_d             Current
+  V = IR                        Ohm's law
+  R = ρL/A                      Resistance
+  P = IV = I²R = V²/R          Electrical power
+  Series: R = R₁+R₂; 1/C = 1/C₁+1/C₂
+  Parallel: 1/R = 1/R₁+1/R₂; C = C₁+C₂
+
+MAGNETISM:
+  F = qv×B; F = qvBsinθ        Lorentz force
+  F = IL×B; F = BILsinθ        Force on wire
+  B_wire = μ₀I/(2πr)           Straight wire
+  B_solenoid = μ₀nI             Solenoid
+  ε = -dΦ/dt = BLv              Faraday's law
+  V₂/V₁ = N₂/N₁                Transformer
+  E_L = ½LI²                    Energy in inductor
+
+THERMODYNAMICS:
+  PV = nRT                      Ideal gas
+  ΔU = Q - W = Q - PΔV        1st law
+  S = k·lnW                     Entropy
+  ΔG = ΔH - TΔS                Gibbs free energy
+  ΔG° = -RT·lnK = -nFE°       Free energy and equilibrium
+  E = E° - (RT/nF)lnQ          Nernst equation
+  m = MIt/(nF)                  Faraday's electrolysis
+
+MODERN PHYSICS:
+  E = hf = hc/λ                 Photon energy
+  λ = h/p = h/(mv)              de Broglie wavelength
+  KE_max = hf - φ               Photoelectric effect
+  Eₙ = -13.6/n² eV             Hydrogen energy levels
+  rₙ = 0.529n² Å               Bohr radius nth orbit
+  E = mc²                        Mass-energy equivalence
+  N = N₀e^(-λt)                 Radioactive decay
+  T₁/₂ = 0.693/λ               Half-life
+  BE = Δmc²                     Nuclear binding energy
+
+CHEMISTRY SHORTCUTS:
+  pH = -log[H⁺]; pOH = -log[OH⁻]; pH+pOH = 14
+  Ka = [H⁺][A⁻]/[HA]           Acid dissociation
+  Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA])
+  ΔTb = Kbm; ΔTf = Kfm        Colligative properties
+  π = MRT                        Osmotic pressure
+  Kc = [products]/[reactants]  Equilibrium constant
+  Kp = Kc(RT)^Δn               Relationship between Kp and Kc
+  rate = k[A]^m[B]^n           Rate law
+  k = Ae^(-Ea/RT)               Arrhenius equation
+  ln(k₂/k₁) = Ea/R(1/T₁-1/T₂) Rate at different temperatures
+
+IMPORTANT SI UNITS:
+  Force: N = kg·m/s²
+  Energy: J = N·m = kg·m²/s²
+  Power: W = J/s
+  Pressure: Pa = N/m²  (1 atm = 101325 Pa = 760 mmHg)
+  Electric charge: C = A·s
+  Potential: V = J/C = W/A
+  Capacitance: F = C/V
+  Resistance: Ω = V/A
+  Inductance: H = V·s/A = Ω·s
+  Magnetic flux: Wb = V·s
+  Magnetic field: T = Wb/m² = kg/A·s²
+  Frequency: Hz = s⁻¹
+  Radioactivity: Bq = s⁻¹; Ci = 3.7×10¹⁰ Bq
+  Absorbed dose: Gy = J/kg; Sv (Sievert) = J/kg (biological dose)
+
+COMMON MISTAKES TO AVOID:
+  1. Confusing mass (kg) and weight (N) — weight = mg
+  2. Forgetting to convert °C to K in gas law problems
+  3. Mixing up KE and PE in energy conservation
+  4. Not using consistent sign convention in optics
+  5. Forgetting that log and ln are different (log=log₁₀, ln=logₑ)
+  6. Thinking catalyst shifts equilibrium — it does NOT
+  7. Assuming all reactions are reversible/irreversible
+  8. Confusing molarity (mol/L) and molality (mol/kg)
+  9. Galvanisation uses ZINC not iron
+  10. Nuclear radius scales as A^(1/3), not A

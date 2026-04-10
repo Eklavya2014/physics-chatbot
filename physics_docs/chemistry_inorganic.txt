@@ -1,0 +1,192 @@
+CHEMISTRY: INORGANIC CHEMISTRY — COMPLETE GUIDE
+================================================
+
+s-BLOCK ELEMENTS (Groups 1 and 2)
+------------------------------------
+Group 1 — Alkali Metals: Li, Na, K, Rb, Cs, Fr
+  Electronic configuration: [Noble gas] ns¹
+  Properties: Soft, low melting point, good conductors, vigorous reaction with water
+  M + H₂O → MOH + H₂↑ (violence increases down the group: Li mild, Cs explosive)
+  Flame colours: Li=red, Na=yellow/orange, K=violet, Rb=red-violet, Cs=blue
+  Li is exceptional: forms Li₂O only (not Na₂O), reacts slowly with water
+  Na forms Na₂O₂ (sodium peroxide) with excess O₂; K forms KO₂ (superoxide)
+
+Group 2 — Alkaline Earth Metals: Be, Mg, Ca, Sr, Ba, Ra
+  Electronic configuration: [Noble gas] ns²
+  Less reactive than Group 1
+  Be is exceptional: amphoteric oxide (BeO dissolves in both acid and base)
+    Be doesn't react with water; Mg reacts with hot water only
+  Ca + H₂O → Ca(OH)₂ + H₂↑ (readily)
+  Flame colours: Ca=brick red, Sr=crimson, Ba=apple green, Mg=brilliant white
+  Ca(OH)₂ = slaked lime; CaO = quicklime; CaCO₃ = limestone/marble/chalk
+  Solubility of hydroxides: increases down group (Ba(OH)₂ is most soluble)
+  Solubility of sulphates: DECREASES down group (BaSO₄ is insoluble)
+  Diagonal relationship: Li and Mg (similar charge density)
+
+DIAGONAL RELATIONSHIPS:
+  Li-Mg: both form normal oxides, carbonates decompose on heating
+  Be-Al: both amphoteric, form similar chlorides, complex ions
+  B-Si: both form acidic oxides, covalent halides, similar bonding
+
+p-BLOCK ELEMENTS
+-----------------
+Group 13 — Boron group: B, Al, Ga, In, Tl
+  Al: amphoteric (reacts with acid and base)
+    Al + HCl → AlCl₃ + H₂; Al + NaOH + H₂O → NaAlO₂ + H₂
+  Al₂O₃: amphoteric oxide, corundum, ruby, sapphire
+  Alums: M⁺M³⁺(SO₄)₂·12H₂O (e.g. KAl(SO₄)₂·12H₂O = potash alum)
+  B: forms covalent compounds only, electron deficient (Lewis acid)
+  BCl₃: planar, sp², forms adducts with Lewis bases
+
+Group 14 — Carbon group: C, Si, Ge, Sn, Pb
+  Carbon allotropes: diamond (sp³, hardest), graphite (sp², soft, conducts), fullerene (C₆₀), graphene
+  SiO₂: covalent network solid, higher mp than CO₂ (molecular solid)
+  CO₂ (gas) vs SiO₂ (solid) — size of Si allows extended structure
+  Sn: two forms — white (β-Sn, metallic) and grey (α-Sn, non-metallic) — Tin pest
+  Lead: heaviest stable element, +2 more stable than +4 (inert pair effect)
+  Si and Ge: semiconductors
+
+Group 15 — Nitrogen group: N, P, As, Sb, Bi
+  N₂: very stable (triple bond, BE=945 kJ/mol), unreactive at room temperature
+  NH₃: pyramidal (sp³), hydrogen bonding, basic, manufactured by Haber process
+    N₂ + 3H₂ ⇌ 2NH₃  (450°C, 200 atm, Fe catalyst)
+  HNO₃: made by Ostwald process (NH₃ → NO → NO₂ → HNO₃)
+    Dilute HNO₃ + metals: usually NO (NO₃⁻ as oxidising agent)
+    Conc. HNO₃ + metals: usually NO₂
+    Passivation: Al and Fe become passive with conc. HNO₃ (oxide layer)
+  P allotropes: white P (P₄, reactive, spontaneous combustion), red P (polymeric, less reactive)
+  Phosphorus: can expand octet (3d orbitals available)
+  PCl₃ (sp³), PCl₅ (sp³d, trigonal bipyramidal in gaseous state, PCl₄⁺PCl₆⁻ in solid)
+  Oxides of nitrogen: N₂O (laughing gas), NO (radical), NO₂ (brown, paramagnetic), N₂O₄, N₂O₅
+
+Group 16 — Chalcogens: O, S, Se, Te, Po
+  O₂ vs O₃ (ozone): O₃ is more reactive, thermodynamically unstable → O₂
+    O₃ used as oxidising agent, in stratosphere shields UV (Hartley band)
+    CFC damage to ozone: Cl· + O₃ → ClO· + O₂ (chain reaction)
+  H₂O vs H₂S: Water has much higher bp due to H-bonding
+  S allotropes: rhombic S (stable below 96°C), monoclinic S (stable above 96°C), plastic S
+  H₂SO₄ (sulphuric acid — oil of vitriol):
+    Made by Contact process: S → SO₂ → SO₃(V₂O₅/450°C) → H₂SO₄
+    Oleum = H₂SO₄ + SO₃ (fuming sulphuric acid)
+    Properties: strong acid, dehydrating agent, oxidising agent, sulfonating agent
+
+Group 17 — Halogens: F, Cl, Br, I, At
+  All diatomic, oxidising agents, reactivity decreases F>Cl>Br>I
+  F: most electronegative, no d orbitals, only -1 state, attacks glass (SiO₂)
+  Cl₂ + NaOH (cold, dilute) → NaCl + NaOCl + H₂O (bleach)
+  Cl₂ + NaOH (hot, conc.) → NaCl + NaClO₃ + H₂O
+  Cl₂ + H₂O → HCl + HOCl (bleaching action of Cl₂ via HOCl)
+  Interhalogen compounds: ClF₃, BrF₅, IF₇
+  Pseudohalogens: CN⁻, SCN⁻, N₃⁻ (similar reactions to halides)
+
+Group 18 — Noble gases: He, Ne, Ar, Kr, Xe, Rn
+  Completely filled valence shell, very unreactive
+  Xe forms compounds: XeF₂, XeF₄, XeF₆, XeOF₄, XeO₃
+    XeF₂: linear sp³d (3 lone pairs + 2 bonded)
+    XeF₄: square planar sp³d² (2 lone pairs + 4 bonded)
+
+d-BLOCK ELEMENTS (TRANSITION METALS)
+--------------------------------------
+Characteristics:
+  Partially filled d orbitals (in at least one stable state)
+  Variable oxidation states (e.g., Fe: +2, +3; Mn: +2, +3, +4, +6, +7)
+  Form coloured ions (d-d transitions absorb visible light)
+  Paramagnetic (unpaired d electrons)
+  Form complex ions with ligands
+  Catalytic activity (variable OS, d orbitals)
+
+Important compounds:
+  KMnO₄ (potassium permanganate): strong oxidising agent, purple in neutral/basic solution
+    In acidic: MnO₄⁻ → Mn²⁺ (colourless), gain 5e⁻
+    In neutral: MnO₄⁻ → MnO₂ (brown), gain 3e⁻
+    In basic: MnO₄⁻ → MnO₄²⁻ (manganate), gain 1e⁻
+  
+  K₂Cr₂O₇ (potassium dichromate): orange, oxidising agent in acid solution
+    Cr₂O₇²⁻ → 2Cr³⁺ (green), gain 6e⁻
+    Cr₂O₇²⁻ + OH⁻ → 2CrO₄²⁻ (yellow chromate)
+  
+  FeSO₄ vs Fe₂(SO₄)₃: Fe²⁺ reducing agent, Fe³⁺ oxidising agent
+  CuSO₄·5H₂O: blue vitriol. CuSO₄ (anhydrous): white (used to detect water)
+  AgNO₃: test for halide ions (white, pale yellow, yellow precipitates for Cl⁻, Br⁻, I⁻)
+
+COORDINATION CHEMISTRY
+------------------------
+Coordination compound: central metal ion + ligands (Lewis base donors)
+  Ligand: ion or molecule with lone pair (donates to metal)
+    Monodentate: one donor (Cl⁻, NH₃, H₂O, CO, CN⁻)
+    Bidentate: two donors (en=ethylenediamine, ox²⁻=oxalate)
+    Polydentate: EDTA⁴⁻ (hexadentate), porphyrin
+  Coordination number: number of donor atoms around central metal (usually 4 or 6)
+  Chelate: ring formed by polydentate ligand; more stable (chelate effect)
+
+Naming: [ligands (alphabetical) metal (oxidation state)] outer sphere
+  Ligand prefixes: mono-, di-, tri-, tetra- OR bis-, tris-, tetrakis-
+  Anionic ligands end in '-o': Cl⁻=chlorido, CN⁻=cyanido, OH⁻=hydroxido, H₂O=aqua, NH₃=ammine
+  Metal name in complex anion: changes to '-ate' (ferrate, cuprate, platinate)
+  Examples: [Cu(NH₃)₄]²⁺ tetraamminecopper(II); [Fe(CN)₆]⁴⁻ hexacyanidoferrate(II)
+
+Isomerism:
+  Structural: linkage (SCN⁻ vs NCS⁻), ionisation, solvate, coordination
+  Stereoisomerism:
+    Geometric (cis-trans): in square planar and octahedral (when 2+ different ligands)
+    Optical: non-superimposable mirror images (chiral, d and l forms)
+    [Co(en)₃]³⁺: both geometric and optical isomers
+
+Crystal Field Theory (CFT):
+  d orbitals split in field of ligands
+  Octahedral: t₂g (lower, dxy, dxz, dyz) and eg (higher, dx²-y², dz²)
+  Δ₀ = crystal field splitting energy
+  Strong field ligands (large Δ₀): CN⁻ > NO₂⁻ > en > py > NH₃ > H₂O > ox > OH⁻ > F⁻ > Cl⁻ > Br⁻ > I⁻
+  High spin: small Δ₀ (weak field), electrons pair only when forced
+  Low spin: large Δ₀ (strong field), maximum pairing in t₂g
+  Colour: absorbed wavelength complements observed colour
+  Square planar: dx²-y² highest energy (mostly Pt²⁺, Au³⁺ complexes)
+
+METALLURGY
+-----------
+Important ores:
+  Fe: haematite (Fe₂O₃), magnetite (Fe₃O₄), siderite (FeCO₃), iron pyrite (FeS₂)
+  Cu: copper pyrite (CuFeS₂), malachite (Cu₂(OH)₂CO₃), cuprite (Cu₂O)
+  Al: bauxite (Al₂O₃·2H₂O), cryolite (Na₃AlF₆), corundum (Al₂O₃)
+  Zn: zinc blende (ZnS), zincite (ZnO), calamine (ZnCO₃)
+  
+Blast furnace (iron):
+  Coke (C) + O₂ → CO₂ → CO (reducing agent)
+  Fe₂O₃ + 3CO → 2Fe + 3CO₂
+  Limestone flux: CaCO₃ → CaO + CO₂; CaO + SiO₂ → CaSiO₃ (slag)
+  Pig iron → cast iron → wrought iron → steel (adding alloying elements)
+
+Hall-Heroult process (aluminium): Al₂O₃ dissolved in molten cryolite, electrolysis at 950°C
+Bessemer converter: converts pig iron to steel by blasting air
+
+ENVIRONMENTAL CHEMISTRY
+------------------------
+Air pollution:
+  Primary: CO, NOₓ, SO₂, hydrocarbons, particulates (directly emitted)
+  Secondary: O₃, PAN (peroxy acetyl nitrate), acid rain (formed from reactions)
+  
+  Greenhouse gases: CO₂ (main), CH₄ (25× CO₂), N₂O, H₂O, CFCs
+    Greenhouse effect: absorb IR radiation re-emitted by Earth
+    Global warming potential (GWP): CO₂=1, CH₄=25, N₂O=298
+  
+  Acid rain: SO₂ + H₂O → H₂SO₃; NOₓ + H₂O → HNO₃ (pH<5.6)
+    Damages limestone buildings, harms aquatic ecosystems
+  
+  Smog: photochemical (O₃, PAN from NOₓ + hydrocarbons + UV)
+    London/classical smog: SO₂ + fog + soot (reducing type)
+  
+  Ozone hole: CFCs → Cl· radical → catalytic destruction of O₃
+    Replaced by HFCs (less damaging)
+
+Water pollution:
+  BOD: biological oxygen demand (measure of organic pollution)
+  COD: chemical oxygen demand
+  Eutrophication: excess nutrients → algal bloom → O₂ depletion → fish death
+  Heavy metals: Pb, Hg, Cd (bioaccumulation, biomagnification)
+  Minamata disease: mercury poisoning (Japan)
+  Itai-itai disease: cadmium poisoning
+
+Green chemistry:
+  12 principles: atom economy, prevent waste, less hazardous, renewable feedstocks
+  E factor = mass waste/mass product (lower = greener)
+  Atom economy = (MW desired product / MW all products) × 100%

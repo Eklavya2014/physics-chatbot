@@ -1,0 +1,452 @@
+================================================================================
+     CHEMISTRY: GROUP 1 (ALKALI METALS) & GROUP 2 (ALKALINE EARTH METALS)
+                  All Elements · Properties · Valency · Reactions
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 1 — ALKALI METALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GROUP 1 OVERVIEW
+-----------------
+General Properties:
+  Valence electrons: 1 (ns¹ configuration).
+  Common oxidation state: +1 only (very stable — achieves noble gas configuration).
+  Valency: 1 (always form +1 ions).
+  Highly reactive metals; reactivity INCREASES down the group.
+  Soft, low-density metals. All have low melting and boiling points.
+  Silver-white lustre when freshly cut; tarnish rapidly in air.
+  Stored in oil (Li, Na) or kerosene (K, Rb, Cs) to prevent reaction with air/moisture.
+  React vigorously with water → metal hydroxide + H₂ (flammable/explosive).
+  React with O₂: Li→Li₂O (oxide); Na→Na₂O₂ (peroxide); K,Rb,Cs→MO₂ (superoxide).
+  All compounds are ionic, soluble in water (exceptions: Li₂CO₃, LiF, LiOH have low solubility).
+  Flame colours: Li=red; Na=yellow/orange; K=violet; Rb=red/violet; Cs=blue.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 1: HYDROGEN (H)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 1
+  Atomic Mass      : 1.008 amu
+  Electron Config  : 1s¹
+  Valence e-       : 1
+  Valency          : 1
+  Common Oxidation : +1 (most compounds); -1 (metal hydrides e.g. NaH)
+  Group/Period     : Group 1 / Period 1 (unique — fits both Group 1 and 17)
+  State at STP     : Gas (H₂, diatomic)
+  Colour           : Colourless
+  Melting Point    : -259.14°C (14.01 K)
+  Boiling Point    : -252.87°C (20.28 K)
+  Density          : 0.0899 g/L (gas)
+  Electronegativity: 2.20 (Pauling)
+
+  Key Properties:
+  - Most abundant element in the universe (~75% by mass).
+  - Lightest element; diatomic gas (H₂) at standard conditions.
+  - Three isotopes: Protium (¹H, 99.98%), Deuterium (²H, D, 0.015%), Tritium (³H, T, radioactive, t½=12.3 yr).
+  - Nonmetal despite being in Group 1; not a true alkali metal.
+  - Bond with itself (H-H): Bond enthalpy 436 kJ/mol; bond length 74 pm.
+  - Can act as oxidant (with metals → H₂ + metal oxide) or reductant (with halogens → HX).
+  - Hydrogen bonding: Strong intermolecular force with N, O, F (lone pairs) → key in water, DNA, proteins.
+
+  Important Compounds & Reactions:
+    2H₂ + O₂ → 2H₂O                          (combustion; fuel cells)
+    H₂ + Cl₂ → 2HCl                          (halogen reaction)
+    H₂ + N₂ → 2NH₃  (400°C, 200 atm, Fe cat) (Haber-Bosch process)
+    H₂O + CO (steam reforming of methane)     (industrial H₂ production)
+    NaH + H₂O → NaOH + H₂                    (hydride + water)
+    H⁺ + OH⁻ → H₂O                           (neutralisation)
+
+  Uses: Rocket fuel (liquid H₂); fuel cells; hydrogenation (margarine, nylon); ammonia synthesis; petroleum refining (hydrocracking); potential future energy carrier.
+
+  Hydrogen Economy: H₂ as clean fuel. Green hydrogen (electrolysis by renewables); Blue hydrogen (steam reforming + CCS); Grey hydrogen (steam reforming, no CCS). Fuel cells: 2H₂ + O₂ → 2H₂O + electricity (Gibbs free energy directly to work).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 3: LITHIUM (Li)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 3
+  Atomic Mass      : 6.941 amu
+  Electron Config  : [He] 2s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 only
+  Group/Period     : Group 1 / Period 2
+  State at STP     : Solid (metal)
+  Colour           : Silver-white
+  Melting Point    : 180.5°C
+  Boiling Point    : 1342°C
+  Density          : 0.534 g/cm³ (lightest metal; less dense than water)
+  Electronegativity: 0.98
+
+  Key Properties:
+  - Lightest metal; floats on water AND oil (density 0.534 g/cm³ < 1.0 g/cm³).
+  - Hardest alkali metal; highest melting point in Group 1.
+  - Reacts with water (gently compared to Na): 2Li + 2H₂O → 2LiOH + H₂.
+  - Reacts with O₂: 4Li + O₂ → 2Li₂O (only oxide, unlike Na/K).
+  - Only alkali metal to react with N₂: 6Li + N₂ → 2Li₃N (lithium nitride).
+  - Anomalous properties: Similar to Mg (diagonal relationship) — both form normal oxides; carbonate decomposes on heating; nitride stable; salts often insoluble.
+  - Lithium-ion batteries: Anode=graphite (Li⁺ intercalated); cathode=LiCoO₂; high energy density; rechargeable.
+
+  Important Compounds:
+    LiOH    : Strong base; used in CO₂ scrubbers (spacecraft, submarines).
+    LiCl    : Lithium chloride; hygroscopic; air drying.
+    Li₂CO₃ : Lithium carbonate; psychiatric drug (bipolar disorder); glass ceramics.
+    LiAlH₄ : Strong reducing agent in organic chemistry.
+    Li₃N    : Lithium nitride; ionic conductor; hydrogen storage.
+    BuLi    : n-Butyllithium; very strong base/nucleophile in organic synthesis.
+
+  Uses: Lithium-ion batteries (EVs, smartphones); psychiatric medication (bipolar disorder); glass and ceramics; alloys (with Al, Mg — aerospace); nuclear fusion reactor (breeding tritium from Li-6).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 11: SODIUM (Na)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 11
+  Atomic Mass      : 22.990 amu
+  Electron Config  : [Ne] 3s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 only
+  Group/Period     : Group 1 / Period 3
+  State at STP     : Solid (metal)
+  Colour           : Silver
+  Melting Point    : 97.79°C
+  Boiling Point    : 882.8°C
+  Density          : 0.971 g/cm³
+  Electronegativity: 0.93
+
+  Key Properties:
+  - 6th most abundant element in Earth's crust.
+  - Reacts vigorously with water: 2Na + 2H₂O → 2NaOH + H₂ (fizzes; melts; moves on water).
+  - Reacts with O₂: 2Na + O₂ → Na₂O₂ (sodium peroxide; not Na₂O like Li).
+  - Burns in chlorine: 2Na + Cl₂ → 2NaCl (bright yellow flame).
+  - Bright yellow flame in flame tests (most sensitive Group 1 flame colour).
+  - Na⁺ is essential biological ion (action potentials, osmotic balance, Na⁺/K⁺ ATPase).
+  - Liquid sodium: Used as coolant in fast breeder nuclear reactors (high thermal conductivity; low viscosity).
+
+  Important Compounds:
+    NaCl    : Table salt; essential; ionic lattice; FCC structure; NaCl mined as halite.
+    NaOH   : Caustic soda; strong base; soap making; pH adjustment; produced by chloralkali process.
+    Na₂CO₃ : Washing soda/soda ash; glass making; Solvay process.
+    NaHCO₃ : Baking soda; antacid; leavening agent.
+    Na₂SO₄ : Glauber's salt; paper making; detergents.
+    Na₂O₂  : Sodium peroxide; powerful oxidant; CO₂ absorber.
+    NaH    : Sodium hydride; strong base in organic synthesis; releases H₂ with water.
+    NaOCl  : Sodium hypochlorite; bleach; disinfectant.
+
+  Chloralkali Process: 2NaCl + 2H₂O → Cl₂ + H₂ + 2NaOH (electrolysis).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 19: POTASSIUM (K)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 19
+  Atomic Mass      : 39.098 amu
+  Electron Config  : [Ar] 4s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 only
+  Group/Period     : Group 1 / Period 4
+  State at STP     : Solid (metal)
+  Colour           : Silver-white
+  Melting Point    : 63.38°C
+  Boiling Point    : 759°C
+  Density          : 0.862 g/cm³
+  Electronegativity: 0.82
+
+  Key Properties:
+  - 7th most abundant element in Earth's crust. Found as KCl, K₂SO₄, KNO₃, feldspar.
+  - Reacts violently with water: 2K + 2H₂O → 2KOH + H₂ (H₂ ignites spontaneously; purple/lilac flame).
+  - Reacts with O₂: K + O₂ → KO₂ (potassium superoxide; paramagnetic O₂⁻ ion).
+  - Essential biological element: K⁺ main intracellular cation; action potentials; enzyme activity.
+  - Radioactive isotope: ⁴⁰K (0.012% of K; t½ = 1.25 billion years; β⁻ and electron capture) → K-Ar radiometric dating.
+
+  Important Compounds:
+    KCl    : Potassium chloride; fertiliser (muriate of potash); salt substitute; IV fluid.
+    KOH    : Potassium hydroxide (caustic potash); strong base; soap making; biodiesel.
+    KNO₃   : Potassium nitrate; fertiliser; black gunpowder (75% KNO₃ + 15% C + 10% S); food preservative (E252).
+    K₂SO₄  : Potassium sulphate; fertiliser.
+    KMnO₄  : Potassium permanganate; powerful oxidant; purple solution; antiseptic; water treatment.
+    K₂Cr₂O₇: Potassium dichromate; orange; oxidant; tanning; formerly in breathalysers.
+    KHCO₃  : Potassium bicarbonate; antacid; baking.
+    KO₂    : Potassium superoxide; reacts with H₂O → KOH + O₂ (self-contained breathing apparatus).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 37: RUBIDIUM (Rb)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 37
+  Atomic Mass      : 85.468 amu
+  Electron Config  : [Kr] 5s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 (mainly); rare +2
+  Group/Period     : Group 1 / Period 5
+  State at STP     : Solid (metal); mp just above room temp
+  Melting Point    : 39.31°C
+  Boiling Point    : 688°C
+  Density          : 1.532 g/cm³
+  Electronegativity: 0.82
+
+  Key Properties:
+  - Ignites spontaneously in air; reacts explosively with water.
+  - Rb⁺ can partially replace K⁺ in biology (same charge and similar size).
+  - ⁸⁷Rb: 27.83% of natural Rb; β⁻ decay to ⁸⁷Sr (t½ = 49 billion years) → Rb-Sr geochronology.
+  - Bose-Einstein condensate: ⁸⁷Rb first used to create BEC (1995, Cornell & Wieman, Nobel 2001).
+  - Rubidium atomic clocks: Very accurate; used in GPS and telecommunications.
+  - Photoelectric effect: Used in photocells (low work function → emits electrons with visible light).
+  - Medical: ⁸²Rb (PET imaging of myocardial perfusion).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 55: CAESIUM (Cs)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 55
+  Atomic Mass      : 132.905 amu
+  Electron Config  : [Xe] 6s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 only (stable); rare Cs⁻ in Cs⁺Cs⁻ (cesium auride)
+  Group/Period     : Group 1 / Period 6
+  State at STP     : Solid (nearly liquid at room temp — gold colour!)
+  Melting Point    : 28.44°C
+  Boiling Point    : 671°C
+  Density          : 1.873 g/cm³
+  Electronegativity: 0.79
+
+  Key Properties:
+  - Most electropositive stable element. Most reactive stable alkali metal.
+  - Gold-yellow appearance (only alkali metal with visible colour).
+  - Melts on a warm day (mp 28.44°C). Liquid at body temperature!
+  - Explodes violently with water: 2Cs + 2H₂O → 2CsOH + H₂ (explosive).
+  - Cs⁺ is the LARGEST stable monatomic cation.
+  - Caesium atomic clock: Definition of SI second since 1967.
+    One second = 9,192,631,770 oscillations of Cs-133 hyperfine transition.
+  - ¹³⁷Cs: Radioactive (t½ = 30.2 years); major nuclear fission product; Chernobyl + Fukushima contamination.
+  - Photoelectric cathodes; ion propulsion (ion thrusters in spacecraft); drilling fluids (CsCO₃).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 87: FRANCIUM (Fr)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 87
+  Atomic Mass      : (223) amu [most stable isotope]
+  Electron Config  : [Rn] 7s¹
+  Valence e-       : 1
+  Valency          : 1
+  Oxidation State  : +1 only
+  Group/Period     : Group 1 / Period 7
+  State at STP     : Solid (presumed metal; never observed in bulk)
+  Melting Point    : ~27°C (predicted)
+  Boiling Point    : ~677°C (predicted)
+  Electronegativity: 0.70 (lowest of any element)
+
+  Key Properties:
+  - Most unstable naturally occurring element. Second rarest element in Earth's crust.
+  - Most electropositive and most reactive metal.
+  - All isotopes radioactive. Most stable: ²²³Fr (t½ = 22 minutes; from ²³⁵U decay).
+  - Only ~20–30 g total in Earth's crust at any moment. Never isolated in weighable quantity.
+  - Discovered 1939 by Marguerite Perey (France) — last element discovered in nature.
+  - Predicted to be gold-coloured (like Cs, relativistic effects) if enough could be collected.
+  - Research use: Laser-trapping of a few thousand atoms; studies of atomic structure; cancer therapy research.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GROUP 2 — ALKALINE EARTH METALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GROUP 2 OVERVIEW
+-----------------
+  Valence electrons: 2 (ns² configuration).
+  Common oxidation state: +2 only (loses both valence electrons → noble gas config).
+  Valency: 2 always.
+  Less reactive than Group 1; reactivity increases down group.
+  Higher melting points + densities than Group 1 (charge density of M²⁺ higher).
+  Harder than alkali metals.
+  Flame colours: Ca=brick red; Sr=crimson red; Ba=apple green.
+  React with water (Mg slowly; Ca vigorously; Ba explosively).
+  Hydroxides: Be(OH)₂ = amphoteric; Mg(OH)₂ = weakly basic; Ca/Sr/Ba(OH)₂ = strong bases.
+  Oxides: BeO and MgO have very high melting points (ionic lattice with high charge density).
+  Anomalous relationship: Be resembles Al (diagonal relationship).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 4: BERYLLIUM (Be)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 4
+  Atomic Mass      : 9.012 amu
+  Electron Config  : [He] 2s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 2
+  State at STP     : Solid (metal)
+  Colour           : Steel-grey
+  Melting Point    : 1287°C
+  Boiling Point    : 2469°C
+  Density          : 1.848 g/cm³
+  Electronegativity: 1.57
+
+  Key Properties:
+  - Lightest alkaline earth metal; very high melting point for Group 2.
+  - Amphoteric: Reacts with both acids AND alkalis: Be + 2NaOH → Na₂BeO₂ + H₂.
+  - Resistant to air oxidation at room temp (protective BeO oxide layer).
+  - Extremely toxic; all compounds toxic — causes berylliosis (chronic lung disease).
+  - Anomalous (like Li): Covalent bonding tendency; forms BeF₂ (4-coordinated covalent); BeO and Be(OH)₂ amphoteric; diagonal resemblance to Al.
+  - High X-ray transparency (BeO window in X-ray tubes).
+  - Nuclear properties: Good moderator + reflector (low neutron absorption cross-section).
+  - Be-Cu alloys (2%Be): Very strong, non-sparking, non-magnetic — specialist tools.
+
+  Important Compounds:
+    BeO     : Beryllia; very high mp (2572°C); excellent thermal conductor; electrical insulator; specialist ceramics.
+    BeCl₂   : Covalent dimer (bridging Cl); Lewis acid; used as catalyst.
+    Be(OH)₂ : Amphoteric hydroxide — reacts with acid and base.
+    Beryl   : Be₃Al₂Si₆O₁₈; gemstone; source of Be. Varieties: Emerald (Cr³⁺), Aquamarine (Fe²⁺/³⁺).
+
+  Uses: Aerospace structures; X-ray windows; nuclear reactors; gyroscopes; mirrors in telescopes (JWST beryllium mirrors); Be-Cu alloys.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 12: MAGNESIUM (Mg)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 12
+  Atomic Mass      : 24.305 amu
+  Electron Config  : [Ne] 3s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 3
+  State at STP     : Solid (metal)
+  Colour           : Silvery-white
+  Melting Point    : 650°C
+  Boiling Point    : 1091°C
+  Density          : 1.738 g/cm³
+  Electronegativity: 1.31
+
+  Key Properties:
+  - 8th most abundant element in Earth's crust; 3rd most abundant dissolved ion in seawater.
+  - Burns with intense white light (2500°C): 2Mg + O₂ → 2MgO. Cannot be extinguished with water (Mg + H₂O → MgO + H₂).
+  - Reacts slowly with cold water; vigorously with steam: Mg + H₂O → MgO + H₂.
+  - Passive oxide layer protects from further reaction in air at room temp.
+  - Essential biological element: Central atom of chlorophyll (Mg²⁺); enzyme cofactor (300+ enzymes); ATP is usually Mg-ATP²⁻.
+  - Grignard reagents (RMgX): Extremely important in organic synthesis.
+
+  Important Compounds:
+    MgO     : Magnesia; high mp (2852°C); basic oxide; refractory material; antacid.
+    Mg(OH)₂: Milk of magnesia; antacid; laxative; Mg + H₂O → Mg(OH)₂ (slow).
+    MgCl₂   : Magnesium chloride; road de-icer; dietary supplement; tofu coagulant (nigari).
+    MgSO₄   : Epsom salt; laxative; eclampsia treatment; fertiliser; bath salts.
+    MgCO₃   : Magnesite; antacid; athletes' chalk (grip aid).
+    MgSiO₃  : Enstatite; abundant mineral; part of Earth's mantle.
+    Chlorophyll: Mg-porphyrin complex; photosynthesis.
+
+  Uses: Lightweight alloys (Mg-Al-Zn → Elektron; aerospace, automotive); incendiary/flares (brilliant white light); die-casting; supplements; sacrificial anode (protects steel from corrosion).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 20: CALCIUM (Ca)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 20
+  Atomic Mass      : 40.078 amu
+  Electron Config  : [Ar] 4s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 4
+  State at STP     : Solid (metal)
+  Colour           : Silver
+  Melting Point    : 842°C
+  Boiling Point    : 1484°C
+  Density          : 1.55 g/cm³
+  Electronegativity: 1.00
+
+  Key Properties:
+  - 5th most abundant element in Earth's crust; 3rd most abundant metal.
+  - Reacts with cold water: Ca + 2H₂O → Ca(OH)₂ + H₂ (bubbles; no ignition unlike Na/K).
+  - Brick-red flame test colour.
+  - Essential for bones, teeth, cell signalling, muscle contraction, blood clotting.
+  - Ca²⁺ second messenger: Calmodulin binding → enzyme activation; IP3 pathway; excitation-contraction coupling.
+
+  Important Compounds:
+    CaCO₃  : Limestone, chalk, marble; most common natural carbonate.
+    CaO    : Quicklime; made by roasting CaCO₃; reacts violently with water.
+    Ca(OH)₂: Slaked lime/limewater; weakly basic; CO₂ test (limewater turns milky = CaCO₃).
+    CaSO₄  : Calcium sulphate; anhydrous = anhydrite; hemihydrate = plaster of Paris; dihydrate = gypite.
+    CaCl₂  : Road de-icing; desiccant; drilling fluids; IV calcium.
+    CaF₂   : Fluorspar; source of F₂; optical windows.
+    Ca₃(PO₄)₂: Calcium phosphate; main mineral in bone (as hydroxyapatite).
+    CaC₂   : Calcium carbide; reacts with water → acetylene (C₂H₂) + Ca(OH)₂.
+    CaCN₂  : Calcium cyanamide; fertiliser; nitrogenous compounds synthesis.
+
+  Cement Chemistry:
+    Portland cement: CaO + SiO₂ + Al₂O₃ + Fe₂O₃ (from limestone + clay + iron ore, calcined 1450°C) → calcium silicates + aluminates. Mix with water → hydration reactions → calcium silicate hydrate (CSH gel) → hardening.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 38: STRONTIUM (Sr)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 38
+  Atomic Mass      : 87.62 amu
+  Electron Config  : [Kr] 5s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 5
+  State at STP     : Solid (metal)
+  Melting Point    : 777°C
+  Boiling Point    : 1382°C
+  Density          : 2.64 g/cm³
+  Electronegativity: 0.95
+  Flame colour     : Crimson red (brightest red flame)
+
+  Key Properties:
+  - Exists as mineral strontianite (SrCO₃) and celestite (SrSO₄).
+  - Reacts with water vigorously (like Ca but stronger).
+  - Crimson-red flame; used in fireworks and emergency flares.
+  - ⁸⁹Sr: Radioactive (t½=50.5 days); cancer treatment (bone metastases pain palliation).
+  - ⁹⁰Sr: Radioactive (t½=28.8 years); nuclear fallout product; mimics Ca²⁺ → incorporated into bone → bone cancer + leukaemia risk.
+  - Sr²⁺ similar size to Ca²⁺ → mimics calcium in biological systems.
+  - Strontium ranelate: Former osteoporosis treatment (stimulates bone formation + reduces resorption).
+  - SrTiO₃: Strontium titanate; cubic perovskite; used as gem substitute (high refractive index); research.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 56: BARIUM (Ba)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 56
+  Atomic Mass      : 137.327 amu
+  Electron Config  : [Xe] 6s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 6
+  State at STP     : Solid (metal)
+  Melting Point    : 727°C
+  Boiling Point    : 1845°C
+  Density          : 3.51 g/cm³
+  Electronegativity: 0.89
+  Flame colour     : Apple green / pale green
+
+  Key Properties:
+  - Reacts vigorously with water and air; stored under oil.
+  - Very dense (high Z) → X-ray opaque compounds.
+  - BaSO₄: Insoluble (Ksp = 1.1×10⁻¹⁰); contrast agent for GI X-rays ("barium meal/enema").
+  - BaCl₂: Soluble, TOXIC (Ba²⁺ soluble salts are toxic to muscle → hypokalaemia + paralysis); antidote is Na₂SO₄ (precipitates BaSO₄).
+  - BaTiO₃: Barium titanate; ferroelectric perovskite; piezoelectric (ultrasound transducers, capacitors).
+  - BaCO₃: Rat poison (soluble in stomach acid → Ba²⁺ → toxic).
+  - Apple-green/yellow-green flame characteristic.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELEMENT 88: RADIUM (Ra)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Atomic Number    : 88
+  Atomic Mass      : (226) amu
+  Electron Config  : [Rn] 7s²
+  Valence e-       : 2
+  Valency          : 2
+  Oxidation State  : +2 only
+  Group/Period     : Group 2 / Period 7
+  State at STP     : Solid (metal); radioactive
+  Melting Point    : 700°C
+  Density          : 5.5 g/cm³
+  Electronegativity: 0.9
+
+  Key Properties:
+  - Discovered by Marie and Pierre Curie (1898) from pitchblende.
+  - All isotopes radioactive. Most stable: ²²⁶Ra (t½ = 1,600 years; α + γ emitter).
+  - Luminescent: Glows faintly blue-green in the dark (radioluminescence).
+  - Historically used in luminous paint ("Radium girls" — occupational hazard; dial painters; jawbone cancer). Now banned; replaced by tritium/promethium.
+  - Ra²⁺ mimics Ca²⁺ biologically → concentrates in bone → bone cancer + leukaemia.
+  - Medical: ²²³Ra (Xofigo, radium-223 dichloride): Alpha emitter; treats bone metastases of prostate cancer (targets bone; short range of alpha particles). FDA approved 2013.
+  - Decays: ²²⁶Ra → ²²²Rn (radon gas) + α.
+  - Historical: Showed radiation could ionise air; disproved vitalism; led to nuclear physics.
+
+================================================================================

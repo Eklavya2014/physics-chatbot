@@ -1,0 +1,173 @@
+================================================================================
+                     CARDIOVASCULAR BIOLOGY
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. HEART ANATOMY & FUNCTION
+-----------------------------
+The heart is a four-chambered muscular organ (~300 g) that pumps ~5 L/min at rest,
+~25 L/min during maximal exercise. Beats ~2.5 billion times in a lifetime.
+
+Chambers and Valves:
+  Right atrium (RA) → Tricuspid valve → Right ventricle (RV) → Pulmonary valve →
+  Pulmonary artery → Lungs → Pulmonary veins → Left atrium (LA) → Mitral valve →
+  Left ventricle (LV) → Aortic valve → Aorta → Body.
+  AV valves (mitral + tricuspid): Prevent backflow during ventricular systole.
+  Semilunar valves (aortic + pulmonary): Prevent backflow during ventricular diastole.
+
+Cardiac Muscle (Myocardium):
+  Cardiomyocytes: Striated; branched; connected by intercalated discs.
+  Intercalated discs: Desmosomes (mechanical coupling) + gap junctions (connexin-43, Cx40 — electrical coupling → syncytium).
+  Energy: 60–70% from fatty acid oxidation; rest from glucose + lactate. Very mitochondria-rich (~35% cell volume).
+  T-tubules: Deep invaginations → couple surface APs to SR Ca2+ release (CICR — Ca2+-induced Ca2+ release).
+
+Cardiac Output and Regulation:
+  CO = Heart Rate × Stroke Volume.
+  Frank-Starling Law: Increased preload (venous return) → increased stretch → increased force of contraction → increased SV. Works up to optimal sarcomere length.
+  Preload: End-diastolic volume. Afterload: Resistance the heart pumps against (MAP + SVR).
+  Contractility (inotropy): Intrinsic force independent of preload/afterload. ↑ by catecholamines, digoxin, Ca2+.
+  Heart rate (chronotropy): ↑ by sympathetic NS + catecholamines; ↓ by parasympathetic NS + ACh.
+
+1.1 BLOOD VESSELS
+------------------
+Arteries: Thick walls; elastic (aorta, pulmonary) or muscular (medium arteries).
+  Tunica intima (endothelium + subendothelial CT) → tunica media (smooth muscle + elastin) → tunica adventitia (CT + vasa vasorum).
+Arterioles: Primary resistance vessels. Vascular tone regulated by ANS + vasomotor substances.
+Capillaries: Exchange vessels. Endothelial cells only. Three types: Continuous, fenestrated (kidneys, intestine), sinusoidal (liver, bone marrow, spleen).
+Venules: Post-capillary venules → site of WBC transmigration (diapedesis) during inflammation.
+Veins: Thin walls; large lumen; capacitance vessels (~60% blood volume). Venous valves prevent backflow.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. CARDIAC ELECTROPHYSIOLOGY
+------------------------------
+Action Potential — Ventricular Cardiomyocyte (5 phases):
+  Phase 0 (Rapid depolarisation): Voltage-gated Na+ channels (Nav1.5, INa) open → fast Na+ influx → rapid rise to +30 mV.
+  Phase 1 (Early rapid repolarisation): Transient outward K+ current (Ito) → brief notch.
+  Phase 2 (Plateau): L-type Ca2+ channels (Cav1.2, ICaL) open → Ca2+ influx; balances K+ efflux. Unique to cardiac muscle (prolongs AP → prevents tetanus).
+  Phase 3 (Rapid repolarisation): Delayed rectifier K+ channels (IKr, IKs) dominant → repolarisation.
+  Phase 4 (Resting potential): ~-90 mV. Inward rectifier K+ (IK1) maintains. SA node: Spontaneous depolarisation (If — funny current; HCN4 channels).
+
+SA Node Automaticity:
+  HCN4 (If): Activated at hyperpolarised potentials → Na+/K+ depolarising current during diastole.
+  T-type Ca2+ channels (ICaT): Small depolarising current.
+  Ca2+ clock: Spontaneous SR Ca2+ release (ryanodine receptor) → NCX (Na+/Ca2+ exchanger) → depolarisation.
+  "Coupled clock" model: Membrane clock (If + ICaT) + Ca2+ clock work together → automaticity.
+
+ECG Correlation:
+  P wave: Atrial depolarisation.
+  PR interval: AV node conduction delay (~0.12–0.20s).
+  QRS complex: Ventricular depolarisation (~0.08–0.12s).
+  ST segment: Ventricular plateau (isoelectric in normal).
+  T wave: Ventricular repolarisation.
+  QT interval: Ventricular depolarisation + repolarisation. Prolongation → risk of torsades de pointes.
+  Long QT syndrome: IKr (KCNH2/HERG) or IKs (KCNQ1) loss of function, or INa (SCN5A) gain of function.
+
+3. ATHEROSCLEROSIS & CORONARY ARTERY DISEASE
+----------------------------------------------
+Atherosclerosis: Chronic inflammatory disease of arteries; lipid accumulation in intima.
+
+Pathogenesis (Response-to-Injury Hypothesis):
+  Endothelial dysfunction: Risk factors (LDL, HTN, diabetes, smoking, oxidative stress) → reduced NO, increased adhesion molecule expression (VCAM-1, ICAM-1, E-selectin).
+  LDL oxidation: oxLDL enters intima → taken up by macrophages (SR-A, CD36 scavenger receptors) → foam cells (lipid-laden macrophages).
+  Inflammatory cascade: Foam cells + T cells + smooth muscle cells → PDGF, IL-1, TNF → SMC migration from media → proliferate + produce collagen → fibrous cap.
+  Atherosclerotic plaque: Necrotic core (dead foam cells + extracellular lipid) + fibrous cap (SMC + collagen).
+  Plaque rupture: MMP-mediated (from activated macrophages) cap thinning → rupture → thrombus → MI.
+
+Risk Factors:
+  Modifiable: Hypercholesterolaemia (esp. LDL-C), hypertension, diabetes mellitus, smoking, obesity, sedentary lifestyle, diet, stress.
+  Non-modifiable: Age, sex (males > females pre-menopause), family history, genetic (FH, PCSK9 variants).
+
+Lipoproteins:
+  LDL ("bad"): Delivers cholesterol to tissues. Atherogenic. Target of statins, ezetimibe, PCSK9 inhibitors.
+  HDL ("good"): Reverse cholesterol transport — removes cholesterol from tissues → liver. Target of ongoing research.
+  VLDL: TG-rich. Made in liver. Precursor to LDL.
+  Lp(a): Independent CVD risk factor. ~20% genetically determined. Target of new drugs (pelacarsen — LICA; olpasiran — siRNA).
+  PCSK9: Degrades LDL receptors. PCSK9 inhibitors (evolocumab, alirocumab — IgG mAbs) → ↑ LDL-R expression → 50–60% ↓ LDL-C.
+    Inclisiran (siRNA against PCSK9): Twice-yearly dosing → sustained 50% ↓ LDL.
+
+Acute Coronary Syndromes (ACS):
+  Unstable angina: Plaque rupture/erosion + non-occlusive thrombus. No biomarker rise.
+  NSTEMI: Subendocardial infarction. Troponin rise. No ST elevation.
+  STEMI: Complete occlusion. ST elevation. Emergency PCI (door-to-balloon <90 min target).
+  Treatment: DAPT (aspirin + P2Y12 inhibitor — ticagrelor/clopidogrel) + anticoagulation + reperfusion.
+
+4. HEART FAILURE
+-----------------
+Heart failure (HF): Heart unable to meet metabolic demands of the body.
+  HFrEF (reduced EF <40%): Systolic dysfunction. Dilated cardiomyopathy (DCM), ischaemia.
+  HFpEF (preserved EF >50%): Diastolic dysfunction. Common in elderly, hypertension, obesity.
+  HFmrEF: Mildly reduced EF (40–49%).
+
+Pathophysiology:
+  Compensatory mechanisms (initially helpful, later harmful):
+    SNS activation: ↑ HR, ↑ contractility, vasoconstriction → short-term maintenance of CO.
+    RAAS activation: Angiotensin II → aldosterone → Na+/water retention → ↑ preload.
+    Cardiac remodelling: Hypertrophy → fibrosis → dilation → worsening function.
+  Neurohormonal hypothesis: Chronic SNS + RAAS activation → progressive cardiac injury → vicious cycle.
+
+HF Treatment (HFrEF — evidence-based "Fantastic Four"):
+  1. ACEi/ARB (or ARNi — sacubitril/valsartan, Entresto): Blocks RAAS + neprilysin → ↑ ANP/BNP → vasodilation + natriuresis.
+  2. Beta-blocker (bisoprolol, carvedilol, metoprolol CR): Blocks SNS → remodelling reversal.
+  3. MRA (spironolactone/eplerenone): Aldosterone antagonism → less fibrosis.
+  4. SGLT2 inhibitor (dapagliflozin, empagliflozin): Reduce hospitalisation + mortality even in HFpEF. Mechanism: Osmotic diuresis, reduction of cardiac preload/afterload, metabolic effects, anti-inflammatory.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. VASCULAR BIOLOGY
+--------------------
+Endothelium:
+  Single cell layer lining all vessels. ~1 kg total mass; ~6×10^12 cells.
+  Functions: Barrier (permeability control), vasotone (NO production), anti-thrombotic (prostacyclin, TM), anti-inflammatory, angiogenesis, haemostasis.
+
+Nitric Oxide (NO) Biology:
+  eNOS (endothelial NOS, NOS3): L-arginine + O2 + NADPH → NO + citrulline.
+    Cofactors: BH4 (tetrahydrobiopterin), calmodulin, FAD, FMN, haem.
+    Activation: Shear stress → PI3K → AKT → eNOS (S1177 phosphorylation); VEGF, bradykinin, ACh → Ca2+ → calmodulin → eNOS.
+    eNOS uncoupling: BH4 oxidation → eNOS produces superoxide instead of NO → endothelial dysfunction → hypertension, atherosclerosis.
+  NO signalling: Diffuses to VSMC → sGC → cGMP → PKG → myosin light chain phosphatase → vasodilation.
+  ADMA (Asymmetric Dimethylarginine): Endogenous eNOS inhibitor; elevated in CVD, renal failure → endothelial dysfunction.
+
+Angiogenesis:
+  Growth of new blood vessels from pre-existing ones. Critical for: Development, wound healing, tumour growth.
+  VEGF (Vascular Endothelial Growth Factor): Master angiogenic signal.
+    VEGF-A (165/121 splice variants): Binds VEGFR2 on endothelium → PI3K-AKT + MEK-ERK → proliferation + survival + permeability.
+    HIF-1alpha: Hypoxia → transcribes VEGF gene.
+  Tip cell vs stalk cell specification:
+    VEGF gradient → tip cell (at leading edge); Notch signalling (DLL4 from tip to stalk) → stalk cell (proliferates to extend vessel). Lateral inhibition maintains ratio.
+    Anti-VEGF therapy (bevacizumab): Blocks tip/stalk formation → vessel pruning → tumour starvation. Also ranibizumab, aflibercept → AMD treatment.
+
+6. CARDIAC REGENERATION & STEM CELL THERAPY
+---------------------------------------------
+Cardiac regeneration capacity:
+  Neonatal mice: Complete regeneration after apex resection or MI (within 7 days of birth). Cardiomyocyte proliferation.
+  Adult human hearts: ~1% cardiomyocyte turnover/year. Not enough to repair MI (1 billion+ cells lost).
+  c-kit+ cardiac progenitor cells: Controversial. Anversa papers retracted; field largely abandoned.
+  True regenerating fish (zebrafish): Full cardiac regeneration throughout life. Epicardium-derived cells + CM dedifferentiation/proliferation.
+
+Approaches to Enhance Cardiac Repair:
+  Cell therapy: iPSC-derived cardiomyocytes (iPSC-CMs). Remuscularise infarcted heart.
+    Challenges: Immature CMs → arrhythmia risk; poor engraftment; electromechanical coupling; scale-up.
+    Primates: iPSC-CM injection post-MI → remuscularisation + improved function, but ventricular arrhythmias (monkey model). Clinical trials: HEAL-CHF (Phase I/II).
+  Direct reprogramming: In situ conversion of cardiac fibroblasts → cardiomyocytes.
+    Gata4 + Mef2c + Tbx5 (GMT factors): Converts ~10–20% fibroblasts in vivo → improvement in mouse MI model. Clinical translation ongoing challenge.
+  MicroRNA therapy: miR-302/367 → stimulate CM proliferation (mouse model).
+    miR-199a-5p: Stimulate CM proliferation in pigs after MI — improved function but some sudden death.
+  VEGF gene therapy: Adeno-VEGF → angiogenesis; tried clinically with modest benefit.
+  Metabolic reprogramming: Activating foetal gene programme → fatty acid → glucose metabolism switch → promotes CM proliferation.
+
+[EMERGING] Cardiomyopathy genetics:
+  Hypertrophic cardiomyopathy (HCM): Most common inherited cardiac condition (1:500). Mutations in sarcomere genes: MYH7 (beta-myosin heavy chain), MYBPC3 (myosin-binding protein C) — account for ~70% of HCM. Autosomal dominant, variable expression.
+    Mavacamten (Camzyos): First-in-class cardiac myosin inhibitor → reduces hypercontractility → approved FDA 2022 for obstructive HCM.
+  Dilated cardiomyopathy (DCM): >50 causative genes. TTN (titin — largest human protein, ~3.7 MDa) truncating variants → most common genetic cause (~25% familial DCM).
+  ARVC (Arrhythmogenic Right Ventricular Cardiomyopathy): Desmosome gene mutations (PKP2, DSP, DSC2, JUP) → fibro-fatty replacement of RV myocardium → VT + sudden death. Naxos disease: PKP2 + skin/hair (tricho).
+
+================================================================================

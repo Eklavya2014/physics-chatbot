@@ -1,0 +1,403 @@
+CHEMISTRY EXAM ESSENTIALS: INORGANIC REACTIONS, TRENDS, AND IDENTIFICATION
+
+Use this file for quick revision of p-block, d-block, metallurgy, coordination basics, qualitative analysis, and very common board/entrance exam traps.
+
+--------------------------------------------------
+1. PERIODIC TRENDS YOU MUST REMEMBER
+--------------------------------------------------
+Across a period:
+- Atomic radius decreases
+- Ionization enthalpy generally increases
+- Electron gain enthalpy usually becomes more negative
+- Metallic character decreases
+- Non-metallic character increases
+
+Down a group:
+- Atomic radius increases
+- Ionization enthalpy decreases
+- Metallic character increases
+- Shielding increases
+
+Important exceptions:
+- Be > B in ionization enthalpy
+- N > O in ionization enthalpy
+Reason:
+- Be has filled 2s
+- N has half-filled 2p
+- O has paired electron repulsion
+
+Electronegativity:
+- F is highest
+- Cs/Fr among lowest
+- Noble gases usually not assigned standard values in basic tables
+
+--------------------------------------------------
+2. CHEMICAL BONDING FACTS FREQUENTLY ASKED
+--------------------------------------------------
+Ionic bond favored by:
+- Low ionization enthalpy of cation-forming atom
+- High electron affinity/electron gain tendency of anion-forming atom
+- High lattice enthalpy
+
+Covalent bond:
+- Formed by sharing of electrons
+
+Coordinate bond:
+- Shared pair donated by one atom only
+Examples:
+- NH4+
+- H3O+
+- BF3.NH3
+
+Fajan's rule:
+More covalent character if:
+- Cation is small and highly charged
+- Anion is large and highly charged
+
+Shapes to revise:
+- BeCl2 linear
+- BF3 trigonal planar
+- CH4 tetrahedral
+- NH3 trigonal pyramidal
+- H2O bent
+- PCl5 trigonal bipyramidal
+- SF6 octahedral
+- SF4 seesaw
+- ClF3 T-shaped
+- XeF4 square planar
+
+Hybridization quick list:
+- sp: linear
+- sp2: trigonal planar
+- sp3: tetrahedral
+- sp3d: trigonal bipyramidal
+- sp3d2: octahedral
+
+Common mistake:
+- Shape depends on lone pairs also, not hybridization alone.
+
+--------------------------------------------------
+3. s-BLOCK AND p-BLOCK HIGH-YIELD POINTS
+--------------------------------------------------
+Hydrogen:
+- Shows similarity with alkali metals and halogens
+- Isotopes: protium, deuterium, tritium
+
+Alkali metals:
+- Very reactive
+- Stored under kerosene
+- React vigorously with water
+General reaction:
+2M + 2H2O -> 2MOH + H2
+
+Alkaline earth metals:
+- Less reactive than alkali metals
+- Be shows anomalous behavior
+- Mg reacts slowly with cold water but readily with steam
+
+Diagonal relationship:
+- Li with Mg
+- Be with Al
+
+Important compounds:
+NaOH:
+- Strong base
+- Made by chlor-alkali process
+
+Na2CO3.10H2O:
+- Washing soda
+
+NaHCO3:
+- Baking soda
+- On heating:
+2NaHCO3 -> Na2CO3 + CO2 + H2O
+
+CaOCl2:
+- Bleaching powder
+- Used as bleaching and disinfecting agent
+
+CaCO3:
+- Limestone/marble/chalk
+On heating:
+CaCO3 -> CaO + CO2
+
+Plaster of Paris:
+- CaSO4.1/2H2O
+
+Gypsum:
+- CaSO4.2H2O
+
+--------------------------------------------------
+4. IMPORTANT p-BLOCK TRENDS AND REACTIONS
+--------------------------------------------------
+Boron family:
+- B is non-metal, Al is metal
+- BF3 is electron deficient Lewis acid
+- Boric acid B(OH)3 is weak monobasic Lewis acid, not a proton donor in the usual sense
+
+Carbon family:
+- Catenation: C highest
+- Inert pair effect increases down the group
+- Pb shows +2 more stable than +4
+- Sn shows both +2 and +4
+
+Nitrogen family:
+- NH3 is basic due to lone pair
+- Basic strength of hydrides generally decreases down group
+- N2 is very stable due to triple bond
+
+Oxygen family:
+- H2O liquid due to hydrogen bonding
+- H2S is gas and weaker hydrogen bonding
+
+Halogens:
+- F2 strongest oxidizing agent
+- Bond dissociation enthalpy exception: F-F is weaker than expected due to lone pair repulsion
+- HF is weak acid; HCl, HBr, HI are strong acids in water
+- Reducing character of hydrogen halides: HF < HCl < HBr < HI
+
+Interhalogen compounds:
+- More reactive than halogens except fluorine
+Examples:
+- ClF3
+- BrF5
+- IF7
+
+Noble gases:
+- Xe forms compounds with F and O
+Examples:
+- XeF2
+- XeF4
+- XeF6
+
+--------------------------------------------------
+5. METALLURGY ESSENTIALS
+--------------------------------------------------
+Concentration methods:
+- Hydraulic washing: based on density difference
+- Magnetic separation: magnetic ore and non-magnetic impurities
+- Froth flotation: sulphide ores
+- Leaching: suitable solvent dissolves ore
+
+Common roasting/calcination:
+Roasting:
+- Heating sulphide ore in excess air
+Example:
+2ZnS + 3O2 -> 2ZnO + 2SO2
+
+Calcination:
+- Heating carbonate/hydrated ore in limited or no air
+Example:
+ZnCO3 -> ZnO + CO2
+
+Reduction:
+- Metal oxide reduced by carbon, CO, Al, etc.
+
+Thermite reaction:
+Fe2O3 + 2Al -> Al2O3 + 2Fe + heat
+
+Flux:
+- Added to remove gangue
+
+Slag:
+- Fusible product formed from gangue + flux
+
+Examples:
+- SiO2 acidic gangue removed by basic flux CaO
+- CaO + SiO2 -> CaSiO3
+
+Most important ores:
+- Haematite: Fe2O3
+- Magnetite: Fe3O4
+- Bauxite: Al2O3.xH2O
+- Zinc blende: ZnS
+- Calamine: ZnCO3
+- Cinnabar: HgS
+- Copper pyrites: CuFeS2
+
+Common mistake:
+- Bauxite is ore of aluminium, not Al metal itself.
+- Cryolite Na3AlF6 is used in extraction of Al to lower melting point and improve conductivity.
+
+--------------------------------------------------
+6. d-BLOCK AND TRANSITION ELEMENTS
+--------------------------------------------------
+Transition elements show:
+- Variable oxidation states
+- Colored ions
+- Complex formation
+- Catalytic behavior
+- Paramagnetism
+
+Why variable oxidation states?
+- (n-1)d and ns electrons have similar energies
+
+Examples of oxidation states:
+- Fe: +2, +3
+- Mn: +2 to +7
+- Cr: +2, +3, +6
+
+Color of ions:
+- Due to d-d transitions
+- d0 and d10 ions usually colorless
+Examples:
+- Sc3+ colorless
+- Zn2+ colorless
+- Cu2+ colored
+
+Magnetic behavior:
+- More unpaired electrons -> more paramagnetic
+
+Important oxidizing/reducing species:
+- KMnO4 strong oxidizing agent
+- K2Cr2O7 strong oxidizing agent
+- Fe2+ acts as reducing agent
+- Sn2+ acts as reducing agent
+
+--------------------------------------------------
+7. COORDINATION COMPOUNDS QUICK REVISION
+--------------------------------------------------
+Terms:
+- Central metal atom/ion
+- Ligand
+- Coordination number
+- Oxidation state
+- Coordination sphere
+
+Ligands:
+- Unidentate: NH3, H2O, Cl-
+- Bidentate: en, C2O4^2-
+- Ambidentate: NO2-, SCN-
+- Chelating ligands form rings and increase stability
+
+Important formulas:
+- [Co(NH3)6]Cl3
+- K4[Fe(CN)6]
+- K3[Fe(CN)6]
+- [Cu(NH3)4]SO4
+
+Oxidation state examples:
+- In [Fe(CN)6]4-, Fe = +2
+- In [Fe(CN)6]3-, Fe = +3
+
+Isomerism:
+- Ionization isomerism
+- Hydrate isomerism
+- Linkage isomerism
+- Geometrical isomerism
+- Optical isomerism
+
+Werner theory idea:
+- Primary valency = oxidation state
+- Secondary valency = coordination number
+
+VBT quick idea:
+- Inner orbital complex usually low spin
+- Outer orbital complex usually high spin
+
+Common mistake:
+- Do not confuse oxidation state with coordination number.
+Example:
+- In [Co(NH3)6]Cl3, oxidation state of Co = +3, coordination number = 6
+
+--------------------------------------------------
+8. QUALITATIVE INORGANIC ANALYSIS SNAPSHOT
+--------------------------------------------------
+Colored ions:
+- Cu2+ blue
+- Fe2+ pale green
+- Fe3+ yellow/brown
+- Ni2+ green
+- MnO4- purple
+- Cr2O7^2- orange
+
+Gas identification:
+- H2: burns with pop sound
+- O2: rekindles glowing splint
+- CO2: turns lime water milky
+- NH3: pungent, turns red litmus blue
+- H2S: rotten egg smell, blackens lead acetate paper
+- SO2: pungent, decolorizes acidified KMnO4
+
+Flame colors:
+- Na: golden yellow
+- K: lilac
+- Ca: brick red
+- Ba: apple green
+- Cu: blue-green
+
+Precipitate reminders:
+- AgCl white, soluble in NH3
+- AgBr pale yellow, partly soluble in NH3
+- AgI yellow, insoluble in NH3
+- BaSO4 white, insoluble in acids
+- Cu(OH)2 blue
+- Fe(OH)3 reddish brown
+- Fe(OH)2 dirty green
+
+--------------------------------------------------
+9. IMPORTANT OXIDIZING AND REDUCING AGENTS
+--------------------------------------------------
+Strong oxidizing agents:
+- KMnO4
+- K2Cr2O7
+- Concentrated HNO3
+- O3
+- Halogens, especially F2 and Cl2
+
+Common reducing agents:
+- H2
+- CO
+- C
+- SO2
+- SnCl2
+- FeSO4
+- I-
+
+Remember:
+- Oxidation = loss of electrons / increase in oxidation number
+- Reduction = gain of electrons / decrease in oxidation number
+
+--------------------------------------------------
+10. VERY COMMON EXAM-LEVEL EQUATIONS
+--------------------------------------------------
+Cl2 + 2KI -> 2KCl + I2
+MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O
+2KMnO4 + 16HCl -> 2KCl + 2MnCl2 + 5Cl2 + 8H2O
+K2Cr2O7 + 14HCl -> 2KCl + 2CrCl3 + 3Cl2 + 7H2O
+NH3 + HCl -> NH4Cl
+CuSO4 + 2NaOH -> Cu(OH)2 + Na2SO4
+FeCl3 + 3NH4OH -> Fe(OH)3 + 3NH4Cl
+BaCl2 + H2SO4 -> BaSO4 + 2HCl
+
+--------------------------------------------------
+11. TOP COMMON MISTAKES
+--------------------------------------------------
+- HF is weak acid, not strong like HCl/HBr/HI in water.
+- NH4OH is better viewed as aqueous ammonia; do not overthink it as a stable isolated compound.
+- Oxidation number and valency are not always identical.
+- Be and Al show diagonal relationship-type anomalies; do not apply group trends blindly.
+- d0 and d10 ions are generally colorless.
+- F is strongest oxidizing halogen, but HF is weak acid.
+- In coordination compounds, ligands inside bracket affect coordination number; counter ions outside do not.
+- Roasting is mainly for sulphide ores, calcination mainly for carbonate/hydrated ores.
+
+--------------------------------------------------
+12. ULTRA-QUICK LAST-MINUTE RECALL
+--------------------------------------------------
+Highest electronegativity: F
+Strongest oxidizing halogen: F2
+Most stable oxidation state of Al: +3
+Pb shows inert pair effect: +2 stable
+Colorless d-block ion examples: Sc3+, Zn2+
+Thermite reducing metal: Al
+Bleaching powder: CaOCl2
+Washing soda: Na2CO3.10H2O
+Baking soda: NaHCO3
+Plaster of Paris: CaSO4.1/2H2O
+Gypsum: CaSO4.2H2O
+Cryolite: Na3AlF6
+Strong oxidizers: KMnO4, K2Cr2O7
+Common complex ion example: [Fe(CN)6]4-
+
+End of file.

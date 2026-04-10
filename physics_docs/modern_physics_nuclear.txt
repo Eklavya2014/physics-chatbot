@@ -1,0 +1,180 @@
+PHYSICS: MODERN PHYSICS, QUANTUM & NUCLEAR — COMPLETE GUIDE
+============================================================
+
+DUAL NATURE OF RADIATION AND MATTER
+-------------------------------------
+Photoelectric effect (Einstein, 1905):
+  E = hf  (energy of photon, h = 6.626×10⁻³⁴ J·s = Planck's constant)
+  KE_max = hf - φ  (φ = work function, minimum energy to emit electron)
+  Threshold frequency: f₀ = φ/h  (no emission below this)
+  Stopping potential: eV₀ = KE_max = hf - φ
+  
+de Broglie wavelength: λ = h/p = h/(mv)  (matter waves)
+  For electron accelerated through V: λ = h/√(2meV) = 12.3/√V (Å, V in volts)
+
+Compton effect: λ' - λ = (h/m₀c)(1 - cos θ)  (X-rays scattering)
+  Compton wavelength: λ_c = h/m₀c = 2.43×10⁻¹² m
+
+Heisenberg uncertainty principle:
+  Δx·Δp ≥ ℏ/2  (position-momentum)
+  ΔE·Δt ≥ ℏ/2  (energy-time)
+  where ℏ = h/2π = 1.055×10⁻³⁴ J·s
+
+BOHR'S MODEL OF HYDROGEN ATOM
+-------------------------------
+Postulates:
+  1. Electrons orbit nucleus in specific stable orbits (no radiation)
+  2. Angular momentum quantised: mvr = nℏ  (n = 1,2,3...)
+  3. Radiation emitted/absorbed when electron jumps between orbits
+
+Radius of nth orbit: rₙ = n²a₀  (a₀ = 0.529 Å = Bohr radius)
+  rₙ = 0.529n²/Z Å  (Z = atomic number)
+
+Velocity in nth orbit: vₙ = v₀/n = αc/n  (α ≈ 1/137, fine structure constant)
+
+Energy of nth level: Eₙ = -13.6/n² eV  (for hydrogen, Z=1)
+  Eₙ = -13.6Z²/n² eV  (for hydrogen-like ions)
+  Ground state (n=1): E₁ = -13.6 eV
+  Ionisation energy = 13.6 eV
+
+Spectral series (transitions to nth level from higher):
+  Lyman (→n=1): UV region, 91.2-122 nm
+  Balmer (→n=2): Visible, 364-656 nm  (Hα=656nm, Hβ=486nm, Hγ=434nm)
+  Paschen (→n=3): Near IR
+  Brackett (→n=4): IR
+  Pfund (→n=5): Far IR
+
+Rydberg formula: 1/λ = R_H(1/n₁² - 1/n₂²)
+  R_H = 1.097×10⁷ m⁻¹ (Rydberg constant)
+
+Wave number: ν̄ = R_H·Z²(1/n₁² - 1/n₂²)
+
+QUANTUM NUMBERS AND ATOMIC STRUCTURE
+--------------------------------------
+Principal: n = 1,2,3... (shell, energy level)
+Azimuthal: l = 0 to n-1 (subshell: s,p,d,f for l=0,1,2,3)
+Magnetic: m_l = -l to +l  (2l+1 values, orbital orientation)
+Spin: m_s = +½ or -½
+
+Maximum electrons: in shell n = 2n²
+  s-orbital: 2 electrons, p: 6, d: 10, f: 14
+
+Pauli exclusion principle: No two electrons can have identical quantum numbers
+Hund's rule: Maximum spin multiplicity (electrons fill degenerate orbitals singly first)
+Aufbau principle: Fill from lowest energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p...
+
+NUCLEAR PHYSICS
+----------------
+Notation: ᴬ_Z X  (A = mass number, Z = atomic number = protons)
+  Neutrons: N = A - Z
+  Isotopes: same Z, different A (same element, different mass)
+  Isobars: same A, different Z
+  Isotones: same N, different Z
+
+Nuclear radius: R = R₀A^(1/3)  (R₀ = 1.2×10⁻¹⁵ m = 1.2 fm)
+Nuclear density: ≈ 2.3×10¹⁷ kg/m³ (same for all nuclei!)
+
+Binding energy:
+  Mass defect: Δm = Zm_p + Nm_n - M_nucleus
+  Binding energy: BE = Δm·c² (in MeV, where 1 amu = 931.5 MeV/c²)
+  Binding energy per nucleon: BE/A (maximum around A=56, iron-56 most stable)
+  
+Stability: N/Z ≈ 1 for light nuclei, ≈ 1.5 for heavy nuclei
+  Magic numbers: 2,8,20,28,50,82,126 (especially stable)
+
+RADIOACTIVE DECAY
+------------------
+Alpha (α) decay: ᴬ_Z X → ⁴_₂He + ᴬ⁻⁴_{Z-2}Y
+  Alpha particle: He-4 nucleus, stopped by paper, range few cm in air
+
+Beta-minus (β⁻): n → p + e⁻ + ν̄_e  (neutron → proton + electron + antineutrino)
+  ᴬ_Z X → ᴬ_{Z+1}Y + e⁻ + ν̄_e
+
+Beta-plus (β⁺): p → n + e⁺ + ν_e  (proton → neutron + positron + neutrino)
+
+Gamma (γ): High-energy photon emission (from excited nucleus, no change in Z or A)
+  Stopped by lead, penetrates most materials
+
+Radioactive decay law: N = N₀·e^(-λt)
+  Activity: A = λN = A₀e^(-λt)  (Becquerel: 1 decay/second; Curie: 3.7×10¹⁰ Bq)
+  Half-life: T₁/₂ = ln2/λ = 0.693/λ
+  Mean life: τ = 1/λ = T₁/₂/0.693
+  After n half-lives: N = N₀/2ⁿ
+
+NUCLEAR REACTIONS
+------------------
+Fission: Heavy nucleus splits → two medium nuclei + neutrons + energy
+  Example: ²³⁵U + n → ⁹²Kr + ¹⁴¹Ba + 3n + ~200 MeV
+  Chain reaction: K>1 (supercritical), K=1 (critical), K<1 (subcritical)
+  Critical mass: minimum mass for self-sustaining chain reaction
+  Nuclear reactor: Moderator (D₂O, graphite) slows neutrons; Control rods (Cd, B) absorb neutrons
+
+Fusion: Light nuclei combine → heavier nucleus + energy
+  Example: ²H + ³H → ⁴He + n + 17.6 MeV
+  Requires ~10⁷ K (thermonuclear reaction)
+  Hydrogen bomb, Sun's energy source (proton-proton chain)
+  Fusion energy per nucleon >> fission energy per nucleon
+
+Q-value: Q = (m_reactants - m_products)c²
+  Q > 0: exothermic (energy released)
+  Q < 0: endothermic (energy absorbed)
+
+SPECIAL THEORY OF RELATIVITY
+------------------------------
+Postulates (Einstein, 1905):
+  1. Laws of physics same in all inertial frames
+  2. Speed of light c is same in all inertial frames
+
+Lorentz factor: γ = 1/√(1 - v²/c²)  (γ≥1, increases with speed)
+
+Time dilation: Δt = γΔt₀  (moving clocks run slow)
+Length contraction: L = L₀/γ  (moving objects shorter in direction of motion)
+Relativistic mass: m = γm₀
+Relativistic momentum: p = γm₀v
+Mass-energy equivalence: E = mc² = γm₀c²
+  Rest energy: E₀ = m₀c²
+  Kinetic energy: KE = (γ-1)m₀c²
+  Total energy: E² = (pc)² + (m₀c²)²
+
+SEMICONDUCTOR PHYSICS
+-----------------------
+Energy bands:
+  Conduction band: electrons free to move
+  Valence band: electrons bound to atoms
+  Band gap (Eg): forbidden energy gap
+    Conductor: bands overlap (Eg=0)
+    Semiconductor: small gap (Si: 1.1 eV, Ge: 0.7 eV)
+    Insulator: large gap (>3 eV)
+
+Intrinsic semiconductor: pure Si/Ge, equal electrons and holes
+Extrinsic:
+  n-type: pentavalent dopant (P, As, Sb) → extra electron
+  p-type: trivalent dopant (B, Al, In) → hole (positive carrier)
+
+p-n junction:
+  Depletion region: no free carriers at junction
+  Forward bias: reduces barrier, current flows (I = I₀(e^(eV/kT) - 1))
+  Reverse bias: increases barrier, very small reverse saturation current I₀
+  Breakdown: Zener (doping-dependent) or avalanche
+  
+Diode: conducts only in forward direction
+Zener diode: voltage regulator (conducts at Zener voltage in reverse)
+LED: forward biased, light emitted when electrons recombine with holes
+Photodiode: reverse biased, current increases with light
+Solar cell: photovoltaic effect, generates EMF
+
+Transistor (BJT):
+  n-p-n or p-n-p
+  Active region: E-B forward biased, C-B reverse biased
+  IC = βIB  (β = current gain, typically 50-300)
+  Common emitter: voltage amplifier, current amplifier
+  Common base: current gain < 1, good for high frequency
+  Common collector: emitter follower, voltage gain < 1, high current gain
+
+Logic gates (NAND, NOR are universal):
+  AND: output=1 only if all inputs=1
+  OR: output=1 if any input=1
+  NOT: inverts output
+  NAND = AND + NOT,  NOR = OR + NOT
+  XOR: output=1 if inputs are different
+  De Morgan: ~(A·B) = ~A+~B,  ~(A+B) = ~A·~B

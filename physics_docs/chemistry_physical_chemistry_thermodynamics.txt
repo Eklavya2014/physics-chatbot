@@ -1,0 +1,276 @@
+================================================================================
+          CHEMISTRY: PHYSICAL CHEMISTRY & THERMODYNAMICS
+              A Comprehensive Reference: Basic · Intermediate · Advanced
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: BASIC — INTRODUCTORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. STATES OF MATTER & GAS LAWS
+--------------------------------
+States of Matter:
+  Solid   : Fixed shape; fixed volume; particles vibrate in fixed positions; strong forces.
+  Liquid  : Fixed volume; no fixed shape; particles move freely but close together.
+  Gas     : No fixed shape; no fixed volume; particles move rapidly, far apart; negligible forces.
+  Plasma  : Ionised gas; 4th state; stars, lightning, neon signs.
+  Supercritical fluid: Above critical temperature AND pressure → properties between liquid and gas.
+
+Kinetic Molecular Theory of Gases:
+  1. Gas molecules in constant, random motion. 2. Molecules have negligible volume vs container.
+  3. Collisions elastic (no net energy loss). 4. No intermolecular forces between molecules.
+  5. Average kinetic energy proportional to absolute temperature: KE_avg = (3/2)kT.
+  Root Mean Square Speed: v_rms = √(3RT/M). Faster for lighter molecules at same T.
+
+Ideal Gas Law: PV = nRT
+  P = pressure (Pa or atm); V = volume (m³ or L); n = moles; R = 8.314 J/mol·K; T = temperature (K).
+  Derived from: Boyle's Law (PV = const at constant T,n); Charles's Law (V/T = const at constant P,n);
+  Avogadro's Law (V ∝ n at constant T,P).
+
+Dalton's Law of Partial Pressures: P_total = P₁ + P₂ + P₃ + ... (each gas independent).
+Graham's Law of Effusion: Rate ∝ 1/√M. Lighter gases effuse faster.
+Standard Conditions: STP = 0°C, 100 kPa (new IUPAC); old STP = 0°C, 101.325 kPa. Molar volume = 22.4 L/mol (old STP); 22.7 L/mol (new STP).
+
+van der Waals Equation (Real Gases): (P + a/V²)(V - b) = nRT
+  a = attraction correction (reduces effective pressure); b = excluded volume correction.
+  Deviations from ideal: High pressure (volume correction); low temperature (attraction correction).
+
+1.1 ENERGY & THERMOCHEMISTRY
+------------------------------
+Heat (q) and Work (w):
+  First Law of Thermodynamics: ΔU = q + w (or ΔU = q - w depending on sign convention).
+    ΔU = change in internal energy; q = heat absorbed by system; w = work done on system.
+  Endothermic reaction: q > 0; absorbs heat from surroundings (temperature of surroundings drops).
+  Exothermic reaction: q < 0; releases heat to surroundings (temperature of surroundings rises).
+
+Enthalpy (H):
+  H = U + PV. At constant pressure: ΔH = q_p (heat at constant pressure).
+  ΔH < 0: Exothermic. ΔH > 0: Endothermic.
+  Standard enthalpy of formation ΔHf°: Enthalpy change to form 1 mole of compound from elements in standard states. ΔHf°(elements in standard state) = 0 by definition.
+  Hess's Law: ΔH_reaction = ΣΔHf°(products) - ΣΔHf°(reactants). Enthalpy is a state function.
+
+Bond Enthalpies (Mean Bond Enthalpies):
+  ΔH_reaction ≈ ΣBE(bonds broken) - ΣBE(bonds formed). Bonds broken = endothermic; bonds formed = exothermic.
+  Approximate only (uses average values; ΔHf° method more accurate).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: INTERMEDIATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. THERMODYNAMICS — THE THREE LAWS
+------------------------------------
+First Law (Conservation of Energy):
+  ΔU = q + w. Energy cannot be created or destroyed, only converted.
+  Work done by gas at constant pressure: w = -PΔV (expansion = negative work by system = positive work on surroundings).
+
+Second Law (Entropy and Spontaneity):
+  Entropy (S): Measure of disorder/randomness/number of microstates.
+    ΔS_universe = ΔS_system + ΔS_surroundings ≥ 0 (always; = 0 for reversible; >0 for irreversible/spontaneous).
+  Entropy increases with: Higher temperature; larger volume; more particles; more complex molecules; phase change from solid → liquid → gas.
+  ΔS° = ΣS°(products) - ΣS°(reactants). S° = absolute entropy (J/mol·K). S° > 0 always (Boltzmann, third law).
+  Boltzmann's equation: S = k_B × ln(W). W = number of microstates; k_B = 1.381×10⁻²³ J/K.
+
+Third Law (Absolute Zero and Entropy):
+  At absolute zero (0 K), entropy of perfect crystal = 0. S = 0 at T = 0 K (for perfectly ordered crystal).
+  Therefore, absolute entropies can be calculated.
+
+Gibbs Free Energy (G):
+  G = H - TS. At constant T and P: ΔG = ΔH - TΔS.
+  ΔG < 0: Spontaneous (thermodynamically favourable).
+  ΔG = 0: Equilibrium. ΔG > 0: Non-spontaneous (reverse process spontaneous).
+
+Predicting Spontaneity:
+  ΔH    | ΔS    | ΔG = ΔH - TΔS   | Spontaneity
+  ------|-------|-----------------|-------------------------
+  -     | +     | Always -        | Spontaneous at all temps
+  -     | -     | - at low T      | Spontaneous at low temps only
+  +     | +     | - at high T     | Spontaneous at high temps only
+  +     | -     | Always +        | Never spontaneous
+
+Standard Gibbs Energy and Equilibrium:
+  ΔG° = -RT ln(K). K = equilibrium constant.
+  ΔG = ΔG° + RT ln(Q). Q = reaction quotient.
+  If Q < K: ΔG < 0 → forward reaction spontaneous.
+  If Q > K: ΔG > 0 → reverse reaction spontaneous.
+  If Q = K: ΔG = 0 → equilibrium.
+
+3. CHEMICAL EQUILIBRIUM
+------------------------
+Le Chatelier's Principle: System at equilibrium disturbed → shifts to partially oppose the change.
+
+Equilibrium Constant Expressions:
+  aA + bB ⇌ cC + dD
+  Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ  (in terms of concentrations; mol/L)
+  Kp = (pC)ᶜ(pD)ᵈ / (pA)ᵃ(pB)ᵇ  (in terms of partial pressures; atm or bar)
+  Relationship: Kp = Kc(RT)^Δn  where Δn = moles of gas (products - reactants).
+
+  Rules for K:
+  - Pure solids and pure liquids NOT included in K expression.
+  - K >> 1: Equilibrium lies far to right (products favoured).
+  - K << 1: Equilibrium lies far to left (reactants favoured).
+  - K changes ONLY with temperature.
+
+Effect of Changes on Equilibrium:
+  Concentration increase of reactant: Shifts right (increases Q → reaction proceeds until Q=K).
+  Pressure increase (at constant T): Shifts toward fewer moles of gas.
+  Temperature increase (endothermic reaction): Shifts right (K increases).
+  Temperature increase (exothermic reaction): Shifts left (K decreases).
+  Catalyst: No effect on K or equilibrium position; only speeds up reaching equilibrium.
+  Inert gas at constant volume: No effect. Inert gas at constant pressure: Volume increases → shifts toward more moles of gas.
+
+Reaction Quotient (Q): Same form as K but using current (not equilibrium) concentrations.
+  Q < K → reaction proceeds forward.
+  Q > K → reaction proceeds backward.
+  Q = K → at equilibrium.
+
+4. ACIDS AND BASES
+-------------------
+Arrhenius: Acid → H⁺; Base → OH⁻ (in water only).
+Brønsted-Lowry: Acid = proton donor; Base = proton acceptor.
+  Conjugate acid-base pair: Differ by one proton.
+  Stronger acid → weaker conjugate base. Strong acid has negligible conjugate base strength.
+Lewis: Acid = electron pair acceptor; Base = electron pair donor.
+  More general; includes reactions without proton transfer (BF₃ + NH₃ → F₃B-NH₃).
+
+Strong Acids (essentially 100% dissociated in water):
+  HCl, HBr, HI, HNO₃, H₂SO₄ (1st dissociation), HClO₄, HClO₃.
+Strong Bases: Group 1 + Group 2 hydroxides (NaOH, KOH, Ca(OH)₂, Ba(OH)₂).
+
+Weak Acids and Bases:
+  Ka = [H⁺][A⁻]/[HA]. pKa = -log(Ka). Smaller pKa → stronger acid.
+  Kb = [BH⁺][OH⁻]/[B]. pKb = -log(Kb).
+  Relationship: Ka × Kb = Kw. pKa + pKb = 14 (at 25°C).
+
+pH Scale:
+  pH = -log[H⁺]. pOH = -log[OH⁻]. pH + pOH = 14 (at 25°C).
+  Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C.
+  Neutral pH = 7 (at 25°C). Acidic < 7. Basic > 7.
+
+Buffer Solutions:
+  Resist pH changes on addition of small amounts of acid or base.
+  Components: Weak acid + its conjugate base (or weak base + conjugate acid).
+  Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]).
+  Maximum buffer capacity at pH = pKa (equal concentrations of acid and base).
+  Examples: Ethanoic acid/sodium ethanoate (pH ~4.75); NH₃/NH₄⁺ (pH ~9.25); H₂CO₃/HCO₃⁻ (blood buffer, pH 7.4).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LEVEL: ADVANCED — UNIVERSITY LEVEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. CHEMICAL KINETICS
+---------------------
+Reaction Rate: Change in concentration per unit time.
+  Rate = -Δ[A]/Δt = +Δ[B]/Δt (for A → B).
+
+Rate Laws:
+  Rate = k[A]ᵐ[B]ⁿ  (k = rate constant; m, n = partial orders; determined experimentally, NOT from stoichiometry of overall equation).
+  Overall order = m + n.
+  First order (n=1): Rate = k[A]. [A] = [A]₀e^(-kt). t½ = ln2/k (constant, independent of [A]).
+  Second order (n=2): Rate = k[A]². 1/[A] = 1/[A]₀ + kt. t½ = 1/(k[A]₀) (depends on [A]).
+  Zero order: Rate = k. [A] = [A]₀ - kt. t½ = [A]₀/2k.
+
+Integrated Rate Laws (summary):
+  Zero order: [A] = [A]₀ - kt. Linear plot: [A] vs t.
+  First order: ln[A] = ln[A]₀ - kt. Linear plot: ln[A] vs t.
+  Second order: 1/[A] = 1/[A]₀ + kt. Linear plot: 1/[A] vs t.
+
+Activation Energy and Arrhenius Equation:
+  Arrhenius equation: k = Ae^(-Ea/RT)
+  A = pre-exponential factor (frequency factor); Ea = activation energy.
+  ln(k) = ln(A) - Ea/RT. Linear plot: ln(k) vs 1/T → slope = -Ea/R.
+  Two-temperature form: ln(k₂/k₁) = -Ea/R × (1/T₂ - 1/T₁).
+  Rule of thumb: Rate approximately doubles per 10°C increase at room temperature (Q₁₀ rule).
+
+Reaction Mechanisms:
+  Elementary steps: Individual molecular events. Molecularity: Unimolecular, bimolecular, termolecular.
+  Rate law for elementary step: Written directly from stoichiometry (unlike overall reactions).
+  Rate-determining step (RDS): Slowest step; controls overall rate. Rate law for overall reaction = rate law of RDS.
+  Steady-state approximation: d[intermediate]/dt ≈ 0 (intermediates consumed as fast as formed).
+  Pre-equilibrium approximation: Fast equilibrium before slow step.
+
+Catalysis:
+  Catalyst: Provides alternative pathway with lower Ea; increases rate; not consumed.
+  Homogeneous catalysis: Same phase as reactants. V₂O₅ in Contact process; acid/base catalysis.
+  Heterogeneous catalysis: Different phase. Fe in Haber process; Ni in hydrogenation; Pt in catalytic converter.
+    Mechanism: Adsorption → surface reaction → desorption.
+    Langmuir-Hinshelwood: Both reactants adsorb first. Eley-Rideal: One adsorbs, other reacts from gas phase.
+  Enzyme catalysis: Michaelis-Menten kinetics: v = Vmax[S]/(Km + [S]).
+    Km = substrate concentration at half-maximum rate. Vmax = maximum rate.
+    Turnover number (kcat): Reactions per enzyme per second (Vmax/[E_total]).
+
+6. ELECTROCHEMISTRY
+--------------------
+Oxidation-Reduction (Redox):
+  Oxidation: Loss of electrons; increase in oxidation state. (OIL: Oxidation Is Loss).
+  Reduction: Gain of electrons; decrease in oxidation state. (RIG: Reduction Is Gain).
+  Oxidising agent: Causes oxidation; is itself reduced. Reducing agent: Causes reduction; is itself oxidised.
+
+Electrochemical Cells:
+  Galvanic (voltaic) cell: Spontaneous redox → electrical energy (ΔG < 0 → positive EMF).
+    Anode: Oxidation occurs; negative electrode in galvanic cell.
+    Cathode: Reduction occurs; positive electrode in galvanic cell.
+    Salt bridge: Maintains electrical neutrality; allows ion flow.
+    Standard EMF: E°_cell = E°_cathode - E°_anode.
+    Daniel cell: Zn(s)/Zn²⁺(aq) || Cu²⁺(aq)/Cu(s). E°_cell = +1.10 V.
+
+Standard Reduction Potentials (E°, vs Standard Hydrogen Electrode SHE = 0.00 V):
+  Strong oxidising agents: F₂/F⁻ = +2.87V; MnO₄⁻/Mn²⁺ = +1.51V; Cl₂/Cl⁻ = +1.36V.
+  Moderate: Cu²⁺/Cu = +0.34V; H⁺/H₂ = 0.00V (reference).
+  Strong reducing agents: Zn²⁺/Zn = -0.76V; Al³⁺/Al = -1.66V; Na⁺/Na = -2.71V; Li⁺/Li = -3.04V.
+  More positive E°: More easily reduced; stronger oxidising agent.
+  More negative E°: More easily oxidised; stronger reducing agent.
+
+Nernst Equation (non-standard conditions):
+  E = E° - (RT/nF) × ln(Q) = E° - (0.0257/n) × ln(Q) at 25°C.
+  Or: E = E° - (0.0592/n) × log(Q) at 25°C.
+  n = number of electrons; F = Faraday's constant (96,485 C/mol); Q = reaction quotient.
+  At equilibrium: E = 0, Q = K → ΔG° = -RT ln(K) = -nFE°.
+
+Relationship: ΔG° = -nFE°. If E° > 0: ΔG° < 0 → spontaneous.
+
+Electrolytic Cells (non-spontaneous redox driven by external electricity; ΔG > 0):
+  Anode: Oxidation (positive electrode in electrolytic cell — connected to + terminal of battery).
+  Cathode: Reduction (negative electrode).
+  Faraday's Laws: 1. Mass deposited ∝ charge passed. 2. Mass ∝ molar mass / charge of ion.
+    m = (Q × M) / (n × F) where Q = charge (C), M = molar mass, n = ionic charge, F = 96,485 C/mol.
+
+Applications of Electrolysis:
+  Electroplating: Coat object with thin metal layer (Cu, Ni, Cr, Ag, Au).
+  Anodising: Anodic oxidation of Al → thicker Al₂O₃ layer → better corrosion resistance.
+  Hall-Héroult (Al production): Al₂O₃ in molten cryolite electrolysed at 950°C → Al (cathode) + O₂ (anode).
+  Chloralkali process: NaCl(aq) electrolysis → Cl₂ (anode) + H₂ + NaOH (cathode).
+  Electrorefining: Impure Cu anode → pure Cu cathode. Cu²⁺ transferral; impurities fall to bottom.
+
+Concentration Cells:
+  Two identical electrodes; different ion concentrations. E > 0 because reaction drives concentrations to equal.
+  E = (RT/nF) × ln(c₂/c₁) where c₁ < c₂.
+
+7. PHASE EQUILIBRIA
+--------------------
+Phase Diagrams: Show stable phase at given T and P.
+  Triple point: Unique T,P where all three phases coexist (water: 273.16 K, 611.7 Pa).
+  Critical point: Above Tc and Pc → supercritical fluid (no liquid-gas distinction).
+    Water: Tc = 374°C, Pc = 218 atm. CO₂: Tc = 31.1°C, Pc = 73.8 atm.
+  Normal bp and mp: At 1 atm.
+  Water anomaly: Solid-liquid line has negative slope (ice less dense than liquid → pressure melts ice).
+
+Clausius-Clapeyron Equation:
+  d(ln P)/dT = ΔH_vap / RT²  or  ln(P₂/P₁) = -(ΔH_vap/R) × (1/T₂ - 1/T₁).
+  Relates vapour pressure to temperature; use to determine ΔH_vap from vapour pressure data.
+
+Colligative Properties: Depend on number of solute particles, not their identity.
+  Vapour pressure lowering (Raoult's Law): P_solution = χ_solvent × P°_solvent.
+    ΔP = χ_solute × P°_solvent. More solute → less vapour pressure → higher bp, lower mp.
+  Boiling point elevation: ΔTb = Kb × m × i.  Kb = ebullioscopic constant; m = molality; i = van't Hoff factor.
+  Freezing point depression: ΔTf = Kf × m × i.  Road salt (NaCl/CaCl₂); antifreeze (ethylene glycol).
+  Osmotic pressure: Π = iMRT. M = molarity; important in biology (cell membranes, dialysis, RO).
+
+[APPLIED CHEMISTRY] Important equilibrium constants at 25°C:
+  Water autoionisation: Kw = 1.0 × 10⁻¹⁴.
+  Acetic acid: Ka = 1.8 × 10⁻⁵ (pKa = 4.74).
+  Ammonia: Kb = 1.8 × 10⁻⁵ (pKb = 4.74).
+  Solubility products (Ksp): AgCl = 1.8×10⁻¹⁰; BaSO₄ = 1.1×10⁻¹⁰; Ca₃(PO₄)₂ = 2.1×10⁻³³.
+  Haber process equilibrium: K ≈ 6.2 × 10⁻² at 500°C (low K → low conversion → must run continuously + recycle).
+  Contact process: K varies with T; high T needed for kinetics but K decreases; 450°C compromise.
+
+================================================================================
