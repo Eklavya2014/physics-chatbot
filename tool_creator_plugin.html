@@ -326,30 +326,34 @@
           <div class="field">
             <label>Starter Blueprints</label>
             <div class="chips">
-              <button class="chip" onclick="loadSample('formula')">Physics Formula Finder</button>
-              <button class="chip" onclick="loadSample('unit')">Unit Converter</button>
-              <button class="chip" onclick="loadSample('bmi')">BMI Calculator</button>
-              <button class="chip" onclick="loadSample('grade')">Grade Calculator</button>
-              <button class="chip" onclick="loadSample('prime')">Prime Checker</button>
-              <button class="chip" onclick="loadSample('fib')">Fibonacci Generator</button>
-              <button class="chip" onclick="loadSample('compiled')">Function from Code</button>
+              <button class="chip sample-chip" type="button" data-sample="formula">Physics Formula Finder</button>
+              <button class="chip sample-chip" type="button" data-sample="unit">Unit Converter</button>
+              <button class="chip sample-chip" type="button" data-sample="bmi">BMI Calculator</button>
+              <button class="chip sample-chip" type="button" data-sample="grade">Grade Calculator</button>
+              <button class="chip sample-chip" type="button" data-sample="prime">Prime Checker</button>
+              <button class="chip sample-chip" type="button" data-sample="fib">Fibonacci Generator</button>
+              <button class="chip sample-chip" type="button" data-sample="smart">PhysIQ Smart Plugin</button>
+              <button class="chip sample-chip" type="button" data-sample="parallel">Parallel Query Studio</button>
+              <button class="chip sample-chip" type="button" data-sample="codestudio">Advanced Code Studio</button>
+              <button class="chip sample-chip" type="button" data-sample="create">Create Studio</button>
+              <button class="chip sample-chip" type="button" data-sample="compiled">Function from Code</button>
             </div>
           </div>
 
           <div class="field">
             <label>Source Style</label>
             <div class="tabs">
-              <button class="tab active" id="tab_python" onclick="setLanguage('python')">Python</button>
-              <button class="tab" id="tab_java" onclick="setLanguage('java')">Java</button>
-              <button class="tab" id="tab_notes" onclick="setLanguage('notes')">Blueprint</button>
+              <button class="tab lang-tab active" id="tab_python" type="button" data-lang="python">Python</button>
+              <button class="tab lang-tab" id="tab_java" type="button" data-lang="java">Java</button>
+              <button class="tab lang-tab" id="tab_notes" type="button" data-lang="notes">Blueprint</button>
             </div>
             <textarea id="code" placeholder="def bmi(weight, height):&#10;    return weight / (height * height)"></textarea>
-            <div class="hint">If you write a simple function with a return statement, Tool Creator will turn it into an interactive plugin automatically.</div>
+            <div class="hint">Special keywords: <code>UserProfile()</code> to use the user's learning profile, <code>GetAiAnswer()</code> to ask PhysIQ from inside the plugin. Simple return functions are auto-converted too.</div>
           </div>
 
           <div class="actions">
-            <button class="primary" onclick="buildNow()">⚡ Build Instantly</button>
-            <button class="secondary" onclick="clearAll()">Reset</button>
+            <button class="primary" type="button" id="build_now_btn">⚡ Build Instantly</button>
+            <button class="secondary" type="button" id="clear_all_btn">Reset</button>
           </div>
 
           <div class="progress"><div id="bar"></div></div>
@@ -389,9 +393,9 @@
           <iframe id="preview" style="display:none;" title="Plugin Preview"></iframe>
 
           <div class="preview-actions">
-            <button class="success" onclick="installPlugin()">Install Plugin</button>
-            <button class="warn" onclick="publishPlugin()">Publish to Shop</button>
-            <button class="secondary" onclick="downloadPlugin()">Download HTML</button>
+            <button class="success" type="button" id="install_plugin_btn">Install Plugin</button>
+            <button class="warn" type="button" id="publish_plugin_btn">Publish to Shop</button>
+            <button class="secondary" type="button" id="download_plugin_btn">Download HTML</button>
           </div>
           <div class="small">Install adds the plugin to the current app session. Publish sends it to the community shop through the app’s existing query-parameter flow.</div>
         </div>
@@ -400,7 +404,7 @@
   </div>
 
   <script>
-    const INITIAL_TOOL_REQUEST = __INITIAL_TOOL_REQUEST__;
+    const INITIAL_TOOL_REQUEST = typeof __INITIAL_TOOL_REQUEST__ === "undefined" ? "" : __INITIAL_TOOL_REQUEST__;
     let currentLang = "python";
     let builtPayload = null;
     let builtHtml = "";
@@ -470,6 +474,34 @@
         desc: "Generate the first n Fibonacci numbers quickly.",
         lang: "java",
         code: "public static int fibonacci(int n) {\n    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);\n}"
+      },
+      smart: {
+        name: "Profile-Aware Study Coach",
+        icon: "🧠",
+        desc: "Use UserProfile() to adapt to the learner and GetAiAnswer() to ask PhysIQ for tailored guidance.",
+        lang: "notes",
+        code: "Build a study coach plugin that uses UserProfile() to understand favorite subjects, weak topics, and learning style. Use GetAiAnswer() to ask PhysIQ for a tailored explanation or study plan."
+      },
+      parallel: {
+        name: "Parallel Query Studio",
+        icon: "🧭",
+        desc: "Run multiple PhysIQ queries side by side at the same time, then synthesize the best answer.",
+        lang: "python",
+        code: "# Tool Creator Blueprint: Parallel Query Studio\n# Build a side by side running workspace where a lot of queries run side by side at the same time.\n# Use GetAiAnswers() for the four lanes and GetAiAnswer() for the final synthesis.\n# Include comparison, opposition, practical, and exam-style lanes.\n\nPARALLEL_MODES = ['comparison', 'opposition', 'practical', 'exam']\n\ndef lane_prompt(shared_goal, lane_style):\n    return f'Run {lane_style} analysis for: {shared_goal}'"
+      },
+      codestudio: {
+        name: "Advanced Code Studio",
+        icon: "🛠️",
+        desc: "A stronger coding workspace for explanation, debugging, test generation, refactoring, and architecture upgrades.",
+        lang: "python",
+        code: "# Tool Creator Blueprint: Advanced Code Studio\n# Build a coding plugin more advanced than the current version.\n# It should support explain, debug, refactor, generate tests, architecture review, and better version generation.\n# Use GetAiAnswer() for each coding action.\n\nclass CodeStudioBlueprint:\n    def explain(self, code, language):\n        return 'Explain how the code works and what to improve.'\n\n    def generate_tests(self, code, language):\n        return 'Write strong tests and edge cases.'"
+      },
+      create: {
+        name: "Create Studio",
+        icon: "🎨",
+        desc: "Advanced creative writing and reasoning studio for brainstorming, outlining, drafting, strengthening logic, and polishing style.",
+        lang: "python",
+        code: "# Tool Creator Blueprint: Create Studio\n# Build a more advanced creative writing and reasoning plugin.\n# Support brainstorming, outlining, drafting, stronger reasoning, counterarguments, and final polished output.\n# Use UserProfile() when available and GetAiAnswer() to generate each stage.\n\nclass CreateStudio:\n    def brainstorm(self, theme, tone, audience):\n        return 'Generate bold angles and strong hooks.'\n\n    def strengthen_reasoning(self, draft):\n        return 'Improve logic, clarity, evidence, and persuasive force.'"
       },
       compiled: {
         name: "Surface Area Tool",
@@ -644,8 +676,21 @@
       };
     }
 
+    function getSpecialFeatures(meta, code) {
+      const text = meta.name + " " + meta.description + " " + code;
+      return {
+        wantsProfile: /UserProfile\s*\(/i.test(text) || /\bprofile-aware\b/i.test(text),
+        wantsAi: /GetAiAnswer[s]?\s*\(/i.test(text) || /\bask physiq\b/i.test(text)
+      };
+    }
+
     function detectKind(meta, code) {
       const text = (meta.name + " " + meta.description + " " + code).toLowerCase();
+      const features = getSpecialFeatures(meta, code);
+      if (/(parallel query|side by side|side-by-side|multi query|many queries|comparison lanes|run side by side|parallel lanes)/.test(text)) return "Parallel Query Studio";
+      if (/(advanced code|code studio|code architect|debug lab|generate tests|refactor|architecture review|coding workspace)/.test(text)) return "Advanced Code Studio";
+      if (/(create studio|creative writing|reasoning studio|brainstorm|counterargument|polish style|drafting workspace)/.test(text)) return "Create Studio";
+      if (features.wantsProfile || features.wantsAi) return "PhysIQ Smart Plugin";
       if (/(unit converter|convert units|celsius|fahrenheit|kelvin|km\/h|m\/s|meters|kilometers)/.test(text)) return "Unit Converter";
       if (/(bmi|body mass)/.test(text)) return "BMI Calculator";
       if (/(grade|gpa|percentage|score|marks)/.test(text)) return "Grade Calculator";
@@ -691,7 +736,13 @@ button{border:0;border-radius:14px;padding:12px 16px;font-size:14px;font-weight:
 .formula{font-size:22px;font-weight:800;color:#0f3d69}
 .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff7ed;color:#9a3412;font-size:12px;font-weight:700;margin-bottom:10px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:780px){.grid,.two{grid-template-columns:1fr}.app{padding:16px}.hero h1{font-size:24px}}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.lane-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.lane{border:1px solid rgba(16,35,63,.08);border-radius:18px;padding:14px;background:#fff}
+.lane h3{margin:0 0 8px;font-size:16px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pill-chip{display:inline-block;padding:7px 10px;border-radius:999px;background:#eff6ff;color:#14507b;font-size:11px;font-weight:700}
+@media(max-width:780px){.grid,.two,.three,.lane-grid{grid-template-columns:1fr}.app{padding:16px}.hero h1{font-size:24px}}
 </style>
 </head>
 <body>
@@ -706,6 +757,386 @@ button{border:0;border-radius:14px;padding:12px 16px;font-size:14px;font-weight:
 <script>${script}<\/script>
 </body>
 </html>`;
+    }
+
+    function buildPhysiqSmart(meta, features) {
+      const wantsProfile = !!features.wantsProfile;
+      const wantsAi = !!features.wantsAi;
+      const body = `
+<section class="card">
+  <div class="stat">PHYSIQ RUNTIME</div>
+  <h2 style="margin:12px 0 8px;">${escapeHtml(meta.name)}</h2>
+  <p class="muted">This plugin uses PhysIQ runtime helpers${wantsProfile ? ' for profile context' : ''}${wantsProfile && wantsAi ? ' and ' : ''}${wantsAi ? 'for live AI answers' : ''}.</p>
+
+  ${wantsProfile ? `
+  <div class="result" style="margin-top:16px;">
+    <div class="field">
+      <label>Learner Snapshot</label>
+      <div class="grid">
+        <div><strong>Name</strong><div class="muted" data-physiq-profile="name">Waiting for profile...</div></div>
+        <div><strong>Learning Style</strong><div class="muted" data-physiq-profile="learning_style">Waiting for profile...</div></div>
+        <div><strong>Favorite Subjects</strong><div class="muted" data-physiq-profile="favorite_subjects">Waiting for profile...</div></div>
+        <div><strong>Weak Topics</strong><div class="muted" data-physiq-profile="weak_topics">Waiting for profile...</div></div>
+      </div>
+      <div class="actions">
+        <button class="secondary" id="profile_btn">Refresh Profile</button>
+      </div>
+      <pre id="physiq-profile-json" class="muted" style="white-space:pre-wrap;margin-top:10px;"></pre>
+    </div>
+  </div>` : ''}
+
+  ${wantsAi ? `
+  <div class="result" style="margin-top:16px;">
+    <div class="field">
+      <label>Ask PhysIQ</label>
+      <textarea id="physiq-ai-prompt" style="font-family:inherit;" placeholder="Ask for an explanation, study plan, correction, quiz, or idea...">${escapeHtml(meta.description)}</textarea>
+    </div>
+    <div class="actions">
+      <button class="primary" id="physiq_ai_btn">Ask PhysIQ</button>
+    </div>
+    <div id="physiq-ai-answer" class="muted" style="margin-top:12px;">Your AI answer will appear here after PhysIQ responds.</div>
+  </div>` : ''}
+</section>`;
+      const script = `
+function renderProfileCard(){
+  if(typeof window.UserProfile !== 'function') return;
+  const profile = window.UserProfile() || {};
+  const target = document.getElementById('physiq-profile-json');
+  if(target) target.textContent = JSON.stringify(profile, null, 2);
+}
+window.addEventListener('load', renderProfileCard);
+window.addEventListener('physiq-ai-response', function(ev){
+  const answerBox = document.getElementById('physiq-ai-answer');
+  if(answerBox && ev.detail && ev.detail.answer) answerBox.textContent = ev.detail.answer;
+});
+const profileBtn = document.getElementById('profile_btn');
+if(profileBtn) profileBtn.onclick = renderProfileCard;
+const aiBtn = document.getElementById('physiq_ai_btn');
+if(aiBtn){
+  aiBtn.onclick = function(){
+    const prompt = document.getElementById('physiq-ai-prompt').value.trim();
+    if(!prompt) return;
+    const answerBox = document.getElementById('physiq-ai-answer');
+    if(answerBox) answerBox.textContent = 'PhysIQ is thinking...';
+    if(typeof window.GetAiAnswer === 'function'){
+      window.GetAiAnswer(prompt, {
+        slot: 'physiq-ai-answer',
+        system: 'You are PhysIQ helping inside a profile-aware custom plugin. If user profile data exists, adapt the answer to the learner.'
+      });
+    }else if(answerBox){
+      answerBox.textContent = 'Preview mode: install this plugin to connect it to PhysIQ.';
+    }
+  };
+}`;
+      return { html: pluginShell(meta, body, script), inputs: (wantsProfile ? 1 : 0) + (wantsAi ? 1 : 0) + 1 };
+    }
+
+    function buildParallel(meta) {
+      const body = `
+<section class="card">
+  <div class="stat">PARALLEL AI</div>
+  <h2 style="margin:12px 0 8px;">${escapeHtml(meta.name)}</h2>
+  <p class="muted">Run several PhysIQ lanes side by side at the same time, compare their answers, then synthesize the strongest combined response.</p>
+  <div class="field">
+    <label>Shared Goal</label>
+    <textarea id="parallel_goal" style="font-family:inherit;" placeholder="What should all lanes analyze?">${escapeHtml(meta.description)}</textarea>
+  </div>
+  <div class="three">
+    <div class="field">
+      <label>Audience</label>
+      <select id="parallel_audience">
+        <option>Student</option>
+        <option>Beginner</option>
+        <option>Exam candidate</option>
+        <option>Researcher</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Depth</label>
+      <select id="parallel_depth">
+        <option>Clear and simple</option>
+        <option>Balanced</option>
+        <option>Deep and technical</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Final Goal</label>
+      <select id="parallel_goal_style">
+        <option>Best final answer</option>
+        <option>Compare viewpoints</option>
+        <option>Action plan</option>
+      </select>
+    </div>
+  </div>
+  <div class="pill-row">
+    <span class="pill-chip">Comparison lane</span>
+    <span class="pill-chip">Opposition lane</span>
+    <span class="pill-chip">Practical lane</span>
+    <span class="pill-chip">Exam lane</span>
+  </div>
+  <div class="lane-grid">
+    <div class="lane">
+      <h3>Lane A · Comparison</h3>
+      <textarea id="parallel_in_1" style="font-family:inherit;" placeholder="Prompt for lane A"></textarea>
+      <div id="parallel_out_1" class="result"><div class="muted">Lane A output will appear here.</div></div>
+    </div>
+    <div class="lane">
+      <h3>Lane B · Opposition</h3>
+      <textarea id="parallel_in_2" style="font-family:inherit;" placeholder="Prompt for lane B"></textarea>
+      <div id="parallel_out_2" class="result"><div class="muted">Lane B output will appear here.</div></div>
+    </div>
+    <div class="lane">
+      <h3>Lane C · Practical</h3>
+      <textarea id="parallel_in_3" style="font-family:inherit;" placeholder="Prompt for lane C"></textarea>
+      <div id="parallel_out_3" class="result"><div class="muted">Lane C output will appear here.</div></div>
+    </div>
+    <div class="lane">
+      <h3>Lane D · Exam</h3>
+      <textarea id="parallel_in_4" style="font-family:inherit;" placeholder="Prompt for lane D"></textarea>
+      <div id="parallel_out_4" class="result"><div class="muted">Lane D output will appear here.</div></div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="secondary" id="parallel_fill">Build Lanes</button>
+    <button class="primary" id="parallel_run">Run All Side by Side</button>
+    <button class="success" id="parallel_synth">Synthesize Best Answer</button>
+  </div>
+  <div id="parallel_summary" class="result"><div class="muted">Use this studio for side by side running where many queries are explored in parallel and then combined.</div></div>
+</section>`;
+      const script = `
+const parallelLanes = [
+  { id: 1, title: 'comparison', slot: 'parallel_out_1', label: 'Comparison lane' },
+  { id: 2, title: 'opposition', slot: 'parallel_out_2', label: 'Opposition lane' },
+  { id: 3, title: 'practical', slot: 'parallel_out_3', label: 'Practical lane' },
+  { id: 4, title: 'exam', slot: 'parallel_out_4', label: 'Exam lane' }
+];
+
+function lanePrompt(base, laneTitle, audience, depth){
+  return 'Shared goal: ' + base + '\\nLane role: ' + laneTitle + '\\nAudience: ' + audience + '\\nDepth: ' + depth + '\\nReturn a focused answer for this lane only.';
+}
+
+function fillParallelLanes(){
+  const base = (document.getElementById('parallel_goal').value || '').trim();
+  const audience = document.getElementById('parallel_audience').value;
+  const depth = document.getElementById('parallel_depth').value;
+  parallelLanes.forEach(function(lane){
+    const box = document.getElementById('parallel_in_' + lane.id);
+    if (box && !box.value.trim()) box.value = lanePrompt(base || 'Analyze this topic from multiple angles.', lane.title, audience, depth);
+  });
+}
+
+document.getElementById('parallel_fill').onclick = fillParallelLanes;
+
+document.getElementById('parallel_run').onclick = function(){
+  const requests = parallelLanes.map(function(lane){
+    const prompt = (document.getElementById('parallel_in_' + lane.id).value || '').trim();
+    if (!prompt) return null;
+    return {
+      slot: lane.slot,
+      label: lane.label,
+      prompt: prompt,
+      system: 'You are PhysIQ in ' + lane.title + ' mode. Keep your answer distinct, useful, and self-contained.'
+    };
+  }).filter(Boolean);
+  if (!requests.length){
+    document.getElementById('parallel_summary').innerHTML = '<div class="muted">Write or auto-build at least one lane prompt first.</div>';
+    return;
+  }
+  if (typeof window.GetAiAnswers === 'function'){
+    window.GetAiAnswers(requests, { max_tokens: 450 });
+  } else {
+    document.getElementById('parallel_summary').innerHTML = '<div class="muted">Preview mode: install this plugin to run side-by-side PhysIQ lanes.</div>';
+  }
+};
+
+document.getElementById('parallel_synth').onclick = function(){
+  const base = (document.getElementById('parallel_goal').value || '').trim();
+  const goalStyle = document.getElementById('parallel_goal_style').value;
+  const laneOutputs = parallelLanes.map(function(lane){
+    const text = (document.getElementById(lane.slot).textContent || '').trim();
+    return text && text.indexOf('will appear here') === -1 ? lane.label + ': ' + text : '';
+  }).filter(Boolean);
+  if (!laneOutputs.length){
+    document.getElementById('parallel_summary').innerHTML = '<div class="muted">Run the lanes first, then synthesize the strongest answer.</div>';
+    return;
+  }
+  const prompt = 'Shared goal: ' + base + '\\nFinal goal: ' + goalStyle + '\\nLane outputs:\\n' + laneOutputs.join('\\n\\n') + '\\n\\nBuild the strongest combined answer.';
+  if (typeof window.GetAiAnswer === 'function'){
+    window.GetAiAnswer(prompt, {
+      slot: 'parallel_summary',
+      system: 'You are PhysIQ synthesizing several side-by-side query lanes into one final best answer.'
+    });
+  } else {
+    document.getElementById('parallel_summary').innerHTML = '<div class="muted">Preview mode: install this plugin to synthesize the final answer.</div>';
+  }
+};
+
+fillParallelLanes();`;
+      return { html: pluginShell(meta, body, script), inputs: 9 };
+    }
+
+    function buildCodeStudio(meta) {
+      const body = `
+<section class="card">
+  <div class="stat">CODE STUDIO</div>
+  <h2 style="margin:12px 0 8px;">${escapeHtml(meta.name)}</h2>
+  <p class="muted">A stronger coding workspace for explanation, debugging, test generation, refactoring, and higher-level engineering guidance.</p>
+  <div class="field">
+    <label>Mission</label>
+    <textarea id="code_task" style="font-family:inherit;" placeholder="What should PhysIQ help you build or fix?">${escapeHtml(meta.description)}</textarea>
+  </div>
+  <div class="three">
+    <div class="field">
+      <label>Language</label>
+      <select id="code_lang">
+        <option>Python</option>
+        <option>JavaScript</option>
+        <option>Java</option>
+        <option>C++</option>
+        <option>Rust</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Output Style</label>
+      <select id="code_style">
+        <option>Clear and practical</option>
+        <option>Senior engineer review</option>
+        <option>Teaching mode</option>
+        <option>Interview-ready</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Focus</label>
+      <select id="code_focus">
+        <option>Correctness</option>
+        <option>Performance</option>
+        <option>Testing</option>
+        <option>Architecture</option>
+      </select>
+    </div>
+  </div>
+  <div class="field">
+    <label>Code</label>
+    <textarea id="code_input" placeholder="Paste your code or design sketch here."></textarea>
+  </div>
+  <div class="field">
+    <label>Constraints</label>
+    <textarea id="code_constraints" style="font-family:inherit;" placeholder="Library limits, file size, style guide, edge cases, deadlines, test expectations..."></textarea>
+  </div>
+  <div class="actions">
+    <button class="secondary" id="code_explain">Explain</button>
+    <button class="secondary" id="code_debug">Debug</button>
+    <button class="secondary" id="code_tests">Generate Tests</button>
+    <button class="primary" id="code_refactor">Refactor</button>
+    <button class="success" id="code_upgrade">Build Better Version</button>
+  </div>
+  <div id="code_result" class="result"><div class="muted">Choose an action to get a stronger coding response from PhysIQ.</div></div>
+</section>`;
+      const script = `
+function runCodeStudio(action){
+  const task = (document.getElementById('code_task').value || '').trim();
+  const code = (document.getElementById('code_input').value || '').trim();
+  const lang = document.getElementById('code_lang').value;
+  const style = document.getElementById('code_style').value;
+  const focus = document.getElementById('code_focus').value;
+  const constraints = (document.getElementById('code_constraints').value || '').trim();
+  const prompt = 'Mission: ' + task + '\\nLanguage: ' + lang + '\\nOutput style: ' + style + '\\nFocus: ' + focus + '\\nConstraints: ' + constraints + '\\nAction: ' + action + '\\n\\nCode or design:\\n' + code;
+  if (typeof window.GetAiAnswer === 'function'){
+    window.GetAiAnswer(prompt, {
+      slot: 'code_result',
+      system: 'You are PhysIQ in Advanced Code Studio. Be stronger than a basic code runner: explain clearly, reason like a senior engineer, and produce actionable improvements.'
+    });
+  } else {
+    document.getElementById('code_result').innerHTML = '<div class="muted">Preview mode: install this plugin to use the Advanced Code Studio actions.</div>';
+  }
+}
+document.getElementById('code_explain').onclick = function(){ runCodeStudio('Explain how this works and what matters most.'); };
+document.getElementById('code_debug').onclick = function(){ runCodeStudio('Find bugs, edge cases, likely failures, and the most important fixes.'); };
+document.getElementById('code_tests').onclick = function(){ runCodeStudio('Generate strong tests, edge cases, and validation scenarios.'); };
+document.getElementById('code_refactor').onclick = function(){ runCodeStudio('Refactor this for clarity, maintainability, and stronger structure.'); };
+document.getElementById('code_upgrade').onclick = function(){ runCodeStudio('Build a clearly better version with reasoning, improved design, and next-step suggestions.'); };`;
+      return { html: pluginShell(meta, body, script), inputs: 6 };
+    }
+
+    function buildCreateStudio(meta) {
+      const body = `
+<section class="card">
+  <div class="stat">CREATE STUDIO</div>
+  <h2 style="margin:12px 0 8px;">${escapeHtml(meta.name)}</h2>
+  <p class="muted">An advanced creative writing and reasoning workspace for bold brainstorming, outlining, drafting, logic strengthening, and final polish.</p>
+  <div class="field">
+    <label>Theme or Prompt</label>
+    <textarea id="create_theme" style="font-family:inherit;" placeholder="What do you want to create?">${escapeHtml(meta.description)}</textarea>
+  </div>
+  <div class="three">
+    <div class="field">
+      <label>Format</label>
+      <select id="create_format">
+        <option>Essay</option>
+        <option>Story</option>
+        <option>Speech</option>
+        <option>Debate</option>
+        <option>Script</option>
+        <option>Poem</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Tone</label>
+      <select id="create_tone">
+        <option>Bold and modern</option>
+        <option>Elegant and reflective</option>
+        <option>Simple and clear</option>
+        <option>Persuasive and sharp</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Reasoning Lens</label>
+      <select id="create_reasoning">
+        <option>Balanced</option>
+        <option>Evidence-first</option>
+        <option>Counterargument-aware</option>
+        <option>Creative leap</option>
+      </select>
+    </div>
+  </div>
+  <div class="field">
+    <label>Audience or Goal</label>
+    <textarea id="create_audience" style="font-family:inherit;" placeholder="Who is this for and what should it achieve?"></textarea>
+  </div>
+  <div class="actions">
+    <button class="secondary" id="create_brainstorm">Brainstorm</button>
+    <button class="secondary" id="create_outline">Outline</button>
+    <button class="primary" id="create_draft">Create Final Draft</button>
+    <button class="success" id="create_strengthen">Strengthen Reasoning</button>
+  </div>
+  <div id="create_result" class="result"><div class="muted">Choose a creative action to start building ideas, logic, and polished output.</div></div>
+</section>`;
+      const script = `
+function createStudioPrompt(action){
+  const theme = (document.getElementById('create_theme').value || '').trim();
+  const format = document.getElementById('create_format').value;
+  const tone = document.getElementById('create_tone').value;
+  const reasoning = document.getElementById('create_reasoning').value;
+  const audience = (document.getElementById('create_audience').value || '').trim();
+  const profile = typeof window.UserProfile === 'function' ? window.UserProfile() : null;
+  const profileHint = profile ? '\\nLearner profile: ' + JSON.stringify(profile) : '';
+  return 'Action: ' + action + '\\nFormat: ' + format + '\\nTone: ' + tone + '\\nReasoning lens: ' + reasoning + '\\nAudience/goal: ' + audience + '\\nTheme: ' + theme + profileHint;
+}
+function runCreateStudio(action){
+  if (typeof window.GetAiAnswer === 'function'){
+    window.GetAiAnswer(createStudioPrompt(action), {
+      slot: 'create_result',
+      system: 'You are PhysIQ in Create Studio. Combine strong creative writing with stronger reasoning, structure, and polish. Use the learner profile when present.'
+    });
+  } else {
+    document.getElementById('create_result').innerHTML = '<div class="muted">Preview mode: install this plugin to use Create Studio.</div>';
+  }
+}
+document.getElementById('create_brainstorm').onclick = function(){ runCreateStudio('Generate bold ideas, hooks, angles, and directions.'); };
+document.getElementById('create_outline').onclick = function(){ runCreateStudio('Build a clean outline with sections, progression, and strong reasoning beats.'); };
+document.getElementById('create_draft').onclick = function(){ runCreateStudio('Write the strongest polished draft for this brief.'); };
+document.getElementById('create_strengthen').onclick = function(){ runCreateStudio('Strengthen logic, evidence, counterarguments, and persuasive force.'); };`;
+      return { html: pluginShell(meta, body, script), inputs: 5 };
     }
 
     function buildFormula(meta) {
@@ -1046,6 +1477,10 @@ document.getElementById('run_btn').onclick=function(){
     }
 
     function buildGeneric(meta) {
+      const features = getSpecialFeatures(meta, meta.code);
+      if (features.wantsProfile || features.wantsAi) {
+        return buildPhysiqSmart(meta, features);
+      }
       const body = `
 <section class="card">
   <div class="field">
@@ -1074,6 +1509,10 @@ document.getElementById('summarize_btn').onclick=function(){
     function buildPlugin(meta) {
       const kind = detectKind(meta, meta.code);
       const compiled = parseSimpleFunction(meta.code, meta.lang);
+      if (kind === "Parallel Query Studio") return { kind: kind, result: buildParallel(meta) };
+      if (kind === "Advanced Code Studio") return { kind: kind, result: buildCodeStudio(meta) };
+      if (kind === "Create Studio") return { kind: kind, result: buildCreateStudio(meta) };
+      if (kind === "PhysIQ Smart Plugin") return { kind: kind, result: buildPhysiqSmart(meta, getSpecialFeatures(meta, meta.code)) };
       if (kind === "Formula Finder") return { kind: kind, result: buildFormula(meta) };
       if (kind === "Unit Converter") return { kind: kind, result: buildUnit(meta) };
       if (kind === "BMI Calculator") return { kind: kind, result: buildBmi(meta) };
@@ -1083,6 +1522,14 @@ document.getElementById('summarize_btn').onclick=function(){
       if (kind === "Function Tool" && compiled) return { kind: kind, result: buildCompiled(meta, compiled) };
       return { kind: kind, result: buildGeneric(meta) };
     }
+
+    // Listen for install/publish from preview panel
+    window.addEventListener('message', function(e) {
+      if(!e.data) return;
+      if(e.data.type==='install_custom_plugin'||e.data.type==='publish_plugin') {
+        window.parent.postMessage(e.data, '*');
+      }
+    });
 
     function showPreview(html) {
       builtHtml = html;
@@ -1098,6 +1545,11 @@ document.getElementById('summarize_btn').onclick=function(){
         return;
       }
 
+      setStatus("Building your plugin locally...", "");
+      buildWithPatterns(meta);
+    }
+
+    function buildWithPatterns(meta) {
       setProgress(18);
       setStatus("Reading the design brief...", "");
 
@@ -1121,15 +1573,34 @@ document.getElementById('summarize_btn').onclick=function(){
       setStatus("Built in seconds. Ready to install, publish, or download.", "success");
     }
 
+    function getAppUrl() {
+      try {
+        if (window.parent && window.parent.location && window.parent.location.href) {
+          return window.parent.location.href;
+        }
+      } catch (err) {}
+      try {
+        if (window.top && window.top.location && window.top.location.href) {
+          return window.top.location.href;
+        }
+      } catch (err) {}
+      return document.referrer || window.location.href;
+    }
+
     function navigateWithPayload(param, payload) {
       if (!payload || !payload.html) {
         setStatus("Build the plugin first.", "error");
         return;
       }
       try {
-        const target = new URL(document.referrer || window.location.href);
+        const target = new URL(getAppUrl());
         target.searchParams.set(param, encodeURIComponent(JSON.stringify(payload)));
-        window.open(target.toString(), "_top");
+        if (window.parent && window.parent.history && window.parent.location) {
+          window.parent.history.replaceState({}, '', target.toString());
+          window.parent.location.href = target.toString();
+        } else {
+          window.location.href = target.toString();
+        }
       } catch (err) {
         setStatus("Could not hand off the plugin to the app. Try downloading it instead.", "error");
       }
@@ -1159,6 +1630,35 @@ document.getElementById('summarize_btn').onclick=function(){
       setStatus("Downloaded the plugin HTML file.", "success");
     }
 
+    function bindControlEvents() {
+      document.querySelectorAll(".sample-chip").forEach(function(button) {
+        button.addEventListener("click", function() {
+          loadSample(button.dataset.sample);
+        });
+      });
+
+      document.querySelectorAll(".lang-tab").forEach(function(button) {
+        button.addEventListener("click", function() {
+          setLanguage(button.dataset.lang);
+        });
+      });
+
+      const buildButton = $("build_now_btn");
+      if (buildButton) buildButton.addEventListener("click", buildNow);
+
+      const clearButton = $("clear_all_btn");
+      if (clearButton) clearButton.addEventListener("click", clearAll);
+
+      const installButton = $("install_plugin_btn");
+      if (installButton) installButton.addEventListener("click", installPlugin);
+
+      const publishButton = $("publish_plugin_btn");
+      if (publishButton) publishButton.addEventListener("click", publishPlugin);
+
+      const downloadButton = $("download_plugin_btn");
+      if (downloadButton) downloadButton.addEventListener("click", downloadPlugin);
+    }
+
     $("code").addEventListener("keydown", function(event) {
       if (event.key !== "Tab") return;
       event.preventDefault();
@@ -1167,6 +1667,8 @@ document.getElementById('summarize_btn').onclick=function(){
       this.value = this.value.slice(0, start) + "    " + this.value.slice(end);
       this.selectionStart = this.selectionEnd = start + 4;
     });
+
+    bindControlEvents();
 
     if (INITIAL_TOOL_REQUEST && INITIAL_TOOL_REQUEST !== "null") {
       $("desc").value = String(INITIAL_TOOL_REQUEST);
