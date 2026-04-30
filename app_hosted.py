@@ -37,7 +37,7 @@ defaults = {
     "user": None, "access_token": None, "messages": [],
     "pending_feedback": None, "backend_ready": False,
     "dark_mode": True, "show_landing": True,
-    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "active_connector": None, "show_plugin_store_page": False, "_temp_app_html": None, "_temp_app_title": "", "show_video_creator": False, "video_script": None, "_open_full_html": None, "_open_full_title": "", "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
+    "simplify_target": None, "solver_result": None, "creative_mode": False, "coding_mode": False, "web_search_mode": False, "show_animator": False, "pdf_text": None, "pdf_name": None, "voice_mode": False, "voice_reply": None, "selected_voice": 0, "show_profile": False, "user_profile": None, "animation_data": None, "quiz_state": None, "quiz_active": False, "plugin_store_open": False, "active_connector": None, "show_plugin_store_page": False, "_temp_app_html": None, "_temp_app_title": "", "show_video_creator": False, "video_script": None, "voice_transcript": "", "_voice_question": None, "voice_clear_pending": False,
     "custom_plugins": {}, "tool_creator_html": None, "tool_creator_mode": None, "tool_creator_name": "",
     "_plugin_ai_results": {}, "_plugin_batch_results": {}, "_last_plugin_call": "", "_last_plugin_batch_call": "",
     "visit_count": 0, "session_restored": False,
@@ -47,6 +47,10 @@ for k, v in defaults.items():
         st.session_state[k] = v
 
 # ── Theme CSS ──────────────────────────────────────────────────
+def render_html_frame(content, height=0, tab_index=None):
+    """Compatibility wrapper — st.iframe doesn't exist; use components."""
+    return st.components.v1.html(content, height=height, scrolling=False)
+
 def inject_theme():
     dark = st.session_state.dark_mode
     bg       = "#060d1a" if dark else "#f0f4fa"
@@ -775,6 +779,285 @@ def load_backend():
     vs  = FAISS.load_local("physics_index", emb, allow_dangerous_deserialization=True)
     return vs, Document
 
+
+# ══════════════════════════════════════════════════════════════
+#  NEXUS NLU ENGINE — Python mirror of the JS pipeline
+#  Runs on every user query BEFORE the AI call.
+#  Provides: intent, topic, sentiment, entities, spell-fix,
+#            query expansion → richer AI context.
+# ══════════════════════════════════════════════════════════════
+import re as _re
+import json as _nj
+
+# ── Contractions & normalisation ─────────────────────────────
+_CONTRACTIONS = {
+    "can't":"cannot","won't":"will not","don't":"do not",
+    "doesn't":"does not","didn't":"did not","isn't":"is not",
+    "aren't":"are not","wasn't":"was not","weren't":"were not",
+    "haven't":"have not","hasn't":"has not","hadn't":"had not",
+    "wouldn't":"would not","couldn't":"could not",
+    "shouldn't":"should not","mustn't":"must not",
+    "i'm":"i am","i've":"i have","i'll":"i will","i'd":"i would",
+    "you're":"you are","you've":"you have","they're":"they are",
+    "it's":"it is","that's":"that is","we're":"we are",
+    "what's":"what is","who's":"who is","how's":"how is",
+    "there's":"there is","gonna":"going to","wanna":"want to",
+    "gotta":"got to",
+}
+_SLANG = {
+    "u":"you","r":"are","ur":"your","y":"why","k":"okay",
+    "thx":"thanks","ty":"thank you","idk":"i don't know",
+    "imo":"in my opinion","tbh":"to be honest","btw":"by the way",
+    "rn":"right now","atm":"at the moment","gr8":"great",
+    "lmk":"let me know","asap":"as soon as possible",
+}
+_MISSPELLINGS = {
+    "definately":"definitely","recieve":"receive","seperate":"separate",
+    "occured":"occurred","beleive":"believe","wierd":"weird",
+    "goverment":"government","neccessary":"necessary",
+    "enviroment":"environment","grammer":"grammar",
+    "litrally":"literally","restaraunt":"restaurant",
+    "tomarrow":"tomorrow","yesturday":"yesterday",
+    "galvinisation":"galvanisation","galvenization":"galvanisation",
+    "photosythesis":"photosynthesis","photosynethesis":"photosynthesis",
+    "magnetisim":"magnetism","thermodynamnics":"thermodynamics",
+    "newtons":"newton's","einstien":"einstein","boltzman":"boltzmann",
+}
+# ── Intent patterns (mirrors Nexus JS INTENT_P) ──────────────
+_INTENT_PATTERNS = [
+    ("greeting",    [r"^(hi|hello|hey|howdy|greetings|good (morning|afternoon|evening))"]),
+    ("farewell",    [r"\b(bye|goodbye|see you|take care|good night)\b"]),
+    ("thanks",      [r"\b(thank(s| you)|appreciate|grateful|cheers)\b"]),
+    ("how-to",      [r"\bhow (do|can|should|to)\b", r"\b(steps?|tutorial|guide|instructions?)\b"]),
+    ("definition",  [r"\bwhat (is|are|was|were|does|do)\b", r"\bdefine\b", r"\bmeaning of\b"]),
+    ("comparison",  [r"\b(versus|vs\.?|compare|difference between|better than)\b"]),
+    ("calculation", [r"\b(calculate|compute|how much|convert|formula|sum|total)\b", r"\d+\s*[\+\-\*\/]\s*\d+"]),
+    ("problem-report", [r"\b(not working|broken|error|bug|crash|fail|problem|issue)\b"]),
+    ("creative",    [r"\b(write|create|compose|draft|design|story|poem|essay)\b"]),
+    ("image-gen",   [r"\b(draw|image|picture|generate.*(image|pic)|visuali[sz]e|illustration)\b"]),
+    ("video-gen",   [r"\b(video|animation|clip|make.*video)\b"]),
+    ("quiz",        [r"\b(quiz|test me|question me|practice|challenge)\b"]),
+    ("concept",     [r"\b(why|how come|what makes|reason for|explain (why|how))\b"]),
+    ("help-request",[r"\b(help|assist|support|guide|explain|clarify)\b"]),
+]
+# ── Topic domains (extends Nexus TOPICS) ─────────────────────
+_TOPICS = {
+    "physics":      ["force","energy","mass","velocity","acceleration","momentum","gravity",
+                     "wave","light","electric","magnetic","quantum","nuclear","thermodynamics",
+                     "entropy","optics","photon","electron","proton","neutron","current","voltage",
+                     "resistance","capacitor","inductor","frequency","amplitude","wavelength",
+                     "refraction","reflection","diffraction","interference","polarisation",
+                     "relativity","newton","einstein","bohr","heisenberg","schrodinger"],
+    "chemistry":    ["atom","molecule","element","compound","reaction","bond","acid","base",
+                     "ph","salt","oxidation","reduction","redox","catalyst","enzyme","polymer",
+                     "organic","inorganic","periodic","electron","orbital","valence","ion",
+                     "electrolysis","equilibrium","kinetics","enthalpy","entropy","galvanic",
+                     "galvanisation","galvanization","zinc","iron","rusting","corrosion","soap",
+                     "chromatography","titration","mole","avogadro","stoichiometry","molarity",
+                     "buffer","indicator","electrochemistry","thermochemistry"],
+    "biology":      ["cell","dna","rna","protein","enzyme","gene","chromosome","evolution",
+                     "photosynthesis","respiration","mitosis","meiosis","osmosis","diffusion",
+                     "metabolism","neuron","hormone","virus","bacteria","ecosystem","species"],
+    "mathematics":  ["equation","algebra","calculus","derivative","integral","matrix","vector",
+                     "probability","statistics","geometry","trigonometry","function","limit",
+                     "series","differential","polynomial","logarithm","exponential","quadratic"],
+    "coding":       ["python","java","javascript","code","program","algorithm","function",
+                     "variable","loop","array","class","object","debug","compile","output",
+                     "syntax","library","framework","api","database","html","css","git"],
+    "english":      ["grammar","essay","poem","story","letter","writing","vocabulary",
+                     "sentence","paragraph","metaphor","simile","alliteration","narrative",
+                     "persuasion","argument","thesis","conclusion","introduction","punctuation"],
+}
+# ── Sentiment words ───────────────────────────────────────────
+_POS_WORDS = {"good":0.7,"great":0.9,"excellent":0.95,"amazing":0.95,"awesome":0.9,
+              "love":0.85,"wonderful":0.85,"brilliant":0.9,"perfect":0.95,
+              "helpful":0.75,"clear":0.5,"correct":0.7,"right":0.6,"easy":0.5}
+_NEG_WORDS = {"bad":-0.7,"terrible":-0.9,"wrong":-0.6,"error":-0.5,
+              "broken":-0.7,"fail":-0.65,"hate":-0.85,"confused":-0.55,
+              "difficult":-0.5,"stuck":-0.55,"problem":-0.5,"issue":-0.45}
+_NEGATORS   = {"not","no","never","cannot","can't","don't","doesn't",
+               "didn't","isn't","aren't","wasn't","shouldn't"}
+# ── Synonyms for query expansion ──────────────────────────────
+_SYNS = {
+    "fix":["repair","resolve","correct","debug"],
+    "explain":["describe","clarify","define","detail"],
+    "calculate":["compute","find","solve","determine"],
+    "difference":["distinction","comparison","contrast"],
+    "example":["instance","illustration","demonstration"],
+    "formula":["equation","expression","rule"],
+    "wave":["oscillation","vibration","frequency"],
+    "force":["pressure","stress","push","pull"],
+    "energy":["power","work","joules"],
+    "temperature":["heat","thermal","celsius","kelvin"],
+    "velocity":["speed","rate","motion"],
+    "light":["photon","radiation","optics","electromagnetic"],
+    "atom":["particle","nucleus","electron","quantum"],
+    "reaction":["process","mechanism","transformation"],
+    "galvanisation":["galvanization","zinc coating","corrosion protection","sacrificial anode"],
+}
+
+def nlu_normalize(text: str) -> str:
+    """Expand contractions, fix slang, lowercase."""
+    t = text.lower().strip()
+    for k, v in _CONTRACTIONS.items():
+        t = t.replace(k, v)
+    for k, v in _SLANG.items():
+        t = _re.sub(r"\b" + k + r"\b", v, t)
+    return t
+
+def nlu_spellfix(text: str) -> tuple[str, list[tuple]]:
+    """Fix common misspellings."""
+    corrections = []
+    for wrong, right in _MISSPELLINGS.items():
+        if wrong in text.lower():
+            text = _re.sub(wrong, right, text, flags=_re.IGNORECASE)
+            corrections.append((wrong, right))
+    return text, corrections
+
+def nlu_detect_intent(text: str) -> dict:
+    """Detect primary intent from text."""
+    scores = {}
+    tl = text.lower()
+    for intent, patterns in _INTENT_PATTERNS:
+        for pat in patterns:
+            if _re.search(pat, tl):
+                scores[intent] = scores.get(intent, 0) + 1
+    sorted_sc = sorted(scores.items(), key=lambda x: -x[1])
+    primary = sorted_sc[0][0] if sorted_sc else "general"
+    conf = min(1.0, sorted_sc[0][1] * 0.4) if sorted_sc else 0.3
+    secondary = [s[0] for s in sorted_sc[1:3]]
+    return {"primary": primary, "secondary": secondary, "confidence": round(conf, 2)}
+
+def nlu_detect_topic(text: str) -> dict:
+    """Classify the knowledge domain."""
+    words = set(_re.findall(r"\b\w+\b", text.lower()))
+    scores = {}
+    for domain, keywords in _TOPICS.items():
+        hits = len(words & set(keywords))
+        if hits: scores[domain] = hits
+    sorted_sc = sorted(scores.items(), key=lambda x: -x[1])
+    primary = sorted_sc[0][0] if sorted_sc else "general"
+    conf = min(1.0, sorted_sc[0][1] / 4) if sorted_sc else 0.2
+    related = [s[0] for s in sorted_sc[1:3]]
+    return {"primary": primary, "confidence": round(conf, 2), "related": related}
+
+def nlu_sentiment(text: str) -> dict:
+    """Basic sentiment analysis."""
+    tokens = text.lower().split()
+    score = 0; cnt = 0; neg_mult = 1
+    for t in tokens:
+        if t in _NEGATORS: neg_mult = -1; continue
+        if t in _POS_WORDS:
+            score += _POS_WORDS[t] * neg_mult; cnt += 1; neg_mult = 1
+        elif t in _NEG_WORDS:
+            score += _NEG_WORDS[t] * neg_mult; cnt += 1; neg_mult = 1
+    norm = max(-1, min(1, score / max(cnt, 1)))
+    label = "positive" if norm > 0.2 else "negative" if norm < -0.2 else "neutral"
+    return {"score": round(norm, 2), "label": label, "magnitude": round(abs(norm), 2)}
+
+def nlu_expand_query(text: str) -> list[str]:
+    """Expand query with synonyms for better RAG retrieval."""
+    words = set(_re.findall(r"\b\w+\b", text.lower()))
+    expansions = set()
+    for w in words:
+        if w in _SYNS:
+            expansions.update(_SYNS[w][:3])
+    return list(expansions)[:8]
+
+def nlu_detect_entities(text: str) -> list[dict]:
+    """Detect named entities."""
+    entities = []
+    # Emails
+    for m in _re.findall(r"\b[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\b", text, _re.I):
+        entities.append({"text": m, "type": "EMAIL"})
+    # Numbers with units
+    for m in _re.findall(r"\b\d+\.?\d*\s*(?:kg|m|km|nm|ev|j|k|hz|mhz|ghz|celsius|kelvin|mol|atm|pa|n|v|a|w)\b", text, _re.I):
+        entities.append({"text": m, "type": "QUANTITY"})
+    # Chemical formulas
+    for m in _re.findall(r"\b(?:H[0-9]?O|CO[0-9]?|NaCl|H[0-9]SO[0-9]|NH[0-9]|CaCO[0-9]|Fe[0-9]O[0-9]?)\b", text):
+        entities.append({"text": m, "type": "CHEMICAL_FORMULA"})
+    # Named laws / concepts (capitalised)
+    for m in _re.findall(r"\b(?:[A-Z][a-z]+\'?s?\s+(?:law|theorem|principle|effect|equation|constant|model))\b", text):
+        entities.append({"text": m, "type": "SCIENTIFIC_LAW"})
+    return entities[:10]
+
+def nexus_process(question: str) -> dict:
+    """
+    Full Nexus NLU pipeline — run before every AI call.
+    Returns structured understanding of the question.
+    """
+    normalized  = nlu_normalize(question)
+    corrected, corrections = nlu_spellfix(normalized)
+    intent      = nlu_detect_intent(corrected)
+    topic       = nlu_detect_topic(corrected)
+    sentiment   = nlu_sentiment(corrected)
+    expansions  = nlu_expand_query(corrected)
+    entities    = nlu_detect_entities(question)
+    # Urgency heuristic
+    urgent_words = {"urgent","asap","emergency","immediately","help","stuck","broken","crash"}
+    urgency_score = min(1.0, len(set(corrected.split()) & urgent_words) * 0.25 + (0.1 if "!" in question else 0))
+    # Question type
+    qtype = "none"
+    fw = corrected.strip().split()[0] if corrected.strip() else ""
+    if fw in ("why","how","what","where","when","who","which"): qtype = fw
+    elif fw in ("is","are","can","do","does","will","would","should"): qtype = "yes-no"
+    return {
+        "original": question,
+        "corrected": corrected,
+        "corrections": corrections,
+        "intent":   intent,
+        "topic":    topic,
+        "sentiment":sentiment,
+        "expansions":expansions,
+        "entities": entities,
+        "question_type": qtype,
+        "urgency_score": round(urgency_score, 2),
+    }
+
+def nexus_enrich_system_prompt(nlu: dict, base_system: str) -> str:
+    """
+    Prepend NLU intelligence to the system prompt so the AI
+    already knows intent, topic, corrections and expansions.
+    """
+    lines = [base_system, "\n─── NEXUS NLU PRE-ANALYSIS ───"]
+    lines.append(f"Intent: {nlu['intent']['primary']} (confidence {nlu['intent']['confidence']:.0%})")
+    if nlu["intent"]["secondary"]:
+        lines.append(f"Secondary intents: {', '.join(nlu['intent']['secondary'])}")
+    lines.append(f"Topic domain: {nlu['topic']['primary']} (confidence {nlu['topic']['confidence']:.0%})")
+    if nlu["topic"]["related"]:
+        lines.append(f"Related domains: {', '.join(nlu['topic']['related'])}")
+    if nlu["corrections"]:
+        pairs = ", ".join(f"{a}→{b}" for a,b in nlu["corrections"])
+        lines.append(f"Spell corrections applied: {pairs}")
+    if nlu["entities"]:
+        ent_str = ", ".join(f"{e['text']} ({e['type']})" for e in nlu["entities"][:5])
+        lines.append(f"Detected entities: {ent_str}")
+    if nlu["expansions"]:
+        lines.append(f"Query expansions for RAG: {', '.join(nlu['expansions'][:6])}")
+    if nlu["question_type"] != "none":
+        lines.append(f"Question type: {nlu['question_type']}")
+    if nlu["urgency_score"] > 0.4:
+        lines.append(f"URGENCY: HIGH — respond promptly and clearly")
+    # Intent-specific instructions
+    intent = nlu["intent"]["primary"]
+    if intent == "concept":
+        lines.append("→ Explain the underlying scientific principle; use analogy; be thorough")
+    elif intent == "calculation":
+        lines.append("→ Show all working step-by-step; state every formula before using it")
+    elif intent == "definition":
+        lines.append("→ Give precise definition, etymology if helpful, then a concrete example")
+    elif intent == "comparison":
+        lines.append("→ Use structured comparison: similarities first, then differences; end with guidance")
+    elif intent == "how-to":
+        lines.append("→ Number each step clearly; use real examples; mention common mistakes")
+    elif intent == "problem-report":
+        lines.append("→ Diagnose the issue; give most likely cause first; offer 2-3 solutions")
+    elif intent == "creative":
+        lines.append("→ Be imaginative, use vivid language, structure well; show literary devices")
+    lines.append("─────────────────────────────────")
+    return "\n".join(lines)
+
+
 def call_hf(system_msg, user_msg, max_tokens=2000):
     """Core HuggingFace call — shared by all features."""
     from huggingface_hub import InferenceClient
@@ -890,6 +1173,388 @@ def should_offer_interactive_app(question, answer):
     q_lower = question.lower()
     return any(t in q_lower for t in triggers)
 
+
+
+# ══════════════════════════════════════════════════════════════
+#  VIDEO GENERATOR — FREE, NO API KEYS
+#  Generates an educational video by:
+#   1. AI writes scene script (title, slides, diagrams, summary)
+#   2. Pollinations.ai generates scene images (free)
+#   3. HTML5 Canvas displays with smooth transitions
+#   4. MediaRecorder API exports to .webm (built into browser)
+# ══════════════════════════════════════════════════════════════
+
+VIDEO_TRIGGERS = [
+    "create a video","make a video","generate a video","video about",
+    "video on","make me a video","educational video","explainer video",
+    "animation video","video creator","video maker","make a clip",
+]
+
+def is_video_request(message):
+    return any(t in message.lower() for t in VIDEO_TRIGGERS)
+
+def generate_video_script(topic, style="educational"):
+    """AI writes a structured multi-scene video script as JSON."""
+    system = """You are a brilliant educational video scriptwriter.
+Generate a structured video script. Return ONLY valid JSON like this:
+{
+  "title": "Video title",
+  "topic": "what it's about",
+  "scenes": [
+    {"type":"title","duration":4,"heading":"Main Title","subheading":"Context line"},
+    {"type":"text","duration":6,"heading":"Section Name","points":["Point 1","Point 2","Point 3"],"icon":"⚛️"},
+    {"type":"formula","duration":5,"heading":"Key Formula","formula":"E = mc²","explanation":"Energy equals mass times speed of light squared","units":"Joules"},
+    {"type":"diagram","duration":6,"heading":"Diagram Title","image_prompt":"detailed scientific diagram of X showing Y, educational illustration, white background, labeled, professional"},
+    {"type":"summary","duration":5,"heading":"Key Takeaways","points":["Summary 1","Summary 2","Summary 3"]}
+  ]
+}
+Make 5-7 scenes. Mix types. Keep text concise.
+For diagram scenes: write a detailed Pollinations-friendly image prompt.
+Return ONLY the JSON, no extra text."""
+    raw = call_hf(system, f"Create educational video script about: {topic}", max_tokens=1500)
+    if not raw: return None
+    import json as _j
+    start = raw.find("{"); end = raw.rfind("}") + 1
+    if start < 0: return None
+    try: return _j.loads(raw[start:end])
+    except: return None
+
+def generate_scene_images(script):
+    """Pre-generate images for diagram scenes using Pollinations (free)."""
+    images = {}
+    if not script: return images
+    for i, scene in enumerate(script.get("scenes", [])):
+        if scene.get("type") == "diagram" and scene.get("image_prompt"):
+            prompt = scene["image_prompt"] + ", educational, clean, professional, high quality"
+            b64, err = generate_image_hf(prompt, width=960, height=540)
+            if b64: images[i] = b64
+    return images
+
+def show_video_creator(topic="", script=None, scene_images=None):
+    """Render the HTML5 canvas video creator."""
+    import json as _j
+    script_json = _j.dumps(script) if script else "null"
+    images_json = _j.dumps(scene_images or {})
+
+    return f"""<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{background:#060d1a;font-family:'Segoe UI',sans-serif;color:#e8f0fe;overflow:hidden}}
+#app{{display:flex;flex-direction:column;height:100vh}}
+.toolbar{{background:#0d1627;border-bottom:1px solid #1c2d45;padding:8px 14px;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
+.vtitle{{color:#4f9eff;font-weight:800;font-size:14px;flex:1;min-width:100px}}
+.tbtn{{background:#111d2e;border:1px solid #1c2d45;color:#e8f0fe;border-radius:8px;
+  padding:5px 12px;cursor:pointer;font-size:11px;font-weight:600;transition:all .15s}}
+.tbtn:hover{{border-color:#4f9eff;color:#4f9eff}}
+.tbtn.rec{{background:#7f1d1d;border-color:#ef4444;color:#fff;animation:pu 1s infinite}}
+@keyframes pu{{0%{{box-shadow:0 0 0 0 rgba(239,68,68,.5)}}70%{{box-shadow:0 0 0 8px rgba(239,68,68,0)}}100%{{box-shadow:0 0 0 0 rgba(239,68,68,0)}}}};
+.main{{display:flex;flex:1;overflow:hidden;min-height:0}}
+.canvas-area{{flex:1;display:flex;align-items:center;justify-content:center;background:#000;position:relative}}
+#vc{{max-width:100%;max-height:100%}}
+.sidebar{{width:190px;background:#0d1627;border-left:1px solid #1c2d45;overflow-y:auto;padding:10px}}
+.sth{{color:#4f9eff;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:8px}}
+.scn{{background:#111d2e;border:1px solid #1c2d45;border-radius:8px;padding:8px;
+  margin-bottom:6px;cursor:pointer;font-size:11px;color:#7b92b2}}
+.scn:hover,.scn.active{{border-color:#4f9eff;color:#e8f0fe}}
+.timeline{{background:#0d1627;border-top:1px solid #1c2d45;padding:8px 14px;height:68px;
+  display:flex;align-items:center;gap:6px;overflow-x:auto}}
+.tscn{{height:40px;border-radius:6px;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:10px;
+  color:#fff;font-weight:700;border:2px solid transparent;min-width:36px;transition:all .15s}}
+.tscn.active{{border-color:#fff}}
+.pbar{{flex:1;height:3px;background:#1c2d45;border-radius:99px;cursor:pointer;min-width:60px}}
+.pfill{{height:100%;background:linear-gradient(90deg,#4f9eff,#a78bfa);border-radius:99px;transition:width .15s}}
+.tlbl{{font-size:10px;color:#7b92b2;white-space:nowrap}}
+.status{{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
+  background:rgba(13,22,39,0.85);padding:4px 12px;border-radius:20px;font-size:10px;color:#7b92b2}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="toolbar">
+    <span class="vtitle">🎬 PhysIQ Video Creator</span>
+    <div class="pbar" id="pbar" onclick="seekBar(event)"><div class="pfill" id="pfill" style="width:0%"></div></div>
+    <span class="tlbl" id="tlbl">0:00 / 0:00</span>
+    <button class="tbtn" onclick="prevScene()">⏮</button>
+    <button class="tbtn" id="playBtn" onclick="togglePlay()">▶ Play</button>
+    <button class="tbtn" onclick="nextScene()">⏭</button>
+    <button class="tbtn rec" id="recBtn" onclick="startRecord()">⏺ Export</button>
+    <button class="tbtn" onclick="downloadScript()">📄 JSON</button>
+  </div>
+  <div class="main">
+    <div class="canvas-area">
+      <canvas id="vc" width="960" height="540"></canvas>
+      <div class="status" id="status">Loading...</div>
+    </div>
+    <div class="sidebar">
+      <div class="sth">SCENES</div>
+      <div id="sceneList"></div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div id="tlScenes" style="display:flex;gap:5px;align-items:center;height:100%"></div>
+  </div>
+</div>
+<script>
+var script={script_json};
+var images={images_json};
+var COLORS=['#1d4ed8','#15803d','#7c3aed','#b91c1c','#0891b2','#c2410c','#065f46','#1e3a5f'];
+var canvas=document.getElementById('vc');
+var ctx=canvas.getContext('2d');
+var W=960,H=540;
+var cur=0,playing=false,animT=0,elapsed=0,total=0,lastTs=null;
+var recChunks=[],recorder=null,isRec=false;
+
+function fmt(s){{return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60);}}
+
+function init(){{
+  if(!script){{noScript();return;}}
+  total=0;(script.scenes||[]).forEach(function(s){{total+=(s.duration||5);}});
+  buildSidebar();buildTimeline();
+  renderScene(0,0);
+  document.getElementById('status').textContent='Ready · '+(script.scenes||[]).length+' scenes · '+total+'s';
+  document.getElementById('tlbl').textContent='0:00 / '+fmt(total);
+}}
+
+function buildSidebar(){{
+  var sl=document.getElementById('sceneList');sl.innerHTML='';
+  (script.scenes||[]).forEach(function(s,i){{
+    var d=document.createElement('div');d.className='scn'+(i===0?' active':'');d.id='sc'+i;
+    d.onclick=(function(x){{return function(){{jump(x);}};}})(i);
+    d.innerHTML='<div style="color:#4f9eff;font-size:9px;font-weight:700">SCENE '+(i+1)+' · '+(s.duration||5)+'s</div>'
+      +'<div>'+(s.heading||s.title||s.type||'Scene')+'</div>';
+    sl.appendChild(d);
+  }});
+}}
+
+function buildTimeline(){{
+  var tl=document.getElementById('tlScenes');tl.innerHTML='';
+  (script.scenes||[]).forEach(function(s,i){{
+    var d=document.createElement('div');d.className='tscn'+(i===0?' active':'');d.id='tl'+i;
+    d.style.background=COLORS[i%COLORS.length];
+    d.style.width=Math.max(36,(s.duration||5)/total*300)+'px';
+    d.textContent=i+1;
+    d.onclick=(function(x){{return function(){{jump(x);}};}})(i);
+    tl.appendChild(d);
+  }});
+}}
+
+function jump(idx){{
+  cur=idx;animT=0;
+  var acc=0;(script.scenes||[]).forEach(function(s,i){{if(i<idx)acc+=(s.duration||5);}});
+  elapsed=acc;updateUI();renderScene(idx,0);
+}}
+
+function updateUI(){{
+  document.querySelectorAll('.scn').forEach(function(el,i){{el.classList.toggle('active',i===cur);}});
+  document.querySelectorAll('.tscn').forEach(function(el,i){{el.classList.toggle('active',i===cur);}});
+  var pct=total>0?elapsed/total*100:0;
+  document.getElementById('pfill').style.width=pct+'%';
+  document.getElementById('tlbl').textContent=fmt(elapsed)+' / '+fmt(total);
+}}
+
+function togglePlay(){{
+  playing=!playing;
+  document.getElementById('playBtn').textContent=playing?'⏸ Pause':'▶ Play';
+  if(playing){{lastTs=null;requestAnimationFrame(animate);}}
+}}
+
+function animate(ts){{
+  if(!lastTs)lastTs=ts;
+  if(!playing)return;
+  var dt=(ts-lastTs)/1000;lastTs=ts;
+  animT+=dt;elapsed=Math.min(elapsed+dt,total);
+  var scenes=script.scenes||[];
+  var sc=scenes[cur]||{{}};
+  if(animT>=(sc.duration||5)){{
+    animT=0;
+    if(cur<scenes.length-1){{cur++;}}
+    else{{playing=false;document.getElementById('playBtn').textContent='▶ Play';return;}}
+  }}
+  renderScene(cur,animT);updateUI();
+  if(playing)requestAnimationFrame(animate);
+}}
+
+function prevScene(){{if(cur>0)jump(cur-1);}}
+function nextScene(){{if(script&&cur<(script.scenes||[]).length-1)jump(cur+1);}}
+
+function seekBar(e){{
+  var r=e.currentTarget.getBoundingClientRect();
+  var pct=(e.clientX-r.left)/r.width;elapsed=pct*total;
+  var acc=0;(script.scenes||[]).forEach(function(s,i){{
+    acc+=(s.duration||5);if(elapsed<=acc){{cur=i;animT=elapsed-(acc-(s.duration||5));return;}};
+  }});renderScene(cur,animT);updateUI();
+}}
+
+function renderScene(idx,t){{
+  t=t||0;
+  var scenes=script&&script.scenes||[];
+  var s=scenes[idx]||{{}};
+  var progress=Math.min(1,t/Math.max(0.001,(s.duration||5)));
+  ctx.clearRect(0,0,W,H);
+  var tp=s.type||'text';
+  if(tp==='title')drawTitle(s,progress);
+  else if(tp==='text'||tp==='bullet')drawText(s,progress);
+  else if(tp==='formula')drawFormula(s,progress);
+  else if(tp==='diagram')drawDiagram(s,idx,progress);
+  else if(tp==='summary')drawSummary(s,progress);
+  else drawText(s,progress);
+  // scene counter
+  ctx.font='10px Segoe UI';ctx.fillStyle='rgba(255,255,255,0.25)';ctx.textAlign='right';
+  ctx.fillText((idx+1)+'/'+(scenes.length),W-12,H-10);ctx.textAlign='left';
+}}
+
+function grad(c1,c2){{var g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,c1);g.addColorStop(1,c2);return g;}}
+
+function drawTitle(s,p){{
+  ctx.fillStyle=grad('#060d1a','#0d1627');ctx.fillRect(0,0,W,H);
+  // Animated dots
+  for(var i=0;i<15;i++){{
+    ctx.globalAlpha=0.06+0.04*Math.sin(i*0.7);ctx.fillStyle='#4f9eff';
+    ctx.beginPath();ctx.arc((Math.sin(i*1.3)*0.45+0.5)*W,(Math.cos(i*0.9)*0.45+0.5)*H,3,0,Math.PI*2);ctx.fill();
+  }}ctx.globalAlpha=1;
+  ctx.textAlign='center';
+  ctx.globalAlpha=Math.min(1,p*4);
+  ctx.font='bold 58px Segoe UI';ctx.fillStyle='#4f9eff';ctx.fillText(s.heading||s.title||'',W/2,H*0.38);
+  ctx.globalAlpha=Math.min(1,p*3-0.3);
+  ctx.font='22px Segoe UI';ctx.fillStyle='#7b92b2';ctx.fillText(s.subheading||'',W/2,H*0.52);
+  ctx.globalAlpha=Math.min(1,p*3);
+  var lw=W*0.25*Math.min(1,p*5);ctx.fillStyle='#4f9eff';ctx.fillRect(W/2-lw/2,H*0.63,lw,3);
+  ctx.globalAlpha=1;ctx.textAlign='left';
+}}
+
+function drawText(s,p){{
+  ctx.fillStyle='#060d1a';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#4f9eff';ctx.fillRect(0,0,W*Math.min(1,p*3),6);
+  ctx.font='bold 32px Segoe UI';ctx.fillStyle='#e8f0fe';ctx.textAlign='left';
+  ctx.fillText((s.icon||'📌')+' '+(s.heading||''),40,72);
+  ctx.fillStyle='rgba(79,158,255,0.2)';ctx.fillRect(40,86,W-80,2);
+  var pts=s.points||[];
+  pts.forEach(function(pt,i){{
+    var rev=Math.min(1,p*(pts.length+1.5)-(i+0.5));if(rev<=0)return;
+    ctx.globalAlpha=rev;var y=140+i*74;
+    ctx.fillStyle='#4f9eff';ctx.beginPath();ctx.arc(52,y+2,6,0,Math.PI*2);ctx.fill();
+    ctx.font='19px Segoe UI';ctx.fillStyle='#e8f0fe';
+    wrapText(pt,72,y,W-110,26);ctx.globalAlpha=1;
+  }});ctx.textAlign='left';
+}}
+
+function drawFormula(s,p){{
+  ctx.fillStyle='#060d1a';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#4f9eff';ctx.fillRect(0,0,W,6);
+  ctx.font='bold 26px Segoe UI';ctx.fillStyle='#e8f0fe';ctx.textAlign='center';
+  ctx.fillText(s.heading||'Formula',W/2,60);
+  ctx.globalAlpha=Math.min(1,p*3);
+  ctx.fillStyle='rgba(79,158,255,0.1)';ctx.strokeStyle='#4f9eff';ctx.lineWidth=1.5;
+  ctx.beginPath();ctx.roundRect(W*0.12,H*0.28,W*0.76,H*0.24,14);ctx.fill();ctx.stroke();
+  ctx.font='bold 58px Courier New';ctx.fillStyle='#fbbf24';
+  ctx.fillText(s.formula||'F=ma',W/2,H*0.46);
+  ctx.globalAlpha=1;ctx.font='18px Segoe UI';ctx.fillStyle='#7b92b2';
+  ctx.fillText(s.explanation||'',W/2,H*0.64);
+  if(s.units){{ctx.font='14px Segoe UI';ctx.fillStyle='#484f58';ctx.fillText('Units: '+s.units,W/2,H*0.74);}}
+  ctx.textAlign='left';
+}}
+
+function drawDiagram(s,idx,p){{
+  if(images[idx]){{
+    var img=images[idx];
+    if(typeof img==='string'&&img.length>100){{
+      if(!window._imgCache)window._imgCache={{}};
+      if(!window._imgCache[idx]){{
+        var im=new Image();im.src='data:image/png;base64,'+img;
+        window._imgCache[idx]=im;
+      }}
+      var im2=window._imgCache[idx];
+      ctx.globalAlpha=Math.min(1,p*3);
+      try{{ctx.drawImage(im2,0,0,W,H);}}catch(e){{}}
+      ctx.globalAlpha=1;
+      // Overlay label
+      ctx.fillStyle='rgba(6,13,26,0.7)';ctx.fillRect(0,0,W,44);
+      ctx.font='bold 20px Segoe UI';ctx.fillStyle='#4f9eff';ctx.textAlign='center';
+      ctx.fillText(s.heading||'Diagram',W/2,28);ctx.textAlign='left';
+      return;
+    }}
+  }}
+  // Fallback: animated placeholder
+  ctx.fillStyle='#060d1a';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(79,158,255,0.06)';ctx.fillRect(80,80,W-160,H-160);
+  ctx.strokeStyle='rgba(79,158,255,0.3)';ctx.lineWidth=1;ctx.strokeRect(80,80,W-160,H-160);
+  ctx.textAlign='center';ctx.font='bold 22px Segoe UI';ctx.fillStyle='#4f9eff';
+  ctx.fillText(s.heading||'Diagram',W/2,H/2-30);
+  ctx.font='14px Segoe UI';ctx.fillStyle='#7b92b2';
+  ctx.fillText('AI image generated for this scene',W/2,H/2+10);ctx.textAlign='left';
+}}
+
+function drawSummary(s,p){{
+  ctx.fillStyle=grad('#060d1a','#080f1e');ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#22c55e';ctx.fillRect(0,0,W,6);
+  ctx.textAlign='center';ctx.font='bold 32px Segoe UI';ctx.fillStyle='#22c55e';
+  ctx.fillText(s.heading||'Key Takeaways',W/2,60);
+  ctx.fillStyle='rgba(34,197,94,0.2)';ctx.fillRect(W/2-100,76,200,2);
+  var pts=s.points||[];
+  pts.forEach(function(pt,i){{
+    var rev=Math.min(1,p*(pts.length+1)-(i+0.5));if(rev<=0)return;
+    ctx.globalAlpha=rev;var y=120+i*72;
+    ctx.font='bold 15px Segoe UI';ctx.fillStyle='#22c55e';ctx.fillText('✓',W*0.22,y);
+    ctx.font='17px Segoe UI';ctx.fillStyle='#e8f0fe';ctx.fillText(pt,W/2,y);ctx.globalAlpha=1;
+  }});
+  if(p>0.7){{
+    ctx.globalAlpha=Math.min(1,(p-0.7)*3);
+    ctx.font='bold 16px Segoe UI';ctx.fillStyle='#fbbf24';
+    ctx.fillText('Explore more in PhysIQ! 🚀',W/2,H-50);ctx.globalAlpha=1;
+  }}ctx.textAlign='left';
+}}
+
+function wrapText(t,x,y,maxW,lh){{
+  ctx.font='19px Segoe UI';ctx.fillStyle='#e8f0fe';
+  var ws=t.split(' '),line='';
+  for(var n=0;n<ws.length;n++){{
+    var test=line+ws[n]+' ';
+    if(ctx.measureText(test).width>maxW&&n>0){{ctx.fillText(line,x,y);line=ws[n]+' ';y+=lh;}}else line=test;
+  }}ctx.fillText(line,x,y);
+}}
+
+function noScript(){{
+  ctx.fillStyle='#060d1a';ctx.fillRect(0,0,W,H);
+  ctx.textAlign='center';ctx.font='bold 26px Segoe UI';ctx.fillStyle='#4f9eff';
+  ctx.fillText('🎬 PhysIQ Video Creator',W/2,H/2-30);
+  ctx.font='15px Segoe UI';ctx.fillStyle='#7b92b2';
+  ctx.fillText('Enter a topic above and click Generate Video',W/2,H/2+20);ctx.textAlign='left';
+  document.getElementById('status').textContent='No script loaded';
+}}
+
+async function startRecord(){{
+  if(isRec){{recorder&&recorder.stop();return;}}
+  var stream=canvas.captureStream(30);
+  try{{recorder=new MediaRecorder(stream,{{mimeType:'video/webm;codecs=vp9'}});}}
+  catch(e){{recorder=new MediaRecorder(stream);}}
+  recChunks=[];
+  recorder.ondataavailable=function(e){{if(e.data.size>0)recChunks.push(e.data);}};
+  recorder.onstop=function(){{
+    var blob=new Blob(recChunks,{{type:'video/webm'}});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='physiq_video.webm';a.click();
+    isRec=false;document.getElementById('recBtn').textContent='⏺ Export';
+    document.getElementById('recBtn').classList.remove('rec');
+    document.getElementById('status').textContent='✅ Video saved!';
+  }};
+  recorder.start();isRec=true;
+  document.getElementById('recBtn').textContent='⏹ Stop';
+  document.getElementById('recBtn').classList.add('rec');
+  document.getElementById('status').textContent='🔴 Recording…';
+  if(!playing)togglePlay();
+}}
+
+function downloadScript(){{
+  if(!script)return;
+  var b=new Blob([JSON.stringify(script,null,2)],{{type:'application/json'}});
+  var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='video_script.json';a.click();
+}}
+
+init();
+</script>
+</body></html>"""
 
 def generate_interactive_app(question, answer):
     """AI generates a world-class temporary interactive app."""
@@ -1106,102 +1771,152 @@ def get_confidence(results):
 
 # ── Feature 1: Normal Ask ─────────────────────────────────────
 def ask_question(question, vs, history_text):
-    results = vs.similarity_search_with_score(question, k=4)
+    """
+    Ask a question with full Nexus NLU pre-processing.
+    1. Nexus NLU analyses intent, topic, entities, sentiment
+    2. RAG retrieves relevant knowledge (with NLU expansions)
+    3. NLU enriches the system prompt with structured context
+    4. AI generates a highly targeted answer
+    """
+    # ── STEP 1: Nexus NLU analysis ───────────────────────────
+    nlu = nexus_process(question)
+
+    # ── STEP 2: RAG retrieval (expand with NLU terms) ─────────
+    expanded_query = question
+    if nlu["expansions"]:
+        expanded_query = question + " " + " ".join(nlu["expansions"][:4])
+    results = vs.similarity_search_with_score(expanded_query, k=5) if vs else []
     conf_label, conf_class = get_confidence(results)
-    context = "\n\n".join([r[0].page_content for r in results]) if results else ""
+    context = "\n\n".join([r[0].page_content for r in results[:4]]) if results else ""
 
-    # Detect if question is about English/writing
-    english_keywords = ["essay", "debate", "letter", "diary", "story", "poem", "speech",
-                        "report", "paragraph", "grammar", "vocabulary", "creative", "write",
-                        "writing", "narrative", "describe", "argument", "persuasive", "formal",
-                        "informal", "comprehension", "figure of speech", "metaphor", "simile",
-                        "alliteration", "rebuttal", "thesis", "introduction", "conclusion"]
-    is_english = any(w in question.lower() for w in english_keywords)
-
-    if is_english:
-        system = """You are an expert English Language and Literature teacher and creative writing coach.
-You help students with:
-- Essay writing (argumentative, descriptive, narrative, expository)
-- Debate writing and speech writing
-- Formal and informal letter writing
-- Diary entries, creative stories, and poetry
-- Grammar, vocabulary, and language analysis
-- Comprehension and literary analysis
-
-Always follow proper writing conventions and rules. When asked to write something:
-1. Follow the correct FORMAT and STRUCTURE for that type of writing
-2. Use appropriate LANGUAGE and TONE
-3. Apply relevant LITERARY DEVICES where suitable
-4. Show CREATIVITY while maintaining correctness
-
-If asked to write an essay/letter/story etc., actually WRITE it — do not just explain how to write it.
-Be creative, use vivid language, strong vocabulary, and varied sentence structures."""
-    else:
-        is_creative = st.session_state.get("creative_mode", False)
-    is_coding = st.session_state.get("coding_mode", False)
-    # Personalisation from user profile
+    # ── STEP 3: Mode detection ────────────────────────────────
+    is_coding  = st.session_state.get("coding_mode", False)
+    is_creative = st.session_state.get("creative_mode", False)
+    topic      = nlu["topic"]["primary"]
+    intent     = nlu["intent"]["primary"]
     profile_ctx = build_personalisation_context(st.session_state.get("user_profile"))
-    if is_creative:
-        system = ("""You are a brilliant, creative English writing expert with the literary sensibility of a published author and the precision of an English professor.
-You write with vivid imagery, original metaphors, varied sentence rhythms, and emotional intelligence.
-When asked to write essays, debates, letters, stories, poems, diary entries, speeches, or any creative writing:
-- Follow the correct format and rules for that genre meticulously
-- Use sophisticated, precise vocabulary
-- Vary sentence structure (short punchy sentences mixed with longer flowing ones)
-- Include figurative language (original similes, metaphors, personification)
-- Create atmosphere, mood, and emotional resonance
-- Show don't tell
-- Always explain the rules/structure you used after your writing
-If asked about grammar, literature, or comprehension — explain clearly with examples.""") + profile_ctx
+
+    # ── STEP 4: Choose the right base system prompt ───────────
+    is_english_topic = (
+        topic == "english" or is_creative or
+        intent == "creative" or
+        any(w in question.lower() for w in ["essay","letter","poem","story","debate",
+            "speech","grammar","vocabulary","metaphor","simile","narrative","persuasive",
+            "diary","comprehension","alliteration","rebuttal","thesis","introduction"])
+    )
+
+    if is_coding or (topic == "coding" and intent not in ("definition","concept")):
+        system = """You are PhysIQ Coding Expert — a world-class programming tutor.
+
+LANGUAGES: Python, Java, C++, C#, JavaScript, TypeScript, Kotlin, Swift, Go, Rust, Lua, SQL, HTML/CSS, R
+
+RULES:
+1. When asked to WRITE code: produce complete, clean, well-commented, working code
+2. When asked to EXPLAIN code: walk through it line by line with clarity
+3. When asked to DEBUG: identify the exact bug, explain why it fails, show the fix
+4. When asked a conceptual question: explain the CONCEPT clearly first, then code example
+5. Use descriptive variable names, follow best practices
+6. After code, always add a brief explanation of what it does and how to run it
+7. For algorithms: show time complexity O(n), space complexity, and why it works
+
+Format: Use code blocks with language tags. Show expected output.""" + profile_ctx
+
+    elif is_english_topic:
+        system = """You are PhysIQ Writing Expert — a published author, English professor, and creative writing coach combined.
+
+YOUR EXPERTISE:
+• Essays: argumentative, descriptive, narrative, expository, analytical
+• Creative: stories, poems (sonnet, haiku, free verse, limerick), diary entries
+• Formal writing: letters (formal/informal/business/complaint/application), reports
+• Academic: debate speeches, comprehension, literary analysis, critical response
+• Language: grammar, punctuation, figures of speech, literary devices, vocabulary
+
+WHEN WRITING:
+1. Actually PRODUCE the piece — don't just explain how to write it
+2. Use the CORRECT format and structure for that genre
+3. Vary sentence length and structure (punchy sentences + flowing ones)
+4. Use vivid, precise language with original figurative devices
+5. Match the appropriate register/tone (formal vs informal)
+6. After writing, briefly label the key techniques you used
+
+WHEN TEACHING:
+• Show examples; never just state rules abstractly
+• Correct gently; offer the improved version
+• Build vocabulary and literary awareness""" + profile_ctx
+
     else:
-        system = """You are PhysIQ — an expert AI tutor covering Physics, Chemistry, Mathematics, English, Biology, and General Science from Class 10 to College level.
+        # ── Main science/general tutor — Nexus enriched ──────
+        system = r"""You are PhysIQ — an elite AI science tutor covering Physics, Chemistry, Mathematics, Biology, and General Science from Class 10 through university level.
 
-CRITICAL RULE — UNDERSTAND INTENT FIRST:
-Before answering, decide what the user ACTUALLY wants:
-1. EXPLANATION: "What is Newton's law?" / "Explain photosynthesis" / "How does DNA work?" → Give a clear educational explanation with examples and formulas.
-2. CALCULATION: "Calculate the force when..." / "Find the pH of..." → Solve step-by-step with working shown.
-3. DEFINITION: "What is entropy?" / "Define oxidation" → Give a precise definition with context.
-4. COMPARISON: "Difference between..." / "Compare X and Y" → Structured comparison.
-5. CONCEPT QUESTION: "Why does ice float?" / "How do planes fly?" → Intuitive explanation first, then technical detail.
-6. CONVERSATIONAL: "Hello", "Thanks", "That was helpful" → Respond naturally and warmly.
+══ CORE INTELLIGENCE RULES ══
 
-NEVER write computer code unless the user EXPLICITLY asks for code (e.g. "write a Python program", "code for me").
-If someone asks "how does Python handle memory?" — explain the concept, do NOT write Python code.
-If someone asks "what is a for loop?" — explain with a simple example, do NOT write a full program.
+RULE 1 — DECODE THE TRUE QUESTION:
+Users often phrase things imprecisely. Understand what they ACTUALLY mean:
+• "Why are cars dipped in iron?" → They mean ZINC. Gently correct: "Actually it's zinc — this is GALVANISATION!"
+• "Why does ice feel cold?" → They mean: what is the thermodynamic mechanism?
+• Short pronouns ("it", "this", "that") → Refer back to previous topic in conversation
+• Misspellings, typos → Understand the intended concept, answer it correctly
 
-FORMAT YOUR ANSWERS WELL:
-- Use clear headings for complex topics
-- Use bullet points for lists
-- Show formulas clearly: F = ma, E = mc²
-- Give real-world examples
-- Keep answers focused and not too long unless detail is needed
-- Be encouraging and friendly
+RULE 2 — MATCH RESPONSE DEPTH TO INTENT:
+• "Why…" / "How come…" → Full conceptual explanation with mechanism, analogy, formula
+• "What is…" / "Define…" → Precise definition + context + one vivid example
+• "Calculate…" / "Find…" / "Solve…" → Step-by-step working, show every formula
+• "Compare…" / "Difference between…" → Structured parallel comparison
+• "List…" / "Give examples…" → Clean enumerated list
+• Short social messages ("thanks", "ok", "cool") → Brief, warm reply only
 
-If you don't know something or are unsure, say so honestly."""
+RULE 3 — SCIENTIFIC PRECISION:
+• State the named law/principle/effect first, then explain it
+• Show formulas before using them: "Using $F = ma$..."
+• Use LaTeX for ALL maths: inline $E = mc^2$, display $$\Delta G = \Delta H - T\Delta S$$
+• Use correct SI units every time
+• Distinguish between commonly confused things:
+  - Galvanisation = ZINC coating (NOT iron)
+  - Weight (N) ≠ Mass (kg)  
+  - Speed (scalar) ≠ Velocity (vector)
+  - Atomic number ≠ Mass number
 
-    # Topic continuity check
-    is_continuation, prev_topic = detect_topic_continuity(question, st.session_state.get("messages",[]))
-    continuation_note = f"\n[This appears to be a follow-up to the previous topic: {prev_topic[:80] if prev_topic else ''}. Maintain context.]" if is_continuation else ""
+RULE 4 — HANDLE MISCONCEPTIONS:
+If the question contains a factual error, ALWAYS correct it:
+"Great question! Small correction first — it's actually [X], not [Y]. Here's why..."
+
+RULE 5 — FORMAT FOR CLARITY:
+• **Bold** for key scientific terms and law names
+• Numbered steps for calculations and procedures
+• Bullet points ONLY for genuine lists
+• Short paragraph + example is often better than bullet-heavy walls of text
+• End with a memorable analogy or real-world application where possible"""
+
+        system += profile_ctx
+
+    # ── STEP 5: Enrich system prompt with Nexus NLU output ────
+    system = nexus_enrich_system_prompt(nlu, system)
+
+    # ── STEP 6: Build user message ────────────────────────────
+    is_continuation, prev_topic = detect_topic_continuity(
+        question, st.session_state.get("messages", []))
+    continuation = (f"\n[CONTEXT: This is a follow-up to '{prev_topic[:60]}'. "
+                    f"Maintain that context.]") if is_continuation else ""
+
+    corrections_note = ""
+    if nlu["corrections"]:
+        c = nlu["corrections"][0]
+        corrections_note = f"\n[NOTE: I auto-corrected '{c[0]}' → '{c[1]}' in the question]"
 
     user = f"""Conversation so far:
-{history_text if history_text else "(First question)"}
+{history_text or "(This is the student's first question)"}
 
-Relevant Knowledge:
-{context}
-{continuation_note}
+Relevant knowledge from knowledge base:
+{context or "(No specific knowledge base match — use your expert knowledge)"}
+{continuation}{corrections_note}
 
-Student's question: {question}
+Student's question: {nlu['corrected']}
 
-IMPORTANT: If the answer contains mathematical formulas, use LaTeX notation:
-- Inline math: $formula$  e.g. $F = ma$, $E = mc^2$
-- Display math: $$formula$$  e.g. $$\\frac{{v^2}}{{r}} = \\omega^2 r$$
-- Use proper LaTeX: \\frac, \\sqrt, \\mid, \\text, \\alpha, \\beta, \\Delta, \\sum, \\int, \\times, \\cdot
-- The user wrote: [{question}] — understand any LaTeX/symbols in their question too
+Remember: If this contains maths, use LaTeX ($inline$ or $$display$$).
+Give your best, most helpful answer:"""
 
-Answer clearly and helpfully:"""
-
-    answer = call_hf(system, user, max_tokens=2000)
-    return answer or "Could not generate a response.", conf_label, conf_class
+    answer = call_hf(system, user, max_tokens=2200)
+    return answer or "I couldn't generate a response. Please check Ollama is running.", conf_label, conf_class
 
 # ── Feature 2: Step-by-Step Numerical Solver ─────────────────
 def solve_numerical(problem, vs):
@@ -2097,42 +2812,90 @@ Write the perfect image generation prompt:"""
     return prompt.strip() if prompt else user_request
 
 def generate_image_hf(prompt, width=1024, height=1024, model="flux"):
-    """Generate image using Hugging Face text-to-image."""
-    import base64
-    import io
-    from huggingface_hub import InferenceClient
+    """
+    Generate image using completely FREE services — no API key needed.
+    Priority:
+      1. Pollinations.ai  (free, fast, FLUX-based, no limits)
+      2. Stable Horde     (free, community-powered)
+    """
+    import urllib.request as _ur
+    import urllib.parse as _up
+    import base64, io, time as _t
 
-    # Model options — FLUX.1-schnell is free and excellent
-    models = {
-        "flux":   "black-forest-labs/FLUX.1-schnell",
-        "flux_dev": "black-forest-labs/FLUX.1-dev",
-        "sdxl":   "stabilityai/stable-diffusion-xl-base-1.0",
-        "sdxl_turbo": "stabilityai/sdxl-turbo",
-    }
-    model_order = [models.get(model, models["flux"]), models["sdxl"], models["sdxl_turbo"]]
-
+    # ── 1. Pollinations.ai (completely free, no auth) ─────────
     try:
-        errors = []
-        for model_id in model_order:
-            try:
-                client = InferenceClient(provider="hf-inference", api_key=HF_TOKEN, timeout=180)
-                image = client.text_to_image(
-                    prompt,
-                    model=model_id,
-                    width=width if "sdxl" not in model_id else min(width, 1024),
-                    height=height if "sdxl" not in model_id else min(height, 1024),
-                    num_inference_steps=4 if "FLUX.1-schnell" in model_id else 20,
-                    guidance_scale=0.0 if "FLUX.1-schnell" in model_id else 7.5,
+        # Clean + encode prompt
+        clean = prompt[:400].replace("\n", " ").strip()
+        encoded = _up.quote(clean)
+        # Pollinations endpoints:
+        #  /p/<prompt>?model=flux&w=W&h=H&enhance=true&nologo=true
+        seed = int(_t.time()) % 9999
+        url = (
+            f"https://image.pollinations.ai/prompt/{encoded}"
+            f"?model=flux&width={min(width,1280)}&height={min(height,1280)}"
+            f"&seed={seed}&enhance=true&nologo=true&safe=false"
+        )
+        req = _ur.Request(url, headers={"User-Agent": "PhysIQ/2.0"})
+        with _ur.urlopen(req, timeout=90) as r:
+            img_bytes = r.read()
+        if img_bytes and len(img_bytes) > 5000:
+            b64 = base64.b64encode(img_bytes).decode()
+            return b64, None
+    except Exception as e1:
+        pass  # fall through to next
+
+    # ── 2. Stable Horde (free community GPU cluster) ──────────
+    try:
+        import json as _j
+        payload = _j.dumps({
+            "prompt": prompt[:500],
+            "params": {
+                "width": min(width, 1024), "height": min(height, 1024),
+                "steps": 20, "cfg_scale": 7.5,
+                "sampler_name": "k_dpmpp_sde", "karras": True,
+            },
+            "models": ["Deliberate"],
+            "r2": True,
+        }).encode()
+        gen_req = _ur.Request(
+            "https://stablehorde.net/api/v2/generate/async",
+            data=payload,
+            headers={"Content-Type": "application/json",
+                     "apikey": "0000000000",        # anonymous key — always works
+                     "Client-Agent": "PhysIQ:2.0"},
+            method="POST"
+        )
+        with _ur.urlopen(gen_req, timeout=30) as r:
+            gen_id = _j.loads(r.read()).get("id", "")
+        if gen_id:
+            # Poll until done (max 90s)
+            for _ in range(30):
+                _t.sleep(3)
+                check = _ur.Request(
+                    f"https://stablehorde.net/api/v2/generate/check/{gen_id}",
+                    headers={"apikey": "0000000000"}
                 )
-                buffer = io.BytesIO()
-                image.save(buffer, format="PNG")
-                b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
-                return b64, None
-            except Exception as model_error:
-                errors.append(f"{model_id}: {str(model_error)[:140]}")
-        return None, "Generation failed: " + " | ".join(errors[:3])
-    except Exception as e:
-        return None, f"Error: {str(e)[:100]}"
+                with _ur.urlopen(check, timeout=10) as r:
+                    status = _j.loads(r.read())
+                if status.get("done"):
+                    result_req = _ur.Request(
+                        f"https://stablehorde.net/api/v2/generate/status/{gen_id}",
+                        headers={"apikey": "0000000000"}
+                    )
+                    with _ur.urlopen(result_req, timeout=15) as r:
+                        result = _j.loads(r.read())
+                    for gen in result.get("generations", []):
+                        img_url = gen.get("img", "")
+                        if img_url.startswith("http"):
+                            with _ur.urlopen(_ur.Request(img_url), timeout=30) as ri:
+                                img_bytes = ri.read()
+                            b64 = base64.b64encode(img_bytes).decode()
+                            return b64, None
+    except Exception as e2:
+        pass
+
+    return None, "Image generation unavailable. Make sure Ollama is running for best results."
+
 
 def detect_image_style(message):
     """Detect if user wants 2D, 3D, diagram, or photo."""
@@ -2232,7 +2995,7 @@ def handle_image_request(question, vs):
 
     # Generate
     style_labels = {
-        "3d": "⚡ Generating hyperrealistic 3D image with FLUX.1...",
+        "3d": "⚡ Generating hyperrealistic 3D image (free, no API key)...",
         "diagram": "📐 Generating scientific diagram...",
         "landscape": "🌄 Generating landscape...",
         "portrait": "👤 Generating portrait...",
@@ -2245,7 +3008,7 @@ def handle_image_request(question, vs):
 
     if error:
         st.error(f"❌ {error}")
-        st.info("💡 Tip: FLUX.1 model sometimes needs a moment to warm up. Try again in 30 seconds.")
+        st.info("💡 Image generation is free via Pollinations.ai. If slow, try again in 10 seconds.")
         return None, final_prompt
 
     return b64, final_prompt
@@ -3831,7 +4594,6 @@ body{background:#060d1a;font-family:'Segoe UI',sans-serif;padding:16px;color:#e8
       <div class="pvbs">
         <button class="pvb" style="background:#1a5ef7;color:#fff" onclick="inst()">⬇️ Install in PhysIQ</button>
         <button class="pvb" style="background:#7c3aed;color:#fff" onclick="pub()">🌐 Publish to Store</button>
-        <button class="pvb" style="background:#059669;color:#fff" onclick="opn()">🔗 Open Full Screen</button>
         <button class="pvb" style="background:#111d2e;color:#e8f0fe;border:1px solid #1c2d45" onclick="sv()">💾 Save HTML</button>
       </div>
     </div>
@@ -3908,7 +4670,6 @@ window.addEventListener('message',function(e){
 function inst(){if(!pd2)return;window.parent.postMessage({type:'install_custom_plugin',data:pd2},'*');step('✅ Plugin installed! Check the Plugin Store.','#22c55e');}
 function pub(){if(!pd2)return;window.parent.postMessage({type:'publish_plugin',data:pd2},'*');step('🌐 Publishing to community store...','#a78bfa');}
 function sv(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=(document.getElementById('pn').value||'plugin').replace(/[^a-z0-9]/gi,'_')+'.html';a.click();}
-function opn(){if(!gh)return;var b=new Blob([gh],{type:'text/html'});var u=URL.createObjectURL(b);window.open(u,'_blank');}
 </script>
 </body></html>"""
 
@@ -4922,21 +5683,6 @@ def show_app():
         render_skill_connector(active_conn, vs)
         return
 
-    # ── Full-screen open for any generated HTML app ────────────
-    if st.session_state.get("_open_full_html"):
-        title = st.session_state.get("_open_full_title","App")
-        col_back_f, col_dl_f = st.columns([1,1])
-        with col_back_f:
-            if st.button("← Close Full Screen", use_container_width=True):
-                st.session_state["_open_full_html"] = None
-                st.rerun()
-        with col_dl_f:
-            st.download_button("⬇️ Download HTML", st.session_state["_open_full_html"].encode(),
-                file_name=title.replace(" ","_")[:30]+".html", mime="text/html", use_container_width=True)
-        st.markdown(f"#### {title}")
-        st.components.v1.html(st.session_state["_open_full_html"], height=700, scrolling=True)
-        return
-
     if st.session_state.get("show_plugin_store_page"):
         show_plugin_store_page()
         return
@@ -5339,11 +6085,6 @@ def show_app():
         with col_cl:
             if st.button("✕ Close", key="close_anim"):
                 st.session_state.show_animator = False
-                st.rerun()
-        col_ao, _ = st.columns([1,4])
-        with col_ao:
-            if st.button("🔗 Open Full", key="open_anim_full", use_container_width=True):
-                st.session_state._open_animator_full = True
                 st.rerun()
         if not os.path.exists("animator.html"):
             st.error("❌ animator.html not found! Make sure it is in your physics-chatbot folder.")
@@ -5762,7 +6503,7 @@ window.addEventListener('message',e=>{
                         show_generated_image(b64, final_prompt, detect_image_style(question)[0], question)
                         _, w, h = detect_image_style(question)
                         style = detect_image_style(question)[0]
-                        reply = f"🎨 Generated! Style: **{style.upper()}** | Resolution: {w}×{h}px using FLUX.1"
+                        reply = f"🎨 Generated! Style: **{style.upper()}** | Resolution: {w}×{h}px (powered by Pollinations.ai)"
                         st.session_state.messages.append({
                             "role":"assistant","content":reply,
                             "is_image":True,"b64":b64,"prompt":final_prompt
@@ -5857,6 +6598,10 @@ window.addEventListener('message',e=>{
                 if sources:
                     st.caption(f"📡 Sources: {', '.join(sources)}")
                 st.markdown(f'<span class="{conf_class}">📊 {conf_label}</span>', unsafe_allow_html=True)
+                # Show Nexus NLU summary badge
+                _nlu_q = nexus_process(question)
+                _i = _nlu_q["intent"]["primary"]; _t = _nlu_q["topic"]["primary"]
+                st.caption(f"🧠 Nexus NLU · intent: **{_i}** · topic: **{_t}**")
                 st.session_state.messages.append({
                     "role": "assistant", "content": answer,
                     "confidence": conf_label, "conf_class": conf_class
