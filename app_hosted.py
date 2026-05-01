@@ -572,7 +572,13 @@ def show_landing():
         with c1:
             if st.button("Sign In →", use_container_width=True):
                 if not email or not password:
-                    st.error("Please enter email and password.")
+                    st.error("Please fill in email and password.")
+                elif not _SUPABASE_OK:
+                    st.error(f"❌ Cannot connect to Supabase:\n\n{_SUPABASE_ERR}\n\n"
+                             "**Quick fixes:**\n"
+                             "1. Check your internet connection\n"
+                             "2. Verify `SUPABASE_URL` in your `.env` file is correct\n"
+                             "3. Or use **Guest Mode** below to use the app offline")
                 else:
                     try:
                         res = supabase.auth.sign_in_with_password({"email": email, "password": password})
@@ -580,22 +586,45 @@ def show_landing():
                         st.session_state.access_token = res.session.access_token
                         st.session_state.show_landing = False
                         st.toast("✅ Welcome back!")
-                        # Save session to localStorage
-                        save_session_to_js(res.user, res.session.access_token,
-                            getattr(res.session,"refresh_token",""))
+                        try:
+                            save_session_to_js(res.user, res.session.access_token,
+                                getattr(res.session,"refresh_token",""))
+                        except: pass
                         st.rerun()
                     except Exception as e:
-                        st.error(f"❌ {e}")
+                        err_str = str(e)
+                        if "nodename" in err_str or "DNS" in err_str.upper() or "gaierror" in err_str.lower():
+                            st.error("❌ **DNS Error** — cannot reach Supabase.\n\n"
+                                    "**Your internet is working but the Supabase URL may be wrong.**\n"
+                                    "Check `SUPABASE_URL` in your `.env` file.\n\n"
+                                    "Or click **Continue as Guest** to use the app offline.")
+                        elif "Invalid login" in err_str or "invalid_credentials" in err_str:
+                            st.error("❌ Wrong email or password. Try again.")
+                        elif "Email not confirmed" in err_str:
+                            st.warning("⚠️ Check your email inbox and confirm your account first.")
+                        else:
+                            st.error(f"❌ Login failed: {err_str}")
         with c2:
-            if st.button("Sign in with Google 🔵", use_container_width=True):
-                try:
-                    res = supabase.auth.sign_in_with_oauth({
-                        "provider": "google",
-                        "options": {"redirect_to": os.getenv("REDIRECT_URL", "http://localhost:8501")}
-                    })
-                    st.markdown(f"[Click here to sign in with Google →]({res.url})")
-                except Exception as e:
-                    st.error(f"❌ {e}")
+            if st.button("👤 Continue as Guest", use_container_width=True,
+                         help="Use PhysIQ offline without an account (no chat history saved)"):
+                # Create a fake guest user so the rest of the app works
+                import types
+                guest = types.SimpleNamespace(
+                    id="guest",
+                    email="guest@local",
+                    user_metadata={"full_name": "Guest"}
+                )
+                st.session_state.user         = guest
+                st.session_state.access_token = None
+                st.session_state.show_landing = False
+                st.session_state._is_guest    = True
+                st.toast("👤 Running in Guest mode — chat history won't be saved")
+                st.rerun()
+
+        # Show connectivity warning if Supabase is down
+        if not _SUPABASE_OK:
+            st.warning(f"⚠️ **Supabase offline:** {_SUPABASE_ERR[:120]}  "
+                       "Use **Continue as Guest** to use the app without an account.")
 
     with tab_signup:
         st.markdown('<div class="section-label">Create your free account</div>', unsafe_allow_html=True)
@@ -612,48 +641,62 @@ def show_landing():
             elif len(password_s) < 6:
                 st.error("Password must be at least 6 characters.")
             else:
-                try:
-                    res = supabase.auth.sign_up({
-                        "email": email_s, "password": password_s,
-                        "options": {"data": {"full_name": name}}
-                    })
-                    if res.user:
-                        st.success("✅ Account created! Check your email to confirm, then sign in.")
-                except Exception as e:
-                    st.error(f"❌ {e}")
+                if not _SUPABASE_OK:
+                    st.error(f"❌ Cannot reach Supabase to create account.\n{_SUPABASE_ERR[:120]}\n"
+                             "Fix your .env SUPABASE_URL or use Guest Mode for now.")
+                else:
+                    try:
+                        res = supabase.auth.sign_up({
+                            "email": email_s, "password": password_s,
+                            "options": {"data": {"full_name": name}}
+                        })
+                        if res.user:
+                            st.success("✅ Account created! Check your email to confirm, then sign in.")
+                    except Exception as e:
+                        err = str(e)
+                        if "nodename" in err or "gaierror" in err.lower():
+                            st.error("❌ DNS Error — can't reach Supabase. Check SUPABASE_URL in .env")
+                        else:
+                            st.error(f"❌ {e}")
 
 # ══════════════════════════════════════════════════════════════
 #  DB HELPERS
 # ══════════════════════════════════════════════════════════════
-def get_user_id(): return st.session_state.user.id
+def get_user_id(): return getattr(st.session_state.user, 'id', 'guest')
 
 def save_message(role, content, confidence=None):
+    if not _SUPABASE_OK or not st.session_state.get("user"):
+        return  # offline / guest mode — skip silently
     try:
         get_authed_client().table("messages").insert({
             "user_id": get_user_id(), "role": role,
             "content": content, "confidence": confidence,
             "created_at": datetime.datetime.utcnow().isoformat()
         }).execute()
-    except Exception as e:
-        st.warning(f"⚠️ Could not save: {e}")
+    except Exception:
+        pass  # Never block the chat over a DB write failure
 
 def load_past_conversations():
+    if not _SUPABASE_OK or not st.session_state.get("user"):
+        return []
     try:
         res = get_authed_client().table("messages").select("*")\
             .eq("user_id", get_user_id()).order("created_at").execute()
         return res.data or []
-    except: return []
+    except:
+        return []
 
 def save_learned(question, answer):
+    if not _SUPABASE_OK or not st.session_state.get("user"): return
     try:
         get_authed_client().table("learned_answers").upsert({
             "user_id": get_user_id(), "question": question,
             "answer": answer, "created_at": datetime.datetime.utcnow().isoformat()
         }, on_conflict="user_id,question").execute()
-    except Exception as e:
-        st.warning(f"⚠️ Could not save: {e}")
+    except: pass
 
 def load_learned():
+    if not _SUPABASE_OK or not st.session_state.get("user"): return []
     try:
         res = get_authed_client().table("learned_answers").select("*")\
             .eq("user_id", get_user_id()).execute()
@@ -661,12 +704,13 @@ def load_learned():
     except: return []
 
 def delete_all_data():
+    if not _SUPABASE_OK or not st.session_state.get("user"): return
     uid = get_user_id()
     try:
         get_authed_client().table("messages").delete().eq("user_id", uid).execute()
         get_authed_client().table("learned_answers").delete().eq("user_id", uid).execute()
     except Exception as e:
-        st.error(f"❌ {e}")
+        st.toast(f"⚠️ Could not delete: {e}")
 
 
 # ══════════════════════════════════════════════════════════════
@@ -5605,7 +5649,10 @@ def _process_connector_input(connector_key, user_text, vs, msgs_key, topic_key):
 #  MAIN APP
 # ══════════════════════════════════════════════════════════════
 def show_app():
+    _is_guest = st.session_state.get("_is_guest", False)
     user_name = st.session_state.user.user_metadata.get("full_name", st.session_state.user.email)
+    if _is_guest:
+        user_name = "Guest (offline)"
 
     # ── Read active connector from URL ────────────────────────
     try:
