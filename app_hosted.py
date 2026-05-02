@@ -23,9 +23,19 @@ if not all([SUPABASE_URL, SUPABASE_KEY, HF_TOKEN]):
     st.stop()
 
 from supabase import create_client
-supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+_SUPABASE_OK = False
+_SUPABASE_ERR = ""
+supabase = None
+
+try:
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    _SUPABASE_OK = True
+except Exception as e:
+    _SUPABASE_ERR = str(e)
 
 def get_authed_client():
+    if not _SUPABASE_OK or supabase is None:
+        raise RuntimeError(_SUPABASE_ERR or "Supabase client is unavailable.")
     client = create_client(SUPABASE_URL, SUPABASE_KEY)
     token = st.session_state.get("access_token")
     if token:
@@ -774,6 +784,8 @@ def restore_session_from_js(access_token, refresh_token, user_email, user_id, us
     """Try to restore session from saved token."""
     if st.session_state.get("user"):
         return True
+    if not _SUPABASE_OK or supabase is None:
+        return False
     try:
         res = supabase.auth.set_session(access_token, refresh_token)
         if res and res.user:
@@ -2603,9 +2615,19 @@ def detect_language(message):
             return lang
     return "Python"  # default
 
+def load_nexus_code_engine():
+    """Load the local Nexus code engine file used to guide coding output."""
+    try:
+        with open("nexus new code engine.js", "r", encoding="utf-8") as f:
+            return f.read()
+    except Exception:
+        return None
+
+
 def generate_code(question, vs, language="Python"):
     results = vs.similarity_search_with_score(question, k=3) if vs else []
     context = "\n\n".join([r[0].page_content for r in results]) if results else ""
+    nexus_engine = load_nexus_code_engine()
 
     system = f"""You are an elite {language} programmer with 15+ years of experience.
 You write clean, efficient, well-commented, production-quality code.
@@ -2633,10 +2655,17 @@ Roblox Lua: All Roblox services, DataStore, TweenService, RemoteEvents
 Rust: tokio, serde, actix-web, reqwest
 Go: gin, echo, gorm, cobra
 
+If a local Nexus code engine is provided, treat it as the primary blueprint for how to analyze the request and structure the solution.
+Follow its coding philosophy and assembly style when it fits the user's request.
+Do not mention internal engine files in the final user-facing answer.
+
 Write the code now:"""
 
     user = f"""Relevant documentation:
 {context}
+
+Local Nexus code engine:
+{nexus_engine if nexus_engine else "(Nexus code engine file not available.)"}
 
 Task: {question}
 
@@ -5786,7 +5815,11 @@ def show_app():
         with col_out:
             pass
         if st.button("🚪 Sign Out", use_container_width=True):
-            supabase.auth.sign_out()
+            if _SUPABASE_OK and supabase is not None:
+                try:
+                    supabase.auth.sign_out()
+                except Exception:
+                    pass
             clear_session_from_js()
             for k in ["user","access_token","messages","pending_feedback","backend_ready","vs","Document"]:
                 st.session_state[k] = None if k in ["user","access_token"] else \
