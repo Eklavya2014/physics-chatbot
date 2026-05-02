@@ -3902,6 +3902,7 @@ async function runCode(){{
       if(!pyLoaded){{await loadPyodide();}}
       let captured='';
       pyodide.globals.set('__captured__','');
+      pyodide.globals.set('code_to_run', code);
       await pyodide.runPythonAsync(`
 import sys, traceback
 from io import StringIO
@@ -3917,8 +3918,9 @@ finally:
     sys.stderr=sys.__stderr__
 import js
 js.window.__captured__=_buf.getvalue()
-`, {{code_to_run: code}});
+`);
       const result=window.__captured__;
+      try{{ pyodide.globals.delete('code_to_run'); }}catch(_e){{}}
       out.textContent=result||'(No output)';
       window.parent.postMessage({{type:'plugin_result',plugin:'code_runner',result:result,lang:'python'}},'*');
     }} else if(lang==='javascript'){{
